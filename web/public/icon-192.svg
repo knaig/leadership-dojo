@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" fill="none">
+  <defs>
+    <linearGradient id="bg192" x1="0" y1="0" x2="192" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="feather192" x1="70" y1="30" x2="130" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="35%" stop-color="#2dd4bf"/>
+      <stop offset="65%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="eye192" x1="80" y1="55" x2="115" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="42" fill="url(#bg192)"/>
+  <!-- Feather shaft -->
+  <path d="M96 170 C96 170, 88 120, 92 80 C95 55, 100 35, 96 20"
+        stroke="#a5b4fc" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Outer vane -->
+  <path d="M96 20 C72 35, 52 55, 50 80 C48 105, 62 125, 96 135 C130 125, 144 105, 142 80 C140 55, 120 35, 96 20Z"
+        fill="url(#feather192)" opacity="0.25"/>
+  <!-- Inner vane -->
+  <path d="M96 30 C78 42, 62 60, 60 80 C58 100, 70 118, 96 126 C122 118, 134 100, 132 80 C130 60, 114 42, 96 30Z"
+        fill="url(#feather192)" opacity="0.35"/>
+  <!-- Peacock eye -->
+  <ellipse cx="96" cy="78" rx="26" ry="30" fill="url(#feather192)" opacity="0.5"/>
+  <ellipse cx="96" cy="78" rx="18" ry="22" fill="#1e1b4b"/>
+  <ellipse cx="96" cy="76" rx="12" ry="15" fill="url(#eye192)" opacity="0.9"/>
+  <ellipse cx="96" cy="74" rx="6" ry="8" fill="#1e1b4b"/>
+  <circle cx="93" cy="71" r="2.5" fill="white" opacity="0.7"/>
+  <!-- Brand -->
+  <text x="96" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="42" fill="white" opacity="0.9">mira</text>
+</svg>

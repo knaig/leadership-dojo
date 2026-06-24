@@ -1,0 +1,107 @@
+{
+  "id": "system1-confirmation-bias",
+  "course": "system-1-2-thinking",
+  "difficulty": "foundation",
+  "title": "The Data We Want to See: Confirmation Bias in Policy",
+  "country": "Philippines",
+  "caseType": "evidence_evaluation",
+  "learningObjectives": [
+    "Recognize when System 1 filters evidence to match existing beliefs",
+    "Practice actively seeking disconfirming evidence",
+    "Distinguish between weak and strong evidence",
+    "Understand how confirmation bias affects policy decisions"
+  ],
+  "context": {
+    "yourRole": "Senior Policy Advisor to the Department of Information and Communications Technology (DICT). You're part of a team evaluating a national ID system proposal.",
+    "situation": "The Secretary is enthusiastic about implementing a biometric national ID system. Your team has been researching international implementations for 3 months.",
+    "pressure": "The Secretary has been reading success stories from India's Aadhaar system and wants to move quickly. He's asked for a recommendation memo by end of week.",
+    "reality": "Your research shows mixed results globally - some successes, significant failures, and concerning privacy issues in several countries."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Team meeting to discuss findings:\n\nSecretary: 'I've been reading about India's Aadhaar - 1.3 billion people enrolled, massive efficiency gains, financial inclusion for millions. This is exactly what we need. What did your research find?'\n\nMaria (Team Lead): 'Sir, we found several successful implementations. India's Aadhaar has indeed achieved scale. Estonia's e-ID is highly regarded. Singapore's SingPass works well.'\n\nSecretary: 'Excellent. So the model works. We should move forward.'\n\nCarlos (Your colleague, quietly): 'Sir, we also found some concerning cases. Jamaica's system had cost overruns and low adoption. UK's ID card scheme was abandoned after spending £250 million. Kenya's Huduma Namba faced court challenges on privacy-'\n\nSecretary (interrupting): 'Those are different contexts. Jamaica and UK have different governance structures. Kenya's issues are about implementation, not the concept. We'll learn from their mistakes. Maria, focus the memo on the successful cases - that's what will be useful for our decision.'\n\nAfter the meeting, Carlos approaches you:\n\nCarlos: 'Did you notice? Every time I brought up problems, he had an explanation ready. But when Maria mentioned successes, he just accepted them. I think he's already decided and wants us to justify it.'\n\nMaria (overhearing): 'Carlos, the Secretary is excited because the model genuinely works. Look at India - 1.3 billion people! We're being asked to analyze, not to be pessimists. Our job is to figure out how to make it work, not list reasons it won't.'\n\nYou notice:\n- Secretary dismisses negative cases as 'different contexts' but accepts positive cases without question\n- Maria frames skepticism as pessimism\n- The Secretary explicitly asked to 'focus on successful cases'\n- Your own initial reaction to India's numbers was excitement\n- Nobody has systematically analyzed what made some successful and others fail",
+      "prompt": "What cognitive pattern is at play here? How should you respond?",
+      "evaluationCriteria": [
+        "**Confirmation Bias Recognition**: Do they identify that the Secretary is selectively processing evidence?",
+        "**Asymmetric Scrutiny**: Do they notice different standards applied to confirming vs disconfirming evidence?",
+        "**Pre-Commitment**: Do they recognize the Secretary may have already decided, now seeking justification?",
+        "**False Optimism vs Realism**: Do they see through Maria's 'pessimism' framing?",
+        "**Structured Analysis Need**: Do they propose systematic comparison vs cherry-picking cases?"
+      ],
+      "coachingNotes": "Classic confirmation bias. The Secretary's System 1 has latched onto the India success story and is now filtering all evidence through that lens. Positive evidence (Estonia, Singapore) is accepted at face value. Negative evidence (Jamaica, UK, Kenya) is dismissed with ad-hoc explanations ('different context'). This is asymmetric skepticism - high bar for disconfirming evidence, low bar for confirming. Maria's 'pessimism' frame is dangerous - it redefines critical thinking as negativity. The request to 'focus on successful cases' is asking you to join the confirmation bias. System 2 intervention: Propose systematic analysis of both successes AND failures to identify actual success factors."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You decide to push for systematic analysis:\n\nYou: 'Sir, I'd like to propose we analyze both successful and unsuccessful cases to identify what specific factors drive success. That way we can assess whether we have those factors.'\n\nSecretary: 'Fine, but don't spend too much time on failures. We're trying to build something, not prove it can't work.'\n\nYou create a comparison matrix:\n\n**Successful Cases:**\n- India (Aadhaar): Strong government capacity, clear use case (subsidy delivery), biometric tech maturity\n- Estonia (e-ID): Small population (1.3M), high digital literacy, strong privacy framework\n- Singapore (SingPass): Wealthy, tech-savvy population, trusted government\n\n**Failed/Troubled Cases:**\n- UK: Public opposition, privacy concerns, weak value proposition, cancelled\n- Jamaica: Poor infrastructure, vendor issues, cost overruns\n- Kenya (Huduma Namba): Privacy violations, court challenges, no clear legal framework\n\nYou present this to the Secretary:\n\nYou: 'The successful cases share some factors: clear legal framework, strong government capacity, specific use cases. The failures often involved privacy issues, weak infrastructure, or unclear value proposition. For Philippines, we should assess-'\n\nSecretary: 'Good analysis. So we need clear use cases and legal framework. We have those - we need national ID for banking, voting, social services. Legal framework is being drafted. We're more like India and Singapore than UK or Jamaica.'\n\nCarlos (quietly to you later): 'He took your analysis and used it to confirm what he already believed. Did you notice? He focused on what we have in common with successes, ignored what we might share with failures. We have infrastructure challenges like Jamaica, privacy framework gaps like Kenya. But he didn't engage with those.'\n\nMaria: 'Carlos, you're being too negative. The Secretary is right - we DO have clear use cases and we're building the legal framework. You're looking for problems instead of solutions.'",
+      "prompt": "Your analysis was supposed to activate System 2 thinking, but it's being filtered through confirmation bias. What do you do now?",
+      "evaluationCriteria": [
+        "**Confirmation Bias Persistence**: Do they recognize that even systematic analysis can be selectively interpreted?",
+        "**Burden of Proof Shift**: Do they notice the Secretary places burden of proof on skeptics, not proponents?",
+        "**Maria's Framing**: Do they recognize 'looking for problems vs solutions' is a false dichotomy?",
+        "**Self-Assessment**: Do they check their own reactions - are they also filtering evidence?",
+        "**Escalation Strategy**: Do they know when to escalate concerns vs when to accept organizational direction?"
+      ],
+      "coachingNotes": "This is confirmation bias in action. Your matrix was good System 2 work, but the Secretary's System 1 immediately sorted it into 'reasons we'll succeed' and dismissed 'reasons we might fail.' Notice the asymmetry: 'We have clear use cases' (confirmed), but 'infrastructure challenges like Jamaica' (ignored). Maria's frame is insidious - she's equating risk analysis with negativity. This creates social pressure to stop questioning. Key question: Is this a battle worth fighting? Sometimes organizations make biased decisions and you document concerns then execute loyally. Sometimes you need to escalate. Depends on: (1) How reversible is this decision? (2) How catastrophic would failure be? (3) Is there still time to influence? (4) What's your role and mandate?"
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "You're now drafting the recommendation memo. You have three approaches:\n\n**OPTION A: Align with Secretary's View**\nHighlight successful cases, note that Philippines has similar factors, recommend moving forward. Mention risks briefly in an appendix.\n- Makes Secretary happy\n- Maintains team harmony\n- Might be ignoring serious risks\n\n**OPTION B: Balanced Analysis**\nPresent both success factors and risk factors equally. Recommend conditional go-ahead: 'Proceed IF we establish privacy framework, build infrastructure, ensure vendor capacity.'\n- Intellectually honest\n- Might be seen as hedging or pessimistic\n- Requires Secretary to confront uncomfortable tradeoffs\n\n**OPTION C: Strong Caution**\nEmphasize risks, recommend pilot project first before national rollout. Point out that infrastructure and privacy framework gaps are serious.\n- Protects against catastrophic failure\n- Likely to be rejected or ignored\n- May damage your credibility/relationship\n\nAs you're considering, you receive an email from the Secretary's Chief of Staff:\n\n'The Secretary mentioned you're working on the national ID memo. Just FYI - he's presenting to Cabinet next month and wants to propose this as a flagship initiative. He's very committed to making this happen. Please make sure the memo supports moving forward. Thanks!'\n\nThis adds context:\n- The Secretary has already committed politically\n- Your memo is meant to support a decision already made\n- Pushing back hard might be career-limiting\n- But you're also the policy expert whose job is to give sound advice",
+      "prompt": "What approach do you take? How do you balance intellectual honesty with organizational reality?",
+      "evaluationCriteria": [
+        "**Political Reality**: Do they acknowledge the Secretary has already committed, making this harder to redirect?",
+        "**Documentation Strategy**: Do they consider how to document concerns even if overruled?",
+        "**Conditional Recommendations**: Do they use 'proceed IF' language to maintain honesty while being constructive?",
+        "**Career vs Conscience**: Do they think through personal risk vs professional duty?",
+        "**Long-term Thinking**: Do they consider what happens if the project fails - who bears responsibility?"
+      ],
+      "coachingNotes": "This is the real world complexity. Pure System 2 analysis would say: write the honest balanced assessment. But you're not in a vacuum - you're in an organization with politics, commitments, power dynamics. There's no perfect answer. Option A compromises intellectual integrity. Option C likely gets ignored and damages your influence. Option B (balanced with conditions) might be the pragmatic middle - you document the risks formally, give the Secretary what he needs, but protect yourself with conditions. The conditional language ('Proceed IF privacy framework is established') lets you be on record. If it succeeds, great. If it fails because conditions weren't met, your memo shows you warned. This isn't pure rationality - it's rationality within constraints. The key is being honest with yourself about what you're doing and why."
+    },
+    {
+      "round": 4,
+      "type": "reflection",
+      "situation": "You decide on Option B - balanced analysis with conditional recommendations. You write:\n\n**RECOMMENDATION MEMO**\n\n*Executive Summary:*\nNational biometric ID systems have achieved significant success in comparable contexts (India, Estonia, Singapore) when implemented with: (1) Clear legal and privacy framework, (2) Robust technical infrastructure, (3) Specific high-value use cases, (4) Public trust and engagement.\n\nRecommendation: Proceed with national ID initiative, conditional on establishing these foundations.\n\n*Key Success Factors from International Cases:*\n[Details on India, Estonia, Singapore]\n\n*Critical Prerequisites for Philippines Context:*\n1. **Privacy Framework**: Enact data protection law with specific biometric provisions\n2. **Infrastructure**: Assess and upgrade connectivity in rural areas (Jamaica's failure linked to infrastructure gaps)\n3. **Vendor Capacity**: Rigorous procurement to avoid cost overruns (Jamaica spent 3x initial budget)\n4. **Legal Authority**: Supreme Court-proof legal basis (Kenya's system suspended by courts)\n\n*Risk Mitigation:*\n- Phased rollout starting with urban areas\n- Privacy impact assessment\n- Independent oversight body\n- Sunset clauses for biometric data retention\n\n*Timeline:*\nRecommend 18-month preparation phase before national rollout.\n\nThe Secretary reads it and calls you:\n\nSecretary: 'This is good work, but 18 months is too long. Cabinet wants flagship initiatives that show results before next election cycle - that's 16 months away. Can we do 6-month prep, then rollout?'\n\nYou: 'Sir, the legal framework alone typically takes 12-18 months. Data protection law is still in committee-'\n\nSecretary: 'We'll fast-track the law. This is presidential priority. I appreciate the thoroughness, but we need to be realistic about timelines. Revise to 6-month prep. And the privacy framework can be developed in parallel with rollout - we don't need to wait for perfect conditions.'",
+      "prompt": "You tried to build in conditions and safeguards. Now those are being compressed or removed. What's your move?",
+      "evaluationCriteria": [
+        "**Recognize the Pattern**: Do they see this as further confirmation bias - obstacles being dismissed?",
+        "**Document Clearly**: Do they ensure their concerns are on record even if overruled?",
+        "**Escalation Judgment**: Do they assess whether to accept being overruled vs escalating?",
+        "**Personal Responsibility**: Do they think about their role if this goes wrong?",
+        "**Exit Rights**: Do they know when a professional might need to recuse themselves from a flawed decision?"
+      ],
+      "coachingNotes": "The conditions are being stripped away. '18 months too long' → '6 months.' 'Privacy framework first' → 'develop in parallel.' This is System 1's optimism bias meeting confirmation bias. The Secretary wants the initiative, so obstacles get minimized. Your choice now: (1) Revise the memo, document that you recommended 18 months but were directed to use 6 months. (2) Refuse to revise, escalate to Undersecretary or another authority. (3) Ask to be removed from the project. There's no objectively right answer - depends on how catastrophic you think failure would be, your organizational role, your personal risk tolerance. But the System 2 lesson: recognize this for what it is. You're being asked to provide intellectual cover for a decision driven by political timelines and confirmation bias. Eyes open about what you're doing."
+    }
+  ],
+  "keyTakeaways": [
+    "Confirmation bias causes us to accept supporting evidence uncritically while scrutinizing contradicting evidence",
+    "Asking to 'focus on positive cases' is asking you to join the bias",
+    "Systematic analysis helps, but can still be filtered through biased interpretation",
+    "Framing skepticism as 'pessimism' or 'negativity' shuts down System 2 thinking",
+    "In organizations, pure rational analysis meets political reality - knowing this helps you navigate it consciously"
+  ],
+  "frameworks": [
+    {
+      "name": "Steel Man vs Straw Man",
+      "description": "Steel man: Analyze the strongest version of contradicting evidence. Straw man: Dismiss weak versions of contradicting evidence.",
+      "application": "When evaluating policy, actively seek the strongest arguments against your preferred option."
+    },
+    {
+      "name": "Pre-Mortem Analysis",
+      "description": "Assume the project failed. Work backwards to identify what went wrong. This bypasses confirmation bias by assuming failure.",
+      "application": "Before major decisions, run a pre-mortem: 'It's 2 years from now and this failed catastrophically. What happened?'"
+    },
+    {
+      "name": "Devil's Advocate (Formal)",
+      "description": "Assign someone to formally argue against the proposal, with protection from social pressure.",
+      "application": "In team decisions, rotate the devil's advocate role and take those arguments seriously."
+    }
+  ],
+  "relatedCases": [
+    "system1-urgency-trap",
+    "system1-sunk-cost-fallacy",
+    "system1-availability-heuristic"
+  ]
+}

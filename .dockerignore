@@ -1,0 +1,14 @@
+node_modules
+.git
+.env*
+*.md
+docs
+scripts
+.github
+.serena
+*.pptx
+web/node_modules
+web/.next
+web/__tests__
+worker/node_modules
+worker/dist

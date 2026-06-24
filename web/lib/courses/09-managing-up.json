@@ -1,0 +1,515 @@
+{
+  "id": "managing-up",
+  "slug": "managing-up",
+  "courseNumber": 9,
+  "title": "Managing Up",
+  "subtitle": "Influencing Senior Leadership",
+  "tier": 2,
+  "category": "Stakeholder Dynamics",
+  "duration": "4 hours",
+  "difficulty": "Intermediate",
+  "description": "Effectively communicate with and influence senior leadership and political decision-makers.",
+  "learningObjectives": [
+    "Understand leadership priorities and decision-making frameworks",
+    "Frame proposals and information effectively for senior audiences",
+    "Build credibility and trust with senior leaders over time"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": [
+    "DPI advisors",
+    "Government IT directors",
+    "Policy coordinators"
+  ],
+  "modules": [
+    {
+      "id": "mod-09-01",
+      "moduleNumber": 1,
+      "title": "Understanding Your Leadership",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Senior leaders operate within unique constraints shaped by political pressures, budget cycles, media scrutiny, and accountability mechanisms. To manage up effectively, you must first understand the world through their eyes\u2014what keeps them awake at night, what defines success in their role, and how your work either helps or hinders their objectives. This module explores the typical decision-making environment for government executives, including ministerial pressures, interagency dynamics, and the role of political considerations in operational decisions.",
+        "keyPoints": [
+          {
+            "title": "The Senior Leader's Mandate",
+            "description": "Government executives balance multiple competing mandates: political directives from ministerial offices, budget constraints from finance departments, public accountability via media and parliament, and operational excellence from their teams. Understanding which mandate dominates in your specific context is critical.",
+            "examples": [
+              "A DPI secretary must balance innovation requirements with fiscal responsibility, political timelines, and risk management\u2014often at odds with each other",
+              "A ministry CIO faces pressure to modernize legacy systems while maintaining service continuity and limiting IT budget growth"
+            ]
+          },
+          {
+            "title": "Decision-Making Time Horizons",
+            "description": "Senior leaders operate on compressed timelines. What seems like adequate time for planning at operational levels may be unrealistic at executive levels. Budget cycles, election cycles, and political windows create hard deadlines that don't accommodate process-driven approaches.",
+            "examples": [
+              "A cabinet reshuffle can completely change your leadership's priorities within 48 hours",
+              "A fiscal quarter-end review requires executive decisions made weeks before the actual deadline due to approval chains"
+            ]
+          },
+          {
+            "title": "Political Context and Risk Tolerance",
+            "description": "Government decisions are never purely operational. Political context\u2014current media attention, opposition scrutiny, public sentiment\u2014fundamentally affects risk tolerance and priorities. A proposal that makes perfect operational sense may be politically untenable, and vice versa.",
+            "examples": [
+              "A system modernization project may be technically sound but politically risky if it could result in service disruptions before an election",
+              "Public sector digital initiatives must consider media narratives and taxpayer concerns, not just efficiency gains"
+            ]
+          },
+          {
+            "title": "Competing Stakeholder Demands",
+            "description": "Senior leaders must satisfy multiple stakeholder groups: political leadership (ministers, chief ministers), peers in other departments, oversight bodies (audit, parliamentary committees), and their own teams. These demands frequently conflict.",
+            "examples": [
+              "Finance wants cost control, operations wants capability, political office wants new initiatives, and audit wants risk documentation",
+              "A DPI director must balance demands for innovation from the minister's office with demands for stability from department heads"
+            ]
+          }
+        ],
+        "keyInsight": "Effective managing up requires shifting from a task-focused mindset to a context-focused mindset. Rather than thinking 'I need to communicate X,' think 'What does my leader need to know to make good decisions and manage their stakeholders?'"
+      },
+      "exercises": [
+        {
+          "id": "ex-09-01-01",
+          "title": "Map Your Leader's World",
+          "description": "Create a one-page analysis of your immediate leader's decision-making context. Identify: (1) Their three primary success metrics, (2) Their major political pressures or constraints, (3) Three key stakeholders they must answer to, (4) The typical budget cycle that affects your area, (5) Recent media or parliamentary scrutiny that might influence decisions.",
+          "duration": "15 minutes",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ex-09-01-02",
+          "title": "Identify the Hidden Agenda",
+          "description": "Review a recent decision your leader made. Beyond the stated rationale, what unstated factors likely influenced it? Consider: political timing, stakeholder pressure, risk mitigation, or budget constraints. What does this reveal about their true priorities?",
+          "duration": "10 minutes",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-02",
+      "moduleNumber": 2,
+      "title": "The Information Flow Challenge",
+      "duration": "35 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Senior leaders are overwhelmed with information. A typical ministry secretary receives hundreds of emails daily, dozens of briefing papers weekly, and must stay current across dozens of domains. The fundamental challenge isn't getting information to them\u2014it's filtering what reaches their attention and structuring it so they can actually use it. This module explores how information flows (and gets lost) in government hierarchies, and how to position your communication to break through the noise.",
+        "keyPoints": [
+          {
+            "title": "The Attention Bottleneck",
+            "description": "Senior leaders have dramatically limited attention. A secretary spending 5 minutes reviewing a briefing note may have only 3 minutes of actual reading time. Everything else\u2014scanning the document, finding key points, connecting to their existing context\u2014must happen in that 3-minute window.",
+            "examples": [
+              "A 15-page briefing note for a cabinet meeting will be skimmed in less than 5 minutes, regardless of quality. The first and last pages carry 80% of the weight.",
+              "A project update that requires 20 minutes to explain is effectively inaccessible to a busy CIO. It will be deprioritized."
+            ]
+          },
+          {
+            "title": "Filtering Layers and Gatekeepers",
+            "description": "Information reaching senior leaders flows through multiple layers: your immediate manager, their manager, executive assistants, and chiefs of staff. Each layer filters, prioritizes, and summarizes. Understanding these gatekeepers is critical\u2014they determine what reaches your leader's desk.",
+            "examples": [
+              "The secretary's chief of staff receives 200+ items weekly but selects 15-20 for the secretary to review. You must understand what makes their cut.",
+              "A director's executive assistant manages calendar and information flow. Knowing their priorities and communication preferences is often more valuable than knowing the director's"
+            ]
+          },
+          {
+            "title": "Information Competition",
+            "description": "Your information competes with hundreds of other items for attention. Success isn't about comprehensive documentation\u2014it's about strategic prioritization and positioning. Information that aligns with current leadership priorities gets attention; information that doesn't gets deleted.",
+            "examples": [
+              "During a fiscal crisis, budget-related issues dominate attention. A project proposal about system modernization will be deprioritized regardless of merit.",
+              "If a minister has publicly stated commitment to digital transformation, initiatives aligned with that narrative will be noticed; others will not"
+            ]
+          },
+          {
+            "title": "Preferred Communication Channels",
+            "description": "Different leaders have dramatically different communication preferences. Some prefer email, some prefer in-person conversations, some prefer structured briefings, some prefer informal chat. Misalignment between your communication mode and their preference means your message never lands effectively.",
+            "examples": [
+              "A data-driven leader wants evidence and metrics; a relationship-oriented leader wants context and trust signals",
+              "Some leaders read everything sent to them; others rely entirely on their staff's summaries. Knowing which you face is critical."
+            ]
+          }
+        ],
+        "keyInsight": "In an environment of information scarcity, your job is not to communicate comprehensively but to communicate strategically. You must anticipate what information your leader actually needs, structure it for rapid comprehension, and deliver it through their preferred channel."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-02-01",
+          "title": "Decode the Gatekeeper",
+          "description": "Identify one person who controls access to your senior leader (executive assistant, chief of staff, or another manager). Over the next week, observe: (1) What types of items get scheduled on their leader's calendar?, (2) What's their communication style and preference?, (3) What information do they seem to filter or prioritize?, (4) What relationship would be valuable to build with them?",
+          "duration": "20 minutes (observation over time)",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ex-09-02-02",
+          "title": "Rewrite for the Bottleneck",
+          "description": "Take a recent report, proposal, or briefing you created (3+ pages). Rewrite the core argument in exactly 1 page, structured for speed-reading by a busy executive: compelling headline, 3-4 key points, and decision/action required. Compare the original to the rewrite.",
+          "duration": "25 minutes",
+          "difficulty": "High"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-03",
+      "moduleNumber": 3,
+      "title": "Framing for Decision-Makers",
+      "duration": "45 minutes",
+      "type": "application",
+      "content": {
+        "overview": "How you frame an issue fundamentally shapes how senior leaders perceive and respond to it. The same situation can be presented as an opportunity or a threat, a routine issue or a crisis, a solvable problem or an intractable challenge. Effective managing up requires mastering framing\u2014understanding how senior leaders think about different categories of decisions and structuring your communication accordingly. This module covers three core framing approaches used successfully in government contexts.",
+        "keyPoints": [
+          {
+            "title": "Framing 1: Alignment with Leadership Objectives",
+            "description": "Senior leaders are most receptive to initiatives that advance their stated objectives. Effective framing connects your proposal or information directly to leadership priorities. This isn't manipulation\u2014it's helping them see the connection between your work and their goals.",
+            "examples": [
+              "Rather than 'We need to upgrade our legacy systems,' frame it as 'This upgrade directly supports the minister's digital transformation agenda and will reduce costs by $2M annually'",
+              "Instead of 'The team is overwhelmed with manual processes,' say 'Automating these processes will free 2 FTE for the high-priority policy initiative the secretary recently announced'"
+            ]
+          },
+          {
+            "title": "Framing 2: Risk and Opportunity Cost",
+            "description": "Government leaders are deeply concerned with risk\u2014operational risk, political risk, fiscal risk, and reputational risk. Effective framing acknowledges these concerns and structures proposals in risk terms. What happens if we do nothing? What risks are we managing? How are we containing downside risk?",
+            "examples": [
+              "Frame a data security upgrade not as a technical requirement but as 'Managing critical risk to government data and citizen privacy'",
+              "Position a system migration as 'Avoiding the escalating costs and service disruption risks of maintaining 15-year-old infrastructure'"
+            ]
+          },
+          {
+            "title": "Framing 3: Feasibility and Implementation",
+            "description": "Senior leaders are skeptical of ambitious proposals because they've seen many fail. Effective framing acknowledges the challenge while providing credible evidence of feasibility. What's the track record? What's the implementation approach? What are the critical success factors?",
+            "examples": [
+              "Instead of 'We should completely modernize our enterprise architecture,' propose 'A phased modernization starting with the highest-risk legacy system, with success metrics and gates to evaluate before phase 2'",
+              "Rather than vague commitment to 'improve service delivery,' specify 'We will pilot new service delivery channels in Q2, measure outcomes, and expand based on results'"
+            ]
+          },
+          {
+            "title": "Framing 4: Stakeholder Management",
+            "description": "Senior leaders must manage multiple stakeholders. Effective framing acknowledges their stakeholder challenges and shows how your proposal helps rather than complicates their stakeholder management. Who might object? What concerns might arise? How have you addressed them?",
+            "examples": [
+              "A budget proposal for your area should acknowledge: 'This requires reallocation from lower-priority initiatives. I've discussed this with X and Y teams, and they support the shift given the strategic importance'",
+              "A policy change should acknowledge: 'This will require buy-in from departments A and B. I've consulted with their leadership, and they've indicated support for the approach'"
+            ]
+          }
+        ],
+        "keyInsight": "Effective framing isn't about manipulating the facts\u2014it's about presenting facts through the lens of your leader's actual concerns and priorities. The same truth can be told in ways that resonate or ways that fall flat. Master leaders use framing strategically."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-03-01",
+          "title": "Reframe a Proposal",
+          "description": "Take a current proposal, project, or initiative from your work. Rewrite your pitch for it using each of the four framing approaches: (1) Alignment with leadership objectives, (2) Risk and opportunity cost, (3) Feasibility and implementation, (4) Stakeholder management. Which framing is most compelling for your specific leader? Why?",
+          "duration": "30 minutes",
+          "difficulty": "High"
+        },
+        {
+          "id": "ex-09-03-02",
+          "title": "Anticipate Objections",
+          "description": "For a proposal you're considering raising with senior leadership, list likely objections from their perspective: Why might they hesitate? What concerns might they raise? For each objection, develop a counter-frame that acknowledges the concern while supporting your proposal.",
+          "duration": "20 minutes",
+          "difficulty": "High"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-04",
+      "moduleNumber": 4,
+      "title": "Managing Expectations",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Unmet expectations are a primary source of credibility damage in relationships with senior leaders. When you commit to timelines, outcomes, or deliverables and fail to meet them, senior leaders lose trust. Yet many advisors and directors overpromise or fail to clearly set expectations upfront. This module covers how to establish realistic expectations and manage them throughout project or initiative lifecycles. Particular focus on government contexts where timelines are frequently compressed and requirements frequently change.",
+        "keyPoints": [
+          {
+            "title": "Setting Realistic Baselines",
+            "description": "The foundation of expectation management is setting realistic baselines upfront. This requires honest assessment of what's actually achievable given resource constraints, technical realities, and organizational factors. Government projects often fail because initial expectations were unrealistic and teams didn't have the courage to correct them early.",
+            "examples": [
+              "A DPI director proposing a system migration should specify: 'Phase 1 will take 6 months and cost $3M based on similar government projects. This assumes consistent resource allocation and stable requirements. If either changes, timeline extends.'",
+              "Rather than vague 'We'll improve service delivery,' commit to: 'Using the pilot approach, we'll achieve 20% efficiency gain in the identified process, measurable within Q2.'"
+            ]
+          },
+          {
+            "title": "Transparent Uncertainty",
+            "description": "Advisors often hide uncertainty because they fear losing leadership confidence. The opposite is true: hiding uncertainty and then encountering surprises damages credibility. Transparent uncertainty\u2014clearly stating what you don't know and how you'll resolve it\u2014builds credibility.",
+            "examples": [
+              "Instead of committing to a fixed timeline, say: 'Based on current understanding, 6 months is achievable. However, if legacy system integration requires custom development, we'll need 2 additional months. We'll clarify this in phase 1 and provide an updated timeline by month 2.'",
+              "Rather than 'We can definitely achieve this outcome,' say: 'This outcome is achievable through the proposed approach. The primary uncertainty is stakeholder adoption. We'll track adoption metrics monthly and adjust the approach if adoption falls below 70%.'"
+            ]
+          },
+          {
+            "title": "Expectations Throughout the Lifecycle",
+            "description": "Expectation management isn't a one-time conversation. Throughout a project or initiative, reality will diverge from initial expectations. Effective managing up means continuously updating leaders about what's on track, what's off track, and what it means.",
+            "examples": [
+              "A monthly update to a secretary shouldn't just report activities\u2014it should explicitly address expectations: 'We remain on track for Q3 completion and $2M budget. Two items in phase 1 are taking longer than anticipated, but we've adjusted scope to maintain overall timeline.'",
+              "When something goes off track, immediately notify your leader: 'I wanted to update you early on something. The vendor selection is running 2 weeks behind our initial estimate. This doesn't affect our Q3 target, but I wanted you to know rather than have it surface later.'"
+            ]
+          },
+          {
+            "title": "The Under-Promise Advantage",
+            "description": "In government contexts, consistently delivering better-than-expected results builds extraordinary credibility. Leaders who have experienced under-delivery become skeptical of all promises. By building in modest buffer and delivering results that exceed expectations, you build trust that enables larger commitments later.",
+            "examples": [
+              "If you estimate 6 months for a project and deliver in 5 months, that's a win. If you estimate 4 months and deliver in 5, that's a loss, even though the actual outcome is the same.",
+              "A policy initiative that commits to 80% stakeholder adoption and achieves 90% builds more credibility than one that commits to 95% and achieves 90%"
+            ]
+          }
+        ],
+        "keyInsight": "The foundation of credibility with senior leaders is reliability. Make conservative commitments and exceed them. Update continuously about what's on and off track. Acknowledge uncertainty transparently. This builds trust that enables influence on harder issues later."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-04-01",
+          "title": "Expectation Setting Conversation",
+          "description": "Prepare for an upcoming conversation with your leader about a project or initiative timeline. Structure: (1) What are they likely expecting?, (2) What would be realistic to commit to?, (3) Where is uncertainty highest?, (4) How will you present the realistic timeline in a way that inspires confidence?, (5) How will you manage expectations throughout execution?",
+          "duration": "25 minutes",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ex-09-04-02",
+          "title": "The Expectation Update",
+          "description": "Identify a situation where something in your work is falling behind schedule, exceeding budget, or becoming more difficult than initially assessed. Prepare a brief update for your leader that: acknowledges the expectation change, explains what's causing it, provides a path forward, and restores confidence in the outcome. Practice delivering it clearly and directly.",
+          "duration": "20 minutes",
+          "difficulty": "High"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-05",
+      "moduleNumber": 5,
+      "title": "Delivering Bad News",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Every advisor and director eventually must deliver bad news to senior leadership: a project is behind schedule, an initiative cost more than anticipated, a capability can't be delivered, a risk has materialized, or an external factor has created a problem. How you deliver bad news fundamentally shapes whether it damages or strengthens your relationship with senior leaders. This module covers when to raise bad news, how to structure the conversation, and how to position yourself as part of the solution rather than the problem.",
+        "keyPoints": [
+          {
+            "title": "Speed and Timing",
+            "description": "The most common mistake advisors make is delaying bad news. Hoping a problem resolves itself, waiting until you have a perfect solution, or letting a leader hear it through the grapevine all damage credibility. Bad news should be raised immediately\u2014ideally before it becomes public or reaches your leader through other channels.",
+            "examples": [
+              "A vendor is behind on deliverables: Raise it as soon as you recognize it won't be on time, not when the late delivery date arrives",
+              "A system outage impacts citizen-facing services: Inform leadership immediately, not after the media learns about it"
+            ]
+          },
+          {
+            "title": "Structure and Positioning",
+            "description": "How you structure bad news communication determines how it's received. Effective structure: immediate acknowledgment of the problem, clear explanation of what happened and why, immediate next steps you're taking, and what you need from leadership. Position yourself as taking action to solve the problem, not as the person who caused it.",
+            "examples": [
+              "Don't: 'We have a problem. The vendor missed deliverables. I'm not sure what happens next.' Do: 'I wanted to flag an issue immediately. The vendor won't hit the Q2 delivery date due to [specific reason]. Here's what I'm doing about it: 1) Reassessed timeline, 2) Engaged vendor management, 3) Identified interim workaround. We'll hit Q3 instead of Q2. What I need from you: approval to shift the timeline and resource support for the interim solution.'",
+              "Don't: 'We've had some issues with the implementation.' Do: 'I'm raising something that requires your attention. Implementation in Region X is behind schedule due to [specific reason]. My team is taking these steps: [list]. To keep the overall timeline intact, I need to adjust scope in Region Y. Here's what that means for your stakeholder commitments.'"
+            ]
+          },
+          {
+            "title": "Prepare for Questions",
+            "description": "When delivering bad news, senior leaders will ask probing questions. They want to understand: Why didn't you catch this earlier? What's your confidence in the new plan? What's the impact on stakeholders? Will this affect my other priorities? Prepare thoughtful answers that show you've thought through implications.",
+            "examples": [
+              "Expect: 'Will this impact the budget outcome?' Prepare: 'The additional cost is $X. We can absorb it through [specific reallocation] or reduce scope in [specific area]. Here's the impact either way.'",
+              "Expect: 'Will this become public?' Prepare: 'The likelihood of external visibility is [high/medium/low] because [reason]. Here's how we'll manage stakeholder communication.'"
+            ]
+          },
+          {
+            "title": "Recovery and Credibility",
+            "description": "Delivering bad news can actually strengthen credibility if handled well. Leaders come to trust advisors who raise issues early, provide clear analysis, take action, and deliver on revised commitments. The opposite\u2014advisors who hide bad news and then miss revised deadlines\u2014lose all credibility.",
+            "examples": [
+              "A director who delivers bad news and then hits revised timelines becomes trusted. A director who hides bad news and then misses deadlines loses credibility.",
+              "A CIO who proactively identified security issues and addressed them early builds more credibility than one who avoids discussing problems until they become crises"
+            ]
+          }
+        ],
+        "keyInsight": "Bad news is inevitable in any significant initiative. The question isn't whether bad news will arise\u2014it's how you'll handle it. Deliver it early, take ownership of the solution, and execute on what you commit. This builds credibility that serves you for years."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-05-01",
+          "title": "Bad News Conversation",
+          "description": "Identify a current or recent situation in your work where bad news needed to be (or needs to be) delivered to your leader. Write out the conversation: (1) How you'll lead the conversation, (2) The specific issue and why it happened, (3) Steps you're taking to address it, (4) What you need from them. Practice delivering it with attention to tone and clarity.",
+          "duration": "30 minutes",
+          "difficulty": "High"
+        },
+        {
+          "id": "ex-09-05-02",
+          "title": "Anticipate the Response",
+          "description": "For the bad news scenario you prepared in Ex 1, anticipate three challenging questions your leader might ask. For each, prepare a thoughtful answer that shows you've fully assessed the situation. How will you demonstrate that this is a contained issue and not a symptom of broader problems?",
+          "duration": "20 minutes",
+          "difficulty": "High"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-06",
+      "moduleNumber": 6,
+      "title": "Building Trust Over Time",
+      "duration": "40 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Influence with senior leaders is built on trust, and trust is built through consistent patterns of behavior over time. You can't develop deep influence through a single conversation or perfect proposal. Instead, trust is earned through: doing what you say you'll do, being reliable and consistent, providing valuable input that proves you understand their world, offering honest advice even when it conflicts with what they want to hear, and demonstrating commitment to outcomes beyond your narrow area. This module explores how to systematically build trust with senior leaders through intentional relationship investment.",
+        "keyPoints": [
+          {
+            "title": "Predictability and Consistency",
+            "description": "Trust is built first on predictability. Can your leader count on you to deliver what you commit? To show up prepared for meetings? To think through problems before raising them? Consistency across dozens of interactions compounds into deep trust. A single failure of reliability damages that trust.",
+            "examples": [
+              "A DPI advisor who consistently arrives at meetings prepared, asks thoughtful questions, and provides balanced analysis builds trust over 6-12 months. If they suddenly arrive unprepared, that trust is partially damaged.",
+              "A team that consistently hits timelines for smaller deliverables becomes trusted on larger initiatives. The track record is what enables bigger commitments."
+            ]
+          },
+          {
+            "title": "Honest Counsel",
+            "description": "Senior leaders want advisors who will tell them the truth, even when it's uncomfortable. Advisors who always agree, who avoid difficult conversations, or who tell senior leaders what they want to hear quickly lose influence. Trusted advisors sometimes say 'no' or 'that approach won't work' or 'you're not going to like this, but here's what I'm seeing.'",
+            "examples": [
+              "A director tells their secretary: 'I agree this is a great strategic direction. I'm concerned about the timeline. Given the technical complexity and stakeholder changes required, I think we need 9 months, not 6 months. I want you to know this upfront so you can adjust messaging to key stakeholders.'",
+              "A policy advisor tells their minister: 'This proposal aligns with your objectives. I'm seeing three significant implementation risks that we should address before public announcement. Let me walk through them.'"
+            ]
+          },
+          {
+            "title": "Demonstrated Understanding",
+            "description": "Senior leaders trust advisors who clearly understand their world\u2014their pressures, constraints, and objectives. This understanding is demonstrated through the questions you ask, the information you provide unprompted, and the way you frame issues. It's the difference between 'here's the problem' and 'here's the problem in the context of your current stakeholder situation and budget cycle.'",
+            "examples": [
+              "An advisor who knows their secretary's current political pressures and frames recommendations accordingly is trusted more than one who ignores political context",
+              "A CIO who understands the finance minister's cost-reduction mandate and proposes solutions that address both IT needs and budget pressure builds more credibility than one who only focuses on technical requirements"
+            ]
+          },
+          {
+            "title": "Expanding Influence Through Relationships",
+            "description": "Trust with your direct leader creates the foundation, but influence expands when you build relationships across the leadership structure. Trusted relationships with peers' leaders, gatekeepers, and stakeholders multiply your influence. These relationships are built through the same principles: reliability, honest counsel, demonstrated understanding.",
+            "examples": [
+              "A DPI advisor who builds trust with department CIOs can influence their decisions and gain their support for DPI initiatives. This multiplies influence beyond their direct leader.",
+              "A policy coordinator who is trusted by both their minister and the secretary of finance can broker agreements that serve both leaders' objectives."
+            ]
+          }
+        ],
+        "keyInsight": "You can't force trust or shortcut it. Trust is built through consistent behavior over time\u2014doing what you say, being honest even when it's uncomfortable, demonstrating understanding of your leader's world, and taking actions that prove your commitment to outcomes beyond your narrow role. This is a marathon, not a sprint."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-06-01",
+          "title": "Your Track Record",
+          "description": "Review the last 12 months of your relationship with your senior leader. List specific examples where you: (1) Delivered what you committed, (2) Met or exceeded expectations on a significant item, (3) Raised a difficult perspective that proved valuable, (4) Made a mistake and handled it well. What patterns do you see? What does your track record suggest about the trust level?",
+          "duration": "20 minutes",
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ex-09-06-02",
+          "title": "Where to Invest",
+          "description": "Identify three people in your leader's network who could amplify your influence (their peers, other department leaders, their chief of staff). For each, assess: (1) Current relationship status, (2) One thing you could do to build that relationship, (3) How that relationship would expand your influence. Develop a 6-month plan to invest in at least one key relationship.",
+          "duration": "25 minutes",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-07",
+      "moduleNumber": 7,
+      "title": "Navigating Political Dynamics",
+      "duration": "45 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Government is inherently political. Even technical decisions are shaped by political context\u2014competing interests, factional alignments, personal relationships, and the political standing of various leaders. The most technically sound proposal can fail if it's politically naive. Conversely, political awareness allows you to position initiatives for success. This module covers recognizing political dynamics, positioning proposals politically, and building coalitions that support your objectives. The focus is on ethical navigation\u2014using political awareness to advance legitimate objectives, not to manipulate or circumvent proper process.",
+        "keyPoints": [
+          {
+            "title": "Recognize Political Alignments and Factions",
+            "description": "Within government, there are always informal alignments and factions. Understanding who aligns with whom, what each faction prioritizes, and where conflicts or shared interests exist is essential for effective managing up. These alignments are rarely explicit but are visible in funding decisions, appointment patterns, and coalition dynamics.",
+            "examples": [
+              "In a ministry, the operations team may align with the finance team around cost control, while the innovation team aligns with the minister's office around new initiatives. Understanding this allows you to frame proposals appropriately for different audiences.",
+              "At the DPI level, some agencies prioritize digital transformation while others prioritize stability. A proposal that doesn't account for these different priorities will face unexpected resistance."
+            ]
+          },
+          {
+            "title": "Position for Political Buy-In",
+            "description": "Before raising a significant proposal or initiative, identify who needs to support it for it to succeed. Not just your direct leader, but peer leaders, oversight bodies, political offices, and key stakeholders. Effective positioning means understanding what each cares about and positioning the initiative in those terms.",
+            "examples": [
+              "A system modernization proposal should be positioned to the finance leader as cost reduction, to the innovation officer as capability improvement, to the operations leader as service reliability, and to the minister's office as delivery of their stated objectives.",
+              "A policy change should be positioned to affected departments as solving their problems, to oversight bodies as strengthening controls, to political office as delivering on commitments, and to unions (if relevant) as protecting workforce stability."
+            ]
+          },
+          {
+            "title": "Build Coalitions Proactively",
+            "description": "Major initiatives succeed when they have broad coalition support. This doesn't mean everyone agrees\u2014it means people whose support is essential understand the initiative and are willing to actively support it. Building these coalitions happens before formal approval processes, through conversation and persuasion.",
+            "examples": [
+              "Before formally proposing a significant reorganization, a secretary should have conversations with key department heads to understand concerns and secure their support. Formal proposals should then surface as confirmation, not surprise.",
+              "A DPI director proposing a shared services platform should secure buy-in from major agency heads before formal government approval. Their visible support makes formal approval much easier."
+            ]
+          },
+          {
+            "title": "Navigate Cross-Government Complexity",
+            "description": "Many significant initiatives involve multiple government entities. Success requires understanding not just your own leadership but the leadership of other agencies or departments. Different leaders have different priorities and constraints. Effective proposals acknowledge this complexity and show respect for it.",
+            "examples": [
+              "An interagency data-sharing initiative must address security concerns from one department, cost concerns from another, and operational concerns from a third. The proposal that acknowledges and addresses each concern has a better chance of success.",
+              "A citizen-facing digital service must align with the lead agency's objectives, benefit other agencies, not threaten any agency's core capabilities, and fit within the political narrative around government digital services."
+            ]
+          }
+        ],
+        "keyInsight": "Political awareness isn't cynicism\u2014it's clarity about how government actually works. Acknowledge that political context shapes decisions. Understand competing interests. Build coalitions. Position initiatives in terms of what different leaders care about. This is how significant change happens in government."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-07-01",
+          "title": "Map the Political Landscape",
+          "description": "For your organization or ministry, create a one-page political map: (1) Identify the key leaders/stakeholders, (2) What each prioritizes or cares about, (3) Where alliances exist, (4) Where tensions or conflicts exist, (5) How these alignments might affect decisions on your key initiatives. How might these dynamics shape upcoming proposals?",
+          "duration": "30 minutes",
+          "difficulty": "High"
+        },
+        {
+          "id": "ex-09-07-02",
+          "title": "Coalition for Your Initiative",
+          "description": "Take a significant initiative you're working on or considering. Identify: (1) Who absolutely must support it for success, (2) Who would be important allies, (3) Who might resist and why, (4) How you'll position it for each group, (5) How you'll build coalition support before formal approval. Develop a pre-approval strategy.",
+          "duration": "35 minutes",
+          "difficulty": "High"
+        }
+      ]
+    },
+    {
+      "id": "mod-09-08",
+      "moduleNumber": 8,
+      "title": "Personal Influence Strategy",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "This final module brings together the principles from the earlier seven modules and helps you develop a personal influence strategy\u2014a deliberate approach to building credibility and influence with senior leaders that's aligned with your goals and authentic to your style. Influence isn't manipulative or inauthentic; it's the result of being clear about what you want to accomplish, understanding your leadership's context, and building relationships of trust over time. This module helps you create a concrete action plan.",
+        "keyPoints": [
+          {
+            "title": "Clarity About Your Influence Goals",
+            "description": "Before you can build influence effectively, you need to be clear about what you're trying to influence. What decisions do you want to affect? What changes do you want to drive? What outcomes do you care about? This clarity shapes how you invest your time and energy. Without it, you might work hard but in fragmented ways.",
+            "examples": [
+              "A DPI advisor might say: 'I want to influence decisions around cloud adoption across government. This requires credibility with the DPI secretary, alignment with the finance minister's cost objectives, and buy-in from agency leaders. I'll build this by: demonstrating expertise, positioning cloud adoption as cost-reducing, and helping agencies understand the benefits.'",
+              "A director might say: 'I want to drive modernization of our legacy systems while managing stakeholder risk. This requires credibility with the secretary on both capability and risk management. I'll build this by: delivering on smaller initiatives first, being transparent about risks, and building broad coalition support.'"
+            ]
+          },
+          {
+            "title": "Authentic Style and Approach",
+            "description": "Influence strategies vary dramatically based on personality, context, and style. Some people are most influential through formal presentations and data; others through relationships and conversation; others through written communication and analysis. The most sustainable influence strategy is one that aligns with your authentic strengths rather than trying to mimic someone else's approach.",
+            "examples": [
+              "An analytical person building influence through deep data and research will be more credible than trying to be charismatic. An intuitive person building influence through relationships and story will be more credible than trying to be data-driven.",
+              "A structured person can build influence through excellent process and documentation. A flexible person can build influence through responsiveness and adaptation. Each approach works; alignment with your authentic style makes it sustainable."
+            ]
+          },
+          {
+            "title": "Relationship Mapping and Investment",
+            "description": "Influence isn't built with just your direct leader. It's built through a network of relationships: your leader, peers' leaders, gatekeepers, stakeholders, and lateral relationships. A deliberate influence strategy identifies which relationships matter most for your goals and invests intentionally in developing them.",
+            "examples": [
+              "A DPI advisor focused on driving digital transformation would map relationships with: the DPI secretary, the finance minister, department CIOs, and the secretary's chief of staff. Each relationship requires different investment and offers different value.",
+              "A director focused on organizational modernization would map: their secretary, peers, key department heads, and potentially oversight bodies. Different relationships serve different purposes in building support for modernization."
+            ]
+          },
+          {
+            "title": "Consistency and Reinforcement",
+            "description": "An influence strategy only works if it's consistently executed over time. This means: showing up for meetings prepared, delivering on commitments, maintaining your communication pattern, staying engaged on your key issues, and continuously reinforcing your key messages. Sporadic effort builds sporadic influence.",
+            "examples": [
+              "If your strategy includes monthly check-ins with your leader focused on strategic issues, you need to maintain that consistency. Missing months or becoming unfocused undermines the strategy.",
+              "If your strategy includes building visibility across peer organizations, that requires consistent engagement\u2014not a one-time event. Monthly updates, quarterly touchpoints, and annual forums build visibility."
+            ]
+          }
+        ],
+        "keyInsight": "Influence is built deliberately, authentically, and over time. It requires clarity about what you want to influence, self-awareness about your authentic style, strategic relationship investment, and consistent execution. The payoff is being able to drive meaningful change in complex government environments."
+      },
+      "exercises": [
+        {
+          "id": "ex-09-08-01",
+          "title": "Your Influence Strategy",
+          "description": "Develop your personal influence strategy for the next 12 months. Include: (1) Clarity\u2014What do you want to influence? What decisions matter to your goals?, (2) Style\u2014How do you naturally build credibility? What's authentic to you?, (3) Relationships\u2014Who do you need to build/deepen relationships with? How?, (4) Consistency\u2014What will you do consistently? How will you maintain that?, (5) Metrics\u2014How will you know it's working? What evidence suggests growing influence?",
+          "duration": "40 minutes",
+          "difficulty": "High"
+        },
+        {
+          "id": "ex-09-08-02",
+          "title": "First 30-Day Implementation",
+          "description": "Based on your influence strategy, outline your first 30-day implementation plan. What's the one thing you'll do this month to build influence in your key relationship? How will you show up differently? What conversation will you initiate? What will you deliver? Make it specific and concrete.",
+          "duration": "20 minutes",
+          "difficulty": "Medium"
+        }
+      ]
+    }
+  ]
+}

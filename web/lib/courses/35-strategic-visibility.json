@@ -1,0 +1,556 @@
+{
+  "id": "strategic-visibility",
+  "slug": "strategic-visibility",
+  "courseNumber": 35,
+  "title": "Strategic Visibility",
+  "subtitle": "Managing Your Professional Profile",
+  "tier": 4,
+  "category": "Advanced Leadership",
+  "duration": "4 hours",
+  "difficulty": "Expert",
+  "description": "Build strategic visibility to increase influence and advance DPI initiatives. Learn how to manage your professional reputation, leverage networks, and communicate your value while navigating the complexities of public sector visibility.",
+  "learningObjectives": [
+    "Build professional reputation through strategic positioning and consistent delivery",
+    "Leverage visibility for impact on policy implementation and organizational change",
+    "Navigate visibility risks and manage professional reputation in the public sector"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": "DPI advisors, government IT directors, policy coordinators",
+  "modules": [
+    {
+      "id": 1,
+      "title": "Understanding Strategic Visibility",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Strategic visibility is the deliberate management of your professional profile to amplify influence and create opportunities for impact. In government and DPI contexts, visibility isn't about self-promotion\u2014it's about ensuring your expertise and contributions are known to stakeholders who can benefit from them. This module explores why visibility matters for leaders driving digital policy initiatives.",
+        "keyPoints": [
+          {
+            "title": "Visibility as a Leadership Leverage Point",
+            "description": "In the public sector, visibility directly impacts your ability to drive change. When DPI directors, policy coordinators, and government IT leaders are known for their expertise, they gain credibility that translates into policy adoption and implementation success. Strategic visibility creates gravitational pull for talent, resources, and partnership.",
+            "example": "A DPI advisor known for digital transformation expertise attracts invitations to cross-agency working groups, increasing their influence on policy direction."
+          },
+          {
+            "title": "The Visibility-Influence Relationship",
+            "description": "Visibility without substance fails; substance without visibility doesn't scale. The most impactful government leaders balance deep expertise with strategic communication. Your visibility should accurately reflect your contributions and position you to solve larger problems.",
+            "example": "A government IT director who quietly delivers results has limited impact on culture change. But when their innovations are visible across agencies, they shape technology adoption patterns."
+          },
+          {
+            "title": "Visibility in Government Context",
+            "description": "Government visibility operates differently than private sector visibility. Public sector professionals must navigate transparency requirements, political sensitivities, and the expectation of serving the public good. Effective visibility is truthful, humble, and focused on impact rather than personal advancement.",
+            "example": "A policy coordinator cannot claim credit for policy outcomes alone, but can become known for their role in bringing stakeholders together to solve problems."
+          },
+          {
+            "title": "The Cost of Invisibility",
+            "description": "Invisible experts remain stuck at current levels because decision-makers don't know their capabilities. Opportunities for expanded scope, leadership roles, and policy influence flow to people whose expertise is visible. Invisibility is a ceiling on impact.",
+            "example": "A brilliant DPI technical advisor remains in an individual contributor role because leadership isn't aware of their strategic thinking and problem-solving abilities."
+          }
+        ],
+        "keyInsight": "Strategic visibility in government is about creating resonance\u2014ensuring the right people know about your contributions at the right time. It's not about visibility for its own sake, but visibility that increases your capacity to drive meaningful change in digital policy implementation."
+      },
+      "exercises": [
+        {
+          "id": "1.1",
+          "title": "Visibility Audit",
+          "description": "Assess your current visibility across key stakeholder groups. For each group (your team, your division, other government agencies, policy makers), rate how well they understand your expertise and contributions. Identify the largest gap.",
+          "type": "reflection"
+        },
+        {
+          "id": "1.2",
+          "title": "Visibility Impact Map",
+          "description": "Identify a recent success in your work. Map how many stakeholders knew about it during execution, after completion, and in retrospect. Reflect on how visibility during these phases affected the outcome.",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Reputation Building",
+      "duration": "35 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Your professional reputation is built through consistent demonstration of three elements: competence, reliability, and values alignment. In the DPI context, reputation is your currency for influencing policy and building coalitions. This module explores how to intentionally build a reputation that serves your strategic objectives.",
+        "keyPoints": [
+          {
+            "title": "Competence as Foundation",
+            "description": "Reputation begins with demonstrated expertise. In government, this means delivering results on DPI initiatives, understanding policy landscape, and solving real problems. Your competence must be visible through your work, not just claimed.",
+            "example": "A government IT director who implements a successful digital identity system builds competence reputation that makes stakeholders trust their judgment on future digital infrastructure decisions."
+          },
+          {
+            "title": "Reliability Creates Trust",
+            "description": "Reliability is doing what you say you'll do, consistently, over time. In policy work where implementation timelines are unpredictable and political winds shift, being reliable becomes rare and valuable. Reliability builds the trust that allows you to influence others.",
+            "example": "A DPI advisor who consistently delivers quality analysis on implementation challenges, even when the news isn't what stakeholders want to hear, becomes the trusted voice in the room."
+          },
+          {
+            "title": "Values Alignment Enables Following",
+            "description": "People follow leaders whose values align with theirs or with institutional values. In government, clarity about your commitment to public good, equity, efficiency, or innovation creates alignment. When people see you consistently acting on these values, they trust your judgment.",
+            "example": "A policy coordinator known for insisting on equity impact analysis in all DPI decisions attracts allies who share that commitment, making them more effective at advancing equitable digital policy."
+          },
+          {
+            "title": "Reputation Building Across Contexts",
+            "description": "Your reputation varies by context and audience. You may have strong competence reputation within your agency but low visibility with federal counterparts. Strategic reputation building targets specific audiences with tailored evidence of your contributions.",
+            "example": "A state DPI director develops a reputation for successful federal grant implementation within the federal agency, which opens doors for collaboration on policy design."
+          },
+          {
+            "title": "Consistency Over Perfection",
+            "description": "Reputation builds through consistent demonstration of competence, reliability, and values, not through perfection. Mistakes are inevitable; how you handle them shapes reputation more than getting everything right. Accountability actually builds reputation.",
+            "example": "A government leader who acknowledges when a policy implementation didn't go as planned, explains what was learned, and demonstrates improved execution builds stronger reputation than one who never admits mistakes."
+          }
+        ],
+        "keyInsight": "Reputation in government contexts is built slowly through consistent demonstration of competence, reliability, and value alignment. Your reputation is your most valuable asset for influence\u2014protect it through integrity, invest in it through consistent delivery, and leverage it strategically to advance DPI objectives."
+      },
+      "exercises": [
+        {
+          "id": "2.1",
+          "title": "Reputation Dimensions",
+          "description": "Rate yourself across competence, reliability, and values alignment as perceived by three key stakeholder groups. For each dimension and group where you're below 8/10, identify what evidence would strengthen that reputation dimension.",
+          "type": "assessment"
+        },
+        {
+          "id": "2.2",
+          "title": "Reputation Story",
+          "description": "Write a 2-minute story about a complex problem you solved that demonstrates your competence, reliability, and values. Practice telling this story in a conversational way. This becomes your reputation anchor story.",
+          "type": "practice"
+        },
+        {
+          "id": "2.3",
+          "title": "Accountability in Action",
+          "description": "Identify a time when a project or initiative didn't go as planned. Write how you handled it and what reputation impact it had. Reflect on how accountability affected how others perceived you.",
+          "type": "reflection"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Thought Leadership",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Thought leadership is positioning yourself as a trusted source of insight on issues that matter. For DPI advisors and government leaders, thought leadership means being known for clarity on digital policy challenges, implementation pathways, and opportunity areas. This module explores how to develop and demonstrate thought leadership without overstepping into inappropriate self-promotion.",
+        "keyPoints": [
+          {
+            "title": "Thought Leadership Through Deep Understanding",
+            "description": "Thought leadership begins with genuine expertise and the ability to help others understand complex issues. In DPI work, this means understanding both the technical and policy dimensions of digital transformation. Your thought leadership should help others navigate complexity.",
+            "example": "A DPI advisor who can clearly explain the interplay between cybersecurity requirements, user experience design, and vendor selection becomes a thought leader that agencies consult on digital service decisions."
+          },
+          {
+            "title": "Creating and Sharing Insights",
+            "description": "Thought leadership requires regularly creating content\u2014perspectives, analyses, frameworks, or case studies\u2014that help others think differently about DPI challenges. This content can take many forms: presentations, written analyses, working group contributions, or mentoring conversations.",
+            "example": "A government IT director who develops a framework for assessing digital maturity becomes the person agencies consult when evaluating their readiness for modernization."
+          },
+          {
+            "title": "Teaching and Mentoring as Thought Leadership",
+            "description": "You don't need a public platform to be a thought leader. Teaching colleagues, mentoring junior staff, contributing to working groups, and helping peers think through problems are all forms of thought leadership. These direct relationships often generate more influence than broader platforms.",
+            "example": "A policy coordinator who regularly leads learning sessions on policy implementation becomes known as the expert that new coordinators want to learn from."
+          },
+          {
+            "title": "Intellectual Honesty and Nuance",
+            "description": "True thought leadership includes acknowledging complexity and uncertainty. In government contexts where problems often don't have clean solutions, your credibility comes from honest assessment of trade-offs and challenges, not from oversimplifying.",
+            "example": "A DPI advisor who says 'This digital policy will improve efficiency while creating transition challenges we need to manage' is more credible than one who promises only benefits."
+          },
+          {
+            "title": "Building on Others' Work",
+            "description": "Thought leadership isn't about having original ideas only\u2014it's often about connecting existing ideas in new ways, building on colleagues' work, and synthesizing diverse perspectives. Give credit, acknowledge influences, and position yourself as part of the intellectual community.",
+            "example": "A government leader who synthesizes approaches from multiple agencies into a shared framework for digital service delivery demonstrates thought leadership through integration rather than originality."
+          },
+          {
+            "title": "Timing and Relevance",
+            "description": "Thought leadership is powerful when it addresses real problems people are facing right now. Your insights gain traction when they help people solve immediate challenges or navigate current transitions.",
+            "example": "A policy coordinator's insights about managing vendor relationships during digital transformation become particularly valuable during acquisition planning phases."
+          }
+        ],
+        "keyInsight": "Thought leadership in government contexts comes from deep expertise, consistent sharing of insights, and intellectual honesty about complexity. Your thought leadership compounds over time as people increasingly look to you to help them understand and navigate DPI challenges. Position yourself as a generous teacher, not a self-appointed expert."
+      },
+      "exercises": [
+        {
+          "id": "3.1",
+          "title": "Expert Problem Mapping",
+          "description": "Identify the top 3-5 DPI or digital policy problems you understand deeply. For each, write the key insights you have that would help others think about that problem better. These become your thought leadership topics.",
+          "type": "analysis"
+        },
+        {
+          "id": "3.2",
+          "title": "Knowledge Sharing Inventory",
+          "description": "List all the ways you currently share knowledge and insights (teaching, mentoring, meetings, writing, etc.). Identify one new venue where you could share your insights regularly.",
+          "type": "planning"
+        },
+        {
+          "id": "3.3",
+          "title": "Teaching a Concept",
+          "description": "Choose one DPI or policy concept you understand well. Create a 10-minute explanation that helps someone unfamiliar with it understand the key dynamics. Practice clarity and intellectual honesty about complexity.",
+          "type": "practice"
+        },
+        {
+          "id": "3.4",
+          "title": "Synthesis Work",
+          "description": "Identify a challenge where different agencies are taking different approaches. Synthesize the pros and cons of each approach into a comparative framework. This demonstrates thought leadership through integration.",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Network Leverage",
+      "duration": "38 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Your network is your most valuable asset for visibility and influence in government. Strategic network leverage means intentionally building, maintaining, and activating networks that amplify your impact. For DPI professionals, this means networks of peers, counterparts in other agencies, policy experts, and implementation partners.",
+        "keyPoints": [
+          {
+            "title": "Networks as Visibility Amplifiers",
+            "description": "Your visibility extends through your network. When people in your network know your expertise and refer others to you, your visibility reaches far beyond your direct contacts. Strategic networks exponentially expand your visibility and opportunities.",
+            "example": "A DPI advisor whose network includes IT directors across multiple agencies becomes known to many more decision-makers through introductions from those directors than through their own direct outreach."
+          },
+          {
+            "title": "Building Networks Around Shared Purpose",
+            "description": "The strongest networks in government form around shared missions or challenges. Instead of generic networking, build networks with people working on similar DPI or policy challenges. These networks have natural cohesion and frequent reasons to stay connected.",
+            "example": "A policy coordinator who connects with counterparts in other states working on similar digital service implementations creates a network that shares learnings and best practices."
+          },
+          {
+            "title": "Giving Value Before Asking for It",
+            "description": "The most valuable networks operate on reciprocal exchange. Before you activate your network for visibility or opportunity, you should be known for giving value\u2014sharing information, making introductions, offering expertise, and helping others advance their work.",
+            "example": "A government IT director who regularly shares lessons learned about system implementations and connects peers with relevant expertise becomes someone everyone wants to stay connected with."
+          },
+          {
+            "title": "Network Maintenance Discipline",
+            "description": "Networks atrophy without maintenance. Strategic visibility requires regular, intentional network engagement\u2014checking in with key contacts, attending relevant forums, participating in working groups, and maintaining relationships across your network.",
+            "example": "A DPI advisor maintains visibility by attending quarterly peer meetings, having coffee with 2-3 key contacts monthly, and sharing relevant articles or opportunities with network members."
+          },
+          {
+            "title": "Horizontal and Vertical Network Leverage",
+            "description": "Effective networks include peers at your level (horizontal) and people more senior than you (vertical). Horizontal networks provide support and knowledge sharing; vertical networks open doors to opportunities and decision-making influence. Both are necessary.",
+            "example": "A policy coordinator builds networks with peers in other agencies for collaboration and with senior DPI leaders for mentoring and visibility into strategic decisions."
+          },
+          {
+            "title": "Bridge Networks and Unique Position",
+            "description": "Your greatest network value often comes from being a bridge between different groups\u2014connecting policy experts with implementation teams, or state initiatives with federal programs. This positioning increases your visibility and influence across boundaries.",
+            "example": "A government leader who bridges between technical teams and policy teams becomes invaluable for translating between these groups and surfacing policy implementation challenges."
+          }
+        ],
+        "keyInsight": "Strategic network leverage is about reciprocal relationships built around shared purpose. The strongest networks amplify your visibility because people in them want to introduce you and refer work to you. Invest in network building not for personal gain, but to increase your capacity to help others and drive collective impact on DPI initiatives."
+      },
+      "exercises": [
+        {
+          "id": "4.1",
+          "title": "Network Mapping",
+          "description": "Map your current professional network across these categories: peer colleagues, cross-agency contacts, thought leaders, mentors, and people you mentor. Identify gaps in your network that would expand your visibility and impact.",
+          "type": "analysis"
+        },
+        {
+          "id": "4.2",
+          "title": "Network Activation Plan",
+          "description": "Choose 5 key network relationships to strengthen. For each, identify a specific way you'll add value to that person or relationship in the next month. Execute and track what you learn.",
+          "type": "planning"
+        },
+        {
+          "id": "4.3",
+          "title": "Bridge Identification",
+          "description": "Identify where you stand as a potential bridge between important groups (departments, disciplines, levels, regions, etc.). How can you increase your value as a bridge? What expertise do you have that connects different groups?",
+          "type": "reflection"
+        },
+        {
+          "id": "4.4",
+          "title": "Referral Tracking",
+          "description": "Track referrals you make to others for one month. Notice patterns about when your introductions create value. Use these patterns to identify where you can be more intentional about bridge building.",
+          "type": "practice"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Media and Communications",
+      "duration": "42 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Media and communication are tools for amplifying visibility, but in the public sector they require careful navigation. Government professionals must balance visibility with institutional protocols, media guidelines, and the principle of serving public good. This module explores how to communicate effectively and appropriately to build visibility.",
+        "keyPoints": [
+          {
+            "title": "Speaking as Visibility Tool",
+            "description": "Speaking at conferences, panels, working groups, and training events is one of the most effective visibility tools. Speaking positions you as an expert, reaches new audiences, and creates content that extends your reach. Start with internal forums and build outward.",
+            "example": "A DPI advisor who speaks at a state CIO conference about digital identity implementation gains visibility with IT directors across the state and establishes thought leadership in that space."
+          },
+          {
+            "title": "Navigating Government Communication Guidelines",
+            "description": "Government communication often requires pre-approval, adherence to messaging, and consideration of political sensitivities. Rather than seeing these as limitations, view them as guardrails that protect you. Work within these guidelines to communicate effectively.",
+            "example": "A policy coordinator learns that significant announcements go through the Communications office first. They work with Comms to ensure their DPI implementation updates align with broader messaging while getting visibility."
+          },
+          {
+            "title": "Writing for Visibility and Impact",
+            "description": "Writing\u2014op-eds, articles, working papers, policy briefs\u2014extends your visibility beyond your direct network. Government professionals can often publish in industry publications, policy journals, or agency newsletters. Writing establishes expertise and creates searchable record of your thinking.",
+            "example": "A government IT director publishes an article in a government technology journal about lessons learned from a major digital transformation. This article becomes a visibility and credibility asset that generates speaking invitations."
+          },
+          {
+            "title": "Social Media and Digital Presence",
+            "description": "Government professionals increasingly use LinkedIn and other platforms to build visibility. Focus on sharing insights, congratulating peers, and engaging with relevant content rather than self-promotion. Build a digital presence that reflects your professional identity and expertise.",
+            "example": "A DPI advisor uses LinkedIn to share insights about implementation challenges, celebrate team wins, and engage with content on digital policy topics. This creates visibility with peers and potential partners."
+          },
+          {
+            "title": "Media Relations and Interviews",
+            "description": "When media reaches out or when your agency needs expert commentary, interviews are powerful visibility tools. Media appearances position you as an expert and create public record of your expertise. Check agency protocols before engaging with media.",
+            "example": "When implementing a major digital service affects the public, a DPI leader may be asked for interviews to explain benefits and implementation approach. These interviews build public visibility for you and the initiative."
+          },
+          {
+            "title": "Authenticity and Values in Communication",
+            "description": "Your communications should authentically reflect your expertise and values. In government, this means being honest about challenges alongside achievements, explaining why you care about the work, and letting your genuine commitment show. Authenticity builds credibility.",
+            "example": "A policy coordinator explains not just what the digital service does, but why they're passionate about making government services accessible to all citizens. This authentic communication builds connection and credibility."
+          }
+        ],
+        "keyInsight": "Communication and media presence are legitimate tools for building strategic visibility in government. Navigate institutional guidelines, speak authentically, and focus on helping others understand important issues. Your communication should position you as a trusted expert while reflecting your genuine commitment to your work."
+      },
+      "exercises": [
+        {
+          "id": "5.1",
+          "title": "Speaking Opportunity Audit",
+          "description": "List all the speaking opportunities available to you in the next year (conferences, panel discussions, working groups, training events, webinars). Identify which align with your expertise and strategic visibility goals. Commit to at least one speaking opportunity.",
+          "type": "planning"
+        },
+        {
+          "id": "5.2",
+          "title": "Media Protocol Review",
+          "description": "Research your agency's media and communication guidelines. Understand what requires approval, what channels you can use independently, and what protocols exist for public speaking. Schedule a conversation with your Communications office to clarify.",
+          "type": "research"
+        },
+        {
+          "id": "5.3",
+          "title": "Digital Presence Assessment",
+          "description": "Review your online presence (LinkedIn, agency profiles, any published work). What expertise is visible? What gaps exist? Identify one update to strengthen your visible expertise.",
+          "type": "assessment"
+        },
+        {
+          "id": "5.4",
+          "title": "Key Message Development",
+          "description": "Develop 3 key messages about your expertise or current work that you could communicate in various forums. These messages should be authentic, focused on value to your audience, and referable.",
+          "type": "writing"
+        },
+        {
+          "id": "5.5",
+          "title": "Communication Practice",
+          "description": "Record yourself explaining a complex DPI concept you understand well in 5 minutes. Review for clarity, confidence, and authenticity. Re-record until you sound like a credible expert speaking naturally.",
+          "type": "practice"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Internal Visibility",
+      "duration": "36 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Strategic visibility within your own organization is often overlooked but critically important. Your peers, supervisors, and internal colleagues determine your opportunities for growth, expanded scope, and advancement. This module explores how to build visibility with the people who make decisions about your career and influence.",
+        "keyPoints": [
+          {
+            "title": "Visibility with Your Supervisor",
+            "description": "Your direct supervisor makes key decisions about your opportunities, scope, visibility, and advancement. Strategic visibility with your supervisor means they understand your capabilities, your work quality, your potential, and your aspirations. Regular one-on-ones, clear communication about your work, and demonstrated growth build this visibility.",
+            "example": "A DPI advisor who proactively updates their supervisor on project progress, shares early drafts for feedback, and discusses how their current work develops relevant skills creates strong visibility of their competence and growth trajectory."
+          },
+          {
+            "title": "Visibility Across Your Team",
+            "description": "Visibility within your team ensures your contributions are recognized and creates foundation for internal leadership. Sharing your work, celebrating team wins, acknowledging colleagues' contributions, and being visible in team discussions builds team-level visibility.",
+            "example": "A policy coordinator who regularly shares implementation learnings with the team, asks thoughtful questions in meetings, and acknowledges when colleagues help them become known as a strong contributor."
+          },
+          {
+            "title": "Visibility with Leadership Beyond Your Supervisor",
+            "description": "Your division director, agency leadership, and cross-functional partners need visibility into your capabilities and contributions. This doesn't mean seeking extra visibility, but rather ensuring that when you participate in projects, meetings, or initiatives, your contributions are clear and visible.",
+            "example": "A government IT director who provides clear status updates in leadership meetings, shares important learnings from their team's work, and speaks up with relevant insights becomes visible to senior leadership."
+          },
+          {
+            "title": "Project Visibility and Attribution",
+            "description": "Ensure that your contributions to projects are visible and attributed appropriately. This isn't about taking credit\u2014it's about making sure stakeholders understand what role you played and the value you contributed. Clear attribution supports your reputation and future opportunities.",
+            "example": "A DPI advisor documents their role in a successful initiative, shares results with relevant stakeholders, and makes clear the expertise they contributed. This visibility leads to future requests for similar work."
+          },
+          {
+            "title": "Cross-Functional Visibility",
+            "description": "If your role touches multiple departments or functions, strategic visibility across those boundaries increases your scope and influence. Participate in cross-functional meetings, build relationships with counterparts in other functions, and become known as a connector.",
+            "example": "A policy coordinator who bridges between policy development and technology implementation becomes visible to both functions and increasingly influential in both areas."
+          },
+          {
+            "title": "Managing Up as Visibility Strategy",
+            "description": "Managing up\u2014understanding what your supervisor cares about and proactively providing information and support that matters to them\u2014increases your visibility as valuable. This isn't manipulation; it's strategic alignment between your contributions and your supervisor's priorities.",
+            "example": "A government leader who understands their director's key priorities and regularly demonstrates how their work contributes to those priorities becomes increasingly visible as essential."
+          }
+        ],
+        "keyInsight": "Internal visibility often determines your career trajectory more than external visibility. Strategic internal visibility means your supervisor and organizational leaders understand your contributions, capabilities, and growth. Invest in relationships and clear communication with people who make decisions about your opportunities."
+      },
+      "exercises": [
+        {
+          "id": "6.1",
+          "title": "Internal Stakeholder Visibility Assessment",
+          "description": "Rate your visibility with key internal stakeholders (supervisor, division head, cross-functional peers, team members). For each, identify what they don't yet know about you that would be valuable. Plan how to build that visibility.",
+          "type": "assessment"
+        },
+        {
+          "id": "6.2",
+          "title": "Supervisor Communication Plan",
+          "description": "Design your one-on-one meeting cadence and content with your supervisor. What information should they have about your work? How frequently? What format works best? Implement this plan.",
+          "type": "planning"
+        },
+        {
+          "id": "6.3",
+          "title": "Attribution Documentation",
+          "description": "For your current projects, document your key contributions clearly. Create a simple record you can reference when communicating your work to supervisors or when discussing future opportunities.",
+          "type": "organization"
+        },
+        {
+          "id": "6.4",
+          "title": "Managing Up Analysis",
+          "description": "Identify your supervisor's key priorities and success metrics. Map how your current work contributes to those priorities. Use this analysis to frame your communication more strategically.",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Managing Visibility Risks",
+      "duration": "38 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Visibility comes with risks in government contexts. Higher visibility can attract scrutiny, create expectations, expose you to criticism, and sometimes create political complications. Strategic leaders understand and proactively manage these risks. This module explores visibility risks and mitigation strategies.",
+        "keyPoints": [
+          {
+            "title": "The Visibility-Scrutiny Trade-off",
+            "description": "Higher visibility means more people paying attention to your work. This increased scrutiny is a natural consequence of visibility. Prepare for this by ensuring your work quality supports visibility and by being transparent about challenges and limitations.",
+            "example": "A DPI advisor who becomes publicly visible for leading a major transformation initiative should expect scrutiny when implementation challenges occur. Proactive communication about challenges and solutions mitigates this risk."
+          },
+          {
+            "title": "Political Complications of Visibility",
+            "description": "In government, visibility can sometimes create political complications. If your work becomes politically sensitive or if you become associated with particular policy positions, visibility can complicate relationships. Navigate this by staying focused on policy substance over politics.",
+            "example": "A policy coordinator leading digital service implementation that affects how citizens interact with government should understand potential political sensitivities and communicate carefully about implementation impacts."
+          },
+          {
+            "title": "Over-Visibility and Credibility Risk",
+            "description": "Excessive self-promotion or visibility without substantive contribution damages credibility. In government contexts where humility and service orientation are valued, over-visibility can create backlash. Strategic visibility is proportional to your contributions.",
+            "example": "A leader who is constantly talking about their achievements but not delivering results loses credibility. Visibility should be about what you've accomplished, not about self-promotion."
+          },
+          {
+            "title": "Visibility and Vulnerability",
+            "description": "The higher your visibility, the more mistakes are visible. This isn't a reason to avoid visibility, but it's a reason to build resilience and transparency around failures. Leaders who can transparently handle mistakes maintain credibility even when visible.",
+            "example": "A government leader who transparently acknowledges when an implementation didn't go as planned, explains what was learned, and demonstrates improved execution maintains credibility and actually strengthens reputation."
+          },
+          {
+            "title": "Managing Expectations from Increased Visibility",
+            "description": "When you become visible as an expert, people expect you to have solutions to complex problems. Manage expectations by being honest about complexity, acknowledging uncertainty, and setting realistic timelines. Over-promising due to visibility pressure damages credibility.",
+            "example": "A DPI advisor visible for digital transformation expertise should manage the expectation that they can instantly solve every agency's technology challenges. Instead, offer realistic assessment and phased approach."
+          },
+          {
+            "title": "Privacy and Personal Boundaries",
+            "description": "Increased visibility can blur professional and personal boundaries. Decide consciously what aspects of your personal life are shared publicly and maintain appropriate boundaries. Public visibility doesn't require personal exposure.",
+            "example": "A government leader can be professionally visible\u2014speaking, writing, engaging with peers\u2014without sharing personal details, family information, or private opinions on unrelated topics."
+          },
+          {
+            "title": "Institutional Risk Management",
+            "description": "Very high visibility can sometimes create institutional risk. If you're the sole person visible on important initiatives, or if your visibility creates misperceptions about your authority, work with your organization to distribute visibility and ensure clear accountability.",
+            "example": "A policy coordinator visible for successful implementation should ensure that the vision and success is attributed to the team and the organization, not just to them personally."
+          }
+        ],
+        "keyInsight": "Strategic visibility requires actively managing risks. Visibility amplifies both your successes and your mistakes. Prepare for increased scrutiny through quality work, transparency about challenges, and honest communication. The most credible leaders maintain visibility while managing risks through integrity and realistic expectations."
+      },
+      "exercises": [
+        {
+          "id": "7.1",
+          "title": "Risk Assessment",
+          "description": "Consider your current visibility level. What are the potential risks from higher visibility in your context? Which risks are highest probability and highest impact? What mitigating actions could you take?",
+          "type": "analysis"
+        },
+        {
+          "id": "7.2",
+          "title": "Vulnerability Preparation",
+          "description": "Identify potential failure points in your current work or initiatives where visibility might expose challenges. For each, plan how you would communicate transparently if issues occurred.",
+          "type": "planning"
+        },
+        {
+          "id": "7.3",
+          "title": "Expectation Management",
+          "description": "Identify situations where visibility might create unrealistic expectations. Develop language you can use to set realistic expectations without undermining your credibility.",
+          "type": "writing"
+        },
+        {
+          "id": "7.4",
+          "title": "Boundary Reflection",
+          "description": "Reflect on what you're willing to share publicly versus what remains private. Create clear personal boundaries around visibility and communication.",
+          "type": "reflection"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Personal Visibility Strategy",
+      "duration": "41 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Strategic visibility is ultimately personal and intentional. This final module brings together the concepts from previous modules into a coherent personal visibility strategy. You'll design a approach to visibility that aligns with your values, leverages your strengths, and supports your strategic objectives in advancing DPI initiatives.",
+        "keyPoints": [
+          {
+            "title": "Alignment Between Vision and Visibility",
+            "description": "Your visibility strategy should align with your career vision and values. If you aspire to policy influence, visibility among policy makers matters. If you want to build implementation capacity, visibility among practitioners matters. Your visibility strategy should serve your authentic aspirations.",
+            "example": "A DPI advisor who wants to influence federal policy builds visibility with federal decision-makers, while one focused on state implementation builds visibility with state practitioners. Same expertise, different visibility strategy."
+          },
+          {
+            "title": "Playing to Your Strengths",
+            "description": "Visibility strategy should leverage your natural strengths. If you're a strong writer, visibility through writing. If you're a compelling speaker, visibility through speaking. If you're a relationship builder, visibility through networks. Work with your strengths, not against them.",
+            "example": "A policy coordinator who is naturally thoughtful and thorough might build visibility through detailed written analysis, while one who is charismatic might build visibility through speaking and conveying enthusiasm."
+          },
+          {
+            "title": "Integrated Visibility Approach",
+            "description": "The most effective visibility strategies integrate multiple channels\u2014internal visibility, external speaking, thought leadership, networks, communications. Rather than relying on a single visibility method, create integrated approach where different channels reinforce each other.",
+            "example": "A government IT director builds visibility through successful implementations (internal), speaking at conferences (external), publishing articles (thought leadership), and maintaining active network (relationships)."
+          },
+          {
+            "title": "Visibility Timeline and Progression",
+            "description": "Effective visibility strategies have progression. Early career focuses on building competence and internal visibility. Mid-career adds external visibility and thought leadership. Senior roles build visibility for institutional impact. Align your visibility strategy with your career stage.",
+            "example": "A policy coordinator early in career builds visibility within their agency through quality work, while a mid-career coordinator might add state-level visibility through conference speaking."
+          },
+          {
+            "title": "Measurement and Adjustment",
+            "description": "How will you know if your visibility strategy is working? Define measures\u2014awareness among target audiences, opportunities generated, influence on initiatives, leadership recognition. Regularly assess and adjust your approach.",
+            "example": "A DPI advisor measures visibility strategy success through invitations to participate in important meetings, requests for input on decisions, and feedback that people understand their expertise."
+          },
+          {
+            "title": "Consistency and Patience",
+            "description": "Building strategic visibility takes time. Consistency across your visibility approach\u2014same key messages, similar positioning, regular engagement\u2014builds visibility faster than scattered efforts. Be patient and persistent.",
+            "example": "A government leader who speaks once a year, inconsistently maintains their network, and randomly publishes has less visibility than one who regularly speaks, maintains relationships, and consistently shares insights."
+          },
+          {
+            "title": "Visibility in Service of Larger Goals",
+            "description": "The ultimate purpose of your visibility strategy is not personal advancement, but increased capacity to drive meaningful change in digital policy and implementation. Keep this larger purpose in mind as you build visibility.",
+            "example": "A DPI advisor becomes visible not to build their career, but because broader visibility means more agencies understand their expertise and can benefit from it, increasing overall DPI impact."
+          }
+        ],
+        "keyInsight": "Your personal visibility strategy should be intentional, aligned with your values and career vision, integrated across multiple channels, and focused on increasing your impact on DPI initiatives. Build visibility consistently over time, play to your strengths, and remember that visibility is ultimately in service of your ability to drive change."
+      },
+      "exercises": [
+        {
+          "id": "8.1",
+          "title": "Personal Visibility Strategy Draft",
+          "description": "Synthesize your learning from this course into a personal visibility strategy. Include: your visibility vision (what visibility looks like 2-3 years from now), target audiences, visibility channels, key messages, and success measures. This becomes your roadmap.",
+          "type": "strategic-planning"
+        },
+        {
+          "id": "8.2",
+          "title": "90-Day Visibility Plan",
+          "description": "From your broader strategy, extract specific actions for the next 90 days. What visibility channels will you activate? Which relationships will you strengthen? What speaking or writing opportunities will you pursue? Be concrete and measurable.",
+          "type": "planning"
+        },
+        {
+          "id": "8.3",
+          "title": "Strength-Based Visibility",
+          "description": "Identify 3 strengths that can support your visibility strategy. For each, determine the visibility channels that leverage that strength. Design your approach around what comes naturally to you.",
+          "type": "assessment"
+        },
+        {
+          "id": "8.4",
+          "title": "Accountability Partnership",
+          "description": "Identify one person who can serve as an accountability partner for your visibility strategy. Schedule monthly check-ins to discuss progress, challenges, and adjustments. Their outside perspective will help you stay focused.",
+          "type": "commitment"
+        },
+        {
+          "id": "8.5",
+          "title": "Visibility Strategy Review",
+          "description": "Schedule a quarterly review of your visibility strategy. Assess what's working, what isn't, what's changed in your priorities, and what adjustments make sense. Visibility strategy is iterative.",
+          "type": "review"
+        }
+      ]
+    }
+  ]
+}

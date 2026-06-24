@@ -1,0 +1,402 @@
+{
+  "id": "product-pitch-presentations",
+  "slug": "product-pitch-presentations",
+  "courseNumber": 42,
+  "title": "Product Pitch Presentations",
+  "subtitle": "Six Frameworks, One Room — Choose the Right Story",
+  "tier": 6,
+  "category": "Communication and Influence",
+  "duration": "10 hours",
+  "difficulty": "Advanced",
+  "description": "There is no universal pitch structure. The right framework depends on who is in the room and how much time you have. This course teaches six distinct pitch architectures — when each works, when it fails, and how to execute each with enough precision that your audience moves. You will work through case studies that put you in high-stakes pitching situations: cold investor decks, conference keynotes, grant panels, government ministry meetings, and internal positioning workshops. By the end you will be able to read a room and pick the right frame before you open your mouth.",
+  "learningObjectives": [
+    "Diagnose which of the six frameworks fits a given audience, time slot, and ask",
+    "Execute the Problem-first structure for cold decks and time-boxed investor meetings",
+    "Execute the Hero's journey structure for conference keynotes and partner conversations",
+    "Use Jobs-to-be-done as a positioning tool before writing any external pitch",
+    "Execute the Future-back structure for government and philanthropic audiences",
+    "Execute the Insight ladder structure for grant panels and sophisticated listeners",
+    "Execute the Data-then-story structure for impact funders",
+    "Identify the single most common mistake in each framework and avoid it",
+    "Adapt any framework to add emotional pull without becoming manipulative"
+  ],
+  "prerequisites": [
+    "crafting-offers",
+    "technical-communication",
+    "negotiation-skills"
+  ],
+  "relatedCourses": [
+    "funding-resource-mobilization",
+    "working-with-donors",
+    "stakeholder-onboarding",
+    "influence-without-authority"
+  ],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "The Framework Selection Problem",
+      "duration": "45 min",
+      "type": "theory",
+      "content": {
+        "overview": "Most pitch advice treats storytelling as a single skill with one correct form. It is not. The right pitch architecture depends on three variables: who your audience is, how much time you have, and what you want them to do when you are done. Getting the framework wrong is not a detail error — it is a category error. A Future-back pitch to a time-boxed VC sounds like you cannot get to the point. A Problem-first pitch to a Gates Foundation program officer sounds like you do not understand systems. Before you write a single slide, you need to diagnose the room.",
+        "keyPoints": [
+          {
+            "title": "The two-axis diagnostic",
+            "description": "Map every pitch situation on two axes: (1) How well does the audience already understand the problem space? (2) How emotionally engaged do you need them to be versus intellectually convinced?",
+            "axes": [
+              "Axis 1 — Problem familiarity: Novice (needs education) → Expert (needs a non-obvious insight)",
+              "Axis 2 — Persuasion mode: Rational (evidence, logic, ROI) → Emotional (identity, narrative, aspiration)"
+            ],
+            "implications": [
+              "Novice + Rational → Problem-first. They need to understand what is broken before they can care about your fix.",
+              "Novice + Emotional → Hero's journey. They need to feel the human cost before they can understand the system.",
+              "Expert + Rational → Insight ladder. They already know the problem. Give them a non-obvious 'so what' they have not seen.",
+              "Expert + Emotional → Future-back. They know the system. Give them a destination worth traveling toward.",
+              "Internal team → JTBD. Before any external pitch, clarify exactly what job the product does and for whom.",
+              "Impact funder, any expertise level → Data-then-story. Scale stat plus one human face is the format they expect."
+            ]
+          },
+          {
+            "title": "The time constraint is not negotiable",
+            "description": "Time slot determines which frameworks are available to you.",
+            "timeMap": [
+              "Under 5 minutes: Problem-first only. No other framework survives this constraint.",
+              "5-15 minutes: Problem-first or Insight ladder.",
+              "15-30 minutes: Any framework. Hero's journey becomes viable.",
+              "30+ minutes: Future-back becomes powerful. Hero's journey can breathe.",
+              "Conference keynote (20-45 min): Hero's journey or Future-back.",
+              "Grant panel (10-20 min with Q&A): Insight ladder or Data-then-story."
+            ]
+          },
+          {
+            "title": "The ask must be specific before you choose the frame",
+            "description": "You cannot select a pitch framework until you know exactly what you want the audience to do. 'Be interested' is not an ask. Specific asks: sign a term sheet, approve a grant, write a letter of support, share a network introduction, vote to proceed to next stage. Each ask has different emotional prerequisites — and the framework you choose should engineer those prerequisites.",
+            "examples": [
+              "Term sheet signature → The investor needs confidence + urgency. Problem-first with a sharp 'why now' section.",
+              "Grant approval → The funder needs alignment + trust. Insight ladder or Future-back depending on their sophistication.",
+              "Letter of support from ministry → Government official needs to see their legacy. Future-back.",
+              "Conference audience shares your talk → They need to feel something. Hero's journey."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "module-2",
+      "title": "Problem-First: The Workhorse",
+      "duration": "90 min",
+      "type": "theory_and_practice",
+      "content": {
+        "overview": "Problem-first is the most versatile pitch structure because it respects the audience's time. It starts with undeniable evidence that something is broken, earns attention by proving the problem is real, then reveals the solution as the logical next step. Its weakness is that it can feel clinical — it wins intellectually but not emotionally. Strong Problem-first pitches add a single human face to the evidence. The structure: Problem → Affected population → Why now → Solution → Proof → Ask.",
+        "keyPoints": [
+          {
+            "title": "Opening: The undeniable opening",
+            "description": "The first sentence must establish that something important is broken without qualification or throat-clearing. Not 'We live in a world where...' Not 'It is estimated that...' State the failure directly.",
+            "badExamples": [
+              "'Digital public infrastructure has tremendous potential to transform government services, but it also faces significant challenges...'",
+              "'According to recent studies, there may be a gap in...'",
+              "'Our company was founded to address the growing problem of...'"
+            ],
+            "goodExamples": [
+              "'Four hundred million rural Indians cannot access a single government benefit because no system knows they exist.'",
+              "'Every year, Ethiopian health workers spend 40% of their time filling paper forms that no one reads.'",
+              "'Sixty percent of small businesses in West Africa close within two years because they cannot get a loan. Not because they are bad risks — because no institution has their data.'"
+            ]
+          },
+          {
+            "title": "The affected population: Name the person, not the category",
+            "description": "After stating the problem at scale, immediately identify who suffers. The instinct is to use demographic categories ('women in rural areas,' 'smallholder farmers'). This is wrong. Name a specific archetype: a person with a job, a situation, a specific frustration.",
+            "template": "Not: 'This affects 40 million informal workers.' Instead: 'Ravi is a delivery rider in Pune. He has paid taxes, filed ITRs, and maintained a perfect digital payment record for three years. He cannot get a home loan because the bank cannot see any of that data.'"
+          },
+          {
+            "title": "Why now: The mechanism that makes this moment special",
+            "description": "Every unsolved problem has been unsolved for a reason. You must explain what changed that makes solution now possible — or what changes if it is not solved now. Without a convincing 'why now,' the audience asks 'why are you the one to solve it, and why today?'",
+            "validWhyNows": [
+              "Technology inflection: 'Mobile penetration just crossed 80% in Nigeria — the distribution layer exists for the first time.'",
+              "Policy window: 'The new Data Protection Act creates legal basis for consent-based data sharing that was impossible two years ago.'",
+              "Cost curve: 'LLM inference costs dropped 95% in 18 months — we can now run AI at the edge for $0.001 per interaction.'",
+              "Competitive pressure: 'China's CBDC program launched in three neighboring countries. Every government in the region is now on a 24-month deadline.'"
+            ]
+          },
+          {
+            "title": "Solution: The minimum viable explanation",
+            "description": "Explain the solution in one sentence. Then the mechanism in two sentences. Then the proof. Most founders invert this — they spend 80% of their time on the product and 20% on the problem. Reverse it. The audience buys the problem, then accepts the solution. If they bought the problem hard enough, your solution does not need to be perfect — it just needs to be plausible.",
+            "template": "[Product name] is [one sentence]. It works by [mechanism in one sentence]. We have already [evidence of working]."
+          },
+          {
+            "title": "The emotional layer: Adding warmth without manipulation",
+            "description": "Problem-first is rational by nature. To add emotional pull without breaking the structure: use a single specific human story in the affected population section, and return to that same person in the proof section to show the transformation. One person, bookended. Do not add more — additional human stories dilute each other.",
+            "pattern": "Open with Ravi (the delivery rider who cannot get a loan). Build the rational case. End with 'Ravi got his loan in 72 hours. He bought his apartment in December. 14,000 people like Ravi have already used the system.'"
+          }
+        ],
+        "commonMistake": "Burying the problem in slide 3 after two slides of company background. The audience has already decided whether to invest attention. If the problem is not the first thing they hear, you have already lost the clock-watchers — and those are usually the decision-makers."
+      }
+    },
+    {
+      "id": "module-3",
+      "title": "Hero's Journey: The Warm Frame",
+      "duration": "75 min",
+      "type": "theory_and_practice",
+      "content": {
+        "overview": "Hero's journey is the oldest narrative structure: ordinary world, call to adventure, struggle, transformation, return. Applied to pitching, the user — not the founder, not the product — is the hero. The product is Gandalf: it gives the hero what they need to complete the journey they were already on. This frame is warm, memorable, and morally clear. Its weakness: it is slow. It needs 15-20 minutes to work. Never use it in a 5-minute slot.",
+        "keyPoints": [
+          {
+            "title": "The critical inversion: You are not the hero",
+            "description": "The most common mistake in civic tech and startup pitching is making the founder or the organization the hero. 'We built this because we saw the problem.' 'Our team spent three years solving this.' This is an origin story, not a hero's journey. The audience came to feel something about themselves or about people like the users — not about you. Put the camera on the user.",
+            "wrongFrame": "COSS identified a gap in government digital infrastructure and built a platform to solve it. After two years and 50 country implementations...",
+            "rightFrame": "Amara is a health worker in Nairobi. She walks 12 kilometers every day to reach her patients. She carries a paper logbook that took her three months to learn to fill out correctly. Last month, the government changed the form. She had to relearn from scratch. Nobody told her why. This is her ordinary world."
+          },
+          {
+            "title": "The five beats adapted for product pitching",
+            "beats": [
+              "Ordinary world: Who is the user, what is their life, what is their daily constraint? Make it vivid and recognizable. The audience should think 'I know this person' or 'I am this person.'",
+              "Call to adventure: What moment forces the user to need something different? A crisis, an opportunity, a deadline. The inflection point where the old world stops working.",
+              "Struggle: What has the user tried that has not worked? This is where you acknowledge the landscape of failed solutions. Be generous — the solutions tried were reasonable. They just were not right.",
+              "Meeting the mentor: This is where your product enters. It does not solve the problem for the hero. It gives the hero what they need to solve it themselves. The mentor frame is crucial — it positions your product as an enabler, not a replacement.",
+              "Transformation: What does the user's life look like now? Be specific. Not 'saves time' — '40% fewer errors in her logbook, which means 20 extra patients seen per month.'"
+            ]
+          },
+          {
+            "title": "When it works and when it does not",
+            "works": [
+              "Conference keynotes where you want people to share and remember",
+              "Partner conversations where alignment is more important than terms",
+              "Team pitches where you want to build shared purpose",
+              "Media and press pitches",
+              "Board presentations where you want to renew conviction, not just report numbers"
+            ],
+            "doesNotWork": [
+              "5-minute VC meetings — too slow, they will interrupt before the transformation",
+              "Technical due diligence — the audience wants architecture, not narrative",
+              "Government procurement meetings — officials need to see compliance criteria",
+              "Grant panels with high competition — you do not have enough time to build the arc"
+            ]
+          }
+        ],
+        "commonMistake": "The product enters the story too early — at beat 2 or 3 instead of beat 4. This collapses the hero's journey into a features pitch. Make the user struggle without you for at least three beats before your product appears."
+      }
+    },
+    {
+      "id": "module-4",
+      "title": "Jobs-to-be-Done: The Positioning Tool",
+      "duration": "60 min",
+      "type": "theory_and_practice",
+      "content": {
+        "overview": "Jobs-to-be-done (JTBD) is not a pitch structure you deliver to an external audience. It is a positioning framework you use internally before you write any pitch. It forces you to state precisely: when a person is in situation X, they need to get job Y done, and success means Z. If you cannot complete that sentence, you do not know what you are pitching. JTBD is the diagnostic that prevents you from pitching the wrong product to the right audience — or the right product to the wrong audience.",
+        "keyPoints": [
+          {
+            "title": "The JTBD sentence structure",
+            "template": "When [specific situation], a [specific person] needs to [job to be done], so they can [desired outcome], and they will know they succeeded when [measurable signal].",
+            "badExamples": [
+              "When they need digital services, government officials need a platform that helps them serve citizens.",
+              "When they are raising money, nonprofit leaders need a way to tell their story."
+            ],
+            "goodExamples": [
+              "When a field health worker is at a patient's home with no connectivity, they need to record a consultation and sync it when they return to the clinic, so they can maintain accurate patient records, and they will know it worked when the sync completes without conflicts and the patient's next visit shows the complete history.",
+              "When a program officer at a bilateral donor is reviewing 40 grant applications in one week, they need to quickly determine which applicants understand the theory of change well enough to execute, so they can shortlist without reading every proposal fully, and they will know they succeeded when the shortlisted applicants pass due diligence without surprises."
+            ]
+          },
+          {
+            "title": "The four JTBD questions before any pitch",
+            "questions": [
+              "What situation triggers the need for our product? Be specific — a trigger is an event, not a demographic.",
+              "What job does the person need to get done in that situation? Name the functional job (the task) and the emotional job (how they want to feel while doing it).",
+              "What does success look like to them — not to you? The success criterion must be theirs, not your product's output metric.",
+              "What have they been hiring instead of your product? Every user has a workaround. Name it honestly — it is usually 'nothing,' 'Excel,' or a human relationship."
+            ]
+          },
+          {
+            "title": "Using JTBD to sharpen the other frameworks",
+            "description": "Once you have a clean JTBD statement, use it to pressure-test every other pitch framework.",
+            "applications": [
+              "Problem-first: Is your 'problem' actually the situation that triggers the job? Or are you describing the general landscape instead of the specific moment?",
+              "Hero's journey: Is the 'struggle' section of your hero's journey about the failure to get the job done? Or is it about something adjacent?",
+              "Future-back: Does your 2030 vision describe a world where this job is reliably, easily done — for everyone who needs it?",
+              "Insight ladder: Is your 'non-obvious so what' directly connected to why this job has been hard to do?",
+              "Data-then-story: Does your human face story illustrate someone who could not get the job done — and then could?"
+            ]
+          }
+        ],
+        "commonMistake": "Defining the job at the feature level rather than the outcome level. 'They need a dashboard' is not a job. 'They need to know in 10 seconds whether their team is on track so they can spend their energy where it matters' is a job."
+      }
+    },
+    {
+      "id": "module-5",
+      "title": "Future-Back: The Systems Frame",
+      "duration": "75 min",
+      "type": "theory_and_practice",
+      "content": {
+        "overview": "Future-back starts at the destination — a vivid description of the world as it should be in 10-15 years — and works backwards to today's gap, then to the specific bridge your product builds. This frame signals that you are thinking at system scale, not product scale. It is the language of foundations, government ministries, and multilateral institutions who are explicitly trying to change the world over decades. Its weakness: it requires time and a sophisticated audience. Done poorly, it sounds like a TED talk with no product.",
+        "keyPoints": [
+          {
+            "title": "What makes a future vision land",
+            "description": "The future vision must be (a) specific enough to be imaginable, (b) large enough to be worth the effort, and (c) grounded in trends that make it credible rather than utopian.",
+            "weak": "'By 2035, we envision a world where everyone has access to quality digital services.'",
+            "strong": "'By 2035, every citizen in Sub-Saharan Africa can access any government service — healthcare, land registration, tax filing, social protection — through a single voice interface in their own language, on any phone, without needing to understand how any of the systems behind it work. The phone becomes the window. The back-end complexity is invisible. That world is already technically possible. We are building the bridge.'",
+            "credibilityAnchors": [
+              "Cite a trend that is already happening at smaller scale",
+              "Name a country or region where a version of this future already exists",
+              "Reference the cost curve or technology threshold that makes this achievable in the named timeframe",
+              "Acknowledge what is hard — what still needs to be solved"
+            ]
+          },
+          {
+            "title": "The gap analysis: What stands between now and the vision",
+            "description": "After the vision, name the structural gaps. Not product gaps — systemic gaps. This is where your audience recognizes their own work and its limitations. The gaps must be honest. If you name gaps that the audience knows are oversimplified, you lose credibility.",
+            "gapCategories": [
+              "Infrastructure gaps: What technical layer does not yet exist?",
+              "Institutional gaps: What policy, regulation, or governance structure is missing?",
+              "Trust gaps: What adoption or behavior change has not happened?",
+              "Capacity gaps: Who needs to exist — as a role, profession, or skill set — and does not yet?"
+            ]
+          },
+          {
+            "title": "The bridge: How your product addresses the most critical gap",
+            "description": "After the gap analysis, you introduce your product as the bridge that closes the most critical gap. This is important: you are not closing all the gaps. You are closing one, and that one is load-bearing for the others. If you claim to close all gaps, you sound like a salesperson. If you name the one gap you close and explain why it unblocks the rest, you sound like a systems thinker.",
+            "template": "Of these five gaps, the most critical to close first is [gap X]. If [gap X] remains, none of the others can close either — because [mechanism]. [Product] closes [gap X] by [mechanism]. When [gap X] closes, here is what becomes possible..."
+          },
+          {
+            "title": "Audiences that respond to Future-back",
+            "audiences": [
+              "Gates Foundation and other programmatic foundations with 10-20 year theories of change",
+              "Government ministers who need to see their legacy",
+              "UNDP, World Bank, and multilateral institutions that operate at system scale",
+              "Board chairs and trustees of large institutions",
+              "National and state government audiences in India, Kenya, Nigeria, Rwanda who have official digital transformation mandates"
+            ]
+          }
+        ],
+        "commonMistake": "Spending 80% of the time on the vision and 20% on the bridge. The audience came to understand your specific contribution, not to hear you describe the destination they already share. Flip the ratio — 40% vision, 60% gap analysis and bridge."
+      }
+    },
+    {
+      "id": "module-6",
+      "title": "Insight Ladder: The Sophisticated Listener Frame",
+      "duration": "75 min",
+      "type": "theory_and_practice",
+      "content": {
+        "overview": "The insight ladder is a four-rung structure: Observation → Non-obvious 'so what' → The bet you are making → The ask. It is designed for audiences who are smarter than the average room — people who have spent years in the problem space and will not be impressed by a standard framing of it. The insight ladder treats the audience as a peer, which they notice and appreciate. Its weakness: if your non-obvious insight is actually obvious, you have just insulted the audience and lost the room.",
+        "keyPoints": [
+          {
+            "title": "Rung 1: The observation",
+            "description": "Start with something true and specific that the audience can verify from their own experience. Not a statistic from a report — a pattern they have personally seen. The observation should be slightly surprising in its specificity, not in its content.",
+            "weak": "Digital public infrastructure adoption is slower than expected in many low-income countries.",
+            "strong": "Every country that has launched a national digital ID system in the last five years has hit the same wall at exactly the same point: when they try to connect the ID to existing service delivery systems, they discover that those systems have 40-60% data quality failures that make the connection meaningless."
+          },
+          {
+            "title": "Rung 2: The non-obvious 'so what'",
+            "description": "This is the rung that earns the audience's respect. Everyone in the room can see the observation. The 'so what' is the implication that most people draw incorrectly — or the implication that nobody has drawn yet. This is where your specific expertise or unique vantage point matters.",
+            "weak": "So we need better data quality before digital ID rollouts.",
+            "strong": "So the constraint is not technical and not political — it is epistemological. Governments do not know what they do not know. They cannot see their own data quality failures because the reporting systems that would reveal those failures are the same systems with the failures. The gap is not in the ID system. The gap is in the absence of a truth layer that sits outside all the existing systems."
+          },
+          {
+            "title": "Rung 3: The bet",
+            "description": "Name the specific hypothesis you are acting on. A bet is different from a fact: a bet can be wrong. Naming it as a bet signals intellectual honesty and invites the audience to evaluate your reasoning rather than just accept your conclusion. Sophisticated audiences are more likely to fund a well-reasoned bet than an overconfident certainty.",
+            "template": "Our bet is that [specific hypothesis]. We are wrong if [falsification condition]. We are right if [validation condition already emerging].",
+            "example": "Our bet is that governments will pay for a data quality monitoring layer if it is positioned as audit infrastructure rather than as a criticism of their systems. We are wrong if procurement cycles treat this as optional tooling. We are right if the 11 countries currently in procurement for new ID systems include data quality monitoring in their RFPs — and three already do."
+          },
+          {
+            "title": "Rung 4: The ask",
+            "description": "After three rungs of substance, the ask should be almost mechanical. The audience is either convinced or not — and if they are not convinced by the reasoning, no amount of persuasion in the ask will change that. Make the ask precise. One thing. With a timeline. With a decision-maker named.",
+            "badAsk": "We would love to explore a potential partnership with your organization to see if there is a way to work together.",
+            "goodAsk": "We are looking for one foundation partner willing to fund a 12-month pilot in two countries — India and Rwanda — to test whether governments adopt the monitoring layer voluntarily when procurement infrastructure exists. Budget: $800K. Decision needed by September because the India state government window closes then."
+          }
+        ],
+        "commonMistake": "Making the observation controversial instead of the 'so what.' If your opening observation is already non-obvious, you will spend the rest of the pitch defending whether the observation is true. Keep the observation verifiable and specific. Save the surprise for rung 2."
+      }
+    },
+    {
+      "id": "module-7",
+      "title": "Data-then-Story: The Impact Funder Format",
+      "duration": "60 min",
+      "type": "theory_and_practice",
+      "content": {
+        "overview": "Data-then-story is the standard format for impact funders and is effective because it respects how impact funding decisions actually happen: a program officer reads a stat that establishes scale in their notes, then tells their investment committee a human story that makes the scale feel real. You are building the story they will tell on your behalf. The structure is simple: a systemic statistic that establishes scale → a single human face that makes it emotionally true → the solution → proof → ask.",
+        "keyPoints": [
+          {
+            "title": "The systemic statistic: Choose for surprise and specificity",
+            "description": "The statistic must do two things: establish that the problem is large enough to justify the ask, and be surprising enough that the audience has not already discounted it. Overused statistics ('1.7 billion people are unbanked') have been heard so many times that they produce no reaction. Find the specific number that reveals a dimension of the problem the audience has not seen.",
+            "weak": "Millions of people lack access to healthcare.",
+            "strong": "In Uganda, 73% of community health workers have never received payment on time. Not because money is unavailable — the government has the funds. Because there is no system that knows when they worked, what they did, or where to send the money.",
+            "criteria": [
+              "The statistic should be verifiable — cite the source",
+              "The statistic should reveal a mechanism, not just a scale",
+              "The statistic should be recent — within 3 years",
+              "The statistic should be specific to a geography, not global average"
+            ]
+          },
+          {
+            "title": "The single human face: One person, no composites",
+            "description": "After the statistic, introduce one person. Not a composite. Not 'someone like.' A specific person — real or representative — with a name, a job, a location, and a specific moment. The moment should connect directly to the mechanism revealed in the statistic.",
+            "bad": "Consider a typical health worker in a developing country who faces many challenges in their daily work.",
+            "good": "Grace Akello is a community health worker in Gulu, Uganda. She has been doing this job for six years. She delivered 23 babies last year. She has never been paid on time. Three months ago, she missed a payment entirely. She could not buy her children school supplies for the new term. She is still doing the job. She does not know why the payments are late — nobody has told her — and she does not know who to ask.",
+            "rules": [
+              "One person only — multiple faces dilute the emotional impact",
+              "Do not choose the most extreme case — choose the most representative one",
+              "The story should end at the problem, not at the solution — the solution comes in the next section",
+              "If real, get permission; if representative, say so"
+            ]
+          },
+          {
+            "title": "The solution: Brief and evidence-first",
+            "description": "After the statistic and the story, the solution section is surprisingly short. The audience is already emotionally engaged. You need only explain what your product does, how it works in one sentence, and then lead with proof. The proof is what converts emotional engagement into a commitment to act.",
+            "template": "[Product] gives [person in the story] [what they need]. Here is what happened when 12,000 workers like Grace started using it: [specific outcome data]."
+          },
+          {
+            "title": "Closing the loop: Return to Grace",
+            "description": "End the pitch by returning to the human face from the opening. What happened to Grace? This structural choice does two things: it creates narrative satisfaction, and it forces you to have real evidence of change at the individual level — not just aggregate metrics.",
+            "example": "Grace has been paid within five days of every home visit for the last eight months. She knows what she will earn before she walks in the door. She told us: 'I used to feel like the government didn't know I existed. Now I know they do.'"
+          }
+        ],
+        "commonMistake": "Using the human story to open and then abandoning it. The statistic-story-solution structure only works if the story bookends the pitch. The audience needs to return to Grace at the end. If they never find out what happened to her, the story feels manipulative rather than true."
+      }
+    },
+    {
+      "id": "module-8",
+      "title": "Practice Cases",
+      "duration": "4 hours",
+      "type": "case_study",
+      "content": {
+        "overview": "Six case studies, one for each framework. Each case puts you in a specific pitching situation with a specific audience, time constraint, and ask. Work through the rounds and receive coaching on your choices. The goal is not to practice the frameworks in isolation but to practice the diagnostic — reading the room and choosing the right frame before you open.",
+        "cases": [
+          {
+            "caseId": "pitch-problem-first",
+            "title": "The Five-Minute Investor",
+            "framework": "Problem-first",
+            "scenario": "Cold deck, time-boxed VC meeting. You have five minutes."
+          },
+          {
+            "caseId": "pitch-heroes-journey",
+            "title": "The Conference Keynote",
+            "framework": "Hero's journey",
+            "scenario": "Twenty-minute conference slot. Your product is Gandalf, not the hero."
+          },
+          {
+            "caseId": "pitch-jtbd-positioning",
+            "title": "The Internal Workshop",
+            "framework": "Jobs-to-be-done",
+            "scenario": "Your team cannot agree on what the product actually does. Clarify before you pitch."
+          },
+          {
+            "caseId": "pitch-future-back",
+            "title": "The Ministry Presentation",
+            "framework": "Future-back",
+            "scenario": "Thirty minutes with a government Minister and her digital team. Think at the right scale."
+          },
+          {
+            "caseId": "pitch-insight-ladder",
+            "title": "The Grant Panel",
+            "framework": "Insight ladder",
+            "scenario": "Ten minutes to a panel of experienced development finance experts. Surprise them."
+          },
+          {
+            "caseId": "pitch-data-then-story",
+            "title": "The Impact Funder Meeting",
+            "framework": "Data-then-story",
+            "scenario": "Twelve minutes with a foundation program officer. Build the story she will tell her committee."
+          }
+        ]
+      }
+    }
+  ]
+}

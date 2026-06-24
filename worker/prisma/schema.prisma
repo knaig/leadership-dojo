@@ -1,0 +1,4146 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ============================================================================
+// CORE IDENTITY & RBAC
+// ============================================================================
+
+enum Role {
+  STUDENT
+  MANAGER
+  CURATOR
+  ADMIN
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  phoneNumber   String?
+  countryCode   String    @default("+91")  // E.164 country prefix, default India
+  role          Role      @default(STUDENT)
+
+  // Hierarchy
+  managerId String?
+  manager   User?   @relation("Team", fields: [managerId], references: [id])
+  reports   User[]  @relation("Team")
+
+  // Account linking for NextAuth
+  accounts Account[]
+  sessions Session[]
+
+  // Application Data
+  progress    CaseProgress[]
+  reflections Reflection[]
+
+  // Agentic Data (New)
+  skills   UserSkill[]
+  recPlans RecPlan[]
+
+  // Real World Context
+  projects        UserProject[]    // Legacy — use unifiedProjects for new code
+  unifiedProjects Project[]
+  meetingLogs     MeetingLog[]
+  missions        Mission[]
+
+  // Subscription & Billing
+  subscription Subscription?
+  apiKeys      UserApiKey[]
+
+  // Work Feedback System
+  connectors        DataConnector[]
+  workArtifacts     WorkArtifact[]
+  skillObservations SkillObservation[]
+  capacityScores    CapacityScore[]
+  domainContext     DomainContext?
+  stakeholders      StakeholderProfile[]
+  feedbackItems     FeedbackItem[]
+  learningRecs      LearningRecommendation[]
+  actionPlans       UserActionPlan[]
+  practiceMissions  PracticeMission[]
+
+
+  // Audit
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Antigravity: User Context
+  jobTitle              String?                    // "VP Engineering"
+  company               String?
+  industry              String?
+  companyStage          CompanyStage?
+  onboardingComplete    Boolean   @default(false)
+  
+  businessContext       BusinessContext?
+  
+  // Antigravity: Relations
+  decisions             Decision[]
+  conversationPreps     ConversationPrep[]
+  kpis                  UserKPI[]
+  timeAllocations       TimeAllocation[]
+  wastePatterns         WastePattern[]
+  externalSignals       ExternalSignal[]
+  assumptionReviews     AssumptionReview[]
+  conversationInsights  ConversationInsight[]
+  caseSurfacings        CaseSurfacing[]
+  
+  // Antigravity: Phase 2 Additions
+  kpiActions            UserAction[]
+  coachSessions         CoachSession[]
+  pushSubscriptions     PushSubscription[]
+
+  // Relationship Graph (New)
+  organizations            Organization[]
+  professionalTeams        ProfessionalTeam[]
+
+  // Work Co-pilot (New)
+  goals                 Goal[]
+  conversationState     ConversationState?
+  proactivePrompts      ProactivePrompt[]
+  preferences           UserPreferences?
+  chatMessages          Message[]
+  conversations         Conversation[]
+  intelligence          UserIntelligence?
+
+  // Knowledge Graph
+  knowledgeEntities     KnowledgeEntity[]
+  knowledgeFacts        KnowledgeFact[]
+  knowledgeCommunities  KnowledgeCommunity[]
+  extractionLogs        ExtractionLog[]
+
+  // Google API Watch Channels
+  watchChannels         WatchChannel[]
+
+  // WhatsApp Integration
+  whatsAppSession       WhatsAppSession?
+  whatsAppGroups        WhatsAppGroup[]
+  whatsAppMessages      WhatsAppMessage[]
+
+  professionalProjects     ProfessionalProject[]
+  stakeholderRelationships StakeholderRelationship[]
+  strategicObjectives      StrategicObjective[]
+  githubInstallations      GitHubInstallation[]
+  toolUseRecords           ToolUseRecord[]
+
+  // Meeting Champion
+  meetingCommitments       MeetingCommitment[]
+  meetingPatternSnapshots  MeetingPatternSnapshot[]
+
+  // Ground Game
+  influencePlans           InfluencePlan[]
+
+  // Learning from corrections
+  corrections              UserCorrection[]
+
+  // Structured onboarding
+  onboardingProgress       Json      @default("{}")  // { profile, role, outcomes, stakeholders, calendar, context }
+  preferredChannel         String?                    // 'voice' | 'text'
+  responsibilities         UserResponsibility[]
+  uploadedDocuments        UploadedDocument[]
+  voiceCalls               VoiceCall[]
+  personalContext          PersonalContext?
+  pendingNudges            PendingNudge[]
+  scheduledCalls           ScheduledCall[]
+  voiceOnboarding          OnboardingProgress?
+  callFeedback             CallFeedback[]
+
+  // Coaching Intelligence
+  callEvaluations          CallEvaluation[]
+  coachingRelationshipPlan CoachingRelationshipPlan?
+  coachingTrajectories     CoachingTrajectory[]
+  personalThreads          PersonalThread[]
+  coachingExperiments      CoachingExperiment[]
+  promptInsights           PromptInsight[]
+  agentRuns                AgentRun[]
+  hypotheses               Hypothesis[]
+}
+
+enum CompanyStage {
+  SEED
+  SERIES_A
+  SERIES_B
+  SERIES_C_PLUS
+  GROWTH
+  PUBLIC
+}
+
+model BusinessContext {
+  id                    String   @id @default(cuid())
+  userId                String   @unique
+
+  // Core business understanding
+  businessModel         String?                    // "B2B SaaS", "Marketplace"
+  primaryMetric         String?                    // "ARR", "GMV", "DAU"
+  currentChallenges     String[]                   // Top 3 challenges
+  strategicPriorities   String[]                   // Company-level priorities
+
+  // Org context
+  teamSize              Int?
+  directReports         Int?
+  reportingTo           String?                    // "CEO", "CTO", "COO"
+  peerVPs               String[]                   // Other VP relationships
+
+  // Learned over time
+  decisionPatterns      Json?                      // How user typically decides
+  communicationStyle    String?                    // "Direct", "Collaborative"
+  blindSpots            String[]                   // Identified through interactions
+  strengths             String[]                   // Identified through interactions
+
+  // Industry/company specifics
+  competitors           String[]
+  keyCustomerSegments   String[]
+  regulatoryContext     String?
+  
+  // Knowledge Base
+  knownRevenueDrivers   Json?                      // Learned context
+  knownCostDrivers      Json?
+  
+  user                  User     @relation(fields: [userId], references: [id])
+
+  updatedAt             DateTime @updatedAt
+}
+
+// Personal context — user-controlled. User decides what Mira remembers about them personally.
+// Work context (BusinessContext, stakeholders, etc.) is always saved.
+// Personal context is opt-in per item and visible/editable/deletable by user.
+model PersonalContext {
+  id                    String   @id @default(cuid())
+  userId                String   @unique
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // User-controlled personal data (each can be null = not shared yet)
+  energyPatterns        String?                    // "Morning person", "Recharges with running"
+  interests             String[]                   // Non-work interests, hobbies
+  stressSignals         String?                    // "First thing to slip is email responses"
+  values                String[]                   // "Won't compromise on team autonomy"
+  personalWins          Json?                      // Recent non-work wins user shared
+  preferredCallStyle    String?                    // "Brief and direct" vs "likes to chat"
+  humorReceptivity      String?  @default("unknown") // "high", "moderate", "low", "unknown"
+  commuteInfo           String?                    // "30 min drive", "works from home"
+
+  // Relationship with Mira
+  callCount             Int      @default(0)       // Total voice calls
+  totalCallMinutes      Int      @default(0)       // Total minutes on calls
+  firstCallDate         DateTime?                  // When they first called
+  lastCallDate          DateTime?                  // Most recent call
+  favoriteCallTypes     String[]                   // Which call types they engage with most
+
+  // What Mira knows vs doesn't (for Honest Mirror dashboard)
+  knownTopics           String[]                   // Topics Mira has good context on
+  gapTopics             String[]                   // Topics Mira needs to learn about
+
+  updatedAt             DateTime @updatedAt
+}
+
+model UserResponsibility {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  title           String                     // Role title e.g. "VP Engineering"
+  scope           String?  @db.Text          // What they own — narrative
+  responsibilities String[]                  // Key responsibilities
+  kpis            String[]                   // What they're measured on
+  successCriteria String[]                   // What "great" looks like
+  reportsTo       String?                    // Manager name/title
+  teamSize        Int?
+
+  // Business outcomes this role drives
+  businessOutcomes Json     @default("[]")   // [{ title, metric, timeframe }]
+
+  // Inference tracking
+  inferred        Boolean  @default(true)    // LLM-generated
+  confirmedAt     DateTime?                  // User reviewed & confirmed
+  source          String   @default("inference") // inference, manual, document
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model UploadedDocument {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  filename    String
+  blobUrl     String                        // Vercel Blob URL
+  mimeType    String
+  sizeBytes   Int
+  purpose     String   @default("context")  // context, role_doc, org_chart, other
+  parsed      Boolean  @default(false)
+  parsedData  Json?                         // Extracted structured data
+
+  createdAt   DateTime @default(now())
+
+  @@index([userId])
+}
+
+// Voice calls with Mira (via Vapi)
+model VoiceCall {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  vapiCallId      String?  @unique   // Vapi's call ID
+  callType        String              // pre_meeting_prep, morning_brief, post_meeting_debrief, general, etc.
+  direction       String   @default("outbound") // inbound, outbound, web
+  status          String   @default("queued")   // queued, ringing, in-progress, ended, failed
+  meetingId       String?             // Linked meeting if applicable
+  meeting         MeetingSyncRecord? @relation(fields: [meetingId], references: [id], onDelete: SetNull)
+
+  // Call data
+  durationSeconds Int?
+  transcript      String?  @db.Text
+  summary         String?  @db.Text
+  recordingUrl    String?
+
+  // Extracted insights
+  keyTakeaways    Json?    // Array of strings
+  commitments     Json?    // Action items captured from the call
+  outcomeSet      String?  // If user stated a meeting outcome during the call
+
+  // Observation (what was sent + what happened)
+  promptTemplateName    String?              // Which prompt template was used
+  promptTemplateVersion Int?                 // Version of the template
+  configVersion         Int?                 // ConversationConfig version used
+  assembledPrompt       String?  @db.Text    // Full system prompt sent to Vapi
+  sentVariables         Json?                // Variable values sent to Vapi
+  firstMessageSent      String?              // Which first message opener was used
+
+  // Conversation engine signals
+  confidenceMode        String?              // LEARNING, OBSERVING, COACHING
+  adaptationSignals     Json?                // Signals detected during this call
+  postCallExtraction    Json?                // Thread + confidence extraction results
+
+  // Coaching Intelligence
+  evaluation             CallEvaluation?
+  experimentAssignments  ExperimentAssignment[]
+
+  // Tool use tracking
+  toolUseRecords         ToolUseRecord[]
+
+  startedAt       DateTime @default(now())
+  endedAt         DateTime?
+
+  @@index([userId])
+  @@index([vapiCallId])
+  @@index([meetingId])
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Work Feedback System - Data Connectors linked to this OAuth account
+  dataConnectors DataConnector[]
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ============================================================================
+// THE CONTENT ENGINE (CMS)
+// ============================================================================
+
+// ============================================================================
+// SKILLS & CURRICULUM
+// ============================================================================
+
+model Skill {
+  id          String  @id @default(cuid())
+  slug        String  @unique // e.g., "emotional-regulation"
+  name        String
+  cluster     String // e.g., "Self-Leadership"
+  description String?
+
+  userSkills UserSkill[]
+  missions   Mission[]
+}
+
+model UserSkill {
+  id      String @id @default(cuid())
+  userId  String
+  skillId String
+  user    User   @relation(fields: [userId], references: [id])
+  skill   Skill  @relation(fields: [skillId], references: [id])
+
+  level      Float @default(0) // 0.0 - 5.0 Mastery
+  confidence Float @default(0) // 0.0 - 1.0 (Evidence weight)
+
+  // History of updates (delta logging could be done here or in separate table)
+  lastUpdated DateTime @default(now())
+
+  @@unique([userId, skillId])
+}
+
+// ============================================================================
+// THE CONTENT ENGINE (CMS)
+// ============================================================================
+
+enum PublishStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model Case {
+  id          String  @id @default(cuid())
+  slug        String  @unique // e.g., 'png-digital-id'
+  title       String
+  description String?
+
+  // Curriculum Metadata
+  isCore  Boolean @default(false) // 80% Rule
+  cluster String? // Primary cluster e.g. "Strategy"
+  skills  Json? // Array of Skill Slugs targeted e.g. ["reframing", "legacy-code"]
+  
+  // Antigravity Taxonomy
+  vertical      CaseVertical     @default(GENERAL)
+  horizontals   CaseHorizontal[]
+  targetRoles   String[]         // ["VP", "EM", "DIRECTOR", "C_SUITE"]
+  situations    String[]         // Trigger tags: ["reorg", "difficult_conversation", "board_prep"]
+  complexity    CaseComplexity   @default(INTERMEDIATE)
+  durationMins  Int              @default(15)
+  
+  triggerKeywords String[]       // For search/matching
+
+  surfacings    CaseSurfacing[]
+
+  versions CaseVersion[]
+
+  // Pointer to the currently live version
+  currentVersionId String?      @unique
+  currentVersion   CaseVersion? @relation("LiveVersion", fields: [currentVersionId], references: [id])
+
+  // Source Grounding (Provenance)
+  sourceUrl String?
+  factSheet Json? // Extracted facts from Ingestion Agent
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relation to ingestion pipeline
+  generatedFrom IngestedArticle?
+
+  // Recommendations linking to this case
+  actionPlans UserActionPlan[]
+}
+
+model CaseVersion {
+  id     String @id @default(cuid())
+  caseId String
+  case   Case   @relation(fields: [caseId], references: [id])
+
+  version Int // Incremental version number
+  status  PublishStatus @default(DRAFT)
+
+  // The "Blob" - contains Rounds, Prompts, Stakeholders, and Rubrics
+  content Json
+
+  changeLog String?
+
+  createdAt DateTime @default(now())
+  createdBy String // Curator ID (User)
+
+  // Reverse relation for the live pointer
+  liveFor Case? @relation("LiveVersion")
+
+  @@unique([caseId, version])
+}
+
+model IngestedArticle {
+  id      String  @id @default(cuid())
+  url     String  @unique
+  title   String?
+  content String? @db.Text
+  status  String // PENDING, PROCESSED, REJECTED, CONVERTED
+
+  generatedCaseId String? @unique
+  generatedCase   Case?   @relation(fields: [generatedCaseId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ============================================================================
+// STUDENT PROGRESS & ACCOUNTABILITY
+// ============================================================================
+
+model CaseProgress {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  caseId String // FK to Case
+
+  completed Boolean @default(false)
+  score     Int? // 0-100 overall performance
+
+  // Granular data
+  feedback Json? // AI Coaching summary
+  rounds   Json? // What did they type in each round?
+
+  // Evidence for Skill Graph
+  skillDelta Json? // { "emotional-regulation": +0.2, "assertiveness": -0.1 }
+
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+}
+
+model RecPlan {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  // The plan
+  queue Json // Array of CaseSlugs ordered e.g. ["case-1", "case-2"]
+
+  // 80/20 Audit
+  coreCount     Int
+  electiveCount Int
+  justification String @db.Text
+}
+
+// ============================================================================
+// RECOMMENDATION & REFLECTION ENGINE (NEW)
+// ============================================================================
+
+enum RecommendationStatus {
+  PENDING
+  COMMITTED
+  COMPLETED
+  SKIPPED
+  DISMISSED
+}
+
+model UserActionPlan {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  capacity String 
+  type     FeedbackType 
+
+  // Evidence
+  evidenceObservation String? @map("evidence_observation") @db.Text
+  evidenceBenchmark   String? @map("evidence_benchmark") @db.Text
+
+  // The prescription
+  actionSummary String   @map("action_summary") @db.Text
+  actionBullets Json     @map("action_bullets") 
+
+  // Anchors
+  targetMeetingId String?  @map("target_meeting_id")
+  
+  relatedCaseId   String?  @map("related_case_id")
+  relatedCase     Case?    @relation(fields: [relatedCaseId], references: [id])
+
+  // State
+  status      RecommendationStatus @default(PENDING)
+  committedAt DateTime?            @map("committed_at")
+  completedAt DateTime?            @map("completed_at")
+
+  // Link to reflection
+  reflections Reflection[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  expiresAt DateTime? @map("expires_at")
+
+  // Metadata
+  metadata Json?
+
+  @@index([userId, status])
+  @@index([createdAt])
+}
+
+model Reflection {
+  id               String @id @default(cuid())
+  userId           String
+  user             User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Relations
+  actionPlanId String?
+  actionPlan   UserActionPlan? @relation(fields: [actionPlanId], references: [id], onDelete: Cascade)
+  
+  recommendationId String? // Keeping for legacy if needed/migration safety.
+
+  caseId           String? // Legacy/Content link
+
+  meetingId        String? @map("meeting_id")
+
+  // User input
+  didPractice      Boolean? @map("did_practice") // Optional for general reflections
+  userNotes        String? @map("user_notes") @db.Text
+
+  // AI-assisted
+  aiObservations         Json?   @map("ai_observations")
+  aiObservationsAccuracy String? @map("ai_observations_accuracy")
+
+  // Legacy fields support
+  content      String?   @db.Text
+  qualityScore Int?
+  debtCleared  Boolean   @default(true)
+  structuredData Json?
+
+  // Metadata
+  promptedAt   DateTime? @map("prompted_at")
+  respondedAt  DateTime? @map("responded_at")
+  responseTime Int?      @map("response_time")
+
+  createdAt    DateTime  @default(now()) @map("created_at")
+}
+
+// ============================================================================
+// REAL WORLD CONTEXT (INTEGRATIONS)
+// ============================================================================
+
+model UserProject {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  name        String
+  description String?
+  driveLink   String? // URL to GDrive folder/doc
+
+  // AI Analysis of the project
+  risks  Json? // ["Stakeholder Misalignment", "Tech Debt"]
+  status String? // AI perception: "At Risk", "Healthy"
+
+  // User corrections
+  userNotes String?
+
+  meetings MeetingLog[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  missions     Mission[]
+  healthChecks ProjectHealth[]
+}
+
+model MeetingLog {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  projectId String? // Optional link to project
+  project   UserProject? @relation(fields: [projectId], references: [id])
+
+  date   DateTime
+  source String // "GCal", "Upload"
+  notes  String // Raw text
+
+  analysis Json // { risks: [], clarity: 0-5 }
+
+  createdAt DateTime @default(now())
+}
+
+model Mission {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
+
+  projectId String?
+  project   UserProject? @relation(fields: [projectId], references: [id])
+
+  skillId String // Link to Skill being applied
+  skill   Skill  @relation(fields: [skillId], references: [id])
+
+  title       String
+  description String?
+  status      String  @default("PLANNED") // PLANNED, IN_PROGRESS, COMPLETED, VERIFIED
+
+  outcome        String? // User reflection
+  aiVerification String? // AI analysis
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProjectHealth {
+  id        String      @id @default(cuid())
+  projectId String
+  project   UserProject @relation(fields: [projectId], references: [id])
+
+  ragStatus   String // RED, AMBER, GREEN
+  pivotSignal Boolean @default(false)
+  advice      String
+
+  createdAt DateTime @default(now())
+}
+
+// ============================================================================
+// SUBSCRIPTION & BILLING
+// ============================================================================
+
+enum SubscriptionTier {
+  FREE
+  PRO
+  ENTERPRISE
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  PAST_DUE
+  CANCELLED
+  TRIALING
+}
+
+model Subscription {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  tier   SubscriptionTier   @default(FREE)
+  status SubscriptionStatus @default(ACTIVE)
+
+  // Stripe Integration
+  stripeCustomerId       String?   @unique
+  stripeSubscriptionId   String?   @unique
+  stripePriceId          String?
+  stripeCurrentPeriodEnd DateTime?
+
+  // Razorpay Integration
+  razorpaySubscriptionId String?   @unique
+  razorpayPlanId         String?
+  razorpayCustomerId     String?
+
+  // Usage Limits
+  monthlyCaseLimit        Int      @default(3) // FREE: 3, PRO: unlimited, ENTERPRISE: unlimited
+  monthlyAiFeedbackLimit  Int      @default(0) // FREE: 0, PRO: 50, ENTERPRISE: unlimited
+  casesUsedThisMonth      Int      @default(0)
+  aiFeedbackUsedThisMonth Int      @default(0)
+  lastResetDate           DateTime @default(now())
+
+  // Features (legacy - will be replaced by feature flags)
+  hasGoogleIntegrations Boolean @default(false) // PRO+
+  hasAiFeedback         Boolean @default(false) // PRO+
+  hasAgenticCoach       Boolean @default(false) // ENTERPRISE
+  hasTeamFeatures       Boolean @default(false) // ENTERPRISE
+
+  // Token-Based Metering (SaaS 2-tier)
+  monthlyTokenLimit   Int      @default(0)        // 0 = BYOLLM (no platform LLM), 5000000 = 5M for Pro
+  tokensUsedThisMonth BigInt   @default(0)
+  tokenResetDate      DateTime @default(now())     // Aligned with Stripe billing cycle
+  llmSource           String   @default("byollm")  // "byollm" | "platform"
+
+  // Feature Flags (new system)
+  enabledFeatures  String[] @default([]) // Override: enable features not in tier
+  disabledFeatures String[] @default([]) // Override: disable features in tier
+
+  // Trial
+  trialEndsAt DateTime?
+
+  // Audit
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model UserApiKey {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  provider     String // "openai", "anthropic"
+  keyPreview   String // First few characters for display (e.g., "sk-proj...")
+  encryptedKey String @db.Text // Encrypted with app secret
+
+  isActive Boolean   @default(true)
+  lastUsed DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, provider])
+}
+
+model Payment {
+  id     String @id @default(cuid())
+  userId String
+
+  stripePaymentId    String?  @unique
+  razorpayPaymentId  String?  @unique
+  gateway            String   @default("stripe") // "stripe" | "razorpay"
+  amount             Int // In smallest unit (cents for USD, paise for INR)
+  currency           String   @default("usd")
+  status             String // succeeded, pending, failed
+
+  description String?
+  receiptUrl  String?
+
+  createdAt DateTime @default(now())
+}
+
+// ============================================================================
+// WORK FEEDBACK SYSTEM - CONNECTORS
+// ============================================================================
+
+enum ConnectorType {
+  EMAIL
+  CALENDAR
+  DOCUMENTS
+  NOTES
+  MANUAL
+  MCP
+  WHATSAPP
+  GITHUB
+}
+
+enum ConnectionStatus {
+  CONNECTED
+  DISCONNECTED
+  ERROR
+  SYNCING
+  PAUSED
+}
+
+model DataConnector {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  type     ConnectorType
+  provider String // gmail, gcal, gdrive, apple_notes, notion, manual
+
+  status ConnectionStatus @default(DISCONNECTED)
+
+  // OAuth credentials (references existing Account model for Google OAuth)
+  accountId String?
+  account   Account? @relation(fields: [accountId], references: [id])
+
+  // MCP configuration (for Claude Cowork)
+  mcpConfig Json? // MCP-specific settings
+
+  // Sync settings
+  syncFrequency  Int       @default(60) // minutes
+  lastSyncAt     DateTime?
+  lastSyncStatus String?
+
+  // Permissions
+  permissions Json @default("{}") // granular permissions
+
+  // Artifact relation
+  artifacts WorkArtifact[]
+
+  // Project resources using this connector
+  projectResources ProjectResource[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, provider])
+  @@index([userId])
+}
+
+// ============================================================================
+// WORK FEEDBACK SYSTEM - ARTIFACTS
+// ============================================================================
+
+enum ArtifactType {
+  EMAIL_SENT
+  EMAIL_RECEIVED
+  EMAIL_THREAD
+  MEETING_ATTENDED
+  MEETING_NOTES
+  DOCUMENT_AUTHORED
+  DOCUMENT_EDITED
+  VOICE_NOTE
+  TEXT_NOTE
+  QUICK_REFLECTION
+  STRUCTURED_REFLECTION
+  PROJECT_UPDATE
+  CONTEXT_TEACHING
+  GITHUB_PR
+  GITHUB_ISSUE
+  GITHUB_COMMIT
+}
+
+model WorkArtifact {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  connectorId String
+  connector   DataConnector @relation(fields: [connectorId], references: [id])
+
+  type       ArtifactType
+  externalId String? // ID in source system
+
+  // Content
+  title      String?
+  content    String? @db.Text
+  rawContent String? @db.Text // Original before processing
+
+  // Metadata
+  metadata     Json // Source-specific metadata
+  participants Json? // People involved
+
+  // Timestamps
+  occurredAt DateTime // When artifact happened
+  ingestedAt DateTime @default(now())
+
+  // Analysis
+  analyzed       Boolean @default(false)
+  analysisResult Json?
+
+  // Meeting Notes Linking
+  linkedNoteId String? // Points to related note artifact (for meetings)
+  linkedNote   WorkArtifact?  @relation("MeetingNotes", fields: [linkedNoteId], references: [id], onDelete: SetNull)
+  meetingFor   WorkArtifact[] @relation("MeetingNotes")
+
+  // Graph Relations (Antigravity Graph Builder)
+  outgoingLinks ArtifactLink[] @relation("SourceArtifact")
+  incomingLinks ArtifactLink[] @relation("TargetArtifact")
+
+  // Evidence extraction
+  observations SkillObservation[]
+  
+  // Antigravity: Conversation Prep Link
+  conversationPreps ConversationPrep[]
+
+  @@index([userId, type, occurredAt])
+  @@index([connectorId])
+  @@index([linkedNoteId])
+}
+
+enum LinkType {
+  TIME_PROXIMITY
+  CONTEXT_OVERLAP
+  FOLLOW_UP
+  PRE_READ
+  TOPIC_CLUSTER
+  EXPLICIT_MENTION
+  MANUAL
+}
+
+model ArtifactLink {
+  id        String   @id @default(cuid())
+  sourceId  String
+  targetId  String
+  type      LinkType
+  score     Float    @default(0.0) // 0.0 - 1.0
+  metadata  Json?    // e.g. { "reason": "Same participants", "timeDiff": 120 }
+  
+  createdAt DateTime @default(now())
+
+  source    WorkArtifact @relation("SourceArtifact", fields: [sourceId], references: [id], onDelete: Cascade)
+  target    WorkArtifact @relation("TargetArtifact", fields: [targetId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceId, targetId])
+  @@index([sourceId])
+  @@index([targetId])
+}
+
+// ============================================================================
+// WORK FEEDBACK SYSTEM - CAPACITIES & OBSERVATIONS
+// ============================================================================
+
+model Capacity {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  description String @db.Text
+  whyAIProof  String @db.Text
+
+  // Related courses (slugs)
+  courses String[]
+
+  observations SkillObservation[]
+  scores       CapacityScore[]
+  practiceMissions PracticeMission[]
+}
+
+enum ObservationType {
+  POSITIVE // Capacity demonstrated well
+  NEGATIVE // Capacity demonstrated poorly
+  MISSED_OPPORTUNITY // Could have applied but didn't
+  NEUTRAL // Present but unremarkable
+}
+
+enum Severity {
+  HIGH // Significant impact
+  MEDIUM // Moderate impact
+  LOW // Minor impact
+}
+
+model SkillObservation {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Link to capacity (the 6 core capacities)
+  capacityId String
+  capacity   Capacity @relation(fields: [capacityId], references: [id])
+
+  // Link to artifact that generated this observation
+  artifactId String?
+  artifact   WorkArtifact? @relation(fields: [artifactId], references: [id])
+
+  // Observation details
+  type        ObservationType
+  context     String          @db.Text // What was happening
+  observation String          @db.Text // What was observed
+  evidence    String          @db.Text // Specific quote or description
+
+  // Scoring
+  score      Float // -1.0 to 1.0 (negative = gap, positive = strength)
+  confidence Float // 0.0 to 1.0
+  severity   Severity // How significant
+
+  // User feedback
+  userAgreed   Boolean?
+  userFeedback String?  @db.Text
+  userContext  String?  @db.Text // Context user added
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, capacityId, createdAt])
+  @@index([artifactId])
+}
+
+enum TrendDirection {
+  IMPROVING
+  STABLE
+  DECLINING
+  INSUFFICIENT_DATA
+}
+
+model CapacityScore {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  capacityId String
+  capacity   Capacity @relation(fields: [capacityId], references: [id])
+
+  // Current score
+  score      Float // 0.0 to 5.0 (mastery scale)
+  confidence Float // 0.0 to 1.0
+  trend      TrendDirection @default(INSUFFICIENT_DATA)
+
+  // Evidence counts
+  positiveCount Int @default(0)
+  negativeCount Int @default(0)
+  missedCount   Int @default(0)
+
+  lastObservation DateTime?
+  updatedAt       DateTime  @updatedAt
+
+  @@unique([userId, capacityId])
+}
+
+// ============================================================================
+// WORK FEEDBACK SYSTEM - DOMAIN CONTEXT
+// ============================================================================
+
+model DomainContext {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Organization
+  organization Json @default("{}") // culture, unwritten rules, norms
+
+  // Historical context
+  history Json @default("{}") // key events, what worked/failed, sensitivities
+
+  // Domain vocabulary
+  vocabulary Json @default("{}") // terms, acronyms, jargon
+
+  // Current landscape
+  landscape Json @default("{}") // active projects, political dynamics, constraints
+
+  // Learning log
+  learnings DomainLearning[]
+
+  updatedAt DateTime @updatedAt
+}
+
+enum LearningType {
+  ORGANIZATION_CULTURE
+  UNWRITTEN_RULE
+  STAKEHOLDER_INSIGHT
+  HISTORICAL_CONTEXT
+  VOCABULARY_TERM
+  POLITICAL_DYNAMIC
+  USER_CORRECTION
+}
+
+model DomainLearning {
+  id              String        @id @default(cuid())
+  domainContextId String
+  domainContext   DomainContext @relation(fields: [domainContextId], references: [id], onDelete: Cascade)
+
+  type    LearningType
+  source  String // artifact ID or "user_input"
+  content String       @db.Text
+
+  // Validation
+  validated   Boolean   @default(false)
+  validatedAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  @@index([domainContextId])
+}
+
+// ============================================================================
+// WORK FEEDBACK SYSTEM - STAKEHOLDER RELATIONSHIPS
+// ============================================================================
+
+
+enum PowerLevel {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum InfluenceRole {
+  DECISION_MAKER
+  INFLUENCER
+  GATEKEEPER
+  END_USER
+  UNKNOWN
+}
+
+enum PoliticalStance {
+  CHAMPION
+  SUPPORTIVE
+  NEUTRAL
+  SKEPTIC
+  HOSTILE
+  UNKNOWN
+}
+
+model StakeholderProfile {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Identity
+  name         String
+  email        String?
+  role         String?
+  organization String? // Legacy String
+
+  // Graph Links
+  orgId         String?
+  org           Organization? @relation(fields: [orgId], references: [id])
+  
+  teamId        String?
+  team          ProfessionalTeam? @relation(fields: [teamId], references: [id])
+
+  // Advanced Power Dynamics
+  powerLevel      PowerLevel       @default(LOW)
+  influenceRole   InfluenceRole    @default(UNKNOWN)
+  politicalStance PoliticalStance  @default(UNKNOWN)
+  archetype       String? // "The Bureaucrat"
+
+  // Relationship metrics
+  relationshipStrength Float     @default(0.5) // 0-1
+  lastInteraction      DateTime?
+  interactionCount     Int       @default(0)
+
+  // Communication patterns
+  communicationTone String? // formal, informal, mixed
+  avgResponseTime   Int? // minutes
+  topics            String[]
+
+  // Power mapping (Legacy - kept for migration safety)
+  influenceLevel   String? // low, medium, high
+  stanceOnProjects String? // supportive, neutral, resistant
+  keyInterests     String[]
+
+  // Network position
+  connectedThrough String[] // other stakeholder IDs
+  bridgePosition   Boolean  @default(false)
+  
+  // Antigravity: Enhanced Profile
+  personaArchetype      PersonaArchetype?
+  communicationStyle    CommunicationStyle?
+  
+  primaryMotivation     String?                    // "Career advancement"
+  secondaryMotivations  String[]
+  fears                 String[]
+  
+  decisionStyle         DecisionStyle?
+  riskTolerance         RiskTolerance?
+  
+  // Relations
+  impacts               StakeholderImpact[]
+  pastReactions         StakeholderReactionHistory[]
+  
+  // Knowledge Graph Links
+  dependencies          ObjectiveDependency[]
+  
+  // MVQS: Enriched intelligence from sync data
+  intelligence          StakeholderIntelligence?
+
+  // User flags
+  isImportant Boolean @default(false)  // User-pinned as key stakeholder
+  userNotes   String? @db.Text
+
+  // Interactions
+  interactions StakeholderInteraction[]
+  
+  // Work Co-pilot Relations
+  goalStakeholders      GoalStakeholder[]
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Leverage & Currency (Experimental)
+  valueExchange String?   @db.Text // "Gives: X, Gets: Y"
+  politicalCapital String? @db.Text // "Leverage: X"
+
+  // Validation & Hygiene
+  validationStatus String    @default("DRAFT") // DRAFT, VERIFIED, ARCHIVED
+  lastValidatedAt  DateTime?
+
+  // Enrichment (web search + LLM inference)
+  enrichedAt         DateTime?   // When profile was last enriched
+  enrichmentSource   String?     // "web_search", "llm_inference", "manual", "calendar_inferred"
+  linkedinUrl        String?     // LinkedIn profile URL if found
+  linkedinHeadline   String?     // Current role/headline from LinkedIn
+  linkedinSummary    String?  @db.Text // Profile summary from LinkedIn
+  recentPublicActivity String? @db.Text // Recent posts, articles, speaking engagements
+  externalIntel      Json?       // Structured external intelligence (industry, company news, etc.)
+  companyDescription String?     // What the company does
+  relationshipType   String?     // buyer, vendor, partner, investor, internal_peer, etc.
+
+  // Deduplication
+  mergedIntoId String?  // If set, this profile is a duplicate merged into another
+
+  @@unique([userId, email])
+  @@index([userId])
+  @@index([mergedIntoId])
+}
+
+enum LegacyStakeholderRelationship {
+  BOSS
+  PEER
+  DIRECT_REPORT
+  SKIP_LEVEL
+  BOARD_MEMBER
+  INVESTOR
+  CUSTOMER
+  VENDOR
+  EXTERNAL
+}
+
+enum PersonaArchetype {
+  DRIVER
+  ANALYST
+  COLLABORATOR
+  VISIONARY
+  GUARDIAN
+  POLITICIAN
+  CHAMPION      
+  PRAGMATIST    
+  SKEPTIC       
+  CONSERVATIVE  
+  OPERATOR      
+}
+
+enum CommunicationStyle {
+  DIRECT
+  DIPLOMATIC
+  DATA_DRIVEN
+  NARRATIVE
+  VISUAL
+  RELATIONSHIP
+  COLLABORATIVE
+  FORMAL
+  STORY_DRIVEN
+}
+
+enum DecisionStyle {
+  QUICK_INTUITIVE
+  DELIBERATE_ANALYTIC
+  CONSENSUS_SEEKING
+  DIRECTIVE
+}
+
+enum RiskTolerance {
+  HIGH
+  MODERATE
+  LOW
+}
+
+enum InteractionType {
+  EMAIL
+  MEETING
+  CALL
+  MESSAGE
+  IN_PERSON
+}
+
+enum InteractionQuality {
+  RELATIONSHIP_BUILDING // Invested in relationship
+  TRANSACTIONAL // Task-focused only
+  WITHDRAWAL // Taking without giving
+  CONFLICT // Tension or disagreement
+}
+
+model StakeholderInteraction {
+  id            String             @id @default(cuid())
+  stakeholderId String
+  stakeholder   StakeholderProfile @relation(fields: [stakeholderId], references: [id], onDelete: Cascade)
+
+  // Link to artifact
+  artifactId String?
+
+  type    InteractionType
+  date    DateTime
+  quality InteractionQuality
+
+  // Details
+  summary        String? @db.Text
+  outcome        String?
+  followUpNeeded Boolean @default(false)
+
+  createdAt DateTime @default(now())
+
+  @@index([stakeholderId])
+}
+
+// ============================================================================
+// WORK FEEDBACK SYSTEM - FEEDBACK & RECOMMENDATIONS
+// ============================================================================
+
+enum FeedbackType {
+  NUDGE // Pre-event reminder
+  OBSERVATION // Post-artifact insight
+  WEEKLY_DIGEST // Weekly summary
+  INTERVENTION // Pattern-triggered
+  CELEBRATION // Achievement recognition
+}
+
+enum FeedbackStatus {
+  PENDING
+  DELIVERED
+  READ
+  ACTED
+  DISMISSED
+}
+
+model FeedbackItem {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  type FeedbackType
+
+  // Content
+  title   String
+  content String @db.Text // Markdown
+
+  // Evidence
+  observationIds String[] // SkillObservation IDs
+  artifactIds    String[] // WorkArtifact IDs
+
+  // Status
+  status      FeedbackStatus @default(PENDING)
+  deliveredAt DateTime?
+  readAt      DateTime?
+  actedAt     DateTime?
+
+  // User response
+  userResponse String?  @db.Text
+  helpful      Boolean?
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, status, createdAt])
+}
+
+enum LearningRecType {
+  COURSE
+  CASE
+  MODULE
+  REFLECTION_PROMPT
+}
+
+enum LearningRecStatus {
+  ACTIVE
+  COMPLETED
+  SKIPPED
+  EXPIRED
+}
+
+model LearningRecommendation {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // What's recommended
+  type      LearningRecType
+  contentId String // course slug or case slug
+
+  // Why it's recommended
+  capacityId  String
+  reason      String   @db.Text // Specific reason
+  evidenceIds String[] // Observation IDs supporting this
+
+  // Priority
+  priority      Int // 1-10, higher = more urgent
+  estimatedTime Int // minutes
+
+  // Status
+  status      LearningRecStatus @default(ACTIVE)
+  completedAt DateTime?
+
+  createdAt DateTime @default(now())
+
+  practiceMissions PracticeMission[]
+
+  @@index([userId, status, priority])
+}
+
+enum MissionStatus {
+  ACTIVE
+  IN_PROGRESS
+  COMPLETED
+  VALIDATED
+  FAILED
+}
+
+model PracticeMission {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Mission Details
+  title          String
+  description    String @db.Text
+  capacityId     String
+  capacity       Capacity @relation(fields: [capacityId], references: [id])
+  recommendationId String?
+  recommendation   LearningRecommendation? @relation(fields: [recommendationId], references: [id])
+
+  // Targets
+  targetScore    Float // e.g., 75.0 (aim for this capacity score)
+  baselineScore  Float // starting score when mission was created
+  currentScore   Float? // latest score during mission
+  deadline       DateTime
+
+  // Evidence & Validation
+  artifactIds    String[] @default([]) // IDs of artifacts that demonstrate practice
+  scoreChange    Float? // actual improvement achieved
+  validated      Boolean @default(false)
+  validatedAt    DateTime?
+  validationNotes String? @db.Text
+
+  // Status
+  status      MissionStatus @default(ACTIVE)
+  startedAt   DateTime?
+  completedAt DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, status])
+  @@index([capacityId, status])
+}
+
+// ============================================================================
+// ANTIGRAVITY ENGINES
+// ============================================================================
+
+// --- CASE SURFACING ---
+
+enum CaseVertical {
+  CONSULTING
+  TECHNOLOGY
+  FINANCE
+  HEALTHCARE
+  RETAIL
+  MANUFACTURING
+  GENERAL
+  DPI
+  TECH_SAAS
+  FINANCIAL_SVCS
+}
+
+enum CaseHorizontal {
+  LEADERSHIP
+  STRATEGY
+  FINANCE
+  MARKETING
+  PRODUCT
+  TECHNOLOGY
+  OPERATIONS
+  RISK
+  ORG_DESIGN
+  COMMUNICATION
+  SALES
+  PEOPLE
+  
+  // Elaborated
+  LEADERSHIP_PEOPLE
+  STRATEGY_PLANNING
+  STAKEHOLDER_MGMT
+  FINANCE_ECONOMICS
+  MARKETING_GTM
+  PRODUCT_INNOVATION
+  TECHNOLOGY_DIGITAL
+  OPERATIONS_EXECUTION
+  RISK_COMPLIANCE
+  ORG_DESIGN_CHANGE
+  COMMUNICATION_INFLUENCE
+}
+
+enum CaseComplexity {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum SurfacingTrigger {
+  CALENDAR_UPCOMING
+  PATTERN_DETECTED
+  DECISION_MENTIONED
+  TRANSITION_DETECTED
+  USER_REQUESTED
+  SIGNAL_BASED
+  LEARNING_PATH
+  AMBIENT
+}
+
+enum SurfacingResponse {
+  VIEWED
+  STARTED
+  COMPLETED
+  REMIND_LATER
+  DISMISSED
+  NOT_RELEVANT
+}
+
+model CaseSurfacing {
+  id              String            @id @default(cuid())
+  userId          String
+  caseId          String
+
+  trigger         SurfacingTrigger
+  triggerContext  Json?             
+  relevanceScore  Float?            
+
+  surfacedAt      DateTime          @default(now())
+  response        SurfacingResponse?
+  respondedAt     DateTime?
+
+  caseStarted     Boolean           @default(false)
+  caseCompleted   Boolean           @default(false)
+  userRating      Int?              
+
+  user            User              @relation(fields: [userId], references: [id])
+  case            Case              @relation(fields: [caseId], references: [id])
+
+  @@index([userId, surfacedAt])
+  @@index([caseId])
+}
+
+// --- SCENARIO ENGINE ---
+
+model Decision {
+  id                    String   @id @default(cuid())
+  userId                String
+
+  title                 String                     
+  description           String? 
+  decisionType          DecisionType
+
+  reversibility         Reversibility?
+  timeframe             Timeframe?
+  impactScope           ImpactScope?
+
+  scenarios             Scenario[]
+  stakeholderImpacts    StakeholderImpact[]
+
+  status                DecisionStatus  @default(ANALYZING)
+  chosenScenario        String?                    
+  actualOutcome         String?                    
+  lessonsLearned        String?
+  
+  prepQuestions         String[]
+  watchOuts             String[]
+  successSignals        String[]
+
+  decisionDeadline      DateTime?
+  decidedAt             DateTime?
+
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  user                  User     @relation(fields: [userId], references: [id])
+}
+
+enum DecisionType {
+  REORG
+  HIRING
+  FIRING
+  BUDGET_REQUEST
+  STRATEGY_PIVOT
+  PRODUCT_CUT
+  VENDOR_SELECTION
+  PRICING_CHANGE
+  MARKET_ENTRY
+  PARTNERSHIP
+  ACQUISITION
+  CRISIS_RESPONSE
+  BOARD_PRESENTATION
+  INVESTOR_PITCH
+  
+  PEOPLE          
+  STRATEGY        
+  INVESTMENT      
+  STAKEHOLDER     
+  OPERATIONAL     
+  CAREER          
+}
+
+enum Reversibility {
+  EASILY_REVERSIBLE
+  REVERSIBLE_WITH_COST
+  MOSTLY_IRREVERSIBLE
+  IRREVERSIBLE
+}
+
+enum Timeframe {
+  IMMEDIATE
+  SHORT_TERM
+  MEDIUM_TERM
+  LONG_TERM
+}
+
+enum ImpactScope {
+  INDIVIDUAL
+  TEAM
+  DEPARTMENT
+  COMPANY
+  EXTERNAL
+}
+
+enum DecisionStatus {
+  ANALYZING
+  READY_TO_DECIDE
+  DECIDED
+  IMPLEMENTED
+  REVIEWED
+  DRAFT
+  READY
+  PREPPING
+  EXECUTED
+  ABANDONED
+}
+
+model Scenario {
+  id              String   @id @default(cuid())
+  decisionId      String
+
+  name            String                     
+  description     String                     
+  probability     ScenarioProbability
+
+  bestCase              String?
+  worstCase             String?
+  mostLikely            String?
+
+  assumptions           String[]                   
+  dependencies          String[]                   
+  risks                 String[]                   
+
+  immediateActions      String[]                   
+  shortTermActions      String[]                   
+  
+  // Detailed actions from spec
+  keyActions            String[]
+  talkingPoints         String[]
+  watchFor              String[]
+  
+  stakeholderReactions  Json? // { stakeholderId: reaction }
+
+  order                 Int?
+
+  decision              Decision @relation(fields: [decisionId], references: [id])
+}
+
+enum ScenarioProbability {
+  HIGH
+  MEDIUM
+  LOW
+  LIKELY
+  POSSIBLE
+  UNLIKELY
+}
+
+model StakeholderImpact {
+  id                    String   @id @default(cuid())
+  decisionId            String
+  stakeholderId         String
+
+  impactLevel           ImpactLevel?
+  impactType            ImpactType?
+
+  likelyReaction        StakeholderReaction?
+  initialReaction       StakeholderReaction? // Alias
+  
+  reactionReason        String?                     
+
+  concerns              String[]                   
+  motivations           String[]
+  
+  mitigationStrategy    String?  
+  approachStrategy      String? // Alias
+  
+  talkingPoints         String[]                   
+  riskIfMishandled      String?
+
+  decision              Decision           @relation(fields: [decisionId], references: [id])
+  stakeholder           StakeholderProfile @relation(fields: [stakeholderId], references: [id])
+}
+
+enum ImpactLevel {
+  HIGH
+  MEDIUM
+  LOW
+  NONE
+}
+
+enum ImpactType {
+  POSITIVE
+  NEGATIVE
+  MIXED
+  NEUTRAL
+}
+
+enum StakeholderReaction {
+  STRONG_SUPPORT
+  SUPPORT
+  NEUTRAL
+  CONCERN
+  RESISTANCE
+  STRONG_OPPOSITION
+  SUPPORTIVE
+  SKEPTICAL
+  BLOCKER
+}
+
+model StakeholderReactionHistory {
+  id              String   @id @default(cuid())
+  stakeholderId   String
+
+  situation       String              
+  theirReaction   String              
+  outcome         String              
+
+  whatWorked      String?             
+  whatDidnt       String?             
+
+  createdAt       DateTime @default(now())
+
+  stakeholder     StakeholderProfile @relation(fields: [stakeholderId], references: [id])
+}
+
+
+// --- KPI & EXECUTION ---
+
+model UserKPI {
+  id              String   @id @default(cuid())
+  userId          String
+
+  name            String              
+  description     String?             
+  metric          String              
+
+  targetValue     Float               
+  targetDate      DateTime            
+  baselineValue   Float?              
+  currentValue    Float?              
+
+  type            KPIType
+  priority        Int                 
+  timeframe       KPITimeframe
+
+  isPersonal      Boolean             
+  dependsOn       String[]            
+
+  assumptions     KPIAssumption[]     
+
+  updates         KPIUpdate[]
+  linkedActions   ActionKPILink[]
+
+  status          KPIStatus           @default(ON_TRACK)
+  confidence      Float?              
+
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+  revisedAt       DateTime?           
+
+  user            User                @relation(fields: [userId], references: [id])
+}
+
+enum KPIType {
+  REVENUE
+  GROWTH
+  PROFITABILITY
+  CUSTOMER
+  PRODUCT
+  TEAM
+  OPERATIONAL
+  STRATEGIC
+  PERSONAL
+}
+
+enum KPITimeframe {
+  QUARTERLY
+  ANNUAL
+  MULTI_YEAR
+  MILESTONE
+}
+
+enum KPIStatus {
+  ON_TRACK
+  AT_RISK
+  OFF_TRACK
+  ACHIEVED
+  REVISED
+  ABANDONED
+}
+
+model KPIAssumption {
+  id              String   @id @default(cuid())
+  kpiId           String
+
+  assumption      String              
+  isValid         Boolean             @default(true)
+  validatedAt     DateTime?
+  invalidatedAt   DateTime?
+
+  impactIfFalse   String?             
+
+  kpi             UserKPI             @relation(fields: [kpiId], references: [id])
+}
+
+model KPIUpdate {
+  id              String   @id @default(cuid())
+  kpiId           String
+
+  value           Float               
+  note            String?             
+  source          String?             
+
+  onTrack         Boolean
+  confidence      Float?              
+
+  rootCause       String?             
+  correctionPlan  String?             
+
+  createdAt       DateTime            @default(now())
+
+  kpi             UserKPI             @relation(fields: [kpiId], references: [id])
+}
+
+model UserAction {
+  id              String   @id @default(cuid())
+  userId          String
+
+  title           String              
+  description     String?
+  type            ActionType
+
+  owner           String?             
+  dueDate         DateTime?
+
+  kpiLinks        ActionKPILink[]     
+  expectedImpact  String?             
+
+  status          ActionStatus        @default(PLANNED)
+  completedAt     DateTime?
+
+  actualOutcome   String?             
+  lessonsLearned  String?             
+
+  isHighLeverage  Boolean             @default(false)  
+  isWasteful      Boolean             @default(false)  
+
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+
+  user            User                @relation(fields: [userId], references: [id])
+}
+
+enum ActionType {
+  INITIATIVE
+  DECISION
+  CONVERSATION
+  HIRE
+  PROCESS
+  MEETING
+  REVIEW
+  OTHER
+}
+
+enum ActionStatus {
+  PLANNED
+  IN_PROGRESS
+  BLOCKED
+  COMPLETED
+  CANCELLED
+  DEFERRED
+}
+
+model ActionKPILink {
+  id              String   @id @default(cuid())
+  actionId        String
+  kpiId           String
+
+  relationship    ActionKPIRelationship
+  expectedImpact  String?             
+  impactEstimate  Float?              
+  confidence      Float?              
+
+  action          UserAction          @relation(fields: [actionId], references: [id])
+  kpi             UserKPI             @relation(fields: [kpiId], references: [id])
+
+  @@unique([actionId, kpiId])
+}
+
+enum ActionKPIRelationship {
+  DIRECTLY_DRIVES
+  ENABLES
+  PROTECTS
+  INDIRECT
+}
+
+model TimeAllocation {
+  id              String   @id @default(cuid())
+  userId          String
+
+  weekStart       DateTime
+
+  totalMeetingHours   Float
+  totalFocusHours     Float
+
+  linkedToKPI1    Float               
+  linkedToKPI2    Float
+  linkedToKPI3    Float
+  linkedToOtherKPIs Float
+  unlinked        Float               
+
+  decisionMeetings    Float
+  infoSharingMeetings Float
+  oneOnOnes           Float
+  externalMeetings    Float
+
+  backToBackCount Int                 
+  afterHoursHours Float               
+
+  feltProductive  Boolean?
+  biggestWaste    String?             
+
+  createdAt       DateTime            @default(now())
+
+  user            User                @relation(fields: [userId], references: [id])
+
+  @@unique([userId, weekStart])
+}
+
+model WastePattern {
+  id              String   @id @default(cuid())
+  userId          String
+
+  pattern         WasteType
+  description     String              
+
+  hoursPerWeek    Float?              
+  occurrences     Int                 
+
+  sourceType      String              
+  sourceDetails   Json?               
+
+  acknowledged    Boolean             @default(false)
+  addressedAt     DateTime?
+  resolution      String?             
+
+  firstDetected   DateTime            @default(now())
+  lastOccurrence  DateTime            @default(now())
+
+  user            User                @relation(fields: [userId], references: [id])
+}
+
+enum WasteType {
+  MEETING_NO_DECISION
+  REPORT_UNREAD
+  DUPLICATE_EFFORT
+  UNNECESSARY_ATTENDANCE
+  NO_CLEAR_OWNER
+  SCOPE_CREEP
+  PERFECTIONISM
+  WAITING
+  CONTEXT_SWITCHING
+  MISALIGNED_PRIORITY
+}
+
+model ExternalSignal {
+  id              String   @id @default(cuid())
+  userId          String
+
+  signal          String              
+  category        SignalCategory
+  source          String?             
+
+  relevanceScore  Float               
+  affectedKPIs    String[]            
+
+  implications    String?             
+  assumptionsAffected String[]        
+
+  acknowledged    Boolean             @default(false)
+  response        String?             
+  kpisRevised     Boolean             @default(false)
+
+  detectedAt      DateTime            @default(now())
+  acknowledgedAt  DateTime?
+
+  user            User                @relation(fields: [userId], references: [id])
+}
+
+enum SignalCategory {
+  COMPETITIVE
+  MARKET
+  ECONOMIC
+  REGULATORY
+  TECHNOLOGY
+  CUSTOMER
+  INTERNAL
+  TEAM
+}
+
+model AssumptionReview {
+  id              String   @id @default(cuid())
+  userId          String
+
+  reviewDate      DateTime
+
+  kpisReviewed    String[]            
+  assumptionsReviewed String[]        
+
+  stillValid      String[]            
+  nowInvalid      String[]            
+
+  kpisRevised     String[]            
+  actionsAdded    String[]            
+  actionsCancelled String[]           
+
+  completedAt     DateTime?
+
+  user            User                @relation(fields: [userId], references: [id])
+}
+
+enum SenderType {
+  USER
+  ASSISTANT
+  SYSTEM
+}
+
+model ConversationInsight {
+  id              String   @id @default(cuid())
+  userId          String
+
+  conversationDate DateTime
+  insight         String              
+  // Work Co-pilot (Chat State)
+  conversationType      String?  @default("GENERAL") // GENERAL, GOAL_CAPTURE, STRATEGY, EXECUTION
+  relatedGoalId         String?
+  relatedStakeholderId  String?
+
+  senderType      SenderType
+  contextType     ContextType         
+
+  explicit        Boolean             
+  confidence      Float
+
+  appliedAt       DateTime?           
+  wasHelpful      Boolean?            
+
+  createdAt       DateTime            @default(now())
+
+  user            User                @relation(fields: [userId], references: [id])
+}
+
+enum ContextType {
+  REVENUE_DRIVER
+  COST_DRIVER
+  COMPETITIVE_ADVANTAGE
+  KEY_CONSTRAINT
+  TEAM_STRENGTH
+  TEAM_GAP
+  STAKEHOLDER_DYNAMIC
+  MARKET_POSITION
+  STRATEGIC_BET
+  PAST_LEARNING
+}
+
+// --- CONVERSATION ASSIST ---
+
+model ConversationPrep {
+  id              String   @id @default(cuid())
+  userId          String
+
+  title           String                  
+  type            ConversationType
+  scheduledAt     DateTime?
+  stakeholders    String[]                
+
+  // Link to Calendar/Artifact
+  meetingId       String?                // ID of the WorkArtifact (Meeting)
+  meeting         WorkArtifact?          @relation(fields: [meetingId], references: [id])
+  
+  // Stakeholder link (for intelligence)
+  stakeholderEmail    String?
+  
+  primaryObjective    String             
+  secondaryObjectives String[]           
+  worstAcceptableOutcome String?         
+
+  openingHook     String?                
+  keyMessages     KeyMessage[]           
+  anticipatedObjections Objection[]      
+  closingAction   String?                
+
+  quickRef        QuickReference?
+
+  status          ConversationStatus     @default(PREPPING)
+  actualOutcome   String?
+  lessonsLearned  String?
+  followUps       String[]
+  
+  logs            ConversationLog[]
+  
+  // MVQS Fields
+  intelligenceReport  Json?              // Cached Scout output
+  critiqueResult      Json?              // Final Critic output
+  generationPasses    Int       @default(1)
+  
+  // Outcome tracking
+  outcome             ConversationOutcome?
+
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+
+  user            User                   @relation(fields: [userId], references: [id])
+  
+  @@index([userId, scheduledAt])
+  @@index([stakeholderEmail])
+}
+
+
+enum ConversationType {
+  BOARD_PRESENTATION
+  INVESTOR_PITCH
+  CUSTOMER_MEETING
+  DIFFICULT_CONVERSATION
+  NEGOTIATION
+  STAKEHOLDER_ALIGNMENT
+  PERFORMANCE_REVIEW
+  CRISIS_COMMUNICATION
+  TEAM_ALL_HANDS
+  ONE_ON_ONE
+  SALES_CALL
+  INTERVIEW
+  OTHER
+}
+
+enum ConversationStatus {
+  PREPPING
+  READY
+  IN_PROGRESS
+  COMPLETED
+  DEFERRED
+  CANCELLED
+}
+
+model KeyMessage {
+  id              String   @id @default(cuid())
+  prepId          String
+
+  message         String                 
+  shortForm       String                 
+  supportingData  String?                
+  transition      String?                
+
+  order           Int                    
+
+  prep            ConversationPrep       @relation(fields: [prepId], references: [id])
+}
+
+model Objection {
+  id              String   @id @default(cuid())
+  prepId          String
+
+  objection       String                 
+  shortForm       String                 
+  response        String                 
+  quickResponse   String                 
+  reframe         String?                
+
+  likelihood      ObjectionLikelihood    @default(POSSIBLE)
+
+  prep            ConversationPrep       @relation(fields: [prepId], references: [id])
+}
+
+enum ObjectionLikelihood {
+  VERY_LIKELY
+  POSSIBLE
+  UNLIKELY
+}
+
+model QuickReference {
+  id              String   @id @default(cuid())
+  prepId          String   @unique
+
+  objective       String                 
+  pivots          Json                   
+
+  closeChecklist  String[]               
+  avoid           String[]               
+  use             String[]               
+
+  prep            ConversationPrep       @relation(fields: [prepId], references: [id])
+}
+
+model ConversationLog {
+  id              String   @id @default(cuid())
+  prepId          String
+
+  timestamp       DateTime               @default(now())
+  type            LogEntryType
+  content         String                 
+
+  objectionTriggered String?             
+  pivotUsed       String?                
+
+  prep            ConversationPrep       @relation(fields: [prepId], references: [id])
+}
+
+enum LogEntryType {
+  NOTE
+  OBJECTION
+  PIVOT
+  COMMITMENT
+  ACTION_ITEM
+  QUESTION
+}
+
+
+// --- COACHING CHAT ---
+
+model CoachSession {
+  id              String   @id @default(cuid())
+  userId          String
+  
+  title           String?            // Auto-generated name
+  context         String?            // "Prep for Board Meeting"
+  
+  // Link to specific entities being discussed
+  relatedPrepId   String?
+  relatedCaseId   String?
+  relatedKPIId    String?
+
+  messages        CoachMessage[]
+  
+  lastMessageAt   DateTime           @default(now())
+  createdAt       DateTime           @default(now())
+
+  user            User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId, lastMessageAt])
+}
+
+model CoachMessage {
+  id              String   @id @default(cuid())
+  sessionId       String
+  
+  role            String             // "user", "assistant", "system"
+  content         String             @db.Text
+  
+  // Structured data embedded in chat (e.g., suggested scenario)
+  toolCalls       Json?
+
+  // Work Co-pilot (Chat State)
+  conversationType      String?  @default("GENERAL") // GENERAL, GOAL_CAPTURE, STRATEGY, EXECUTION
+  relatedGoalId         String?
+  relatedStakeholderId  String?
+
+  
+  createdAt       DateTime           @default(now())
+  
+  session         CoachSession       @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+}
+
+// ============================================================================
+// MVQS - MINIMUM VIABLE QUALITY SYSTEM
+// ============================================================================
+
+// --- SYNC STATUS TRACKING ---
+
+model SyncStatus {
+  id          String    @id @default(cuid())
+  userId      String
+  connector   String    // 'calendar', 'email', 'drive'
+  
+  lastSyncAt  DateTime?
+  lastError   String?
+  status      String    @default("idle") // idle, syncing, error
+  
+  nextSyncAt  DateTime? // Scheduled next sync time
+  syncCount   Int       @default(0)
+  
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  @@unique([userId, connector])
+  @@index([userId])
+}
+
+// --- WATCH CHANNELS (Google Push Notifications) ---
+
+model WatchChannel {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  connector   String    // 'calendar', 'drive', 'gmail'
+  channelId   String    @unique   // UUID sent to Google
+  resourceId  String?             // Google's resource ID (needed to stop channel)
+  expiration  DateTime            // Channel expires (max 7 days)
+  syncToken   String?             // For incremental sync (calendar/gmail)
+  pageToken   String?             // For change tracking (drive)
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([userId])
+  @@index([connector])
+  @@index([expiration])
+}
+
+// --- MEETING SYNC RECORDS ---
+
+model MeetingSyncRecord {
+  id            String    @id @default(cuid())
+  userId        String
+  externalId    String    // Calendar event ID
+  
+  title         String
+  description   String?   @db.Text
+  startTime     DateTime
+  endTime       DateTime
+  attendees     Json      // Array of {email, name, response}
+  location      String?
+  
+  // Event status
+  status        String    @default("confirmed") // confirmed, cancelled, tentative
+  isRecurring   Boolean   @default(false)
+  recurringId   String?   // For recurring events
+  
+  // Conference / video call
+  meetLink      String?   // Google Meet URL (e.g., https://meet.google.com/abc-xyz)
+  conferenceId  String?   // Google Meet conference ID for dedup
+  notesDocId    String?   // Google Drive doc ID of matched Gemini notes (cached after first match)
+
+  // Extracted context
+  meetingType   String?   // inferred: "1:1", "team", "external"
+  meetingCategory MeetingCategory?  // NEEDLE_MOVER, OPERATIONAL, GROWTH, UNCLASSIFIED
+  isPresentation  Boolean  @default(false) // User is presenting (organizer + large audience + keywords)
+  participants  String[]  // Extracted email addresses
+
+  // Outcome tracking (post-meeting)
+  outcome       String?   @db.Text
+  outcomeResult OutcomeResult?  // LANDED, PARTIAL, MISSED, SKIPPED
+  notes         String?   @db.Text
+  followUps     String[]
+
+  // User classification overrides
+  userImportanceOverride String?    // critical | high | medium | low — user can override Mira's classification
+  strategicLevel         String?    // personal | team — whose strategy this meeting serves
+  strategicOwner         String?    // Team member name (when strategicLevel = team)
+  userNotes              String?    @db.Text  // Pre-meeting user comments/context for Mira
+
+  // Meeting Lifecycle
+  lifecycleStage    String?    // OUTCOME_ASKED | OUTCOME_SET | BRIEF_SENT | IN_PROGRESS | ENDED | REVIEWED
+  desiredOutcome    String?    @db.Text
+  outcomeSuggestions String[]  // AI-generated outcome suggestions for one-tap accept
+  outcomeAskedAt    DateTime?
+  briefSentAt       DateTime?
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  conversationOutcome ConversationOutcome?
+  commitments   MeetingCommitment[]
+  voiceCalls    VoiceCall[]
+  influencePlan InfluencePlan?
+
+  @@unique([userId, externalId])
+  @@index([userId, startTime])
+  @@index([participants])
+}
+
+// Ground Game: Influence plan for high-stakes meetings
+model InfluencePlan {
+  id                String   @id @default(cuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Target meeting
+  meetingId         String   @unique
+  meeting           MeetingSyncRecord @relation(fields: [meetingId], references: [id], onDelete: Cascade)
+
+  // Room assessment
+  roomTemperature   Float    @default(0.5) // 0-1 confidence in meeting success
+  roomRead          Json?    // [{stakeholderId, name, stance, influence, concerns, strategy}]
+  tacticalAdvice    String?  @db.Text // LLM-generated one-liner tactical tip
+
+  // Influence steps (sequenced actions)
+  influenceSteps    Json?    // [{action, stakeholderId, status, dueDate, outcome}]
+  suggestedMeetings Json?    // [{stakeholderId, name, reason, talkingPoints, status}]
+
+  // Status
+  status            String   @default("active") // active, completed, abandoned
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([userId])
+  @@index([meetingId])
+}
+
+enum MeetingCategory {
+  NEEDLE_MOVER    // Strategy, decisions, key stakeholders
+  TACTICAL        // Short-term goal execution, project milestones
+  OPERATIONAL     // Standups, syncs, status updates
+  GROWTH          // 1:1s with reports, mentoring, reviews
+  UNCLASSIFIED    // Not enough signal
+}
+
+enum OutcomeResult {
+  LANDED    // User achieved their desired outcome
+  PARTIAL   // Partially achieved
+  MISSED    // Did not achieve
+  SKIPPED   // User dismissed/didn't respond
+}
+
+// --- MEETING COMMITMENTS ---
+
+model MeetingCommitment {
+  id          String    @id @default(cuid())
+  meetingId   String
+  meeting     MeetingSyncRecord @relation(fields: [meetingId], references: [id], onDelete: Cascade)
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  owner       String    // Who committed (person name)
+  ownerEmail  String?   // Email if known
+  description String    @db.Text  // What they committed to
+  dueDate     DateTime? // By when
+
+  status      CommitmentStatus @default(PENDING)
+  fulfilledAt DateTime?
+  reminderSentAt DateTime? // When we last reminded about this
+  source      CommitmentSource @default(CHAT)
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([userId, status])
+  @@index([userId, dueDate])
+  @@index([meetingId])
+}
+
+enum CommitmentStatus {
+  PENDING
+  FULFILLED
+  OVERDUE
+  DROPPED
+}
+
+enum CommitmentSource {
+  CHAT      // Extracted from post-meeting chat
+  MANUAL    // User explicitly created
+}
+
+// --- MEETING PATTERN SNAPSHOTS ---
+
+model MeetingPatternSnapshot {
+  id                    String   @id @default(cuid())
+  userId                String
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  weekStart             DateTime
+  totalMeetings         Int
+  outcomesSet           Int      @default(0)
+  outcomesLanded        Int      @default(0)
+  outcomesMissed        Int      @default(0)
+  commitmentsMade       Int      @default(0)
+  commitmentsFulfilled  Int      @default(0)
+
+  categoryBreakdown     Json     @default("{}")  // { NEEDLE_MOVER: 3, OPERATIONAL: 8, ... }
+  totalMeetingHours     Float    @default(0)
+  avgMeetingsPerDay     Float    @default(0)
+  recurringWithNoValue  Json     @default("[]")  // [{ title, count, lastOutcome }]
+  stakeholderGaps       Json     @default("[]")  // [{ name, lastMet, relationship }]
+  insights              Json     @default("[]")  // LLM-generated observations
+
+  createdAt             DateTime @default(now())
+
+  @@unique([userId, weekStart])
+  @@index([userId])
+}
+
+// --- EMAIL THREAD SUMMARIES ---
+
+model EmailSummary {
+  id              String    @id @default(cuid())
+  userId          String
+  threadId        String    // Gmail thread ID
+  
+  // Participants
+  participants    String[]  // Email addresses
+  from            String?   // Primary sender
+  to              String[]  // Recipients
+  
+  // Content summary (LLM-generated)
+  subject         String?
+  summary         String    @db.Text  // 2-3 sentence summary
+  sentiment       String    @default("neutral") // positive, negative, neutral
+  keyTopics       String[]  // Extracted topics
+  
+  // Metadata
+  messageCount    Int       @default(1)
+  firstMessageAt  DateTime
+  lastMessageAt   DateTime
+  
+  // User interaction flags
+  hasAttachment   Boolean   @default(false)
+  isImportant     Boolean   @default(false)
+  requiresAction  Boolean   @default(false)
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  @@unique([userId, threadId])
+  @@index([userId, lastMessageAt])
+  @@index([participants])
+}
+
+// --- CONVERSATION OUTCOMES (Learning Loop) ---
+
+model ConversationOutcome {
+  id                  String    @id @default(cuid())
+  conversationPrepId  String?   @unique
+  meetingSyncRecordId String?   @unique
+
+  // Outcome assessment
+  success             Boolean
+  objectiveMet        Boolean?
+
+  // What did we learn?
+  whatWorked          String[]
+  whatFailed          String[]
+  surprises           String[]  // Unexpected objections, reactions
+
+  // User feedback
+  userRating          Int?      // 1-5
+  userNotes           String?   @db.Text
+
+  // AI-generated insights
+  aiInsights          String?   @db.Text
+  suggestedImprovements String[]
+
+  createdAt           DateTime  @default(now())
+
+  conversationPrep    ConversationPrep?   @relation(fields: [conversationPrepId], references: [id], onDelete: Cascade)
+  meetingSyncRecord   MeetingSyncRecord?  @relation(fields: [meetingSyncRecordId], references: [id], onDelete: Cascade)
+}
+
+// --- USER INTELLIGENCE (Synthesized profile for coaching) ---
+
+model UserIntelligence {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Structured profile (JSON for flexibility as schema evolves)
+  // Shape: { role, responsibilities, aspirations, strengths, growthAreas,
+  //          communicationStyle, decisionPattern, projectSnapshot }
+  profile Json
+
+  // Confidence tracking
+  overallConfidence Float   @default(0)
+  dataPointCount    Int     @default(0)
+
+  // Versioning
+  version       Int      @default(1)
+  synthesizedAt DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Knowledge Graph tracking
+  factBasis    String[] @default([])  // KnowledgeFact IDs that informed this profile
+  graphVersion Int      @default(0)
+}
+
+// --- STAKEHOLDER INTELLIGENCE (Enriched from sync data) ---
+
+model StakeholderIntelligence {
+  id                  String    @id @default(cuid())
+  stakeholderId       String    @unique
+  
+  // LLM-generated profile
+  profileSummary      String?   @db.Text
+  
+  // Communication patterns
+  avgResponseTimeHrs  Float?
+  preferredMeetingTimes String[]
+  
+  // Behavior patterns (from historical data)
+  decisionMakingNotes String?   @db.Text
+  objectionPatterns   String[]  // Common objections they raise
+  
+  // What works with them
+  successPatterns     String[]  // Approaches that worked
+  failurePatterns     String[]  // Approaches that failed
+  
+  // Recent context
+  recentTopics        String[]  // Topics from recent interactions
+  currentMood         String?   // Inferred from recent emails
+  
+  // Metadata
+  evidenceCount       Int       @default(0) // Number of data points
+  lastRefreshedAt     DateTime?
+  
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  
+
+  stakeholder         StakeholderProfile @relation(fields: [stakeholderId], references: [id], onDelete: Cascade)
+}
+
+// --- WEB PUSH NOTIFICATIONS ---
+
+model PushSubscription {
+  id        String   @id @default(cuid())
+  userId    String
+  endpoint  String   @unique
+  p256dh    String
+  auth      String
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@index([userId])
+}
+
+
+
+// ============================================================================
+// RELATIONSHIP INTELLIGENCE ENGINE (KNOWLEDGE GRAPH)
+// ============================================================================
+
+enum OrgRelation {
+  EMPLOYER
+  CLIENT
+  VENDOR
+  PARTNER
+  COMPETITOR
+  INVESTOR
+  REGULATOR
+  OTHER
+}
+
+model Organization {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  name         String
+  domain       String? // "acme.com"
+  industry     String? // "FinTech"
+  relationToUser OrgRelation
+  size         String? // "Enterprise"
+
+  // Org hierarchy: COSS → parent: Ekstep
+  parentOrgId  String?
+  parentOrg    Organization? @relation("OrgHierarchy", fields: [parentOrgId], references: [id])
+  childOrgs    Organization[] @relation("OrgHierarchy")
+
+  metadata Json? // Location, Revenue, etc.
+
+  // Relations
+  teams              ProfessionalTeam[]
+  stakeholders       StakeholderProfile[]
+  projects           ProfessionalProject[]  // Legacy
+  unifiedProjects    Project[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, name])
+}
+
+model ProfessionalTeam {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  orgId  String?
+  org    Organization? @relation(fields: [orgId], references: [id])
+
+  name   String // "Mobile Squad"
+  context String? // "Responsible for iOS app"
+
+  stakeholders StakeholderProfile[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProfessionalProject {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  orgId  String?
+  org    Organization? @relation(fields: [orgId], references: [id])
+
+  name   String // "Q3 Migration"
+  context String? @db.Text
+  status String // ACTIVE, DONE, HOLD
+
+  startDate DateTime?
+  endDate   DateTime?
+
+  objectives StrategicObjective[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ----------------------------------------------------------------------------
+// USER CORRECTIONS — learn from user overrides
+// ----------------------------------------------------------------------------
+
+model UserCorrection {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // What was corrected
+  entityType  String   // "meeting_classification", "stakeholder_archetype", "stakeholder_org", "outcome_suggestion"
+  entityId    String?  // ID of the meeting/stakeholder/etc.
+
+  // The AI's original prediction vs what user chose
+  field       String   // "meetingCategory", "importance", "personaArchetype", etc.
+  aiValue     String?  // What AI predicted
+  userValue   String   // What user corrected to
+
+  // Context for learning (what signals led to this correction)
+  context     Json?    // { title, attendeeCount, isRecurring, keywords... }
+
+  // Whether user was shown "Mira learned from your past correction"
+  appliedAt   DateTime? // When this correction was applied to a new prediction
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, entityType])
+  @@index([userId, field])
+}
+
+// ----------------------------------------------------------------------------
+// GRAPH EDGES (RELATIONSHIPS)
+// ----------------------------------------------------------------------------
+
+enum EntityType {
+  USER
+  STAKEHOLDER
+  ORGANIZATION
+  TEAM
+}
+
+model StakeholderRelationship {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // FROM (Source)
+  fromEntityId String
+  fromEntityType EntityType
+
+  // TO (Target)
+  toEntityId   String
+  toEntityType EntityType
+
+  // The Edge
+  relationType String // "reports_to", "client_of", "blocks"
+  
+  // Dynamics
+  confidence   Float // 0-1
+  source       String? // "Inferred from email"
+
+  // Qualitative Dynamics
+  dynamics     Json? // { "trust": 8, "isTransactional": false, "culturalContext": "high" }
+
+  // Reciprocity Ledger
+  values       RelationshipValue[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([fromEntityId])
+  @@index([toEntityId])
+}
+
+enum ValueType {
+  TRUST_DEPOSIT
+  INFLUENCE_WITHDRAWAL
+  INFORMATION_EXCHANGE
+  SOCIAL_CAPITAL
+}
+
+model RelationshipValue {
+  id             String @id @default(cuid())
+  relationshipId String
+  relationship   StakeholderRelationship @relation(fields: [relationshipId], references: [id], onDelete: Cascade)
+
+  type        ValueType
+  amount      Float // 1-10 scale
+  description String
+  
+  occurredAt  DateTime @default(now())
+}
+
+// ----------------------------------------------------------------------------
+// STRATEGIC OBJECTIVES
+// ----------------------------------------------------------------------------
+
+enum ObjOwnerType {
+  USER
+  ORGANIZATION
+  TEAM
+}
+
+enum ObjStatus {
+  ACTIVE
+  BLOCKED
+  COMPLETED
+  CANCELLED
+}
+
+enum ObjPriority {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+model StrategicObjective {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Owner (Polymorphic)
+  ownerId   String
+  ownerType ObjOwnerType
+
+  // Link to Project (Optional — legacy ProfessionalProject)
+  projectId String?
+  project   ProfessionalProject? @relation(fields: [projectId], references: [id])
+
+  // Link to unified Project (Optional)
+  unifiedProjectId String?
+  unifiedProject   Project? @relation("ProjectObjectives", fields: [unifiedProjectId], references: [id])
+
+  title       String
+  description String? @db.Text
+  
+  status   ObjStatus    @default(ACTIVE)
+  priority ObjPriority  @default(MEDIUM)
+  deadline DateTime?
+
+  metadata Json? // KPIs
+
+  // Links to People
+  dependencies ObjectiveDependency[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum DependencyType {
+  BLOCKER
+  SPONSOR
+  CONTRIBUTOR
+  DECISION_MAKER
+  RISK
+}
+
+model ObjectiveDependency {
+  id          String @id @default(cuid())
+  objectiveId String
+  objective   StrategicObjective @relation(fields: [objectiveId], references: [id], onDelete: Cascade)
+
+  stakeholderId String
+  stakeholder   StakeholderProfile @relation(fields: [stakeholderId], references: [id])
+
+  type  DependencyType
+  notes String?
+
+  createdAt DateTime @default(now())
+}
+
+
+// ============================================================================
+// WORK CO-PILOT: STRATEGIC RELATIONSHIP ADVISOR
+// ============================================================================
+
+enum GoalMagnitude {
+  CAREER
+  QUARTERLY
+  PROJECT
+  TASK
+}
+
+enum GoalStatus {
+  NASCENT
+  ACTIVE
+  BLOCKED
+  ACHIEVED
+  ABANDONED
+}
+
+// Goals - user's strategic objectives
+model Goal {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  description     String
+  magnitude       GoalMagnitude    @default(QUARTERLY)
+  deadline        DateTime?
+  status          GoalStatus       @default(ACTIVE)
+  context         Json             @default("{}")  // Strategic insights
+
+  stakeholders    GoalStakeholder[]
+  actions         RelationshipAction[]
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+enum StakeholderRole {
+  DECISION_MAKER
+  INFLUENCER
+  BLOCKER
+  ALLY
+  BRIDGE
+  UNKNOWN
+}
+
+enum StakeholderImportance {
+  MUST_HAVE
+  NICE_TO_HAVE
+}
+
+enum RelationshipState {
+  STRONG
+  ADEQUATE
+  WEAK
+  NONE
+  NEGATIVE
+}
+
+// Who matters for each goal
+model GoalStakeholder {
+  id              String   @id @default(cuid())
+  goalId          String
+  goal            Goal     @relation(fields: [goalId], references: [id], onDelete: Cascade)
+  
+  stakeholderId   String
+  stakeholder     StakeholderProfile @relation(fields: [stakeholderId], references: [id], onDelete: Cascade)
+
+  role            StakeholderRole      @default(UNKNOWN)
+  importance      StakeholderImportance @default(MUST_HAVE)
+  currentState    RelationshipState    @default(NONE)
+  requiredState   RelationshipState    @default(ADEQUATE)
+  notes           String[]             
+
+  @@unique([goalId, stakeholderId])
+}
+
+enum ConversationMode {
+  GENERAL
+  GOAL_CAPTURE
+  STAKEHOLDER_MAPPING
+  GAP_ANALYSIS
+  STRATEGY
+  EXECUTION
+}
+
+enum ConversationChannel {
+  OUTCOMES          // Goal-driven thinking
+  DEVILS_ADVOCATE   // AI takes opposite stance
+  SKILL_BUILDING    // Practice hard conversations, role-play
+  PERSONAL          // Private, never surfaced elsewhere
+  GENERAL           // Default catch-all
+}
+
+model Conversation {
+  id       String              @id @default(cuid())
+  userId   String
+  user     User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  channel  ConversationChannel @default(GENERAL)
+  title    String?
+  isActive Boolean             @default(true)
+
+  messages Message[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, channel])
+  @@index([userId, updatedAt])
+}
+
+// Chat messages (shared with web app)
+model Message {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  role    String // "user", "assistant", "system"
+  content String @db.Text
+
+  type String @default("TEXT") // "TEXT", "PROACTIVE_NUDGE", "CONTEXT_UPDATE"
+
+  // Metadata for nudges
+  contextId String? // ID of the artifact/meeting triggering the nudge
+
+  // Link to conversation channel (optional — legacy messages have no conversation)
+  conversationId String?
+  conversation   Conversation? @relation(fields: [conversationId], references: [id])
+
+  // Tool use tracking
+  toolUseRecords ToolUseRecord[]
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([conversationId])
+}
+
+// Track conversation focus
+model ConversationState {
+  id                   String   @id @default(cuid())
+  userId               String   @unique
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  activeGoalId         String?
+  activeStakeholderId  String?
+  activeActionId       String?
+  
+  mode                 ConversationMode  @default(GENERAL)
+  pendingDraft         Json?
+  pendingAction        Json?
+  
+  updatedAt            DateTime @updatedAt
+}
+
+enum RelationshipActionType {
+  BUILD
+  STRENGTHEN
+  REPAIR
+  ACTIVATE
+  MAINTAIN
+}
+
+enum RelActionStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  AWAITING_APPROVAL
+  COMPLETED
+}
+
+model RelationshipAction {
+  id              String   @id @default(cuid())
+  goalId          String
+  goal            Goal     @relation(fields: [goalId], references: [id], onDelete: Cascade)
+  
+  stakeholderId   String
+  // No direct relation to stakeholder profile to allow flexibility
+  
+  type            RelationshipActionType
+  description     String
+  status          RelActionStatus @default(NOT_STARTED)
+  
+  steps           Json @default("[]")
+  draftMessages   Json?
+  
+  dueDate         DateTime?
+  completedAt     DateTime?
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+enum PromptType {
+  MORNING_BRIEF
+  COACHING_BRIEF
+  OPPORTUNITY
+  EXECUTION_NUDGE
+  REFLECTION
+  CONTEXT_DEEPENING
+}
+
+model ProactivePrompt {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  type            PromptType
+  content         String   @db.Text
+  
+  goalId          String?
+  stakeholderId   String?
+  
+  deliveredVia    String   @default("web")
+  deliveredAt     DateTime @default(now())
+  
+  responded       Boolean  @default(false)
+  resultedInAction Boolean @default(false)
+}
+
+model UserPreferences {
+  id                      String  @id @default(cuid())
+  userId                  String  @unique
+  user                    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  promptFrequency         Int     @default(4)
+  quietHoursStart         String  @default("21:00")
+  quietHoursEnd           String  @default("08:00")
+  preferredChannel        String  @default("web")
+  enableProactivePrompts  Boolean @default(true)
+  enableExecution         Boolean @default(false)
+  whatsappBriefs          Boolean @default(false)
+
+  // DND & Smart Batching
+  dndStart                String?                    // HH:MM format, e.g. "22:00"
+  dndEnd                  String?                    // HH:MM format, e.g. "07:00"
+  timezone                String?  @default("Asia/Kolkata")
+  quietWeekends           Boolean  @default(true)
+  batchNudges             Boolean  @default(false)   // If true, batch non-urgent nudges to morning brief
+  maxCallsPerDay          Int?     @default(3)
+  preferredCallWindows    Json?                      // Array of {start: "HH:MM", end: "HH:MM", label: string}
+
+  // Daily Call Schedule
+  dailyCallEnabled        Boolean  @default(false)   // True when user opts into voice
+  dailyCallTime           String   @default("07:45") // HH:MM in user's timezone — fallback for no-meeting days
+  dailyCallRetryAfterMin  Int      @default(60)      // Minutes to wait before retry if no answer
+  dailyCallMaxRetries     Int      @default(1)       // Max retries per day
+
+  // Calendar-aware scheduling (default mode)
+  callScheduleMode        String   @default("calendar_aware") // calendar_aware | fixed_time
+  meetingPrepLeadMinutes  Int      @default(15)      // Call N minutes before meetings (10-30)
+  meetingPrepMinGap       Int      @default(12)      // Min gap between meetings to fit a call (minutes)
+
+  // Multi-call schedule (for testing / early adopters)
+  callFrequencyMinutes    Int?                        // null = once daily at dailyCallTime. e.g. 60 = every hour
+  callWindowStart         String?                     // HH:MM — first call of the day (e.g. "10:00")
+  callWindowEnd           String?                     // HH:MM — last call of the day (e.g. "19:00")
+  testCallMaxDuration     Int?                        // Override maxDurationSeconds for test calls (seconds)
+
+  // Conversation Engine
+  preferredCallDuration   Int?     @default(10)       // Minutes
+  callPacingStyle         String?  @default("balanced") // quick, balanced, deep, flexible
+  conversationMode        String?                     // work_first, relationship_first, adaptive
+  primaryArchetype        String?                     // operator, navigator, climber, founder, skeptic, reluctant, juggler, only_one, connector, returner, portfolio, community
+  secondaryArchetype      String?
+  adaptationSignals       Json?                       // { modeLean, precision, peopleHungry, personalOpen, frameworkSeeker, followMode, integratedLife }
+
+  // Call Intelligence — learned per user
+  postureReceptivity      Json?                       // { celebrate: 0.8, challenge: 0.3, ... } — learned from call outcomes
+  fatigueProfile          Json?                       // { baseThreshold: 0.4, recoveryRate: 0.15 }
+}
+
+// Scheduled calls — tracks daily calls, retries, callbacks, and onboarding calls
+model ScheduledCall {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  scheduledFor    DateTime              // When to make the call (UTC)
+  callType        String                // daily_checkin, onboarding, callback, retry, morning_brief, meeting_prep
+  status          String   @default("pending") // pending, calling, completed, no_answer, cancelled, rescheduled
+  retryOf         String?               // ID of the original ScheduledCall this is a retry for
+  retryCount      Int      @default(0)  // How many retries have been attempted
+
+  // Meeting prep link — which meeting this call preps for (null for non-prep calls)
+  meetingId       String?               // Links to MeetingSyncRecord.id
+
+  // What to cover in this call
+  agenda          Json?                 // { onboardingTopics?: string[], briefingContext?: string, userRequest?: string }
+
+  // Outcome tracking
+  voiceCallId     String?               // Links to VoiceCall record once call is made
+  completedAt     DateTime?
+  outcome         String?               // "completed", "no_answer", "call_later", "busy"
+  callbackTime    DateTime?             // If user said "call me later", when they want the callback
+
+  // Signal-driven scheduling (call intelligence)
+  primaryPosture     String?               // celebrate|uplift|prepare|advise|listen|nudge|challenge|connect|debrief
+  secondaryPosture   String?
+  triggerSignals     Json?                 // { dimension, type, strength, postureAffinity }[]
+  callWorthiness     Float?               // 0-1 score that justified this call
+  fatigueThreshold   Float?               // fatigue threshold applied when scheduling
+
+  createdAt       DateTime @default(now())
+
+  @@index([userId, status])
+  @@index([scheduledFor, status])
+  @@index([userId, scheduledFor])
+  @@index([meetingId])
+}
+
+// Tracks what onboarding topics have been covered across calls.
+// Organized in 3 layers: Person → Leader → Ambition.
+// Mira gets to know the human first, the professional second.
+model OnboardingProgress {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Layer 1: The Person — who are you beyond the title?
+  coveredStory          Boolean @default(false)  // Their journey — how they got here, what shaped them
+  coveredDrivesAndValues Boolean @default(false) // What motivates them, personal values, what they care about
+  coveredLife           Boolean @default(false)  // Family, interests, outside work, energy sources
+
+  // Layer 2: The Leader — how do you lead?
+  coveredRole           Boolean @default(false)  // Responsibilities, scope, what they own
+  coveredStakeholders   Boolean @default(false)  // Key people, relationships, dynamics
+  coveredLeadershipStyle Boolean @default(false) // Decision-making, communication, conflict, work preferences
+
+  // Layer 3: The Ambition — where are you going?
+  coveredGoals          Boolean @default(false)  // What success looks like, KPIs, aspirations
+  coveredChallenges     Boolean @default(false)  // Blockers, frustrations, what keeps them up
+  coveredGrowth         Boolean @default(false)  // What they want to get better at, learning edges
+
+  // Legacy (kept for backward compat, mapped into new layers)
+  coveredWorkStyle      Boolean @default(false)  // → coveredLeadershipStyle
+  coveredContext        Boolean @default(false)  // → coveredStory + coveredRole
+
+  // Metadata
+  totalOnboardingCalls  Int     @default(0)
+  lastOnboardingCallAt  DateTime?
+  onboardingComplete    Boolean @default(false)  // True when all 9 topics covered
+
+  updatedAt       DateTime @updatedAt
+}
+
+// Post-call feedback — collected after every call via in-app prompt or next call
+model CallFeedback {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  voiceCallId     String?               // Links to VoiceCall
+  callType        String                // What kind of call this was
+  promptVersion   String?               // Which prompt version was used
+
+  // User feedback
+  rating          Int?                  // 1-5 star rating
+  tooLong         Boolean?              // Was the call too long?
+  tooShort        Boolean?              // Too short?
+  wasRelevant     Boolean?              // Was the content relevant?
+  wasActionable   Boolean?              // Did it lead to action?
+  verbatimFeedback String?  @db.Text    // Free-text feedback from user
+  feedbackSource  String   @default("in_app") // "in_app", "voice", "auto" (sentiment)
+
+  // Auto-detected signals (from call analysis)
+  userEngagement  String?               // "high", "medium", "low" — based on response length/count
+  callCompleted   Boolean  @default(true) // Did user stay for the whole call?
+  userInitiated   Boolean  @default(false) // Did user ask follow-up questions?
+
+  createdAt       DateTime @default(now())
+
+  @@index([userId])
+  @@index([callType, promptVersion])
+  @@index([createdAt])
+}
+
+// Prompt versions — tracks which prompt text is used for each call type
+// Enables A/B testing and data-driven prompt evolution
+model PromptVersion {
+  id              String   @id @default(cuid())
+  callType        String                // Which call type this prompt is for
+  version         String                // Semantic version: "1.0", "1.1", "2.0"
+  isActive        Boolean  @default(true)  // Currently in use?
+  rolloutPercent  Int      @default(100)   // 0-100: for gradual rollout / A/B testing
+
+  // Prompt content
+  systemPrompt    String   @db.Text      // The system prompt template
+  firstMessage    String   @db.Text      // The opening message template
+  maxDuration     Int      @default(300)  // Max call duration in seconds
+
+  // Performance metrics (updated by aggregation job)
+  totalCalls      Int      @default(0)
+  avgRating       Float?                 // Average user rating (1-5)
+  avgDuration     Int?                   // Average call duration in seconds
+  completionRate  Float?                 // % of calls where user stayed til end
+  engagementRate  Float?                 // % of calls with high engagement
+
+  // Metadata
+  changeNote      String?               // Why this version was created
+  createdAt       DateTime @default(now())
+  retiredAt       DateTime?             // When this version was deactivated
+
+  @@unique([callType, version])
+  @@index([callType, isActive])
+}
+
+model PendingNudge {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  trigger         String                // ProactiveTrigger type
+  content         String   @db.Text     // Generated nudge content
+  priority        String   @default("normal") // "urgent" | "normal" | "low"
+  context         Json?                 // Original trigger context (meetingId, goalId, etc.)
+
+  delivered       Boolean  @default(false)
+  deliveredAt     DateTime?
+  batchedIntoId   String?              // ID of morning brief message this was included in
+
+  createdAt       DateTime @default(now())
+
+  @@index([userId, delivered])
+  @@index([userId, createdAt])
+}
+
+// ============================================================================
+// KNOWLEDGE GRAPH (Zep-style temporal graph + GraphRAG community detection)
+// ============================================================================
+
+enum KnowledgeEntityType {
+  PERSON
+  PROJECT
+  TOPIC
+  SKILL
+  TEAM
+  ORGANIZATION
+  GOAL
+  MEETING_SERIES
+  DOCUMENT
+}
+
+enum FactSource {
+  USER_STATED
+  INFERRED_MEETING
+  INFERRED_EMAIL
+  INFERRED_DOCUMENT
+  INFERRED_CHAT
+  INFERRED_GITHUB
+  SYSTEM_DERIVED
+  MIGRATED
+}
+
+model KnowledgeEntity {
+  id             String              @id @default(cuid())
+  userId         String
+  user           User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type           KnowledgeEntityType
+  name           String
+  nameNormalized String              // lowercase for dedup
+  properties     Json                @default("{}")
+
+  // Link to existing models (migration bridge)
+  sourceModelType String?
+  sourceModelId   String?
+
+  subjectFacts         KnowledgeFact[]     @relation("SubjectEntity")
+  objectFacts          KnowledgeFact[]     @relation("ObjectEntity")
+  communityMemberships CommunityMember[]
+
+  // Back-relation to unified Project model
+  linkedProject        Project?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, type, nameNormalized])
+  @@index([userId, type])
+}
+
+model EntityMergeCandidate {
+  id             String    @id @default(cuid())
+  userId         String
+  sourceEntityId String    // The new/potentially duplicate entity
+  targetEntityId String    // The existing entity it might match
+  similarity     Float     // 0-1 score
+  status         String    @default("pending") // pending, confirmed, rejected
+  createdAt      DateTime  @default(now())
+  resolvedAt     DateTime?
+
+  @@index([userId, status])
+  @@unique([sourceEntityId, targetEntityId])
+}
+
+model KnowledgeFact {
+  id             String @id @default(cuid())
+  userId         String
+  user           User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // The triple: subject -> predicate -> object
+  subjectId      String
+  subject        KnowledgeEntity  @relation("SubjectEntity", fields: [subjectId], references: [id], onDelete: Cascade)
+  predicate      String           // "works_on", "reports_to", "has_strength", etc.
+  objectEntityId String?
+  objectEntity   KnowledgeEntity? @relation("ObjectEntity", fields: [objectEntityId], references: [id], onDelete: SetNull)
+  objectValue    String?          // For literal values: "VP Engineering"
+
+  // Bi-temporal tracking
+  validFrom      DateTime @default(now())  // When fact became true
+  validTo        DateTime?                 // When it stopped being true (null = current)
+  recordedAt     DateTime @default(now())  // When we learned it
+
+  // Provenance
+  source         FactSource
+  sourceRefType  String?   // "MeetingSyncRecord", "EmailSummary", "Message"
+  sourceRefId    String?
+
+  // Confidence & validity
+  confidence     Float    @default(0.5)
+  userVerified   Boolean?  // null=unverified, true=confirmed, false=denied
+  supersedesId   String?
+  supersedes     KnowledgeFact?  @relation("Supersession", fields: [supersedesId], references: [id], onDelete: SetNull)
+  supersededBy   KnowledgeFact[] @relation("Supersession")
+  metadata       Json?
+
+  // Optional project scoping (hybrid approach)
+  projectId      String?
+  project        Project? @relation(fields: [projectId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, subjectId])
+  @@index([userId, predicate])
+  @@index([subjectId, predicate, validTo])
+  @@index([userId, source])
+  @@index([userId, projectId])
+}
+
+model KnowledgeCommunity {
+  id            String @id @default(cuid())
+  userId        String
+  user          User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name          String
+  summary       String? @db.Text
+  level         Int     @default(0) // 0=fine, 1+=abstract
+  parentId      String?
+  parent        KnowledgeCommunity?  @relation("CommunityHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children      KnowledgeCommunity[] @relation("CommunityHierarchy")
+  entityCount   Int     @default(0)
+  factCount     Int     @default(0)
+  activityScore Float   @default(0)
+  members       CommunityMember[]
+  lastAnalyzedAt DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([userId, level])
+}
+
+model CommunityMember {
+  id          String             @id @default(cuid())
+  communityId String
+  community   KnowledgeCommunity @relation(fields: [communityId], references: [id], onDelete: Cascade)
+  entityId    String
+  entity      KnowledgeEntity    @relation(fields: [entityId], references: [id], onDelete: Cascade)
+  role        String?            // "hub", "bridge", "peripheral"
+  weight      Float              @default(1.0)
+
+  @@unique([communityId, entityId])
+}
+
+model ExtractionLog {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceType       String   // "MeetingSyncRecord", "EmailSummary", etc.
+  sourceId         String
+  entitiesFound    Int      @default(0)
+  factsCreated     Int      @default(0)
+  extractorVersion Int      @default(1)
+  processedAt      DateTime @default(now())
+
+  @@unique([userId, sourceType, sourceId, extractorVersion])
+  @@index([userId, sourceType])
+}
+
+// ============================================================================
+// WHATSAPP INTEGRATION
+// ============================================================================
+
+model WhatsAppSession {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  credentials String   @db.Text // baileys auth state JSON
+  status      String   @default("DISCONNECTED") // CONNECTED, DISCONNECTED, QR_PENDING
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model WhatsAppGroup {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  groupId          String   // WhatsApp JID (e.g., "120363XXX@g.us")
+  groupName        String
+  isActive         Boolean  @default(true) // User can deactivate monitoring
+  participantCount Int      @default(0)
+
+  messages         WhatsAppMessage[]
+
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@unique([userId, groupId])
+  @@index([userId, isActive])
+}
+
+model WhatsAppMessage {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  groupId          String
+  group            WhatsAppGroup @relation(fields: [userId, groupId], references: [userId, groupId])
+
+  senderPhone      String
+  senderName       String
+  content          String   @db.Text
+  messageTimestamp DateTime
+  externalId       String   // WhatsApp message ID
+
+  processed        Boolean  @default(false) // Has fact extraction run on this?
+
+  createdAt        DateTime @default(now())
+
+  @@index([userId, groupId, processed])
+  @@index([userId, createdAt])
+}
+
+// ============================================================================
+// CONVERSATION CONTROL PLANE
+// ============================================================================
+
+// Versioned prompt templates — editable from admin panel
+model PromptTemplate {
+  id                  String   @id @default(cuid())
+  name                String   // e.g., "voice-pre-meeting", "voice-morning-brief", "chat-router"
+  version             Int      @default(1)
+  content             String   @db.Text    // Template text with {{variables}}
+  firstMessageOptions Json?                // Array of first message variants
+  variables           Json?                // Schema of expected variables: [{name, description, required}]
+  maxDurationSeconds  Int?                 // Call duration for this prompt type
+  status              String   @default("draft") // draft, active, archived
+  notes               String?  @db.Text    // Why this version was created
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  @@unique([name, version])
+  @@index([name, status])
+}
+
+// Configurable conversation engine parameters
+model ConversationConfig {
+  id                   String   @id @default(cuid())
+  version              Int      @default(1) @unique
+  confidenceThresholds Json     // { default: {SILENT: 0, PROBE: 0.3, ...}, skeptic: {...} }
+  adaptationRules      Json     // Signal definitions + weights
+  maturityTransitions  Json     // Transition triggers (calls, stakeholders, confirmations)
+  voiceOverrides       Json     // Speed, temp, silence rules per context/archetype
+  guardrails           Json     // { closedWorldRules: string, banList: string[], specificityTest: string, personalRules: string }
+  status               String   @default("draft") // draft, active, archived
+  notes                String?  @db.Text
+  createdAt            DateTime @default(now())
+}
+
+// Named experiments for comparing prompt/config variants
+model Experiment {
+  id                String   @id @default(cuid())
+  name              String   // e.g., "call-1-opener-v2"
+  hypothesis        String?  @db.Text
+  promptTemplateName String?  // Which prompt to vary (null = config experiment)
+  promptVersionA    Int?     // Control version
+  promptVersionB    Int?     // Variant version
+  configVersionA    Int?     // Control config
+  configVersionB    Int?     // Variant config
+  userAssignments   Json     // { "A": ["userId1"], "B": ["userId2"] }
+  status            String   @default("active") // active, completed, cancelled
+  startDate         DateTime @default(now())
+  endDate           DateTime?
+  notes             String?  @db.Text
+  createdAt         DateTime @default(now())
+}
+
+// ============================================================================
+// COACHING INTELLIGENCE SYSTEM
+// ============================================================================
+
+// Post-call evaluation — one per VoiceCall
+model CallEvaluation {
+  id                    String   @id @default(cuid())
+  voiceCallId           String   @unique
+  voiceCall             VoiceCall @relation(fields: [voiceCallId], references: [id], onDelete: Cascade)
+  userId                String
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // 6 KPI scores (1-10)
+  newGroundScore        Float             // Did Mira learn something new?
+  depthOfSharingScore   Float             // How deeply did the user share?
+  valueAddScore         Float             // Did Mira add value?
+  contextUtilScore      Float             // Did Mira use available context well?
+  repetitionScore       Float             // Inverse — lower = more repetition
+  engagementScore       Float             // User engagement level
+
+  // Weighted overall: valueAdd 0.25, newGround 0.2, depth 0.2, context 0.15, repetition 0.1, engagement 0.1
+  overallScore          Float
+
+  // Qualitative
+  whatWorked            String[]          // Things that went well
+  whatToImprove         String[]          // Suggestions for next time
+  commitmentsExtracted  String[]          // Action items the user mentioned
+  newInfoLearned        String[]          // New facts Mira learned
+  recommendedTopics     String[]          // Topics for next call
+
+  // Call Intelligence — posture + timing validation
+  postureMatch          Float?            // 1-10: did the posture match the user's apparent need?
+  timingMatch           Float?            // 1-10: was this a good time to call?
+  selectedPosture       String?           // which posture was used for this call
+
+  createdAt             DateTime @default(now())
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+// Coaching relationship plan — one per User
+model CoachingRelationshipPlan {
+  id                    String   @id @default(cuid())
+  userId                String   @unique
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Phase: discovery (1-5) → building_trust (6-15) → deep_coaching (16-30) → sustained_partnership (31+)
+  phase                 String   @default("discovery")
+
+  // Coaching themes — through-lines across calls
+  // [{ theme, firstSeen, lastSeen, callCount, status: active|resolved|parked }]
+  coachingThemes        Json     @default("[]")
+
+  // Communication profile — how the user prefers to interact
+  // { pace, depth, humor, directness, preferredTopicEntry, avoidPatterns }
+  communicationProfile  Json     @default("{}")
+
+  // Personality profile — Big 5, communication style, emotional triggers, decision style, coaching adaptations
+  personalityProfile    Json     @default("{}")
+
+  // Commitments — action items with tracking
+  // [{ commitment, madeAt, followedUpAt?, status: open|followed_up|completed|dropped, callId }]
+  commitments           Json     @default("[]")
+
+  // Topics to avoid (user explicitly said don't bring up)
+  avoidTopics           String[]
+
+  updatedAt             DateTime @updatedAt
+
+  @@index([phase])
+}
+
+// Weekly trajectory snapshots — KPI trends over time
+model CoachingTrajectory {
+  id                    String   @id @default(cuid())
+  userId                String
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  weekStart             DateTime
+
+  // Trajectory KPIs
+  avgCallQuality        Float?            // Avg overallScore for the week
+  relationshipDepthRate Float?            // Rate of depth growth
+  trustVelocity         Float?            // Speed of trust building
+  knowledgeGraphGrowth  Float?            // New facts/entities added
+  coachingActivationRate Float?           // % of suggestions acted on
+  callRetentionRate     Float?            // % of scheduled calls completed
+  onboardingVelocity    Float?            // Topics covered per call
+
+  // Aggregates
+  callsCompleted        Int      @default(0)
+  totalMinutes          Int      @default(0)
+  commitmentsTracked    Int      @default(0)
+  commitmentsCompleted  Int      @default(0)
+
+  createdAt             DateTime @default(now())
+
+  @@unique([userId, weekStart])
+  @@index([userId])
+}
+
+// Personal threads — topics tracked across calls (family, hobbies, career, etc.)
+model PersonalThread {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  category        String              // FAMILY, HEALTH, HOBBY, ORIGIN, ASPIRATION, EMOTIONAL, INTEGRATED
+  topic           String              // "tennis", "kids ages 7 and 4"
+  stage           String   @default("PLANTED") // PLANTED, WATERED, GROWING, HARVESTED, MAINTAINED
+  lastTouched     DateTime @default(now())
+  touchCount      Int      @default(1)
+  userEngagement  String   @default("MEDIUM") // LOW, MEDIUM, HIGH
+  details         Json?              // Accumulated context per call
+  isIntegrated    Boolean  @default(false)  // Personal topic intertwined with work
+  offLimits       Boolean  @default(false)  // User said don't bring it up
+
+  createdAt       DateTime @default(now())
+
+  @@index([userId, stage])
+  @@index([userId, lastTouched])
+}
+
+// ============================================================================
+// CONTROLLED A/B EXPERIMENTATION (per-user within-subject design)
+// ============================================================================
+
+model CoachingExperiment {
+  id                  String   @id @default(cuid())
+  userId              String
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  dimension           String              // "opening_style", "question_density", "challenge_level", etc.
+  hypothesis          String   @db.Text
+  primaryKpi          String              // "depthOfSharingScore", "engagementScore", etc.
+  secondaryKpis       String[]
+
+  variantALabel       String
+  variantAInstruction String   @db.Text
+  variantBLabel       String
+  variantBInstruction String   @db.Text
+
+  // Lifecycle: proposed → active → concluded → archived
+  status              String   @default("proposed")
+  minCallsPerVariant  Int      @default(5)
+
+  // Results
+  variantACallCount   Int      @default(0)
+  variantBCallCount   Int      @default(0)
+  variantAAvgKpi      Float?
+  variantBAvgKpi      Float?
+  variantAScores      Float[]
+  variantBScores      Float[]
+  effectSize          Float?
+  pValue              Float?
+  winner              String?            // "A", "B", or "inconclusive"
+  conclusion          String?  @db.Text
+
+  activatedAt         DateTime?
+  concludedAt         DateTime?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  assignments         ExperimentAssignment[]
+
+  @@unique([userId, dimension, status])
+  @@index([userId, status])
+  @@index([status])
+}
+
+model ExperimentAssignment {
+  id                String   @id @default(cuid())
+  experimentId      String
+  experiment        CoachingExperiment @relation(fields: [experimentId], references: [id], onDelete: Cascade)
+  voiceCallId       String
+  voiceCall         VoiceCall @relation(fields: [voiceCallId], references: [id], onDelete: Cascade)
+  userId            String
+
+  variant           String              // "A" or "B"
+  instructionUsed   String   @db.Text
+
+  primaryKpiScore   Float?
+  overallScore      Float?
+
+  createdAt         DateTime @default(now())
+
+  @@index([experimentId, variant])
+  @@index([userId])
+}
+
+// Auto-discovered prompt insights — the system learns what coaching strategies work
+// and automatically feeds proven insights back into future calls.
+model PromptInsight {
+  id                    String   @id @default(cuid())
+
+  // What was discovered
+  pattern               String   @db.Text    // "Commitment follow-ups in first 2 min → 2x valueAddScore"
+  recommendation        String   @db.Text    // Directive for Mira: "Open with commitment check when user has overdue commitments"
+  category              String              // opening, topic_selection, tone, pacing, follow_up, commitment_tracking, personal_depth, context_use
+
+  // Evidence
+  evidenceBasis         Json                // { callsAnalyzed, avgScoreWith, avgScoreWithout, kpiAffected, sampleSize, effectSize }
+  scope                 String              // "system" for all users, or a specific userId
+  userId                String?             // null for system-wide insights
+  user                  User?               @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Lifecycle: proposed → active → validated → retired
+  status                String   @default("proposed")
+  confidence            Float    @default(0)           // 0-1 based on evidence strength
+
+  // Impact measurement
+  activatedAt           DateTime?
+  preActivateAvgScore   Float?              // avg overallScore across calls before activation
+  postActivateAvgScore  Float?              // avg overallScore after activation (rolling)
+  callsSinceActivation  Int      @default(0)
+  impactDelta           Float?              // postActivateAvg - preActivateAvg
+
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@index([scope, status])
+  @@index([userId, status])
+  @@index([category, status])
+}
+
+// Agent observability — tracks every agent/cron run for health monitoring
+model AgentRun {
+  id              String    @id @default(cuid())
+  agentName       String                        // "call-evaluation", "stakeholder-synthesis", etc.
+  userId          String?                       // null for system-level jobs
+  user            User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  triggerType     String                        // "cron", "event", "api", "queue"
+  triggerRef      String?                       // cron name, queue name, or API path
+
+  status          String    @default("running") // running, completed, failed, skipped
+  startedAt       DateTime  @default(now())
+  completedAt     DateTime?
+  durationMs      Int?
+
+  // What it did
+  inputSummary    String?   @db.Text
+  outputSummary   String?   @db.Text
+  itemsProcessed  Int       @default(0)
+  itemsSkipped    Int       @default(0)
+
+  // Errors
+  errorMessage    String?   @db.Text
+  errorStack      String?   @db.Text
+
+  // LLM usage
+  llmCalls        Int       @default(0)
+  tokensUsed      Int       @default(0)
+
+  createdAt       DateTime  @default(now())
+
+  @@index([agentName, status])
+  @@index([agentName, startedAt])
+  @@index([userId, agentName])
+  @@index([status, startedAt])
+}
+
+// ============================================================================
+// HYPOTHESIS ENGINE — observe → hypothesize → present → validate → learn
+// ============================================================================
+
+enum HypothesisStatus {
+  PENDING        // Generated, not yet presented to user
+  READY          // Queued for next call presentation
+  PRESENTED      // Shown to user in a call
+  CONFIRMED      // User confirmed (explicit or implicit)
+  REVISED        // User corrected — generates a new hypothesis
+  REJECTED       // User denied outright
+  EXPIRED        // Too old or superseded, never presented
+}
+
+enum HypothesisCategory {
+  STAKEHOLDER_DYNAMIC    // "Raj is your go-to for technical decisions"
+  POWER_ASYMMETRY        // "You defer to Priya in emails — is she a key decision-maker?"
+  COMMUNICATION_PATTERN  // "You tend to send longer emails to senior stakeholders"
+  WORK_PRIORITY          // "Project X seems to be consuming most of your energy"
+  LEADERSHIP_STYLE       // "You prefer consensus before making big calls"
+  RELATIONSHIP_QUALITY   // "Your interaction with Rahul has dropped off this month"
+  PERSONAL_INSIGHT       // "Tennis seems like your reset button"
+  TEAM_DYNAMIC           // "Your 1:1s with direct reports are getting shorter"
+  STRATEGIC_PATTERN      // "You spend 60% of time in ops, 10% in strategy"
+}
+
+enum HypothesisVisibility {
+  USER        // Factual claims the user can see and validate ("Manmeet is your co-founder")
+  ADMIN_ONLY  // Meta observations only admin sees ("User deflects with humor when uncomfortable")
+}
+
+model Hypothesis {
+  id              String            @id @default(cuid())
+  userId          String
+  user            User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // The hypothesis itself
+  category        HypothesisCategory
+  statement       String            @db.Text  // "Based on email patterns, Priya appears to be a more senior stakeholder"
+  evidence        String            @db.Text  // "You sent 12 emails to Priya this week, avg 180 words. Her replies avg 40 words."
+  confidence      Float             @default(0.5) // 0-1, how confident the system is
+  presentationText String           @db.Text  // Natural language for Mira: "I notice you email Priya a lot — she seems important. What's that dynamic?"
+
+  // Lifecycle
+  status          HypothesisStatus  @default(PENDING)
+  priority        Int               @default(5) // 1=highest, 10=lowest
+  visibility      HypothesisVisibility @default(USER) // USER = facts to validate, ADMIN_ONLY = meta observations
+
+  // Source tracking
+  sourceType      String            // "email_analysis", "calendar_pattern", "call_transcript", "meeting_frequency"
+  sourceRefId     String?           // Optional reference to specific record
+  sourceData      Json?             // Raw data that generated this hypothesis
+
+  // Presentation tracking
+  presentedInCallId String?         // VoiceCall ID where this was presented
+  presentedAt     DateTime?
+  userResponse    String?           @db.Text  // What the user actually said
+
+  // Validation outcome
+  validatedAt     DateTime?
+  revisedFromId   String?           // If this is a revision, link to original
+  revisedFrom     Hypothesis?       @relation("HypothesisRevision", fields: [revisedFromId], references: [id])
+  revisions       Hypothesis[]      @relation("HypothesisRevision")
+
+  // Links to knowledge graph
+  subjectEntityId String?           // KnowledgeEntity this is about
+  relatedStakeholderId String?      // StakeholderProfile this is about
+
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  @@index([userId, status])
+  @@index([userId, category])
+  @@index([userId, status, priority])
+}
+
+// ============================================================================
+// UNIFIED PROJECT MODEL (replaces UserProject + ProfessionalProject)
+// ============================================================================
+
+enum ProjectStatus {
+  ACTIVE
+  ON_HOLD
+  COMPLETED
+  ARCHIVED
+}
+
+model Project {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  name        String
+  description String? @db.Text
+  status      ProjectStatus @default(ACTIVE)
+
+  // Org context
+  orgId     String?
+  org       Organization? @relation(fields: [orgId], references: [id])
+
+  // Dates
+  startDate DateTime?
+  endDate   DateTime?
+
+  // AI analysis
+  risks       Json?
+  healthScore String?
+  userNotes   String? @db.Text
+
+  // Knowledge graph bridge
+  knowledgeEntityId String?          @unique
+  knowledgeEntity   KnowledgeEntity? @relation(fields: [knowledgeEntityId], references: [id])
+
+  // Relations
+  objectives  StrategicObjective[] @relation("ProjectObjectives")
+  resources   ProjectResource[]
+  facts       KnowledgeFact[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([userId, status])
+}
+
+// ============================================================================
+// PROJECT RESOURCES — links external sources to projects
+// ============================================================================
+
+enum ProjectSourceType {
+  DRIVE_FOLDER
+  GITHUB_REPO
+  SLACK_CHANNEL
+  JIRA_PROJECT
+  LINEAR_PROJECT
+  NOTION_DATABASE
+}
+
+model ProjectResource {
+  id        String  @id @default(cuid())
+  projectId String
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  sourceType  ProjectSourceType
+  connectorId String?
+  connector   DataConnector? @relation(fields: [connectorId], references: [id])
+
+  externalId String    // Drive folder ID, "owner/repo", Slack channel ID
+  name       String    // Display name
+  url        String?   // Web URL
+  metadata   Json      @default("{}")
+
+  lastSyncAt DateTime?
+  syncStatus String?
+
+  githubSyncRecords GitHubSyncRecord[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([projectId, sourceType, externalId])
+}
+
+// ============================================================================
+// GITHUB INTEGRATION
+// ============================================================================
+
+model GitHubInstallation {
+  id             String @id @default(cuid())
+  userId         String
+  user           User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  installationId Int    @unique
+  accountLogin   String
+  accountType    String         // "Organization" or "User"
+  permissions    Json
+  repositorySelection String   // "all" or "selected"
+
+  accessToken    String? @db.Text  // encrypted, short-lived
+  tokenExpiresAt DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GitHubSyncRecord {
+  id         String @id @default(cuid())
+  userId     String
+  resourceId String
+  resource   ProjectResource @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+
+  entityType String    // "pull_request", "issue", "commit"
+  externalId String    // PR number, issue number, commit SHA
+  title      String?
+  content    String? @db.Text
+  author     String?
+  state      String?
+  metadata   Json      @default("{}")
+  occurredAt DateTime
+  syncedAt   DateTime  @default(now())
+
+  @@unique([resourceId, entityType, externalId])
+  @@index([userId])
+}
+
+// ============================================================================
+// TOOL USE RECORDING — persists tool invocations from calls and chat
+// ============================================================================
+
+enum ToolUseSource {
+  VOICE_CALL
+  CHAT
+}
+
+model ToolUseRecord {
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Source context
+  source       ToolUseSource
+  voiceCallId  String?
+  voiceCall    VoiceCall? @relation(fields: [voiceCallId], references: [id])
+  messageId    String?
+  message      Message?   @relation(fields: [messageId], references: [id])
+
+  // Tool details
+  toolName     String
+  intent       String?              // raw intent string (for voice)
+  inputData    Json      @default("{}")
+  outputData   Json      @default("{}")
+  success      Boolean   @default(true)
+  errorMessage String?
+  durationMs   Int?
+
+  createdAt DateTime @default(now())
+
+  @@index([userId, createdAt])
+  @@index([userId, toolName])
+  @@index([voiceCallId])
+}

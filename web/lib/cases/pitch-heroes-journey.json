@@ -1,0 +1,139 @@
+{
+  "id": "pitch-heroes-journey",
+  "title": "The Conference Keynote: Fatuma's Story",
+  "case_type": "pitch",
+  "country": "Kenya",
+  "context": {
+    "political_landscape": "East Africa is mid-wave on digital health transformation. Kenya, Uganda, and Tanzania have all launched national health information systems in the last 4 years. But implementation is uneven — urban clinics are connected, rural community health workers are still on paper. There is political will and donor money in the space, but also fatigue from failed rollouts.",
+    "recent_events": "You are presenting at AfricaTech Health Summit in Nairobi — 400 attendees including practitioners from 14 countries, journalists from TechCabal and BBC Africa, program officers from Gates Foundation and Wellcome Trust, and officials from three health ministries. Sababu has been deployed in two counties in western Kenya for eight months. You have real data. The talk was listed in the program as 'Offline-First Health Records for Rural East Africa.' You have 20 minutes.",
+    "cultural_factors": "The conference audience has heard many pitches. They are skeptical of NGO-speak and impact theater. They respond to honesty, specificity, and practitioners who have actually been in the field. Talks that go viral from this conference tend to center a specific person — not a system, not a platform, not a team. The audience shares talks that make them feel something.",
+    "your_position": "You are the product lead for Sababu. You built it alongside a team of three engineers after spending 18 months as an embedded advisor to Kisumu County's community health program. You know these health workers personally. You have been in their homes and walked their routes. You are not a journalist describing their situation from outside — you are a builder who came from inside it."
+  },
+  "stakeholder_map": {
+    "Gates Foundation Program Officer": {
+      "power": "high",
+      "stance": "Cautiously interested — has seen many offline-sync solutions fail at scale",
+      "interests": "Evidence of behavior change, not just technical capability. Wants to know if workers actually use it."
+    },
+    "Kenya Ministry of Health Digital Lead": {
+      "power": "high",
+      "stance": "Skeptical — has been burned by tools that bypass national systems",
+      "interests": "National interoperability, sustainability without donor dependence, political credit"
+    },
+    "TechCabal Journalist": {
+      "power": "medium-amplification",
+      "stance": "Looking for a story that humanizes digital health rather than technologizes it",
+      "interests": "A real person, a real number, something surprising"
+    },
+    "Uganda Ministry Health Official": {
+      "power": "medium",
+      "stance": "Open — Uganda has the same paper logbook problem",
+      "interests": "Whether Sababu can work in their context, procurement pathway"
+    },
+    "Fellow Civic Tech Practitioners": {
+      "power": "low-direct, high-network",
+      "stance": "Peer curiosity — want to know what worked and what failed",
+      "interests": "Honest lessons, open-source access, replication potential"
+    },
+    "Wellcome Trust Advisor": {
+      "power": "medium",
+      "stance": "Interested if the intervention is evidence-based and reproducible",
+      "interests": "Research quality, partnership potential with academic institutions"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You walk onto the stage. The slide clicker is in your hand. You have 20 minutes. The room is full.\n\nYou have prepared several possible openings:\n\nOption A: 'My name is [your name]. I lead product at Sababu, an open-source offline health records platform. We've been deployed in Kisumu and Siaya counties for eight months. Today I want to tell you what we built and what we learned.'\n\nOption B: 'Fatuma has been a community health worker in Siaya County for nine years. She walks eight kilometers every day. She carries a paper logbook. Last April, she delivered a baby at home — a boy named Obiero — and by the time she got back to the clinic three days later to record the birth, she had already forgotten two of the vaccination dates she had written down in the margin. The margin had gotten wet.'\n\nOption C: 'In Kenya, there are 100,000 community health workers. They conduct 40 million home visits per year. Less than 12% of those visits produce data that ever reaches a national health system. The rest disappears. Today I want to show you why, and what we did about it.'\n\nOption D: A combination you design yourself.\n\nYou open with...",
+      "prompt": "How do you open your 20-minute talk? Choose from the options above, adapt one, or write your own. Explain why.",
+      "evaluate": [
+        "Did they choose Option B or something structurally like it — opening with Fatuma, not with the product or organization?",
+        "If they chose Option C (the statistic), did they follow it immediately with a human face — or stay in aggregate data mode?",
+        "Did they choose Option A? If so, they have lost the audience in the first 30 seconds by leading with org identity.",
+        "Did they understand WHY Option B works — the audience needs to be inside a specific person's experience before they will care about the system?",
+        "If they wrote Option D, does it introduce a named person before slide 2?",
+        "Did they recognize that this is a credibility-and-visibility moment — not a fundraising pitch — and that the goal is to make people feel something, not to convince them to fund?",
+        "Did they avoid opening with product features or technical capabilities?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "hero_setup",
+      "situation": "You have opened with Fatuma. The audience is with you. Now you need to establish her 'ordinary world' — the life she lives before Sababu enters the story. This is the foundation of the hero's journey: if the ordinary world is not vivid and specific, the transformation later will not land.\n\nYou have 3 minutes to describe Fatuma's ordinary world. You know the following facts about her:\n- She has been a community health worker for 9 years in Siaya County, western Kenya\n- She serves 120 registered households, covering a 14-kilometer radius\n- She carries a paper logbook with 47 fields per patient visit\n- She earns 2,000 KES per month (about $15) — paid irregularly\n- She has no smartphone — she uses a basic Nokia feature phone\n- She is 34 years old, has three children, and her husband works in Kisumu city\n- She was trained once, in 2017, by a government trainer she has not seen since\n- She spends approximately 25% of her visit time filling out the logbook rather than with the patient\n- She does not know what happens to the data she collects — she has never seen it used\n\nYou can use all or some of these facts. You can add sensory detail and context. You cannot invent data that contradicts what you know.",
+      "prompt": "Describe Fatuma's ordinary world in 3 minutes of spoken narrative. What does her day look and feel like before the journey begins?",
+      "evaluate": [
+        "Did they include at least two specific sensory or physical details — not just numbers?",
+        "Did they capture both the functional burden (47 fields, 25% time on paperwork) AND the emotional burden (not knowing what happens to the data, feeling invisible)?",
+        "Did they avoid the trap of making Fatuma a victim — she should be capable, dedicated, and present, just operating in a system that does not see her?",
+        "Did they use the irregular pay detail? This is important — it connects her work to her dignity, not just her efficiency.",
+        "Did they reference the last training in 2017 — showing that the system's investment in her was minimal?",
+        "Did they give the audience something to recognize — a detail that makes someone in the room think 'I know this person' or 'I've seen this'?",
+        "Did they avoid pivoting to 'the problem' at a systemic level — staying inside Fatuma's experience rather than zooming out to the 12% data capture statistic?",
+        "Is there a moment of emotion embedded in the ordinary world — not melodrama, but something true that makes the audience feel the weight of what she carries?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "You have described Fatuma's ordinary world and her struggle: the paper logbook is deteriorating, her data does not reach the system, she cannot see the impact of her work, and she is starting to cut corners on the paperwork because the burden is too high relative to the apparent value.\n\nNow you are at the moment in the narrative where solutions enter the story. You have a strong instinct to say:\n\n'So we decided to build something. We spent six months interviewing health workers across three counties. We partnered with the Ministry of Health and two NGOs. We designed an offline-first mobile app in React Native with a local SQLite database and background sync — and we called it Sababu.'\n\nThe audience can feel that you are about to switch cameras — from Fatuma to yourself. You have been in Fatuma's world for 5 minutes. The audience has bonded with her.\n\nYou feel the pull to claim credit for the solution. You built it. Your team worked for 18 months. It is hard not to talk about what you did.",
+      "prompt": "How do you introduce the solution without abandoning Fatuma's perspective? Write the transition.",
+      "evaluate": [
+        "Did they stay in Fatuma's perspective — showing the solution as something that arrived in HER world, rather than switching to 'we built'?",
+        "Did they resist the urge to describe the 18 months of development work, the technical architecture, or the partnership process?",
+        "Did they show the moment Sababu entered Fatuma's life from her point of view — her first encounter with it, her initial reaction (skepticism is fine and more honest)?",
+        "Did they acknowledge Fatuma's skepticism or resistance? A hero who accepts the mentor's gift immediately is not believable. Fatuma should have had doubts.",
+        "Did they describe Sababu as a tool Fatuma uses — not a solution that operates on her behalf without her involvement?",
+        "Did they avoid technical description (React Native, SQLite, background sync) in this section — keeping the frame at the level of Fatuma's experience?",
+        "Is the product positioned as Gandalf — showing up with something Fatuma needs, not solving the problem for her?",
+        "Did they credit the Ministry partnership or NGO collaboration in a way that keeps Fatuma at center, not the org network?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "product_as_mentor",
+      "situation": "You have introduced Sababu from Fatuma's perspective. Now you need to show how it works — without turning the talk into a product demo.\n\nThe temptation here is to show the app screens. You have beautiful screenshots. The UI is clean. The offline sync is elegant. You want to show the audience the product.\n\nBut you are in a hero's journey. The mentor does not show the hero a features tour. The mentor gives the hero one critical thing they need at the moment they need it most.\n\nFatuma's most critical need: she needs to know that the data she collects matters — that it reaches someone who uses it. The functional problem is the paper logbook. The emotional problem is invisibility.\n\nSababu does three things technically:\n1. Offline data capture on a $30 Android phone\n2. Background sync when any WiFi or 3G connectivity exists\n3. A simple dashboard that shows Fatuma how many of her records have synced and been processed\n\nOf these three features, one addresses the emotional problem.",
+      "prompt": "How do you describe what Sababu does in the context of Fatuma's story? Which feature do you lead with and why?",
+      "evaluate": [
+        "Did they identify feature 3 — the dashboard showing sync confirmation — as the one that addresses the emotional problem?",
+        "Did they lead with the emotional feature rather than the technical capability?",
+        "Did they describe the feature from Fatuma's experience — 'she can see that 847 records have reached the national system' — rather than from a product specification?",
+        "Did they use the features to show Fatuma completing the job she always wanted to do, rather than making the product the protagonist of this section?",
+        "Did they avoid the features tour — staying with one or two moments rather than describing all three features in sequence?",
+        "Did they capture the mentor relationship correctly: Sababu gives Fatuma what she needs, but Fatuma is the one who makes the home visits, builds the relationships, delivers the care?",
+        "Did they show Fatuma's agency — she chooses how to use the tool, she decides which patients to prioritize, the product does not make those decisions for her?",
+        "Did they resist showing app screenshots and instead describe the experience in human terms?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "transformation",
+      "situation": "You have shown how Sababu works in Fatuma's hands. Now you need to show the transformation — her life, and the system, after eight months of use.\n\nYou have the following real data from the Kisumu and Siaya deployment:\n- 847 health workers actively using Sababu across both counties\n- 94% data capture rate (up from 12% on paper)\n- Average visit time reduced by 18 minutes\n- 34 health workers who had stopped submitting reports within 6 months of training had resumed after Sababu introduction\n- Fatuma specifically: she has seen her own patient records referenced in a Ministry report for the first time. She was named in it.\n- Three maternal deaths were caught early by a clinic supervisor who noticed a pattern in synced data — something impossible to see in paper records\n\nYou are tempted to lead with the 94% data capture rate because it is the most impressive system-level metric.\n\nBut you are in Fatuma's story. Her transformation must come first.",
+      "prompt": "How do you present the transformation? What do you show first, and how do you sequence from Fatuma's transformation to the system-level impact?",
+      "evaluate": [
+        "Did they return to Fatuma before presenting aggregate data — showing what changed specifically for her?",
+        "Did they use the 'named in a Ministry report' detail — this is the emotional payoff of the invisibility theme set up in round 2?",
+        "Did they sequence correctly: Fatuma first, then the 847 workers, then the system metrics?",
+        "Did they avoid leading with 94% data capture — even though it is the most impressive number?",
+        "Did they use the three maternal deaths detail carefully — with appropriate weight, not as a proof point to be deployed?",
+        "Did they make the transformation specific and measurable — not just 'her life improved' but 'she was named in a Ministry report'?",
+        "Did they close Fatuma's arc at her scale before zooming out — the audience should see Fatuma's transformation as complete before they hear about system impact?",
+        "Did they resist the temptation to over-inflate — the transformation should be true and grounded, not maximum-impact-claim?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here is what distinguishes talks from this conference that got shared from talks that received polite applause:\n\n**Talks that got shared:**\n- Opened with a named, specific person before slide 2\n- Never abandoned that person's perspective for more than 60 seconds at a time\n- The transformation showed something emotionally true first, then added the data\n- The speaker was clearly present in the subject matter — not describing it from outside\n- The audience could tell that the speaker knew the people involved personally\n\n**Talks that got polite applause:**\n- Opened with organization credentials or a statistic\n- Introduced the human story as an 'example' or 'case study' — as data support for a systemic argument\n- Switched to 'we built / we deployed / our team' language in the middle\n- Led with the most impressive system-level metric in the transformation section\n- The speaker was clearly expert but felt like a consultant, not a builder who was embedded\n\n**The structural error most participants make:**\nThey treat Hero's Journey as a rhetorical frame wrapped around a product pitch — they use Fatuma as the opening image and the closing image, but the middle 12 minutes is still a product pitch. The audience can feel this. When the camera switches from Fatuma to the org, the emotional connection breaks. Once broken, it is very hard to recover.\n\n**What mastery looks like:**\nA master storyteller keeps Fatuma present throughout — not as a prop, but as the filter through which every product decision is explained. When describing the offline sync feature, they describe it as 'what Fatuma can do now that she could not do before.' When presenting the data, they say 'what Fatuma's data is part of.' The product never becomes the protagonist — it is always in service of Fatuma's story.\n\n**The one sentence that separates good from great:**\n'I am going to tell you about Sababu by telling you about Fatuma, because Sababu only makes sense when you understand her.' This sentence signals to the audience that the speaker will not abandon the human frame. It is a promise. Keep it.\n\n**What you can take from this:**\nBefore any conference talk, ask yourself: Can I name the hero? Is the hero someone from the real world of this product, not a composite and not you? Do I have at least five specific, true details about their life? Do I know their transformation in specific, measurable terms?\n\nIf yes: you have the material for a hero's journey talk.\nIf no: choose a different framework.",
+      "prompt": "Coaching based on your responses throughout",
+      "coaching_focus": [
+        "Camera discipline: Did you keep Fatuma in frame throughout, or did the camera switch to the org in the middle?",
+        "Hero identity: Was Fatuma unambiguously the hero — capable, present, struggling — or did she become a victim that the product rescued?",
+        "Product positioning: Did Sababu arrive as Gandalf — present at the right moment with the right tool — or did it arrive as a savior?",
+        "Transformation sequencing: Did you go individual → system, or did you lead with the headline metric?",
+        "Emotional authenticity: Did the audience feel that you knew Fatuma, or that you were using her as a proof point?"
+      ]
+    }
+  ],
+  "tags": ["pitch", "storytelling", "hero's-journey", "conference", "health-tech", "civic-tech", "narrative-structure"]
+}

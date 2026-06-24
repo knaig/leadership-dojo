@@ -1,0 +1,119 @@
+{
+  "id": "power-mapping-ministry-dynamics",
+  "course": "power-mapping-stakeholder-analysis",
+  "difficulty": "application",
+  "title": "Reading the Room: Understanding Informal Power in Ministries",
+  "country": "Rwanda",
+  "caseType": "stakeholder_analysis",
+  "learningObjectives": [
+    "Identify formal vs informal power structures",
+    "Map influence networks beyond org charts",
+    "Recognize gatekeepers and champions",
+    "Understand decision-making flows in practice vs theory",
+    "Navigate situations where formal authority doesn't match real power"
+  ],
+  "context": {
+    "yourRole": "Digital Infrastructure Advisor to Rwanda's Ministry of ICT and Innovation. You're helping implement a digital payments platform for government services.",
+    "situation": "You've been in role for 2 months. You need Cabinet approval for the platform, but you're learning that the formal approval process isn't the whole story.",
+    "pressure": "Cabinet meets in 6 weeks. You need to understand who really influences decisions and how to navigate the power structure.",
+    "reality": "The org chart shows one thing. The real power dynamics are different."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You're reporting to the Permanent Secretary (PS) of the Ministry. Org chart says he's the decision-maker. You present your digital payments proposal:\n\nYou: 'Sir, we're ready to present the digital payments platform to Cabinet. I have the technical brief, budget, and implementation timeline. Would you like to review before Cabinet submission?'\n\nPS: 'Yes, send it over. But before Cabinet, you should discuss with Director General (DG) Uwase. She's... influential on digital matters.'\n\nYou check the org chart: DG Uwase heads the Infrastructure Directorate, which seems unrelated to digital payments. But the PS used the word 'influential' with a particular tone.\n\nYou meet with DG Uwase:\n\nDG Uwase: 'Digital payments. Interesting. Who else have you consulted?'\n\nYou: 'The PS asked me to discuss with you. I've worked with the Innovation Directorate since that's their mandate.'\n\nDG Uwase (cool tone): 'I see. And the Minister - does he know about this?'\n\nYou: 'Not yet. I assumed we'd brief him closer to Cabinet.'\n\nDG Uwase: 'Mmm. The Minister prefers to be consulted early. Especially on initiatives that might get media attention. He doesn't like surprises.'\n\nYou: 'Should I request a meeting with the Minister?'\n\nDG Uwase: 'That would be... premature. The Minister is very busy. Better to go through proper channels. I'll mention it to his Chief of Staff. Give me your brief.'\n\nSomething feels off. She's gatekeeping access to the Minister. But why?\n\nLater, you have coffee with Jean, a colleague who's been at the Ministry for 5 years:\n\nYou: 'I'm confused about the approval process. The PS told me to consult DG Uwase, but she seems to be blocking access to the Minister. What am I missing?'\n\nJean (lowers voice): 'Ah. You're learning. Let me explain the real structure. The PS has formal authority, but he's cautious - doesn't make moves without consensus. DG Uwase is the Minister's trusted advisor - they go back 20 years. She controls access to him. If she doesn't like your proposal, it won't reach the Minister. If it does reach him and she hasn't blessed it, he'll ask \"What does Uwase think?\" and if she's opposed, he'll kill it.'\n\nYou: 'So she's the real decision-maker?'\n\nJean: 'Not exactly. She influences the Minister. But there's more. See, the Innovation Directorate (which you've been working with) is technically responsible for digital payments. But Uwase controls the budget line this would come from. So she has leverage. Also, the head of Innovation Directorate - Director Habimana - used to work for Uwase. Still loyal to her. So even though it's his mandate, he won't push something she opposes.'\n\nYou: 'This is not on any org chart.'\n\nJean: 'Welcome to government. Org charts show structure. Power maps show reality.'",
+      "prompt": "What's the real power structure here? How should you navigate it?",
+      "evaluationCriteria": [
+        "**Formal vs Informal Power**: Do they distinguish between org chart authority and actual influence?",
+        "**Gatekeepers**: Do they identify DG Uwase as gatekeeper controlling access to Minister?",
+        "**Influence Networks**: Do they map the relationships (Uwase-Minister trust, Uwase-Habimana loyalty, Uwase-budget control)?",
+        "**Multiple Power Sources**: Do they recognize Uwase has power from: relationships, budget control, information flow?",
+        "**Navigation Strategy**: Do they develop approach to work with (not around) Uwase?",
+        "**PS's Role**: Do they understand PS's 'consensus seeker' style vs being ultimate authority?"
+      ],
+      "coachingNotes": "Classic informal power structure. Org chart says PS → Minister, with Innovation Directorate owning digital payments. Reality: DG Uwase is the key node. She has power from: (1) 20-year relationship with Minister = trust, (2) Budget control = veto power, (3) Information gatekeeper = controls what Minister sees, (4) Loyalty network (Habimana used to work for her). PS is technically senior but operates by consensus, won't override Uwase. Your strategy must be: get Uwase's buy-in first, then everything else flows. You were working with Innovation Directorate (technically correct) but ignoring the real power center (Uwase). This is why power mapping matters - you need to know who really decides."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You decide to build a power map:\n\n**FORMAL STRUCTURE (Org Chart):**\n```\nMinister\n  └─ Permanent Secretary\n      ├─ DG Innovation (Habimana) ← Digital payments mandate\n      ├─ DG Infrastructure (Uwase)\n      └─ DG Policy & Planning\n```\n\n**INFORMAL POWER STRUCTURE (Reality):**\n```\nMinister ←─[20-yr trust]─→ DG Uwase (gatekeeper)\n    ↓                            ↓\n    PS (consensus seeker)        ↓\n    ↓                            ↓\nDG Habimana ←─[former boss]─────┘\n(technically owns this)\n```\n\n**POWER SOURCES:**\n- **Minister**: Ultimate authority (formal), but relies on Uwase's counsel\n- **DG Uwase**: Relationships (Minister trust), Resources (budget), Information (gatekeeper), Network (Habimana loyalty)\n- **PS**: Formal authority, but consensus-driven, won't override Uwase\n- **DG Habimana**: Formal mandate for digital payments, but limited power due to Uwase relationship\n\nYou request a meeting with DG Uwase:\n\nYou: 'Thank you for taking time. I realize I should have consulted you earlier - apologies. I'd like to understand your priorities for digital infrastructure so the payments platform aligns.'\n\nUwase (slightly warmer): 'Well. That's more thoughtful than most advisors. Tell me - why payments platform now? What problem are we solving?'\n\nYou explain: citizen convenience, reduced cash handling, financial inclusion, transparency.\n\nUwase: 'Good objectives. But I have concerns. One: Budget. We have limited funds. This will compete with other infrastructure priorities I'm managing. Two: Implementation capacity. We've had failed digital projects. I won't support something that will embarrass the Minister. Three: Vendor relationships. I assume you'll procure a vendor. I need to make sure procurement is clean - no surprises.'\n\nThese are legitimate concerns, but also subtle tests:\n- Budget concern = 'Why should I allocate MY resources to YOUR priority?'\n- Implementation concern = 'Convince me this won't fail'\n- Vendor concern = 'Are there any political landmines here?'\n\nYou: 'All fair concerns. On budget - I've scoped this at $2.5M. Could we discuss how that fits with other infrastructure priorities? Maybe there's a way to phase it. On implementation - I'd propose a pilot in 2 districts first, prove the model before national rollout. Reduces risk. On vendors - I'm planning competitive open procurement. Happy to involve you in evaluation criteria development to ensure it's bulletproof.'\n\nUwase (considering): 'Pilot makes sense. And involving me in procurement criteria - yes, I'd want that. On budget, let me be frank: I have $4M allocated for infrastructure this year. I was planning $3M for data center upgrades. If your payments platform takes $2.5M, the data center suffers. Why should I sacrifice my priority for yours?'",
+      "prompt": "How do you navigate this? She's asking you to address her incentives, not just the project merits.",
+      "evaluationCriteria": [
+        "**Incentive Alignment**: Do they recognize this is about Uwase's priorities, not just project quality?",
+        "**Trade-offs**: Do they think creatively about budget solutions (phasing, alternative funding, combining projects)?",
+        "**Value Proposition**: Do they frame payments platform as helping HER, not just generally good?",
+        "**Relationship Building**: Do they treat this as beginning of ongoing relationship, not one transaction?",
+        "**Political Intelligence**: Do they understand she's testing whether they understand how power works?",
+        "**Compromise**: Do they show willingness to adjust scope/timing to get her buy-in?"
+      ],
+      "coachingNotes": "This is the real negotiation. Uwase is saying: 'I control the budget. Convince me why I should allocate to your priority instead of mine.' Options: (1) Alternative funding - can you get donor funding so it doesn't compete with her $4M? (2) Phasing - Year 1 pilot at $500K, Year 2 scale-up at $2M? (3) Linkage - Can payments platform serve data center objectives? (4) Coalition - Can you get PS or Minister to direct resources? (5) Trade - What can you offer her in return? The key: you're not just presenting a project, you're negotiating with someone who has veto power. Show you understand her constraints and are willing to work within them. This builds trust and demonstrates political sophistication."
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "You propose a compromise:\n\nYou: 'What if we did a smaller Year 1 pilot - $600K for 2 districts. Prove the model. Then for Year 2 scale-up, we pursue donor funding from UNCDF or World Bank, so it doesn't compete with your infrastructure budget. Would that work?'\n\nUwase: 'Donor funding would help. But here's my question: if this succeeds, who gets credit? I'm supporting this with my budget and political capital. I don't want the Innovation Directorate taking all the credit while I paid for it.'\n\nAh. Now you see another dimension: credit and visibility.\n\nYou: 'That's fair. This is infrastructure - digital infrastructure - which is your domain. We could position this as Infrastructure Directorate initiative with Innovation providing technical support. You'd present to Cabinet, you'd own the success.'\n\nUwase (pause): 'You're more politically aware than I expected. Most advisors just push their technical solutions without understanding the dynamics. Okay. Here's what I'll support: $600K Year 1 pilot. Positioned as digital infrastructure initiative under my directorate. You and Habimana provide technical leadership, but I own it politically. If pilot succeeds, we pursue donor funding for scale-up. I'll help you get that funding - I have relationships with World Bank. But the scale-up also goes through my directorate. Deal?'\n\nThis gives Uwase:\n- Budget control ✓\n- Political ownership ✓\n- Credit for success ✓\n- Ongoing power over the initiative ✓\n\nThis gives you:\n- Project moves forward ✓\n- Smaller Year 1 budget (easier to defend) ✓\n- Path to donor funding for scale-up ✓\n- Uwase becomes champion not blocker ✓\n\nBut it also means:\n- You've ceded formal ownership to Uwase\n- Innovation Directorate (technically responsible) is secondary\n- You're working through informal power structure, not formal mandate\n- If it fails, Uwase might blame you while she had political ownership\n\nJean (when you tell him later): 'You just learned the key lesson: work with power, not structure. Uwase is now your champion. That's worth more than formal org chart authority.'\n\nBut the PS, when you brief him:\n\nPS: 'So Uwase is owning this? Interesting. I assume you cleared this with Minister?'\n\nYou: 'Uwase said she'd mention it to his Chief of Staff.'\n\nPS: 'Mmm. You should still brief the Minister directly at some point. Don't become too dependent on Uwase as the only channel. She's influential, but the Minister likes to hear from technical people too. Just... coordinate with her on timing.'\n\nThis reveals another nuance: the PS is subtly warning you not to be entirely captured by Uwase's network. Maintain some independent access.",
+      "prompt": "You've successfully navigated Uwase. What are the risks of this approach, and how do you mitigate them?",
+      "evaluationCriteria": [
+        "**Trade-off Recognition**: Do they see what they gained (champion) and what they gave up (formal ownership)?",
+        "**Dependency Risk**: Do they recognize risk of being too dependent on Uwase as single channel?",
+        "**Credit Dynamics**: Do they think about how to get appropriate recognition while giving Uwase public credit?",
+        "**Relationship Diversification**: Do they take PS's hint to maintain multiple relationships?",
+        "**Failure Attribution**: Do they consider what happens if pilot fails - who gets blamed?",
+        "**Long-term Power**: Do they think about whether this deal gives Uwase permanent control over digital payments?"
+      ],
+      "coachingNotes": "You made a smart political deal: Uwase gets ownership and credit, you get the project moving and a powerful champion. But risks: (1) Over-dependence - if Uwase leaves or loses power, your initiative is vulnerable. (2) Credit - you're doing the work, she's getting public recognition. Long-term, does that hurt your reputation? (3) Formal-informal tension - Innovation Directorate is formally responsible but sidelined. Could create resentment. (4) Failure attribution - if it fails, Uwase might distance herself and blame you. Mitigations: (1) Take PS's advice - maintain direct relationship with Minister, don't go only through Uwase. (2) Build relationship with Habimana (Innovation) so he doesn't feel undermined. (3) Document your role clearly so credit is available even if not public. (4) Deliver results so there's no failure to attribute."
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "**Six months later:**\n\nThe pilot launches successfully. Uwase presents to Cabinet, taking full credit. The Minister praises her leadership. The PS acknowledges your technical support in internal memo.\n\nBut you notice: Habimana (Innovation DG) is cold toward you now. He feels you went around him by working with Uwase.\n\nHabimana (in corridor): 'I hear the pilot is going well. Uwase's initiative, apparently. Interesting, since digital payments was always Innovation's mandate. But I suppose mandates don't matter when political power is involved.'\n\nHis tone is bitter. You've created a relationship problem.\n\nMeanwhile, the Minister's Chief of Staff approaches you:\n\nChief of Staff: 'The Minister is impressed with the payments pilot. He'd like to discuss other digital initiatives with you. Can you meet Thursday?'\n\nThis is the direct Minister access the PS suggested. But if you meet without telling Uwase, she might see it as going behind her back.\n\nJean: 'Careful. You're succeeding technically but creating political enemies. Habimana feels bypassed. If you meet the Minister without telling Uwase, she'll feel threatened. You navigated formal vs informal power, but you're not managing the relationships within the informal network.'\n\n**Thursday, you meet the Minister:**\n\nMinister: 'The payments pilot - excellent work. Uwase speaks highly of you. I want to scale this and explore other digital services. What else should we be doing?'\n\nThis is your opportunity to build independent relationship with Minister. But you remember: Uwase got you here. If you start proposing initiatives without her involvement, she could turn from champion to blocker.\n\nYou: 'Thank you, sir. I think there's significant potential. But I'd recommend we involve DG Uwase in the planning - she has strong understanding of budget realities and implementation capacity. With her leadership on the pilot, she's positioned to drive scale-up.'\n\nMinister: 'Of course. But I'm asking you: what's the vision? Don't worry about Uwase's feelings. I want your technical perspective.'\n\nHe's testing whether you'll speak independently or defer to Uwase.\n\nYou: 'Sir, I see three priorities: [1] Scale payments platform nationally, [2] Build interoperability layer connecting government systems, [3] Develop data analytics capability for evidence-based policy. The first extends current success. The second is infrastructure foundation. The third delivers policy value.'\n\nMinister: 'Good. Present this to me and Uwase next week. Include the PS. I want all senior leadership aligned.'\n\nAfter the meeting, you immediately call Uwase:\n\nYou: 'DG Uwase, I just met with the Minister - his Chief of Staff arranged it. He asked about digital priorities. I mentioned you should be involved in planning. He wants us to present together next week - you, me, the PS.'\n\nUwase (cool tone): 'I see. He went directly to you. Interesting. What did you discuss?'\n\nYou (honest): 'He asked my technical view on digital priorities. I outlined three areas but emphasized you should lead the planning given your successful management of the pilot.'\n\nUwase (warmer): 'Alright. Let's meet tomorrow to align before we present to him. And in future - if the Minister's office contacts you directly, give me a heads up before the meeting, not after.'\n\nYou: 'Understood. Apologies - I should have informed you first.'\n\n**Lessons learned about power mapping and navigation:**\n\n1. **Org charts ≠ Power maps**: Formal structure showed Innovation owned digital payments. Reality: Uwase controlled budget, access, relationships.\n\n2. **Multiple power sources**: Uwase had power from relationships (Minister trust), resources (budget), information (gatekeeper), networks (Habimana loyalty).\n\n3. **Incentive alignment**: Got Uwase's support by addressing her incentives (budget, credit, control), not just project merits.\n\n4. **Relationship management is ongoing**: Success created new dynamics - Habimana felt bypassed, Uwase's expectations increased.\n\n5. **Navigating multiple relationships**: PS wants you to have independent access to Minister, but Uwase expects to be informed. Balance is delicate.\n\n6. **Credit vs influence trade-off**: Giving Uwase public credit built powerful champion, but created dependency and some resentment (Habimana).\n\n7. **Power is relational, not positional**: Uwase's power came from relationships, not title. Understanding this was key to navigating effectively.",
+      "prompt": "Synthesize: How do you systematically map power in new environments? What mistakes did you make and how would you avoid them?",
+      "evaluationCriteria": [
+        "**Systematic Approach**: Do they articulate method for power mapping (observation, asking, testing)?",
+        "**Multiple Dimensions**: Do they recognize power comes from relationships, resources, information, expertise, networks?",
+        "**Relationship Maintenance**: Do they understand that navigating power is ongoing, not one-time?",
+        "**Mistakes Identified**: Do they honestly assess errors (not informing Uwase, not managing Habimana relationship)?",
+        "**Balance**: Do they see the need to balance multiple relationships, not just pick one power center?",
+        "**Context Dependence**: Do they recognize power maps are specific to each organization/culture?"
+      ],
+      "coachingNotes": "Power mapping framework: [1] Observe formal structure (org chart), [2] Ask trusted insiders about informal dynamics, [3] Identify who controls: decisions, resources, information, access, [4] Map relationships and histories, [5] Test by floating small initiatives and watching who influences outcomes. Your mistakes: [1] Worked with formal mandate holder (Habimana) before understanding real power (Uwase), [2] Didn't proactively manage Habimana relationship after deal with Uwase - created resentment, [3] Met Minister without giving Uwase advance notice - violated expectation, [4] Initially assumed PS's formal authority meant he was real decision-maker. Going forward: Maintain multiple relationships (Uwase, PS, Habimana, Minister), don't become too dependent on one power center. Proactively manage information flows - tell people before they find out elsewhere. Balance technical excellence with political sophistication."
+    }
+  ],
+  "keyTakeaways": [
+    "Org charts show formal structure; power maps show who really influences decisions",
+    "Power comes from multiple sources: relationships, resources, information, expertise, networks",
+    "Understanding incentives (budget, credit, control) is as important as project merits",
+    "Successful navigation means addressing powerful stakeholders' interests, not just getting approval",
+    "Building one powerful champion can create dependency and resentment from others",
+    "Power mapping is ongoing - relationships and dynamics shift, requiring constant attention",
+    "Balance maintaining multiple relationships rather than depending on single power center"
+  ],
+  "frameworks": [
+    {
+      "name": "Power Source Analysis",
+      "description": "Map each stakeholder's power sources: [1] Position (formal authority), [2] Relationships (trust, history), [3] Resources (budget, people), [4] Information (gatekeeper, expertise), [5] Networks (who they influence).",
+      "application": "For each key stakeholder, list their power sources. Uwase had: relationships (Minister trust), resources (budget), information (gatekeeper), networks (Habimana). This multi-source power made her central."
+    },
+    {
+      "name": "Formal-Informal Gap Analysis",
+      "description": "Compare formal structure (who should decide) vs informal reality (who actually decides). Gaps indicate where power mapping is critical.",
+      "application": "When formal and informal diverge significantly (Innovation formally owns digital payments, but Uwase actually controls it), you must navigate informal structure while respecting formal."
+    },
+    {
+      "name": "Incentive Alignment Map",
+      "description": "For each powerful stakeholder, identify: What do they want? (budget, credit, control, avoiding failure) What do they fear? (embarrassment, loss of influence) How does your proposal affect their interests?",
+      "application": "Uwase wanted: budget control, political credit, risk mitigation. Your proposal initially threatened her budget. Reframing it to give her ownership and credit aligned incentives."
+    },
+    {
+      "name": "Relationship Portfolio",
+      "description": "Maintain multiple relationships at different levels. Don't become dependent on single channel, even if powerful. Diversify access and influence.",
+      "application": "PS advised maintaining direct Minister access alongside Uwase relationship. Prevents over-dependency. If one relationship fails, others remain."
+    }
+  ],
+  "relatedCases": [
+    "political-subtext-reading-signals",
+    "managing-up-difficult-boss",
+    "building-coalitions-fragmented-support"
+  ]
+}

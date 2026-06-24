@@ -1,0 +1,120 @@
+{
+  "id": "sa_data_localization",
+  "title": "South Africa Data Sovereignty Debate",
+  "case_type": "technical_political",
+  "country": "South Africa",
+  "context": {
+    "political_landscape": "Parliament debating data sovereignty legislation. Economic Freedom Fighters (EFF) pushing hard data localization. ANC split between pro-business and nationalist wings. Tech sector warning about costs.",
+    "recent_events": "Parliamentary committee holding hearings on data localization requirements for government services. Committee chair (EFF-aligned) demanding all government data stored in SA. Cloud providers warning of price impacts.",
+    "cultural_factors": "Deep sensitivity about economic sovereignty after apartheid. 'Data is the new oil' rhetoric resonating. But also pragmatic recognition that SA tech infrastructure is limited.",
+    "your_position": "You're advising the Department of Communications on data policy for the national identity platform. You're caught between political demands for data localization and technical reality of cloud architecture."
+  },
+  "stakeholder_map": {
+    "Parliamentary Committee Chair": {
+      "power": "high-political",
+      "stance": "Demanding full data localization, seeing this as sovereignty issue",
+      "interests": "Political positioning, nationalist credentials, addressing colonial tech dependence"
+    },
+    "Department Director": {
+      "power": "medium",
+      "stance": "Wants compliance with Parliament but worried about costs",
+      "interests": "Budget management, avoiding political backlash, functional system"
+    },
+    "Local Data Center Industry": {
+      "power": "medium-economic",
+      "stance": "Strongly supporting localization (it benefits them)",
+      "interests": "Market protection, government contracts"
+    },
+    "Tech Civil Society": {
+      "power": "medium-advisory",
+      "stance": "Worried localization will increase costs and reduce resilience",
+      "interests": "Privacy protection, system reliability, avoiding vendor lock-in"
+    },
+    "Cloud Providers": {
+      "power": "low-formal, high-technical",
+      "stance": "Warning localization requirements triple costs",
+      "interests": "Market access, avoiding regulatory fragmentation"
+    },
+    "Treasury": {
+      "power": "high-budget",
+      "stance": "Concerned about cost implications",
+      "interests": "Fiscal discipline, value for money"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You're preparing the Department's testimony to the Parliamentary committee next week. The Committee Chair sent questions in advance:\n\n'Will the national identity platform store South African citizens' data on South African soil? Yes or no. If no, explain why you believe foreign corporations should control our people's data.'\n\nYour technical team says: 'Full localization is technically possible but triples our costs. It also reduces redundancy - if there's a regional outage, we have no backup. Cloud architecture is designed for geographic distribution.'\n\nThe Department Director says: 'I can't go to Parliament and say no to data sovereignty. But I also can't triple my budget.'",
+      "prompt": "What's really happening here? What do you notice?",
+      "evaluate": [
+        "Do they recognize this is political theater as much as technical policy?",
+        "Do they see the Committee Chair's question is framed to make 'no' sound like betrayal?",
+        "Do they notice the real concern (sovereignty anxiety) vs stated position (full localization)?",
+        "Do they recognize there's a technical answer that might satisfy the political need?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "The local data center industry publishes a report: 'Why South Africa Must Control Its Digital Future.' It provides cost estimates showing localization is affordable. The report is technically questionable but politically powerful.\n\nThe tech civil society group publishes a counter-report warning about risks. It's technically sound but politically tone-deaf (they don't mention sovereignty at all).\n\nThe Committee Chair tweets the data center report: 'Finally, someone putting South Africa first.'",
+      "prompt": "What does this tell you about the debate?",
+      "evaluate": [
+        "Do they recognize technical correctness isn't winning the argument?",
+        "Do they see that sovereignty concerns are legitimate even if proposed solution is wrong?",
+        "Do they notice who's NOT in the debate (Treasury, end users)?",
+        "Do they think about reframing the technical options to address political concern?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "Your technical lead proposes: 'We can build our own sovereign cloud using open-source tools. No foreign dependency. Full data sovereignty. It'll take 18 months and significant investment, but it's technically feasible. We'd be a model for the continent.'\n\nThis is appealing because:\n- It solves the political problem\n- It's technically interesting\n- It positions you as the builder of critical infrastructure\n\nBut you also know:\n- SA government has poor track record maintaining complex technical systems\n- This would require hiring and retaining specialized staff (hard in SA market)\n- If it fails, citizens can't access identity services",
+      "prompt": "What do you do?",
+      "evaluate": [
+        "Do they jump to 'yes, let's build sovereign cloud' (builder trap)?",
+        "Do they think about operational sustainability vs. build excitement?",
+        "Do they consider political risk if the sovereign solution fails?",
+        "Do they look for third option between 'full foreign cloud' and 'build from scratch'?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "You realize there's a technical architecture that might work:\n\n- Primary data stored in SA data centers (satisfies localization politically)\n- Encrypted backups in regional cloud for redundancy (satisfies resilience technically)\n- Open standards so SA isn't locked to any vendor (satisfies sovereignty concern)\n- Costs 40% more than pure cloud, but not triple (manageable for Treasury)\n\nYou present this to the Department Director. She likes it.\n\nBut the Committee Chair's advisor calls you: 'We've heard you're proposing a compromise that still uses foreign cloud providers. The Chair won't accept that. Data sovereignty means South African control, period.'\n\nThe compromise IS technically superior. But it might not be politically acceptable.",
+      "prompt": "What do you do?",
+      "evaluate": [
+        "Do they insist on the technically correct answer (missing political dynamic)?",
+        "Do they abandon the compromise (caving to political pressure)?",
+        "Do they look for how to make the compromise politically sellable?",
+        "Do they think about WHO needs to hear WHAT message?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "You need to help the Department Director testify effectively. The same technical architecture needs to be framed differently for different audiences:\n\n1. Parliamentary Committee (wants sovereignty narrative)\n2. Treasury (wants cost justification)\n3. Tech community (wants technical soundness)\n\nWrite one sentence for each explaining the hybrid approach.",
+      "prompt": "How do you frame this?",
+      "evaluate": [
+        "Committee: Do they lead with sovereignty, not compromise?",
+        "Treasury: Do they lead with cost control, not technical elegance?",
+        "Tech community: Do they lead with resilience, not politics?",
+        "Is it the SAME architecture described three ways?",
+        "Do they avoid making anyone wrong?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in the real scenario:\n\nThe advisors argued for pure cloud architecture on technical merits. They testified that localization was costly and unnecessary. They provided excellent technical analysis.\n\nResult:\n- The Parliamentary Committee felt patronized\n- The Committee Chair accused them of serving foreign corporate interests\n- Parliament passed STRICT data localization requirements\n- The costs ballooned\n- The system was delayed by 2 years\n- When it launched, it was fragile because Parliament's requirements prevented geographic redundancy\n\nA senior advisor would have:\n1. **Recognized the sovereignty concern is legitimate** - Not dismissed it as 'politics interfering with technical decisions'\n2. **Found the technical solution that addresses political need** - Hybrid architecture that leads with 'SA control' narrative\n3. **Framed it as sovereignty-enhancing, not compromise** - 'True sovereignty means we're not locked to ANY vendor, foreign OR domestic'\n4. **Built coalition with Treasury** - Made cost control a counter-pressure to expensive full localization\n5. **Helped the Committee Chair save face** - Gave him a 'win' (primary data in SA) rather than forcing him to back down\n\nThe lesson: **When politics and technology collide, the advisor's job isn't to prove the politicians wrong. It's to find the technical approach that addresses the legitimate political concern.**\n\nMost 'political interference in technical decisions' is actually 'technical experts missing the political dimension of technical choices.'",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Technical-political translation: Did you dismiss political concern or design for it?",
+        "Solution framing: Did you present as compromise or as sovereignty-enhancing?",
+        "Stakeholder coalition: Did you think about Treasury as ally against expensive localization?",
+        "Legitimacy: Did you make the Committee Chair wrong or give him a way to win?"
+      ]
+    }
+  ],
+  "tags": ["technical_political", "sovereignty", "cloud", "infrastructure", "narrative"]
+}

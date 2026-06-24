@@ -1,0 +1,120 @@
+{
+  "id": "morocco_payment_election",
+  "title": "Morocco Payment System Election Pressure",
+  "case_type": "political_timing",
+  "country": "Morocco",
+  "context": {
+    "political_landscape": "Parliamentary elections in 6 months. Current government promoting 'Digital Morocco 2030' agenda. Opposition attacking government for favoring big banks. Ramadan starts in 2 months.",
+    "recent_events": "Finance Minister announced national payment infrastructure project. Government digitization agency selected as implementation lead. Major banks lobbying for influence over standards.",
+    "cultural_factors": "Ramadan is major political visibility window. Government announces achievements before Ramadan for maximum impact. French banking sector still influential. Growing fintech sector wants interoperability.",
+    "your_position": "You're advising the government digitization agency on payment infrastructure design. The Finance Minister wants political wins. The agency director wants sustainable infrastructure."
+  },
+  "stakeholder_map": {
+    "Finance Minister": {
+      "power": "high",
+      "stance": "Wants announcement before Ramadan for political visibility",
+      "interests": "Electoral success, modernization narrative, managing bank lobby"
+    },
+    "Digitization Agency Director": {
+      "power": "medium",
+      "stance": "Wants to get this right, worried about rushing",
+      "interests": "Successful implementation, not becoming scapegoat if it fails"
+    },
+    "Major Banks": {
+      "power": "high-economic",
+      "stance": "Want control over standards, resistant to true interoperability",
+      "interests": "Protecting existing payment processing fees, market position"
+    },
+    "Fintech Association": {
+      "power": "low-formal, growing",
+      "stance": "Demanding open standards and interoperability",
+      "interests": "Market access, level playing field, innovation"
+    },
+    "Central Bank": {
+      "power": "high-regulatory",
+      "stance": "Cautious, concerned about financial stability",
+      "interests": "Regulatory compliance, risk management, gradual change"
+    },
+    "Opposition Parties": {
+      "power": "medium-political",
+      "stance": "Will attack any visible failures",
+      "interests": "Electoral advantage, populist banking criticism"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "The Finance Minister's chief of staff calls you: 'The Minister wants to announce the national payment infrastructure before Ramadan. It's 8 weeks away. We need a plan that shows we're moving faster than the opposition claims. The announcement will be at the Digital Morocco summit - major media coverage, international investors attending.'\n\nYou know:\n- Interoperability testing with banks is incomplete\n- The Central Bank hasn't approved the regulatory framework\n- The fintech association is threatening to protest if banks control the standards\n- The agency director told you privately: 'We're not ready for a launch announcement'",
+      "prompt": "What's really at stake here? What do you notice?",
+      "evaluate": [
+        "Do they recognize the election timeline driving decisions?",
+        "Do they see the technical-political mismatch (8 weeks vs. actual readiness)?",
+        "Do they notice the stakeholder minefield (banks vs fintechs, Central Bank approval)?",
+        "Do they understand the risk: premature announcement could poison the entire initiative?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You meet with the agency director. She says: 'The Minister's team is writing the announcement speech. They're saying we'll launch in 6 provinces by June. But we haven't even finished the technical specifications. The Central Bank is still reviewing our proposal. If we announce this and can't deliver, I'll be blamed.'",
+      "prompt": "What do you advise?",
+      "evaluate": [
+        "Do they try to stop the announcement (politically naive)?",
+        "Do they accept the timeline (builder trap - just execute)?",
+        "Do they look for a narrative reframe that gives political win without over-promising?",
+        "Do they recognize the director's political vulnerability?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "Your technical team says: 'We could build a basic prototype for the announcement. Limited functionality, just enough for a demo. Real interoperability comes later. The Minister gets his announcement, we get more time.'\n\nThis is tempting because:\n- It solves the immediate political pressure\n- Your team could definitely build it in 8 weeks\n- You'd be the hero who delivered\n\nBut you also know:\n- A 'demo' that doesn't work in real life poisons stakeholder trust\n- The banks will use a weak prototype to push for their own standards\n- The Central Bank might reject the whole approach if you move without approval",
+      "prompt": "What do you do?",
+      "evaluate": [
+        "Do they take the 'build a demo' path (builder trap)?",
+        "Do they recognize this creates worse problems than it solves?",
+        "Do they think about second-order effects (bank lobby, regulator trust)?",
+        "Do they focus on sustainable path vs. quick political fix?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "You propose an alternative to the Minister's chief of staff:\n\n'Instead of announcing a launch, announce the inclusive governance process. Frame it as: Morocco is building payment infrastructure THE RIGHT WAY - with all stakeholders at the table, unlike other countries that rushed and failed.'\n\nThe chief of staff responds: 'The Minister needs a tangible deliverable, not a process. The opposition is saying we only make committees, not progress. If we announce another 'consultation process', we lose the narrative.'\n\nHe has a point. The opposition HAS been attacking 'endless consultations.' And elections matter.",
+      "prompt": "How do you respond?",
+      "evaluate": [
+        "Do they find a third option beyond 'rush launch' vs 'slow process'?",
+        "Do they look for REAL tangible deliverable that's achievable (signed MOU with banks, Central Bank approval, technical standard published)?",
+        "Do they help craft a narrative that frames speed differently?",
+        "Do they balance political needs with technical reality?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "You need to message stakeholders about what gets announced at the summit. The finance Minister will say SOMETHING - you need to shape what.\n\nWrite one-sentence frames for:\n1. The Finance Minister (needs electoral ammunition)\n2. The Central Bank Governor (needs regulatory prudence)\n3. The Fintech Association (needs to not protest)",
+      "prompt": "What narrative bridges these interests?",
+      "evaluate": [
+        "Do they find genuine substance that serves all interests?",
+        "Minister: Something concrete that shows progress without over-promising?",
+        "Central Bank: Something that respects regulatory process?",
+        "Fintechs: Something that signals inclusive governance?",
+        "Is it the SAME underlying milestone framed three ways?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in the real scenario:\n\nThe advisors helped the Minister announce a '6-province pilot launch by June.' It got great press coverage. International investors praised Morocco's digital ambition.\n\nThen:\n- June came. The system wasn't ready.\n- The government quietly delayed, blaming 'technical issues'\n- The opposition attacked: 'Empty promises, typical'\n- The banks used the delay to push their preferred standards\n- The Central Bank slowed all approvals, concerned about governance\n- The agency director was reassigned\n- The payment infrastructure project is stalled 2 years later\n\nA senior advisor would have:\n1. **Recognized the election timeline is real** - Not dismissed political pressure as 'irrational'\n2. **Found a politically valuable milestone that's actually achievable** - Central Bank approval, signed interoperability agreement, published technical standard\n3. **Reframed speed** - 'Morocco is moving fast by getting the foundation right, unlike [failed example]'\n4. **Protected the agency director** - Made sure the announcement didn't create a trap she'd be blamed for\n5. **Used the summit for commitment, not announcement** - Had banks/fintechs sign MOU on stage - THAT'S the tangible deliverable\n\nThe lesson: Political timing is REAL. Elections matter. But **the way to handle political pressure isn't to overpromise - it's to find what's genuinely achievable that still creates political value.**",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Political timing awareness: Did you dismiss the election pressure or work with it?",
+        "Narrative crafting: Did you find a frame that bridges political and technical reality?",
+        "Stakeholder vulnerability: Did you think about who gets blamed if this fails?",
+        "Builder trap: Did you jump to 'we can build it' instead of 'what's sustainable'?"
+      ]
+    }
+  ],
+  "tags": ["political_timing", "narrative", "elections", "premature_announcement"]
+}

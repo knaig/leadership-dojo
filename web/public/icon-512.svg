@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg512" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="feather512" x1="180" y1="60" x2="340" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="35%" stop-color="#2dd4bf"/>
+      <stop offset="65%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="eye512" x1="210" y1="140" x2="310" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="108" fill="url(#bg512)"/>
+  <!-- Feather shaft -->
+  <path d="M256 450 C256 450, 240 320, 248 210 C253 145, 264 90, 256 50"
+        stroke="#a5b4fc" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Outer vane -->
+  <path d="M256 50 C192 85, 135 140, 130 210 C125 280, 160 340, 256 365 C352 340, 387 280, 382 210 C377 140, 320 85, 256 50Z"
+        fill="url(#feather512)" opacity="0.25"/>
+  <!-- Inner vane -->
+  <path d="M256 75 C204 105, 162 155, 158 210 C154 265, 185 315, 256 340 C327 315, 358 265, 354 210 C350 155, 308 105, 256 75Z"
+        fill="url(#feather512)" opacity="0.35"/>
+  <!-- Peacock eye -->
+  <ellipse cx="256" cy="205" rx="70" ry="82" fill="url(#feather512)" opacity="0.5"/>
+  <ellipse cx="256" cy="205" rx="50" ry="60" fill="#1e1b4b"/>
+  <ellipse cx="256" cy="200" rx="34" ry="42" fill="url(#eye512)" opacity="0.9"/>
+  <ellipse cx="256" cy="195" rx="18" ry="22" fill="#1e1b4b"/>
+  <circle cx="248" cy="188" r="6" fill="white" opacity="0.7"/>
+  <!-- Brand -->
+  <text x="256" y="415" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600" font-size="72" fill="white" opacity="0.9" letter-spacing="8">mira</text>
+</svg>

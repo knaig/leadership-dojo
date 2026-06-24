@@ -1,0 +1,595 @@
+{
+  "id": "opportunity-identification",
+  "slug": "opportunity-identification",
+  "courseNumber": 21,
+  "title": "Opportunity Identification",
+  "subtitle": "Finding Windows for Change",
+  "tier": 3,
+  "category": "Strategic Initiatives",
+  "duration": "4 hours",
+  "difficulty": "Advanced",
+  "description": "Identify and capitalize on windows of opportunity for DPI initiatives in complex political environments.",
+  "learningObjectives": [
+    "Scan for opportunity windows",
+    "Assess opportunity quality",
+    "Act quickly when windows open"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": "DPI advisors, government IT directors, policy coordinators",
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "Understanding Policy Windows",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Policy windows are critical moments when problem, solution, and political conditions align, creating rare opportunities for significant change. This module explores Kingdon's Multiple Streams Framework and how DPI leaders recognize these windows in government IT environments.",
+        "keyPoints": [
+          {
+            "title": "The Three Streams Converging",
+            "description": "Policy windows open when the problem stream (IT infrastructure failures), policy stream (available digital solutions), and political stream (supportive leadership) align simultaneously. In DPI contexts, this might be a data breach (problem), cloud migration strategy (policy), and new administration prioritizing digital transformation (political).",
+            "examples": [
+              "Singapore's Smart Nation Initiative alignment",
+              "India's digital payment system (UPI) convergence",
+              "Bangladesh's digital government transformation window"
+            ]
+          },
+          {
+            "title": "Window Duration and Urgency",
+            "description": "Windows typically remain open for weeks to months, not years. The window for leveraging a new minister's mandate for IT modernization closes as competing priorities emerge. Leaders must understand the urgency and limited timeframe.",
+            "examples": [
+              "6-month window after budget approval",
+              "100-day window in new administration",
+              "Crisis-driven windows (2-3 weeks)"
+            ]
+          },
+          {
+            "title": "Types of Policy Windows",
+            "description": "Windows open through different mechanisms: crisis windows (sudden events forcing action), electoral windows (new administrations seeking quick wins), and structural windows (budget cycles, regulatory reviews).",
+            "examples": [
+              "Crisis: COVID-19 forcing digital service delivery",
+              "Electoral: New minister prioritizing IT agenda",
+              "Structural: Annual budget process for IT investments"
+            ]
+          },
+          {
+            "title": "Window Characteristics",
+            "description": "Successful DPI leaders recognize windows by assessing their certainty (how likely to remain open), scope (how much change is possible), and timing (when action must occur).",
+            "examples": [
+              "High certainty + broad scope = maximum opportunity",
+              "Low certainty + narrow scope = requires rapid action",
+              "Medium characteristics = incremental advancement possible"
+            ]
+          }
+        ],
+        "keyInsight": "Policy windows are not accidents\u2014they result from alignment of technical necessity, available solutions, and political will. DPI leaders must recognize these moments quickly and be prepared to act decisively."
+      },
+      "exercises": [
+        {
+          "id": "exercise-1-1",
+          "title": "Identify Kingdon's Three Streams",
+          "type": "case-study",
+          "instruction": "Review the case of a government's digital transformation initiative. Identify which problem, policy, and political factors aligned to create the window. What was the timing of alignment?",
+          "scenario": "A developing country experiences a major data breach affecting citizen records. Simultaneously, the new IT minister proposes modernizing digital infrastructure, and budget has been allocated. The window to implement comprehensive reforms emerges.",
+          "expectedOutcome": "Participants recognize all three streams and timeline for action"
+        },
+        {
+          "id": "exercise-1-2",
+          "title": "Assess Window Durability",
+          "type": "analysis",
+          "instruction": "Given a current policy window in your organization or government, estimate how long it will remain open. What factors support extended openness? What could close it?",
+          "scenario": "Your government approved an e-governance platform initiative. New leadership supports it. Budget is allocated. Estimate the window's duration and closure risks.",
+          "expectedOutcome": "Realistic assessment of window timeline and closure factors"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Scanning the Environment",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Effective scanning requires systematic monitoring of signals across political, administrative, technical, and fiscal domains. This module teaches environmental scanning frameworks specifically designed for DPI leaders to detect emerging opportunities.",
+        "keyPoints": [
+          {
+            "title": "Multi-Domain Scanning Framework",
+            "description": "DPI opportunities emerge across interconnected domains: political signals (elections, leadership changes, policy statements), administrative capacity (reform programs, institutional restructuring), technical developments (digital standards, innovation labs), and fiscal opportunities (budget cycles, donor programs).",
+            "examples": [
+              "Political domain: New administration prioritizes digital inclusion",
+              "Administrative domain: Civil service reform creating IT units",
+              "Technical domain: Open-source platform adoption policies",
+              "Fiscal domain: International grants for digital infrastructure"
+            ]
+          },
+          {
+            "title": "Political Signal Recognition",
+            "description": "Key political signals include leadership statements, cabinet reshuffles, policy agendas, electoral campaigns emphasizing digital transformation, international commitments, and public statements about government modernization.",
+            "examples": [
+              "Minister's speech on digital government vision",
+              "Cabinet includes new CIO with reform mandate",
+              "Five-year plan emphasizing digital economy",
+              "UN SDG commitments requiring digital governance"
+            ]
+          },
+          {
+            "title": "Administrative and Institutional Signals",
+            "description": "Watch for institutional changes: new departments, task forces formed, consultants hired, staff changes in key positions, approved policy documents, and institutional partnerships emerging.",
+            "examples": [
+              "Creation of digital transformation office",
+              "Establishment of inter-agency digital coordination committee",
+              "Appointment of new CIO with external background",
+              "Launch of digital innovation lab"
+            ]
+          },
+          {
+            "title": "Systematic Monitoring Mechanisms",
+            "description": "Establish multiple scanning channels: regular briefings with key stakeholders, monitoring of policy announcements and budget documents, attendance at relevant forums, subscription to policy updates, and relationship maintenance with decision-makers.",
+            "examples": [
+              "Weekly scan of government policy announcements",
+              "Monthly stakeholder briefings",
+              "Quarterly budget and planning document review",
+              "Participation in digital governance forums"
+            ]
+          }
+        ],
+        "keyInsight": "Scanning is not passive observation\u2014it requires active, systematic monitoring across multiple domains. DPI leaders who scan effectively see windows before competitors and can prepare accordingly."
+      },
+      "exercises": [
+        {
+          "id": "exercise-2-1",
+          "title": "Multi-Domain Scanning Exercise",
+          "type": "analysis",
+          "instruction": "For your government or organization, conduct a scan across all four domains (political, administrative, technical, fiscal). Document emerging signals in each domain that could create DPI opportunities.",
+          "scenario": "Map current signals in: political leadership statements, administrative reforms, technical developments, and budget allocations related to digital government.",
+          "expectedOutcome": "Systematic inventory of opportunity signals across domains"
+        },
+        {
+          "id": "exercise-2-2",
+          "title": "Stakeholder Monitoring Network",
+          "type": "planning",
+          "instruction": "Design a stakeholder network for continuous scanning. Who should be monitored? What channels provide intelligence? How frequently should scanning occur?",
+          "scenario": "Create a practical scanning network for your organization using available resources and relationships.",
+          "expectedOutcome": "Actionable stakeholder monitoring plan"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Reading Political Signals",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Political signals are often coded, indirect, and contested. This module develops the interpretive skills necessary to read subtle signals accurately and distinguish genuine opportunities from empty rhetoric.",
+        "keyPoints": [
+          {
+            "title": "Explicit vs. Implicit Signals",
+            "description": "Explicit signals are direct statements about digital priorities. Implicit signals appear in budget allocations, staffing decisions, institutional changes, and whom leaders meet. DPI leaders must read both\u2014explicit signals show stated intentions; implicit signals show true priorities.",
+            "examples": [
+              "Explicit: Minister's speech on e-government vision",
+              "Implicit: Budget increase for digital infrastructure despite competing priorities",
+              "Explicit: Policy document on digital transformation",
+              "Implicit: New CIO position created with direct minister access"
+            ]
+          },
+          {
+            "title": "Aligning Signals Across Actors",
+            "description": "Opportunities strengthen when multiple actors send aligned signals. If only the minister supports DPI but permanent staff resist, the window may be weak. If ministry, parliament, and civil service align, the window is strong.",
+            "examples": [
+              "Strong: Minister + budget office + parliament committee support DPI",
+              "Weak: Minister supports DPI, but budget office unchanged",
+              "Strong: New administration + international donors + civil service all favor digital transformation",
+              "Weak: One leader advocates DPI but colleagues remain skeptical"
+            ]
+          },
+          {
+            "title": "Signal Consistency and Stability",
+            "description": "Assess whether signals are consistent across time and actors. One-off statements are weak signals. Repeated commitments across multiple forums are strong. Signals from new leaders are weaker than from established ones.",
+            "examples": [
+              "Weak: Single speech mentioning digital innovation",
+              "Strong: Repeated references to DPI in budgets, speeches, and policy over months",
+              "Weak: New minister's initial statement on IT",
+              "Strong: Two consecutive budgets emphasizing digital transformation"
+            ]
+          },
+          {
+            "title": "Reading Between the Lines",
+            "description": "Interpret what is not said as much as what is. Silence on a competing priority may indicate it has lost political backing. Absence of resistance to DPI proposals may signal opportunity.",
+            "examples": [
+              "Budget cuts to legacy systems signal digital transition support",
+              "No opposition to DPI pilot suggests broader acceptance",
+              "Minister's silence on IT modernization concerns may indicate political pressure elsewhere",
+              "Lack of civil service resistance to digital change suggests readiness"
+            ]
+          }
+        ],
+        "keyInsight": "Political signals are multivalent and often contested. Effective DPI leaders read signals in context, assess alignment across actors, and distinguish genuine opportunity from superficial interest."
+      },
+      "exercises": [
+        {
+          "id": "exercise-3-1",
+          "title": "Analyze Political Signals",
+          "type": "case-study",
+          "instruction": "Given recent statements from government leaders, budget documents, and institutional changes, interpret what signals these send about DPI opportunity.",
+          "scenario": "The new minister mentions digital transformation in her inaugural speech. The budget includes 8% increase for IT infrastructure. A new Chief Digital Officer position is created. Civil service unions remain silent. What does this signal?",
+          "expectedOutcome": "Nuanced interpretation of signal strength and alignment"
+        },
+        {
+          "id": "exercise-3-2",
+          "title": "Assess Signal Consistency",
+          "type": "analysis",
+          "instruction": "Track signals over time from key political actors. Do signals remain consistent? Strengthen? Weaken? What explains the trajectory?",
+          "scenario": "Monitor statements and actions from your government's leadership on digital transformation over a three-month period. Identify trends.",
+          "expectedOutcome": "Understanding of signal stability and trajectory"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "moduleNumber": 4,
+      "title": "Assessing Opportunity Quality",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Not all windows are equally valuable. This module provides frameworks for assessing which opportunities offer the greatest potential for DPI advancement and warrant rapid response.",
+        "keyPoints": [
+          {
+            "title": "Scope Assessment Framework",
+            "description": "Windows vary in scope: some allow incremental improvements (better data systems), others allow transformational change (complete digital governance architecture). Assess how much change the window permits. Transformational windows are rare and should be prioritized.",
+            "examples": [
+              "Limited scope: Improving one legacy system's reporting",
+              "Moderate scope: Implementing data standards across three agencies",
+              "Transformational scope: Restructuring all citizen-facing services to digital-first",
+              "Scope determination depends on stakeholder alignment, budget, and timeline"
+            ]
+          },
+          {
+            "title": "Durability and Sustainability",
+            "description": "Assess how likely the window is to remain stable long enough for meaningful implementation. Crisis windows are urgent but fragile. Structural windows aligned with budget cycles are more durable. Assess institutional buy-in for sustainability.",
+            "examples": [
+              "Crisis window (low durability): Data breach forcing emergency response",
+              "Structural window (high durability): Budget cycle creating regular investment opportunity",
+              "Political window (medium durability): New administration's mandate lasting 2-3 years",
+              "Sustained window: Institutional commitment across multiple cycles"
+            ]
+          },
+          {
+            "title": "Alignment Quality and Depth",
+            "description": "Assess how deeply stakeholders are aligned. Surface-level agreement is weaker than commitment based on understanding benefits. Assess whether alignment is authentic or merely rhetorical.",
+            "examples": [
+              "Weak alignment: Minister states support; staff and budget offices are indifferent",
+              "Strong alignment: Multiple actors have independently endorsed DPI and allocated resources",
+              "Rhetorical alignment: Public statements without corresponding action or investment",
+              "Deep alignment: Stakeholders demonstrate commitment through personnel, budget, and policy decisions"
+            ]
+          },
+          {
+            "title": "Readiness Requirements vs. Window Duration",
+            "description": "Match opportunity quality to organizational readiness. A brief window for transformational change requires pre-positioned capacity. A durable window for incremental change requires less pre-positioning.",
+            "examples": [
+              "Tight window + complex initiative = requires pre-positioned team",
+              "Ample time + simple initiative = can build capacity as work progresses",
+              "One-month crisis window + major system implementation = impossible without advance preparation",
+              "Six-month budget cycle + pilot program = feasible with adequate team"
+            ]
+          }
+        ],
+        "keyInsight": "Opportunity quality depends on scope, durability, alignment depth, and readiness fit. DPI leaders must assess opportunities systematically and focus resources on those with highest potential impact and viable timelines."
+      },
+      "exercises": [
+        {
+          "id": "exercise-4-1",
+          "title": "Opportunity Quality Matrix",
+          "type": "planning",
+          "instruction": "Create an assessment matrix for a current or potential opportunity window in your context. Rate it on scope, durability, alignment quality, and readiness fit. What score emerges? Is it worth pursuing?",
+          "scenario": "Your government is considering a major e-governance platform initiative. Using the framework, assess this opportunity's quality and viability.",
+          "expectedOutcome": "Systematic assessment determining opportunity worthiness"
+        },
+        {
+          "id": "exercise-4-2",
+          "title": "Prioritize Multiple Windows",
+          "type": "analysis",
+          "instruction": "Given multiple potential opportunities in your context (policy window, budget window, crisis window), assess all three using the framework. Which deserves priority? Why?",
+          "scenario": "Your government faces three simultaneous windows: new minister supporting digital government, upcoming budget cycle, and recent IT system failure requiring response. Assess and prioritize.",
+          "expectedOutcome": "Prioritized opportunity portfolio"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "moduleNumber": 5,
+      "title": "Preparing for Windows",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "While windows are unpredictable, DPI leaders can prepare in advance. This module explores pre-positioning strategies that allow rapid response when windows open.",
+        "keyPoints": [
+          {
+            "title": "Maintaining Strategic Readiness",
+            "description": "DPI leaders maintain three critical readiness elements: ready solutions (piloted approaches ready to scale), ready teams (experienced people who can mobilize quickly), and ready relationships (established trust with decision-makers). These allow rapid response when windows open.",
+            "examples": [
+              "Ready solutions: Pilot digital ID system that can be expanded",
+              "Ready teams: Cross-agency DPI team trained and relationship-mapped",
+              "Ready relationships: Regular briefings with key stakeholders maintaining trust and awareness",
+              "Combined readiness: Solution proven, team established, relationships strong\u2014ready to scale when window opens"
+            ]
+          },
+          {
+            "title": "Building Solution Readiness",
+            "description": "Develop and pilot solutions before windows open. A solution ready to scale is far more likely to capitalize on limited time. Pilot programs demonstrate feasibility, reveal issues, and build stakeholder confidence.",
+            "examples": [
+              "Pilot digital service system in one agency; scale across government when window opens",
+              "Test payment integration in limited context; expand nationally when budget approves",
+              "Prove data standards in pilot; mandate across system when political support emerges",
+              "Demonstrate mobile governance in one region; scale nationally when opportunity appears"
+            ]
+          },
+          {
+            "title": "Building Team Readiness",
+            "description": "Identify and cultivate the team that will execute rapid response. In DPI contexts, this often means IT professionals, policy experts, change managers, and political-technical brokers. Build relationships, develop shared understanding, conduct scenario planning.",
+            "examples": [
+              "Core team of CIO, policy director, and implementation lead practicing scenarios",
+              "Technical team ready to deploy systems with minimal lead time",
+              "Policy team ready to draft regulations supporting DPI expansion",
+              "Communications team ready to build public and stakeholder support"
+            ]
+          },
+          {
+            "title": "Building Relationship Readiness",
+            "description": "Establish and maintain relationships with decision-makers before windows open. Regular briefings, informal conversations, and demonstrated competence build trust that enables rapid support when action is needed.",
+            "examples": [
+              "Monthly briefings with finance minister on DPI opportunity",
+              "Quarterly meetings with IT committee maintaining awareness and building support",
+              "Informal relationships with key civil servants enabling rapid coordination",
+              "Documented past successes demonstrating DPI team's competence"
+            ]
+          }
+        ],
+        "keyInsight": "Windows are unpredictable, but readiness is not. DPI leaders who invest in solution pilots, team development, and relationship building can capitalize on windows when they open."
+      },
+      "exercises": [
+        {
+          "id": "exercise-5-1",
+          "title": "Readiness Assessment",
+          "type": "planning",
+          "instruction": "Assess your organization's readiness across three dimensions: solutions (what is pilot-tested and ready to scale?), teams (who is ready to mobilize?), and relationships (which decision-makers trust your leadership?). Where are gaps?",
+          "scenario": "If a major DPI window opened in your government in the next month, what are you ready to execute? What is missing?",
+          "expectedOutcome": "Clear readiness assessment and gap identification"
+        },
+        {
+          "id": "exercise-5-2",
+          "title": "Build Your Readiness Plan",
+          "type": "planning",
+          "instruction": "Design a six-month readiness-building plan: which solutions will you pilot? Which teams will you cultivate? Which relationships will you invest in?",
+          "scenario": "Create a realistic readiness-building plan given your current capacity and context.",
+          "expectedOutcome": "Actionable readiness development plan"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "moduleNumber": 6,
+      "title": "Moving When Windows Open",
+      "duration": "45 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Windows open briefly and close quickly. This module explores the decision-making and execution speed required to capitalize on windows. Speed is a feature, not a bug\u2014rapid decision-making and implementation define window-capture capacity.",
+        "keyPoints": [
+          {
+            "title": "Recognizing Window Openings",
+            "description": "Windows often announce themselves suddenly (crisis) or through accumulated signals (political moment). DPI leaders must have early warning systems and decision protocols ready. Establish who decides when a window is open and triggers mobilization.",
+            "examples": [
+              "Crisis window: IT system fails; immediate recognition triggers emergency response",
+              "Political window: New minister announces digital transformation; decision to present comprehensive DPI plan within one week",
+              "Budget window: Finance ministry opens budget process; decision to submit digital infrastructure proposal immediately",
+              "Structural window: Budget cycle predictably opens; established protocol triggers preparation in advance"
+            ]
+          },
+          {
+            "title": "Rapid Mobilization Protocols",
+            "description": "Establish decision protocols enabling rapid resource deployment. Who authorizes? Who implements? What can be done in parallel versus sequentially? DPI implementation often has dependencies, but decision-making should not.",
+            "examples": [
+              "Crisis protocol: CIO authority to mobilize team within 24 hours",
+              "Policy window protocol: Decision committee convenes within 48 hours to authorize proposal",
+              "Budget window protocol: Pre-drafted proposals submitted immediately when budget process opens",
+              "Team mobilization: Pre-established roster of 5-10 people who can be activated immediately"
+            ]
+          },
+          {
+            "title": "Anchoring Gains Quickly",
+            "description": "When windows open, move to secure key commitments quickly: approvals, budget allocations, policy changes, and personnel assignments. Once these are locked, implementation becomes inevitable rather than uncertain.",
+            "examples": [
+              "Secure cabinet approval for DPI initiative before attention shifts",
+              "Lock in budget allocation before competing priorities emerge",
+              "Install key personnel in positions supporting DPI before window closes",
+              "Establish policy framework before political support weakens"
+            ]
+          },
+          {
+            "title": "Communication During Window Moments",
+            "description": "When windows are open, communication becomes particularly important and challenging. Maintain momentum-building communication with stakeholders while managing concerns and opposition. Create narrative explaining why now is the moment for DPI.",
+            "examples": [
+              "Public narrative: 'Urgent DPI modernization needed for citizen services'",
+              "Stakeholder briefing: 'This budget window is unique\u2014we must move now'",
+              "Opposition management: Address concerns without letting critics delay action",
+              "Internal communication: Keep team motivated and focused during rapid execution"
+            ]
+          }
+        ],
+        "keyInsight": "Moving when windows open requires pre-positioned readiness, rapid decision protocols, and a team comfortable with speed and uncertainty. DPI leaders who can move decisively when windows open capture disproportionate value."
+      },
+      "exercises": [
+        {
+          "id": "exercise-6-1",
+          "title": "Window Activation Scenario",
+          "type": "simulation",
+          "instruction": "Given a window opening scenario (new minister, budget approval, crisis), develop your activation plan. What happens in first 24 hours? First week? First month? What decisions must be made first?",
+          "scenario": "A new technology minister is appointed and immediately announces digital government as her top priority. How do you respond in the first week?",
+          "expectedOutcome": "Realistic, rapid activation plan"
+        },
+        {
+          "id": "exercise-6-2",
+          "title": "Establish Decision Protocols",
+          "type": "planning",
+          "instruction": "Design the decision protocols for your organization when windows open. Who decides? How fast? What can be decided in advance versus in real time?",
+          "scenario": "Create decision protocols for your DPI context enabling rapid mobilization when opportunities emerge.",
+          "expectedOutcome": "Clear decision protocols reducing activation time"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "moduleNumber": 7,
+      "title": "Creating Windows",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "While policy windows are not fully controllable, DPI leaders can actively work to create conditions for windows to open. This module explores proactive strategies for generating opportunities rather than only responding to them.",
+        "keyPoints": [
+          {
+            "title": "Problem Amplification Strategies",
+            "description": "Policy windows often open when problems become visible and urgent. DPI leaders can contribute to problem visibility without creating false narratives: highlighting existing inefficiencies, documenting costs of inaction, demonstrating citizen frustration with outdated systems.",
+            "examples": [
+              "Document time citizens spend on inefficient government processes",
+              "Quantify costs of legacy system maintenance and failures",
+              "Highlight security vulnerabilities in current systems",
+              "Compare government digital services to private sector citizen expectations"
+            ]
+          },
+          {
+            "title": "Solution Pre-positioning",
+            "description": "Have ready solutions waiting when problems become visible. If a crisis forces action on outdated systems, having a proven digital alternative accelerates adoption. Solution visibility helps converts latent problems into windows.",
+            "examples": [
+              "Pilot digital ID system visible to demonstrate alternative to paper-based approach",
+              "Demonstrate cloud-based cost savings when infrastructure budgets are constrained",
+              "Show integration benefits when agencies are struggling with data silos",
+              "Document time savings and citizen satisfaction from digital service pilots"
+            ]
+          },
+          {
+            "title": "Coalition Building and Constituency Development",
+            "description": "Create constituencies supporting DPI that amplify problem signals when moments arrive. Business groups, civil society, international organizations, and citizen movements can create political pressure for digital transformation.",
+            "examples": [
+              "Business coalition demanding digital government efficiency",
+              "Civil society movement for open government and digital transparency",
+              "International organization commitment to digital SDGs creating policy pressure",
+              "Citizen petition supporting mobile government services"
+            ]
+          },
+          {
+            "title": "Strategic Narrative Development",
+            "description": "Develop compelling narratives about why DPI matters: economic competitiveness, citizen satisfaction, corruption reduction, efficiency gains, service quality. When windows open, these narratives help decision-makers understand why now is the moment.",
+            "examples": [
+              "Narrative: 'Digital government is competitive necessity for attracting investment'",
+              "Narrative: 'Citizens expect digital services; paper government is outdated'",
+              "Narrative: 'Digital systems reduce corruption and improve transparency'",
+              "Narrative: 'Technology enables lean government in constrained budget environment'"
+            ]
+          }
+        ],
+        "keyInsight": "While DPI leaders cannot manufacture windows entirely, they can work to make windows more likely by amplifying problems, positioning solutions, building constituencies, and developing narratives that help decision-makers recognize why DPI matters."
+      },
+      "exercises": [
+        {
+          "id": "exercise-7-1",
+          "title": "Window Creation Strategy",
+          "type": "planning",
+          "instruction": "Identify problems currently visible (or potentially visible) in your government's IT and digital services. Design a strategy to amplify these problems and position DPI solutions.",
+          "scenario": "What existing government IT inefficiencies could you highlight to create pressure for digital transformation? How would you amplify these issues?",
+          "expectedOutcome": "Window creation strategy leveraging real problems"
+        },
+        {
+          "id": "exercise-7-2",
+          "title": "Coalition and Narrative Development",
+          "type": "planning",
+          "instruction": "Identify potential constituencies (business, civil society, international organizations, citizens) that could support DPI initiatives. What narrative would mobilize each? How would you cultivate these constituencies?",
+          "scenario": "Design coalition-building and narrative strategy for digital government transformation in your context.",
+          "expectedOutcome": "Coalition and narrative strategy supporting window creation"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "moduleNumber": 8,
+      "title": "Building Opportunity Readiness",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "The module synthesizes the course, helping DPI leaders develop comprehensive opportunity readiness: the capacity to recognize, assess, prepare for, and capitalize on windows as they emerge. This is the core competency differentiating high-impact DPI leaders.",
+        "keyPoints": [
+          {
+            "title": "Integration of Scanning, Assessment, and Preparation",
+            "description": "Opportunity readiness integrates three practices: continuous environmental scanning that provides early warning of windows opening, systematic opportunity assessment determining which windows merit effort, and proactive preparation enabling rapid response.",
+            "examples": [
+              "Monthly scanning identifies signals suggesting IT modernization window emerging",
+              "Assessment framework determines window scope, durability, and alignment quality",
+              "Readiness review confirms solution pilots, team, and relationships in place",
+              "When window opens, rapid mobilization executes prepared strategy"
+            ]
+          },
+          {
+            "title": "Organizational Learning from Window Capture",
+            "description": "Each window captured provides learning: what signals mattered? How accurate was assessment? What preparation proved valuable? What would we do differently? Use each window capture to refine future capability.",
+            "examples": [
+              "After successful digital ID scaling, document what signals indicated opportunity",
+              "After failed budget window, analyze assessment errors and preparation gaps",
+              "After rapid crisis response, codify successful protocols for future deployment",
+              "Build organizational knowledge base of window types, signals, and effective responses"
+            ]
+          },
+          {
+            "title": "Building Adaptive Capacity",
+            "description": "Windows often contain surprises. Plans must be flexible enough to adapt to unexpected developments while maintaining momentum. Build team culture comfortable with rapid adjustments and learning.",
+            "examples": [
+              "DPI plan adjusts when political opposition emerges but core elements secure",
+              "Budget allocation less than requested; team adapts strategy to maximum impact",
+              "Timeline faster than expected; team accelerates while maintaining quality",
+              "Unexpected technology or policy development creates new possibilities; team pivots to capture"
+            ]
+          },
+          {
+            "title": "Long-Term Opportunity Readiness",
+            "description": "Opportunity readiness is a permanent organizational capability, not a temporary effort. Institutionalize scanning, assessment, and preparation practices. Develop succession planning so DPI leadership capacity survives personnel changes. Maintain momentum between windows.",
+            "examples": [
+              "Establish permanent policy monitoring and analysis function",
+              "Build institutional knowledge system capturing opportunity learnings",
+              "Develop DPI leadership pipeline ensuring capability continuation",
+              "Maintain team readiness between windows through regular exercises and updates"
+            ]
+          }
+        ],
+        "keyInsight": "Opportunity readiness is the foundational capability separating transformative DPI leaders from those who primarily react to circumstances. Leaders who systematically scan, assess, prepare, and execute become architects of digital transformation rather than passive observers of change."
+      },
+      "exercises": [
+        {
+          "id": "exercise-8-1",
+          "title": "Opportunity Readiness Assessment",
+          "type": "analysis",
+          "instruction": "Assess your organization's current opportunity readiness across four dimensions: scanning capability, assessment frameworks, preparation mechanisms, and execution protocols. Strength: 1-5 scale. Where are you strong? What needs development?",
+          "scenario": "Rate your organization on each readiness dimension. What does this suggest about your capacity to capitalize on future windows?",
+          "expectedOutcome": "Comprehensive readiness assessment identifying strengths and gaps"
+        },
+        {
+          "id": "exercise-8-2",
+          "title": "Opportunity Readiness Development Plan",
+          "type": "planning",
+          "instruction": "Based on your readiness assessment, design a 12-month plan to build capability across weak dimensions. What specific actions will strengthen each area?",
+          "scenario": "Develop a realistic readiness-building plan improving your organization's capacity to recognize and capitalize on DPI windows.",
+          "expectedOutcome": "Actionable 12-month readiness development plan"
+        },
+        {
+          "id": "exercise-8-3",
+          "title": "Organizational Learning Protocol",
+          "type": "planning",
+          "instruction": "Design a system for your organization to learn from windows captured and missed. How will you document signals? Assess decisions? Capture lessons? Update protocols?",
+          "scenario": "Create an organizational learning system that builds DPI opportunity readiness over time.",
+          "expectedOutcome": "Sustainable organizational learning protocol"
+        }
+      ]
+    }
+  ]
+}

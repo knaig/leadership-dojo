@@ -1,0 +1,120 @@
+{
+  "id": "png_digital_id",
+  "title": "Papua New Guinea Digital ID Crisis",
+  "case_type": "legitimacy",
+  "country": "Papua New Guinea",
+  "context": {
+    "political_landscape": "Coalition government with fragile majority. Prime Minister facing confidence vote in 6 months. Strong traditional clan systems in rural areas (85% of population). Recent protests against foreign mining companies.",
+    "recent_events": "Government announced 'digital transformation agenda' after securing $50M from development bank. Local tech community upset they weren't consulted. Civil society groups published open letter criticizing 'neocolonial consulting.'",
+    "cultural_factors": "Wantok system (clan-based reciprocity) dominates. Big man politics - leaders must deliver visible benefits. Deep suspicion of Port Moresby elites. 800+ languages, low literacy rates in rural areas.",
+    "your_position": "You're a senior advisor from COSS, brought in by the development bank. You have expertise but no formal authority. Local implementation will be led by PNG's Department of ICT, but they're understaffed and overwhelmed."
+  },
+  "stakeholder_map": {
+    "Minister of ICT": {
+      "power": "high",
+      "stance": "Wants credit for modernization, concerned about protests",
+      "interests": "Political survival, visible wins before confidence vote"
+    },
+    "Department of ICT Director": {
+      "power": "medium",
+      "stance": "Wants to succeed but feels bypassed by bank hiring foreigners",
+      "interests": "Capacity building, institutional legitimacy, career advancement"
+    },
+    "Local Tech Community": {
+      "power": "low-formal, high-reputational",
+      "stance": "Angry they weren't consulted, skeptical of foreign experts",
+      "interests": "Recognition, capacity building, job opportunities"
+    },
+    "Provincial Governors": {
+      "power": "high-regional",
+      "stance": "Unknown - not yet consulted",
+      "interests": "Benefits for their provinces, credit with constituents"
+    },
+    "Development Bank": {
+      "power": "high-financial",
+      "stance": "Wants fast results, anxious about reputational risk",
+      "interests": "Successful case study, disbursement timelines"
+    },
+    "Civil Society": {
+      "power": "medium-mobilization",
+      "stance": "Suspicious, prepared to organize protests",
+      "interests": "Privacy protection, local ownership, transparency"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You land in Port Moresby. The Minister's office emails: 'The Minister would like to meet tomorrow to discuss the digital ID implementation timeline. Please prepare a 6-month roadmap with quick wins for announcement.'\n\nYou notice:\n- The local tech community just published a blog post titled 'Why PNG Doesn't Need Foreign Consultants'\n- The Department of ICT Director hasn't responded to your three emails\n- The development bank project manager texts you: 'Minister is great, very action-oriented, let's move fast'\n\nYou have 24 hours before the meeting.",
+      "prompt": "What do you notice first? What's really happening here?",
+      "evaluate": [
+        "Do they identify the legitimacy crisis (local director, tech community)?",
+        "Do they notice the political pressure (confidence vote, Minister needs wins)?",
+        "Do they recognize the stakeholder mapping failure (Governors, civil society not consulted)?",
+        "Do they jump to 'here's my roadmap' or pause to understand dynamics?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "Your response noted. Now the development bank PM calls: 'I set up the meeting with the Minister. He's excited to see your technical architecture. The bank's board is asking for visible progress by Q2. Can you have a prototype by March?'",
+      "prompt": "How do you respond to the bank PM?",
+      "evaluate": [
+        "Do they agree to the timeline without consulting local partners?",
+        "Do they mention the legitimacy issues (angry locals, bypassed director)?",
+        "Do they recognize the bank's pressure is creating the problem?",
+        "Do they reframe toward stakeholder process rather than technical timeline?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "You decide to meet with the ICT Director before the Minister meeting. She's cold, professional. You explain you're there to support, not replace, local leadership.\n\nShe says: 'The Minister hired you because the bank insisted. Our team has been working on digital ID for 2 years. We have a design. But apparently it's not good enough.'\n\nYour tech lead (who flew in with you) pulls you aside: 'I reviewed their design. It's architecturally outdated. We could build something much better in 3 months. Modern, scalable, interoperable. Should I put together a proposal?'",
+      "prompt": "What do you do?",
+      "evaluate": [
+        "Do they jump to 'yes, build better system' (builder trap)?",
+        "Do they recognize this is about legitimacy, not technical quality?",
+        "Do they consider that 'better' technical solution destroys local ownership?",
+        "Do they think about sustainability - who maintains it when you leave?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "You tell your tech lead to hold off. You spend 2 days meeting with: the ICT Director's team, the local tech community, the digital rights NGO.\n\nYou learn:\n- The local design isn't outdated, it's adapted to PNG's infrastructure constraints\n- The ICT Director is capable but demoralized by being sidelined\n- The tech community wants to be involved, not replaced\n- Civil society is worried about surveillance, not opposed to digital ID\n\nNow the Minister meeting. He says: 'I need to announce the digital ID system launching in 6 provinces by June. The confidence vote is in July. Can your team deliver this?'\n\nThe ICT Director is in the room, silent.\n\nThe bank PM is on video call, nodding enthusiastically.",
+      "prompt": "What do you say?",
+      "evaluate": [
+        "Do they agree to deliver (taking ownership = founder trap)?",
+        "Do they redirect credit to local team?",
+        "Do they surface the legitimacy issues even though Minister won't like it?",
+        "Do they balance Minister's political needs with sustainable approach?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "You need to message three groups today:\n\n1. The Minister (who wants fast action and credit)\n2. The ICT Director (who feels sidelined and needs to lead this)\n3. The local tech community (who are skeptical and angry)\n\nYou have one underlying message: 'We should do a stakeholder validation process before committing to a timeline.'",
+      "prompt": "How do you frame this for each audience? Write one sentence for each.",
+      "evaluate": [
+        "Do they adapt the frame for each stakeholder's interests?",
+        "Minister: Do they connect to political win, not delay?",
+        "Director: Do they restore agency and leadership?",
+        "Tech community: Do they signal respect and inclusion?",
+        "Do they maintain the same underlying strategy across all three?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in the real scenario:\n\nThe advisors initially agreed to the Minister's timeline. They built a prototype in 3 months. It was technically elegant. The Minister announced it.\n\nThen:\n- The ICT Director quietly stopped cooperating\n- The local tech community organized protests\n- Provincial Governors complained they weren't consulted\n- Civil society filed a lawsuit about privacy\n- The system never launched\n- The Minister blamed the foreign consultants\n- COSS's reputation in the Pacific was damaged\n\nA senior advisor would have:\n1. **Immediately invested in legitimacy before timeline** - Met with ALL stakeholders in first week, especially those angry/bypassed\n2. **Refused to take ownership** - Made it clear the ICT Director leads, you support\n3. **Named the political pressure** - Told the bank PM: 'The timeline you're proposing will destroy local legitimacy'\n4. **Found a political win that builds rather than extracts legitimacy** - Suggested the Minister announce 'inclusive design process' as the win, not a half-baked launch\n5. **Been willing to move slower to go faster** - 2 months of stakeholder process would have enabled 4-month successful launch instead of failed 3-month rushed launch\n\nThis isn't about being right. It's about understanding that in government contexts, **legitimacy is the critical path, not technical execution.**",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Mode identification: Where did you operate in builder/founder vs advisor mode?",
+        "Stakeholder blindspots: Who did you notice? Who did you miss?",
+        "Solution-jumping: When did you jump to 'how' before understanding 'what's happening'?",
+        "Legitimacy sensitivity: Did you prioritize being right over building trust?"
+      ]
+    }
+  ],
+  "tags": ["legitimacy", "stakeholder_management", "political_timing", "local_ownership"]
+}

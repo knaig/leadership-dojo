@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env*.local
+.env.production
+.env.vercel*
+render.yaml
+
+# Build output
+.next/
+.vercel
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite
+*.db
+
+# Debug scripts
+check_*.js
+check_*.ts
+
+env.txt
+.claude

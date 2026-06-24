@@ -1,0 +1,177 @@
+
+// ============================================================================
+// WORK CO-PILOT AGENT (NEW)
+// ============================================================================
+
+enum GoalMagnitude {
+  QUARTERLY
+  YEARLY
+  KPI_DRIVEN
+  CAREER
+}
+
+enum GoalStatus {
+  ACTIVE
+  COMPLETED
+  PAUSED
+  ABANDONED
+}
+
+model Goal {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  description     String
+  magnitude       GoalMagnitude    @default(QUARTERLY)
+  deadline        DateTime?
+  status          GoalStatus       @default(ACTIVE)
+  context         Json             @default("{}")  // Strategic insights
+
+  stakeholders    GoalStakeholder[]
+  actions         RelationshipAction[]
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+enum StakeholderRole {
+  DECISION_MAKER
+  INFLUENCER
+  BLOCKER
+  ALLY
+  BRIDGE
+  UNKNOWN
+}
+
+enum StakeholderImportance {
+  MUST_HAVE
+  NICE_TO_HAVE
+}
+
+enum RelationshipState {
+  STRONG
+  ADEQUATE
+  WEAK
+  NONE
+  NEGATIVE
+}
+
+// Who matters for each goal
+model GoalStakeholder {
+  id              String   @id @default(cuid())
+  goalId          String
+  goal            Goal     @relation(fields: [goalId], references: [id], onDelete: Cascade)
+  
+  stakeholderId   String
+  stakeholder     StakeholderProfile @relation(fields: [stakeholderId], references: [id], onDelete: Cascade)
+
+  role            StakeholderRole      @default(UNKNOWN)
+  importance      StakeholderImportance @default(MUST_HAVE)
+  currentState    RelationshipState    @default(NONE)
+  requiredState   RelationshipState    @default(ADEQUATE)
+  notes           String[]             
+
+  @@unique([goalId, stakeholderId])
+}
+
+enum ConversationMode {
+  GENERAL
+  GOAL_CAPTURE
+  STAKEHOLDER_MAPPING
+  GAP_ANALYSIS
+  STRATEGY
+  EXECUTION
+}
+
+// Track conversation focus
+model ConversationState {
+  id                   String   @id @default(cuid())
+  userId               String   @unique
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  activeGoalId         String?
+  activeStakeholderId  String?
+  activeActionId       String?
+  
+  mode                 ConversationMode  @default(GENERAL)
+  pendingDraft         Json?
+  pendingAction        Json?
+  
+  updatedAt            DateTime @updatedAt
+}
+
+enum RelationshipActionType {
+  BUILD
+  STRENGTHEN
+  REPAIR
+  ACTIVATE
+  MAINTAIN
+}
+
+enum RelActionStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  AWAITING_APPROVAL
+  COMPLETED
+}
+
+model RelationshipAction {
+  id              String   @id @default(cuid())
+  goalId          String
+  goal            Goal     @relation(fields: [goalId], references: [id], onDelete: Cascade)
+  
+  stakeholderId   String
+  // No direct relation to stakeholder profile to allow flexibility
+  
+  type            RelationshipActionType
+  description     String
+  status          RelActionStatus @default(NOT_STARTED)
+  
+  steps           Json @default("[]")
+  draftMessages   Json?
+  
+  dueDate         DateTime?
+  completedAt     DateTime?
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+enum PromptType {
+  MORNING_BRIEF
+  OPPORTUNITY
+  EXECUTION_NUDGE
+  REFLECTION
+}
+
+model ProactivePrompt {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  type            PromptType
+  content         String   @db.Text
+  
+  goalId          String?
+  stakeholderId   String?
+  
+  deliveredVia    String   @default("web")
+  deliveredAt     DateTime @default(now())
+  
+  responded       Boolean  @default(false)
+  resultedInAction Boolean @default(false)
+}
+
+model UserPreferences {
+  id                      String  @id @default(cuid())
+  userId                  String  @unique
+  user                    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  promptFrequency         Int     @default(4)
+  quietHoursStart         String  @default("21:00")
+  quietHoursEnd           String  @default("08:00")
+  preferredChannel        String  @default("web")
+  enableProactivePrompts  Boolean @default(true)
+  enableExecution         Boolean @default(false)
+}

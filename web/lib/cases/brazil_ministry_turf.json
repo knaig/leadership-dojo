@@ -1,0 +1,121 @@
+{
+  "id": "brazil_ministry_turf",
+  "title": "Brazil Education-Finance Ministry Conflict",
+  "case_type": "stakeholder_navigation",
+  "country": "Brazil",
+  "context": {
+    "political_landscape": "Federal government pushing digital transformation. Multiple ministries competing for influence and budget. President wants coordinated approach but ministries are silos.",
+    "recent_events": "Ministry of Education announced plan for national education credentials system (diplomas, certificates). Ministry of Finance claims all digital infrastructure must go through their digital government office.",
+    "cultural_factors": "Strong bureaucratic culture. Ministries guard their autonomy. Inter-ministry cooperation rare. Federal-state tensions. Regional inequality.",
+    "your_position": "You're advising on DPI approach. Education hired you first. Finance just found out and is angry they weren't consulted. You're caught in the middle."
+  },
+  "stakeholder_map": {
+    "Education Minister": {
+      "power": "high-sectoral",
+      "stance": "Wants to own education credentials system, sees Finance as bureaucratic obstacle",
+      "interests": "Autonomy, delivering on education agenda, political credit"
+    },
+    "Education IT Director": {
+      "power": "medium",
+      "stance": "Excited about credentials system, doesn't want Finance interference",
+      "interests": "Building the system, career advancement, sectoral expertise recognition"
+    },
+    "Finance Digital Govt Office Director": {
+      "power": "high-coordination",
+      "stance": "Angry about not being consulted, claims coordination mandate",
+      "interests": "Enforcing standards, preventing duplication, maintaining authority"
+    },
+    "Chief of Staff (President's Office)": {
+      "power": "very high",
+      "stance": "Frustrated with ministry turf wars, wants coordination",
+      "interests": "Presidential agenda success, avoiding embarrassing conflicts"
+    },
+    "State Education Secretaries": {
+      "power": "medium-implementation",
+      "stance": "Suspicious of federal mandates, want state autonomy",
+      "interests": "State needs, avoiding unfunded mandates, political independence"
+    },
+    "University Rectors": {
+      "power": "medium-institutional",
+      "stance": "Want to protect institutional autonomy over credentials",
+      "interests": "Academic freedom, institutional control, avoiding bureaucracy"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You're in week 3 of working with Education Ministry on credentials system design. You've run stakeholder workshops with universities and state education officials. Progress is good.\n\nThen you get an email from Finance Ministry's Digital Government Office:\n\n'We understand you are working with Education on a digital credentials system. As per Presidential Decree 2847, all digital public infrastructure must be coordinated through this office to ensure interoperability and prevent duplication. We were not consulted on this initiative. Please attend a meeting Thursday to brief us on your work and explain why coordination protocols were not followed.'\n\nThe Education IT Director calls you: 'Don't go to that meeting. Finance is trying to take over our project. They do this to everyone. If we let them in, they'll delay us for years with their bureaucratic processes. We hired you, not them.'",
+      "prompt": "What's happening here? What do you notice?",
+      "evaluate": [
+        "Do they recognize this is a turf war, not a technical coordination issue?",
+        "Do they see that Finance has legitimate coordination mandate but Education has legitimate sectoral autonomy?",
+        "Do they notice they're being used as a pawn in ministry conflict?",
+        "Do they think about who else is affected by this conflict (states, universities)?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You do some research. You find:\n\n- Presidential Decree 2847 DOES give Finance coordination mandate over digital infrastructure\n- But it's vague on what 'coordination' means\n- Finance has been criticized for bottlenecking projects with excessive review\n- But they've also prevented some expensive duplicative systems\n- Other ministries have successfully navigated this by involving Finance early in design phase\n- Education and Finance have long-standing political rivalry\n\nYou also learn:\n- The President's Chief of Staff is frustrated with ministry conflicts\n- There's a Cabinet meeting next month where digital progress will be reviewed\n- Both ministers want to show accomplishments",
+      "prompt": "What does this tell you about the situation?",
+      "evaluate": [
+        "Do they see this isn't about technical standards but political credit?",
+        "Do they recognize both ministries have valid concerns?",
+        "Do they notice the Cabinet meeting creates pressure for cooperation?",
+        "Do they think about the Chief of Staff as potential ally for coordination?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "You meet privately with the Finance Digital Govt Director. He says:\n\n'Look, Education always does this. They go build stuff without coordination, then we get blamed when systems don't talk to each other. We have open standards for credentials. If Education uses them, we're fine. But they hired consultants without even checking our standards.'\n\nHe shows you Finance's credential standards. They're technically solid. More comprehensive than what Education has designed.\n\nHe offers: 'Why don't you work with us instead? We have bigger budget, better technical team, and we can make this a cross-government credentials system, not just education. You could design THE credential infrastructure for Brazil.'\n\nThis is tempting because:\n- Finance is right about the standards\n- A cross-government system would be more impactful\n- Finance has more resources and authority\n\nBut:\n- Education hired you and trusts you\n- Finance might be slower and more bureaucratic\n- This would burn your relationship with Education\n- States and universities might trust Education more than Finance",
+      "prompt": "What do you do?",
+      "evaluate": [
+        "Do they switch to Finance (tempted by bigger scope)?",
+        "Do they stay loyal to Education (first client)?",
+        "Do they look for third option (serve both by enabling coordination)?",
+        "Do they think about who they're really serving (the public need vs ministry interests)?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "You propose to both ministries:\n\n'Education leads the credentials system for education sector. Finance provides the underlying technical standards and interoperability framework. Education gets autonomy on education policy. Finance gets assurance on technical standards. Both ministers can claim success at Cabinet meeting.'\n\nEducation responds: 'That sounds like Finance control with extra steps. We don't trust them to not slow us down.'\n\nFinance responds: 'Education has proven they can't be trusted to follow standards. We need approval authority, not just advisory role.'\n\nBoth have a point:\n- Education HAS been moving fast and might cut corners\n- Finance HAS been bureaucratic and might create unnecessary delays\n\nYou can't make both fully happy. Someone has to give up something.",
+      "prompt": "How do you navigate this?",
+      "evaluate": [
+        "Do they try to make everyone happy (impossible)?",
+        "Do they pick a side (creating enemy)?",
+        "Do they escalate to Chief of Staff (passing the buck)?",
+        "Do they find the minimum viable coordination that both can live with?",
+        "Do they bring in third party validator (states, universities) to create accountability?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "The Cabinet meeting is in 2 weeks. You need to help both ministers save face and show progress. They will both be presenting.\n\nWrite one sentence each that:\n1. Education Minister can say (showing leadership and progress)\n2. Finance Minister can say (showing coordination and standards)\n3. Chief of Staff can say (showing government working together)\n\nAll three must be TRUE and about the SAME initiative.",
+      "prompt": "What's the narrative?",
+      "evaluate": [
+        "Education: Does it emphasize sectoral leadership without ignoring coordination?",
+        "Finance: Does it emphasize standards role without claiming takeover?",
+        "Chief of Staff: Does it show collaboration without hiding who does what?",
+        "Are all three technically true descriptions of the same arrangement?",
+        "Does it give both ministers something to be proud of?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in the real scenario:\n\nThe advisors tried to stay neutral and satisfy both ministries. They designed a system with extensive coordination checkpoints to please Finance, and sectoral autonomy to please Education.\n\nResult:\n- Neither ministry was happy\n- Finance felt they still didn't have real authority\n- Education felt strangled by coordination requirements\n- The ministries started competing credentials initiatives\n- States got confused about which system to adopt\n- After 18 months, no credentials system launched\n- Both ministers blamed the consultants for 'poor design'\n- The President's Chief of Staff lost faith in DPI approach\n\nA senior advisor would have:\n1. **Recognized early that this is political, not technical** - The standards disagreement is proxy for authority conflict\n2. **Not tried to make both sides fully happy** - Found the minimum viable coordination, not maximum possible coordination\n3. **Used the Cabinet meeting as forcing function** - Made it more painful to fight than to cooperate\n4. **Built coalition with Chief of Staff** - Got presidential pressure for coordination\n5. **Brought in external validators** - Used states and universities to create accountability beyond ministry control\n6. **Named the trade-off explicitly** - 'We can have perfect coordination OR fast progress, not both. Which matters more?'\n7. **Helped both ministers save face** - Gave each something real to claim credit for\n\nThe lesson: **Stakeholder navigation isn't about keeping everyone happy. It's about finding arrangements people can live with, even if they don't love them.**\n\nWhen you're caught between competing stakeholders, trying to satisfy both usually satisfies neither. The advisor's job is to:\n- Understand what each side REALLY needs (usually political credit, not technical control)\n- Find the arrangement where both can claim a win\n- Make fighting more costly than cooperating\n- Build external pressure for collaboration\n\nAlso: You're never neutral. The question is whether you serve your client's short-term interests (making them happy) or their long-term interests (getting something launched).",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Neutrality trap: Did you try to please everyone and therefore please no one?",
+        "Political reading: Did you see this as technical coordination or authority conflict?",
+        "Coalition building: Did you think about Chief of Staff, states as third parties?",
+        "Trade-off naming: Did you make the choice explicit (speed vs perfect coordination)?"
+      ]
+    }
+  ],
+  "tags": ["stakeholder_navigation", "turf_war", "inter_ministry", "coordination", "political_credit"]
+}

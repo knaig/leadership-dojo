@@ -1,0 +1,116 @@
+{
+  "id": "pitch-problem-first",
+  "title": "The Five-Minute Investor",
+  "case_type": "pitch",
+  "country": "India",
+  "context": {
+    "political_landscape": "India Stack (Aadhaar, UPI, DigiLocker) has made digital infrastructure credible globally. Account Aggregator framework launched by RBI in 2021 creates legal rails for consent-based financial data sharing. Government is pushing financial inclusion hard — Jan Dhan accounts crossed 500 million. But informal workers — gig riders, construction laborers, domestic workers — are still invisible to formal lenders despite generating a massive, traceable digital transaction footprint.",
+    "recent_events": "You are at the India Fintech Forum in Mumbai. Side meetings are happening in the networking lounge outside the main hall. An investor from Omidyar Network India flagged you down after your 90-second lightning talk during the afternoon session. She said she has 5 minutes before her next meeting. You have her full attention — for exactly 5 minutes. This is cold. She does not know you. She does not know Kavach.",
+    "cultural_factors": "The investor has seen hundreds of 'financial inclusion' pitches. She is allergic to vague mission language ('empowering the underserved'), impressed by specificity, and will mentally check out if you start with team or company origin story. She evaluates quickly and her calendar is real — if she is interested, she will book a proper follow-up. If not, she will end the conversation politely after 5 minutes regardless.",
+    "your_position": "You are the co-founder of Kavach. The product has been in pilot for 9 months across 3 cities — Pune, Surat, and Chennai. 14,000 informal workers have used it. 2,100 have received loans they could not have gotten before, from 4 partner NBFCs. Average loan size is Rs 38,000. Default rate is 4.2% — below the industry average of 6.8% for similar unsecured lending. You are raising a seed round of $1.2M to expand to 5 more cities and add 8 more lending partners."
+  },
+  "stakeholder_map": {
+    "Impact Investor (Omidyar Network India)": {
+      "power": "high",
+      "stance": "Cautiously curious — you earned one minute of interest with your lightning talk. She wants to know if this is real.",
+      "interests": "Evidence of impact at scale potential, financial inclusion for the truly excluded, business model that does not exploit the users it claims to serve"
+    },
+    "Kavach Co-founder (you)": {
+      "power": "none yet — you are selling",
+      "stance": "You have 5 minutes. You have a product that works. You need to use the right frame or this opportunity disappears.",
+      "interests": "Seed funding to expand pilots, a warm introduction into Omidyar's network of NBFC partners, validation from a credible investor"
+    },
+    "Partner NBFCs": {
+      "power": "medium",
+      "stance": "Interested in Kavach because it reduces their underwriting cost for a market they want but cannot currently serve",
+      "interests": "Lower default rates, new customer acquisition, regulatory compliance on priority sector lending"
+    },
+    "Informal Workers (the users)": {
+      "power": "none in this conversation",
+      "stance": "Not present — but the credibility of everything you say depends on whether you represent them accurately",
+      "interests": "Access to credit without exploitation, privacy over their data, financial stability"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "framework_diagnosis",
+      "situation": "The investor reaches out her hand. 'I caught your lightning talk. Tell me about Kavach. I have about five minutes before I need to be at my next panel.'\n\nShe pulls out her phone to check the time — it is 3:47 PM. Her next session is at 3:52 PM. She puts the phone away and looks at you.\n\nYou have the following options available to you:\n- Start with who you are and how Kavach was founded (origin story)\n- Start with the market size for informal lending in India\n- Start with a single sharp statement about the problem Kavach solves\n- Start by describing the product's features and how the technology works\n- Start with your traction (14,000 users, 2,100 loans)\n\nWhat do you choose, and what is the first structural decision you are making about how to use these 5 minutes?",
+      "prompt": "How do you structure these 5 minutes? What is the frame you choose and why?",
+      "evaluate": [
+        "Do they immediately recognize that 5 minutes eliminates everything except Problem-first — no time for hero's journey, no time for future-back?",
+        "Do they resist the instinct to start with origin story or company background, which is the most common mistake in cold pitching?",
+        "Do they understand that traction belongs in the proof section, not the opening — opening with numbers before the problem means the numbers have no emotional weight?",
+        "Do they explicitly prioritize problem over product in the opening — and can they articulate why the investor needs to believe the problem is real before they will care about the solution?",
+        "Do they notice the 5-minute constraint as an opportunity to be disciplined, not just a difficulty to manage?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "opening_sentence",
+      "situation": "You have chosen your frame. Now you open your mouth. This is the moment.\n\nHere are five possible opening sentences:\n\n1. 'Kavach is a consent-based data portability platform for informal workers in India.'\n2. 'We help informal workers access formal credit by making their income history visible to lenders.'\n3. 'Four hundred million workers in India have a perfect income record that no bank can see.'\n4. 'I started Kavach three years ago because I kept meeting delivery riders who could not get home loans despite earning more than salaried employees.'\n5. 'The informal credit market in India is a $400 billion opportunity that fintech has barely touched.'\n\nOption 3 starts with the problem — a specific, vivid statement of what is broken. Options 1 and 2 describe the product. Option 4 is an origin story. Option 5 is a market-size opener.\n\nWhat is your first sentence — use one of the above, or write your own — and what makes it the right one for this room?",
+      "prompt": "What is your first sentence? Say it exactly.",
+      "evaluate": [
+        "Do they lead with the problem, not the product? The problem opener is always stronger in a cold 5-minute pitch because it forces the listener to acknowledge a broken reality before you introduce your fix.",
+        "Is the opening sentence specific and verifiable rather than general and vague? '400 million workers' with a mechanism ('income record no bank can see') is better than 'millions lack access to credit.'",
+        "Do they avoid the origin story trap — framing the pitch around the founder's journey rather than the user's situation?",
+        "Is the opening sentence short enough to land without the investor having to mentally parse it? Under 15 words is a useful discipline.",
+        "Does the opening sentence create a question in the investor's mind ('how is that possible?') rather than just stating a fact?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "emotional_layer",
+      "situation": "Ninety seconds in. You have delivered the problem, named the mechanism (Account Aggregator rails, consent-based data sharing), and mentioned the 14,000 pilot users. The investor is nodding slowly — engaged, following your logic.\n\nBut she has not leaned forward. She is not visibly moved. She is processing — you can see her doing the mental math. She is intellectually convinced the problem is real. She is not yet emotionally invested in it.\n\nYou have about 90 seconds left.\n\nYou could:\n(A) Continue with more data — default rates, NPA comparisons, NBFC partnerships\n(B) Add one human face — a single person whose situation illustrates the mechanism you have just described\n(C) Pivot to the competitive landscape — explain why Kavach is different from what exists\n(D) Go straight to the ask — you have the intellectual buy-in, that might be enough\n\nWhat do you do, and if you choose (B), what do you say?",
+      "prompt": "She is intellectually engaged but not emotionally moved. What do you add?",
+      "evaluate": [
+        "Do they recognize that intellectual engagement is not sufficient for an investor decision — emotion is what creates urgency and memory?",
+        "If they choose (B), is their human story specific (named person, named city, specific situation) rather than a composite archetype?",
+        "Do they understand the structural discipline: one person only, briefly, and the story should end at the problem — not at the solution (the solution comes after)?",
+        "Do they keep the emotional layer proportional — a single sentence or two, not a derailing narrative — so it adds warmth without breaking the logical flow?",
+        "Do they avoid the manipulation trap — choosing the most extreme or most tragic case rather than the most representative one?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "why_now_challenge",
+      "situation": "The investor looks up. She asks one question: 'This problem has existed for 20 years. Informal workers have always been invisible to lenders. What changed that makes this solvable now — and why hasn't someone else solved it already?'\n\nThis is a real question. She is not being hostile. She has seen many well-intentioned financial inclusion products fail. She wants to know if you have a mechanism — not just a mission.\n\nYou have about 45 seconds to answer.\n\nYou could say:\n(A) 'Our team has unique expertise in both DPI and fintech that nobody else has combined.'\n(B) 'Account Aggregator became live and mandatory in 2023. That is the rail that makes this possible. Before that, there was no consent-based infrastructure to build on. Now there is.'\n(C) 'The gig economy grew 400% in 5 years — the population of digitally traceable informal workers is new.'\n(D) 'We have been in this market for 9 months and we can see it working in the data.'\n(E) A combination of (B) and (C) — both a new regulatory infrastructure and a new user population.",
+      "prompt": "Why now? Give your answer in under 45 seconds.",
+      "evaluate": [
+        "Do they identify a concrete external mechanism — not just team capability or mission commitment — that makes this moment different?",
+        "Is the 'why now' falsifiable? A good 'why now' can be checked: Account Aggregator went live on a specific date. Gig economy growth has traceable data. These are verifiable, not just asserted.",
+        "Do they avoid the team-as-why-now trap — 'our unique combination of skills' is not a 'why now,' it is a differentiator claim that belongs elsewhere?",
+        "Do they name both a pull factor (new rails or new market) and implicitly a push factor (urgency if not solved now) — or just one?",
+        "Is the answer short enough for the constraint? The investor asked a pointed question; a 3-minute answer signals poor situational awareness."
+      ]
+    },
+    {
+      "round": 5,
+      "type": "the_ask",
+      "situation": "The investor glances at her phone. 3:51 PM. One minute left. She looks back at you and says: 'Interesting. What are you looking for?'\n\nThis is the moment. Everything you said in the past 4 minutes either earned this question or made it polite noise. She is giving you a clean runway.\n\nHere are possible responses:\n\n(A) 'We are raising and would love to tell you more when you have more time.'\n(B) 'We are raising a seed round — happy to share the deck.'\n(C) 'We are raising $1.2M seed — $600K is already committed from two angels. We are looking for one institutional lead who wants to co-anchor with us. We need a decision by end of October because we have an NBFC partnership window in Rajasthan that opens in November. Can we get 45 minutes next week?'\n(D) 'We would love to explore whether there is a fit with Omidyar's portfolio — maybe we can find time to connect properly.'\n(E) 'We are looking for $1.2M and ideally a partner who has NBFC relationships — does Omidyar have any in the lending space?'\n\nWhat do you say — and what makes your ask the right one?",
+      "prompt": "She asks what you are looking for. What is your ask — say it exactly?",
+      "evaluate": [
+        "Is the ask specific enough to act on? Amount, use of funds, timeline, and next step should all be present or clearly implied.",
+        "Does the ask create urgency without being artificial? A real deadline (NBFC partnership window) is better than a fabricated one.",
+        "Does the ask name what the investor brings beyond money? Asking for 'smart capital' with NBFC relationships turns the ask into a value-proposition conversation, not just a funding request.",
+        "Is the next step concrete — a specific meeting with a specific duration — rather than open-ended ('let's connect')?",
+        "Do they resist the temptation to over-qualify or hedge ('we would love to explore if there might be a fit') which signals lack of conviction?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here is what happened in a version of this pitch that went poorly:\n\nThe founder opened: 'Kavach is a consent-based data portability platform that leverages the Account Aggregator framework to enable formal financial institutions to access verified income data from informal workers who have previously been excluded from the formal credit system.'\n\nThe investor nodded politely but had already partially checked out by sentence three. The founder then explained the technology stack for 90 seconds. Then the traction numbers. Then the team. With 30 seconds left, they got to the problem — 400 million invisible workers — but by then it felt like supporting material, not the reason to care. The investor said: 'Interesting, send me the deck,' which is the polite version of no.\n\nHere is what happened in the version that went well:\n\nThe founder opened: 'Four hundred million workers in India have a perfect income record. No bank can see it.' Paused. Let the investor ask mentally: how is that possible? Spent 30 seconds on the mechanism — not the technology, the structural gap. Named one person: Vijay, a delivery rider in Pune, 4 years of UPI transaction history, rejected for a home loan because the bank's underwriting model only reads salary slips. Explained Account Aggregator as the new rail that made the connection possible — and noted it only went live in 2023, which is the mechanism for 'why now.' Gave traction: 14,000 users, 2,100 loans, 4.2% default rate against 6.8% industry average. Made a precise ask: '$1.2M seed, $600K already committed, looking for one lead, need decision by October, can we get 45 minutes next week?' Total: 4 minutes 45 seconds.\n\nThe investor rescheduled her next panel and stayed for 20 more minutes.",
+      "prompt": "Coaching based on your responses across this case",
+      "coaching_focus": [
+        "Framework selection: Did you immediately identify Problem-first as the only viable frame for a cold 5-minute pitch?",
+        "Opening sentence: Did your first sentence state the problem — not the product, not the team, not the market size?",
+        "Emotional layer: Did you add one human face without turning it into a narrative tangent?",
+        "Why now: Did you give a concrete, verifiable external mechanism rather than claiming team uniqueness?",
+        "The ask: Was it specific enough that the investor could have said yes or no on the spot?",
+        "The meta-lesson: Problem-first is the workhorse because it respects attention scarcity. Every other framework requires time you do not have in a cold 5-minute slot. The investor cannot care about your solution until she believes the problem is real and urgent. Earn belief in the problem first. Everything else follows."
+      ]
+    }
+  ],
+  "tags": ["pitch", "problem-first", "investor", "fintech", "financial-inclusion", "india-stack", "cold-pitch", "seed-funding"]
+}

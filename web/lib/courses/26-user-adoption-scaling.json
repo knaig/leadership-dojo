@@ -1,0 +1,443 @@
+{
+  "id": "user-adoption-scaling",
+  "slug": "user-adoption-scaling",
+  "courseNumber": 26,
+  "title": "User Adoption and Scaling",
+  "subtitle": "From Pilot to Population Scale",
+  "tier": 3,
+  "category": "Strategic Initiatives",
+  "duration": "4 hours",
+  "difficulty": "Advanced",
+  "description": "Drive adoption and scale DPI systems from pilots to nationwide implementation.",
+  "learningObjectives": [
+    "Design adoption strategies for DPI systems",
+    "Overcome critical scaling challenges",
+    "Measure adoption and iterate for improvement",
+    "Build sustainable scaling models"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": "DPI advisors, government IT directors, policy coordinators",
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Understanding Adoption Dynamics",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Adoption is not instantaneous\u2014it follows predictable patterns influenced by user behavior, organizational readiness, and system design. Understanding adoption dynamics helps leaders anticipate resistance, identify early adopters, and design interventions that move populations along the adoption curve. This module explores the psychology and mechanics of how systems get adopted at scale.",
+        "keyPoints": [
+          {
+            "title": "The Adoption Curve",
+            "description": "Users adopt technology in phases: innovators (2.5%), early adopters (13.5%), early majority (34%), late majority (34%), and laggards (16%). Each segment requires different messaging and support strategies.",
+            "example": "India's Aadhaar rollout saw innovators eager to register in 2010, but scaling to 1 billion required distinct strategies for rural farmers, semi-literate populations, and resistors."
+          },
+          {
+            "title": "Factors Influencing Adoption",
+            "description": "Adoption speed depends on: relative advantage (does it save time?), compatibility (fits existing workflows?), complexity (is it easy to learn?), trialability (can users test it?), and observability (can benefits be seen?).",
+            "example": "Sri Lanka's digital ID system faced slow adoption among elderly users until they designed simpler interfaces, reduced required documents, and trained community volunteers\u2014improving compatibility and trialability."
+          },
+          {
+            "title": "Organizational Readiness",
+            "description": "Institutions adopting new systems must assess staff capacity, budget, infrastructure, and leadership commitment. Misaligned readiness across levels creates bottlenecks.",
+            "example": "Kenya's Integrated Financial Management System struggled because county governments lacked IT staff and reliable power. Success required phased rollout with technical support and offline capabilities."
+          },
+          {
+            "title": "Critical Adoption Barriers",
+            "description": "Common obstacles include: lack of awareness, perceived complexity, workflow disruption, job security concerns, legacy system dependence, and poor change management.",
+            "example": "Uganda's health information system faced resistance when nurses feared data entry would increase workload. Adoption accelerated when they automated data collection and showed time savings."
+          }
+        ],
+        "keyInsight": "Adoption isn't driven by technology excellence alone\u2014it's driven by alignment between user needs, organizational capacity, and system design. Understanding where your population sits on the adoption curve determines which interventions work."
+      },
+      "exercises": [
+        {
+          "id": "exercise-1-1",
+          "title": "Map Your User Adoption Curve",
+          "description": "Identify the segments in your target population (innovators, early adopters, etc.). For each segment, list their key characteristics, concerns, and what would motivate them to adopt.",
+          "format": "worksheet",
+          "timeLimit": 15
+        },
+        {
+          "id": "exercise-1-2",
+          "title": "Adoption Barrier Diagnosis",
+          "description": "Analyze a failed or slow adoption case from your context. Map barriers against the five adoption factors (advantage, compatibility, complexity, trialability, observability).",
+          "format": "case-analysis",
+          "timeLimit": 10
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "User Research and Segmentation",
+      "duration": "35 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Before designing adoption strategies, you must deeply understand your users. Different user segments have different needs, constraints, and adoption pathways. This module teaches methods for researching users, identifying segments, and developing persona-based strategies that drive adoption.",
+        "keyPoints": [
+          {
+            "title": "User Research Methods for Adoption",
+            "description": "Effective adoption research combines: ethnographic observation (watch how users work today), contextual interviews (understand constraints and motivations), surveys (quantify patterns), and usage analytics (measure actual behavior).",
+            "example": "India's DIKSHA platform studied teacher usage across urban and rural schools. Observations revealed teachers lacked electricity for charging devices. This insight drove the shift to offline-first design."
+          },
+          {
+            "title": "Segmentation for Adoption",
+            "description": "Segment users by: role (who are they in the system?), technical proficiency (can they troubleshoot?), motivation (why adopt?), access constraints (connectivity, devices), and social influence (peer adoption drives adoption).",
+            "example": "Sri Lanka's land registry digitization segmented users as: government officials (high technical skill), land agents (medium skill, fee-driven), and farmers (low skill, skeptical). Each needed distinct training."
+          },
+          {
+            "title": "Identifying Adoption Leaders",
+            "description": "In every population, certain users become adoption champions\u2014they influence peers, troubleshoot problems, and evangelize the system. Identifying and empowering these leaders multiplies adoption efforts.",
+            "example": "Kenya's Huduma Centers identified community liaison officers as adoption leaders. By training them first and making them visible, these officers became trusted advisors, increasing center usage from 20% to 75%."
+          },
+          {
+            "title": "Understanding Adoption Resistors",
+            "description": "Some users will resist adoption due to job threat, loss of informal benefits, or legitimate concerns. Understanding their objections allows you to address them directly or design workarounds.",
+            "example": "Pakistan's property registration system initially faced resistance from informal agents who profited from complex processes. Adoption accelerated when they were integrated as digital facilitators with new earning models."
+          }
+        ],
+        "keyInsight": "User adoption is not one-size-fits-all. Segmentation reveals that different users need different support, incentives, and system design. Research-informed segmentation separates successful scale-up from frustrated scaling."
+      },
+      "exercises": [
+        {
+          "id": "exercise-2-1",
+          "title": "User Segment Personas",
+          "description": "Create 3-4 detailed personas for your target users: name, role, technical skill, current workflow, barriers to adoption, and what success looks like for them.",
+          "format": "persona-development",
+          "timeLimit": 20
+        },
+        {
+          "id": "exercise-2-2",
+          "title": "Research Plan for Your Context",
+          "description": "Design a mixed-method research plan: identify which user groups you need to understand, what methods you'll use (observation, interview, survey), and what questions you need answered.",
+          "format": "research-design",
+          "timeLimit": 15
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Designing for Adoption",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "The system design itself dramatically influences adoption. UX, workflow integration, support accessibility, and incentive alignment all shape whether users adopt. This module teaches design principles that drive adoption without compromising functionality.",
+        "keyPoints": [
+          {
+            "title": "Adoption-Focused User Experience",
+            "description": "Adoption-driving UX minimizes cognitive load, matches user mental models, provides context-sensitive help, enables quick wins, and reduces error rates. It's designed for the least-skilled user in your population.",
+            "example": "India's Aadhaar simplified fingerprint capture: clear visual instructions, 3-attempt allowance, and immediate feedback. This 'design for the worst case' approach reduced enrollment time from 45 to 15 minutes."
+          },
+          {
+            "title": "Workflow Integration Design",
+            "description": "Systems adopted when they integrate into existing workflows rather than replacing them. Design 'bridges' between old and new processes, build offline functionality, and allow workarounds during transition.",
+            "example": "Rwanda's health management system succeeded by maintaining paper records as backup, allowing workers to continue hybrid workflows. As confidence grew, digital use became primary."
+          },
+          {
+            "title": "Support and Help System Design",
+            "description": "Built-in help (tutorials, contextual tips, error messages) scales better than external training. Design for self-service first, then tiers of escalation for complex issues.",
+            "example": "Bangladesh's tax filing platform reduced help calls 70% by embedding contextual field guidance, showing examples of correctly filled forms, and providing chat with trained agents for complex cases."
+          },
+          {
+            "title": "Incentive Alignment",
+            "description": "Design systems where adoption creates direct benefits for users. When possible, build feedback loops that make benefits visible. Align organizational incentives with adoption.",
+            "example": "Indonesia's e-procurement system faced resistance until it connected adoption to reduced processing time. When vendors saw orders completed faster through digital channels, adoption jumped to 95%."
+          },
+          {
+            "title": "Localization and Accessibility",
+            "description": "System language, cultural norms, payment methods, and accessibility features dramatically impact adoption. What works in English may fail in regional languages or with users with disabilities.",
+            "example": "India's NDHM (National Digital Health Mission) initially designed in English; adoption remained 5%. After translating to regional languages and adding offline capability, adoption reached 40%+ in pilot states."
+          }
+        ],
+        "keyInsight": "You cannot train your way to adoption. Design systems that don't require heavy training. Every feature should serve real user needs, and every workflow should feel natural. Good adoption-focused design is often simpler than feature-rich design."
+      },
+      "exercises": [
+        {
+          "id": "exercise-3-1",
+          "title": "UX Audit for Adoption",
+          "description": "Review your system's interface through an adoption lens: Is it designed for the least-skilled user? Can users understand what to do without external help? Does it integrate into existing workflows?",
+          "format": "design-audit",
+          "timeLimit": 20
+        },
+        {
+          "id": "exercise-3-2",
+          "title": "Support System Design",
+          "description": "Map the questions users might have when using your system. Design a tiered support strategy: built-in help, self-service resources, and escalation paths.",
+          "format": "support-design",
+          "timeLimit": 15
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Pilot Strategy",
+      "duration": "35 minutes",
+      "type": "application",
+      "content": {
+        "overview": "A well-designed pilot is not a small-scale version of full rollout\u2014it's a learning laboratory. This module teaches how to structure pilots that generate reliable insights and build momentum for scaling.",
+        "keyPoints": [
+          {
+            "title": "Pilot Design and Geography",
+            "description": "Effective pilots represent your target population while remaining manageable in scale. Choose pilots based on: geographic diversity, varied user types, infrastructure constraints, and strategic importance. Size: 5-15% of target population.",
+            "example": "India's Unified Payment Interface pilots started in tier-2 cities (Bangalore, Pune) where tech adoption was higher but constraints were real. This revealed issues before scaling to smaller towns and villages."
+          },
+          {
+            "title": "Pilot Objectives and Metrics",
+            "description": "Define what success looks like in pilot: adoption rate target, user satisfaction, system stability, cost per user, time to completion, and error rates. Measure progress against specific baselines.",
+            "example": "Sri Lanka's digital land registry pilot set targets: 500 registrations/month, 90% first-time accuracy, 95% uptime, average 30-minute transaction time. These baselines guided design iterations."
+          },
+          {
+            "title": "Managing Pilot Expectations",
+            "description": "Pilots are inherently inefficient\u2014they're learning environments, not polished systems. Set expectations that pilot users are testing, not using a final product. Communicate this clearly to prevent skepticism.",
+            "example": "Kenya's Huduma pilot explicitly labeled itself as 'testing new services' with frequent maintenance windows. This mindset prepared users for iteration and made improvements feel like progress, not fixes."
+          },
+          {
+            "title": "Scaling Readiness Assessment",
+            "description": "Before scaling, assess: Did adoption meet targets? Are systems stable? Do we understand user needs? Are we ready operationally? Can training systems handle scale? What did we learn?",
+            "example": "Ghana's digital health records pilot revealed that nurse buy-in required workflow integration and compensation. These lessons shaped the national rollout strategy and prevented resistance at scale."
+          },
+          {
+            "title": "Feedback Loops and Iteration",
+            "description": "Set up rapid feedback mechanisms: weekly user surveys, usage dashboards, support ticket analysis, and monthly strategy adjustments. Small iterations in pilot prevent large mistakes at scale.",
+            "example": "India's Aadhaar pilot conducted fortnightly feedback sessions with enrollment centers. When analysis showed rural workers couldn't read numeric instructions, visual-only designs were tested within weeks."
+          }
+        ],
+        "keyInsight": "A pilot that doesn't generate insights isn't a pilot\u2014it's a delayed rollout. Structure pilots as learning experiments: small enough to fail fast, large enough to surface real constraints, and instrumented to reveal what works."
+      },
+      "exercises": [
+        {
+          "id": "exercise-4-1",
+          "title": "Pilot Design Document",
+          "description": "Design a pilot for your system: define geography, population size, user segments, success metrics, timeline, and how you'll measure learning. Include contingency plans for common pilot failures.",
+          "format": "strategic-document",
+          "timeLimit": 25
+        },
+        {
+          "id": "exercise-4-2",
+          "title": "Readiness Assessment Framework",
+          "description": "Create a checklist for 'ready to scale from pilot.' What technical, operational, and organizational criteria must be met? How will you measure each?",
+          "format": "framework-development",
+          "timeLimit": 15
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Scaling Approaches",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Scaling from thousands to millions of users requires different strategies than managing pilots. This module explores proven scaling models: geographic expansion, sequential rollout, phased adoption, and hybrid approaches\u2014with guidance on which fits your context.",
+        "keyPoints": [
+          {
+            "title": "Geographic Phased Rollout",
+            "description": "Scale region by region, sequencing based on readiness and capacity. Early regions become models and source deployment expertise. Typical sequence: high-capacity urban areas \u2192 secondary cities \u2192 towns \u2192 villages.",
+            "example": "India's Aadhaar scaled from 4 states to all 28 states, starting with urban centers that had better enrollment infrastructure. Each region's success and lessons informed the next wave."
+          },
+          {
+            "title": "Sequential User Adoption",
+            "description": "Onboard user segments sequentially: high-technical-skill users first, then moderate, then low-skill. Early adopters build confidence and provide peer learning for later cohorts.",
+            "example": "Rwanda's e-tax system onboarded large corporations first (who had IT staff), then medium enterprises, then small businesses. Each segment learned from previous cohorts' questions and solutions."
+          },
+          {
+            "title": "Hybrid Analog-Digital Scaling",
+            "description": "Scale doesn't require 100% digital adoption immediately. Hybrid models maintain analog options while encouraging digital: both digital and paper filing, online and in-person services, etc.",
+            "example": "Indonesia's national ID system allowed both digital and counter-based applications. This reduced bottlenecks at counters while letting users self-select into digital (60% self-selected within 2 years)."
+          },
+          {
+            "title": "Capacity Building and Localization",
+            "description": "Scaling requires distributed capacity: local teams in each region, training-of-trainers programs, locally-relevant help content, and partnerships with local organizations.",
+            "example": "Sri Lanka's business registration system trained district-level 'Digital Ambassadors' from local chambers of commerce. Their legitimacy and local knowledge drove adoption better than central government staff."
+          },
+          {
+            "title": "Technology Infrastructure Scaling",
+            "description": "Ensure infrastructure (servers, bandwidth, support systems) can handle scaled load. Build redundancy, plan for peak usage, and establish monitoring for degradation.",
+            "example": "Kenya's M-Pesa scaled to 50 million users by designing for extreme concurrency, building redundant systems, and planning infrastructure 2x current demand. Single-point failures were eliminated."
+          }
+        ],
+        "keyInsight": "Scaling is not a binary switch from pilot to nationwide. Successful scaling is carefully orchestrated expansion: geographic sequencing, user segment sequencing, balanced analog-digital, and infrastructure built ahead of demand."
+      },
+      "exercises": [
+        {
+          "id": "exercise-5-1",
+          "title": "Scaling Roadmap",
+          "description": "Design your scaling strategy: define phases (timeline and geography), sequence user segments, outline capacity building, and identify critical dependencies. What could derail this plan?",
+          "format": "roadmap-development",
+          "timeLimit": 25
+        },
+        {
+          "id": "exercise-5-2",
+          "title": "Infrastructure Scaling Analysis",
+          "description": "Assess your current infrastructure (servers, bandwidth, support capacity). Model growth to 10x current scale. What breaks? What needs to be built or upgraded before scaling?",
+          "format": "technical-analysis",
+          "timeLimit": 15
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Overcoming Scaling Barriers",
+      "duration": "40 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Even well-designed systems hit adoption barriers at scale. This module identifies common barriers\u2014technical, organizational, behavioral, and institutional\u2014and provides evidence-based solutions.",
+        "keyPoints": [
+          {
+            "title": "Technical Barriers at Scale",
+            "description": "Systems optimized for hundreds fail at millions. Common issues: performance degradation, data quality problems, integration failures, and security vulnerabilities. Mitigation: load testing, data governance, API standards, and security hardening.",
+            "example": "India's GST portal crashed on launch day (April 2017) due to load spikes. Recovery required infrastructure redesign and phased onboarding. Lesson: test at 5x expected peak load."
+          },
+          {
+            "title": "Organizational Capacity Barriers",
+            "description": "Government agencies often lack IT staff, maintenance budgets, and change management expertise. Scaling overwhelms support teams. Solution: build internal capacity through training, hire/contract specialized roles, and establish support tier systems.",
+            "example": "Uganda's health system had 8 IT staff for 5,000 health facilities. Scaling required training health workers as 'system champions' at each facility and establishing tier-2 support."
+          },
+          {
+            "title": "Behavioral Resistance at Scale",
+            "description": "What works with motivated pilots fails with unmotivated populations. Users resist when change threatens income, increases workload initially, or conflicts with cultural norms. Solution: address incentives, make burden temporary, and design for cultural fit.",
+            "example": "Pakistan's property registration resistance stemmed from informal agents losing income. Adoption accelerated when digital facilitator roles (with direct compensation) were created."
+          },
+          {
+            "title": "Institutional and Political Barriers",
+            "description": "Systems fail when hamstrung by conflicting policies, turf battles between agencies, budget cuts, or leadership changes. Mitigation: secure executive sponsorship, align institutional incentives, and embed adoption in policy.",
+            "example": "Kenya's integrated health system faced delays when county and national health systems disagreed on data control. Resolution required policy alignment and shared incentives for adoption."
+          },
+          {
+            "title": "Infrastructure and Access Barriers",
+            "description": "In many contexts, scaling is limited by poor connectivity, lack of devices, unreliable power, and low digital literacy. Solutions: design offline-first, support multiple access modes, and invest in foundational infrastructure.",
+            "example": "India's rural digital literacy gap meant Aadhaar enrollment required biometric devices (provided) and basic instruction. Offline-first enrollment systems and mobile vans were essential for rural scale."
+          }
+        ],
+        "keyInsight": "Scaling barriers are predictable. Anticipate them by studying failed systems, involving ground-level users in design, maintaining operational simplicity, and building institutional support early. The barriers that kill scale are rarely technical."
+      },
+      "exercises": [
+        {
+          "id": "exercise-6-1",
+          "title": "Barrier Diagnosis for Your System",
+          "description": "Map potential barriers to scaling your system: technical, organizational, behavioral, institutional, and access barriers. For each, assess likelihood and severity, then propose mitigation.",
+          "format": "risk-analysis",
+          "timeLimit": 20
+        },
+        {
+          "id": "exercise-6-2",
+          "title": "Case Study: Overcoming a Scaling Barrier",
+          "description": "Identify a scaling failure (from your context or globally). Analyze: What was the barrier? Why wasn't it anticipated? What would have prevented it?",
+          "format": "case-analysis",
+          "timeLimit": 15
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "Measuring Adoption",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "What gets measured gets managed. This module teaches how to define, track, and interpret adoption metrics that guide decision-making and identify where intervention is needed.",
+        "keyPoints": [
+          {
+            "title": "Adoption Metrics Framework",
+            "description": "Track four layers: Reach (how many can access?), Activation (how many take first action?), Usage (how many use regularly?), and Impact (did adoption solve the problem?). Each requires different metrics and interventions.",
+            "example": "Sri Lanka's land registry tracked: sites online (reach), registrations initiated (activation), completed registrations per month (usage), and average time to registration (impact). Different metrics guided different interventions."
+          },
+          {
+            "title": "Key Adoption Metrics",
+            "description": "Core metrics: adoption rate (% of target population using), active user rate (% using monthly), frequency (average uses per month), time to first use, and churn rate (% stopping use). Segment by user type, region, and demographics.",
+            "example": "Kenya's Huduma Centers tracked adoption rate nationally (65%), by county (range: 40-85%), by demographics (youth 85%, seniors 35%), and by service type (ID services 80%, business registration 45%)."
+          },
+          {
+            "title": "Diagnostic Metrics for Barriers",
+            "description": "Beyond volume metrics, track: support ticket patterns (what questions repeat?), error rates (where do users fail?), time-to-completion (where are bottlenecks?), and qualitative feedback (what are users saying?).",
+            "example": "India's Aadhaar tracked completion rates by enrollment center type. When rural centers showed 30% abandonment, analysis revealed poor fingerprint capture. Mobile vans with better devices solved it."
+          },
+          {
+            "title": "Dashboard Design for Decision-Making",
+            "description": "Dashboards for different audiences: executives need high-level adoption progress, operational teams need bottleneck alerts, policy teams need segment analysis. Real-time dashboards enable rapid response.",
+            "example": "Rwanda's tax system dashboard showed: national registration rate (exec view), filing completion bottlenecks by step (operations view), and adoption rate by business size (policy view)."
+          },
+          {
+            "title": "Cohort Analysis for Understanding Adoption Dynamics",
+            "description": "Track user cohorts (users who started in same month). Cohort analysis reveals: which cohorts stick (low churn), which drop off, and whether recent cohorts behave differently (indicating design improvements).",
+            "example": "Indonesia's e-procurement cohort analysis showed early adopters had 85% retention, but cohorts 6 months later had only 55%. This revealed the system had degraded; infrastructure fixes returned retention to 85%."
+          }
+        ],
+        "keyInsight": "Adoption metrics are only useful if they drive decisions. Build dashboards for decision-makers, not analysts. Track both what's happening (reach, usage) and why (barriers, support issues). Measure segment adoption separately\u2014one national metric hides significant variation."
+      },
+      "exercises": [
+        {
+          "id": "exercise-7-1",
+          "title": "Adoption Measurement Plan",
+          "description": "Define adoption metrics for your system: what will you measure for reach, activation, usage, and impact? For each metric, define the target, frequency of measurement, and who owns tracking.",
+          "format": "measurement-plan",
+          "timeLimit": 20
+        },
+        {
+          "id": "exercise-7-2",
+          "title": "Dashboard Mockup",
+          "description": "Design a dashboard for tracking adoption. What metrics matter most? How will you segment data? What alerts should trigger action?",
+          "format": "design-mockup",
+          "timeLimit": 15
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "Sustaining Adoption",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Scaling is not the end\u2014systems can lose adoption as quickly as they gain it. This module addresses how to sustain adoption over time by managing churn, evolving the system with user needs, and maintaining institutional support.",
+        "keyPoints": [
+          {
+            "title": "Understanding Churn and Re-engagement",
+            "description": "Churn is the percentage of active users who stop using the system. Analyze churn cohorts: when do users leave? Why? Design re-engagement campaigns for at-risk users rather than assuming they're lost.",
+            "example": "Kenya's M-Pesa monitored monthly active users and identified seasonal churn (agricultural off-season). Targeted campaigns offering savings products during these periods re-engaged users year-round."
+          },
+          {
+            "title": "Continuous Improvement and Feature Evolution",
+            "description": "Systems that succeed long-term continuously improve based on usage patterns, user feedback, and emerging needs. Establish feedback loops and prioritize improvements that address real barriers.",
+            "example": "India's NDHM started with basic patient records. Continuous improvement added prescription tracking, lab integration, and appointment scheduling based on health worker feedback. Each feature increased usage."
+          },
+          {
+            "title": "Support and Community Building",
+            "description": "Strong support systems prevent churn. Build user communities, peer learning networks, and escalation paths. Users who feel supported stay engaged.",
+            "example": "Sri Lanka's business registration system created 'Digital Champions' groups in each district that met monthly. Peer learning and shared problem-solving reduced support tickets 40% while increasing satisfaction."
+          },
+          {
+            "title": "Managing Legacy System Coexistence",
+            "description": "New systems rarely replace legacy systems overnight. Manage parallel-system periods carefully: gradually shift transaction volume, maintain data synchronization, and communicate cutover timelines clearly.",
+            "example": "Rwanda transitioned land records from paper to digital over 18 months. Running parallel systems added cost but allowed field testing, built staff confidence, and enabled smooth cutover."
+          },
+          {
+            "title": "Institutional Commitment and Policy Support",
+            "description": "Adoption sustains only when institutional commitment remains strong. This requires: ongoing budget, executive sponsorship, policy requiring digital-first processes, and aligned incentives.",
+            "example": "Indonesia's e-procurement success depended on policy making digital filing mandatory and rewarding online vendors with faster payments. Sustained policy support has kept adoption above 90% for 8 years."
+          },
+          {
+            "title": "Scaling Support Operations",
+            "description": "Support must scale with users. Plan support staffing, tiering, and automation to handle peak load without excessive cost. Invest in knowledge bases, chatbots, and training to reduce per-user support cost.",
+            "example": "India's Aadhaar scaled support from 50 to 10,000 staff members. Heavy investment in IVR systems, chatbots, and knowledge bases meant support cost per enrollment dropped 70% as volume grew."
+          }
+        ],
+        "keyInsight": "Adoption is not a point in time\u2014it's a sustained state that requires continuous investment. Churn is inevitable; your job is to understand churn, re-engage users, and continuously improve the system to address real needs. Without sustained institutional support, even successful adoptions fade."
+      },
+      "exercises": [
+        {
+          "id": "exercise-8-1",
+          "title": "Churn Analysis and Re-engagement Strategy",
+          "description": "Identify at-risk users in your system (those with declining usage). Analyze: when do they stop using? What are common characteristics? Design a re-engagement strategy for each cohort.",
+          "format": "strategic-analysis",
+          "timeLimit": 20
+        },
+        {
+          "id": "exercise-8-2",
+          "title": "12-Month Sustainability Plan",
+          "description": "Create a plan to sustain adoption over the next 12 months: what continuous improvements are planned? What support operations changes? How will you maintain institutional commitment?",
+          "format": "operational-plan",
+          "timeLimit": 15
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "kenya_data_breach",
+  "title": "Kenya Health Records Data Breach",
+  "case_type": "crisis",
+  "country": "Kenya",
+  "context": {
+    "political_landscape": "President championing 'Digital Kenya' agenda. Opposition looking for scandals. Active civil society and investigative journalism. Regional hub for tech innovation.",
+    "recent_events": "National health records system launched 6 months ago as flagship DPI initiative. COSS provided advisory support. System serving 12 million citizens.",
+    "cultural_factors": "High digital literacy in urban areas. Strong privacy concerns after recent fintech scandals. Media quick to blame foreign consultants. Government defensive about corruption allegations.",
+    "your_position": "You were the lead advisor on system design. Implementation was done by local government IT department with your guidance. You left 3 months ago but still listed as technical advisor."
+  },
+  "stakeholder_map": {
+    "Health Cabinet Secretary": {
+      "power": "high",
+      "stance": "Defensive, looking for someone to blame",
+      "interests": "Political survival, deflecting criticism, protecting President"
+    },
+    "Government IT Director": {
+      "power": "medium",
+      "stance": "Overwhelmed, knows system had security gaps but budget was cut",
+      "interests": "Not being scapegoat, protecting team, fixing the breach"
+    },
+    "Privacy Rights NGO": {
+      "power": "medium-mobilization",
+      "stance": "Calling for system shutdown and investigation",
+      "interests": "Protecting citizens, accountability, policy reform"
+    },
+    "Investigative Journalists": {
+      "power": "high-reputational",
+      "stance": "Investigating who's responsible",
+      "interests": "Story, accountability, public interest"
+    },
+    "Opposition Leaders": {
+      "power": "medium-political",
+      "stance": "Using this to attack government's digital agenda",
+      "interests": "Electoral advantage, government embarrassment"
+    },
+    "COSS Leadership": {
+      "power": "n/a",
+      "stance": "Concerned about organizational reputation",
+      "interests": "Protecting COSS brand, supporting you, understanding what happened"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Saturday morning. You see Twitter:\n\n'BREAKING: Kenya health records system breached. 2 million patient records including HIV status leaked on dark web. Government's digital agenda in crisis.'\n\nYour phone explodes:\n- Journalist: 'You were the technical advisor. Were you aware of security vulnerabilities?'\n- COSS director: 'What happened? We need to discuss our response.'\n- Government IT Director (text): 'They're blaming us. I need to talk to you urgently.'\n- Cabinet Secretary's office: 'The Secretary requests your presence at emergency meeting Monday 8am.'\n\nYou know:\n- You recommended security measures that weren't fully implemented (budget cuts)\n- You documented those concerns in your final report\n- But you also signed off on the launch\n- The breach appears to be from a vendor the government selected after you left",
+      "prompt": "What do you notice? What's happening here?",
+      "evaluate": [
+        "Do they immediately jump to defensiveness (proving it's not their fault)?",
+        "Do they recognize this is crisis with multiple dimensions (technical, political, reputational)?",
+        "Do they think about who's vulnerable (IT Director, patients, COSS)?",
+        "Do they distinguish between technical fault, moral responsibility, and political blame?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You call the IT Director. He's panicked: 'The Cabinet Secretary is looking for someone to blame. He's saying the foreign consultants designed an insecure system. My team is being accused of incompetence. But you KNOW we flagged the security budget cuts. You wrote about it in your report.'\n\nHe asks: 'Can you send me a copy of that report? I need to show we warned them.'",
+      "prompt": "What do you do?",
+      "evaluate": [
+        "Do they immediately send the report (throwing Cabinet Secretary under the bus)?",
+        "Do they refuse to send it (abandoning the IT Director)?",
+        "Do they think about second-order effects of releasing the report?",
+        "Do they consider what would actually help vs. what feels like protecting themselves?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "Your COSS director calls: 'This is a reputational crisis for us. We need a public statement. I'm drafting something that explains:\n1. We provided advisory services only, not implementation\n2. We documented security recommendations that weren't followed\n3. The breach occurred after our engagement ended\n4. We stand ready to help fix this'\n\nThis would:\n- Protect COSS's reputation\n- Establish the facts\n- Separate advice from implementation\n\nBut it would also:\n- Throw the Kenya government under the bus\n- Destroy your relationship with the IT Director\n- Position COSS as blaming the client\n- Make you radioactive to other governments in region",
+      "prompt": "What do you advise COSS to do?",
+      "evaluate": [
+        "Do they approve the defensive statement (protecting org over relationships)?",
+        "Do they think about long-term vs short-term reputation?",
+        "Do they consider that 'we told you so' destroys trust with ALL clients?",
+        "Do they look for response that's accountable without being defensive?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "Monday 8am. Cabinet Secretary's emergency meeting. Present: Cabinet Secretary, IT Director, security officials, legal team, you.\n\nCabinet Secretary: 'This is a disaster. The President is demanding answers. Opposition is calling for my resignation. I need to know: who is responsible?'\n\nIT Director looks terrified.\n\nCabinet Secretary continues: 'I'm told the consultants designed the system. I'm told our IT department implemented it. I'm told the breach came from a vendor. Someone made mistakes that exposed 2 million Kenyans' health data.'\n\nHe looks at you: 'What is your assessment?'\n\nYou could:\n- Detail the budget cuts that prevented full security implementation (true, but blames him)\n- Blame the vendor (partially true, but you approved the vendor process)\n- Take responsibility (politically generous but might destroy COSS reputation)\n- Explain the systemic issues (true but sounds like excuse)",
+      "prompt": "What do you say?",
+      "evaluate": [
+        "Do they immediately assign blame (defensive mode)?",
+        "Do they take full responsibility (heroic but possibly dishonest)?",
+        "Do they focus on fixing forward vs. assigning blame backward?",
+        "Do they help the Cabinet Secretary without lying?",
+        "Do they protect the IT Director while being truthful?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "The Cabinet Secretary needs to make a public statement in 4 hours. You need to help craft messages for:\n\n1. Public statement (acknowledging breach, explaining response)\n2. Internal message to IT team (who are demoralized and scared)\n3. Private message to President (who wants to know if digital agenda is doomed)\n\nWrite a one-sentence core message that could adapt to all three audiences.",
+      "prompt": "What's the narrative?",
+      "evaluate": [
+        "Public: Does it acknowledge harm without creating panic?",
+        "Internal: Does it restore agency without denying seriousness?",
+        "President: Does it separate this incident from the whole digital agenda?",
+        "Is the core message consistent: 'We take full responsibility and here's how we fix it'?",
+        "Does it avoid making anyone the villain?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in a similar real scenario:\n\nThe consultants released a defensive statement detailing their recommendations that weren't followed. They were technically correct.\n\nResult:\n- The government banned them from future projects\n- Other African governments saw them as 'consultants who blame clients'\n- The IT Director was fired (became unemployable)\n- The Cabinet Secretary survived by blaming 'foreign consultants'\n- The system was shut down, 12 million citizens lost access to health records\n- The opposition used this to attack ALL digital governance initiatives\n- Regional DPI progress was set back years\n\nA senior advisor would have:\n1. **Focused on fixing forward, not blame backward** - 'Here's how we secure the system now'\n2. **Taken proportional responsibility** - 'We were advisors, we share responsibility for the outcome even though we didn't control implementation'\n3. **Protected the vulnerable** - Made sure IT Director wasn't scapegoated\n4. **Helped the Cabinet Secretary pivot to response** - Gave him a 'taking action' narrative instead of blame narrative\n5. **Separated this incident from the whole digital agenda** - Helped President see this as implementation failure, not concept failure\n6. **Coordinated with COSS on response** - Made sure org statement was about accountability + help, not defensiveness\n\nThe lesson: **In a crisis, your instinct is to protect yourself. The senior advisor instinct is to minimize total harm and protect the most vulnerable.**\n\nYour reputation is better served by being known as 'the advisor who helped fix the crisis' than 'the advisor who was technically right but relationships destroyed.'\n\nAlso: If you're afraid to take proportional responsibility because it might hurt your career, you're in builder mode (protecting your work) not advisor mode (serving the mission).",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Crisis mode: Did you go defensive or focus on harm reduction?",
+        "Responsibility: Did you assign blame or take proportional ownership?",
+        "Vulnerability: Did you think about who gets hurt most (patients, IT Director)?",
+        "Reputation: Did you optimize for short-term protection or long-term trust?"
+      ]
+    }
+  ],
+  "tags": ["crisis", "reputation", "responsibility", "data_breach", "accountability"]
+}

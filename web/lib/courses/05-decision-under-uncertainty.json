@@ -1,0 +1,1078 @@
+{
+  "id": "decision-under-uncertainty",
+  "slug": "decision-under-uncertainty",
+  "courseNumber": 5,
+  "title": "Decision-Making Under Uncertainty",
+  "subtitle": "Acting Without Perfect Information",
+  "tier": 1,
+  "category": "Cognitive Foundations",
+  "duration": "4 hours",
+  "difficulty": "Foundation",
+  "description": "Navigate ambiguity and make sound decisions when complete information is unavailable.",
+  "learningObjectives": [
+    "Accept uncertainty as normal state",
+    "Apply probabilistic thinking",
+    "Make reversible decisions when possible"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Understanding Uncertainty",
+      "duration": "30 min",
+      "type": "theory",
+      "content": {
+        "overview": "Uncertainty is not a failure of analysis - it's a fundamental feature of complex systems. In DPI work, you'll never have complete information. This module helps you distinguish between different types of uncertainty and develop appropriate strategies for each.",
+        "keyPoints": [
+          {
+            "title": "Types of Uncertainty",
+            "categories": [
+              {
+                "type": "Risk",
+                "description": "Known unknowns where probability distributions can be estimated",
+                "characteristics": [
+                  "Historical data available",
+                  "Similar situations have occurred before",
+                  "Can calculate expected values",
+                  "Insurance and hedging possible"
+                ],
+                "examples": [
+                  "Server uptime probability based on infrastructure specs",
+                  "User adoption rates based on similar DPI implementations",
+                  "Budget overrun likelihood based on project complexity metrics",
+                  "Vendor delivery delays based on track record"
+                ],
+                "inGovernmentContext": "Most procurement decisions involve quantifiable risks - vendor performance, technology reliability, budget adherence"
+              },
+              {
+                "type": "Ambiguity",
+                "description": "Unknown unknowns where probabilities cannot be reliably estimated",
+                "characteristics": [
+                  "No historical precedent",
+                  "Multiple competing models",
+                  "Experts disagree fundamentally",
+                  "Probabilities are guesses, not estimates"
+                ],
+                "examples": [
+                  "How citizens will use a novel digital service",
+                  "Long-term political support for DPI initiatives",
+                  "Emergence of disruptive technologies during implementation",
+                  "Cross-ministry adoption dynamics"
+                ],
+                "inGovernmentContext": "First-of-kind DPI implementations face genuine ambiguity - you're creating something that hasn't existed before"
+              },
+              {
+                "type": "Deep Uncertainty",
+                "description": "Fundamental disagreement about how the system works",
+                "characteristics": [
+                  "Multiple valid but contradictory worldviews",
+                  "No agreement on relevant variables",
+                  "Cannot even define probability space",
+                  "Requires scenario planning, not forecasting"
+                ],
+                "examples": [
+                  "How digital identity will reshape government-citizen relationships",
+                  "Future regulatory environment for data protection",
+                  "Geopolitical shifts affecting technology partnerships",
+                  "Societal response to AI in public services"
+                ],
+                "inGovernmentContext": "Strategic DPI decisions - what to build, for whom, with what architecture - face deep uncertainty about the future"
+              }
+            ]
+          },
+          {
+            "title": "The Uncertainty Spectrum",
+            "spectrum": [
+              {
+                "level": "Level 1: Clear Future",
+                "description": "Single point forecast is reliable",
+                "approach": "Standard analysis and planning",
+                "example": "Rolling out tested software to additional regions"
+              },
+              {
+                "level": "Level 2: Alternate Futures",
+                "description": "Few discrete scenarios with estimable probabilities",
+                "approach": "Decision trees and contingency planning",
+                "example": "Political party A or B wins election - plan for both"
+              },
+              {
+                "level": "Level 3: Range of Futures",
+                "description": "Continuous range of outcomes within bounds",
+                "approach": "Scenario planning and real options",
+                "example": "User adoption could be anywhere from 20% to 80%"
+              },
+              {
+                "level": "Level 4: True Ambiguity",
+                "description": "Cannot even define the outcome space",
+                "approach": "Adaptive strategies and learning",
+                "example": "How will AI transform government services?"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "The biggest mistake in uncertain environments isn't making wrong predictions - it's treating ambiguity like risk, applying precise tools to imprecise situations. Match your approach to the type of uncertainty you face."
+      },
+      "exercises": [
+        {
+          "type": "classification",
+          "prompt": "List 5 important decisions you face in your current work. For each, classify the uncertainty type (risk, ambiguity, or deep uncertainty). What evidence supports your classification? How would you approach each differently?"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Why Government Struggles with Uncertainty",
+      "duration": "35 min",
+      "type": "theory",
+      "content": {
+        "overview": "Government institutions are structurally designed to reduce uncertainty through standardization, documentation, and accountability. This creates systematic challenges when dealing with genuinely uncertain situations like digital transformation.",
+        "keyPoints": [
+          {
+            "title": "Structural Barriers to Uncertainty Tolerance",
+            "barriers": [
+              {
+                "barrier": "Accountability Culture",
+                "description": "Public officials must justify decisions to auditors, legislators, and citizens",
+                "manifestation": "Preference for defensible decisions over optimal decisions",
+                "example": "'We followed the standard procurement process' is defensible even if it led to poor outcomes. 'We made a judgment call based on incomplete information' is not.",
+                "consequence": "Officials choose auditable certainty over potentially better but harder-to-defend decisions"
+              },
+              {
+                "barrier": "Documentation Requirements",
+                "description": "Decisions must be recorded with clear rationale",
+                "manifestation": "Pressure to appear more certain than actually warranted",
+                "example": "Project proposals state '3-year implementation' as fact rather than 'estimated 2-4 years depending on factors X, Y, Z'",
+                "consequence": "False precision in planning documents creates unrealistic expectations"
+              },
+              {
+                "barrier": "Annual Budget Cycles",
+                "description": "Funding requires precise cost estimates committed years in advance",
+                "manifestation": "Inability to fund exploratory or adaptive approaches",
+                "example": "Cannot easily get budget for 'we'll learn what we need as we go' - must specify line items",
+                "consequence": "Forces waterfall planning even when agile approach would be more appropriate"
+              },
+              {
+                "barrier": "Political Risk Aversion",
+                "description": "Failures are punished more than successes are rewarded",
+                "manifestation": "Preference for status quo over risky improvements",
+                "example": "Minister won't approve innovative digital service because failure headlines are worse than success stories",
+                "consequence": "Systematically under-invests in high-potential, high-uncertainty initiatives"
+              }
+            ]
+          },
+          {
+            "title": "The Certainty Theater",
+            "description": "Organizational rituals that create illusion of certainty",
+            "examples": [
+              {
+                "theater": "Detailed Long-Term Plans",
+                "reality": "5-year DPI roadmaps that everyone knows will change significantly",
+                "function": "Provides comfort and appearance of control to stakeholders"
+              },
+              {
+                "theater": "Precise Budget Estimates",
+                "reality": "Cost projections with false precision (e.g., '$4,237,500' when real uncertainty is +/- 50%)",
+                "function": "Satisfies finance ministry requirements and audit trails"
+              },
+              {
+                "theater": "Risk Registers",
+                "reality": "Lists of known risks that often miss the actual problems that emerge",
+                "function": "Demonstrates due diligence without actually predicting surprises"
+              },
+              {
+                "theater": "Feasibility Studies",
+                "reality": "Documents that recommend what was already decided, with selective evidence",
+                "function": "Creates paper trail to justify decisions to auditors"
+              }
+            ],
+            "insight": "Certainty theater is rational given institutional incentives - the goal is surviving audit, not accurate prediction"
+          },
+          {
+            "title": "Breaking the Pattern",
+            "strategies": [
+              {
+                "strategy": "Reframe accountability",
+                "description": "Being accountable for good process, not just good outcomes",
+                "example": "Document the decision-making process and information available, not just the decision"
+              },
+              {
+                "strategy": "Build uncertainty into documents",
+                "description": "Use ranges and confidence levels explicitly",
+                "example": "'Budget: $3-5M with 80% confidence' rather than '$4M'"
+              },
+              {
+                "strategy": "Create learning budgets",
+                "description": "Explicitly fund experimentation and course correction",
+                "example": "Reserve 15% of project budget for 'adaptive management' rather than contingency"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Government's uncertainty aversion isn't irrational - it's a response to institutional incentives. Effective leaders work within these constraints while gradually expanding tolerance for appropriate uncertainty."
+      },
+      "exercises": [
+        {
+          "type": "analysis",
+          "prompt": "Identify a recent project document (proposal, plan, or report) from your work. Where does it display false precision? What would an honest representation of uncertainty look like? What institutional barriers prevented that honesty?"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Probabilistic Thinking Basics",
+      "duration": "40 min",
+      "type": "theory",
+      "content": {
+        "overview": "Probabilistic thinking means reasoning about likelihood rather than certainty. It's not about calculating exact probabilities, but about calibrating confidence levels and making better decisions under uncertainty.",
+        "keyPoints": [
+          {
+            "title": "Confidence Levels and Calibration",
+            "framework": {
+              "description": "Express beliefs as probability ranges rather than certainties",
+              "levels": [
+                {
+                  "level": "Very High Confidence (90%+)",
+                  "meaning": "Would be genuinely surprised if wrong",
+                  "example": "'I'm 95% confident the vendor will deliver the pilot on time - they have strong track record and resources in place'"
+                },
+                {
+                  "level": "High Confidence (70-90%)",
+                  "meaning": "More likely than not, but real chance of being wrong",
+                  "example": "'I'm 80% confident adoption will exceed 50% in year one - based on similar implementations'"
+                },
+                {
+                  "level": "Moderate Confidence (50-70%)",
+                  "meaning": "Leaning one way but significant uncertainty",
+                  "example": "'I'm 60% confident the ministry will approve - depends on political factors we can't control'"
+                },
+                {
+                  "level": "Low Confidence (30-50%)",
+                  "meaning": "Genuine uncertainty, could go either way",
+                  "example": "'I'm only 40% confident this technology will still be relevant in 5 years'"
+                },
+                {
+                  "level": "Very Low Confidence (<30%)",
+                  "meaning": "Unlikely but possible",
+                  "example": "'There's maybe 20% chance the opposition party reverses this policy if elected'"
+                }
+              ],
+              "calibrationPractice": "Track your predictions and actual outcomes to improve accuracy over time"
+            }
+          },
+          {
+            "title": "Expected Value Thinking",
+            "concept": {
+              "description": "Weigh outcomes by their probability, not just their magnitude",
+              "formula": "Expected Value = Sum of (Probability x Outcome) for all scenarios",
+              "examples": [
+                {
+                  "scenario": "Vendor Selection Decision",
+                  "optionA": {
+                    "description": "Established vendor - higher cost, lower risk",
+                    "outcomes": [
+                      { "probability": "80%", "outcome": "On-time delivery, $5M cost" },
+                      { "probability": "20%", "outcome": "6-month delay, $6M cost" }
+                    ],
+                    "expectedValue": "$5.2M cost, high reliability"
+                  },
+                  "optionB": {
+                    "description": "Startup vendor - lower cost, higher risk",
+                    "outcomes": [
+                      { "probability": "50%", "outcome": "On-time, innovative solution, $3M cost" },
+                      { "probability": "30%", "outcome": "Delayed but working, $4M cost" },
+                      { "probability": "20%", "outcome": "Project failure, $2M sunk + restart" }
+                    ],
+                    "expectedValue": "$3.5M expected cost, but 20% failure risk"
+                  },
+                  "insight": "Expected value isn't everything - the 20% failure risk might be unacceptable regardless of average cost"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Base Rates: Your Starting Point",
+            "concept": {
+              "description": "Start with how often things typically happen before adjusting for specific factors",
+              "principle": "Without strong evidence to the contrary, assume your situation is typical",
+              "examples": [
+                {
+                  "question": "Will our DPI project be on time and budget?",
+                  "baseRate": "Only about 30% of large government IT projects are on time and budget",
+                  "adjustment": "Before assuming your project is special, ask what specifically makes it different from the typical case"
+                },
+                {
+                  "question": "Will this pilot succeed?",
+                  "baseRate": "What percentage of similar pilots in similar contexts succeeded?",
+                  "adjustment": "If you don't know the base rate, that's itself useful information - you're more uncertain than you thought"
+                },
+                {
+                  "question": "Will the minister approve this proposal?",
+                  "baseRate": "What percentage of similar proposals have been approved historically?",
+                  "adjustment": "Specific factors (political context, relationships) can move you up or down from base rate"
+                }
+              ],
+              "commonMistake": "Ignoring base rates and focusing only on specific features of your situation leads to systematic overconfidence"
+            }
+          },
+          {
+            "title": "Updating Beliefs with New Information",
+            "bayesianThinking": {
+              "principle": "New evidence should shift your probability estimates proportionally to its strength",
+              "process": [
+                "Start with prior probability (your initial estimate)",
+                "Assess strength of new evidence",
+                "Update probability - strong evidence = big shift, weak evidence = small shift",
+                "New estimate becomes your prior for the next update"
+              ],
+              "example": {
+                "situation": "You estimated 70% chance of ministry approval",
+                "newEvidence": "Informal feedback from minister's advisor is positive",
+                "update": "Shift to maybe 80% - good sign, but informal feedback is weak evidence",
+                "furtherEvidence": "Minister publicly praised similar initiative last week",
+                "furtherUpdate": "Shift to 90% - public statement is stronger evidence"
+              },
+              "warning": "Avoid confirmation bias - also update downward when you receive negative evidence"
+            }
+          }
+        ],
+        "keyInsight": "Probabilistic thinking isn't about precise calculations - it's about being honest about your uncertainty, anchoring on base rates, and updating systematically as you learn more."
+      },
+      "exercises": [
+        {
+          "type": "calibration",
+          "prompt": "Make 5 predictions about your work over the next month, each with explicit probability (e.g., '70% confident X will happen'). Record them now and check later. This begins calibrating your probabilistic intuition."
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Decision Frameworks for Uncertainty",
+      "duration": "40 min",
+      "type": "theory",
+      "content": {
+        "overview": "When facing uncertainty, structured frameworks help you think through options systematically rather than relying on gut feel. Different frameworks suit different types of decisions.",
+        "keyPoints": [
+          {
+            "title": "Decision Trees",
+            "framework": {
+              "description": "Map out decisions and their possible outcomes visually",
+              "bestFor": "Decisions with sequential choices and discrete outcomes",
+              "structure": [
+                "Decision nodes (squares): Points where you make a choice",
+                "Chance nodes (circles): Points where uncertainty resolves",
+                "Outcome nodes (triangles): Final outcomes with values",
+                "Branches: Different options or scenarios"
+              ],
+              "example": {
+                "decision": "Build vs Buy Digital Platform",
+                "buildBranch": {
+                  "chanceNode": "Technical success?",
+                  "outcomes": [
+                    "70% success: Custom solution, 18 months, $4M",
+                    "30% partial success: Rework needed, 24 months, $6M"
+                  ]
+                },
+                "buyBranch": {
+                  "chanceNode": "Vendor stability?",
+                  "outcomes": [
+                    "80% stable: Standard solution, 12 months, $3M + $500K/year",
+                    "20% vendor issues: Migration required, $2M extra cost"
+                  ]
+                }
+              },
+              "value": "Forces explicit consideration of probabilities and downstream consequences"
+            }
+          },
+          {
+            "title": "Scenario Planning",
+            "framework": {
+              "description": "Develop multiple plausible futures rather than single prediction",
+              "bestFor": "Strategic decisions with deep uncertainty about external factors",
+              "process": [
+                {
+                  "step": "Identify critical uncertainties",
+                  "example": "Political continuity, technology evolution, citizen adoption"
+                },
+                {
+                  "step": "Select two most important, independent uncertainties",
+                  "example": "Political support (high vs low) x Citizen digital readiness (high vs low)"
+                },
+                {
+                  "step": "Create 2x2 matrix of scenarios",
+                  "scenarios": [
+                    "High support + High readiness: 'Digital acceleration'",
+                    "High support + Low readiness: 'Top-down push'",
+                    "Low support + High readiness: 'Grassroots demand'",
+                    "Low support + Low readiness: 'Digital stagnation'"
+                  ]
+                },
+                {
+                  "step": "Develop narrative for each scenario",
+                  "description": "What would this world look like? What events would lead here?"
+                },
+                {
+                  "step": "Test strategy against all scenarios",
+                  "question": "Does our approach work in all four futures, or only some?"
+                }
+              ],
+              "value": "Prepares for multiple futures rather than betting on one prediction"
+            }
+          },
+          {
+            "title": "Real Options Analysis",
+            "framework": {
+              "description": "Value flexibility and the ability to change course",
+              "bestFor": "Large investments with phased decision points",
+              "principle": "Options have value - the right (but not obligation) to take future action is worth something",
+              "types": [
+                {
+                  "option": "Option to expand",
+                  "description": "Start small, scale if successful",
+                  "example": "Pilot digital service in one region before national rollout"
+                },
+                {
+                  "option": "Option to abandon",
+                  "description": "Ability to stop if not working",
+                  "example": "Contract with exit clauses at key milestones"
+                },
+                {
+                  "option": "Option to switch",
+                  "description": "Ability to change approach",
+                  "example": "Platform-agnostic architecture allowing vendor change"
+                },
+                {
+                  "option": "Option to wait",
+                  "description": "Delay decision until more information available",
+                  "example": "Monitor emerging standards before committing to technology"
+                }
+              ],
+              "value": "Quantifies the benefit of flexibility in uncertain environments"
+            }
+          },
+          {
+            "title": "Minimum Regret Analysis",
+            "framework": {
+              "description": "Choose option that minimizes worst-case regret across scenarios",
+              "bestFor": "High-stakes decisions where you need to avoid catastrophic outcomes",
+              "process": [
+                "List all options",
+                "For each option, identify the scenario where you'd most regret choosing it",
+                "Calculate the regret (difference between what you got and best possible outcome in that scenario)",
+                "Choose option with lowest maximum regret"
+              ],
+              "example": {
+                "decision": "Technology platform choice",
+                "optionA": {
+                  "name": "Proprietary Platform",
+                  "worstCase": "Vendor goes bankrupt, platform abandoned",
+                  "regret": "Years of investment lost, need to rebuild"
+                },
+                "optionB": {
+                  "name": "Open Source Platform",
+                  "worstCase": "Community support declines, need to fork and maintain",
+                  "regret": "Higher maintenance cost, but system still works"
+                },
+                "choice": "Open source has lower maximum regret - worst case is manageable"
+              },
+              "value": "Especially useful when probabilities are unknown but consequences vary widely"
+            }
+          }
+        ],
+        "keyInsight": "No framework is perfect. Decision trees work for quantifiable uncertainty, scenario planning for strategic ambiguity, real options for staged investments, and minimum regret when you can't estimate probabilities but must avoid catastrophe."
+      },
+      "exercises": [
+        {
+          "type": "application",
+          "prompt": "Take a significant upcoming decision in your work. Apply two different frameworks from this module. Do they suggest the same choice? If not, what does the disagreement reveal about the nature of the uncertainty?"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Reversible vs Irreversible Decisions",
+      "duration": "35 min",
+      "type": "application",
+      "content": {
+        "overview": "Not all decisions deserve equal deliberation. The key distinction is reversibility - can you change your mind later? This module helps you calibrate decision speed to decision stakes.",
+        "keyPoints": [
+          {
+            "title": "Two-Way Doors vs One-Way Doors",
+            "framework": {
+              "twoWayDoors": {
+                "description": "Decisions you can easily reverse or change",
+                "characteristics": [
+                  "Low switching costs",
+                  "Learning opportunity - try and see",
+                  "Can course-correct based on feedback",
+                  "Limited blast radius if wrong"
+                ],
+                "examples": [
+                  "Which pilot region to start with",
+                  "Initial user interface design",
+                  "Internal process changes",
+                  "Vendor for non-critical component"
+                ],
+                "approach": "Decide quickly, iterate based on learning"
+              },
+              "oneWayDoors": {
+                "description": "Decisions that are difficult or impossible to reverse",
+                "characteristics": [
+                  "High switching costs",
+                  "Lock-in effects",
+                  "Broad impact if wrong",
+                  "Long-term commitment"
+                ],
+                "examples": [
+                  "Core technology platform choice",
+                  "Data architecture decisions",
+                  "Major vendor contracts (5+ years)",
+                  "Public commitments and announcements"
+                ],
+                "approach": "Invest heavily in analysis, seek diverse input, take time"
+              }
+            }
+          },
+          {
+            "title": "The Commitment Spectrum",
+            "levels": [
+              {
+                "level": "Easily Reversible",
+                "timeToreverse": "Hours to days",
+                "cost": "Minimal",
+                "examples": ["Meeting agenda changes", "Email drafts", "Internal team assignments"],
+                "approachSpeed": "Decide in minutes, don't overthink"
+              },
+              {
+                "level": "Reversible with Effort",
+                "timeToReverse": "Days to weeks",
+                "cost": "Some rework required",
+                "examples": ["Pilot scope changes", "Documentation revisions", "Early-stage vendor discussions"],
+                "approachSpeed": "Decide in hours to days, consult key people"
+              },
+              {
+                "level": "Expensive to Reverse",
+                "timeToReverse": "Weeks to months",
+                "cost": "Significant resources, credibility loss",
+                "examples": ["Signed contracts", "Public announcements", "Hired staff", "Budget allocations"],
+                "approachSpeed": "Decide in days to weeks, formal review process"
+              },
+              {
+                "level": "Practically Irreversible",
+                "timeToReverse": "Months to years, or impossible",
+                "cost": "Massive sunk costs, institutional damage",
+                "examples": ["Core technology architecture", "Legal frameworks", "International commitments", "Major vendor partnerships"],
+                "approachSpeed": "Decide in weeks to months, extensive deliberation"
+              }
+            ]
+          },
+          {
+            "title": "Converting One-Way to Two-Way Decisions",
+            "strategies": [
+              {
+                "strategy": "Phase commitments",
+                "description": "Break large irreversible decisions into smaller reversible steps",
+                "example": "Instead of 5-year exclusive vendor contract, do 1-year pilot with renewal options",
+                "benefit": "Creates learning opportunities and exit points"
+              },
+              {
+                "strategy": "Build in review gates",
+                "description": "Commit to decision but schedule mandatory reassessment",
+                "example": "Adopt platform X with formal review at 18 months to assess switching",
+                "benefit": "Maintains optionality while enabling progress"
+              },
+              {
+                "strategy": "Avoid unnecessary lock-in",
+                "description": "Choose options that preserve future flexibility",
+                "example": "Use standard APIs instead of proprietary integration",
+                "benefit": "Reduces future switching costs"
+              },
+              {
+                "strategy": "Pre-negotiate exit terms",
+                "description": "Build exit clauses into contracts upfront",
+                "example": "Include data portability and transition support in vendor agreements",
+                "benefit": "Makes reversal possible even for contractual commitments"
+              }
+            ]
+          },
+          {
+            "title": "Decision Speed Calibration",
+            "guideline": {
+              "principle": "Match deliberation time to reversibility and stakes",
+              "commonErrors": [
+                {
+                  "error": "Over-deliberating reversible decisions",
+                  "symptom": "Weeks of meetings to decide pilot region",
+                  "cost": "Lost time, analysis paralysis, missed opportunities",
+                  "fix": "Set tight deadlines, accept 'good enough'"
+                },
+                {
+                  "error": "Under-deliberating irreversible decisions",
+                  "symptom": "Rushing major vendor contract to meet arbitrary deadline",
+                  "cost": "Locked into suboptimal choice for years",
+                  "fix": "Push back on artificial urgency, invest in proper analysis"
+                }
+              ],
+              "heuristic": "If a decision is easily reversible and you're spending more than an hour on it, you're probably overthinking. If it's irreversible and you're spending less than a week, you're probably underthinking."
+            }
+          }
+        ],
+        "keyInsight": "The goal isn't to eliminate uncertainty before deciding - it's to match decision speed to decision stakes. Move fast on reversible decisions to learn quickly. Move carefully on irreversible decisions to avoid costly lock-in."
+      },
+      "exercises": [
+        {
+          "type": "inventory",
+          "prompt": "List your 5 most time-consuming decisions from the past month. For each, classify as one-way or two-way door. Were you calibrating deliberation time appropriately? Which decisions deserved more time? Less time?"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Building Optionality",
+      "duration": "35 min",
+      "type": "application",
+      "content": {
+        "overview": "In uncertain environments, options are valuable. The ability to change course, expand, or abandon an approach has real worth. This module explores how to preserve and create optionality in DPI implementations.",
+        "keyPoints": [
+          {
+            "title": "The Value of Options",
+            "concept": {
+              "description": "Options give you the right but not obligation to take action",
+              "principle": "Under uncertainty, flexibility has value - often more than we intuitively recognize",
+              "examples": [
+                {
+                  "option": "Modular architecture",
+                  "value": "Can replace individual components without rebuilding entire system",
+                  "cost": "Higher initial design complexity",
+                  "worthIt": "Almost always - technology changes faster than we expect"
+                },
+                {
+                  "option": "Multi-vendor strategy",
+                  "value": "Not dependent on single vendor's survival or pricing",
+                  "cost": "Higher coordination overhead",
+                  "worthIt": "For critical components where vendor lock-in is risky"
+                },
+                {
+                  "option": "Pilot before scale",
+                  "value": "Learn whether approach works before full commitment",
+                  "cost": "Slower initial rollout",
+                  "worthIt": "For novel approaches in uncertain contexts"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Avoiding Lock-In",
+            "sources": [
+              {
+                "lockInType": "Technical Lock-In",
+                "description": "Dependence on specific technology that's hard to change",
+                "examples": [
+                  "Proprietary database formats",
+                  "Vendor-specific APIs",
+                  "Custom hardware requirements"
+                ],
+                "mitigation": [
+                  "Use open standards where possible",
+                  "Ensure data portability",
+                  "Abstract vendor-specific components"
+                ]
+              },
+              {
+                "lockInType": "Contractual Lock-In",
+                "description": "Legal commitments that prevent switching",
+                "examples": [
+                  "Long-term exclusive agreements",
+                  "Penalties for early termination",
+                  "Data ownership clauses favoring vendor"
+                ],
+                "mitigation": [
+                  "Negotiate exit clauses",
+                  "Shorter initial terms with renewal options",
+                  "Retain data ownership"
+                ]
+              },
+              {
+                "lockInType": "Knowledge Lock-In",
+                "description": "Expertise concentrated in ways that limit flexibility",
+                "examples": [
+                  "Only vendor understands the system",
+                  "Key staff control critical knowledge",
+                  "Undocumented customizations"
+                ],
+                "mitigation": [
+                  "Require documentation and knowledge transfer",
+                  "Distribute expertise across team",
+                  "Maintain internal technical capability"
+                ]
+              },
+              {
+                "lockInType": "Political Lock-In",
+                "description": "Commitments that are hard to reverse politically",
+                "examples": [
+                  "Public announcements of specific technology",
+                  "Donor requirements tied to specific approach",
+                  "Predecessor's flagship initiative"
+                ],
+                "mitigation": [
+                  "Frame announcements in terms of outcomes, not methods",
+                  "Build evaluation into commitments",
+                  "Create face-saving pivots"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Creating Optionality",
+            "strategies": [
+              {
+                "strategy": "Small Bets Strategy",
+                "description": "Make multiple small investments rather than one large bet",
+                "application": "Fund 3 pilot approaches at $500K each rather than one at $1.5M",
+                "benefit": "Learn which works before full commitment, limit downside",
+                "governmentChallenge": "Procurement processes favor single large contracts"
+              },
+              {
+                "strategy": "Staged Commitments",
+                "description": "Structure projects with explicit go/no-go decision points",
+                "application": "Phase 1 feasibility ($200K) -> Phase 2 pilot ($800K) -> Phase 3 scale ($3M)",
+                "benefit": "Can exit at any stage based on learning",
+                "governmentChallenge": "Requires flexible budget mechanisms"
+              },
+              {
+                "strategy": "Parallel Paths",
+                "description": "Pursue multiple approaches simultaneously until uncertainty resolves",
+                "application": "Develop both cloud and on-premise options until security requirements clarify",
+                "benefit": "Ready for multiple futures",
+                "governmentChallenge": "Looks inefficient to auditors"
+              },
+              {
+                "strategy": "Option Agreements",
+                "description": "Pay for the right to buy something later at agreed price",
+                "application": "Reserve vendor capacity with option fee rather than full commitment",
+                "benefit": "Locks in availability while preserving flexibility",
+                "governmentChallenge": "Unusual in government procurement"
+              }
+            ]
+          },
+          {
+            "title": "When Optionality Costs Too Much",
+            "balance": {
+              "description": "Preserving options has costs - sometimes commitment is better",
+              "whenToCommit": [
+                "When the option cost exceeds the option value",
+                "When delay itself has significant costs",
+                "When commitment enables benefits (economies of scale, partner trust)",
+                "When uncertainty is unlikely to resolve through waiting"
+              ],
+              "example": {
+                "situation": "Choosing between two viable database technologies",
+                "optionalityApproach": "Build abstraction layer supporting both",
+                "costOfOptionality": "$300K extra development, ongoing complexity",
+                "commitmentApproach": "Choose one and optimize for it",
+                "analysis": "If both options are acceptable long-term, commitment may be better than expensive optionality"
+              }
+            }
+          }
+        ],
+        "keyInsight": "Optionality is not free, but it's often undervalued in government where we're conditioned to make definitive plans. In genuinely uncertain environments, the ability to change course is a strategic asset worth investing in."
+      },
+      "exercises": [
+        {
+          "type": "audit",
+          "prompt": "Examine a major project you're involved with. Where are you locked in? Where do you have options? What would it cost to create more optionality? Is that cost worth paying given the uncertainty involved?"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "Communicating Uncertainty",
+      "duration": "35 min",
+      "type": "application",
+      "content": {
+        "overview": "One of the hardest aspects of uncertainty is communicating it effectively. Stakeholders often want certainty you cannot provide. This module covers how to communicate uncertainty honestly while maintaining credibility and trust.",
+        "keyPoints": [
+          {
+            "title": "The Communication Dilemma",
+            "challenge": {
+              "description": "Tension between honesty about uncertainty and stakeholder expectations",
+              "overConfidenceRisk": "Promising certainty you can't deliver, setting up for credibility damage",
+              "underConfidenceRisk": "Appearing incompetent or indecisive, losing support",
+              "goal": "Convey appropriate uncertainty while maintaining confidence in your approach"
+            }
+          },
+          {
+            "title": "Communicating to Different Stakeholders",
+            "audiences": [
+              {
+                "audience": "Political Leadership (Ministers, Senior Officials)",
+                "needToKnow": "Key risks and their mitigation, decision points requiring their input",
+                "format": "Concise, focus on what they can control, clear recommendations",
+                "languageExample": "'We're confident in the core approach, with two scenarios depending on parliamentary timeline. We're prepared for both.'",
+                "avoidSaying": "Long lists of risks without context or mitigation"
+              },
+              {
+                "audience": "Technical Teams",
+                "needToKnow": "Full uncertainty picture for planning and problem-solving",
+                "format": "Detailed, probability ranges, technical dependencies",
+                "languageExample": "'Integration with legacy system has 60-70% chance of meeting Q2 deadline, depending on documentation quality we'll assess next week.'",
+                "avoidSaying": "False precision that they'll discover is unfounded"
+              },
+              {
+                "audience": "External Partners (Donors, International Bodies)",
+                "needToKnow": "Overall progress, major risks, how their support is being used",
+                "format": "Outcome-focused, honest about challenges, clear about needs",
+                "languageExample": "'Pilot exceeded targets. Scale-up timeline has uncertainty around procurement, where your support in process streamlining would help.'",
+                "avoidSaying": "Either excessive optimism (damages trust) or excessive pessimism (loses support)"
+              },
+              {
+                "audience": "Public/Media",
+                "needToKnow": "What's happening, what it means for them, what to expect",
+                "format": "Simple, concrete, manages expectations without undermining confidence",
+                "languageExample": "'Digital service launching in phases over next year. Some features will evolve based on user feedback.'",
+                "avoidSaying": "Technical probability discussions that create confusion or alarm"
+              }
+            ]
+          },
+          {
+            "title": "Uncertainty Language Toolkit",
+            "techniques": [
+              {
+                "technique": "Ranges Rather Than Points",
+                "instead": "'The project will cost $4M'",
+                "say": "'The project will likely cost between $3.5M and $5M, with our best estimate at $4.2M'",
+                "benefit": "Sets realistic expectations, provides planning bounds"
+              },
+              {
+                "technique": "Confidence Levels",
+                "instead": "'We will launch in March'",
+                "say": "'We're on track for March launch - I'd put our confidence at 75%, with April as fallback'",
+                "benefit": "Acknowledges uncertainty while showing you've thought it through"
+              },
+              {
+                "technique": "Conditional Statements",
+                "instead": "'This will succeed'",
+                "say": "'This will succeed if we secure ministry cooperation and vendor delivers on schedule - both of which we're actively managing'",
+                "benefit": "Shows dependencies without appearing to make excuses"
+              },
+              {
+                "technique": "Known Unknowns",
+                "instead": "Pretending you know everything",
+                "say": "'Three things we're still learning: adoption rates in rural areas, integration complexity, and training needs. We'll know more after the pilot.'",
+                "benefit": "Demonstrates intellectual honesty and systematic approach"
+              },
+              {
+                "technique": "Decision Points",
+                "instead": "'We've decided on approach X'",
+                "say": "'We're proceeding with approach X, with a formal review at month 6 to assess whether to continue, modify, or pivot'",
+                "benefit": "Shows adaptive management rather than blind commitment"
+              }
+            ]
+          },
+          {
+            "title": "Setting Expectations",
+            "principles": [
+              {
+                "principle": "Under-promise, over-deliver",
+                "application": "If you think 70% chance of March, communicate 'aiming for Q1, possibly Q2'",
+                "benefit": "Meeting or exceeding expectations builds credibility over time"
+              },
+              {
+                "principle": "Prepare for scenarios explicitly",
+                "application": "'Here's our base case, here's if things go well, here's if we hit obstacles'",
+                "benefit": "When scenarios happen, you're seen as prescient rather than reactive"
+              },
+              {
+                "principle": "Update proactively",
+                "application": "Share new information before being asked, especially bad news",
+                "benefit": "Maintains trust even when things change"
+              },
+              {
+                "principle": "Explain your reasoning",
+                "application": "Share why you're uncertain, not just that you are",
+                "benefit": "Stakeholders understand and respect honest analysis"
+              }
+            ]
+          },
+          {
+            "title": "Writing About Uncertainty",
+            "documentTypes": [
+              {
+                "type": "Project Proposals",
+                "approach": "Include explicit risk section with probability estimates and mitigation",
+                "example": "'Risk: Vendor capacity constraints (30% probability). Mitigation: Identified backup vendor, staged onboarding.'"
+              },
+              {
+                "type": "Progress Reports",
+                "approach": "Traffic light status with narrative explaining yellows/reds",
+                "example": "'Timeline: Amber - Integration taking longer than planned (now 60% confident on Q3 vs 80% on Q2 originally). Root cause: Legacy system documentation gaps.'"
+              },
+              {
+                "type": "Decision Memos",
+                "approach": "Present options with pros, cons, and confidence levels for each",
+                "example": "'Option A: Higher expected value but wider uncertainty range. Option B: Lower ceiling but more predictable.'"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Effective uncertainty communication isn't about hedging everything - it's about being clear about what you know, what you don't know, and what you're doing about it. Stakeholders respect honest uncertainty more than false certainty that later proves wrong."
+      },
+      "exercises": [
+        {
+          "type": "rewriting",
+          "prompt": "Find a recent communication you wrote (email, report, proposal) that stated things with false certainty. Rewrite it to communicate appropriate uncertainty while maintaining confidence in your approach. What changes? How does it feel?"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "Personal Uncertainty Tolerance",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "Dealing with uncertainty is not just a technical skill - it's a psychological one. This final module focuses on building your personal capacity to operate effectively when you don't have the answers.",
+        "keyPoints": [
+          {
+            "title": "Uncertainty Tolerance Self-Assessment",
+            "dimensions": [
+              {
+                "dimension": "Comfort with Ambiguity",
+                "lowTolerance": "Need clear answers before acting, frustrated by incomplete information",
+                "highTolerance": "Can act on partial information, comfortable with 'we'll figure it out'",
+                "reflectionQuestion": "How do you react when someone says 'we don't know yet'?"
+              },
+              {
+                "dimension": "Need for Control",
+                "lowTolerance": "Anxious when outcomes depend on factors you can't control",
+                "highTolerance": "Accept that you can only control your actions, not results",
+                "reflectionQuestion": "How do you handle situations where success depends on others' decisions?"
+              },
+              {
+                "dimension": "Perfectionism",
+                "lowTolerance": "Wait for perfect information before deciding, struggle with 'good enough'",
+                "highTolerance": "Recognize when additional information won't change the decision",
+                "reflectionQuestion": "Do you over-research decisions that don't warrant it?"
+              },
+              {
+                "dimension": "Fear of Being Wrong",
+                "lowTolerance": "Avoid decisions where you might make mistakes, defensive when wrong",
+                "highTolerance": "See mistakes as learning, comfortable saying 'I was wrong'",
+                "reflectionQuestion": "How do you react when a decision you made turns out poorly?"
+              }
+            ],
+            "scoring": "No right or wrong - awareness of your patterns helps you compensate"
+          },
+          {
+            "title": "Building Uncertainty Tolerance",
+            "practices": [
+              {
+                "practice": "Reframe Uncertainty as Opportunity",
+                "fromMindset": "'I don't have enough information to decide'",
+                "toMindset": "'I have an opportunity to learn and adapt as I go'",
+                "how": "When you feel anxiety about uncertainty, ask 'What can I learn from this situation that I couldn't learn any other way?'"
+              },
+              {
+                "practice": "Practice Small Uncertainty",
+                "description": "Build tolerance through low-stakes practice",
+                "examples": [
+                  "Make quick decisions on minor matters without extensive research",
+                  "Try new restaurants without reading reviews",
+                  "Take unfamiliar routes without GPS"
+                ],
+                "how": "Deliberately expose yourself to small uncertainties to build comfort"
+              },
+              {
+                "practice": "Distinguish Uncertainty from Risk",
+                "description": "Uncertainty feels scary but isn't always dangerous",
+                "exercise": "When feeling anxious, ask 'What's the actual worst case? How bad would that really be? What would I do?'",
+                "insight": "Often the worst case is manageable, just unfamiliar"
+              },
+              {
+                "practice": "Focus on Process Over Outcomes",
+                "description": "You can control your decision process, not outcomes",
+                "mindset": "'I will make the best decision possible with available information and adapt as I learn'",
+                "benefit": "Reduces anxiety about unknowable outcomes"
+              },
+              {
+                "practice": "Build Support Systems",
+                "description": "Uncertainty is easier with trusted people to consult",
+                "actions": [
+                  "Identify 2-3 people whose judgment you trust for sounding board",
+                  "Create team norms that support honest uncertainty discussion",
+                  "Develop external network for perspective"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Managing Uncertainty Anxiety",
+            "techniques": [
+              {
+                "technique": "The 10-10-10 Rule",
+                "description": "Ask: How will I feel about this decision in 10 minutes? 10 months? 10 years?",
+                "application": "Most decisions that feel huge now will barely register in 10 years",
+                "benefit": "Provides perspective on true stakes"
+              },
+              {
+                "technique": "Worst Case Planning",
+                "description": "Explicitly plan for worst case to reduce anxiety about it",
+                "process": [
+                  "Define the actual worst case (not vague catastrophe)",
+                  "Assess likelihood (usually lower than you think)",
+                  "Plan response (usually more manageable than you fear)",
+                  "Accept and move on"
+                ],
+                "benefit": "Named and planned fears are less scary than unnamed ones"
+              },
+              {
+                "technique": "Action Beats Anxiety",
+                "description": "Doing something often reduces uncertainty anxiety more than more analysis",
+                "application": "When stuck in analysis paralysis, take the smallest action that generates new information",
+                "example": "Instead of endlessly debating vendor choice, do quick reference calls to learn more"
+              },
+              {
+                "technique": "Scheduled Worry Time",
+                "description": "Contain uncertainty anxiety rather than letting it pervade everything",
+                "how": "Set aside specific time to think about uncertain issues, then mentally set them aside until next session",
+                "benefit": "Prevents uncertainty from consuming all mental space"
+              }
+            ]
+          },
+          {
+            "title": "Team Uncertainty Culture",
+            "leadership": {
+              "description": "As a leader, you set the tone for how your team handles uncertainty",
+              "practices": [
+                {
+                  "practice": "Model uncertainty tolerance",
+                  "how": "Say 'I don't know' when you don't, share your own uncertainty reasoning"
+                },
+                {
+                  "practice": "Reward honesty over certainty",
+                  "how": "Thank people for raising uncertainties, don't punish messengers"
+                },
+                {
+                  "practice": "Create safe spaces for uncertainty",
+                  "how": "In meetings, explicitly ask 'What are we uncertain about?' before deciding"
+                },
+                {
+                  "practice": "Distinguish good process from good outcomes",
+                  "how": "Evaluate team on quality of decisions, not just results"
+                }
+              ]
+            }
+          }
+        ],
+        "keyInsight": "Uncertainty tolerance is a skill that can be developed, not a fixed personality trait. In a world of increasing complexity and change, the ability to act effectively without complete information is one of the most valuable capabilities you can build."
+      },
+      "exercises": [
+        {
+          "type": "self-assessment",
+          "prompt": "Complete the uncertainty tolerance self-assessment honestly. Which dimension is your biggest growth area? Identify one specific practice from this module to try this week. Share your plan with a trusted colleague for accountability."
+        }
+      ]
+    }
+  ],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": "DPI advisors, government IT directors, policy coordinators working on digital transformation"
+}

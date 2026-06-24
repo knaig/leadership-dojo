@@ -1,0 +1,107 @@
+{
+  "id": "system1-availability-heuristic",
+  "course": "system-1-2-thinking",
+  "difficulty": "foundation",
+  "title": "The Crisis That Wasn't: Availability Heuristic in Risk Assessment",
+  "country": "Nigeria",
+  "caseType": "risk_evaluation",
+  "learningObjectives": [
+    "Recognize when recent/dramatic events distort probability judgments",
+    "Practice distinguishing between vivid examples and base rates",
+    "Understand how media coverage affects perceived risk",
+    "Learn to seek statistical data vs relying on memorable incidents"
+  ],
+  "context": {
+    "yourRole": "Chief Information Security Officer for the National Identity Management Commission (NIMC). Responsible for securing Nigeria's national identity database.",
+    "situation": "Three weeks ago, Kenya's Huduma Namba database was allegedly breached, with 3.5 million records supposedly leaked online. Media coverage was extensive.",
+    "pressure": "Your Director-General has called an emergency security review. The Minister is asking questions. Everyone is nervous.",
+    "reality": "Your database has different architecture, security practices, and vendor than Kenya's system. But the Kenya breach is fresh in everyone's mind."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Emergency meeting called by the Director-General:\n\nDG: 'You've all seen the news from Kenya. 3.5 million identity records leaked. The Minister wants assurance this won't happen here. What's our situation?'\n\nFemi (Infrastructure Lead): 'Sir, I've been reviewing our security. We should immediately implement additional encryption layers, conduct external penetration testing, and restrict database access. This could happen to us.'\n\nDG: 'How much will that cost?'\n\nFemi: '₦45 million for comprehensive security upgrade. But sir, after Kenya, we can't take chances. The reputational damage if we're breached would be catastrophic.'\n\nAisha (Your deputy): 'Sir, with respect, we just completed a security audit two months ago. Clean results. Our architecture is fundamentally different from Kenya's - we use multi-layer encryption, our database isn't internet-facing, we have two-factor authentication for all access. Kenya's issues were specific to their implementation.'\n\nFemi: 'That's what Kenya probably thought before the breach! No system is perfectly secure. After what just happened, we need maximum security.'\n\nDG: 'I'm inclined to agree with Femi. The Kenya breach is all over social media. If we have a breach next month and people find out we didn't act after Kenya's warning, we'll be crucified. ₦45 million is a lot, but it's less than the cost of a breach.'\n\nYou notice:\n- The Kenya breach is driving all thinking about risk\n- Nobody has asked about base rates (how common are such breaches?)\n- Nobody has analyzed if our vulnerabilities match Kenya's\n- Femi's ₦45 million proposal is getting traction based on fear\n- The DG is focused on political optics ('if we have a breach AFTER Kenya')\n- Aisha's calm analysis is being dismissed as complacent",
+      "prompt": "What cognitive bias is at play? How should you navigate this situation?",
+      "evaluationCriteria": [
+        "**Availability Heuristic**: Do they identify that a recent vivid event is distorting risk assessment?",
+        "**Base Rate Neglect**: Do they notice nobody is asking about actual breach frequencies?",
+        "**Specific vs General**: Do they recognize the need to analyze whether Kenya's vulnerabilities apply to Nigeria's context?",
+        "**Fear-Driven Decision**: Do they see that political fear, not technical risk, is driving the ₦45M proposal?",
+        "**Rational Response**: Do they propose systematic risk assessment vs reactive spending?"
+      ],
+      "coachingNotes": "Textbook availability heuristic. Kenya's breach is recent and vivid, so it feels like breaches are common and imminent. But System 2 questions: What's the actual base rate of major DPI database breaches? (Relatively rare.) What were Kenya's specific vulnerabilities? Do we share them? The DG's focus on 'if we have a breach AFTER Kenya' reveals this is political risk management, not technical. Femi's proposal might be good security practice, but it's being sold on fear, not analysis. Aisha's 'we just passed audit, different architecture' is correct System 2 thinking but being overwhelmed by System 1 fear. Your job: Acknowledge the concern (don't dismiss fear - that fails politically), but propose systematic assessment."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You intervene:\n\nYou: 'Sir, I recommend we take this seriously but systematically. Let me propose a 48-hour assessment: (1) Detailed analysis of what actually happened in Kenya - what were the specific vulnerabilities? (2) Assessment of whether we share those vulnerabilities. (3) Review of our threat landscape - what attack vectors are most likely for our specific system? Then we can make informed decisions about security investments.'\n\nDG: 'We don't have time for analysis. The Minister wants answers today. What do I tell him?'\n\nYou: 'Tell him we're conducting immediate security review and will have detailed brief within 48 hours. Meanwhile, we're enhancing monitoring and access controls as precaution.'\n\nFemi: 'With respect, we should commit to the security upgrade now. Waiting to study the problem is how organizations get breached. Kenya probably did assessments too.'\n\nYou ask Aisha to quickly research the Kenya breach while you continue the meeting:\n\nYou: 'Femi, what specific vulnerabilities are you concerned about?'\n\nFemi: 'Database security in general. Encryption. Access controls. Penetration testing. Everything needs to be state-of-the-art.'\n\nYou: 'Our last audit showed we have enterprise-grade encryption and access controls. What specifically would the ₦45 million upgrade provide beyond current state?'\n\nFemi: 'Additional security layers. You can never have too much security.'\n\nAisha returns: 'I've been reading the Kenya reports. Initial analysis suggests the breach wasn't a sophisticated cyber attack - it appears to be an insider leak. Employee with authorized access allegedly sold data to third party. It's not a technical vulnerability, it's a personnel/access control issue.'\n\nThis new information shifts the conversation:\n\nDG: 'So it was an inside job? Do we have controls against that?'\n\nAisha: 'We have segregated access - nobody has access to the full database. We have audit logs of all queries. We have data loss prevention monitoring. But no system can eliminate insider risk completely.'\n\nFemi: 'Exactly my point. We need the security upgrade.'",
+      "prompt": "The Kenya breach was an insider leak, not a technical hack. How does this change the risk assessment and security investment decision?",
+      "evaluationCriteria": [
+        "**Updated Information**: Do they recognize the new data changes the analysis fundamentally?",
+        "**Specific Countermeasures**: Do they distinguish between technical security (Femi's proposal) and insider risk controls?",
+        "**Cost-Benefit**: Do they assess whether ₦45M technical upgrade addresses the actual threat?",
+        "**Alternative Approaches**: Do they propose targeted insider risk controls vs broad security spending?",
+        "**Femi's Persistence**: Do they notice Femi is still pushing the same solution despite new information?"
+      ],
+      "coachingNotes": "This is the key turning point. The actual Kenya breach was insider leak, not technical hack. Femi's ₦45M proposal is for technical security upgrades - encryption layers, penetration testing. Those don't address insider risk. They might be good security practices, but they're not targeted at the actual threat vector that just manifested in Kenya. System 2 analysis: What's our insider risk? Do we have access controls, audit logs, background checks, separation of duties? Those are much cheaper than ₦45M technical upgrade. But notice: Femi is still pushing the same proposal. This suggests he had a solution in mind (maybe he's wanted this upgrade for a while) and is using Kenya as justification - classic confirmation bias meeting availability heuristic."
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "You lay out the options:\n\nYou: 'Based on Kenya being an insider leak, I see three approaches:\n\n**OPTION A: Femi's Technical Upgrade (₦45M)**\nComprehensive technical security enhancement. Doesn't directly address insider risk but strengthens overall security posture.\n\n**OPTION B: Targeted Insider Risk Controls (₦8M)**\nEnhance: (1) Background check processes, (2) Access monitoring and behavioral analytics, (3) Data loss prevention tools, (4) Mandatory security training and culture, (5) Anonymous reporting mechanisms.\n\n**OPTION C: Hybrid Approach (₦25M)**\nSelected technical upgrades (penetration testing, monitoring enhancement) + insider risk controls.\n\nThe DG considers this:\n\nDG: 'The Minister is expecting us to take this seriously. ₦8 million might look like we're cutting corners after Kenya. But ₦45 million is a lot for this fiscal year.'\n\nFemi: 'Sir, Option B only addresses insider risk. We have many threats - cyber attacks, nation-state actors, ransomware. After Kenya, we should strengthen everything.'\n\nYou: 'Femi, what's our actual threat landscape? Have we had attempted breaches? What do our logs show?'\n\nFemi: 'We haven't had major incidents, but absence of evidence isn't evidence of absence. Kenya probably felt safe too until they were breached.'\n\nAisha: 'I pulled our incident reports from last 12 months. We've had: 23 phishing attempts (all blocked), 4 DDoS attempts (mitigated), zero successful intrusions. Our technical security is working. We haven't had insider risk incidents, but that's the vulnerability Kenya exposed.'\n\nDG: 'So you're recommending Option B - ₦8 million on insider controls?'\n\nYou think about the political dynamics:\n- ₦8M might seem inadequate given media attention to Kenya\n- ₦45M is expensive and not targeted at the actual threat\n- The Minister wants reassurance, not necessarily the most rational approach\n- If there IS a breach in the next 6 months (from any cause), having spent less will look bad\n- But spending ₦45M on the wrong countermeasures is wasteful\n- Your job is to give sound technical advice, but also manage political risk",
+      "prompt": "What do you recommend? How do you balance technical correctness with political reality?",
+      "evaluationCriteria": [
+        "**Evidence-Based**: Do they ground recommendation in actual threat data, not fears?",
+        "**Political Savvy**: Do they recognize the optics matter, not just technical correctness?",
+        "**Compromise**: Do they consider hybrid approaches that address both concerns?",
+        "**Communication**: Do they think about how to frame the recommendation to the Minister?",
+        "**Long-term**: Do they consider establishing systematic threat assessment processes, not just reactive spending?"
+      ],
+      "coachingNotes": "This is where System 2 analysis meets organizational politics. Pure rationality: ₦8M targeted at actual threat (insider risk). Political reality: might look insufficient after Kenya. Hybrid (₦25M) might be the pragmatic answer - addresses insider risk AND does selected technical upgrades, shows serious response. But the deeper issue: this whole conversation is reactive. Kenya happened, so we're spending money. What about systematic, ongoing threat assessment? What about risk-based budgeting that doesn't spike based on news cycles? System 2 approach: Fix the immediate issue (pick option), but also propose establishing quarterly threat assessment process so you're not always reactive."
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "You recommend Option C (₦25M hybrid) with the framing:\n\nYou: 'Sir, recommend ₦25 million hybrid approach. This addresses the specific insider risk that Kenya exposed, while also strengthening technical defenses against broader threat landscape. Importantly, I also recommend we establish quarterly threat assessment process so future security investments are based on ongoing risk analysis, not reactive to incidents.'\n\nDG: 'Good. That sounds appropriately serious. Draft the brief for the Minister emphasizing we're taking Kenya as a wake-up call and implementing comprehensive security enhancement.'\n\nTwo weeks later, you're having coffee with Aisha:\n\nAisha: 'I've been thinking about that meeting. We ended up spending ₦25 million largely because of Kenya. But statistically, major database breaches are rare. We had clean audit results. We might have spent that money because of fear, not actual risk.'\n\nYou: 'Maybe. But the insider risk controls are genuinely useful. And some of the technical upgrades were on our roadmap anyway.'\n\nAisha: 'True. But if Kenya hadn't happened, would we have spent ₦25M this quarter? Or would we have spent ₦5M on insider controls over the next year as part of normal improvement?'\n\nYou: 'Probably the latter.'\n\nAisha: 'So Kenya cost us ₦20 million in accelerated spending driven by availability heuristic. I'm not saying it was wrong - politically, we had to respond. But we should be honest that this was fear-based budgeting.'\n\nYou realize:\n- She's right - the Kenya breach triggered spending that wouldn't have happened otherwise\n- Some of it was valuable (insider controls), some was acceleration of existing roadmap\n- But the decision process was driven by vivid recent event, not systematic risk assessment\n- You successfully avoided the worst outcome (₦45M unfocused spending), but didn't fully escape the availability heuristic\n- The quarterly threat assessment you proposed might prevent this pattern in future\n- But organizational dynamics often reward visible responses to visible events, not systematic prevention",
+      "prompt": "Reflect on this case: When is reactive spending justified vs when is it availability heuristic driving poor resource allocation?",
+      "evaluationCriteria": [
+        "**Honest Assessment**: Do they acknowledge the decision was partly fear-driven?",
+        "**Not All Bad**: Do they recognize some good outcomes even from biased process?",
+        "**Systemic Fix**: Do they focus on the quarterly assessment proposal to prevent future reactive spending?",
+        "**Political Reality**: Do they accept that perfect rationality isn't always achievable in organizations?",
+        "**Personal Learning**: Do they extract lessons about when to push back harder vs when to accept compromise?"
+      ],
+      "coachingNotes": "This is real-world ambiguity. You avoided the worst outcome (₦45M) but didn't achieve perfect rationality (₦8M targeted spending). The ₦25M hybrid was a political compromise that also had technical merit. The key insight: availability heuristic is powerful and hard to overcome completely, especially in political environments. When something vivid happens (Kenya breach), organizations feel pressure to respond visibly. Your job as the technical expert: (1) Prevent purely emotional responses, (2) Channel the energy toward actually useful interventions, (3) Build systematic processes so you're not always reactive. You did reasonably well at (1) and (2). The quarterly threat assessment addresses (3). System 2 lesson: Sometimes you're managing bias, not eliminating it."
+    }
+  ],
+  "keyTakeaways": [
+    "Availability heuristic makes recent, vivid events feel more probable than they are",
+    "Base rates matter - ask 'how common is this actually?' not just 'can I imagine it happening?'",
+    "Organizations often reward visible responses to visible events, creating reactive spending",
+    "Insider threats and technical threats require different countermeasures - don't conflate them",
+    "Perfect rationality is rare in organizations; managing bias is often the realistic goal"
+  ],
+  "frameworks": [
+    {
+      "name": "Base Rate Analysis",
+      "description": "Always ask: What's the actual frequency of this type of event? Don't let vivid examples override statistical reality.",
+      "application": "When facing risk decisions, explicitly research and cite base rates before deciding on interventions."
+    },
+    {
+      "name": "Threat Modeling",
+      "description": "Systematic analysis of specific threats, vulnerabilities, and countermeasures for your context.",
+      "application": "Don't react to general fear. Model specific threat vectors: Who would attack? How? What would they target? What controls address that?"
+    },
+    {
+      "name": "Pre-Mortem for Spending",
+      "description": "Before major expenditure, imagine it's one year later and the spending had no impact. What would explain that?",
+      "application": "Forces you to think critically about whether the spending addresses actual risks or just makes people feel better."
+    }
+  ],
+  "relatedCases": [
+    "system1-urgency-trap",
+    "system1-confirmation-bias",
+    "action-bias-crisis-response"
+  ]
+}
