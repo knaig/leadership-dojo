@@ -1,0 +1,121 @@
+{
+  "id": "pitch-future-back",
+  "title": "The Ministry Presentation",
+  "case_type": "pitch",
+  "country": "India",
+  "context": {
+    "political_landscape": "The Ministry of Electronics and Information Technology is under pressure to show rural digital adoption numbers ahead of a state election cycle. The Prime Minister's Digital India 2.0 agenda has set a target of 80% digital service access by 2027. The ministry has already launched DigiLocker, UMANG, and MyScheme — each with strong urban adoption but poor Tier 3/4 numbers. Officials are internally aware the last-mile problem is unsolved but are publicly committed to the current stack.",
+    "recent_events": "A parliamentary committee report released last month found that only 11% of MGNREGS beneficiaries in rural UP, Bihar, and Odisha had ever accessed their entitlements digitally. The PS was called before the committee. She is not hostile to new approaches but is acutely sensitive to anything that implies the current stack has failed. A previous vendor pitched a competing product three months ago and was shut down after the Joint Secretary Digital found security gaps in their architecture.",
+    "cultural_factors": "Government meetings in Indian ministries follow strict protocol. The PS speaks first and last. Joint Secretaries will not contradict her in the room but will surface objections through questions. The Political Advisor to the Minister is present but will not introduce himself — watch for the person who takes no notes and asks no questions but whose attention you need. Decisions are almost never made in the room; the meeting outcome is whether you get a follow-up. A letter of intent from this ministry carries significant weight with international funders.",
+    "your_position": "You are the co-founder of the organization that built Vaani. You have one team member with you — your technical lead, who knows the architecture deeply but tends to get drawn into feature-level discussions. You have 30 minutes. You have never met the PS before. You were introduced through a common contact at NASSCOM. You have three pilot deployments in Gujarat at the gram panchayat level — modest but real evidence."
+  },
+  "stakeholder_map": {
+    "Principal Secretary, Digital Services": {
+      "power": "high",
+      "stance": "Professionally open, personally cautious. Has been burned by vendor overpromises before. Will not engage emotionally until she trusts your grasp of government constraints.",
+      "interests": "Legacy: she wants to be the PS who cracked last-mile digital access. Risk management: she cannot afford a public failure. Efficiency: she has seen 40 pitches this year and values people who respect her time."
+    },
+    "Joint Secretary, Digital Infrastructure": {
+      "power": "medium-blocking",
+      "stance": "Technical skeptic. His job is to find the flaw before the PS commits. He will ask about integration with existing government stacks, security certification, and data residency. He is not hostile — he is doing his job.",
+      "interests": "Technical soundness, compliance with NIC standards, not inheriting a maintenance problem, protecting his own track record on infrastructure approvals."
+    },
+    "Joint Secretary, Rural Development": {
+      "power": "medium-champion",
+      "stance": "Quietly supportive. The MGNREGS numbers are his problem as much as anyone's. He knows the current apps do not work for his constituency. He will not advocate loudly but may signal support to the PS after you leave.",
+      "interests": "Last-mile access for rural beneficiaries, reducing field officer burden, not disrupting existing MGNREGS workflows, something he can show to district collectors."
+    },
+    "Political Advisor to the Minister": {
+      "power": "high-optics",
+      "stance": "Silent observer. He is assessing whether a partnership with your organization would be politically useful or risky — will this be covered favorably by media? Does it fit the Digital India 2.0 narrative? Will the minister get credit?",
+      "interests": "Positive press for the Minister, alignment with ruling party's technology narrative, avoiding anything that looks like admitting the current approach failed."
+    },
+    "Your Technical Lead": {
+      "power": "internal-risk",
+      "stance": "Knowledgeable and well-intentioned but prone to answering feature questions with architecture depth that loses the room. If the JS Digital pulls him into a technical rabbit hole, your 30 minutes evaporates.",
+      "interests": "Getting the technical credibility right, not wanting to overstate capabilities, proud of what he has built."
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "The PS settles into her chair, glances at the one-pager her assistant placed in front of her, and looks up.\n\n'We have 30 minutes. Tell us about your product.'\n\nThe Joint Secretary Digital has his laptop open. The Joint Secretary Rural Development has the one-pager in his hand. The Political Advisor — a man in his 50s who was not introduced — is seated along the wall, not at the table. He has no documents in front of him.\n\nYour technical lead is seated next to you and leans slightly forward, ready.\n\nYou notice:\n- The PS said 'your product' — not 'your vision' or 'your proposal'\n- The JS Digital is already on his laptop, likely pulling up whatever your organization's website says\n- The Political Advisor is watching you, not looking at the one-pager\n- You have a deck with 14 slides that starts with a market size chart\n\nHow do you open?",
+      "prompt": "The PS has given you the floor. What are your first 3-4 sentences?",
+      "evaluate": [
+        "Do they open with product features or a market size slide — the default response to 'tell us about your product'?",
+        "Do they recognize that the PS needs to see her own legacy before she can care about the product?",
+        "Do they acknowledge the constraint the ministry is operating under (Digital India mandate, rural adoption gap) before introducing their solution?",
+        "Do they put the deck aside and speak directly, or do they immediately go to slide 1?",
+        "Do they open with a specific number or observation that signals they have done their homework on this ministry's specific problem?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "vision",
+      "situation": "You have shifted into the vision frame. You are describing what 2030 could look like. The PS has not interrupted — she is listening, which in government meetings is a signal of cautious engagement.\n\nThe JS Rural Development nods almost imperceptibly when you mention MGNREGS beneficiaries.\n\nThe JS Digital has stopped typing and is watching you.\n\nThe Political Advisor has not moved.\n\nYou need the vision to do three things simultaneously:\n1. Be specific enough that the PS can imagine it — not 'every citizen has digital access' but something that puts a picture in her head\n2. Be large enough to be worth her political capital\n3. Be credible — grounded in trends that are already happening, not aspirational science fiction\n\nYou are about to describe 2030. You have 90 seconds before you need to pivot to the gap analysis.",
+      "prompt": "Describe the 2030 vision in 4-6 sentences. What does it look like? What is happening that is not happening today?",
+      "evaluate": [
+        "Is the vision specific to India's context — does it name states, languages, government schemes — or is it generic global language?",
+        "Does it reference a technology trend already underway (voice AI accuracy crossing a threshold, low-cost smartphone penetration in Tier 3/4, UPI-level infrastructure maturity) to ground it as achievable?",
+        "Is the scale large enough to match a ministry mandate — crores of citizens, not thousands of users?",
+        "Does it describe the citizen's experience, not the government's dashboard — what does a person in rural Odisha actually do differently in 2030?",
+        "Does it avoid making the current stack sound like a failure — framing the vision as an extension of what exists, not a replacement?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "gap_naming",
+      "situation": "You have described the vision. The PS says: 'That is the direction we are moving. What do you see as the gaps between where we are and where you just described?'\n\nThis is a test. She already knows the gaps — she has been living with them. She wants to see whether you are honest or whether you will be diplomatic and vague to avoid making her look bad.\n\nThe JS Digital is watching how you handle this.\n\nThe gaps you know are real:\n1. The current government apps (UMANG, MyScheme) require literacy, a smartphone, and comfort with UI navigation — none of which rural Tier 3/4 users reliably have\n2. Data on actual last-mile usage is almost entirely fabricated at the district level — field officers report what they are expected to report, not what is happening\n3. The trust deficit: many rural citizens do not believe digital channels are secure for their data — they have seen benefit diversion\n4. The interface gap: even citizens with smartphones often hand them to a neighbor or service center to navigate government apps — there is no truly self-service path\n\nBut naming these gaps directly risks:\n- Sounding like you are criticizing the PS's department\n- Making the JS Digital defensive about systems he approved\n- Giving the Political Advisor material for a concern about optics",
+      "prompt": "How do you name the gaps — honestly enough to be credible, without making the room defensive?",
+      "evaluate": [
+        "Do they name the gaps as systemic constraints rather than failures of will or competence — framing them as problems the whole sector faces, not this ministry specifically?",
+        "Do they separate infrastructure gaps (what does not exist technically) from adoption gaps (what citizens do not yet trust or know) — showing analytical precision?",
+        "Do they acknowledge at least one gap that is uncomfortable — or do they only name easy gaps that are already publicly acknowledged?",
+        "Do they use evidence from the ministry's own data or the parliamentary committee report — showing they respect the PS's knowledge rather than presenting her with information she already has?",
+        "Do they frame the gap analysis as 'here is what stands between your mandate and its achievement' rather than 'here is what is wrong with your current approach'?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "bridge",
+      "situation": "The PS has listened to the gap analysis and leaned forward slightly. 'All right. So where does your product fit in this picture?'\n\nThis is the moment to introduce Vaani — but the trap is introducing it as the solution to all five gaps you named. That is what salespeople do. You need to name the one gap that is most critical — the load-bearing constraint that, if removed, makes the others solvable.\n\nYour honest assessment:\n- The interface gap is the load-bearing constraint. If citizens cannot interact with government services in voice, in their language, without navigating a screen, everything else is irrelevant — the data quality gap persists because input never happens, the trust gap persists because citizens never get to experience a successful transaction.\n- Vaani closes the interface gap.\n- It does not solve data residency. It does not fix field officer reporting. It does not rebuild UMANG.\n\nBut your technical lead has been silent for 10 minutes and you can see he wants to explain the full architecture.\n\nThe JS Digital asks: 'How does it integrate with the existing NIC stack?'",
+      "prompt": "How do you introduce Vaani as the bridge — and how do you handle the JS Digital's architecture question without losing the PS?",
+      "evaluate": [
+        "Do they name exactly one gap Vaani closes — or do they claim it addresses all five gaps (salesperson mode)?",
+        "Do they explain WHY closing the interface gap is load-bearing — what it unblocks in the other gaps — rather than just asserting it is important?",
+        "Do they handle the JS Digital's question without letting the technical lead derail into a 10-minute architecture explanation?",
+        "Do they anchor Vaani's introduction in one of the three existing Gujarat pilot deployments — real evidence, not future promise?",
+        "Do they frame the bridge as augmenting the current stack (UMANG, DigiLocker) rather than replacing it — which matters enormously for the PS's political position?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "ask",
+      "situation": "You have made the case. The PS is quiet for a moment, then: 'What do you need from us?'\n\nThe JS Rural Development is nodding. The JS Digital has his skepticism face on but has not raised a blocking objection. The Political Advisor is still watching.\n\nYou need a letter of intent for a 3-state pilot. You are thinking: Rajasthan, Bihar, and Odisha — states with high rural populations, existing MGNREGS deployment, and state governments that have expressed interest separately.\n\nBut the ask has traps:\n- If you ask for too much too fast, the PS cannot say yes in the room — decisions this size need inter-departmental clearance\n- If you ask for too little, you look unsure of yourself and the opportunity disappears into committee\n- The PS is implicitly asking whether you understand how government decisions work\n- The Political Advisor is implicitly assessing whether this is something the Minister can be seen endorsing\n\nYou have 3 minutes left in the meeting.",
+      "prompt": "What is your ask — and how do you frame it to address the PS's risk concerns without retreating from what you actually need?",
+      "evaluate": [
+        "Is the ask specific — three named states, a defined scope for the pilot, a timeline?",
+        "Do they give the PS a decision that is within her authority to make — or do they ask for something that requires the Minister's sign-off, which she will have to decline in the room?",
+        "Do they address the failure scenario proactively — 'if the pilot underperforms, here is how we define that and what happens next' — which is what the PS actually needs to hear before she can say yes?",
+        "Do they give the Political Advisor something he can use — a framing for how this fits the Digital India 2.0 narrative, something the Minister can announce?",
+        "Do they make the next step clear and easy — not 'we look forward to hearing from you' but 'if you are open to it, we can send a one-page pilot scope for your team to review by end of week'?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here is what happened in a similar real scenario:\n\nThe team opened with slide 1: a market size chart showing 450 million rural internet users. The PS glanced at it and waited. The technical lead was asked about NIC integration and spent 8 minutes on it. The vision — when it finally appeared at minute 22 — was described in abstract terms ('a world where every Indian can access government services digitally'). The PS said 'that is our mandate too' and nothing else. The ask was 'we would love to explore a partnership with the ministry.' No follow-up was ever scheduled.\n\nIn a different version of the same pitch, a team opened with a single sentence: 'By 2030, Rajasthan's Digital Sakhi program is supposed to reach every panchayat. Right now it reaches 18%. That gap is what Vaani is built to close.' The PS said nothing, but the JS Rural Development turned to face them fully. They never opened the deck. The letter of intent was signed six weeks later.\n\nThe difference was not the product. The product was identical.\n\nThe difference was a team that understood they were not selling a product — they were offering a government official a credible path to her own stated mandate.",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Did you read the room before you opened — or did you deliver the pitch you prepared regardless of what you saw?",
+        "Was your vision specific to this ministry's context, or would it have worked in any room?",
+        "Did you name the gaps honestly — or did you protect the room from discomfort at the cost of your credibility?",
+        "Did you introduce Vaani as a bridge to one gap or as a solution to all gaps?",
+        "Was your ask something the PS could actually say yes to in the room — or did you ask for more than her authority allowed?",
+        "Did you give the Political Advisor anything — or did you ignore the person with the most actual influence over whether this moves forward?"
+      ]
+    }
+  ],
+  "tags": ["pitch", "future-back", "government", "India", "ministry", "DPI", "voice-interface", "legacy-framing", "stakeholder-management"]
+}

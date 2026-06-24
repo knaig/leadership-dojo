@@ -1,0 +1,156 @@
+{
+  "id": "india_state_coordination",
+  "title": "Karnataka DPI Implementation: The Coordination Maze",
+  "case_type": "coordination_challenge",
+  "country": "India",
+  "context": {
+    "political_landscape": "Karnataka state government committed to DPI rollout. Chief Minister announced timeline. Multiple departments involved. Central government watching closely.",
+    "recent_events": "State signed MoU with MeitY 6 months ago for digital public goods implementation. Budget allocated. Steering committee formed. But actual implementation stuck.",
+    "cultural_factors": "Strong departmental silos. State IT department guards authority. Bureaucrats cautious about central government control. Vendors lobbying. NGO partners eager but inexperienced.",
+    "your_position": "You're the COSS advisor embedded with the state DPI coordination unit. Not the project manager (that's a state IAS officer). Not the technical lead (that's state IT). You're the advisor helping navigate implementation. You report to the steering committee but work daily with the coordination unit."
+  },
+  "stakeholder_map": {
+    "State DPI Coordinator (IAS Officer)": {
+      "power": "medium-coordination",
+      "stance": "Wants to deliver on Chief Minister's timeline but overwhelmed by complexity",
+      "interests": "Career advancement, avoiding blame, making progress without making enemies"
+    },
+    "State IT Department Head": {
+      "power": "high-technical",
+      "stance": "Suspicious of COSS, protective of department's role, wants control over technical decisions",
+      "interests": "Departmental autonomy, technical credibility, preventing vendor lock-in"
+    },
+    "Finance Department Representative": {
+      "power": "medium-veto",
+      "stance": "Skeptical of costs, wants detailed justification, risk-averse",
+      "interests": "Fiscal prudence, avoiding audit issues, protecting state funds"
+    },
+    "Revenue Department IT Team": {
+      "power": "medium-implementation",
+      "stance": "Willing to adopt DPI but worried about disrupting existing systems",
+      "interests": "Operational continuity, staff capacity, avoiding failures"
+    },
+    "Health Department IT Team": {
+      "power": "medium-implementation",
+      "stance": "Excited about possibilities but under-resourced",
+      "interests": "Better health data systems, donor funding, departmental visibility"
+    },
+    "Incumbent Vendor (TCS)": {
+      "power": "medium-influence",
+      "stance": "Friendly but threatened by open-source DPG approach",
+      "interests": "Maintaining contracts, positioning for new opportunities, not being displaced"
+    },
+    "NGO Implementation Partner": {
+      "power": "low-direct",
+      "stance": "Idealistic about DPI, inexperienced with government systems",
+      "interests": "Social impact, learning opportunities, organizational growth"
+    },
+    "District Collectors (Users)": {
+      "power": "high-implementation",
+      "stance": "Skeptical of 'one more system', worried about training burden",
+      "interests": "Systems that actually work, minimal disruption, clear benefits"
+    },
+    "MeitY Observer": {
+      "power": "medium-pressure",
+      "stance": "Wants Karnataka to be showcase for other states",
+      "interests": "Demonstrating DPG model works, replicability, political credit for MeitY"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Monday coordination meeting. Present: State DPI Coordinator, representatives from IT, Finance, Revenue, Health departments. You're there as COSS advisor.\n\nDPI Coordinator: 'We need to finalize the technical architecture by end of month for steering committee. IT department, please present your proposal.'\n\nState IT Head presents: Infrastructure on state cloud, custom API layer, integration with existing systems. Timeline: 18 months.\n\nHealth Dept representative: 'We were told DPI would be faster. We have donor funding that expires in 12 months. Can we use the national health stack directly?'\n\nState IT Head: 'That would bypass our security protocols and vendor empanelment process. Not acceptable.'\n\nRevenue Dept: 'We're already using TCS systems that work. Why do we need to change?'\n\nFinance Dept: 'What's the cost? This wasn't in the approved budget.'\n\nThe DPI Coordinator looks at you: 'This is why we need COSS advice. How do we move forward?'\n\nYou notice:\n- Everyone's defining the problem differently\n- IT department proposal looks like empire building\n- Health has external deadline creating urgency\n- Revenue doesn't see the problem DPI solves\n- Finance doesn't have information to evaluate\n- The coordinator wants you to resolve this conflict",
+      "prompt": "What's actually happening here? Write your analysis of the situation - what are the real dynamics at play?",
+      "evaluate": [
+        "**Pattern Recognition**: Do they see this as technical disagreement or competing departmental interests?",
+        "**Power Dynamics**: Do they notice IT department using 'security' and 'process' to maintain control?",
+        "**Deadline Pressure**: Do they recognize Health's donor timeline is creating parallel urgency?",
+        "**Vendor Influence**: Do they sense Revenue's 'it works' might be TCS lobbying?",
+        "**Role Clarity**: Do they understand their position as advisor (not decision-maker)?",
+        "**System Thinking**: Do they see how state IT's proposal would bottleneck everything through one department?"
+      ],
+      "coaching_notes": "This is the classic coordination trap. IT department isn't being obstructive for bad reasons - they have legitimate security and governance concerns. But their solution (centralize everything through us) would slow implementation to a crawl. Health has real constraints (donor funding). Revenue has change fatigue (fair). Finance doesn't have basis to approve (understandable). The coordinator wants you to solve it (but you can't - you're not the decision-maker). The question is: can you see the REAL problem, which isn't technical architecture - it's that nobody's aligned on what problem they're solving and whose timeline matters."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "After the meeting, the State IT Head pulls you aside:\n\n'Look, I know COSS wants us to use these open-source DPGs. But you don't understand the reality here. We have security requirements. We have vendor contracts. We have a team that knows our existing systems. If something breaks, it's MY department that gets blamed, not you. You'll be gone in a year. We'll still be here managing this.\n\nAlso, between you and me, Revenue's TCS system has... arrangements. Certain people benefit from those contracts. If we push DPI too hard, we make enemies. Health can use whatever they want if they take responsibility. But don't ask IT to support something we didn't build.'\n\nThen Finance Dept rep emails you:\n\n'The DPI Coordinator asked us to release ₹2.5 crores for this initiative. We need justification. What exactly are we paying for? The state IT proposal seems expensive. The national DPGs are supposedly free. Why do we need consultants and NGO partners? Please provide cost breakdown.'\n\nYou realize:\n- State IT has legitimate operational concerns + political concerns\n- There ARE existing arrangements that DPI threatens\n- Finance needs to defend this spend to audit\n- You're being asked to provide political and financial justification\n- Your role is getting more complex than 'technical advisor'",
+      "prompt": "How do you respond to the IT Head and to Finance? What's your actual strategy here?",
+      "evaluate": [
+        "**Legitimacy Recognition**: Do they validate State IT's operational concerns without accepting bottleneck approach?",
+        "**Political Reading**: Do they acknowledge the 'arrangements' issue without being naive or cynical?",
+        "**Financial Realism**: Do they help Finance with concrete cost justification they can defend?",
+        "**Role Boundaries**: Do they recognize when they're being asked to provide political cover vs technical advice?",
+        "**Stakeholder Protection**: Do they help State IT save face while opening door to alternative approach?",
+        "**Third Way Thinking**: Do they look for options beyond 'do what IT wants' vs 'override IT concerns'?"
+      ],
+      "coaching_notes": "State IT Head is being honest with you. He's not wrong about operational risk or political reality. The 'arrangements' are real - there ARE vendor relationships with political dimensions. Finance is also being reasonable - they need to justify spend. Your job isn't to force DPGs on resistant stakeholders or to pretend politics don't exist. It's to find paths that address legitimate concerns while making progress. The trap is trying to be pure ('we must use DPGs!') or cynical ('work around the bureaucracy'). The skill is: how do you help people solve their problems (State IT's risk, Finance's audit exposure) in ways that still enable the mission?"
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "The NGO partner reaches out, excited:\n\n'We've been talking to Health Department. They want to move fast. We can help them deploy the national health stack directly - we have expertise. We can bypass the state IT bureaucracy. We'll set up on central infrastructure, train Health dept staff, launch in 3 months. This is what DPI is about - nimble implementation!\n\nWe'll position it as a pilot. Health gets what they need. We prove DPI works. Then other departments will want it. Sometimes you need to show, not convince.'\n\nThis is tempting because:\n- Health has real deadline (donor funding)\n- NGO has capability and enthusiasm\n- Would create working example\n- Would generate momentum\n- Avoids state IT bottleneck\n\nBut you also see risks:\n- State IT would be furious (undermined)\n- Finance hasn't approved budget\n- Creates precedent of departments bypassing coordination\n- If pilot fails, kills broader DPI effort\n- MeitY observer would love this (makes MeitY look good) but state might resent central govt end-run\n- DPI Coordinator would be bypassed (undermines his role)\n\nThe NGO partner: 'What do you think? Should we go ahead?'",
+      "prompt": "What's your advice to the NGO partner? What do you actually do here?",
+      "evaluate": [
+        "**Seduction of Action**: Do they recognize the appeal of 'just do it' vs. hard coordination work?",
+        "**Second-Order Effects**: Do they think through what happens after the pilot (even if successful)?",
+        "**Stakeholder Impact**: Do they consider who gets hurt (DPI Coordinator, State IT) even if outcome is good?",
+        "**Precedent Setting**: Do they see this establishes 'bypass coordination' as pattern?",
+        "**Coalition Management**: Do they think about how this affects relationship between state and center?",
+        "**Mission vs Action**: Do they distinguish 'proving DPI works' from 'building sustainable DPI ecosystem'?",
+        "**Advisor Role**: Do they protect the NGO partner from making a political mistake while appearing to help?"
+      ],
+      "coaching_notes": "This is the builder trap at the ecosystem level. The NGO wants to BUILD something that works. That's good! But they're not thinking about the SYSTEM they're building in. A successful pilot that bypasses coordination and pisses off state IT might kill long-term adoption. A failed pilot that ignored state IT's concerns would be disaster. The right answer isn't 'don't do pilots' - pilots are valuable. It's about doing pilots in ways that bring stakeholders along rather than going around them. The hard question: how do you harness the NGO's energy and Health's urgency without creating an end-run that poisons the broader coordination? Sometimes saying 'slow down' is the most valuable advice."
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "You propose to the steering committee (attended by: Secretary IT, Secretary Health, Secretary Finance, DPI Coordinator, you):\n\n'Three-track approach:\n1. **Quick win track**: Health department pilot using national stack, WITH state IT security review, funded through Health's donor budget. 6-month timeline. State IT provides security clearance, not implementation.\n\n2. **Governance track**: Establish state DPG policy that balances state IT's security requirements with faster adoption. Finance approves framework budget now, detailed releases based on department proposals.\n\n3. **Vendor engagement track**: Work with TCS and other vendors on how they participate in DPI ecosystem (service layer, not infrastructure monopoly). Revenue department pilots DPG integration with existing systems.\n\nAll three departments make progress on their timeline. State IT maintains security role. Finance has approval framework. TCS has path to participation.'\n\nState IT Secretary: 'This sounds like Health gets to bypass us while we just provide rubber stamp security review. We need real authority.'\n\nHealth Secretary: 'Finally, movement! But will IT's security review actually be fast or will they slow-walk it?'\n\nFinance Secretary: 'The budget framework is vague. We need specific amounts. And what's this about TCS participation? Are we paying them more?'\n\nDPI Coordinator (to you, quietly): 'You're trying to make everyone happy and you've made everyone suspicious. Nobody got what they wanted.'\n\nThe Secretaries are waiting for response.",
+      "prompt": "How do you navigate this? What do you say, and what's your actual strategy?",
+      "evaluate": [
+        "**Impossible Pleasing**: Do they recognize trying to satisfy everyone often satisfies no one?",
+        "**Trade-off Naming**: Do they make explicit what's being gained/given up by each party?",
+        "**Authority Reality**: Do they help State IT get real role (not just 'rubber stamp') that doesn't bottleneck?",
+        "**Trust Building**: Do they address Health's legitimate worry about IT slow-walking approval?",
+        "**Financial Specificity**: Do they help Finance with concrete numbers and accountability?",
+        "**Vendor Realism**: Do they navigate TCS question without naivety or corruption paranoia?",
+        "**Escalation Strategy**: Do they know when to push for decision vs when to revise proposal?",
+        "**Long Game**: Do they see this as one meeting in long relationship-building process?"
+      ],
+      "coaching_notes": "The DPI Coordinator is right - you tried to make everyone happy. That's the trap. State IT doesn't want 'a role' - they want meaningful authority over security decisions. Health doesn't want permission - they want certainty about timeline. Finance doesn't want framework - they want numbers they can defend. TCS question is about whether DPI means cutting existing vendors out. You can't make all these concerns disappear. But you CAN: (1) Make the trade-offs explicit - 'We can have full IT approval authority OR 6-month timeline, not both.' (2) Build in accountability - 'IT security review: 2-week SLA, escalation to Secretary if missed.' (3) Give Finance specifics even if rough. (4) Be honest about TCS - 'They won't do infrastructure monopoly, but they can provide services.' The question is: can you stop trying to craft perfect proposal and start facilitating the actual negotiation of trade-offs?"
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "The steering committee is stuck. Nobody will agree to move forward. Secretaries are looking at each other, waiting for someone to blink.\n\nThe DPI Coordinator asks you: 'What would you do if this was your call?'\n\nYou realize:\n- You're being asked to decide, but you don't have authority\n- Whatever you say will be used politically\n- If you pick a side, you lose the others\n- If you deflect, you lose credibility\n- The MeitY observer is taking notes\n\nYou also notice:\n- The real issue isn't technical architecture\n- It's that nobody wants to be responsible if this fails\n- State IT doesn't want to be blamed for security breach\n- Health doesn't want to be blamed for donor fund loss\n- Finance doesn't want audit problem\n- Everyone wants credit for success, no responsibility for failure\n\nWrite one paragraph that addresses the room: What's the actual problem here, and what's the path forward?",
+      "prompt": "What do you say to the steering committee?",
+      "evaluate": [
+        "**Name the Real Issue**: Do they articulate that this is about risk/credit distribution, not technical architecture?",
+        "**Shared Responsibility**: Do they propose structure where success/failure is shared, not placed on one department?",
+        "**Forcing Function**: Do they use external deadlines (MeitY, donors, Chief Minister) to create urgency?",
+        "**Concrete Next Steps**: Do they suggest specific first actions, not just principles?",
+        "**Political Reality**: Do they acknowledge concerns openly rather than pretending they don't exist?",
+        "**Advisor Credibility**: Do they speak with clarity about what matters without overstepping their role?",
+        "**Chief Minister Shield**: Do they invoke the CM's commitment to create cover for decision-makers?"
+      ],
+      "coaching_notes": "This is the moment where your value as advisor shows. Not in having the perfect technical solution. But in naming what's actually happening ('We're stuck because nobody wants to own the risk') and helping the group find a path. The path probably involves: (1) Framing this as CM priority (creates political cover), (2) Proposing phased approach with built-in review points (reduces risk), (3) Making it clear MeitY/donors are watching (external pressure), (4) Suggesting that decision is theirs but delay has its own cost. You're not deciding. You're helping them see the real choice and making the cost of no-decision visible."
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in a real similar case:\n\n**The advisor tried to craft the perfect technical solution that satisfied everyone's stated concerns.**\n\nResult:\n- Three months of architecture documents and working group meetings\n- State IT got design approval authority (which they used to slow-walk everything)\n- Health lost donor funding, blamed COSS advisor for delay\n- Finance never released budget because 'architecture still being finalized'\n- Revenue stayed with TCS, saw no reason to change\n- NGO partner left frustrated, told other NGOs 'government coordination is impossible'\n- MeitY Observer reported back 'Karnataka is stuck in process'\n- Other states looking at Karnataka as model decided to wait\n- DPI Coordinator was transferred (seen as unable to deliver)\n- Two years later, nothing launched\n\n**A senior advisor would have:**\n\n1. **Named the coordination problem as political, not technical** - 'This isn't about architecture. It's about who gets credit and who takes risk.'\n\n2. **Used external pressure strategically** - Made it clear CM expects progress, donors have deadlines, MeitY is watching. Made inaction costlier than action.\n\n3. **Proposed clear risk/credit sharing** - Health pilots with State IT security clearance (Health leads, IT protects). If pilot succeeds, Health gets credit. If security fails, IT gets vindication. Both have skin in game.\n\n4. **Built in review points, not perfect plans** - 'Let's do 6-month pilot with clear success metrics. Then decide on broader rollout.' Reduced decision stakes.\n\n5. **Worked individual stakeholders, not just committee** - Built trust with State IT Head offline. Helped Finance with specific cost justification. Gave NGO partner realistic expectations. Couldn't do this all in committee meeting.\n\n6. **Protected the DPI Coordinator's authority** - Made sure recommendations strengthened coordinator's convening role, didn't bypass it.\n\n7. **Accepted imperfect progress over perfect plans** - Health pilot with whatever limitations State IT needed was better than no pilot with perfect architecture.\n\n8. **Managed expectations with COSS leadership** - Explained that coordination is inherently slow, set realistic timelines.\n\n**The deeper lesson:**\n\nYou're not there to design the perfect DPI architecture. You're there to help dysfunctional coordination actually coordinate.\n\nThat means:\n- Understanding that 'security concerns' often means 'control concerns'\n- Recognizing when 'we need more analysis' means 'we're afraid to decide'\n- Knowing that perfect consensus is impossible, liveable arrangements are possible\n- Using external deadlines/pressure to force decisions\n- Building trust individually, not just in committee meetings\n- Making progress, even imperfect progress, visible\n\n**The builder trap at the ecosystem level:**\n\nBuilders want to design elegant systems. Advisors help messy stakeholders make imperfect progress.\n\nIf you find yourself crafting comprehensive architecture documents while nothing launches, you're in builder mode.\n\nIf you're helping Health get their pilot running even with State IT constraints you wish didn't exist, you're in advisor mode.\n\nThe question isn't 'what's the right architecture?' It's 'what can actually launch given these stakeholders and constraints?'\n\nAnd sometimes the answer is: a imperfect pilot in one department that proves concept, builds trust, and creates demand. Not a comprehensive framework that everyone agrees to in principle but nobody implements.",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "**Coordination Reality**: Did you understand this is inherently political, not just technical?",
+        "**Builder Trap**: Did you try to design perfect system vs enable imperfect progress?",
+        "**Stakeholder Trust**: Did you work individual relationships or just rely on committee process?",
+        "**External Pressure**: Did you use deadlines and oversight to create urgency?",
+        "**Risk Distribution**: Did you help stakeholders share risk vs trying to eliminate it?",
+        "**Progress Definition**: Did you accept 'Health pilot with constraints' as progress vs 'comprehensive framework'?",
+        "**Role Clarity**: Did you advise the coordinator vs try to coordinate yourself?"
+      ]
+    }
+  ],
+  "tags": ["coordination", "state_implementation", "stakeholder_navigation", "builder_trap", "political_reality", "dpi_rollout"]
+}

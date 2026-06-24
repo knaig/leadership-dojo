@@ -1,0 +1,111 @@
+{
+  "id": "community-engagement-crisis",
+  "course": "community-building-fundamentals",
+  "difficulty": "intermediate",
+  "title": "The Engagement Crisis: Reviving a Dying Community",
+  "country": "Indonesia",
+  "caseType": "community_revival",
+  "learningObjectives": [
+    "Diagnose the root causes of declining community engagement",
+    "Distinguish between recoverable and terminal community decline",
+    "Design interventions that address engagement root causes",
+    "Manage stakeholder expectations during community challenges"
+  ],
+  "context": {
+    "yourRole": "You've been brought in as interim Community Lead for GovDigital Indonesia, a 2-year-old community of government digital transformation practitioners. The previous community manager left 3 months ago.",
+    "situation": "GovDigital Indonesia was once thriving - 1,200 members, active discussions, successful events. Now it's barely alive. The Slack workspace has 3-4 posts per week (down from 50+). Event attendance has dropped 80%. The last newsletter had a 12% open rate.",
+    "pressure": "The Ministry sponsor is considering pulling funding. They've given you 90 days to 'turn things around or we'll sunset the community.' The funder wants a recommendation: invest in revival or wind down gracefully.",
+    "reality": "You're inheriting a mess you didn't create. The previous community manager burned out and left abruptly. Key community champions have disengaged. The platform is cluttered with old content. There are rumors of interpersonal conflicts that were never resolved."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Week 1: Discovery\n\nYou spend your first week diagnosing the situation. Here's what you find:\n\n**Platform Data:**\n- 1,200 registered members\n- 47 active in last 30 days (4% active rate)\n- 15 members responsible for 80% of posts\n- Last active channel: #announcements (one-way broadcasts)\n- Most discussion channels haven't had posts in 2+ months\n- 300+ unread messages in some channels (overwhelming for anyone who returns)\n\n**Member Interviews (10 members, mix of active and inactive):**\n\nActive member (Budi): 'I keep posting but no one responds. It feels like talking to an empty room. I'm about to give up too.'\n\nInactive member (Siti): 'I stopped checking because there was never anything relevant. Just the same few people having the same conversations.'\n\nFormer champion (Hendra): 'There was drama last year. Two prominent members had a public conflict. It was never properly addressed. A lot of us just stepped back after that.'\n\nInactive member (Dewi): 'I joined for the events. When those stopped, there was no reason to stay engaged. I don't have time for random online discussions.'\n\nActive member (Agus): 'The previous community manager held everything together. When she left, there was no one to facilitate. Discussions just died.'\n\n**Event History:**\n- 18 months ago: Monthly webinars (80-120 attendees)\n- 12 months ago: Webinars became sporadic\n- 6 months ago: Last event (35 attendees)\n- Since then: Nothing\n\n**Stakeholder Perspective (Ministry Contact):**\n'We funded this because we believed peer learning could accelerate digital transformation. We see no evidence that's happening. We need to justify continued investment or reallocate the budget to something with visible impact.'",
+      "prompt": "Based on your discovery, what are the root causes of decline? What's your initial diagnosis?",
+      "evaluationCriteria": [
+        "**Multiple Cause Recognition**: Do they identify that multiple factors contributed to decline?",
+        "**Root Cause Depth**: Do they go beyond symptoms to underlying causes?",
+        "**Conflict Significance**: Do they recognize the unresolved conflict as a major factor?",
+        "**Leadership Dependency**: Do they identify over-reliance on one community manager?",
+        "**Value Proposition**: Do they question whether the core value proposition was strong enough?"
+      ],
+      "coachingNotes": "The temptation is to jump to solutions. Resist it. This week is about diagnosis. The symptoms are clear (low engagement), but the root causes are multiple:\n\n1. **Leadership single point of failure**: The community was held together by one person. When she left, there was no distributed leadership. This is a structural problem.\n\n2. **Unresolved conflict**: Hendra's comment is critical. Conflicts that aren't addressed don't go away - they fester. Members either take sides or, more commonly, disengage entirely. The 'drama' probably drove away moderate members who didn't want to get involved.\n\n3. **Value proposition drift**: Dewi joined for events. When events stopped, her value proposition disappeared. Was the online community ever valuable on its own, or was it just an adjunct to events?\n\n4. **Platform overwhelm**: 300+ unread messages is a barrier, not an invitation. Returning feels like a chore, not an opportunity.\n\n5. **Feedback loop death spiral**: Low engagement leads to less engagement. Budi posting to silence is the visible symptom. Once this dynamic starts, it accelerates.\n\nThe key question: Is this community recoverable, or has it passed the point of no return? The answer depends on whether the original value proposition was real and whether the remaining engaged members can be the nucleus of revival."
+    },
+    {
+      "round": 2,
+      "type": "decision_point",
+      "situation": "Week 2: The Revival vs. Sunset Decision\n\nYou need to recommend a path forward to the Ministry. You've identified three options:\n\n**Option A: Full Revival Investment**\n- Bring in resources to revitalize the community\n- Hire dedicated community manager\n- Relaunch with refreshed strategy\n- Estimated cost: $50,000 over 12 months\n- Risk: Might not work; could be throwing good money after bad\n\n**Option B: Graceful Wind-Down**\n- Acknowledge the community has run its course\n- Archive valuable content\n- Help members transition to other networks\n- Sunset the platform over 6 months\n- Estimated cost: $10,000\n- Risk: Lose potential value; admit failure\n\n**Option C: Pivot to New Model**\n- Shut down current platform\n- Launch smaller, focused initiative\n- Different format (cohort-based? event-focused?)\n- Invite only most engaged members\n- Estimated cost: $30,000 over 12 months\n- Risk: New initiative might face same challenges\n\nYou dig deeper to inform your recommendation:\n\n**The 47 active members**: When surveyed, 38 said they'd be 'very disappointed' if the community disappeared. They cite: 'only place to connect with peers doing similar work,' 'where I learned about X approach,' 'my professional network in this space.'\n\n**The conflict situation**: You've learned the details. Two senior members disagreed publicly about a policy issue. It got personal. Both have since left the community, but their allies remain and don't interact.\n\n**Ministry priorities**: They're about to launch a major new DPI initiative and had hoped this community could support knowledge sharing. Without a community, they'll need to build coordination mechanisms from scratch.\n\nThe Ministry contact asks: 'What's your recommendation? And be honest - is this worth saving, or are we being sentimental about something that's already dead?'",
+      "prompt": "What's your recommendation and why? What criteria are you using to make this judgment?",
+      "evaluationCriteria": [
+        "**Clear Recommendation**: Do they make a definitive choice rather than hedging?",
+        "**Evidence-Based**: Do they use the data to support their recommendation?",
+        "**Criteria Transparency**: Do they articulate what criteria informed their decision?",
+        "**Risk Acknowledgment**: Do they honestly address the risks of their recommended path?",
+        "**Strategic Alignment**: Do they consider how the community serves broader Ministry goals?"
+      ],
+      "coachingNotes": "This is a judgment call, and there's no objectively correct answer. But there are better and worse ways to make the decision.\n\n**Case for revival (Option A or C):**\n- 38 members saying they'd be 'very disappointed' is significant. In community measurement, that's a strong signal of product-market fit.\n- The Ministry has an upcoming need the community could serve.\n- The causes of decline are identifiable and addressable (leadership gap, unresolved conflict, platform overwhelm).\n\n**Case for sunset (Option B):**\n- 4% active rate is very low.\n- Throwing resources at communities in death spirals often fails.\n- The cost of failed revival might exceed the cost of starting fresh.\n\n**The hybrid path (Option C) is probably strongest:**\n- Acknowledge the current form isn't working.\n- Preserve the core value (peer connection among practitioners).\n- Start fresh with lessons learned: distributed leadership, conflict resolution protocols, focused scope.\n- Invite the 38 who'd be disappointed - they're the nucleus.\n\nKey criteria for the decision:\n1. Is there genuine, irreplaceable value? (Yes - 'only place to connect with peers')\n2. Are the causes of decline fixable? (Yes - all are addressable)\n3. Is there strategic need? (Yes - Ministry's new initiative)\n4. Is there a committed core? (Yes - 38 passionate members)\n\nThe recommendation should be honest about challenges while making a clear directional choice. Hedging doesn't serve anyone."
+    },
+    {
+      "round": 3,
+      "type": "response_analysis",
+      "situation": "Week 4: The Revival Sprint\n\nThe Ministry approved Option C - a pivot with reduced investment. You have 60 days and $30,000 to create a viable path forward. You've decided to:\n\n1. Close the old Slack workspace (too much baggage)\n2. Launch a new, focused platform with a fresh start\n3. Personally invite the 38 'very disappointed' members plus 20 others who showed potential\n4. Focus on a single use case initially: peer learning circles around the Ministry's new DPI initiative\n\nWeek 4 results:\n- 45 of 58 invited members have joined the new platform\n- Initial energy is good - people are happy to have a fresh start\n- You've launched the first peer learning circle (12 members meeting bi-weekly)\n- The conflict parties were not invited to the new community\n\nBut challenges emerge:\n\n**Challenge 1: The Excluded**\nAhmad, one of the conflict parties, reaches out: 'I heard about the new community. Why wasn't I invited? I was one of the most active contributors. This feels like punishment.'\n\n**Challenge 2: The Skeptics**\nBudi (who stuck with the old community) comments in the new space: 'How is this different from before? I've seen too many relaunches that fizzle. What's actually changed?'\n\n**Challenge 3: The Time Investment**\nYou're spending 30+ hours per week on community management - personally facilitating discussions, sending reminders, creating content. This isn't sustainable.\n\n**Challenge 4: The Silent Majority**\nEven in the new community, 25 of 45 members haven't posted anything yet. The pattern is starting to repeat.\n\nThe Ministry asks for a Week 4 progress report.",
+      "prompt": "How do you address each of these challenges? And what do you tell the Ministry about progress?",
+      "evaluationCriteria": [
+        "**Conflict Resolution**: Do they have a thoughtful approach to the excluded member?",
+        "**Differentiation**: Can they articulate what's genuinely different this time?",
+        "**Sustainability Planning**: Do they recognize the community manager burnout risk?",
+        "**Engagement Strategy**: Do they have tactics for activating the silent members?",
+        "**Honest Reporting**: Do they give the Ministry an accurate picture, not just positive spin?"
+      ],
+      "coachingNotes": "Each challenge needs a different approach:\n\n**Ahmad (the excluded)**: This is delicate. Excluding conflict parties felt necessary for a fresh start, but it creates its own problems. Options:\n- Meet with Ahmad privately. Understand his perspective on the original conflict.\n- If he shows genuine willingness to move forward constructively, offer conditional inclusion with clear behavioral expectations.\n- If he's still relitigating the conflict, explain the community needs to move past it.\n- Don't avoid the conversation - that's what the old community did.\n\n**Budi (the skeptic)**: His skepticism is valuable, not hostile. Address it directly:\n- Acknowledge the valid concern: 'You're right to be skeptical. Here's what's actually different: [specific changes]'\n- Distributed leadership (not one person), focused scope (one use case first), conflict resolution protocols\n- Ask him to help hold the community accountable\n\n**Time investment (burnout risk)**: This is the most dangerous challenge. You cannot sustain 30 hours/week, and if you burn out, the community dies again. Immediate priorities:\n- Identify 3-5 members who can share facilitation\n- Create structures that don't require constant management (standing meeting times, discussion templates)\n- Accept that some things won't happen - prioritize ruthlessly\n\n**Silent members**: Don't assume silence means disengagement. Some people are readers, not writers. But do:\n- Direct outreach to a few silent members to understand why\n- Create low-barrier engagement options (polls, emoji reactions)\n- Don't judge success solely by posting frequency\n\n**Ministry report**: Be honest. Progress is real but fragile. Share both the wins (45 members, first learning circle, genuine energy) and the risks (sustainability concerns, silent majority). Ask for specific support (help identifying distributed leaders, connections to Ministry initiatives)."
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "Week 12: The 90-Day Review\n\nYou're presenting to the Ministry on community progress. Here's where you are:\n\n**Wins:**\n- 62 members (grew from 45 through organic invitations)\n- 3 active peer learning circles running bi-weekly\n- 35% active participation rate (up from 4%)\n- First community-created resource: 'DPI Implementation Checklist' now used by Ministry\n- Ahmad returned to community after restorative conversation; relationship with other party remains cool but civil\n- Two members have stepped up as co-facilitators\n\n**Concerns:**\n- Still heavily dependent on your facilitation\n- Peer learning circles are good but limited format\n- Some original community members feel excluded from the 'reboot'\n- No clear path to the original 1,200-member scale\n\nThe Ministry contact says: 'The numbers are much smaller, but the energy feels different. My question: is this sustainable when you're not personally driving it? And should we aim to grow back to the original scale?'\n\nYou need to present your assessment and recommendations for the next phase.",
+      "prompt": "What's your honest assessment of the community's health and sustainability? What would you recommend for the next 6-12 months?",
+      "evaluationCriteria": [
+        "**Honest Assessment**: Do they give a balanced view, not just highlighting wins?",
+        "**Sustainability Focus**: Do they prioritize making the community self-sustaining over growth?",
+        "**Scale Realism**: Do they question whether original scale is the right goal?",
+        "**Next Phase Clarity**: Do they propose concrete, achievable next steps?",
+        "**Risk Mitigation**: Do they address the dependency risk?"
+      ],
+      "coachingNotes": "This is the 'what now?' moment. The revival worked in the sense that there's a living community again. But sustainability is still a question.\n\n**Assessment should acknowledge:**\n- Real progress: 35% active vs 4% is a major improvement. Community-created resources show genuine value creation.\n- Fragility: Dependence on you is still high. Two co-facilitators is good but not enough.\n- Scale question: 62 engaged members may be worth more than 1,200 mostly-inactive members. Don't assume bigger is better.\n\n**Recommendations might include:**\n\n1. **Consolidate before growing**: The next 6 months should focus on sustainability, not scale. Goals: 5+ active facilitators, self-running learning circles, engagement rate above 30%.\n\n2. **Growth criteria**: Only grow when sustainability criteria are met. Propose specific metrics that must be achieved before any growth push.\n\n3. **Federation model**: Rather than one big community, consider multiple smaller communities (by region? by topic?) that share resources but run independently.\n\n4. **Alumni engagement**: Don't ignore the original 1,200. Some might be reactivated through specific high-value offerings (events, resources). But don't try to revive everyone.\n\n5. **Success redefinition**: Propose new success metrics focused on outcomes (policy improvements, implementation accelerated, peer problems solved) rather than member counts.\n\nThe Ministry's question about scale deserves a thoughtful answer: Maybe 1,200 members was never the right goal. Maybe 200 highly engaged practitioners creating real value is worth more. Challenge the assumption that recovery means returning to the previous state."
+    }
+  ],
+  "keyTakeaways": [
+    "Community decline usually has multiple interacting causes, not one simple explanation",
+    "Unresolved conflicts create lasting damage - people disengage rather than engage with conflict",
+    "Over-dependence on a single leader is a structural vulnerability, not just an operational issue",
+    "Sometimes the right revival strategy is to start fresh rather than fix what's broken",
+    "Small engaged communities often deliver more value than large inactive ones",
+    "Community sustainability requires distributed leadership and self-running structures",
+    "Honest assessment matters more than optimistic spin - stakeholders need accurate information",
+    "Scale should follow sustainability, not precede it",
+    "The goal isn't returning to the previous state - it's building something better"
+  ],
+  "frameworks": [
+    {
+      "name": "Community Decline Diagnostic",
+      "description": "Five root cause categories to investigate: (1) Leadership gaps, (2) Unresolved conflicts, (3) Value proposition drift, (4) Platform/experience problems, (5) External context changes.",
+      "application": "When diagnosing decline, systematically investigate all five categories rather than jumping to the first explanation you find."
+    },
+    {
+      "name": "Revival vs. Sunset Decision Matrix",
+      "description": "Assess four criteria: (1) Is there genuine irreplaceable value? (2) Are decline causes fixable? (3) Is there strategic need? (4) Is there a committed core? If yes to 3+, revival is likely worthwhile.",
+      "application": "Use this framework to make objective revival decisions rather than emotional ones based on sunk cost."
+    },
+    {
+      "name": "Sustainable Community Checklist",
+      "description": "A community is sustainable when: (1) Multiple people can facilitate, (2) Structures run without constant management, (3) Value creation is member-driven, (4) New members are onboarded by existing members, (5) Community survives leader transitions.",
+      "application": "Before investing in growth, achieve at least 4 of 5 sustainability criteria."
+    }
+  ],
+  "relatedCases": [
+    "community-cold-start",
+    "change-management-resistance",
+    "conflict-resolution-ministry-tensions"
+  ]
+}

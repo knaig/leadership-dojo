@@ -1,0 +1,92 @@
+{
+  "id": "system1-urgency-trap",
+  "course": "system-1-2-thinking",
+  "difficulty": "foundation",
+  "title": "The Urgency Trap: When Fast Feels Important",
+  "country": "Kenya",
+  "caseType": "time_pressure_decision",
+  "learningObjectives": [
+    "Distinguish genuine urgency from manufactured urgency",
+    "Recognize how time pressure prevents System 2 engagement",
+    "Practice slowing down high-stakes decisions",
+    "Identify situations where apparent urgency is strategic pressure"
+  ],
+  "context": {
+    "yourRole": "Digital transformation advisor to Kenya's Ministry of Health. You're embedded with the ministry's DPI unit helping them implement a health data interoperability platform.",
+    "situation": "It's Thursday afternoon. The Cabinet Secretary is presenting the ministry's digital strategy to Parliament on Monday. Your team has been working on a health data sharing proposal for months.",
+    "pressure": "The CS's office just called - they want to include the health data platform in Monday's presentation as a 'flagship initiative.' They need your technical specifications and vendor by end of day Friday.",
+    "reality": "Your team is still evaluating architectures. You haven't finalized requirements. Vendor selection process hasn't started. Timeline suddenly compressed from 6 weeks to 24 hours."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Your phone rings. It's David from the CS's office:\n\n'We need the health platform specs by tomorrow 5pm for the CS's Parliament brief. This is a huge opportunity - the President is prioritizing digital health. If we include it Monday, we get funding priority for next fiscal year. We need: (1) Technical architecture summary, (2) Implementation timeline, (3) Vendor recommendation, (4) Budget estimate. Can you send by 5pm tomorrow?'\n\nYou: 'David, we're still in requirements gathering. We haven't evaluated vendors yet. Monday is only 3 days away-'\n\nDavid: 'I understand, but this is the window. If we miss Monday's session, we wait 6 months for next budget presentation. The PS is counting on you. Just give us your best estimate. It doesn't have to be perfect, just good enough for the brief.'\n\nAfter hanging up, your team gathers:\n\nJames (Technical Lead): 'We can pull together something. I'll adapt our draft architecture. We can use assumptions for the vendors - maybe get quotes from the usual suspects.'\n\nSarah (Health Systems Expert): 'But we haven't finalized what data needs to be shared. Different stakeholders want different things. If we lock in architecture now, we might get it wrong.'\n\nJames: 'Look, this is how government works. You wait months for attention, then when you get it, you have to move fast. We can't let perfect be the enemy of good.'\n\nYou notice:\n- Intense time pressure creating urgency feeling\n- James ready to cut corners to meet deadline  \n- Sarah uncomfortable but not pushing back hard\n- The 'opportunity cost' framing (miss this, wait 6 months)\n- Your own System 1 activation: heart rate up, feeling of urgency\n- Nobody has questioned whether Monday is actually a hard deadline",
+      "prompt": "What's happening here from a System 1/System 2 perspective? How should you respond?",
+      "evaluationCriteria": [
+        "**Urgency vs Importance**: Do they distinguish between 'feels urgent' and 'is important'?",
+        "**Manufactured Deadline**: Do they question whether Monday is a real constraint or negotiable?",
+        "**System 1 Activation**: Do they recognize their own stress response is preventing clear thinking?",
+        "**Risk Assessment**: Do they identify what could go wrong with rushed technical decisions?",
+        "**Alternative Paths**: Do they consider other ways to secure funding priority without premature commitments?"
+      ],
+      "coachingNotes": "This is System 1's urgency trap. Time pressure triggers stress response, which activates System 1 and shuts down System 2. Everything feels urgent, important, high-stakes. James's 'this is how government works' is rationalization - normalizing rushed decisions. The 'miss this, wait 6 months' creates fear of opportunity loss. But pause: Is Monday really immovable? What's the actual cost of saying 'We need 2 weeks to do this properly'? What's the cost of locking in wrong architecture? System 2 question: In 6 months, would you rather have rushed approval with wrong specs, or slightly delayed approval with right specs?"
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You decide to call David back: 'David, I understand the Monday presentation is important. But committing to technical architecture and vendors in 24 hours creates serious risk. Can I propose an alternative?'\n\nDavid: 'What alternative? Monday is Monday.'\n\nYou: 'Include health data platform in the brief, but as a planned initiative, not a committed design. Say we're finalizing requirements and will have detailed proposal in 2 weeks. This still shows the ministry is prioritizing digital health.'\n\nDavid: 'The CS wants specifics. She doesn't want to say \"we're planning\" - she wants to announce we're doing it. Timelines, costs, vendors. That's what gets budget attention.'\n\nYou: 'If we announce specifics that turn out to be wrong, that's worse. We lose credibility. Give me this: Let's include the initiative with a reasonable timeline. I'll give you high-level goals and approach by tomorrow. Detailed specs in 2 weeks. Budget estimate with ranges, not false precision.'\n\nDavid pauses: 'I'll ask the PS. He might go for it. But if he says no, can you deliver what I originally asked?'\n\nYou're now facing:\n- A negotiation that might work or might not\n- Pressure to commit to delivering rushed work as backup\n- Your team watching to see if you'll protect them from unrealistic demands\n- The political reality that Parliament presentations matter\n- The risk that being too rigid loses the opportunity",
+      "prompt": "How do you navigate this? What's your actual decision?",
+      "evaluationCriteria": [
+        "**Boundary Setting**: Do they hold the line on technical quality while offering alternatives?",
+        "**Negotiation Strategy**: Do they give the PS a face-saving option that meets his political need?",
+        "**Team Protection**: Do they avoid committing team to impossible work?",
+        "**Realistic Assessment**: Do they assess what CAN be delivered responsibly in 24 hours?",
+        "**Escalation Readiness**: Do they know when they'd escalate (say no completely) vs compromise?"
+      ],
+      "coachingNotes": "You're doing the right thing - pushing back on the urgency while offering alternatives. But be ready for them to say no. Then you face the hard choice: Deliver rushed work that might be wrong, or refuse and risk losing political support. There's no perfect answer. System 2 thinking helps you see the tradeoffs clearly: Rushed work gets you in the brief but with technical commitments that may be wrong. Refusing protects technical quality but may delay funding. The 'right' answer depends on: How wrong would rushed work be? How important is Monday's brief? Can wrong specs be corrected later or are they locked in?"
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "David calls back: 'The PS says the Cabinet Secretary specifically asked for technical details. They want to show they've done the homework, not just announce vague plans. We need: architecture type (centralized vs federated), rough vendor estimate, timeline, and budget range. Can you give that by tomorrow?'\n\nYour team reconvenes. James: 'I can do architecture summary and timeline if we make assumptions. Sarah, can you draft stakeholder requirements based on what we know so far?'\n\nSarah: 'I can draft something, but several health programs haven't responded yet on their data sharing needs. We'd be guessing.'\n\nJames: 'Then we guess educated guesses. We know the general direction.'\n\nYou: 'What if we guess wrong and lock ourselves into architecture that doesn't serve actual needs?'\n\nJames: 'We cross that bridge when we come to it. Right now, we need to be in Monday's brief or we lose funding priority. I vote we deliver what they're asking for.'\n\nSarah: 'I'm uncomfortable, but if everyone thinks this is the right call...'\n\nBoth look at you for the final decision.\n\nYou think through the scenarios:\n\nSCENARIO A: Deliver rushed specs\n- PRO: Get into Monday's brief, keep political support, possible funding priority\n- CON: Lock into potentially wrong architecture, set unrealistic expectations, may have to backtrack later (politically costly)\n\nSCENARIO B: Refuse, offer high-level only\n- PRO: Protect technical integrity, avoid wrong commitments\n- CON: May be left out of brief, lose funding priority, disappoint CS's office\n\nSCENARIO C: Deliver with caveats\n- Give specs labeled 'preliminary', include ranges not point estimates, document assumptions explicitly\n- PRO: Balance political need with technical honesty\n- CON: May not satisfy CS's desire for confident specifics",
+      "prompt": "What do you decide? Walk through your reasoning.",
+      "evaluationCriteria": [
+        "**Scenario Analysis**: Do they explicitly map out probable outcomes of each path?",
+        "**Second-Order Effects**: Do they think about what happens AFTER Monday's brief?",
+        "**Reversibility**: Do they assess which commitments can be changed later vs which are locked in?",
+        "**Documentation Strategy**: Do they protect themselves with written caveats?",
+        "**Team Dynamics**: Do they notice Sarah's discomfort and the pressure to conform?"
+      ],
+      "coachingNotes": "This is a judgment call with no objectively right answer. System 2's role is to make the tradeoffs explicit, not to guarantee a perfect choice. Key questions: How locked-in are Monday's commitments? If you say 'federated architecture' Monday, can you pivot to centralized later? Or will that be seen as incompetence? How important is this funding priority? Is it genuinely critical or just one opportunity among several? What's your team's capacity for rework if initial specs are wrong? The 'best' answer depends on context you'd need more information to assess. The important thing is you're THINKING about these questions, not just reacting to urgency."
+    }
+  ],
+  "keyTakeaways": [
+    "Time pressure activates System 1 and prevents System 2 deliberation",
+    "Urgency and importance are different - something can feel urgent without being important",
+    "Manufactured deadlines (Monday presentation) may be negotiable if you push back",
+    "Rushed technical decisions create lock-in and future costs",
+    "Offering alternatives (high-level vs detailed) can balance political needs with technical rigor"
+  ],
+  "frameworks": [
+    {
+      "name": "Eisenhower Matrix",
+      "description": "Separate urgent from important. Act on important, question urgent.",
+      "application": "When facing time pressure, ask: 'Is this genuinely important, or does it just feel urgent?'"
+    },
+    {
+      "name": "Scenario Analysis",
+      "description": "Explicitly map out consequences of different paths",
+      "application": "List pros/cons of each option to activate System 2 instead of reacting"
+    },
+    {
+      "name": "Reversibility Test",
+      "description": "Distinguish one-way doors from two-way doors",
+      "application": "Before rushing, ask: 'Can we change this decision later, or is it locked in?'"
+    }
+  ],
+  "relatedCases": [
+    "system1-vendor-charm",
+    "action-bias-crisis-response"
+  ]
+}

@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 
-const CASES_DIR = path.join(process.cwd(), "../web/lib/cases");
-const COURSES_DIR = path.join(process.cwd(), "../web/lib/courses");
+const CASES_DIR = path.join(process.cwd(), "data/cases");
+const COURSES_DIR = path.join(process.cwd(), "data/courses");
 
 export interface Round {
   round: number;

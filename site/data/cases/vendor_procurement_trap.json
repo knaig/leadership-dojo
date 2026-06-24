@@ -1,0 +1,152 @@
+{
+  "id": "vendor_procurement_trap",
+  "title": "The Procurement Committee: Open Source vs Incumbent",
+  "case_type": "vendor_navigation",
+  "country": "India",
+  "context": {
+    "political_landscape": "State government committed to open-source DPGs. But procurement rules require competitive bidding. Incumbent vendors have deep relationships and procedural expertise.",
+    "recent_events": "State issued tender for identity verification system. Three vendors responded: incumbent (Infosys), startup (local company), and your recommended open-source stack. Procurement committee evaluating.",
+    "cultural_factors": "Risk-averse procurement culture. Fear of audit issues. Preference for 'known' vendors. Suspicion of 'free' software. Vendor lobbying is sophisticated. Officers have families to protect.",
+    "your_position": "You're the COSS technical advisor to the procurement committee. Not a voting member. Your job is to help evaluate technical proposals. The committee includes: Procurement Officer, Finance Representative, IT Department Head, User Department Head, and Legal Advisor."
+  },
+  "stakeholder_map": {
+    "Procurement Officer": {
+      "power": "high-process",
+      "stance": "Follows rules meticulously, risk-averse, wants 'defensible' decision",
+      "interests": "Avoiding audit issues, protecting career, following established procedures"
+    },
+    "Finance Representative": {
+      "power": "medium-oversight",
+      "stance": "Questions 'free' open-source, skeptical of hidden costs",
+      "interests": "Fiscal prudence, value for money, avoiding cost overruns"
+    },
+    "State IT Department Head": {
+      "power": "high-technical",
+      "stance": "Comfortable with incumbent, worried about open-source support burden",
+      "interests": "Operational reliability, staff capacity, avoiding blame if system fails"
+    },
+    "User Department Head": {
+      "power": "medium-requirements",
+      "stance": "Just wants system that works, skeptical of tech debates",
+      "interests": "Meeting departmental needs, avoiding delays, easy to use system"
+    },
+    "Legal Advisor": {
+      "power": "medium-veto",
+      "stance": "Concerned about liability, IPR issues, support contracts",
+      "interests": "Legal compliance, risk mitigation, clear accountability"
+    },
+    "Infosys (Incumbent)": {
+      "power": "high-influence",
+      "stance": "Professional, knows procurement process intimately, emphasizes reliability",
+      "interests": "Winning contract, maintaining relationship, demonstrating superiority over open-source"
+    },
+    "Local Startup": {
+      "power": "low",
+      "stance": "Eager, inexperienced with government, price competitive",
+      "interests": "Breaking into government market, proving capability, growth"
+    },
+    "COSS (Your Organization)": {
+      "power": "medium-advisory",
+      "stance": "Advocating for open-source DPG approach",
+      "interests": "Demonstrating DPG model works, building ecosystem, replicability"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Procurement committee meeting. Three proposals on table:\n\n**Infosys Proposal**: ₹4.2 crores over 3 years. Turnkey solution. Includes: software licenses, implementation, training, support, 99.9% uptime SLA. References from 5 state governments. 200-page proposal with detailed compliance matrix.\n\n**Local Startup**: ₹1.8 crores over 3 years. Custom development. Includes: development, deployment, basic support. No major government references. 40-page proposal, thin on compliance documentation.\n\n**Open-Source Stack (your recommendation)**: ₹1.2 crores over 3 years. Based on national DPG. Costs are: integration, training, support contracts with community providers. No licensing fees. Implementation by state IT with external support. 60-page proposal.\n\nProcurement Officer: 'All three technically qualify. Now we must evaluate which is best value and lowest risk.'\n\nFinance Rep: 'The open-source is cheapest, but what are the hidden costs? Who do we sue if something goes wrong?'\n\nIT Head: 'Infosys has proven track record. We know their system works. Open-source means we're dependent on community support - what if nobody answers when we have crisis?'\n\nLegal Advisor: 'The open-source proposal has no liability clause. Who takes responsibility for failures? Infosys has clear indemnity terms.'\n\nUser Dept Head: 'I don't care about the technology. I need system working in 6 months for our enrollment drive.'\n\nProcurement Officer to you: 'As technical advisor, please evaluate which proposal best meets our requirements with acceptable risk.'",
+      "prompt": "What do you actually see happening here? What are the real dynamics at play?",
+      "evaluate": [
+        "**Procurement Theater**: Do they recognize this is structured to favor incumbent vendors?",
+        "**Risk Framing**: Do they see how 'risk' is being defined as 'different from what we've done before'?",
+        "**Hidden Biases**: Do they notice the committee asking questions that open-source can't answer same way as proprietary (lawsuit liability, single vendor support)?",
+        "**Real Concerns**: Do they distinguish legitimate operational concerns from procedural conservatism?",
+        "**Power Dynamics**: Do they understand Infosys isn't in the room but shapes conversation through proposal quality and past relationships?",
+        "**Your Position**: Do they see you're being asked to validate pre-existing preference vs actually evaluate alternatives?"
+      ],
+      "coaching_notes": "This is the classic procurement trap. The process appears fair - competitive bidding, evaluation criteria, committee review. But it's structured in ways that favor incumbents: emphasis on 'proven track record', focus on liability/indemnity, requirements for detailed compliance documentation (which takes resources to produce), preference for 'full-service' over modular approaches. The committee isn't being corrupt. They're being risk-averse in a system that punishes innovation failures but not incumbent failures. Your challenge: how do you help them see open-source risks they CAN manage vs risks they're imagining?"
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "After the meeting, IT Head pulls you aside:\n\n'Look, I get it. Open-source is the future. But you're not thinking about my reality. If I go with Infosys and it fails, I can say \"We used proven vendor with track record.\" If I go with open-source and it fails, they'll ask \"Why did you experiment with unproven technology?\" My successor will be dealing with this system, not you.\n\nAlso, let me be honest - Infosys has been working with us for 8 years. They understand our environment. They train our staff. They respond to our calls. Your open-source community support model - who am I calling at 2am when system crashes during election enrollment?'\n\nThen Infosys sales director calls you (you've worked with them before):\n\n'We're not against open-source. But the state isn't ready. They need handholding. They need someone to blame if things go wrong. We can actually help here - what if we proposed a hybrid model? We use some open-source components but provide the integration, support, and liability cover. We can even work with your recommended stack.\n\nThis way everyone wins: State gets familiar vendor support, you get open-source adoption, we get the contract. Think about it - isn't partial adoption better than rejection?'\n\nYou realize both are making pragmatic points. IT Head's career risk concerns are real. Infosys's hybrid offer removes some barriers. But you also see: hybrid model often means open-source gets blamed for anything that breaks, and proprietary layers prevent real ecosystem development.",
+      "prompt": "How do you think through this? What's your actual strategy?",
+      "evaluate": [
+        "**Legitimate Concerns**: Do they validate IT Head's operational reality without accepting it as unchangeable?",
+        "**Career Risk Reality**: Do they understand why individuals choose safe failures over risky innovations?",
+        "**Vendor Sophistication**: Do they see Infosys's hybrid offer is smart positioning that neutralizes your advocacy?",
+        "**Long-term vs Short-term**: Do they think about 'partial adoption' implications for ecosystem development?",
+        "**Support Model Design**: Do they address the '2am phone call' question with concrete support structure?",
+        "**Risk Distribution**: Do they think about how to share risk (state, COSS, community) so IT Head isn't holding it all?",
+        "**Hybrid Evaluation**: Do they analyze when hybrid approaches enable transition vs when they prevent it?"
+      ],
+      "coaching_notes": "IT Head is being honest about his constraints. In government, career risk is asymmetric: safe failures (we used the proven vendor) are forgivable, risky failures (we tried something innovative) can end careers. Infosys's hybrid offer is sophisticated - it takes your language (open-source) while maintaining their revenue and control. The question isn't whether IT Head or Infosys are wrong. It's: how do you address their legitimate concerns in ways that still enable the ecosystem shift you're trying to create? This might mean: phased approach, stronger support commitments from COSS, pilot before full rollout, risk-sharing mechanisms. The trap is either: (1) insisting on pure open-source and losing, or (2) accepting hybrid model that prevents real ecosystem development."
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "The local startup founder reaches out to you:\n\n'We know we're going to lose. Infosys will win - they always do. The committee is just going through motions. But we wanted to participate to learn the process.\n\nHere's what we've learned: Government procurement is designed for big vendors. The compliance requirements, documentation standards, financial guarantees - these are barriers for startups like us. Even if we have better technology and lower costs.\n\nBut here's an idea: What if we partnered with you (COSS) on this? You're credible with government. We have the technical capability. Together we could deliver the open-source solution. You provide the \"brand name\" comfort, we provide implementation.\n\nOr, we could work with Infosys on their hybrid proposal - provide the open-source expertise while they handle procurement and support. We'd be subcontractor. Not ideal, but it's a way in.'\n\nYou see three paths:\n\n1. **COSS-Startup Partnership**: Could work. But COSS's role is advisory, not implementation vendor. Blurs lines. Also, if implementation fails, damages COSS reputation and hurts future advisory work.\n\n2. **Startup as Infosys Subcontractor**: Pragmatic. Startup gets experience, revenue. But becomes dependent on Infosys relationship. Doesn't build independent capability.\n\n3. **Support Startup's Independent Bid**: Politically harder. Would require challenging procurement process design. Time-consuming. May not succeed. But builds ecosystem long-term.\n\nThe startup founder: 'What do you think? We'll do whatever you advise.'",
+      "prompt": "What's your advice? What do you actually do?",
+      "evaluate": [
+        "**Role Boundaries**: Do they see the risk of COSS becoming implementation vendor vs staying advisor?",
+        "**Ecosystem Building**: Do they think about long-term capability development vs short-term win?",
+        "**Dependency Dynamics**: Do they understand subcontractor model prevents independent ecosystem growth?",
+        "**Procurement Reform**: Do they recognize startup barriers are systemic, not just this procurement?",
+        "**Startup Protection**: Do they help startup make decision that's right for them, not just for COSS mission?",
+        "**Multiple Games**: Do they see this procurement AND building startup ecosystem AND procurement reform as different time horizons?",
+        "**Pragmatic Idealism**: Can they support startup's near-term survival needs while advancing long-term ecosystem goals?"
+      ],
+      "coaching_notes": "The startup is being realistic - they probably will lose to Infosys. But your response here shapes what kind of ecosystem develops. If COSS becomes implementation vendor: short-term might work, long-term confuses your role and makes governments think they need COSS for every implementation. If startup becomes Infosys subcontractor: they get revenue but become perpetually junior partner, don't build independent capacity. If you challenge procurement design: might not win this time, but could create space for startups in future. The builder trap here is: wanting to 'save' this procurement by jumping in as implementer. The advisor question is: what advice helps this startup AND builds ecosystem AND preserves COSS's advisory role? Sometimes that means: help them become subcontractor for this bid while working separately on procurement reform for next round."
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "Technical evaluation meeting. Each committee member scores proposals. The scoring matrix:\n\n**Technical Capability**: Infosys 95/100, Startup 75/100, Open-source 85/100\n**Implementation Track Record**: Infosys 100/100, Startup 40/100, Open-source 60/100\n**Cost**: Infosys 70/100, Startup 90/100, Open-source 100/100\n**Support & Maintenance**: Infosys 100/100, Startup 60/100, Open-source 50/100\n**Risk Profile**: Infosys 95/100, Startup 55/100, Open-source 65/100\n\n**Total**: Infosys 460/500, Open-source 360/500, Startup 320/500\n\nProcurement Officer: 'Based on objective evaluation, Infosys is recommended vendor. Unless technical advisor has objections?'\n\nYou look at the scores. Some observations:\n- 'Implementation Track Record' heavily weights past government experience (which open-source/startups can't have by definition)\n- 'Support & Maintenance' scores based on single-vendor model (disadvantages distributed support)\n- 'Risk Profile' treats 'proven vendor' as low risk, 'new approach' as high risk (regardless of technical merit)\n- But scores aren't wrong per se - they reflect committee's legitimate concerns\n\nYou could:\n\n1. **Accept the scores** - They followed process, concerns are legitimate\n2. **Challenge the scoring criteria** - Point out they're biased toward incumbents\n3. **Request pilot phase** - Propose 6-month pilot of open-source before full procurement\n4. **Propose framework contract** - Multiple vendors selected, departments choose based on needs\n\nLegal Advisor: 'If we don't follow the scoring, we need documented justification. Any challenge opens us to audit risk.'\n\nFinance Rep: 'The scores show Infosys is best value despite higher cost. That's defensible.'\n\nIT Head looks relieved.\n\nUser Dept: 'So we're going with Infosys? When do we start?'\n\nProcurement Officer to you: 'Your recommendation?'",
+      "prompt": "What do you say? What's your actual strategy here?",
+      "evaluate": [
+        "**Structural Bias Recognition**: Do they see how evaluation criteria encode preference for incumbents?",
+        "**Battle Selection**: Do they know when to challenge this procurement vs influence future procurements?",
+        "**Risk Distribution**: Do they understand committee members' audit risk fears are legitimate?",
+        "**Pilot Strategy**: Do they see pilots as compromise that reduces risk while creating evidence?",
+        "**Framework Thinking**: Do they consider alternatives to single-vendor-winner model?",
+        "**Long Game**: Do they distinguish losing this battle from losing the war on procurement reform?",
+        "**Documentation**: Do they help committee justify whatever decision with proper documentation?",
+        "**Relationship Preservation**: Do they maintain credibility for future advisory work regardless of this outcome?"
+      ],
+      "coaching_notes": "This is the moment where you see whether you're willing to lose this battle to win the longer war. The scoring isn't fraudulent - it genuinely reflects the committee's concerns. Challenging it aggressively could: (1) damage relationships you need for future work, (2) expose committee to audit risk they're not willing to take, (3) delay procurement when User Dept has real timeline. But accepting it sets precedent. The sophisticated play might be: (1) Accept this procurement, (2) Document why criteria disadvantage open-source/startups, (3) Work with procurement department on reforming criteria for NEXT cycle, (4) Propose pilot alongside Infosys contract (showing, not just arguing). Sometimes the advisor's job is helping the organization learn from decisions, not preventing them."
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "The decision is made: Infosys wins the contract. But Procurement Officer asks you to write a brief technical note for the file explaining the evaluation.\n\nYou need to write something that:\n1. Justifies the decision process (legally defensible)\n2. Documents open-source considerations (shows due diligence)\n3. Identifies lessons for future procurements (creates space for reform)\n4. Maintains your credibility as advisor (you're not just rubber-stamping)\n\nThis note will be read by:\n- State Finance Department (audit oversight)\n- User Department (wants to understand why not cheaper option)\n- Other state governments (looking at Karnataka model)\n- COSS leadership (evaluating your effectiveness)\n\nWrite a 2-paragraph technical note that addresses all these audiences.",
+      "prompt": "What do you write?",
+      "evaluate": [
+        "**Multiple Audiences**: Do they recognize different readers need different things from this note?",
+        "**Justification Balance**: Do they validate committee decision without abandoning open-source position?",
+        "**Learning Capture**: Do they extract lessons that enable future progress?",
+        "**Credibility Preservation**: Do they maintain technical integrity while being politically realistic?",
+        "**Future Hooks**: Do they create openings for procurement reform work?",
+        "**Honest Assessment**: Do they acknowledge what open-source couldn't deliver vs what criteria couldn't measure?",
+        "**COSS Accountability**: Do they help COSS understand what needs to improve in their approach?"
+      ],
+      "coaching_notes": "This note is more important than it seems. It's your chance to shape how this decision gets interpreted. If you write: 'Committee made wrong decision, open-source was clearly better' - you lose credibility and burn bridges. If you write: 'Infosys was obviously best choice' - you abandon mission and become useless as advocate for change. The skillful note: (1) Explains committee's legitimate concerns (career risk, support models, liability), (2) Acknowledges where open-source approach was genuinely not ready (support structures, documentation, startup capacity), (3) Identifies specific improvements for next cycle (pilots, framework contracts, startup capacity-building), (4) Documents this was thorough evaluation, not rubber stamp. You're helping the organization learn, not judging them for this decision."
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here's what happened in similar real cases:\n\n**Approach 1: Pure Open-Source Advocacy**\nAdvisor pushed hard for open-source, challenged committee scoring, implied incumbent bias.\n\nResult:\n- Committee felt attacked, became defensive\n- Procurement officer documented advisor's objections as 'not understanding government procurement reality'\n- Infosys won anyway\n- Advisor's future recommendations treated skeptically\n- Other procurements avoided asking COSS for input\n- Open-source painted as 'impractical idealism'\n\n**Approach 2: Accept Incumbent Victory Passively**\nAdvisor acknowledged concerns, didn't challenge process, said 'Infosys is fine choice.'\n\nResult:\n- COSS leadership questioned advisor's effectiveness\n- Procurement precedent set for future similar decisions\n- Startup ecosystem concluded government market inaccessible\n- No learning captured, next procurement had same issues\n- Advisor seen as rubber stamp\n\n**Approach 3: Strategic Compromise with Long Game**\nAdvisor:\n1. Accepted this procurement outcome\n2. Proposed PARALLEL pilot of open-source in lower-risk application\n3. Worked with procurement dept on reforming evaluation criteria for future\n4. Documented specific gaps in open-source support model that COSS would address\n5. Helped startup founder understand procurement barriers and plan capacity-building\n6. Wrote technical note that educated without attacking\n\nResult:\n- Infosys contract proceeded\n- But 6-month pilot approved in parallel (₹30 lakhs)\n- Pilot created evidence for next procurement cycle\n- Procurement dept worked with advisor on new framework contract model\n- Startup got subcontract role, gained experience\n- Next procurement had revised criteria that didn't structurally favor incumbents\n- Two years later, three open-source implementations running\n- Advisor seen as pragmatic, maintained credibility\n\n**The deeper lesson:**\n\nYou're not there to win every procurement. You're there to shift the ecosystem toward openness over time.\n\nThat means:\n- Understanding why people make risk-averse choices (and they're not all wrong)\n- Addressing legitimate concerns about open-source (support, liability, documentation)\n- Creating evidence through pilots, not just arguing in meetings\n- Building startup capacity so they CAN compete when criteria improve\n- Reforming procurement criteria through patient advocacy, not confrontation\n- Maintaining relationships so you're included in next procurement\n\n**The builder trap in vendor navigation:**\n\nBuilders want the perfect technical solution to win on merit.\n\nAdvisors understand procurement is 70% risk management, 20% relationships, 10% technical merit.\n\nIf you find yourself frustrated that 'clearly superior' open-source lost to 'inferior' proprietary vendor, you're in builder mode.\n\nIf you're thinking about how to create conditions where open-source CAN win in future (support models, documentation, procurement reform, pilot evidence, startup capacity), you're in advisor mode.\n\nThe question isn't 'why don't they see open-source is better?' It's 'what would need to be true for them to feel safe choosing open-source?'\n\nAnd then: how do you make those things true over the next 18 months?",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "**Long Game**: Did you distinguish this procurement from ecosystem transformation work?",
+        "**Legitimate Concerns**: Did you hear real worries (2am support call, liability, career risk) vs dismissing them?",
+        "**Evidence Building**: Did you think about pilots/proof points vs just arguing for open-source?",
+        "**Procurement Reform**: Did you see criteria design as changeable vs fixed?",
+        "**Ecosystem Development**: Did you think about building startup capacity alongside procurement advocacy?",
+        "**Relationship Management**: Did you maintain credibility with committee vs burning bridges?",
+        "**COSS Learning**: Did you help your organization understand what needs improvement in how you support open-source?"
+      ]
+    }
+  ],
+  "tags": ["vendor_management", "procurement", "open_source", "risk_aversion", "ecosystem_building", "incumbent_advantage"]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "system1-sunk-cost-fallacy",
+  "course": "system-1-2-thinking",
+  "difficulty": "application",
+  "title": "The Money We Can't Get Back: Sunk Cost Fallacy in Projects",
+  "country": "Tanzania",
+  "caseType": "project_decision",
+  "learningObjectives": [
+    "Recognize sunk cost fallacy in project continuation decisions",
+    "Practice distinguishing between sunk costs (past) and future value (forward-looking)",
+    "Understand escalation of commitment and why it's hard to kill failing projects",
+    "Learn to frame decisions based on future costs/benefits, not past investments",
+    "Navigate the political difficulty of admitting past investments were wasted"
+  ],
+  "context": {
+    "yourRole": "Senior Digital Transformation Advisor at Tanzania's eGovernment Agency (eGA). You've been here 14 months of a 2-year assignment.",
+    "situation": "Three years ago, eGA started building a Government Payment Gateway (GPG) to process all government payments. Budget: $4.5 million. Timeline: 18 months. Current status: 36 months in, $6.2M spent, system not operational.",
+    "pressure": "You've been asked to assess whether to continue or cancel the project. Your recommendation will go to the Permanent Secretary.",
+    "reality": "Everyone knows the project is troubled, but $6.2M has been spent. Politically painful to admit it's a failure."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You review the project history:\n\n**Year 1 (Original Plan):**\n- Build payment gateway integrating with banks\n- Connect to government financial management system\n- Enable citizens to pay fees/taxes online\n- Budget: $4.5M, Timeline: 18 months\n\n**What Actually Happened:**\n\n*Months 1-12:* Requirements kept changing. Vendor (TechLink Solutions) struggled with integration complexity. First deadline missed.\n\n*Months 13-18:* Testing revealed security vulnerabilities. Had to rebuild authentication module. Second deadline missed.\n\n*Months 19-24:* Integration with government financial system failed - data formats incompatible. Vendor requested additional $800K to redesign integration layer. Approved to 'protect investment.'\n\n*Months 25-30:* New integration layer still didn't work. Vendor blamed legacy government systems. Government IT team blamed vendor's poor architecture. Another $600K approved for 'fixes.'\n\n*Months 31-36:* Pilot testing in 3 ministries. Two ministries reported system crashes. One ministry successfully processed 15 test transactions, then system became unstable under load. Vendor says needs another $400K for 'performance optimization.'\n\n**Current Situation (Month 36):**\n- $6.2M spent ($4.5M original + $1.7M additional)\n- System not operational\n- Vendor requesting another $400K\n- Timeline to operational status: vendor says 6 months, government IT team says 12-18 months\n\nYou meet with the project team:\n\nMwangi (Project Manager, been with this since start): 'We're so close. We've invested three years and $6.2M. If we stop now, all that is wasted. The vendor says just $400K more and 6 months. We can't give up when we're almost there.'\n\nAmina (Government IT Director): 'Mwangi, we've heard \"almost there\" for 18 months. Every time we're \"close,\" new problems emerge. I'm not confident vendor can deliver even with more money.'\n\nMwangi: 'But what about the $6.2M already spent? If we cancel, that's all lost. At least if we continue, there's a chance we get a working system.'\n\nYou notice the core argument: 'We've spent $6.2M, therefore we must continue.' This is textbook sunk cost fallacy.\n\nYou ask: 'Forget what we've spent. If we were starting today with zero investment, would we choose this vendor and this architecture to build a payment gateway?'\n\nAmina: 'Absolutely not. The architecture is fragile. The vendor has proven unable to deliver. We'd choose differently.'\n\nMwangi: 'But we're not starting from zero! We've built most of it. Just needs finishing touches.'\n\nYou ask vendor for honest assessment. Privately, the TechLink technical lead tells you: 'The foundation is flawed. We've been patching problems rather than fixing fundamental issues. To make this production-ready would require partial rebuild. That's why we keep needing more money.'",
+      "prompt": "Classic sunk cost fallacy. How do you frame your analysis to overcome this bias?",
+      "evaluationCriteria": [
+        "**Sunk Cost Recognition**: Do they identify that $6.2M is sunk, can't be recovered, and should not drive future decisions?",
+        "**Forward-Looking Analysis**: Do they frame the question as 'What's the best path forward from here?' not 'How do we justify past spending?'",
+        "**Comparison**: Do they compare 'Continue current project' vs 'Cancel and start fresh' vs 'Alternative solutions' on future costs/benefits only?",
+        "**Escalation Pattern**: Do they recognize the pattern of repeated 'just a little more' requests?",
+        "**Honest Assessment**: Do they factor in vendor's admission that foundation is flawed?",
+        "**Political Reality**: Do they acknowledge the political difficulty of calling this a failure?"
+      ],
+      "coachingNotes": "Mwangi's 'We've spent $6.2M, therefore we must continue' is sunk cost fallacy. The $6.2M is gone regardless of what you do next. The question isn't 'How do we justify $6.2M?' but 'What's the best path forward from here?' Options: [A] Spend another $400K+ and 6-12 months hoping vendor delivers (low probability based on history), [B] Cancel and start fresh with new vendor ($3-4M, 18 months, higher probability of success), [C] Buy commercial off-the-shelf solution ($1.5M, 6 months, highest probability). Each option should be evaluated on future costs and benefits, ignoring the sunk $6.2M. But politically, this is hard: admitting $6.2M was wasted requires courage."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You build a decision framework:\n\n**OPTION A: Continue with Current Vendor**\n- Additional cost: $400K (minimum, likely more based on pattern)\n- Additional time: 6-12 months (vendor says 6, realistic is 12)\n- Probability of success: 30% (based on history, vendor admission of flawed foundation)\n- If fails: Out another $400K+ with no system\n\n**OPTION B: Cancel & Restart with New Vendor**\n- Cost: $3.5M for new build\n- Time: 18 months\n- Probability of success: 70% (fresh start, avoid current architectural flaws)\n- Can learn from current project failures\n\n**OPTION C: Buy Commercial Solution**\n- Cost: $1.5M for licensing + customization\n- Time: 6 months to implement\n- Probability of success: 85% (proven products exist)\n- Lower cost, faster, higher probability\n\n**Expected Value Analysis (Future Only):**\n- Option A: $400K × 30% = $120K expected value (but ties up team for 6-12 months)\n- Option B: $3.5M × 70% = $2.45M expected cost for working solution\n- Option C: $1.5M × 85% = $1.28M expected cost for working solution\n\nOption C (commercial solution) has best expected value: lowest cost, fastest, highest probability.\n\nYou present this to Mwangi:\n\nMwangi: 'This analysis ignores the $6.2M we've already spent! If we go with Option C, that entire investment is wasted.'\n\nYou: 'The $6.2M is already gone regardless of which option we choose. It's a sunk cost. The question is: what's the best path forward from here?'\n\nMwangi: 'But how do we explain to the Permanent Secretary that we're abandoning a $6.2M investment?'\n\nYou: 'We explain that continuing would be throwing good money after bad. The choice isn't between \"waste $6.2M\" or \"save $6.2M.\" The choice is between \"waste $6.2M and possibly another $1-2M more\" or \"waste $6.2M but get a working system for $1.5M.\"'\n\nMwangi (getting emotional): 'I've given three years of my life to this project. You're saying it was all for nothing?'\n\nThis reveals the deeper issue: Mwangi's personal investment and identity are tied to the project. It's not just sunk cost fallacy about money - it's about ego, reputation, and admitting failure.\n\nAmina (gently): 'Mwangi, it wasn't for nothing. We learned what doesn't work. That learning informs better decisions. But learning doesn't mean we have to continue down a path that isn't working.'",
+      "prompt": "How do you navigate Mwangi's emotional investment while maintaining analytical clarity?",
+      "evaluationCriteria": [
+        "**Empathy**: Do they recognize Mwangi's emotional stake is real and valid?",
+        "**Frame as Learning**: Do they reframe the $6.2M as expensive learning, not waste?",
+        "**Separate Person from Project**: Do they help Mwangi see that canceling project doesn't mean HE failed?",
+        "**Political Strategy**: Do they think about how to present this to PS in a way that's not blame-focused?",
+        "**Future Focus**: Do they keep pulling the conversation to 'best path forward' vs 'justify past'?",
+        "**Team Dynamics**: Do they consider Mwangi's role going forward (does he lead new approach or step aside)?"
+      ],
+      "coachingNotes": "This is where sunk cost fallacy gets personal. Mwangi has three years invested. His reputation is tied to this project. Canceling it feels like admitting he failed. This is escalation of commitment driven by ego, not just money. You need empathy + clarity: 'Mwangi, you didn't fail. The vendor failed to deliver. The original requirements were underspecified. The architecture choice was flawed. Those aren't your failures - they're system failures. Your value is in recognizing this isn't working and having courage to change course. That's leadership, not failure.' Frame the cancellation as professional judgment, not personal defeat. And politically: present to PS as 'We've learned extensively, now applying those lessons to better approach' not 'We wasted $6.2M.'"
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "You draft your recommendation to the Permanent Secretary. You have two framing options:\n\n**FRAMING A: Acknowledge Failure, Recommend Fresh Start**\n\n*'The Government Payment Gateway project has not achieved its objectives after 36 months and $6.2M. Continuing with current vendor has low probability of success and high risk of additional cost overruns. RECOMMENDATION: Cancel current contract, procure commercial solution ($1.5M, 6 months). This provides fastest path to operational system.'*\n\nPros: Honest, clear recommendation\nCons: Blunt acknowledgment of failure, politically difficult\n\n**FRAMING B: Sunk Cost Reframe, Forward-Looking**\n\n*'After extensive investment in payment gateway development, we have gained valuable insights into requirements, integration challenges, and technical constraints. These learnings position us to make better decisions going forward. ANALYSIS: Continuing current approach requires additional $400K-$1M with 30% probability of success. Alternative: Procure proven commercial solution ($1.5M) with 85% probability of success within 6 months. RECOMMENDATION: Leverage our learnings by implementing commercial solution, protecting future investment rather than past investment.'*\n\nPros: Frames past spending as learning, emphasizes future value\nCons: Might be seen as spin, softening the failure\n\nBefore you finalize, you get a call from the Permanent Secretary's office:\n\nPS's Chief of Staff: 'The PS is aware the payment gateway is troubled. But you should know: the original vendor selection was championed by the former PS, who is now an MP and politically connected. If you recommend canceling, it will look like we're saying his decision was wrong. The PS would prefer a recommendation that salvages something from the current project.'\n\nThis adds political complexity:\n- Canceling reflects poorly on former PS (now politically powerful)\n- Current PS is being pressured to salvage the project\n- Your 'objective' technical analysis has political implications\n\nYou also learn: TechLink Solutions (the vendor) has connections to a current Cabinet member through business partnerships. Canceling their contract might create political problems.\n\nMwangi, hearing about this pressure, sees an opening:\n\nMwangi: 'See? We can't cancel for political reasons. We have to continue. Let's recommend the $400K continuation but with strict performance milestones. If vendor doesn't deliver in 3 months, we stop.'\n\nAmina: 'That's still throwing $400K away with low success probability. The political pressure doesn't change the technical reality.'\n\nYou're now facing:\n- Clear technical recommendation (commercial solution)\n- Political pressure to continue current vendor\n- Sunk cost fallacy (Mwangi's \"we must continue\")\n- Personal stakes (Mwangi's reputation, former PS's legacy)\n- Your own role (technical advisor vs political operator)",
+      "prompt": "What recommendation do you make? How do you handle the political pressure while maintaining analytical integrity?",
+      "evaluationCriteria": [
+        "**Technical Integrity**: Do they maintain recommendation based on analysis, not politics?",
+        "**Political Savvy**: Do they frame recommendation in politically palatable way?",
+        "**Compromise Assessment**: Do they consider Mwangi's 'milestones' approach as possible compromise?",
+        "**Documentation**: Do they think about documenting the political pressure and their recommendation separately?",
+        "**Escalation**: Do they consider when to stand firm vs when to defer to political leadership?",
+        "**Long-term Thinking**: Do they consider implications for future credibility if they cave to political pressure?"
+      ],
+      "coachingNotes": "Welcome to the real world where technical analysis meets political reality. Your options: [1] Stand firm on technical recommendation (commercial solution), document political pressure, let PS make final call. [2] Compromise with Mwangi's milestone approach - give vendor 3 months with strict conditions. [3] Cave to political pressure, recommend continuation. Option 1 maintains your integrity but might get ignored. Option 2 is pragmatic but risks $400K with low success odds. Option 3 is politically safe but professionally compromising. Probably best: Recommend commercial solution (Framing B), but ADD option for 3-month milestoned trial as alternative if political considerations require it. This way you've made your technical recommendation clear while giving PS a political off-ramp. Document everything."
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "You decide on a hybrid approach. Your memo:\n\n**RECOMMENDATION MEMO:**\n\n*Subject: Payment Gateway - Path Forward*\n\n*Summary: 36 months of development have provided extensive learning about requirements, integration complexity, and technical constraints. We now have opportunity to apply these learnings to achieve operational system.*\n\n*Options Analysis:*\n\n**Option A - Continue Current Development:**\n- Additional investment: $400K minimum\n- Timeline: 6-12 months\n- Risk: Moderate-to-high based on project history\n- Recommendation: If pursued, require strict 3-month milestone with independent technical review. Proceed only if milestones met.\n\n**Option B - Commercial Solution (RECOMMENDED):**\n- Investment: $1.5M\n- Timeline: 6 months\n- Risk: Low (proven solutions available)\n- Recommendation: Procure established payment gateway (e.g., MasterCard Gateway Services, Paymentology). Customize for government needs. Leverage learnings from current project to ensure successful integration.\n\n*Rationale: While significant investment has been made in current approach, our primary objective is operational payment gateway serving citizens. Commercial solutions offer faster, lower-risk path to this outcome. Investment to date has generated valuable requirements understanding and integration lessons that will ensure better implementation of commercial solution.*\n\n*Political Considerations: Understand that contract cancellation may have sensitivities. Recommend framing as 'evolution of approach based on learnings' rather than 'failure of initial approach.'*\n\n**Three Months Later:**\n\nThe PS reviews your memo and decides:\n\n'We'll do the 3-month milestone trial. If TechLink meets milestones, we continue. If not, we switch to commercial solution.'\n\nYou're disappointed - you recommended commercial solution directly. But you understand the political pressure.\n\nOver 3 months:\n- Month 1: TechLink promises new timeline, hires additional developers\n- Month 2: Some progress, but new integration issues emerge\n- Month 3: TechLink requests extending the trial - 'almost there, just 2 more months'\n\nThe independent technical review concludes: 'Insufficient progress. Core architectural issues remain unresolved. Probability of success remains low even with additional time.'\n\nThe PS, armed with independent review, makes final decision:\n\n'Cancel TechLink contract. Procure commercial solution per your recommendation.'\n\nSix Months Later:\n\nCommercial solution (Paymentology Gateway) implemented. Cost: $1.65M (slightly over your estimate, but close). Timeline: 7 months (1 month over estimate). System operational, processing 50,000+ transactions/month.\n\n**Total Project Cost:**\n- Original failed project: $6.2M\n- 3-month milestone trial: $400K\n- Commercial solution: $1.65M\n- **Total: $8.25M for working system**\n\nIf you'd gone straight to commercial solution: $1.65M\nCost of political compromise: $400K + 3 months delay\n\nMwangi reflects with you:\n\nMwangi: 'I was wrong. I was so invested in the project I couldn't see it objectively. The sunk cost fallacy - I get it now. We should have cut losses earlier.'\n\nYou: 'It's natural. You invested three years. Hard to let go. But you came around when the evidence was clear. That matters.'\n\nMwangi: 'The PS was smart - the 3-month trial gave political cover. Former PS can't say we didn't try. But the independent review made it clear we had to stop.'\n\nYou: 'Yes. Sometimes the right answer has to arrive through a politically acceptable path, not just the fastest path.'\n\n**Lessons Learned:**\n\n1. **Sunk costs should not drive future decisions** - the $6.2M was gone, shouldn't have influenced whether to spend another $400K\n\n2. **Escalation of commitment is powerful** - repeated 'just a little more' requests add up to massive overruns\n\n3. **Personal investment creates bias** - Mwangi's three years made it emotionally hard to let go\n\n4. **Political reality matters** - pure technical recommendation (commercial solution) was right, but politically naive; the 3-month trial provided face-saving path\n\n5. **Documentation protects you** - your memo clearly recommended commercial solution; when trial failed, you were vindicated\n\n6. **Independent review helps** - third-party assessment depersonalized the decision\n\n7. **Learning vs waste framing** - presenting $6.2M as 'expensive learning' not 'total waste' made it politically palatable\n\n8. **Total cost of delay** - the 3-month trial cost $400K + 3 months; sometimes political compromise has real costs",
+      "prompt": "Synthesize your learnings about sunk cost fallacy and how to navigate it in government projects.",
+      "evaluationCriteria": [
+        "**Technical vs Political**: Do they understand the tension between pure technical recommendation and political reality?",
+        "**Compromise Value**: Do they assess whether the 3-month trial compromise was worth it (cost: $400K, benefit: political cover)?",
+        "**Pattern Recognition**: Do they extract general principles about when to cut losses vs when to persist?",
+        "**Empathy**: Do they maintain empathy for Mwangi's position while recognizing his bias?",
+        "**Documentation**: Do they appreciate the value of documenting clear recommendation even when not immediately followed?",
+        "**Humility**: Do they recognize perfect rationality isn't always achievable in political environments?"
+      ],
+      "coachingNotes": "This case shows sunk cost fallacy in full complexity: monetary ($6.2M), temporal (3 years), personal (Mwangi's reputation), political (former PS's legacy). The pure rational answer: cancel immediately, go to commercial solution. The politically viable answer: 3-month trial, then cancel with independent evidence. You lost $400K and 3 months to politics, but gained political buy-in and clear evidence for the final decision. Was it worth it? Debatable. But it worked. Key principle: In government, being right isn't enough. You need to be right in a politically sustainable way. The independent technical review was brilliant - depersonalized the decision, gave PS cover to cancel. Your memo was also smart - clear recommendation (commercial solution) but offered milestone trial as alternative. When trial failed, no one could say you didn't warn them. This is professional impact in complex organizations - blend analytical clarity with political savvy."
+    }
+  ],
+  "keyTakeaways": [
+    "Sunk costs (money/time already spent) should not influence future decisions - only future costs and benefits matter",
+    "Escalation of commitment: repeated small investments to 'protect' large sunk cost leads to massive overruns",
+    "Personal investment (time, reputation, ego) makes sunk cost fallacy harder to overcome than pure financial investment",
+    "In government, political reality affects implementation even of analytically correct decisions",
+    "Independent reviews depersonalize decisions and provide political cover for difficult choices",
+    "Framing matters: 'expensive learning' vs 'total waste' changes political acceptability",
+    "Sometimes you accept suboptimal compromises (3-month trial) to achieve ultimate goal (cancellation)",
+    "Documentation protects you: clear recommendation on record even when not immediately followed"
+  ],
+  "frameworks": [
+    {
+      "name": "Sunk Cost vs Future Cost Analysis",
+      "description": "For any continuation decision, separate: [1] Sunk costs (already spent, can't recover), [2] Future costs (what we'd spend going forward), [3] Future benefits (what we'd get). Decide based on 2&3 only, ignore 1.",
+      "application": "When team says 'We've spent $X, we must continue,' ask: 'If we started fresh today with zero spent, would we choose this path?' If no, it's sunk cost fallacy."
+    },
+    {
+      "name": "Escalation Pattern Recognition",
+      "description": "Watch for pattern: initial budget X, then 'just need 10% more,' then 'just 15% more,' etc. Each increment seems small, but they compound into massive overruns.",
+      "application": "When vendor/project asks for 'just a little more,' look at the historical pattern. If this is the 3rd or 4th increment, it's escalation of commitment, not final push."
+    },
+    {
+      "name": "Option Value Analysis",
+      "description": "Compare options based on: Cost × Probability of Success = Expected Value. Use only future costs, ignore sunk costs.",
+      "application": "Example: Option A (continue): $400K × 30% success = $120K expected value. Option B (commercial): $1.5M × 85% success = $1.28M expected cost. Option B better."
+    },
+    {
+      "name": "Political Framing for Failure",
+      "description": "Frame project cancellations as: [1] Valuable learning, [2] Evolution of approach, [3] Applying insights to better solution. Not as: [1] Waste, [2] Failure, [3] Mistakes.",
+      "application": "Instead of 'We wasted $6M,' say 'We invested $6M in learning requirements and constraints, now applying those insights to proven solution.'"
+    },
+    {
+      "name": "Independent Review for Difficult Decisions",
+      "description": "When politically difficult to cancel despite clear evidence, commission independent technical review. Depersonalizes decision, provides cover for leadership.",
+      "application": "Use when: [1] Clear technical case but political resistance, [2] Personal investments creating bias, [3] Need political cover for unpopular decision."
+    }
+  ],
+  "relatedCases": [
+    "system1-confirmation-bias",
+    "action-bias-crisis-response",
+    "vendor-lock-in-escape"
+  ]
+}

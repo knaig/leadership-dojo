@@ -1,0 +1,434 @@
+{
+  "id": "technical-literacy-core",
+  "slug": "technical-literacy-core",
+  "courseNumber": 14,
+  "title": "Technical Literacy Core",
+  "subtitle": "Understanding Technology Decisions",
+  "tier": 2,
+  "category": "Execution Skills",
+  "duration": "4 hours",
+  "difficulty": "Intermediate",
+  "description": "Build sufficient technical understanding to make informed decisions and engage credibly with technical teams.",
+  "learningObjectives": [
+    "Understand key technical concepts and their business implications",
+    "Ask the right questions to evaluate technical proposals",
+    "Evaluate technical proposals with confidence and depth"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": [
+    "DPI advisors",
+    "Government IT directors",
+    "Policy coordinators"
+  ],
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "Why Technical Literacy Matters",
+      "duration": "25 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Technical literacy is not about becoming an engineer—it's about developing enough understanding to make informed decisions, ask smart questions, and engage credibly with technical teams. In government and policy contexts, leaders who lack technical understanding often approve projects that fail or make decisions that ignore technical feasibility. This module establishes why technical literacy matters for policy execution.",
+        "keyPoints": [
+          {
+            "title": "The Cost of Technical Ignorance",
+            "description": "When leaders lack technical understanding, they approve unrealistic timelines, underestimate complexity, and fail to anticipate risks. A classic example: Government agencies that promise digital service delivery without understanding integration requirements with legacy systems. Technical literacy prevents these costly mistakes.",
+            "example": "The initial rollout of Healthcare.gov in 2013 failed partly because decision-makers didn't understand the scale of integration needed with 50 state systems. Better technical literacy earlier would have surfaced integration risks."
+          },
+          {
+            "title": "Technical Credibility Drives Influence",
+            "description": "Engineers and architects respect leaders who ask informed questions and understand constraints. Technical credibility isn't about knowing how to code—it's about understanding why certain approaches are chosen. This credibility allows you to negotiate better outcomes.",
+            "example": "A DPI advisor who understands APIs can ask better questions about data sharing infrastructure: 'What's our authentication strategy? How do we handle failures? What's our rate limiting approach?' These questions signal competence."
+          },
+          {
+            "title": "Technical Literacy Prevents Scope Creep and Delays",
+            "description": "Many government projects fail because decision-makers keep adding features without understanding technical impact. Technical literacy helps you assess trade-offs: building feature X now versus later, or at all.",
+            "example": "Rather than saying 'just add mobile support,' a technically literate leader asks: 'What's the effort estimate? Does this delay core functionality? What's the security impact?' This prevents unrealistic commitments."
+          },
+          {
+            "title": "Bridging Policy and Technical Implementation",
+            "description": "Policy and technical decisions are intertwined. A policy decision about real-time data sharing has massive technical implications. Technical literacy helps you make policy decisions that are technically feasible.",
+            "example": "A policy requiring 24/7 data availability sounds good but drives massive technical requirements for backup systems, redundancy, and monitoring. Technical literacy helps you make realistic policy choices."
+          }
+        ],
+        "keyInsight": "Technical literacy is a leadership capability that increases decision quality, builds credibility with technical teams, and prevents expensive mistakes. You don't need to be technical—you need to ask the right questions and understand constraints."
+      },
+      "exercises": [
+        {
+          "id": "exercise-1-1",
+          "title": "Identify Technical Assumptions in Your Work",
+          "description": "Review a recent initiative or policy proposal. Write down 3 technical assumptions embedded in it. For each assumption, note: What could go wrong? Who should validate this? What questions should we ask?",
+          "type": "reflection"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Core Architecture Concepts",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Technical architecture is the blueprint for how systems are built. Understanding architecture helps you evaluate feasibility, assess risk, and understand trade-offs. This module covers the mental models engineers use when designing systems.",
+        "keyPoints": [
+          {
+            "title": "Monoliths vs. Microservices",
+            "description": "A monolith is a single, unified system where all functionality is tightly integrated. Microservices break systems into independent services that communicate. Each approach has trade-offs: monoliths are simpler to build initially but harder to scale; microservices are complex but offer flexibility.",
+            "example": "A state's driver's license system built as a monolith works fine initially but becomes problematic when you need to integrate with federal REAL ID systems, license revocation feeds, or new mobile services. Microservices would allow independent scaling of license issuance, renewals, and verification."
+          },
+          {
+            "title": "Synchronous vs. Asynchronous Processing",
+            "description": "Synchronous means a user waits for a response (like pressing a button and waiting for results). Asynchronous means processing happens in background (like submitting a form and getting an email confirmation later). Asynchronous is more complex but allows handling large volumes.",
+            "example": "Processing benefit applications: Synchronous validation (user waits) works for small volumes. But at scale (millions of applications), asynchronous processing (background validation, email notifications) prevents system overload."
+          },
+          {
+            "title": "Scalability: Vertical vs. Horizontal",
+            "description": "Vertical scaling means making one server more powerful (bigger processor, more RAM). Horizontal scaling means adding more servers. Horizontal scaling is the modern approach but requires special architecture; many systems can't scale horizontally without major changes.",
+            "example": "A voting system receiving election-day traffic spikes needs horizontal scalability. You can't predict exact load, so you need architecture that lets you quickly add servers. A system designed only for vertical scaling will fail under unexpected load."
+          },
+          {
+            "title": "Coupling and Decoupling",
+            "description": "Tightly coupled systems mean changes in one part require changes everywhere (fragile and slow to modify). Loosely coupled systems can change independently. Decoupling takes more effort initially but pays off over time.",
+            "example": "If a personnel management system is tightly coupled to payroll, changing payroll rules requires touching person management code. Decoupling allows each team to change rules independently without touching the other system."
+          },
+          {
+            "title": "CAP Theorem: Choose Two of Three",
+            "description": "Any distributed system must choose between: Consistency (all systems have same data), Availability (system is always up), and Partition tolerance (system survives network failures). You must sacrifice one. Understanding this trade-off helps evaluate technical proposals.",
+            "example": "A real-time crime database must prioritize availability (always working) and partition tolerance (works even if network divides). Accepting eventual consistency means officers might briefly see outdated suspect info—acceptable trade-off for reliability."
+          }
+        ],
+        "keyInsight": "Architecture decisions create fundamental trade-offs: simplicity vs. flexibility, consistency vs. availability, centralization vs. distribution. Technical literacy means understanding these trade-offs and asking which ones are acceptable for your use case."
+      },
+      "exercises": [
+        {
+          "id": "exercise-2-1",
+          "title": "Evaluate Your System's Architecture",
+          "description": "Map a system you work with: Is it monolithic or microservices? Synchronous or asynchronous? How does it scale? Document one architecture challenge it faces and how the current design contributes to it.",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "APIs and Integration",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "APIs (Application Programming Interfaces) are how systems talk to each other. In government, APIs are critical for data sharing, interoperability, and building integrated services. Understanding APIs helps you ask good questions about data exchange and integration feasibility.",
+        "keyPoints": [
+          {
+            "title": "What APIs Are and Why They Matter",
+            "description": "An API is a contract—a defined way one system can request information or services from another. APIs enable integration without tightly coupling systems. They're essential for government interoperability where agencies need to share data and services.",
+            "example": "When you apply for government benefits, background checks need to verify your history with law enforcement. An API allows the benefits system to query the criminal justice system's database without embedding that database in the benefits system."
+          },
+          {
+            "title": "REST APIs: The Modern Standard",
+            "description": "REST (Representational State Transfer) is the most common API architecture. RESTful APIs use standard HTTP methods (GET for reading, POST for creating, PUT for updating, DELETE for removing). They're simple, predictable, and well-understood.",
+            "example": "A REST API for accessing public notice data: GET /notices (get all), GET /notices/123 (get one), POST /notices (create), PUT /notices/123 (update). Predictable structure makes integration straightforward."
+          },
+          {
+            "title": "Authentication and Authorization",
+            "description": "APIs must verify who's accessing them (authentication) and what they're allowed to access (authorization). Poor API security is a common vulnerability. This determines what data flows between systems and who can access it.",
+            "example": "A police department API must authenticate that requesting agencies are legitimate and authorize them to see only data relevant to their jurisdiction and investigation (not national security intel)."
+          },
+          {
+            "title": "Rate Limiting and Reliability",
+            "description": "Rate limiting controls how many requests a system can handle. Without it, one integration partner can overwhelm the system. Reliability means APIs should gracefully handle failures (timeouts, retries, fallbacks).",
+            "example": "A vital records API that serves hundreds of agencies must rate limit so one agency's heavy usage doesn't crash the system for others. It must also handle failures gracefully—if authentication is down, return an error rather than crashing."
+          },
+          {
+            "title": "Versioning and Change Management",
+            "description": "APIs change over time. Good versioning allows old systems to keep working while new systems use new features. Poor versioning breaks integrations when APIs change.",
+            "example": "If you change an API that 50 agencies depend on, you need a migration path. Versioning (API v1, v2, v3) lets agencies upgrade at their own pace rather than forcing simultaneous cutover."
+          }
+        ],
+        "keyInsight": "APIs are the connective tissue of integrated government systems. Good questions about APIs: Is authentication solid? Are rate limits appropriate? What happens during failures? How will changes be managed? These questions predict integration success."
+      },
+      "exercises": [
+        {
+          "id": "exercise-3-1",
+          "title": "Audit an API Integration",
+          "description": "Identify a system integration in your organization. Research or interview the technical team: What API is used? How is authentication handled? What happens if the API becomes slow or unavailable? What's the versioning strategy?",
+          "type": "analysis"
+        },
+        {
+          "id": "exercise-3-2",
+          "title": "Design an API for a Government Service",
+          "description": "Take a government service you know well (benefit verification, license status, permit tracking). Sketch out what an API for that service should look like. What data should it expose? What security considerations matter? How would agencies integrate?",
+          "type": "application"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "moduleNumber": 4,
+      "title": "Data and Databases",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Databases are how systems store and retrieve data. Database design has massive implications for what queries are fast, how data is protected, and what integrations are possible. Understanding databases helps you ask good questions about data management and performance.",
+        "keyPoints": [
+          {
+            "title": "Relational Databases: Structure and Constraints",
+            "description": "Relational databases organize data into tables with relationships (like a spreadsheet on steroids). They enforce data integrity through constraints. Most government systems use relational databases because they're reliable and well-understood.",
+            "example": "A personnel database has tables for Employees, Departments, and Payroll. A constraint ensures that an employee can't be in a non-existent department. This prevents corrupted data from being entered."
+          },
+          {
+            "title": "Indexing: The Speed Trade-off",
+            "description": "Databases use indexes (like a book's table of contents) to find data quickly. Without proper indexing, finding a record among millions is slow. But indexes take space and slow down inserts. Indexing is a core performance lever.",
+            "example": "A background check system must quickly look up applicants by name and date of birth. Good indexing means these queries return in milliseconds. Poor indexing means applicants wait minutes for results."
+          },
+          {
+            "title": "Data Types and Constraints",
+            "description": "Databases enforce data types (numbers, text, dates) and constraints (must be positive, must be unique). This prevents bad data from being stored. Understanding constraints helps you evaluate data quality.",
+            "example": "A medical licensing database should enforce that license numbers are unique (no duplicates) and that renewal dates are future dates (no backdated renewals). These constraints prevent fraud and errors."
+          },
+          {
+            "title": "ACID: Reliability Guarantees",
+            "description": "ACID (Atomicity, Consistency, Isolation, Durability) are guarantees about database reliability. Atomicity means transactions are all-or-nothing (can't partially succeed). Consistency means data is valid. Isolation means concurrent transactions don't interfere. Durability means data persists after a crash.",
+            "example": "When transferring funds between accounts, ACID ensures: the amount leaves one account and enters the other (atomicity), both accounts remain valid (consistency), concurrent transfers don't corrupt data (isolation), and the transfer survives power failures (durability)."
+          },
+          {
+            "title": "NoSQL and Specialized Databases",
+            "description": "NoSQL databases (MongoDB, DynamoDB) sacrifice some guarantees for flexibility and scale. They're good for large volumes of unstructured data but riskier for mission-critical data. Different database types solve different problems.",
+            "example": "A benefits application using NoSQL might handle millions of unstructured applications cheaply, but using NoSQL for the benefits ledger (who owes whom) would be risky without strong guarantees."
+          }
+        ],
+        "keyInsight": "Database design shapes what's possible and what's expensive. Good questions: Is the data model clean? Are appropriate indexes in place? Does the system use ACID guarantees where they matter? These questions predict data reliability."
+      },
+      "exercises": [
+        {
+          "id": "exercise-4-1",
+          "title": "Map Your Data Model",
+          "description": "For a system you work with, sketch out the database structure: What are the main entities (tables)? What are the relationships? What constraints should exist? Where would indexing help? What data quality issues have you seen?",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "moduleNumber": 5,
+      "title": "Security Fundamentals",
+      "duration": "35 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Security is not an afterthought—it's fundamental to system design. Government systems handle sensitive data and must meet compliance requirements. Understanding security fundamentals helps you ask good questions about data protection and compliance.",
+        "keyPoints": [
+          {
+            "title": "Authentication vs. Authorization",
+            "description": "Authentication verifies who you are (login credentials). Authorization determines what you can access (permissions). Both are essential. Poor authentication means anyone can pretend to be someone else. Poor authorization means authenticated users can access data they shouldn't.",
+            "example": "A police records system must authenticate that officers are who they claim (badge number + password) and authorize them to see only records relevant to their jurisdiction and investigation (not national security intel)."
+          },
+          {
+            "title": "Encryption in Transit and at Rest",
+            "description": "Encryption in transit means data is scrambled while moving between systems (HTTPS). Encryption at rest means data is scrambled while stored. Both matter. Data in transit without encryption can be intercepted. Data at rest without encryption can be read if storage is stolen.",
+            "example": "A medical records system encrypts data when transmitted to prevent eavesdropping (in transit) and encrypts the database to prevent access if the server is stolen (at rest)."
+          },
+          {
+            "title": "Access Control and Role-Based Security",
+            "description": "Access control defines who can access what. Role-based access control (RBAC) assigns permissions to roles, then assigns users to roles. This is more manageable than assigning permissions individually.",
+            "example": "Rather than assigning permissions to each caseworker individually, create roles: 'Benefit Processor' can approve up to $5K, 'Manager' can approve any amount, 'Auditor' can view but not modify. Assign users to roles."
+          },
+          {
+            "title": "Vulnerability and Patch Management",
+            "description": "Software has vulnerabilities (security flaws). Vendors release patches to fix them. Patch management means applying updates promptly. Unpatched systems are constantly at risk as new vulnerabilities are discovered.",
+            "example": "A critical vulnerability in a widely-used library is disclosed. Any government system using that library without patches is immediately vulnerable. A patch management process ensures fixes are applied within days, not months."
+          },
+          {
+            "title": "Compliance and Standards",
+            "description": "Government systems must meet compliance requirements: HIPAA for health data, FERPA for education data, FedRAMP for cloud systems, etc. Compliance isn't optional—it's a legal requirement. Understanding compliance requirements shapes technical decisions.",
+            "example": "A system storing health data must meet HIPAA requirements: encryption, access logging, data breach notification procedures, vendor security assessments. These aren't nice-to-have; they're mandatory."
+          },
+          {
+            "title": "Incident Response and Monitoring",
+            "description": "Even with strong security, breaches can happen. Incident response is the plan for detecting, containing, and recovering from breaches. Monitoring means continuously checking for suspicious activity.",
+            "example": "A government system should detect unusual access patterns (user accessing data outside normal hours, millions of records downloaded), contain the breach (block the user, isolate the system), and recover (restore from backups, notify users)."
+          }
+        ],
+        "keyInsight": "Security is expensive and complex, but the cost of breaches is higher. Good security questions: How is sensitive data protected? Who has access and how is that controlled? How are vulnerabilities managed? What's the incident response plan? These questions predict breach prevention."
+      },
+      "exercises": [
+        {
+          "id": "exercise-5-1",
+          "title": "Security Audit",
+          "description": "For a sensitive system in your organization: Who has access to what data? How is that access controlled? What sensitive data is stored, and how is it encrypted? What's the most likely security risk? What would improve security most?",
+          "type": "analysis"
+        },
+        {
+          "id": "exercise-5-2",
+          "title": "Evaluate a Security Proposal",
+          "description": "Your IT team proposes a security measure (new authentication, encryption, access controls). Evaluate it: Does it address real risks? What's the user impact? Are there better approaches? What could go wrong?",
+          "type": "application"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "moduleNumber": 6,
+      "title": "Cloud and Infrastructure",
+      "duration": "30 minutes",
+      "type": "theory",
+      "content": {
+        "overview": "Cloud computing (AWS, Azure, Google Cloud) is reshaping government IT. Understanding cloud fundamentals helps you evaluate cloud vs. on-premise trade-offs, understand costs, and assess compliance implications.",
+        "keyPoints": [
+          {
+            "title": "Cloud Computing Basics: IaaS, PaaS, SaaS",
+            "description": "Infrastructure as a Service (IaaS) means renting servers and storage. Platform as a Service (PaaS) means renting a platform to build on. Software as a Service (SaaS) means renting ready-to-use software. Each level trades control for convenience.",
+            "example": "IaaS: Rent AWS servers and manage everything (databases, security, scaling). PaaS: Use Heroku to deploy code without managing servers. SaaS: Use Salesforce for CRM without managing anything. Less control = less operational burden."
+          },
+          {
+            "title": "Elasticity and Cost Implications",
+            "description": "Cloud's main benefit is elasticity—you pay for what you use. Scaling up during traffic spikes, scaling down in quiet periods. This is cheaper than buying hardware that sits idle most of the time.",
+            "example": "A tax filing system has massive traffic surges during filing deadlines. Cloud elasticity lets you use massive capacity March-April, then scale down to minimal capacity the rest of the year. You pay proportionally."
+          },
+          {
+            "title": "Multi-tenancy and Data Isolation",
+            "description": "Cloud providers run many customers' workloads on the same hardware. Multi-tenancy provides isolation—your data is logically separated from others. Understanding isolation helps you assess security and compliance.",
+            "example": "Sensitive government data can run on shared cloud hardware through multi-tenancy, but it requires strong isolation (encryption, access controls, separate networks) so other customers can't access it."
+          },
+          {
+            "title": "Hybrid and Federated Approaches",
+            "description": "Hybrid means some systems on-premise and some in cloud. Federated means data stays in multiple locations (some federal, some state). These approaches are common in government but add integration complexity.",
+            "example": "A state health system might run sensitive health records on-premise (state control) but use AWS for public-facing portal (scalable). Data sharing between them adds complexity and security considerations."
+          },
+          {
+            "title": "Vendor Lock-in and Portability",
+            "description": "Moving between cloud providers is hard—AWS and Azure aren't interchangeable. Understanding lock-in helps you evaluate risk: If you're unhappy with a vendor, can you move? How much will it cost?",
+            "example": "Building entirely on AWS-specific services (DynamoDB, SQS, Lambda) makes it cheap and fast to build but expensive and slow to migrate away. More portable approaches (standard databases, containers) cost more upfront but preserve optionality."
+          },
+          {
+            "title": "Compliance and Data Residency",
+            "description": "Some data must stay within geographic boundaries. Data residency requirements mean data can only be stored in certain regions. Cloud providers offer this, but it affects pricing and architecture.",
+            "example": "Data about Michigan residents might be required to stay in US data centers by state law. This constrains cloud options and may add cost compared to regions where data can live anywhere."
+          }
+        ],
+        "keyInsight": "Cloud is powerful but comes with trade-offs: elasticity but lock-in, convenience but shared infrastructure, cost efficiency but vendor dependence. Good questions: Does cloud solve the problem we have? What's the total cost including migration and lock-in? What are the compliance implications?"
+      },
+      "exercises": [
+        {
+          "id": "exercise-6-1",
+          "title": "Cloud Readiness Assessment",
+          "description": "Evaluate a mission-critical system: Is it a good candidate for cloud? What would it cost to migrate? What compliance issues arise? What's staying on-premise and what could move? What's the risk of vendor lock-in?",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "moduleNumber": 7,
+      "title": "Evaluating Technical Proposals",
+      "duration": "40 minutes",
+      "type": "application",
+      "content": {
+        "overview": "This is where technical literacy becomes practical. When your technical team proposes a solution, you need to evaluate it critically. This module teaches a framework for asking the right questions and assessing proposals.",
+        "keyPoints": [
+          {
+            "title": "The Technical Evaluation Framework",
+            "description": "When evaluating a proposal, ask: (1) Does it solve the problem? (2) What are the trade-offs? (3) What are the risks? (4) What's the total cost? (5) What's the timeline? (6) What's the fallback if it fails? A good proposal anticipates these questions.",
+            "example": "Proposal: 'Migrate to cloud.' Questions: Which systems? What's the business case? What are integration challenges? What's the migration timeline? What happens if migration fails? A well-prepared team can answer these."
+          },
+          {
+            "title": "Red Flags in Technical Proposals",
+            "description": "Warning signs: (1) 'Trust us, we know what's best' (no rationale), (2) Unrealistic timelines (ignores complexity), (3) No contingency for risk, (4) Cost estimation is vague, (5) No clear success metrics, (6) One solution for all problems, (7) Dismissive of concerns.",
+            "example": "Red flag: 'We'll build this new system, migrate all data, test everything, and go live in 3 months.' This ignores testing complexity, data migration risks, and no contingency. Flag this and push back."
+          },
+          {
+            "title": "Understanding Estimates and Uncertainty",
+            "description": "Technical estimates have uncertainty. Simple tasks might be estimated 2 weeks (5-day range). Complex tasks might be 6 months (3-month range). Estimates for novel work are least reliable. Good teams give ranges and explain assumptions.",
+            "example": "Estimate: '6 months' is risky. Estimate: '4-8 months depending on API availability and test environment setup' is better. It shows they've thought about uncertainty."
+          },
+          {
+            "title": "Build vs. Buy vs. Use Existing",
+            "description": "For every problem, there are three approaches: build custom (expensive, slow, fits perfectly), buy off-the-shelf (fast, cheap, may not fit), use existing system (riskless, but constrained). Evaluating proposals means understanding which approach makes sense.",
+            "example": "Building a benefits system from scratch takes 2 years and millions. Buying off-the-shelf system takes 6 months and less money but requires workflow changes. Using legacy system requires no money but is slow. Each makes sense in different contexts."
+          },
+          {
+            "title": "Testing and Quality Assurance",
+            "description": "Good proposals include testing plans: unit testing (do components work), integration testing (do components work together), user acceptance testing (does it meet requirements). Proposals without testing plans are red flags.",
+            "example": "Poor proposal: 'We'll build the system and deploy.' Good proposal: 'We'll build it, unit test (80% code coverage), integration test with existing systems, UAT with end users, then deploy with rollback plan.'"
+          },
+          {
+            "title": "Technical Debt and Maintenance",
+            "description": "Technical debt is shortcuts taken to build faster (quick and dirty code). It costs less initially but more over time (harder to maintain, more bugs). Good proposals acknowledge if they're taking on debt and plan to address it.",
+            "example": "Proposal: 'We'll use a quick approach now, then refactor in phase 2.' If phase 2 never happens, you're stuck maintaining bad code. Push back: 'What's the commitment to phase 2? When? How much?'"
+          }
+        ],
+        "keyInsight": "Evaluating technical proposals is about asking the right questions, understanding trade-offs, and recognizing red flags. You don't need to solve the problem—you need to assess whether the team has thought it through."
+      },
+      "exercises": [
+        {
+          "id": "exercise-7-1",
+          "title": "Critique a Real Proposal",
+          "description": "Bring a technical proposal from your organization. Using the evaluation framework: Does it solve the problem clearly? What are the trade-offs? What are the risks? Are estimates realistic? What questions should be asked? Write a set of critical questions to push back.",
+          "type": "application"
+        },
+        {
+          "id": "exercise-7-2",
+          "title": "Build vs. Buy vs. Existing Analysis",
+          "description": "Take a current initiative. For this problem, what would it cost and take to build custom? What off-the-shelf options exist and what do they cost? Can an existing system handle it? What's the recommendation and why?",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "moduleNumber": 8,
+      "title": "Building Technical Credibility",
+      "duration": "30 minutes",
+      "type": "application",
+      "content": {
+        "overview": "Technical credibility is earned through demonstrated understanding, smart questions, and follow-through. This module is about how to build credibility with technical teams and use that credibility to drive better outcomes.",
+        "keyPoints": [
+          {
+            "title": "The Power of Asking Good Questions",
+            "description": "You build credibility by asking informed questions, not by pretending to understand. Engineers respect leaders who ask 'What happens if the database goes down?' more than leaders who nod and say nothing. Informed questions signal competence.",
+            "example": "Instead of 'How long will this take?' (generic), ask 'We have similar data volume in system X—does this compare in complexity? What are the bottleneck risks? How are you planning to test the data migration?' These questions show you've thought about it."
+          },
+          {
+            "title": "Mastering Technical Vocabulary",
+            "description": "You don't need to be fluent in all technical jargon, but understanding key terms helps. API, database, microservices, authentication, encryption, latency, throughput, deployment, rollback, fallback. Learn these terms and how they connect to problems you care about.",
+            "example": "When engineers say 'We need a rollback strategy,' you understand: if deployment fails, how do we go back to the old version? You ask: 'What could go wrong that would trigger a rollback? How long would the rollback take?' You're speaking their language."
+          },
+          {
+            "title": "Building Relationships with Technical Teams",
+            "description": "Credibility comes from ongoing relationships, not one-off conversations. Invest in understanding your technical team: what problems do they face, what tools do they love, what frustrates them. This context helps you ask better questions.",
+            "example": "Rather than waiting for a meeting to discuss technical topics, grab coffee with your lead engineer. Ask: 'What's the most frustrating technical constraint we have? What would make your life easier? What project are you most excited about?' This builds relationship and understanding."
+          },
+          {
+            "title": "Following Up and Demonstrating Understanding",
+            "description": "When someone explains something, follow up: email summarizing what you understood, ask clarifying questions, reference the conversation later. This shows you took it seriously and understood it.",
+            "example": "After a technical briefing on API architecture: 'Thanks for explaining. If I understand right, we're using REST APIs because they're simple and standard, but we're accepting eventual consistency for real-time data. Is that correct? What would it take to require true real-time?'"
+          },
+          {
+            "title": "Admitting What You Don't Know",
+            "description": "Credibility is damaged by pretending to understand when you don't. It's enhanced by admitting knowledge gaps and learning. 'I don't understand that yet—can you explain it?' is better than nodding.",
+            "example": "In a meeting, someone mentions 'We're containerizing with Docker.' If you don't know Docker, say: 'I'm not familiar with containerization—is that how we're standardizing deployments? What's the advantage?' This invites explanation and shows humility."
+          },
+          {
+            "title": "Using Data and Evidence",
+            "description": "When you build proposals or push back on ideas, use data. 'We need to migrate because the current system is slow' is weak. 'System latency is averaging 3 seconds for 20% of requests, impacting user experience' is strong.",
+            "example": "Rather than 'We should improve security,' support it with evidence: 'We've had 3 security incidents in the past year, averaging 40 days to detect. Industry standard is 10 days. That's costing us millions in potential exposure.'"
+          }
+        ],
+        "keyInsight": "Technical credibility is built through informed questions, ongoing learning, relationship investment, and intellectual honesty. You don't need to be the smartest person in the room—you need to ask good questions and follow through on understanding."
+      },
+      "exercises": [
+        {
+          "id": "exercise-8-1",
+          "title": "90-Day Technical Credibility Plan",
+          "description": "Design a 90-day plan to build technical credibility in your role: What 10 key terms will you master? Who are 3 key technical leaders to build relationships with? What 5 deep-dive learning sessions will you schedule? What specific questions will you ask? Track progress monthly.",
+          "type": "application"
+        },
+        {
+          "id": "exercise-8-2",
+          "title": "Reframe a Conversation",
+          "description": "Take a recent conversation with technical staff where you felt out of your depth. Rewrite how you could have engaged differently: better questions, vocabulary, follow-up, evidence. Practice the reframed conversation.",
+          "type": "reflection"
+        }
+      ]
+    }
+  ]
+}

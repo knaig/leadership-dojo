@@ -1,0 +1,117 @@
+{
+  "id": "ethics-procurement-pressure",
+  "course": "ethics-integrity-government",
+  "difficulty": "mastery",
+  "title": "The Envelope: Navigating Corruption Pressure",
+  "country": "Bangladesh",
+  "caseType": "ethical_dilemma",
+  "learningObjectives": [
+    "Recognize corruption pressure in its various forms",
+    "Practice navigating ethical dilemmas without being preachy or naive",
+    "Understand when to compromise vs when to hold the line",
+    "Learn to document concerns when overruled",
+    "Navigate the gray areas between relationship-building and impropriety",
+    "Develop personal ethical frameworks for ambiguous situations"
+  ],
+  "context": {
+    "yourRole": "Technical Advisor to Bangladesh's Access to Information (A2I) Programme. You're supporting procurement of a citizen services platform.",
+    "situation": "You're 8 months into a 2-year assignment. The platform procurement is your key deliverable. Budget: $6 million. Four vendors submitted bids.",
+    "pressure": "You've received subtle and not-so-subtle signals that this procurement has political interest. People are watching.",
+    "reality": "This is a real-world ethical minefield. No easy answers."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "The evaluation committee has completed technical scoring. Four bids:\n\n1. **TechBD** (local company): 72/100 technical, $5.2M\n2. **GlobalSoft** (multinational): 85/100 technical, $7.1M (over budget)\n3. **AsiaDigital** (regional): 78/100 technical, $5.8M\n4. **InnovateBD** (local startup): 68/100 technical, $4.9M\n\nBased on technical scores and budget, **AsiaDigital** appears to be the best value: solid technical (78/100), within budget ($5.8M), experience with similar projects in Nepal and Sri Lanka.\n\nYou're preparing the evaluation report. Your recommendation will heavily influence the final decision, though officially the Cabinet Committee makes the award.\n\nFriday evening, your phone rings. Unknown number.\n\nVoice: 'Good evening. I'm calling on behalf of TechBD. We understand you're preparing the evaluation report. We'd like to meet with you to better understand the evaluation criteria. Would you be available for dinner tomorrow?'\n\nYou: 'The evaluation is complete. Vendors shouldn't be contacting evaluators at this stage. Please direct any questions through the official procurement office.'\n\nVoice: 'Of course, of course. We respect the process. But just as friends, we'd like to host you for dinner. No business talk. Just hospitality. We know you're far from home. Do you like Bangladeshi food or would you prefer international cuisine?'\n\nYou feel uncomfortable but they haven't explicitly said anything improper. The invitation could be innocent hospitality, or could be the first move in influence attempt.\n\nYou: 'Thank you, but I can't accept. Good evening.'\n\nYou hang up.\n\nMonday morning, your colleague Rashid (local A2I staff) approaches:\n\nRashid: 'I heard TechBD called you. Did you meet them?'\n\nYou: 'No. They invited me to dinner. I declined. Is there something I should know?'\n\nRashid (uncomfortably): 'TechBD is... well-connected. The CEO is related to a former minister. They're used to winning government contracts. I'm just saying... be careful.'\n\nYou: 'Careful how?'\n\nRashid: 'They might not be happy if they don't win. And they have ways of making things difficult.'",
+      "prompt": "What do you do with this information? How do you proceed?",
+      "evaluationCriteria": [
+        "**Pattern Recognition**: Do they recognize the dinner invitation as potential corruption pressure?",
+        "**Document**: Do they think about documenting the contact attempt?",
+        "**Political Reality**: Do they understand Rashid is signaling political pressure without saying it explicitly?",
+        "**Process Integrity**: Do they consider how to protect the evaluation process?",
+        "**Escalation**: Do they think about who to inform (supervisor, donor, procurement office)?",
+        "**Personal Safety**: Do they consider whether 'making things difficult' is a threat?"
+      ],
+      "coachingNotes": "This is how it starts - a 'friendly' dinner invitation. Not explicitly corrupt, but clearly an attempt to build obligation. You did the right thing declining. But now you have intelligence: TechBD is politically connected and may pressure the process. Rashid's warning ('be careful') suggests this is known pattern. What to do? [1] Document the call (date, time, what was said), [2] Inform your supervisor and the donor funding this, [3] Be extra rigorous in your evaluation documentation so your recommendation is defensible, [4] Watch for other pressure tactics. The test isn't whether pressure happens - it will - but how you respond and protect the integrity of the process."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You document the phone call and inform your team leader (UNDP programme manager). He nods knowingly.\n\nTeam Leader: 'This happens. TechBD tries this on every major procurement. Usually doesn't work, but they try. Good that you documented it. Just proceed with your evaluation on merits. Don't let this influence you.'\n\nYou finalize your evaluation report recommending AsiaDigital based on technical quality and value for money. You submit it to the Cabinet Committee secretariat.\n\nTwo days later, you're called to a meeting with the Additional Secretary at the Ministry of ICT:\n\nAdditional Secretary: 'I've reviewed your evaluation. It's thorough. But I want to discuss the context. You've recommended AsiaDigital - a foreign company. In Bangladesh, we're trying to build local capacity. TechBD and InnovateBD are local. Shouldn't we weight that in our decision?'\n\nYou: 'Local capacity building is important. But the tender didn't specify a preference for local companies. We evaluated based on the published criteria: technical capability, experience, and price.'\n\nAdditional Secretary: 'Criteria can be interpreted. \"Sustainability\" could include building local capacity. \"Value for money\" could include keeping money in Bangladesh economy rather than sending it abroad. I'm not telling you to change your recommendation. I'm asking you to think more broadly about what serves Bangladesh's interests.'\n\nThis is more sophisticated than the dinner invitation. He's not asking for corruption - he's asking you to reinterpret evaluation criteria to favor local companies. His arguments have some legitimacy (local capacity IS important). But you also know TechBD is politically connected, and this might be pressure in disguise.\n\nYou: 'I understand the local capacity argument. But changing evaluation criteria after bids are submitted would be unfair to vendors who competed under published rules. If local preference is important, it should be explicit in future tenders.'\n\nAdditional Secretary (coolly): 'I'm not asking you to change criteria. I'm asking you to interpret them in light of Bangladesh's development priorities. Think about it. The Cabinet Committee meets next week. You'll present your evaluation. Make sure you've considered all factors.'\n\nAfter the meeting, Rashid pulls you aside:\n\nRashid: 'The Additional Secretary doesn't make suggestions lightly. He's telling you what decision he wants. If you fight this, you'll win the battle but lose the war - they'll ignore your future recommendations. Is AsiaDigital really so much better than TechBD that it's worth this fight?'",
+      "prompt": "Do you revise your recommendation? How do you think through this decision?",
+      "evaluationCriteria": [
+        "**Legitimacy of Arguments**: Do they assess whether local capacity argument has merit vs is pure rationalization?",
+        "**Process Integrity**: Do they weigh changing recommendation after evaluation vs maintaining process integrity?",
+        "**Strategic Calculation**: Do they consider Rashid's point about future effectiveness?",
+        "**Technical Difference**: Do they assess how much better AsiaDigital actually is (85 vs 72 is meaningful, 78 vs 72 less so)?",
+        "**Documentation**: Do they think about documenting this pressure?",
+        "**Escalation Options**: Do they consider involving the donor (UNDP/World Bank) who may have leverage?"
+      ],
+      "coachingNotes": "This is the more insidious form of pressure - intellectually plausible arguments used to justify predetermined decisions. Is local capacity important? Yes. Is it fair to reweight criteria after bids are submitted? No. The Additional Secretary is using the first to justify the second. But here's the complexity: Rashid's right that you need to pick your battles. If you fight every improper suggestion, you become ineffective. The questions: [1] Is AsiaDigital significantly better than TechBD? (78 vs 72 isn't massive), [2] Is this corruption or legitimate policy preference?, [3] What's your role - pure technical advisor or political operator?, [4] If you cave here, where do you draw the line? No easy answer. But thinking through these questions is more important than any single decision."
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "You decide to consult with the UNDP programme manager before deciding:\n\nYou: 'I'm getting pressure to favor TechBD. Not blatant corruption - wrapped in local capacity arguments. But I think there's political interest. What should I do?'\n\nUNDP Manager: 'Document everything. Maintain your technical recommendation. But in your presentation to Cabinet Committee, acknowledge the local capacity consideration explicitly. Say something like: \"AsiaDigital scores highest on published criteria. However, if Cabinet Committee wishes to prioritize local capacity building, TechBD is a viable option at 72/100, though with higher risk given less relevant experience.\" This way you've maintained technical integrity while giving them the political option if they want it.'\n\nYou: 'So I'm giving them permission to choose TechBD for political reasons?'\n\nUNDP Manager: 'You're acknowledging that there are legitimate policy considerations beyond pure technical scoring. The Cabinet Committee is the decision-maker. Your job is to give them accurate information, not make their political decisions for them. If they choose TechBD despite lower technical score, that's their prerogative - as long as you've documented the tradeoff.'\n\nThis framing makes sense to you. You revise your presentation:\n\n**Slide 1: Evaluation Summary**\n- AsiaDigital: 78/100 technical, $5.8M, strong regional experience\n- TechBD: 72/100 technical, $5.2M, local company, less relevant experience\n- GlobalSoft: 85/100 technical, $7.1M (over budget)\n- InnovateBD: 68/100 technical, $4.9M, unproven capacity\n\n**Slide 2: Technical Recommendation**\n- Based on published evaluation criteria, AsiaDigital offers best combination of technical quality and value for money.\n\n**Slide 3: Policy Considerations**\n- Local capacity building is important development objective\n- TechBD is viable local option, though with higher implementation risk\n- Cabinet Committee may wish to weigh local preference against technical scoring\n\n**Slide 4: Risk Assessment**\n- AsiaDigital: Lower technical risk, proven track record, but funds go abroad\n- TechBD: Higher technical risk, less experience, but builds local capacity\n\nYou feel this is balanced - you've maintained technical integrity while acknowledging legitimate policy considerations.\n\nTwo days before the Cabinet Committee meeting, you receive a WhatsApp message from unknown number:\n\n*\"We know you're presenting Tuesday. Remember Bangladesh has been good to you. We hope you'll be good to Bangladesh. Don't recommend foreign company over local one. This is friendly advice.\"*\n\nThis is more explicit threat. Not clear who sent it. Could be TechBD, could be someone else.\n\nThen, that evening, Rashid calls you:\n\nRashid: 'I need to tell you something. TechBD CEO is offering... incentives... to people on the evaluation committee. I don't know details. But I heard numbers mentioned. I'm telling you because you should know what you're dealing with. This isn't just political pressure. There may be actual corruption.'",
+      "prompt": "With this new information (threatening WhatsApp, possible bribery), what do you do?",
+      "evaluationCriteria": [
+        "**Escalation**: Do they recognize this crosses a line that requires escalation?",
+        "**Evidence**: Do they think about what evidence they have vs allegations?",
+        "**Reporting Channels**: Do they know where to report suspected corruption (UNDP, donor, anti-corruption commission)?",
+        "**Personal Safety**: Do they consider the threatening message seriously?",
+        "**Process Integrity**: Do they think about how to protect the procurement process?",
+        "**Whistleblower Protection**: Do they consider protections for Rashid who shared this information?"
+      ],
+      "coachingNotes": "This has escalated from pressure to potential corruption and threats. The threatening WhatsApp is unacceptable regardless of who sent it. Rashid's information about bribes, if true, is criminal. You must escalate now - this isn't about managing relationships or picking battles. This is about preventing corruption of a $6M procurement. Actions: [1] Screenshot and document the WhatsApp threat, [2] Report to UNDP immediately, [3] Report to the donor funding this programme, [4] Consider whether to report to Bangladesh anti-corruption commission (but only with UNDP support), [5] Protect Rashid as source. Your presentation will happen, but now it's part of a larger corruption investigation. Your role has shifted from technical advisor to witness."
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "You immediately report to UNDP with all documentation: the dinner invitation, the Additional Secretary's meeting, the WhatsApp threat, Rashid's information about bribes.\n\nUNDP convenes emergency meeting with the donor (World Bank, who's funding this programme) and A2I leadership.\n\nWorld Bank representative: 'This is serious. Our fiduciary standards prohibit this kind of interference. We'll inform the Cabinet Secretary that if this procurement is tainted by corruption, we'll pull funding. That should sober people up.'\n\nThe A2I Programme Director (your Bangladeshi counterpart): 'I'm embarrassed this happened. But I'm also grateful you reported it. We can't build digital government if procurement is corrupt. We'll postpone the Cabinet Committee meeting and investigate.'\n\nOver the next two weeks:\n\n1. World Bank sends formal letter to Government of Bangladesh raising concerns about procurement integrity\n2. TechBD CEO is quietly told to back off (who told him? unclear, but pressure stops)\n3. The threatening WhatsApp is traced to a TechBD marketing employee (fired)\n4. Two evaluation committee members recuse themselves (were they offered bribes? not proven, but suspicion)\n5. New evaluation committee members are appointed\n6. The procurement process is reviewed by external auditors\n\nOne month later, Cabinet Committee meets. You present your evaluation (AsiaDigital recommended). The Additional Secretary is present but says nothing.\n\nCabinet Committee asks questions, discusses local capacity considerations, and then decides:\n\n**Award to AsiaDigital, with requirement that 30% of development work be subcontracted to local companies for capacity building.**\n\nThis is a reasonable compromise - AsiaDigital's technical capability, but with local capacity building built in.\n\nAfter the meeting, the A2I Programme Director approaches you:\n\nDirector: 'You did the right thing. I know it wasn't easy. Some people will be angry with you. But this is how we build institutions - by defending process integrity even when it's uncomfortable. Thank you.'\n\nBut later, Rashid tells you:\n\nRashid: 'People are talking. Some say you caused problems, went over people's heads, involved foreigners. Your name is... complicated now. I'm still glad you did it. But I'm warning you - some doors may be closed to you now.'\n\nYou reflect on the experience:\n\n**What you did right:**\n- Declined the dinner invitation immediately\n- Documented every pressure attempt\n- Escalated when it crossed into threats/corruption\n- Protected process integrity\n- Used institutional channels (UNDP, World Bank) not just personal judgment\n\n**What you learned:**\n- Corruption pressure comes in many forms - hospitality, intellectual arguments, threats\n- Local colleagues like Rashid face different pressures than you as foreigner\n- Institutions (UNDP, World Bank) provide protection individual advisors don't have\n- Doing the right thing has costs - reputation, relationships, future access\n- But NOT doing the right thing has worse costs - corruption continues, trust erodes\n\n**What you're still wrestling with:**\n- Would you do this again? (Yes)\n- Was the personal cost worth it? (Probably)\n- Could you have been more strategic? (Maybe - earlier consultation with UNDP)\n- How do you rebuild relationships with people who feel you went over their heads? (Unclear)\n- When do you fight and when do you compromise? (Still learning)",
+      "prompt": "Reflect on this experience: What's your personal framework for handling ethical dilemmas?",
+      "evaluationCriteria": [
+        "**Clear Lines**: Do they identify what's absolutely not acceptable (threats, bribes) vs what's gray area (hospitality, policy arguments)?",
+        "**Institutional Protection**: Do they recognize the importance of working through institutions vs going alone?",
+        "**Cost Awareness**: Do they acknowledge that doing the right thing has personal costs?",
+        "**Humility**: Do they recognize they're still learning, not that they have all answers?",
+        "**Context Dependence**: Do they understand that right action depends on context, relationships, institutions available?",
+        "**Long-term Thinking**: Do they consider that protecting integrity builds trust over time even if costly short-term?"
+      ],
+      "coachingNotes": "This case shows the full spectrum of corruption pressure: soft (dinner invitation), sophisticated (policy arguments), hard (threats, bribes). The key lessons: [1] Document everything, [2] Use institutional channels (don't fight alone), [3] Know your lines (where do you compromise vs fight?), [4] Accept costs (doing right thing isn't always popular), [5] Stay humble (these situations are complex, you won't always get it right). Your framework might be: Hospitality that creates obligation → decline. Policy arguments used to justify predetermined decisions → push back but not fight to the death. Threats or corruption → escalate immediately. And critically: work through institutions (UNDP, donors) who have more leverage than you as individual."
+    }
+  ],
+  "keyTakeaways": [
+    "Corruption pressure comes in many forms: hospitality, policy arguments, threats, bribes",
+    "Document everything - dates, times, conversations, messages",
+    "Use institutional channels (donors, UNDP, development banks) - don't fight corruption alone",
+    "Know your lines: where you'll compromise (policy debates) vs where you'll fight (threats, corruption)",
+    "Doing the right thing has personal costs - damaged relationships, closed doors, reputation risk",
+    "But not fighting corruption has worse long-term costs - eroded trust, continued bad practices",
+    "Local colleagues face different pressures than foreign advisors - be aware of their vulnerability",
+    "Protection comes from process integrity and documentation, not just personal integrity"
+  ],
+  "frameworks": [
+    {
+      "name": "The Three Lines Framework",
+      "description": "Categorize requests into: [1] Acceptable (relationship building without obligation), [2] Gray area (legitimate policy debates with political overtones), [3] Unacceptable (threats, corruption, process manipulation).",
+      "application": "Line 1: Normal business. Line 2: Pushback but negotiate. Line 3: Escalate and fight. Example: Dinner invitation = Line 2/3 depending on context. Threatening message = Line 3 always."
+    },
+    {
+      "name": "Document + Escalate Protocol",
+      "description": "For any pressure: [1] Document (date, time, who, what), [2] Assess severity, [3] Inform supervisor same day, [4] Escalate to institutions (donor, UNDP) if crosses lines, [5] Protect sources.",
+      "application": "Makes escalation systematic, not panic-driven. Ensures you have evidence. Creates institutional memory even if single instance doesn't trigger action."
+    },
+    {
+      "name": "Institutional Leverage",
+      "description": "Understand which institutions have leverage: World Bank can threaten funding withdrawal, UNDP can raise with government, embassy can apply diplomatic pressure. Use them strategically.",
+      "application": "Don't fight corruption as individual advisor. Activate institutional protections. Example: World Bank letter had more impact than any individual complaint."
+    },
+    {
+      "name": "Cost-Benefit of Integrity",
+      "description": "Fighting corruption has costs (relationships, access, reputation) AND benefits (trust, legitimacy, long-term effectiveness). Assess both honestly.",
+      "application": "Not naive ('doing right thing always works out') or cynical ('corruption is inevitable, go along'). Eyes-open assessment: Yes, there are costs. Yes, it's still worth it. Here's why."
+    }
+  ],
+  "relatedCases": []
+}

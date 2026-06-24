@@ -1,0 +1,491 @@
+{
+  "id": "conflict-management",
+  "slug": "conflict-management",
+  "courseNumber": 10,
+  "title": "Conflict Management",
+  "subtitle": "Navigating Organizational Tensions",
+  "tier": 2,
+  "category": "Stakeholder Dynamics",
+  "duration": "4 hours",
+  "difficulty": "Intermediate",
+  "description": "Transform conflicts into opportunities for better outcomes and stronger relationships.",
+  "learningObjectives": [
+    "Identify conflict sources and underlying tensions in organizational contexts",
+    "Apply appropriate resolution strategies based on situational analysis",
+    "Turn disagreement into progress through structured dialogue"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [
+    "stakeholder-engagement",
+    "emotional-intelligence"
+  ],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": [
+    "DPI advisors",
+    "government IT directors",
+    "policy coordinators"
+  ],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Understanding Conflict in Organizations",
+      "duration": 30,
+      "type": "theory",
+      "content": {
+        "overview": "Conflict is an inevitable part of organizational life, especially in government where stakeholders have divergent mandates, budget pressures, and political considerations. Rather than viewing conflict as purely destructive, leaders can harness it as a catalyst for innovation and better decision-making. This module explores the nature of organizational conflict, common sources in DPI environments, and why conflict management is essential for effective leadership.",
+        "keyPoints": [
+          {
+            "title": "Conflict is Natural in Complex Systems",
+            "description": "Government organizations operate with competing priorities: efficiency, equity, transparency, and political viability. Disagreements arise because stakeholders legitimately have different perspectives on how to balance these values. A conflict-free organization is often a sign of poor communication or suppressed dissent rather than harmony."
+          },
+          {
+            "title": "Common Conflict Sources in Government",
+            "description": "Budget disputes, jurisdictional overlaps, competing mandates, resource allocation, policy disagreements, and inter-agency turf wars. For example, a state IT director might clash with a policy coordinator over technology adoption timelines\u2014the IT leader needs 6 months for security compliance, while the coordinator needs 2 months to meet legislative deadlines."
+          },
+          {
+            "title": "Conflict vs. Dysfunction",
+            "description": "Healthy conflict involves principled disagreement where stakeholders advocate for their positions while remaining respectful and focused on shared goals. Dysfunctional conflict involves personal attacks, hidden agendas, bad faith arguments, or attempts to sabotage. The difference lies in motivation and communication patterns."
+          },
+          {
+            "title": "The Cost of Avoiding Conflict",
+            "description": "Unaddressed tensions fester, creating passive-aggressive behavior, disengagement, and political maneuvering behind the scenes. A DPI advisor who avoids confronting a partner agency's poor execution will find the problem escalates, affecting the entire program's credibility."
+          }
+        ],
+        "keyInsight": "Conflict in organizations signals that smart people care about important outcomes. Your job as a leader is not to eliminate conflict but to channel it productively toward better solutions and stronger relationships."
+      },
+      "exercises": [
+        {
+          "id": "exercise-1-1",
+          "title": "Conflict Inventory Assessment",
+          "description": "Identify three current or recent conflicts in your organization. For each, note: the stakeholders involved, the stated positions, the underlying interests, and the organizational impact. Assess whether each conflict is currently healthy (principled disagreement) or dysfunctional (personal, hidden agendas).",
+          "duration": 10,
+          "type": "reflection"
+        },
+        {
+          "id": "exercise-1-2",
+          "title": "Historical Case Analysis",
+          "description": "Select a past organizational conflict that was resolved successfully. Analyze what made the resolution effective. Did leaders acknowledge the legitimate interests on both sides? Did they reframe the problem? Did they find integrative solutions? Document the lessons.",
+          "duration": 15,
+          "type": "case-study"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Conflict Styles and When to Use Each",
+      "duration": 45,
+      "type": "application",
+      "content": {
+        "overview": "Leaders and organizations have default conflict styles\u2014patterns of behavior when disagreements arise. The Thomas-Kilmann model identifies five distinct styles: competing, collaborating, compromising, avoiding, and accommodating. Each has appropriate applications. Understanding your style and when to shift is essential for effective conflict management. In government contexts, pressure to 'keep the peace' sometimes leads to over-accommodation, while competing styles can damage inter-agency relationships.",
+        "keyPoints": [
+          {
+            "title": "Competing Style: Win-Lose Approach",
+            "description": "High assertiveness, low cooperation. The leader advocates firmly for their position, prioritizes their interests, and may override others' concerns. Appropriate when: quick decisions are necessary, unpopular decisions must be made, significant principles are at stake. Example: A DPI director competing with a department head over data governance authority when security risks are high. Inappropriate when: the relationship matters more than the immediate outcome, you need buy-in for implementation, or creative solutions are possible."
+          },
+          {
+            "title": "Collaborating Style: Win-Win Approach",
+            "description": "High assertiveness, high cooperation. Both parties work together to find solutions that satisfy all interests. Requires time, openness, and trust. Appropriate when: you need commitment from all stakeholders, creative problem-solving is possible, the relationship is important. Example: A policy coordinator and IT director collaborating on a policy framework that addresses both legislative timelines and technical feasibility. Inappropriate when: time is critical, parties are unwilling to work together, or the issue is low-stakes."
+          },
+          {
+            "title": "Compromising Style: Split-the-Difference",
+            "description": "Moderate assertiveness, moderate cooperation. Each party gives up something to reach a middle ground. Fast but often leaves both sides partially unsatisfied. Appropriate when: time is limited, parties have roughly equal power, both positions have merit. Example: Negotiating budget allocations between competing departmental priorities. Inappropriate when: important principles are involved or when 1+1 can equal 3 through integration."
+          },
+          {
+            "title": "Avoiding Style: Withdrawal",
+            "description": "Low assertiveness, low cooperation. The leader sidesteps the conflict, postpones decisions, or changes the subject. Appropriate when: the issue is minor, emotions are too high for productive discussion, you lack authority to resolve it. Example: Deferring a jurisdictional dispute to a higher authority. Inappropriate when: the issue affects key outcomes, avoiding allows problems to escalate, or it signals weakness."
+          },
+          {
+            "title": "Accommodating Style: Yield-to-Others",
+            "description": "Low assertiveness, high cooperation. The leader prioritizes the relationship and agreement over their own interests. Appropriate when: the other side has a better solution, maintaining the relationship is critical, the issue matters little to you. Example: A DPI advisor accommodating a partner's timeline when the substance is already agreed upon. Inappropriate when: you're right on substantive grounds, it establishes a pattern of being overridden, or it enables poor decisions."
+          }
+        ],
+        "keyInsight": "Flexibility is the hallmark of effective conflict management. Leaders who can diagnose the situation and shift styles appropriately are far more successful than those locked into one approach. Government contexts often call for collaborative and compromising styles, but competing and avoiding styles have their place when applied strategically."
+      },
+      "exercises": [
+        {
+          "id": "exercise-2-1",
+          "title": "Personal Style Profile",
+          "description": "Reflect on your default conflict style. Which style do you gravitate toward? Under stress, do you shift toward competing or avoiding? Think of three recent conflicts and identify which style you used in each. Did it serve you well? When did it backfire?",
+          "duration": 12,
+          "type": "reflection"
+        },
+        {
+          "id": "exercise-2-2",
+          "title": "Style Selection Scenario",
+          "description": "You have a disagreement with a partner agency about data-sharing protocols. The policy mandate is firm, but your agency has technical limitations that make compliance difficult. Which style should you lead with? Why? Walk through the conversation you'd have with the partner agency director. Would you shift styles mid-conversation? When and why?",
+          "duration": 15,
+          "type": "role-play"
+        },
+        {
+          "id": "exercise-2-3",
+          "title": "Organizational Style Assessment",
+          "description": "Assess your organization's default style. When conflicts arise between departments, is there a pattern? Does leadership tend to compete, avoid, or collaborate? How does this style affect morale, innovation, and outcomes? What would need to change to build more collaboration?",
+          "duration": 18,
+          "type": "case-study"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Root Cause Analysis",
+      "duration": 50,
+      "type": "application",
+      "content": {
+        "overview": "Many conflicts are resolved at the surface level without addressing underlying causes. Someone apologizes, a compromise is struck, and the relationship moves forward\u2014until the same tension resurfaces weeks later. Effective conflict management requires digging into root causes: the legitimate interests, unmet needs, competing values, and systemic factors driving the disagreement. This module teaches leaders to move beyond positions to interests, and to identify patterns rather than isolated incidents.",
+        "keyPoints": [
+          {
+            "title": "Positions vs. Interests",
+            "description": "A position is what someone says they want (e.g., 'We need to delay this IT implementation by 6 months'). An interest is why they want it (e.g., 'We need time to train staff, manage organizational change, and ensure quality'). Focusing only on positions leads to win-lose thinking. Understanding interests opens pathways to creative solutions where both sides' underlying needs are met."
+          },
+          {
+            "title": "The Iceberg Model of Conflict",
+            "description": "Visible conflict (raised voices, stated disagreements) is the tip of the iceberg. Below the surface are: unexpressed frustrations, competing values, unmet needs, power dynamics, historical grievances, and structural incentives. A conflict about budget allocation may really be about feeling undervalued. A disagreement about process may reflect distrust from a past failed project. Good diagnosis requires asking probing questions and listening carefully."
+          },
+          {
+            "title": "Values Conflicts",
+            "description": "Sometimes disagreements reflect fundamentally different values. One leader prioritizes security and may want to slow adoption of new technologies; another prioritizes innovation and wants to move fast. Neither position is inherently wrong\u2014they reflect different priorities. Recognizing this as a values conflict, not a right-vs-wrong situation, reframes how you approach resolution."
+          },
+          {
+            "title": "Systemic and Structural Causes",
+            "description": "Conflicts are often baked into organizational structures. A conflict between IT and policy may stem from misaligned incentives, unclear authority boundaries, or competing metrics. Individual leaders might genuinely like each other but clash because their roles put them in opposition. Addressing the system is more effective than repeated one-off conflict resolution."
+          },
+          {
+            "title": "Pattern Recognition",
+            "description": "If the same conflict keeps recurring with the same person or across your organization, dig for patterns. Are there systemic issues? Unresolved past conflicts? Incompatible work styles? Conflicting strategic priorities? Identifying patterns allows you to address root causes rather than managing symptoms perpetually."
+          }
+        ],
+        "keyInsight": "The most productive conversations about conflict focus not on blame but on mutual understanding: 'What is important to you about this? What concerns are you trying to address? What would success look like for you?' These questions shift the conversation from who's right to what's needed."
+      },
+      "exercises": [
+        {
+          "id": "exercise-3-1",
+          "title": "Position-Interest Analysis",
+          "description": "Take a current workplace disagreement. Write down the stated positions of both sides. Now, for each position, ask: 'Why is this important? What would achieving this position accomplish? What problem would it solve?' Identify the underlying interests. Are there interests that both sides share? Where do they genuinely diverge?",
+          "duration": 15,
+          "type": "worksheet"
+        },
+        {
+          "id": "exercise-3-2",
+          "title": "Iceberg Mapping",
+          "description": "Draw an iceberg. Label the visible conflict at the top (the stated disagreement). Below the waterline, map: unexpressed frustrations, competing values, unmet needs, power dynamics, historical context, and systemic factors. Which of these are you certain about? Which require further exploration? What questions would help you understand the full picture?",
+          "duration": 18,
+          "type": "visual-mapping"
+        },
+        {
+          "id": "exercise-3-3",
+          "title": "Root Cause Conversation Simulation",
+          "description": "Role-play a conversation aimed at uncovering root causes. One person plays the frustrated colleague; the other plays the leader asking questions to understand. The leader's goal is not to defend or persuade but to understand. Practice using open-ended questions, reflecting back what you hear, and identifying the legitimate interests beneath the stated position.",
+          "duration": 17,
+          "type": "role-play"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "De-escalation Techniques",
+      "duration": 40,
+      "type": "application",
+      "content": {
+        "overview": "When tensions run high, people's rational minds often go offline. Emotions take over, conversations become adversarial, and productive dialogue becomes impossible. De-escalation is about bringing people back to a state where rational problem-solving is possible. Effective de-escalation requires managing your own emotions first, then using specific techniques to calm the situation. This is especially important in government contexts where media scrutiny or political pressure can amplify emotional intensity.",
+        "keyPoints": [
+          {
+            "title": "Manage Your Own Emotions First",
+            "description": "You cannot de-escalate others if you're escalated. If someone is angry, defensive, or contemptuous, your instinct might be to match their intensity or become defensive yourself. Resist this. Take a breath. Remind yourself of their underlying concerns. View the escalation as a signal that something important is at stake for them, not as a personal attack. Your calm presence is contagious."
+          },
+          {
+            "title": "Validate Feelings Without Validating Positions",
+            "description": "Validation means acknowledging that someone's feelings are real and understandable, not that their position is correct. Example: 'I can see why you're frustrated. The timeline has shifted multiple times, and that creates uncertainty.' This differs from: 'You're right; the timeline changes were unfair.' Validation defuses emotional intensity and signals respect."
+          },
+          {
+            "title": "Use Calm Verbal Techniques",
+            "description": "Speak in a low, measured tone. Use pauses. Avoid sarcasm, dismissiveness, or inflammatory language. Ask genuine questions: 'Help me understand...' instead of 'That doesn't make sense.' Reflect back what you hear: 'So the concern is that we're moving too fast without stakeholder input?' This slows the conversation and signals you're listening."
+          },
+          {
+            "title": "Create Physical and Emotional Space",
+            "description": "If a conversation is getting heated, suggest a break. Offer water. Change location if possible. Sometimes stepping away for 30 minutes allows emotions to cool and both parties to gain perspective. This is not avoidance\u2014it's a strategic pause to enable better conversation later. Frame it positively: 'I want to make sure we're at our best when we talk about this.'"
+          },
+          {
+            "title": "Name the Process, Not Just the Problem",
+            "description": "When emotions are high, acknowledge it directly: 'I notice this is becoming heated. That tells me this matters a lot to both of us. Let's slow down and make sure we're both heard.' This breaks the escalation cycle and refocuses on collaborative process. It also prevents the conversation from becoming about who's more angry or righteous."
+          },
+          {
+            "title": "Separate People From Problem",
+            "description": "In high-stakes government contexts, it's easy to make conflicts personal. Consciously reframe: 'We both want this program to succeed. The disagreement is about how to get there.' This helps both parties see themselves as allies solving a problem rather than adversaries fighting each other. Use 'we' language when possible: 'How do we figure this out?'"
+          }
+        ],
+        "keyInsight": "De-escalation is about buying time and clarity. When emotions are high, nothing productive happens. Your goal is to lower the temperature enough that people can think clearly again. This requires patience, emotional regulation, and strategic communication."
+      },
+      "exercises": [
+        {
+          "id": "exercise-4-1",
+          "title": "Emotional Regulation Practice",
+          "description": "Identify a situation that typically triggers your defensiveness or anger at work. Imagine it vividly. Notice your physical response: tension, quickened heartbeat, tightness. Now practice your de-escalation strategy: take a breath, remind yourself of your goal (understanding, not winning), and mentally shift to curiosity about their perspective. Do this mentally three times. When it happens for real, your nervous system will be primed to respond differently.",
+          "duration": 12,
+          "type": "mindfulness"
+        },
+        {
+          "id": "exercise-4-2",
+          "title": "De-escalation Language Script",
+          "description": "Write down five statements you can use to de-escalate tense conversations. Examples: 'I can see this is important. Help me understand your concerns.' 'I may have misunderstood. Can you walk me through that again?' 'I want to make sure we're both heard. Should we take a pause and come back to this?' Practice saying them aloud. Notice how different they feel from defensive or dismissive responses.",
+          "duration": 10,
+          "type": "scripting"
+        },
+        {
+          "id": "exercise-4-3",
+          "title": "Role-Play: High-Stakes Conflict",
+          "description": "One person plays a government IT director who is angry about policy changes being implemented without IT input, claiming it will compromise system integrity. The other plays a leader using de-escalation techniques. The leader's goal is not to agree or disagree but to help the IT director feel heard and shift from escalated to problem-solving mode. Switch roles and try again.",
+          "duration": 18,
+          "type": "role-play"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Mediation Skills",
+      "duration": 55,
+      "type": "application",
+      "content": {
+        "overview": "As a leader, you often serve as a mediator between conflicting parties\u2014whether that's a dispute between two team members, rival departments, or external stakeholders. Mediation differs from arbitration (deciding who's right) or advice (telling people what to do). A mediator's role is to facilitate dialogue, help parties understand each other, and guide them toward mutually acceptable solutions. Effective mediation requires neutrality, strong listening skills, and the ability to ask questions that shift perspective.",
+        "keyPoints": [
+          {
+            "title": "Mediator Neutrality and Boundaries",
+            "description": "A mediator must be (or appear to be) neutral. If parties perceive bias, the process breaks down. This doesn't mean you have no opinions, but you must set them aside in the mediation process. You're not there to convince anyone of your view; you're there to help them work it out. Be explicit about your role: 'I'm here to help you both understand each other and find a solution that works. I'm not here to tell you who's right.'"
+          },
+          {
+            "title": "Creating Psychological Safety",
+            "description": "Parties won't speak honestly if they fear their words will be used against them or shared with others. Establish confidentiality: 'What's said in this room stays in this room.' Create a neutral physical space. Use calm language and respectful process. If one party dominates, gently interrupt: 'Let's make sure we hear from both of you equally.' Psychological safety is the foundation of honest dialogue."
+          },
+          {
+            "title": "Facilitated Dialogue: Structured Conversation",
+            "description": "Don't just let two angry people talk freely\u2014that often escalates. Instead, structure the conversation: First, person A shares their perspective and concerns without interruption. Then, you reflect back what you heard to check understanding. Person B does the same. Then, you help them identify shared interests and brainstorm solutions together. This structure ensures everyone is heard and prevents domination."
+          },
+          {
+            "title": "Active Listening and Reflection",
+            "description": "Listen not just for content but for emotions, values, and underlying concerns. Reflect back: 'What I hear is that you're concerned about timelines and also about maintaining the relationship. Is that right?' This serves multiple purposes: it shows you're listening, it checks your understanding, it signals respect, and it helps the other person feel heard. Often, someone becomes less defensive once they know they've been understood."
+          },
+          {
+            "title": "Reframing and Perspective Shifts",
+            "description": "Help parties see the situation differently. If one side says 'They don't care about quality,' reframe: 'It sounds like quality matters to both of you, and you disagree about how to ensure it.' If another says 'We've always done it this way,' reframe: 'You value stability, and the other team is concerned that we're not adapting to new requirements. How do we honor both?' Reframing moves from blame to problem-solving."
+          },
+          {
+            "title": "Interest-Based Problem Solving",
+            "description": "Once both parties feel heard, move to interests: 'What does success look like for you? What are you trying to accomplish? What concerns are you trying to address?' Identify shared interests (almost always present) and areas of genuine difference. Then, invite brainstorming: 'Given that you both care about X, and you need Y to happen on this timeline, what are all the ways we could make this work?' Separate brainstorming from evaluation; don't critique ideas as they emerge."
+          },
+          {
+            "title": "Working Toward Agreement",
+            "description": "Once viable options are on the table, help parties evaluate them. Which options address both sides' core interests? If agreement seems impossible, identify areas of agreement and areas of remaining disagreement. Is there a larger authority that can decide on unresolved points? Can you structure an experiment or pilot to test a solution? If agreement truly isn't possible, acknowledge it and next steps become clearer."
+          }
+        ],
+        "keyInsight": "Mediation is less about finding the perfect solution and more about helping people move from escalation and blame to understanding and collaboration. When both parties feel heard and respect the other's legitimate concerns, they're usually capable of finding workable solutions on their own."
+      },
+      "exercises": [
+        {
+          "id": "exercise-5-1",
+          "title": "Mediation Setup Practice",
+          "description": "Write out the opening statement you would give in a mediation between two departmental leaders. Include: acknowledgment of their importance and commitment, your role as neutral facilitator, confidentiality, the process you'll follow, and an invitation for them to share their perspective. Practice delivering it calmly and with confidence. Adjust until it feels natural.",
+          "duration": 12,
+          "type": "scripting"
+        },
+        {
+          "id": "exercise-5-2",
+          "title": "Reflection and Reframing",
+          "description": "Gather three to five statements from real or imagined conflicts. For each, write a reflection that shows understanding without bias: 'What I hear you saying is...' Then, write a reframe that shifts from blame to problem-solving. Example: Statement: 'IT always blocks innovation.' Reflection: 'It sounds like you want to move faster on new initiatives.' Reframe: 'Both teams want to innovate. The question is how to do it safely.'",
+          "duration": 15,
+          "type": "worksheet"
+        },
+        {
+          "id": "exercise-5-3",
+          "title": "Full Mediation Simulation",
+          "description": "Conduct a full mediation with two volunteers or colleagues playing conflicting parties. You are the mediator. Run through the entire process: opening statement, facilitated dialogue with one party sharing then the other, reflection and understanding check, identification of interests, and collaborative problem-solving. Debrief: What worked? Where did neutrality feel difficult? How could you have handled it better?",
+          "duration": 28,
+          "type": "role-play"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Inter-Agency Conflicts",
+      "duration": 45,
+      "type": "application",
+      "content": {
+        "overview": "Conflicts within a single organization are challenging enough. Inter-agency conflicts add layers of complexity: different reporting structures, competing mandates, budget autonomy, political pressures, and no single authority to make everyone comply. Government IT directors and DPI advisors frequently navigate these. Success requires understanding the political landscape, building coalitions, using formal channels appropriately, and focusing on shared goals that transcend agency boundaries. This module addresses the unique dynamics of inter-agency conflict.",
+        "keyPoints": [
+          {
+            "title": "Different Incentive Structures",
+            "description": "Agencies succeed by meeting their mandates, not by collaborating with others. A health agency measures success by health outcomes; an IT agency by system uptime and security. These incentives may align or clash. A data-sharing initiative might help health but create IT security risks. Understanding each agency's incentives helps you see why they take their positions and identify areas where incentives do align."
+          },
+          {
+            "title": "Authority and Jurisdictional Clarity",
+            "description": "Inter-agency conflicts often involve authority questions: Who decides? Who funds? Whose rules apply? These are rarely clear-cut. Build your case for your agency's authority on legal precedent, past practice, or explicit mandates. Know when you have clear authority and when you're in shared territory. Sometimes the resolution is clarifying jurisdiction rather than resolving a substantive disagreement."
+          },
+          {
+            "title": "Building Multi-Agency Coalitions",
+            "description": "Rather than facing another agency alone, build coalitions with other agencies that share your interests. If you're pushing for data-sharing standards, identify all agencies that would benefit. Coordinate your advocacy. A coalition of five agencies requesting something has more weight than one agency demanding it. This requires relationship-building before conflicts arise."
+          },
+          {
+            "title": "Escalation and Formal Channels",
+            "description": "Inter-agency conflicts sometimes need formal resolution: committees, interagency task forces, or escalation to higher authorities. Know when to use formal channels and when to resolve at your level. Using formal channels too early can entrench positions; avoiding them too long can waste time. Formal channels should be leveraged when: voluntary agreement isn't emerging, you need documented decision-making, or the issue has political importance."
+          },
+          {
+            "title": "Managing Constituencies and Political Pressure",
+            "description": "Inter-agency conflicts are often visible to lawmakers, media, and the public. This creates pressure to 'win' rather than find the best outcome. Resist this. Frame resolutions in ways that allow all agencies to claim credit. 'We worked together and achieved X' is better than 'Our agency got what we wanted.' This protects future relationships and your personal credibility."
+          },
+          {
+            "title": "Shared Goals and Common Ground",
+            "description": "In inter-agency work, emphasize shared goals: better service to citizens, effective use of public resources, improved outcomes. These transcend agency boundaries. If you can reframe a dispute as 'How do we best serve the public?' rather than 'Which agency is right?' you shift the conversation. It doesn't always work, but it's worth trying."
+          }
+        ],
+        "keyInsight": "Inter-agency conflict is often about misaligned incentives and unclear authority more than principled disagreement. Success comes from understanding each agency's constraints and imperatives, building coalitions, and finding solutions that serve shared goals while respecting each agency's mandate."
+      },
+      "exercises": [
+        {
+          "id": "exercise-6-1",
+          "title": "Stakeholder and Incentive Mapping",
+          "description": "Identify a current or recent inter-agency dispute. Map all agencies involved. For each, write: their primary mandate, how they measure success, what they stand to gain or lose from different resolutions, and their political constraints. Where do incentives align? Where do they clash? Based on this map, identify potential coalition partners or common ground.",
+          "duration": 15,
+          "type": "worksheet"
+        },
+        {
+          "id": "exercise-6-2",
+          "title": "Coalition Building Strategy",
+          "description": "You're proposing an initiative that some agencies support and others oppose. Design a coalition-building strategy. Which agencies should you approach first? What's your pitch to each? How do you get them to publicly support the initiative? What concessions might you make to build support? Draft talking points for each coalition member so they can advocate internally.",
+          "duration": 18,
+          "type": "strategic-planning"
+        },
+        {
+          "id": "exercise-6-3",
+          "title": "Escalation Decision Framework",
+          "description": "Create a decision framework for when to escalate an inter-agency disagreement to formal channels vs. resolving it at your level. Factors to consider: time sensitivity, political visibility, whether voluntary agreement is possible, resource implications, and impact on future relationships. Apply it to a real or hypothetical conflict in your context.",
+          "duration": 12,
+          "type": "framework-development"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "Technical vs Political Conflicts",
+      "duration": 50,
+      "type": "application",
+      "content": {
+        "overview": "A frequent source of confusion in government organizations is conflating technical and political disagreements. A technical disagreement is about facts, data, best practices, and measurable outcomes. A political disagreement is about values, priorities, and whose interests are served by different choices. A conflict that appears technical often has political roots, and vice versa. DPI advisors and government IT leaders must learn to diagnose which is which and address them differently. Treating political disagreements as technical problems (or vice versa) perpetuates conflict.",
+        "keyPoints": [
+          {
+            "title": "What Makes a Disagreement Technical",
+            "description": "A technical disagreement can be resolved through data, testing, expert consultation, or reference to established best practices. Example: 'Should we use relational or non-relational databases for this application?' This can be resolved by analyzing requirements, performance metrics, cost, and team expertise. Reasonable experts might differ, but the disagreement is grounded in technical factors."
+          },
+          {
+            "title": "What Makes a Disagreement Political",
+            "description": "A political disagreement reflects different values, priorities, or whose interests are served. Example: 'Should we prioritize speed of implementation or maximum security?' Both matter, but people weight them differently based on their role and values. A policy coordinator values speed to serve constituents; an IT security officer values protection. No amount of data resolves this\u2014it's a values question."
+          },
+          {
+            "title": "Technical Disagreements Disguised as Political",
+            "description": "Sometimes people present political disagreements in technical language to gain authority. Example: 'We can't use that open-source platform because of security risks' when the real concern is 'I don't trust solutions I didn't build' or 'This threatens our current vendor relationships.' Probe for the real concern: What specific security risks? Have they been tested? By whom? Do they apply to your use case? Often, technical concerns dissolve once addressed."
+          },
+          {
+            "title": "Political Disagreements Disguised as Technical",
+            "description": "Sometimes people present political disagreements technically to avoid appearing self-interested. Example: 'The data shows implementation should take 6 months' when the real concern is 'My department can't absorb this change on the current timeline without hiring.' Address the political reality: Acknowledge the department's constraints. Explore whether timeline, resources, or approach can be adjusted. Pretending it's purely technical when politics are at play wastes everyone's time."
+          },
+          {
+            "title": "Addressing Technical Disagreements",
+            "description": "When you have a true technical disagreement: gather data, consult experts, run pilots or proof-of-concepts, document assumptions, and let evidence guide decisions. Be willing to change your position if the data warrants it. Create forums for technical experts to debate without political pressure. Sometimes, technical disagreements persist because people lack access to good data or expert input."
+          },
+          {
+            "title": "Addressing Political Disagreements",
+            "description": "When you have a political disagreement: acknowledge the values conflict directly, ensure both sides are heard, explore whether you can sequence priorities (do security now, speed later), find compromises that honor both values to some extent, or escalate to leaders who are empowered to set priorities for the organization. Trying to resolve political disagreements through technical data is futile."
+          },
+          {
+            "title": "Mixed Disagreements",
+            "description": "Most real disagreements have both technical and political components. A policy about data governance has technical elements (security, interoperability) and political elements (which agency controls the data, whose interests are prioritized). Break the disagreement into technical and political parts. Resolve the technical parts through evidence. For the political parts, be explicit: 'This is ultimately a question of organizational values and priorities. Here's what I recommend, and here's why.'"
+          }
+        ],
+        "keyInsight": "Clarity about whether a disagreement is technical, political, or mixed is more than semantic\u2014it determines your strategy for resolution. Technical disagreements need data and expertise. Political disagreements need value clarification and leadership judgment. Mixing the two approaches creates perpetual frustration."
+      },
+      "exercises": [
+        {
+          "id": "exercise-7-1",
+          "title": "Diagnosis Exercise",
+          "description": "Gather five current disagreements or debates in your organization. For each, diagnose: Is this primarily a technical disagreement, a political disagreement, or mixed? What evidence would resolve the technical parts? For the political parts, what values or priorities are in tension? Who is empowered to make the political judgment? Write a brief assessment for each.",
+          "duration": 15,
+          "type": "diagnostic-analysis"
+        },
+        {
+          "id": "exercise-7-2",
+          "title": "Data-Gathering Strategy",
+          "description": "Identify a technical disagreement that's stalled. Design a data-gathering strategy to resolve it. What data would be most compelling? Who should gather it? How long would it take? What would constitute credible evidence? What if the data is ambiguous? Plan for how you'd use evidence to either resolve the disagreement or identify the political element beneath it.",
+          "duration": 18,
+          "type": "strategic-planning"
+        },
+        {
+          "id": "exercise-7-3",
+          "title": "Political Negotiation Preparation",
+          "description": "Identify a political disagreement you need to navigate. Explicitly state: the values or priorities in tension, your position and why, the other side's position and what they care about, possible compromises or sequencing approaches, and when you'd need to escalate for leadership judgment. Prepare talking points that acknowledge the legitimacy of both sides' concerns while advocating for your position.",
+          "duration": 17,
+          "type": "negotiation-preparation"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "Building Conflict-Resilient Teams",
+      "duration": 45,
+      "type": "theory",
+      "content": {
+        "overview": "The ultimate goal of conflict management is not conflict avoidance but building organizations that handle disagreement well. Conflict-resilient teams have cultures where productive disagreement is normal, where people speak up without fear of retribution, where diverse perspectives are valued, and where conflict is resolved quickly and fairly. This module shifts from managing individual conflicts to building systems, norms, and practices that make teams resilient.",
+        "keyPoints": [
+          {
+            "title": "Psychological Safety as Foundation",
+            "description": "Teams with high psychological safety have lower conflict escalation because people address issues early. They speak up about problems, surface disagreements, and seek help without fear. Leaders build psychological safety by: being accessible and responsive, treating dissent as valuable, not punishing people for being wrong, acknowledging their own mistakes, and creating forums for candid feedback. When people feel safe, conflicts emerge and resolve faster."
+          },
+          {
+            "title": "Clear Roles and Decision Rights",
+            "description": "Ambiguity about authority is a major source of conflict. Who decides what? When are decisions mine to make alone? When do I need input? When is it collaborative? Make these clear through role clarity, decision frameworks, and explicit communication. Example: 'I make staffing decisions, but I seek input from senior team members. Policy decisions are made collaboratively with the full team.' Clarity prevents repeated conflicts about authority."
+          },
+          {
+            "title": "Norms for Productive Disagreement",
+            "description": "Model and reinforce norms: 'We disagree directly with each other, not about each other. We disagree in the room where decisions are made, not in hallways later. We assume good intent. We focus on ideas, not people. We can disagree and still respect each other.' When team members see you embodying these norms and when you reinforce them (e.g., 'Let's stay focused on the issue, not on questioning intent'), they become cultural practices."
+          },
+          {
+            "title": "Conflict as Information",
+            "description": "Frame conflict not as a problem to be resolved but as information to be understood. When a team member pushes back on a decision, don't be defensive\u2014be curious. 'Tell me more about your concern. What am I missing?' Conflicts often point to real risks, overlooked stakeholders, or flaws in the plan. Teams that treat conflict as input rather than threat make better decisions and feel more engaged."
+          },
+          {
+            "title": "Structured Decision-Making Processes",
+            "description": "Implement processes that invite input, document reasoning, and explain decisions. Example: Before deciding on a technical direction, gather input from relevant stakeholders, document the trade-offs, explain your decision, and address concerns. This doesn't mean everyone gets their way, but it means everyone is heard and understands the reasoning. Transparency in process reduces resentment about outcomes."
+          },
+          {
+            "title": "Early Intervention and Relationship Maintenance",
+            "description": "Address conflicts while they're small, before they fester and damage relationships. Create regular check-ins where people can surface concerns: 'Anything on your mind? How are things going between you and X?' This prevents small irritations from becoming big grievances. Also, invest in relationships continuously, not just when there's conflict. Teams with strong relationships can navigate disagreements more easily."
+          },
+          {
+            "title": "Learning From Conflicts",
+            "description": "After a significant conflict is resolved, debrief. What started it? What escalated it? What resolved it? What would you do differently? This isn't blame\u2014it's learning. Document lessons and apply them going forward. If the same type of conflict keeps happening, redesign the system. Learning from conflict makes future conflicts less likely and less intense."
+          }
+        ],
+        "keyInsight": "Conflict-resilient teams aren't conflict-free; they're teams that handle disagreement productively. They have clear authority, psychological safety, shared norms, and leaders who view conflict as information rather than failure. Building this culture is a long-term investment with enormous payoff."
+      },
+      "exercises": [
+        {
+          "id": "exercise-8-1",
+          "title": "Team Culture Assessment",
+          "description": "Assess your team's conflict resilience. On a scale of 1-10, rate your team on: psychological safety, clarity of roles and decision rights, norms for productive disagreement, treatment of conflict as information, transparency in decision-making, and relationship strength. For the lowest-rated areas, identify specific actions you could take to improve. Draft a 90-day improvement plan.",
+          "duration": 15,
+          "type": "assessment"
+        },
+        {
+          "id": "exercise-8-2",
+          "title": "Norms Development Workshop",
+          "description": "Facilitate a team conversation about norms for productive disagreement. Start with: 'How do we want to handle disagreements on this team? What behaviors help us resolve conflicts? What behaviors hurt?' Document the norms your team agrees on. Post them. Refer to them when conflicts arise. Revisit quarterly.",
+          "duration": 18,
+          "type": "team-facilitation"
+        },
+        {
+          "id": "exercise-8-3",
+          "title": "Conflict Post-Mortem Design",
+          "description": "Design a post-mortem process for significant team conflicts. Questions to include: What triggered the conflict? At what point could we have addressed it earlier? What escalated it? What resolved it? What worked well? What would we do differently? How do we prevent similar conflicts? Draft an agenda and identify when you'd use this process.",
+          "duration": 12,
+          "type": "process-design"
+        }
+      ]
+    }
+  ]
+}

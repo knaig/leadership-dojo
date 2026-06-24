@@ -1,0 +1,1459 @@
+{
+  "id": "crafting-offers",
+  "slug": "crafting-offers",
+  "courseNumber": 38,
+  "title": "Crafting Offers - Connecting Needs with Funding",
+  "subtitle": "Being an Honest Broker",
+  "tier": 7,
+  "category": "Advanced Topics",
+  "duration": "8 hours",
+  "difficulty": "Mastery",
+  "description": "Master the art of identifying implementer needs, understanding funder priorities, and crafting compelling proposals that connect problems with resources.",
+  "learningObjectives": [
+    "Map the DPI funding ecosystem and understand different funder motivations",
+    "Identify real needs beyond stated wants using probing questions",
+    "Find genuine sweet spots where implementer needs meet funder priorities",
+    "Design compelling offers with clear problems, theories of change, and realistic plans",
+    "Write proposals that funders actually read and approve",
+    "Align complex multi-stakeholder ecosystems",
+    "Manage risks and address objections constructively",
+    "Ensure funded proposals transition to successful implementation"
+  ],
+  "prerequisites": [
+    "stakeholder-onboarding",
+    "negotiation-skills",
+    "building-coalitions"
+  ],
+  "relatedCourses": [
+    "funding-resource-mobilization",
+    "working-with-donors",
+    "power-mapping-analysis",
+    "multi-stakeholder-alignment"
+  ],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Understanding the DPI Funding Ecosystem",
+      "duration": "60 min",
+      "type": "theory",
+      "content": {
+        "overview": "Success in DPI work often depends on connecting implementers with funders. This requires deep understanding of the funding landscape - who funds what, why, and how. Different funders have fundamentally different motivations, constraints, and decision criteria. A proposal that excites Gates Foundation may bore World Bank. Understanding this landscape is the foundation of offer crafting.",
+        "keyPoints": [
+          {
+            "title": "Multilateral Development Banks (World Bank, ADB, AfDB, IDB)",
+            "description": "Large-scale loans focused on economic development and institutional capacity building",
+            "characteristics": [
+              "Motivation: Economic development, poverty reduction, institutional strengthening",
+              "Funding type: Primarily loans (with grant components for poorest countries)",
+              "Typical size: $10M - $500M",
+              "Timeline: 12-24 months from concept to approval",
+              "Decision drivers: Country creditworthiness, government ownership, economic impact, fiduciary safeguards",
+              "Constraints: Government debt capacity, procurement rules, safeguard policies"
+            ],
+            "sweetSpot": "This helps government deliver better services while building institutional capacity",
+            "examples": [
+              "World Bank funds $50M digital government transformation in Rwanda with focus on institutional capacity building and economic impact measurement",
+              "Asian Development Bank provides $30M loan for Philippines national ID system with emphasis on financial inclusion outcomes"
+            ]
+          },
+          {
+            "title": "Bilateral Development Agencies (USAID, DFID/FCDO, GIZ, AFD)",
+            "description": "Grants and technical assistance aligned with donor country foreign policy objectives",
+            "characteristics": [
+              "Motivation: Foreign policy objectives, development goals, commercial interests",
+              "Funding type: Grants, technical assistance",
+              "Typical size: $500K - $50M",
+              "Timeline: 6-18 months from concept to approval",
+              "Decision drivers: Alignment with donor priorities, geopolitical considerations, demonstration value",
+              "Constraints: Must align with bilateral relationship and donor country priorities"
+            ],
+            "sweetSpot": "This advances both development outcomes and [donor country] foreign policy goals",
+            "examples": [
+              "USAID funds $15M digital health program in Kenya that strengthens US-Kenya partnership on health security",
+              "FCDO supports $8M digital land registry in Tanzania with focus on women's land rights and UK development priorities"
+            ]
+          },
+          {
+            "title": "Philanthropic Foundations (Gates, Omidyar, Rockefeller)",
+            "description": "Mission-driven grants focused on innovation and scalable solutions",
+            "characteristics": [
+              "Motivation: Specific mission focus (Gates: health, agriculture; Omidyar: governance, digital economy)",
+              "Funding type: Grants",
+              "Typical size: $100K - $20M",
+              "Timeline: 3-12 months from concept to approval",
+              "Decision drivers: Theory of change alignment, scalability potential, innovation, leadership quality",
+              "Constraints: Must fit foundation's specific theory of change"
+            ],
+            "sweetSpot": "This pilot innovation could transform [foundation focus area] at scale globally",
+            "examples": [
+              "Gates Foundation funds $12M for India's Aadhaar-based vaccine delivery system with potential for global replication",
+              "Omidyar Network provides $5M for open-source digital identity platform (MOSIP) that can be adopted by multiple countries"
+            ]
+          },
+          {
+            "title": "UN Agencies (UNDP, UNICEF, WHO, ITU)",
+            "description": "Technical assistance and coordination focused on mandate-specific development goals",
+            "characteristics": [
+              "Motivation: Mandate-specific development goals (health, children, telecom)",
+              "Funding type: Technical assistance, small grants, convening",
+              "Typical size: $50K - $5M",
+              "Timeline: 3-9 months",
+              "Decision drivers: Alignment with agency mandate, government request, regional/global benefit",
+              "Constraints: Must fit agency mandate, often requires government co-funding"
+            ],
+            "sweetSpot": "This helps government meet [SDG/international standard] with our technical guidance",
+            "examples": [
+              "UNICEF supports $2M child-focused digital services in Bangladesh aligned with SDG targets for children",
+              "UNDP provides $3M technical assistance for digital governance capacity building in Pacific islands"
+            ]
+          },
+          {
+            "title": "Impact Investors and Blended Finance (IFC, CDC, DFC, Convergence)",
+            "description": "Equity, debt, and guarantees for revenue-generating DPI with development impact",
+            "characteristics": [
+              "Motivation: Financial return + development impact",
+              "Funding type: Equity, debt, guarantees",
+              "Typical size: $1M - $100M",
+              "Timeline: 6-18 months",
+              "Decision drivers: Path to financial sustainability, market viability demonstration, development impact",
+              "Constraints: Must have credible path to returns"
+            ],
+            "sweetSpot": "This creates sustainable market for DPI while delivering public benefit",
+            "examples": [
+              "IFC invests $25M equity in payment infrastructure company serving underbanked populations",
+              "CDC provides $10M debt financing for digital credit platform with demonstrated social impact"
+            ]
+          }
+        ],
+        "fundingModalities": {
+          "grantsVsLoans": {
+            "grants": "Free money, but often smaller, shorter-term, focused on innovation and pilots",
+            "loans": "Larger scale, longer-term, but add to government debt and require repayment",
+            "guidance": "Pilots and innovations → grants; Infrastructure and scale → loans"
+          },
+          "technicalAssistance": {
+            "description": "Funding for advisors, consultants, capacity building (not infrastructure)",
+            "usage": "Often paired with financial resources",
+            "example": "World Bank loan + embedded technical advisors"
+          },
+          "blendedFinance": {
+            "description": "Combining grants (catalytic, high-risk) with loans/equity (larger-scale, lower-risk)",
+            "example": "Gates grant for pilot + World Bank loan for scale"
+          }
+        },
+        "keyInsight": "Different funders have different motivations, constraints, and decision criteria. Understanding this landscape is essential - you need to match the right funder to the right need, not force-fit a square peg into a round hole."
+      },
+      "exercises": [
+        {
+          "type": "mapping",
+          "prompt": "Choose a DPI project you're familiar with. Map which funders might be appropriate and why. For each funder, identify: (1) What about this project aligns with their priorities? (2) What constraints might they have? (3) How would you frame the project for them specifically?"
+        },
+        {
+          "type": "analysis",
+          "prompt": "Find a real DPI project that received funding. Research: Who funded it and why? What was the funder's motivation? How was it framed in the proposal? Could it have been funded differently with a different funder?"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Need Identification - Beyond What They Say They Want",
+      "duration": "60 min",
+      "type": "theory",
+      "content": {
+        "overview": "Governments often ask for specific solutions: 'We need blockchain' or 'We need what India built.' But these are wants, not needs. Your job is to understand the underlying need - the actual problem to solve. Funders fund needs (problems), not wants (specific solutions). Understanding true needs allows you to craft better, more fundable offers.",
+        "keyPoints": [
+          {
+            "title": "The Problem: Stated Wants ≠ Actual Needs",
+            "description": "Government says 'We need a new digital identity system' but what they might actually need is better integration of existing systems, cleaner data, or improved service delivery that happens to require identity.",
+            "whyItMatters": [
+              "Funders fund needs (problems to solve), not wants (specific solutions)",
+              "Proposing stated wants without understanding needs may solve the wrong problem",
+              "Understanding true needs allows better, more fundable offers"
+            ],
+            "examples": [
+              {
+                "statedWant": "We need blockchain-based land registry",
+                "probingQuestions": ["Why blockchain specifically?", "Why is immutability the priority?", "What problem are you really trying to solve?"],
+                "actualNeed": "Reducing fraud and building trust in land records (technology-agnostic)",
+                "insight": "Need is fraud reduction and trust, not specifically blockchain - opens up more solution options"
+              },
+              {
+                "statedWant": "We need foreign consultants to design our health information system",
+                "probingQuestions": ["What have you tried with local capacity?", "Why doesn't it scale?"],
+                "actualNeed": "Specific technical expertise in distributed systems architecture, not general consulting",
+                "insight": "Targeted technical assistance is more fundable than vague 'foreign consultants'"
+              }
+            ]
+          },
+          {
+            "title": "Probing Questions to Reveal Needs",
+            "categories": [
+              {
+                "name": "The Why Chain",
+                "questions": [
+                  "Why do you need [X]?",
+                  "What problem does that solve?",
+                  "Why is that problem important?",
+                  "What happens if you don't solve it?"
+                ],
+                "purpose": "Drill down from solution to root cause"
+              },
+              {
+                "name": "Current State Constraints",
+                "questions": [
+                  "What have you tried already?",
+                  "What's preventing you from solving this now?",
+                  "What resources do you currently have?",
+                  "What would you do if you had unlimited budget?"
+                ],
+                "purpose": "Understand barriers and constraints"
+              },
+              {
+                "name": "Success Criteria",
+                "questions": [
+                  "How will you know this succeeded?",
+                  "What would change if this works?",
+                  "Who benefits and how?",
+                  "What's the measurable impact?"
+                ],
+                "purpose": "Define concrete outcomes, not vague aspirations"
+              }
+            ],
+            "example": {
+              "scenario": "Ministry wants 'digital transformation program'",
+              "question": "What would successful digital transformation look like in 3 years?",
+              "response": "Citizens can access 20 government services online, wait times reduced by 70%, corruption complaints down 50%",
+              "insight": "Need is specific service improvements with measurable outcomes - far more compelling than vague 'digital transformation'"
+            }
+          },
+          {
+            "title": "Identifying Unstated Needs",
+            "patterns": [
+              {
+                "pattern": "The Capacity Gap",
+                "description": "They ask for technology, but underlying need is capacity to use it",
+                "example": "Request: 'We need data analytics platform' → Actual need: platform + training + change management + sustained technical support"
+              },
+              {
+                "pattern": "The Sustainability Gap",
+                "description": "They ask for 2-year project, but need permanent capability",
+                "example": "Request: 'We need advisors for 2 years' → Actual need: advisory support + knowledge transfer + local capacity building for long-term sustainability"
+              },
+              {
+                "pattern": "The Political Gap",
+                "description": "They ask for technical solution, but need political coalition",
+                "example": "Request: 'We need interoperability standards' → Actual need: standards + coalition of ministries who'll adopt them + governance structure"
+              },
+              {
+                "pattern": "The Integration Gap",
+                "description": "They ask for standalone solution, but need integration with existing systems",
+                "example": "Request: 'We need payment gateway' → Actual need: gateway + integration with 5 existing government systems + migration plan"
+              }
+            ]
+          },
+          {
+            "title": "Validating Needs Through Multiple Perspectives",
+            "guidance": "Don't trust single source. Talk to actual users, technical implementers, and oversight bodies.",
+            "example": {
+              "scenario": "Ministry of Education wants tablets for every student",
+              "perspectives": [
+                {
+                  "stakeholder": "Ministry of Education",
+                  "view": "We need tablets for every student"
+                },
+                {
+                  "stakeholder": "Teachers",
+                  "view": "We need reliable electricity and internet first, then we can use tablets"
+                },
+                {
+                  "stakeholder": "IT Department",
+                  "view": "We don't have capacity to manage 500,000 tablets"
+                },
+                {
+                  "stakeholder": "Ministry of Finance",
+                  "view": "We don't have budget for ongoing tablet replacement every 3 years"
+                }
+              ],
+              "realNeed": "Not tablets, but improving learning outcomes - achievable through teacher training, better curriculum, or different technology approach"
+            }
+          },
+          {
+            "title": "Red Flags: When 'Needs' Are Solutions in Disguise",
+            "flags": [
+              {
+                "redFlag": "Overly specific technology - 'We need blockchain/AI/cloud'",
+                "realNeed": "Security, efficiency, scalability (technology-agnostic)"
+              },
+              {
+                "redFlag": "Copying someone else - 'We need what India built' or 'We need what Estonia has'",
+                "realNeed": "Solve similar problem, but context differs - need adapted solution"
+              },
+              {
+                "redFlag": "Vendor-driven - 'We need [specific vendor product]'",
+                "realNeed": "Capability that vendor provides (but other solutions might work too)"
+              },
+              {
+                "redFlag": "Budget-driven - 'We have $5M to spend on digital transformation'",
+                "realNeed": "Specific outcomes (budget is input, not need)"
+              }
+            ]
+          },
+          {
+            "title": "From Needs to Fundable Problem Statements",
+            "goodStatements": {
+              "characteristics": [
+                "Specific and measurable",
+                "Clearly articulated beneficiaries",
+                "Outcomes-focused (not technology-focused)",
+                "Aligned with funder priorities",
+                "Evidence-based (data showing scale of problem)"
+              ],
+              "transformations": [
+                {
+                  "weak": "We need digital ID system",
+                  "strong": "5 million citizens can't access government services because they lack documentation. This prevents healthcare access, education enrollment, and financial inclusion. We need to establish reliable digital identity that enables service access while protecting privacy."
+                },
+                {
+                  "weak": "We need to digitize government",
+                  "strong": "Citizens wait average 6 hours at government offices for services that should take 20 minutes. This costs economy $200M/year in lost productivity. We need to digitize high-volume services to reduce wait times by 80% and improve citizen satisfaction."
+                },
+                {
+                  "weak": "We need cloud infrastructure",
+                  "strong": "Our government systems crash during peak periods (tax filing deadline, exam results), causing citizen frustration and revenue loss. We need scalable, reliable infrastructure to ensure services are available when citizens need them."
+                }
+              ]
+            }
+          }
+        ],
+        "keyInsight": "Funders fund needs (problems), not wants (solutions). Your job is to understand the real need, articulate it compellingly, and then design an offer that addresses it. This requires asking hard questions, validating across stakeholders, and resisting the urge to jump to solutions prematurely."
+      },
+      "exercises": [
+        {
+          "type": "roleplay",
+          "prompt": "Partner exercise: One person plays a government official requesting 'blockchain for our supply chain.' Other person plays offer crafter using probing questions to reveal the actual need. After 10 minutes, switch roles with a different scenario."
+        },
+        {
+          "type": "analysis",
+          "prompt": "Take a real project proposal you've seen. Identify: (1) What solution did they request? (2) What probing questions would you ask? (3) What might the underlying need actually be? (4) How would you reframe the problem statement to be more fundable?"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "The Sweet Spot - Where Implementer Needs Meet Funder Priorities",
+      "duration": "50 min",
+      "type": "theory",
+      "content": {
+        "overview": "Once you understand both implementer needs and funder priorities, your job is to find the overlap - the sweet spot where you can honestly say: 'This offer meets your actual need AND aligns with funder's priorities.' If you can't say that honestly, keep looking for different framing or different funder.",
+        "keyPoints": [
+          {
+            "title": "Finding the Overlap: The Sweet Spot Framework",
+            "formula": "[Implementer Need] ∩ [Funder Priority] = Sweet Spot (Fundable Offer)",
+            "description": "Same underlying need can be framed differently for different funders",
+            "example": {
+              "implementerNeed": "Ministry of Health needs health information system to track patient care, reduce duplicate data entry, improve diagnosis, and enable telemedicine in rural areas",
+              "funderOptions": [
+                {
+                  "funder": "World Bank",
+                  "priorities": "Health system strengthening, institutional capacity",
+                  "sweetSpot": "Health information system strengthens institutional capacity to deliver healthcare efficiently while improving population health outcomes",
+                  "emphasis": "Capacity building and institutional strengthening"
+                },
+                {
+                  "funder": "Gates Foundation",
+                  "priorities": "Global health data, disease surveillance, innovations in health delivery",
+                  "sweetSpot": "Health information system enables real-time disease surveillance and telemedicine innovations that can be replicated globally",
+                  "emphasis": "Innovation and global public good"
+                },
+                {
+                  "funder": "USAID",
+                  "priorities": "Health outcomes in partner countries, COVID response capacity",
+                  "sweetSpot": "Health information system improves health outcomes in [country] while strengthening resilience to future pandemics",
+                  "emphasis": "Bilateral partnership and health security"
+                }
+              ],
+              "insight": "Same need, different framing for different funders - all honest and accurate"
+            }
+          },
+          {
+            "title": "Understanding Funder Decision Criteria",
+            "funders": [
+              {
+                "name": "World Bank",
+                "criteria": [
+                  "Government ownership (is this government-led?)",
+                  "Economic impact (GDP growth, poverty reduction)",
+                  "Institutional strengthening (builds long-term capacity?)",
+                  "Fiduciary soundness (can government manage funds properly?)",
+                  "Safeguards (environmental, social)"
+                ],
+                "framingGuidance": [
+                  "Lead with government ownership: 'Government of [X] requests...'",
+                  "Emphasize institutional capacity: 'This builds permanent capability within Ministry...'",
+                  "Show economic impact: 'Improving service delivery will increase productivity by...'",
+                  "Demonstrate fiduciary readiness: 'Established procurement unit with track record...'"
+                ]
+              },
+              {
+                "name": "Gates Foundation",
+                "criteria": [
+                  "Theory of change (clear logic from activity → outcome → impact)",
+                  "Innovation (novel approach or application)",
+                  "Scalability (can this work globally?)",
+                  "Leadership (strong leaders driving the work)",
+                  "Mission alignment (health, agriculture, etc.)"
+                ],
+                "framingGuidance": [
+                  "Start with problem and theory of change: '70% of citizens lack healthcare access. Digital health records enable...'",
+                  "Highlight innovation: 'First application of offline-capable health records in low-connectivity contexts...'",
+                  "Show global potential: 'If successful, this approach could be replicated in 20 similar countries...'",
+                  "Feature strong leadership: 'Led by Dr. [X], recognized expert in...'"
+                ]
+              },
+              {
+                "name": "USAID",
+                "criteria": [
+                  "Foreign policy alignment (advances U.S. interests)",
+                  "Development outcomes (measurable impact)",
+                  "Sustainability (continues after USAID exits)",
+                  "Partnership (collaborative relationship with host government)",
+                  "Demonstration value (shows what's possible)"
+                ],
+                "framingGuidance": [
+                  "Connect to bilateral relationship: 'Strengthens [country]-U.S. partnership on digital development...'",
+                  "Emphasize sustainability: 'Builds local capacity to sustain after USAID support ends...'",
+                  "Show measurable outcomes: 'Will improve healthcare access for 2 million citizens in 3 years...'",
+                  "Highlight demonstration value: 'Proof of concept for digital health across region...'"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "When There's No Sweet Spot",
+            "scenarios": [
+              {
+                "scenario": "Misaligned Timing",
+                "situation": "Implementer needs funding now, funder's funding cycle opens in 9 months",
+                "verdict": "No sweet spot",
+                "action": "Look for bridge funding or different funder"
+              },
+              {
+                "scenario": "Scale Mismatch",
+                "situation": "Implementer needs $50M, funder maximum grant is $5M",
+                "verdict": "Partial sweet spot",
+                "action": "Break into phases, or find co-funders"
+              },
+              {
+                "scenario": "Ideological Mismatch",
+                "situation": "Implementer wants government-operated system, funder prioritizes private sector and markets",
+                "verdict": "No sweet spot",
+                "action": "Find different funder or redesign approach"
+              },
+              {
+                "scenario": "Geographic Mismatch",
+                "situation": "Implementer in Country X, funder only funds in Countries Y and Z",
+                "verdict": "No sweet spot",
+                "action": "Find different funder"
+              }
+            ],
+            "keyDecision": "If you can't find genuine sweet spot, don't force it. Crafting offer that doesn't meet implementer need is dishonest. Crafting offer that doesn't fit funder priority wastes everyone's time. It's okay to say 'I don't think there's a fit here.'"
+          },
+          {
+            "title": "Multi-Stakeholder Sweet Spots",
+            "complexity": "More than two parties - multiple implementers and funders",
+            "example": {
+              "scenario": "Digital ID System with multiple parties",
+              "stakeholders": [
+                {
+                  "party": "Implementer 1 (Government)",
+                  "need": "Needs digital ID for government services"
+                },
+                {
+                  "party": "Implementer 2 (Bhashini/Tech Provider)",
+                  "need": "Needs contract and validation for their technology"
+                },
+                {
+                  "party": "Funder 1 (World Bank)",
+                  "priority": "Wants institutional strengthening"
+                },
+                {
+                  "party": "Funder 2 (Gates)",
+                  "priority": "Wants innovation and global public good"
+                },
+                {
+                  "party": "Funder 3 (USAID)",
+                  "priority": "Wants bilateral partnership"
+                }
+              ],
+              "multiPartySweetSpot": [
+                "Government gets digital ID system (meets their need)",
+                "Bhashini gets contract to provide technology (meets their need)",
+                "World Bank funds government capacity building (meets their priority)",
+                "Gates funds technology innovation component (meets their priority)",
+                "USAID funds bilateral technical assistance (meets their priority)"
+              ],
+              "outcome": "Everyone gets something they value",
+              "challenge": "More parties = more complexity to manage, but also more resources available"
+            }
+          },
+          {
+            "title": "Integrity Check: Are You Being an Honest Broker?",
+            "honestBroker": {
+              "characteristics": [
+                "Finds genuine alignment between implementer needs and funder priorities",
+                "Transparent about trade-offs and constraints",
+                "Serves both parties equally",
+                "Creates win-win outcomes"
+              ],
+              "test": "If both parties fully understood each other, would they still agree? If yes → honest broker. If no → you're hiding something from someone."
+            },
+            "dishonestApproaches": {
+              "toAvoid": [
+                "Telling implementer what funder wants to hear, regardless of reality",
+                "Promising funder outcomes that implementer can't deliver",
+                "Changing implementer's real needs to match funder priorities",
+                "Hiding risks or challenges from either party"
+              ]
+            }
+          }
+        ],
+        "keyInsight": "The sweet spot is where you can honestly say: 'This offer meets your actual need AND aligns with funder's priorities.' If you can't say that honestly, keep looking for different framing or different funder. Being an honest broker means serving both parties with integrity."
+      },
+      "exercises": [
+        {
+          "type": "mapping",
+          "prompt": "Choose a real DPI need from a country you know. Map 3 different funders who might support it. For each funder: (1) What are their priorities? (2) How would you frame this need for them specifically? (3) What would be the sweet spot framing? Be specific and honest."
+        },
+        {
+          "type": "integrity",
+          "prompt": "Think of a case where you've seen someone force-fit a proposal to a funder (or been tempted to do so yourself). What was the mismatch? What would honesty have required? What was the consequence of the force-fit?"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Offer Design - Crafting the Concept",
+      "duration": "60 min",
+      "type": "theory",
+      "content": {
+        "overview": "Once you've identified needs and found the sweet spot with a funder, you need to design the actual offer - structuring it with clear problem, approach, outcomes, and value proposition. A strong offer design is both ambitious (worth doing) and achievable (can actually be done).",
+        "keyPoints": [
+          {
+            "title": "Component 1: Problem Statement",
+            "elements": [
+              "What's the specific problem?",
+              "Who's affected and how many?",
+              "What's the current impact (cost, harm, inefficiency)?",
+              "Why hasn't it been solved yet?",
+              "Why is now the right time?"
+            ],
+            "example": {
+              "strong": "Uganda's tax collection rate is 42% of potential revenue - $1.2B annually uncollected. The challenge is not policy but implementation: 67% of businesses operate informally, invisible to tax authority. Current manual registration requires 14 days and 12 documents, deterring compliance. Digital business registration could reduce registration time to 2 hours and documents to 3, bringing 200,000 informal businesses into tax system over 3 years, increasing revenue by $380M annually.",
+              "whyStrong": [
+                "Specific and quantified ($1.2B uncollected, 67% informal)",
+                "Clear impact (revenue loss)",
+                "Root cause identified (registration friction, not policy)",
+                "Solution-agnostic (focuses on problem)",
+                "Measurable (200K businesses, $380M revenue increase)"
+              ]
+            }
+          },
+          {
+            "title": "Component 2: Theory of Change",
+            "framework": "IF we do X (intervention) THEN Y will happen (immediate outcome) WHICH WILL lead to Z (ultimate impact) BECAUSE of this logic (assumptions and evidence)",
+            "example": {
+              "intervention": "IF we implement digital business registration (2 hours, 3 documents)",
+              "outcome": "THEN informal businesses will register formally (reducing registration friction from 14 days to 2 hours)",
+              "impact": "WHICH WILL increase tax revenue by $380M over 3 years (200K new taxpayers × $1,900 avg annual tax)",
+              "logic": "BECAUSE research shows registration friction is primary barrier to formalization (World Bank Doing Business data) and formalized businesses pay taxes (Uganda Revenue Authority data)",
+              "assumptionsToValidate": [
+                "Businesses want to formalize if friction is low",
+                "Businesses will pay taxes once registered",
+                "Tax authority can handle 200K new taxpayers",
+                "Digital registration is reliable and accessible"
+              ]
+            }
+          },
+          {
+            "title": "Component 3: Approach & Scope",
+            "structure": {
+              "phases": [
+                "Phase 1 (Months 1-6): Design and pilot",
+                "Phase 2 (Months 7-18): National rollout",
+                "Phase 3 (Months 19-36): Optimization and sustainability"
+              ],
+              "included": [
+                "Digital registration platform (web and mobile)",
+                "Integration with tax authority systems",
+                "Training for tax officials and business support organizations",
+                "Awareness campaign for informal businesses",
+                "M&E system to track registrations and tax revenue"
+              ],
+              "notIncluded": [
+                "Tax policy reform (out of scope)",
+                "Reforming tax collection process (separate initiative)",
+                "Addressing corruption in tax administration (related but different)"
+              ],
+              "whyScopeBoundariesMatter": "Prevents mission creep and clarifies what you're responsible for vs what's outside your control"
+            }
+          },
+          {
+            "title": "Component 4: Outcomes & Impact",
+            "levels": {
+              "immediateOutcomes": {
+                "timeframe": "Year 1",
+                "outcomes": [
+                  "Digital registration platform operational in 5 major cities",
+                  "15,000 businesses registered digitally",
+                  "Registration time reduced from 14 days to <4 hours",
+                  "85% user satisfaction"
+                ]
+              },
+              "intermediateOutcomes": {
+                "timeframe": "Years 2-3",
+                "outcomes": [
+                  "Platform national coverage (all 112 districts)",
+                  "200,000 businesses registered",
+                  "70% of new registrations via digital channel",
+                  "Tax revenue increase of $120M (Year 2), $380M cumulative (Year 3)"
+                ]
+              },
+              "ultimateImpact": {
+                "timeframe": "5 years",
+                "impacts": [
+                  "Formalization rate increased from 33% to 55%",
+                  "Sustainable revenue increase of $380M annually",
+                  "Improved business environment (Doing Business ranking)",
+                  "Model for digital government services across sectors"
+                ]
+              }
+            },
+            "outcomeDefinitions": {
+              "output": "What you directly produce (platform, registrations)",
+              "outcome": "What changes for beneficiaries (time saved, formalization)",
+              "impact": "Broader societal change (revenue increase, business environment)"
+            }
+          },
+          {
+            "title": "Component 5: Value Proposition",
+            "forGovernment": [
+              "$380M annual revenue increase (7.6x ROI on $50M investment)",
+              "Formalized business sector enabling better policy",
+              "Improved Doing Business ranking",
+              "Platform reusable for other licensing/registration"
+            ],
+            "forBusinesses": [
+              "Registration time: 14 days → 2 hours (95% reduction)",
+              "Documents: 12 → 3",
+              "Access to formal economy benefits (loans, contracts, legal protection)"
+            ],
+            "forFunder": [
+              "Measurable economic impact ($380M revenue increase)",
+              "Institutional capacity building (government digital services)",
+              "Scalable approach (applicable to other countries)",
+              "Alignment with funder-specific priority"
+            ]
+          },
+          {
+            "title": "Component 6: Budget & Timeline",
+            "budgetPrinciples": [
+              "Right-sized for scope (not inflated, not unrealistic)",
+              "Justified with clear breakdown",
+              "Aligned with funder expectations",
+              "Includes sustainability considerations"
+            ],
+            "exampleBudget": {
+              "total": "$50M over 3 years",
+              "breakdown": [
+                "Technology development: $8M (platform, integration, infrastructure)",
+                "Implementation support: $12M (rollout, training, change management)",
+                "Awareness & outreach: $5M (campaigns, business support)",
+                "Technical assistance: $15M (advisors, capacity building for government)",
+                "M&E: $3M (tracking, evaluation, learning)",
+                "Operations & management: $5M",
+                "Contingency: $2M (4%)"
+              ]
+            },
+            "timelineElements": [
+              "Realistic milestones based on dependencies",
+              "Phased approach (pilot before scale)",
+              "Built-in learning and adaptation periods",
+              "Clear decision points (go/no-go gates)"
+            ]
+          },
+          {
+            "title": "Component 7: Risk Mitigation",
+            "examples": [
+              {
+                "risk": "Low adoption by informal businesses",
+                "mitigation": "Extensive user research, business associations outreach, incentives for early adopters",
+                "contingency": "Adjust outreach strategy based on pilot data"
+              },
+              {
+                "risk": "Tax authority can't process increased registrations",
+                "mitigation": "Capacity assessment and strengthening as part of project",
+                "contingency": "Phase rollout to match tax authority capacity"
+              },
+              {
+                "risk": "Technology doesn't work in low-connectivity areas",
+                "mitigation": "Offline-capable design, SMS fallback",
+                "contingency": "Hybrid digital + in-person option"
+              },
+              {
+                "risk": "Political resistance to formalization",
+                "mitigation": "Early engagement with business associations and political stakeholders",
+                "contingency": "Focus on voluntary registration, not enforcement"
+              }
+            ],
+            "whyItMatters": "Shows you've thought through what can go wrong and aren't naively optimistic. Builds funder confidence."
+          },
+          {
+            "title": "Component 8: Sustainability Plan",
+            "components": {
+              "revenueModel": "Small registration fee (reduced from current $50 to $10) covers platform operating costs - Self-sustaining after Year 3",
+              "capacityBuilding": [
+                "Government staff trained to operate and maintain platform",
+                "Local technology firms capable of supporting system",
+                "Knowledge transfer to government IT department"
+              ],
+              "institutionalEmbedding": [
+                "Platform integrated into official tax authority systems",
+                "Codified in regulations and procedures",
+                "Champions within government to sustain momentum"
+              ],
+              "whyItMatters": "Funders don't want to fund forever. Show this will last beyond their support."
+            }
+          }
+        ],
+        "keyInsight": "A strong offer design has clear problem, logical approach, measurable outcomes, realistic budget/timeline, identified risks with mitigation, and sustainability plan. It's both ambitious (worth doing) and achievable (can actually be done)."
+      },
+      "exercises": [
+        {
+          "type": "design",
+          "prompt": "Take a DPI need you're familiar with. Design a complete offer including all 8 components: problem statement, theory of change, approach, outcomes, value proposition, budget, risks, and sustainability. Test it: Is it clear? Logical? Evidence-based? Feasible? Ambitious? Realistic? Aligned?"
+        },
+        {
+          "type": "critique",
+          "prompt": "Review a real proposal you've seen. Evaluate it against the 8 components framework. What's strong? What's missing? What red flags do you see? How would you strengthen it?"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Proposal Development - Turning Concept into Compelling Document",
+      "duration": "50 min",
+      "type": "application",
+      "content": {
+        "overview": "A strong offer design needs to become a compelling proposal document that funders actually read and approve. This requires structuring proposals effectively, writing compellingly, adapting to different funder formats, and incorporating feedback efficiently.",
+        "keyPoints": [
+          {
+            "title": "Proposal Anatomy",
+            "sections": [
+              {
+                "section": "Executive Summary (2-3 pages)",
+                "elements": [
+                  "Problem in one compelling paragraph with data",
+                  "Your solution in one paragraph",
+                  "Why you/your team (credibility)",
+                  "What you're requesting (budget, timeline)",
+                  "Expected impact (measurable outcomes)"
+                ],
+                "rule": "Most decision-makers only read executive summary. Make it count."
+              },
+              {
+                "section": "Problem Statement (3-5 pages)",
+                "elements": [
+                  "Context and background",
+                  "Scale and scope of problem (quantified)",
+                  "Current approaches and why they're insufficient",
+                  "Root causes analysis",
+                  "Why this problem matters now (urgency)",
+                  "Evidence and data sources"
+                ]
+              },
+              {
+                "section": "Proposed Solution (5-8 pages)",
+                "elements": [
+                  "Theory of change",
+                  "Approach and methodology",
+                  "Activities and deliverables",
+                  "Timeline with milestones",
+                  "Budget with justification",
+                  "Risk mitigation",
+                  "Sustainability plan"
+                ]
+              },
+              {
+                "section": "Team and Capacity (2-3 pages)",
+                "elements": [
+                  "Key personnel and qualifications",
+                  "Organizational capacity and track record",
+                  "Partners and their roles",
+                  "Governance structure"
+                ]
+              },
+              {
+                "section": "Monitoring & Evaluation (2-3 pages)",
+                "elements": [
+                  "How you'll measure success",
+                  "Data collection methods",
+                  "Evaluation framework",
+                  "Learning and adaptation process"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Writing Principles",
+            "principles": [
+              {
+                "principle": "Show, Don't Just Tell",
+                "bad": "Our health system is weak",
+                "good": "In 2024, 47% of rural health facilities lacked basic medical supplies for more than 15 days per month, forcing 280,000 patients to travel to urban centers for routine care"
+              },
+              {
+                "principle": "Use Data Strategically",
+                "guidance": "Too little data: Looks like guesswork. Too much data: Overwhelms reader. Right amount: Key stats that prove problem scale and solution impact"
+              },
+              {
+                "principle": "Tell Human Stories",
+                "example": "Amina, a 32-year-old mother of three in Kibera, Nairobi, needs government services - birth certificates for her children, health records, social assistance. But without formal identity documentation, she's invisible to the system. She represents 5.2 million Kenyans who lack official identity."
+              },
+              {
+                "principle": "Make Causal Logic Explicit",
+                "guidance": "Don't assume funder sees the connection. Spell out: IF we do X, THEN Y happens BECAUSE of Z. Provide evidence for each causal link."
+              }
+            ]
+          },
+          {
+            "title": "Adapting to Funder Requirements",
+            "funderFormats": [
+              {
+                "funder": "World Bank",
+                "emphasis": [
+                  "Heavy emphasis on economic analysis (cost-benefit, IRR)",
+                  "Environmental and social safeguards prominent",
+                  "Government ownership and institutional capacity",
+                  "Alignment with country development strategy",
+                  "Procurement and fiduciary framework"
+                ],
+                "length": "40-80 pages (comprehensive)"
+              },
+              {
+                "funder": "Gates Foundation",
+                "emphasis": [
+                  "Theory of change upfront and central",
+                  "Innovation and scalability highlighted",
+                  "Global public good potential",
+                  "Strong leadership profiles",
+                  "Less emphasis on fiduciary (they trust you or they don't)"
+                ],
+                "length": "15-25 pages (concise)"
+              },
+              {
+                "funder": "USAID",
+                "emphasis": [
+                  "Bilateral partnership framing",
+                  "Sustainability and local capacity building",
+                  "Alignment with USAID strategic goals",
+                  "Results framework (very detailed M&E)",
+                  "Compliance and safeguards"
+                ],
+                "length": "30-50 pages (detailed but focused)"
+              }
+            ]
+          },
+          {
+            "title": "Incorporating Feedback",
+            "commonPatterns": [
+              {
+                "feedback": "Not clear how this is innovative",
+                "response": "Add section comparing to existing approaches, highlighting novel elements",
+                "dont": "Claim everything is innovative when it's not"
+              },
+              {
+                "feedback": "Budget seems high",
+                "response": "Provide more detailed justification, show benchmarks",
+                "consider": "Phasing or reducing scope if genuinely too high"
+              },
+              {
+                "feedback": "Theory of change has gaps",
+                "response": "Strengthen causal logic, add evidence for assumptions",
+                "test": "Can you defend each IF-THEN with data or research?"
+              },
+              {
+                "feedback": "Sustainability unclear",
+                "response": "Add detailed transition plan, revenue model, capacity building",
+                "beHonest": "If it genuinely requires ongoing funding, say so"
+              }
+            ],
+            "integrationProcess": [
+              "Categorize feedback (substantive vs formatting, required vs suggested)",
+              "Address all required feedback explicitly",
+              "For substantive feedback, strengthen core offer if valid",
+              "For feedback that conflicts with implementer needs, discuss trade-offs honestly",
+              "Track changes and explain what you revised"
+            ]
+          }
+        ],
+        "keyInsight": "Great proposals balance comprehensiveness with readability, data with narrative, ambition with realism. They make funder's job easy: 'This is fundable.'"
+      },
+      "exercises": [
+        {
+          "type": "writing",
+          "prompt": "Take your offer design from Module 4. Write a compelling 2-page executive summary that would make a funder want to read more. Include: problem (1 paragraph with data), solution (1 paragraph), team credibility, request, and expected impact."
+        },
+        {
+          "type": "adaptation",
+          "prompt": "Take the same offer. Write three different 1-paragraph framings for World Bank, Gates Foundation, and USAID. Same underlying offer, different emphasis for each funder's priorities."
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Multi-Party Alignment - Getting Everyone on Board",
+      "duration": "50 min",
+      "type": "application",
+      "content": {
+        "overview": "Real DPI offers involve complex stakeholder ecosystems with competing interests - multiple implementers, funders, government agencies, technical partners. Success requires navigating power dynamics, building consensus, addressing hidden agendas, and creating durable agreements.",
+        "keyPoints": [
+          {
+            "title": "Mapping the Full Stakeholder Ecosystem",
+            "realEcosystem": [
+              "Primary Implementer (e.g., Government Ministry) - official lead",
+              "Technical Implementer (e.g., Bhashini) - does the work",
+              "Funder(s) - often multiple with different priorities",
+              "Government oversight (Finance, Planning, Audit) - approval authority",
+              "Technical partners (advisors, consultants) - provide expertise",
+              "Beneficiaries (citizens, businesses) - actually use the solution",
+              "Political stakeholders (Ministers, Parliament) - political context",
+              "Other ministries (if multi-sector) - need coordination"
+            ],
+            "insight": "Each has different interests, different power, different constraints"
+          },
+          {
+            "title": "Power Dynamics and Politics",
+            "formalPower": [
+              "Ministry officially leads",
+              "Funder approves budget",
+              "Cabinet gives final sign-off"
+            ],
+            "informalPower": [
+              "Minister's Chief of Staff might have real decision authority",
+              "Funder's country director influenced by HQ priorities",
+              "Permanent Secretary might resist if not bought in"
+            ],
+            "warning": "Don't assume formal org chart = real power",
+            "managingAsymmetricPower": [
+              {
+                "scenario": "World Bank ($50M) + small local NGO ($500K TA)",
+                "risk": "World Bank dominates, NGO sidelined",
+                "mitigation": "Explicitly value NGO's local knowledge, give them defined role in governance. NGO leads community engagement, World Bank leads infrastructure"
+              },
+              {
+                "scenario": "Large Ministry + small implementing agency",
+                "risk": "Ministry imposes requirements that don't match implementer capacity",
+                "mitigation": "Honest conversation about capacity constraints, phased approach"
+              }
+            ]
+          },
+          {
+            "title": "Building Consensus Through Consultative Process",
+            "stages": [
+              {
+                "stage": "Stage 1: Individual Stakeholder Consultations (1-on-1)",
+                "activities": [
+                  "Understand each stakeholder's interests privately",
+                  "Identify concerns they won't voice in group",
+                  "Test initial concept and get input",
+                  "Build relationships before formal meetings"
+                ]
+              },
+              {
+                "stage": "Stage 2: Small Group Alignments (2-3 stakeholders)",
+                "activities": [
+                  "Align implementers before bringing in funders",
+                  "Align funders before joint meeting",
+                  "Address conflicts in smaller settings first"
+                ]
+              },
+              {
+                "stage": "Stage 3: Full Stakeholder Workshop",
+                "activities": [
+                  "Present concept incorporating input from Stages 1-2",
+                  "Facilitate discussion with clear process",
+                  "Document agreements and action items",
+                  "Identify remaining issues for offline resolution"
+                ]
+              },
+              {
+                "stage": "Stage 4: Iteration and Refinement",
+                "activities": [
+                  "Revise offer based on stakeholder input",
+                  "Circulate revised concept for feedback",
+                  "Address objections individually",
+                  "Build toward final consensus"
+                ]
+              }
+            ],
+            "dont": "Present fully-formed offer to large group and expect approval",
+            "do": "Build consensus through iterative, layered process"
+          },
+          {
+            "title": "Addressing Unspoken Concerns",
+            "patterns": [
+              {
+                "stated": "We're interested but...",
+                "hidden": "This threatens our existing power/budget/role",
+                "howToSurface": "What concerns do you have that we should address?",
+                "howToAddress": "Find ways they benefit or aren't threatened"
+              },
+              {
+                "stated": "This is technically complex...",
+                "hidden": "We don't have capacity and are embarrassed to admit it",
+                "howToSurface": "What support would you need to successfully implement?",
+                "howToAddress": "Build capacity support into offer"
+              },
+              {
+                "stated": "We need more time to consider...",
+                "hidden": "We're not bought in but don't want to say no publicly",
+                "howToSurface": "Ask directly in 1-on-1: What would make you comfortable?",
+                "howToAddress": "Address real concern or accept they're not on board"
+              }
+            ]
+          },
+          {
+            "title": "Creating Durable Agreements",
+            "challenge": "People agree in meeting, then don't follow through",
+            "solutions": [
+              {
+                "solution": "Written MOU/Agreement",
+                "elements": [
+                  "Specific roles and responsibilities",
+                  "Resource commitments",
+                  "Timeline and deliverables",
+                  "Decision-making process",
+                  "Conflict resolution mechanism"
+                ]
+              },
+              {
+                "solution": "Governance Structure",
+                "elements": [
+                  "Steering Committee (strategic oversight) - who's on it?",
+                  "Technical Committee (implementation) - who leads?",
+                  "Secretariat (day-to-day coordination) - who hosts?",
+                  "Meeting frequency and decision rules"
+                ]
+              },
+              {
+                "solution": "Succession Planning",
+                "elements": [
+                  "Assume key champions will leave (they always do)",
+                  "Institutional ownership, not individual",
+                  "Documentation and knowledge transfer",
+                  "Broaden the coalition (not dependent on one person)"
+                ]
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Multi-party alignment requires patient, iterative relationship-building. You're not just aligning on technical proposal - you're building trust and shared commitment among parties with different interests, power, and constraints."
+      },
+      "exercises": [
+        {
+          "type": "mapping",
+          "prompt": "Map the full stakeholder ecosystem for a complex DPI offer (e.g., digital ID with government, tech provider, 3 funders, multiple ministries). Identify: formal power, informal power, interests, concerns. What's your alignment strategy?"
+        },
+        {
+          "type": "simulation",
+          "prompt": "Role-play a stakeholder workshop where you're trying to build consensus among parties with different priorities. Practice: How do you surface concerns? How do you find common ground? How do you handle one party dominating?"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "Risk Mitigation & Objection Handling",
+      "duration": "45 min",
+      "type": "application",
+      "content": {
+        "overview": "All DPI offers face risks - technical, capacity, political, financial, adoption. Your job is to identify likely risks, reduce their probability, plan smart responses, and address funder and implementer objections constructively.",
+        "keyPoints": [
+          {
+            "title": "Common Risks in DPI Offers",
+            "categories": [
+              {
+                "category": "Technical Risks",
+                "risks": [
+                  "Technology doesn't work at scale",
+                  "Integration with existing systems fails",
+                  "Cybersecurity vulnerabilities",
+                  "Vendor performance issues"
+                ]
+              },
+              {
+                "category": "Capacity Risks",
+                "risks": [
+                  "Government lacks capacity to implement/sustain",
+                  "Staff turnover loses institutional knowledge",
+                  "Training doesn't stick (people trained but don't apply)"
+                ]
+              },
+              {
+                "category": "Political Risks",
+                "risks": [
+                  "Leadership change disrupts priorities",
+                  "Political resistance to change",
+                  "Competing initiatives create confusion",
+                  "Corruption undermines implementation"
+                ]
+              },
+              {
+                "category": "Financial Risks",
+                "risks": [
+                  "Government can't provide co-funding as promised",
+                  "Funder reduces or withdraws support",
+                  "Costs higher than budgeted",
+                  "Revenue assumptions don't materialize"
+                ]
+              },
+              {
+                "category": "Adoption Risks",
+                "risks": [
+                  "Users don't adopt solution (despite building it)",
+                  "Informal systems more attractive than formal",
+                  "Digital divide excludes intended beneficiaries"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Risk Mitigation Framework",
+            "framework": "For each risk: (1) Likelihood (high/medium/low), (2) Impact (high/medium/low), (3) Mitigation (what reduces likelihood), (4) Contingency (what if it happens anyway)",
+            "examples": [
+              {
+                "risk": "Government Capacity Risk",
+                "likelihood": "High (common in DPI programs)",
+                "impact": "High (determines success)",
+                "mitigation": "Extensive capacity building, embedded advisors, phased approach, mentoring",
+                "contingency": "If capacity insufficient, extend timeline or reduce scope"
+              },
+              {
+                "risk": "User Adoption Risk",
+                "likelihood": "Medium",
+                "impact": "High (successful technology with no users = failure)",
+                "mitigation": "User-centered design, extensive testing, incentives, easy opt-in",
+                "contingency": "If adoption low after 6 months, rapid iteration based on user feedback"
+              }
+            ],
+            "prioritization": "Focus most attention on high-likelihood, high-impact risks"
+          },
+          {
+            "title": "Addressing Funder Objections",
+            "objections": [
+              {
+                "objection": "This is too ambitious / unrealistic",
+                "approach": [
+                  "Listen: What specifically seems unrealistic?",
+                  "Acknowledge: 'You're right that this is ambitious...'",
+                  "Provide evidence: 'Here's why we think it's achievable: [similar examples, pilot data, capacity assessment]'",
+                  "Offer adjustment: 'We could phase this - prove Phase 1, then scale in Phase 2'"
+                ]
+              },
+              {
+                "objection": "We're not confident in implementer capacity",
+                "approach": [
+                  "Don't get defensive",
+                  "Acknowledge: 'Capacity is a legitimate concern. Here's how we're addressing it...'",
+                  "Offer evidence: 'Implementer has delivered [X, Y, Z]. For new areas, we're building capacity through [specific plan]'",
+                  "Consider: Bringing in additional technical partners to supplement capacity"
+                ]
+              },
+              {
+                "objection": "The budget is too high",
+                "approach": [
+                  "Ask: 'What budget range did you have in mind?'",
+                  "Justify: 'Here's how we arrived at this budget [breakdown, benchmarks]'",
+                  "Offer options: 'We could reduce scope to [X] for $[Y], or phase over longer period'",
+                  "Don't: Agree to cut budget without cutting scope (recipe for failure)"
+                ]
+              },
+              {
+                "objection": "We've tried this before and it failed",
+                "approach": [
+                  "Learn: 'Tell me about that experience. What went wrong?'",
+                  "Acknowledge: 'That's valuable learning. Here's how our approach differs: [specific]'",
+                  "Build confidence: 'We're specifically designing to avoid those failure modes'"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Building Contingency Plans",
+            "structure": [
+              "Trigger: What indicates the risk is materializing?",
+              "Response: What do we do?",
+              "Decision authority: Who decides to activate contingency?",
+              "Resources: What's needed to execute contingency?"
+            ],
+            "example": {
+              "risk": "Technology Performance Risk",
+              "trigger": "Platform response time >5 seconds at scale, or >2% error rate",
+              "response": [
+                "Week 1: Diagnose root cause, implement quick fixes",
+                "Week 2-4: If not resolved, bring in external technical experts",
+                "Month 2: If still not resolved, consider alternative technology platform"
+              ],
+              "authority": "Technical Committee with Steering Committee approval for platform change",
+              "resources": "$500K contingency budget for additional technical support"
+            }
+          }
+        ],
+        "keyInsight": "Risk management is not about eliminating risk (impossible). It's about identifying likely risks, reducing their probability, and having smart responses when they materialize anyway."
+      },
+      "exercises": [
+        {
+          "type": "risk-assessment",
+          "prompt": "Take a DPI offer you're working on. Identify the top 5 risks. For each: assess likelihood and impact, design mitigation strategy, plan contingency response. Which risks deserve most attention?"
+        },
+        {
+          "type": "objection-handling",
+          "prompt": "Role-play: Partner gives you common funder objections. Practice responding constructively: listen, acknowledge, provide evidence, offer adjustments. Don't get defensive or dismiss concerns."
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "From Approval to Implementation - Ensuring Funded Proposals Actually Deliver",
+      "duration": "60 min",
+      "type": "application",
+      "content": {
+        "overview": "Getting funding approved is just the beginning. Implementation is where proposals meet reality. Success requires navigating the transition from concept to operations, adaptive management, genuine learning, stakeholder engagement, and sustained momentum through multi-year journeys.",
+        "keyPoints": [
+          {
+            "title": "The Valley of Death: Approval to Launch",
+            "commonPattern": [
+              "Months of work to get approval",
+              "Celebration when funded",
+              "Then... slow start, confusion, delays"
+            ],
+            "whyThisHappens": [
+              "Proposal was concept, implementation is real work",
+              "Team that wrote proposal ≠ team that implements",
+              "Assumptions in proposal don't match reality",
+              "Stakeholder attention shifts to other priorities"
+            ],
+            "bridgingTheGap": [
+              {
+                "phase": "Week 1-4: Inception Phase",
+                "activities": [
+                  "Assemble implementation team (may be different from proposal team)",
+                  "Review proposal with implementers: 'Here's what we committed, here's how we do it'",
+                  "Validate assumptions: Do rapid assessment of key assumptions in proposal",
+                  "Develop Year 1 detailed workplan",
+                  "Set up governance structures",
+                  "Begin stakeholder engagement"
+                ]
+              },
+              {
+                "phase": "Month 2-3: Piloting and Validation",
+                "activities": [
+                  "Start with pilot or proof-of-concept (don't go straight to full scale)",
+                  "Test assumptions: Does technical approach work? Do users adopt? Is capacity sufficient?",
+                  "Adjust based on learning: Proposal was best guess, reality is evidence",
+                  "Get early wins: Build confidence with quick, visible progress"
+                ]
+              }
+            ],
+            "dont": "Treat proposal as contract that cannot change",
+            "do": "Treat proposal as hypothesis to be validated and refined"
+          },
+          {
+            "title": "Setting Up Governance",
+            "structures": [
+              {
+                "level": "Steering Committee (Strategic Level)",
+                "role": "Strategic direction, major decisions, problem-solving",
+                "members": "Funder representatives, government leadership, key stakeholders",
+                "frequency": "Quarterly (or monthly for first 6 months)",
+                "decisions": "Scope changes, budget reallocations, strategy shifts"
+              },
+              {
+                "level": "Technical/Implementation Committee (Operational Level)",
+                "role": "Day-to-day oversight, technical problem-solving, coordination",
+                "members": "Implementation team leads, technical experts, government counterparts",
+                "frequency": "Weekly or bi-weekly",
+                "decisions": "Workplan adjustments, technical approach, resource allocation"
+              },
+              {
+                "level": "Program Management Unit (Execution)",
+                "role": "Do the actual work",
+                "structure": "Program Director, technical leads, M&E specialist, operations",
+                "accountabilities": "Deliver on workplan, manage budget, report progress"
+              }
+            ],
+            "whatWorks": [
+              "Clear decision rights (who decides what)",
+              "Regular rhythm (scheduled meetings, predictable)",
+              "Action-oriented (meetings lead to decisions and actions)",
+              "Problem-solving mindset (not just status updates)"
+            ]
+          },
+          {
+            "title": "Meaningful M&E (Not Reporting Theater)",
+            "threePurposes": [
+              {
+                "purpose": "Accountability (for funders and stakeholders)",
+                "questions": [
+                  "Are we delivering what we promised?",
+                  "Are we on track with timeline and budget?",
+                  "What have we accomplished?"
+                ]
+              },
+              {
+                "purpose": "Learning (for improvement)",
+                "questions": [
+                  "Is our theory of change working?",
+                  "What's working and what isn't?",
+                  "What should we adjust?"
+                ]
+              },
+              {
+                "purpose": "Management (for decision-making)",
+                "questions": [
+                  "Are we on track to hit milestones?",
+                  "Where are bottlenecks?",
+                  "Where do we need to focus resources?"
+                ]
+              }
+            ],
+            "indicators": {
+              "outcomeIndicators": [
+                "Number of citizens registered in digital ID system",
+                "Average time to complete government service transaction",
+                "% of government services available online",
+                "User satisfaction score"
+              ],
+              "processIndicators": [
+                "Number of government staff trained",
+                "Number of systems integrated",
+                "% of budget spent vs plan"
+              ]
+            },
+            "dont": "Collect data just to satisfy funder reporting",
+            "do": "Collect data that helps you manage and improve the program"
+          },
+          {
+            "title": "Managing When Reality Differs from Proposal",
+            "thisWillHappen": "Proposals are estimates and assumptions. Reality always differs.",
+            "scenarios": [
+              {
+                "scenario": "Taking Longer Than Expected",
+                "diagnose": "Capacity gaps? Technical complexity? Political delays?",
+                "options": [
+                  "Extend timeline (if funder agrees and budget allows)",
+                  "Reduce scope (deliver less but deliver well)",
+                  "Add resources (more people, technical support)"
+                ],
+                "communicate": "Don't hide delays"
+              },
+              {
+                "scenario": "Theory of Change Not Working",
+                "example": "We built digital service, but citizens aren't using it",
+                "diagnose": "Why not adopting? Awareness? Access? Trust? Usability?",
+                "adapt": "Rapid iteration based on user feedback",
+                "communicate": "'We learned X, therefore we're adjusting approach to Y'",
+                "insight": "Good funders appreciate evidence-based adaptation"
+              },
+              {
+                "scenario": "Political Context Changes",
+                "example": "New leadership with different priorities",
+                "options": [
+                  "Reframe program to align with new priorities (if genuine alignment)",
+                  "Negotiate adjusted scope",
+                  "In extreme cases: Wind down gracefully"
+                ],
+                "key": "Manage relationships, not just tasks"
+              }
+            ]
+          },
+          {
+            "title": "Maintaining Momentum",
+            "challenge": "Year 1: excitement and energy. Years 2-3: the slog - Initial excitement fades, hard work of scaling begins, stakeholder attention shifts",
+            "strategies": [
+              {
+                "strategy": "Celebrate Milestones",
+                "actions": [
+                  "Mark achievements visibly",
+                  "Share success stories",
+                  "Build team morale"
+                ]
+              },
+              {
+                "strategy": "Communications Strategy",
+                "actions": [
+                  "Regular updates to stakeholders",
+                  "Media coverage of impact",
+                  "Keep funders engaged (not just annual reports)"
+                ]
+              },
+              {
+                "strategy": "Build Constituency",
+                "actions": [
+                  "Users who benefit become advocates",
+                  "Government champions sustain support",
+                  "Broader coalition than initial core team"
+                ]
+              },
+              {
+                "strategy": "Succession Planning",
+                "actions": [
+                  "Assume key people will leave",
+                  "Knowledge transfer and documentation",
+                  "Broaden leadership (not dependent on one person)",
+                  "Build institutional capacity (not just individual)"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Closing Well",
+            "planning": "Programs end. Plan for it.",
+            "finalPhase": {
+              "months6to12BeforeEnd": [
+                "Sustainability assessment: What will continue? What needs ongoing funding?",
+                "Transition planning: Who takes over what?",
+                "Knowledge documentation: Lessons learned, good practices, tools/templates",
+                "Impact evaluation: Did we achieve what we set out to? What evidence?"
+              ],
+              "closingActivities": [
+                "Transition activities: Hand over to government, local partners, or next phase funder",
+                "Close out reporting: Comprehensive final report on outcomes and learning",
+                "Dissemination: Share lessons with broader DPI community",
+                "Celebrate: Acknowledge team and partners"
+              ]
+            },
+            "exitWell": [
+              "Leave implementer stronger than you found them",
+              "Leave tools and knowledge that outlast the program",
+              "Leave relationships that enable future collaboration",
+              "Leave evidence that can inform next generation of work"
+            ]
+          }
+        ],
+        "keyInsight": "Getting funding approved is just the beginning. Implementation is where proposals meet reality. Success requires adaptive management, genuine learning, stakeholder engagement, and sustained momentum through multi-year journeys."
+      },
+      "exercises": [
+        {
+          "type": "inception-planning",
+          "prompt": "Your DPI proposal just got approved. Design your inception phase (first 90 days). What are your priorities? How will you validate key assumptions? What's your detailed Year 1 workplan? How will you set up governance?"
+        },
+        {
+          "type": "scenario-response",
+          "prompt": "You're 18 months into implementation. User adoption is 30% of target. Your theory of change assumed 'if we build it, they will come' but that's not happening. What do you do? How do you diagnose the problem? What adaptations would you consider? How do you communicate with funder?"
+        }
+      ]
+    }
+  ],
+  "assessmentApproach": "Case-based evaluation with coaching feedback. Learners demonstrate offer crafting through: (1) Need identification exercises with real scenarios, (2) Funder mapping and framing exercises, (3) Full proposal development for realistic DPI scenario, (4) Peer review and iteration, (5) Presentation to mock funder panel",
+  "targetAudience": "DPI advisors who connect governments with funding, government officials responsible for resource mobilization, technical advisors who translate needs into proposals, program managers who work across implementer-funder boundaries"
+}

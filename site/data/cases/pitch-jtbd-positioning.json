@@ -1,0 +1,122 @@
+{
+  "id": "pitch-jtbd-positioning",
+  "title": "Drishti: What Does This Product Actually Do?",
+  "case_type": "pitch",
+  "country": "India",
+  "context": {
+    "political_landscape": "India's National Data Governance Framework is newly passed. State governments are under pressure to demonstrate data-driven program management. USAID's India mission has shifted priority toward 'systems strengthening' — they want to fund tools that improve government capacity, not parallel delivery systems.",
+    "recent_events": "Drishti has been piloted in two districts of Madhya Pradesh for eight months. Usage data is mixed — heavy use in one district, near-zero in the other. USAID has offered a 45-minute meeting next week to explore a $2.4M scale grant covering six states. The team has never pitched to USAID before.",
+    "cultural_factors": "The team is technically excellent but product-led in their thinking — they default to explaining what the system does rather than what problem it solves. Indian government program officers are the primary users but the team has had limited direct time with them at the decision-making level. There is internal pride in the breadth of Drishti's feature set.",
+    "your_position": "You are the product lead. You built the core of Drishti over 18 months. You have been in two of the districts and have talked to field workers, district officers, and one state secretary. You called this team meeting three days before the USAID pitch because something felt off when you tried to write the opening slide."
+  },
+  "stakeholder_map": {
+    "Priya (Engineering Lead)": {
+      "power": "high-internal",
+      "stance": "Believes Drishti's value is its real-time data aggregation — the technical integration across 12 source systems is the hard part and should be the lead",
+      "interests": "Recognition that the technical architecture is genuinely difficult, avoid oversimplification"
+    },
+    "Anand (Field Operations)": {
+      "power": "medium-internal",
+      "stance": "Insists Drishti is fundamentally a field worker tool — he spent three months training ASHA workers to enter data and sees that as the core use case",
+      "interests": "The field workers who adopted it get credit, the product is not repositioned away from them"
+    },
+    "Shalini (Government Relations)": {
+      "power": "medium-internal",
+      "stance": "Believes the real user is the State Secretary — she observed a Secretary use the dashboard once and call it 'exactly what I needed'",
+      "interests": "Relationships with senior government stakeholders, pitch lands at the right level"
+    },
+    "USAID Program Officer": {
+      "power": "high-external",
+      "stance": "Evaluating whether Drishti strengthens government systems or creates dependency",
+      "interests": "Government ownership, scalability beyond the pilot, evidence of behavior change in government"
+    },
+    "District Program Officer (Rewa district)": {
+      "power": "low-formal but high-evidence",
+      "stance": "Heavy user — uses Drishti every Monday before her state review call",
+      "interests": "Not being caught off guard in her weekly call with the state, knowing where her district stands before anyone tells her"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You open the team meeting by asking everyone to write one sentence on a sticky note: 'Drishti helps [who] do [what].'\n\nPriya writes: 'Drishti helps government data systems talk to each other so program managers can see everything in one place.'\n\nAnand writes: 'Drishti helps ASHA workers and ANMs record their work accurately so their data reaches the state level without getting lost.'\n\nShalini writes: 'Drishti helps State Secretaries and senior officials understand program performance across districts at a glance.'\n\nThree different users. Three different jobs. One week before the USAID pitch.\n\nAnand says: 'All three are right — different users use it differently. That's actually a strength. We should show USAID that it works at all levels.'\n\nShalini says: 'We should lead with the Secretary angle — that's where the decision happens.'\n\nPriya says: 'None of these capture what makes us different — the technical integration is the real story.'",
+      "prompt": "How do you respond? What do you do with the three sticky notes?",
+      "evaluate": [
+        "Do they try to reconcile all three by saying 'it serves all levels' (the trap — this is not a positioning choice)?",
+        "Do they recognize that three different users means three different pitches and you can only give one?",
+        "Do they push back on Anand's 'it's a strength' framing — serving everyone is not positioning, it is the absence of positioning?",
+        "Do they ask: which user's behavior change is the evidence we have the most of?",
+        "Do they separate the question of who the product serves from who the pitch should be aimed at?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "diagnostic",
+      "situation": "You push back on the 'all three are right' position. You say: 'We have 45 minutes with USAID. We can only tell one story. Let's figure out which one is true.'\n\nYou propose using a JTBD frame: complete the sentence 'When [specific situation], [specific person] needs to [job], so they can [outcome], and they know they succeeded when [signal].'\n\nAnand tries first: 'When field workers are doing home visits, ASHAs need to record maternal health data, so they can ensure women get follow-up care, and they know they succeeded when the data shows up in the system.'\n\nShalini tries: 'When State Secretaries are reviewing district performance, they need to see cross-program data, so they can make resource allocation decisions, and they know they succeeded when they have better information than before.'\n\nYou think about the Rewa district officer — Deepa — who you observed using Drishti every Monday morning for 45 minutes before her state call. She told you: 'I used to dread that call. Now I know what they're going to ask before they ask it.'\n\nYou try: 'When a district program officer is preparing for her weekly state review call, she needs to know how her district performed across health, education, and water targets last week, so she can answer questions without being caught off guard, and she knows she succeeded when she can answer every question in that call without saying I'll check and get back to you.'",
+      "prompt": "Which JTBD sentence is correct? How do you choose — and what is your reasoning?",
+      "evaluate": [
+        "Do they choose based on evidence (who actually uses it, what behavior have we observed) rather than aspiration (who we want to use it)?",
+        "Do they recognize that Anand's version describes data entry, not decision-making — and Drishti is a dashboard, not a data entry tool?",
+        "Do they recognize that Shalini's version is too vague — 'better information than before' is not a success signal?",
+        "Do they identify Deepa's JTBD as the most specific, most verified, and most falsifiable of the three?",
+        "Do they note that the trigger situation ('preparing for her weekly state review call') is a specific event, not a demographic?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "deepening",
+      "situation": "The team agrees that the Deepa JTBD is the strongest. Anand is quiet but not convinced — he says: 'But the data only exists because the field workers entered it. If we position for district officers, we lose the field worker story.'\n\nYou move on to deepen the JTBD: 'Let's separate functional job from emotional job. The functional job for Deepa is: know her district's performance data before the review call. What is the emotional job?'\n\nPriya: 'She wants to look competent in front of her state superiors.'\n\nShalini: 'She wants to feel in control — not reactive.'\n\nAnand: 'She doesn't want to be embarrassed.'\n\nYou think about what Deepa actually said: 'I used to dread that call.' Not 'I used to be inefficient.' Not 'I used to lack data.' She dreaded it.",
+      "prompt": "What is Deepa's emotional job — and why does the distinction between functional and emotional job matter for the USAID pitch?",
+      "evaluate": [
+        "Do they identify the emotional job as psychological safety — not embarrassment, not control, but the specific dread of being caught unprepared in a power-asymmetric situation?",
+        "Do they connect the emotional job to the pitch: USAID needs to feel that Drishti changes how district officers experience their own authority and competence, not just how fast they access data?",
+        "Do they recognize that 'she wants to look competent' is a surface-level read — the deeper job is that she wants to feel like an informed manager rather than a report-deliverer?",
+        "Do they see that the emotional job is what makes the impact story land — 'she dreaded that call' is a pitch opening, 'she needed data' is not?",
+        "Do they connect back to Anand's concern: the field worker story is actually the mechanism by which Deepa's emotional job gets done — not a separate story"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "builder_trap",
+      "situation": "You ask the group: 'What is Deepa currently hiring instead of Drishti? What did she do before we existed?'\n\nSilence. Then:\n\nPriya: 'Probably Excel.'\n\nAnand: 'She was calling field supervisors individually. I saw her do it in Rewa before the pilot.'\n\nShalini: 'She was probably using the MIS reports from each department separately — health had one, education had another.'\n\nYou push: 'So what was she actually doing on Sunday night before a Monday morning state call?'\n\nAnand, slowly: 'WhatsApp. She was in seven WhatsApp groups — one per block — asking supervisors what happened last week. Then she was compiling it in her head or in a notebook.'\n\nPriya looks uncomfortable. 'So our competition is WhatsApp and a notebook?'\n\nAnand: 'And her own memory and network relationships. She trusted her supervisors more than any system.'\n\nYou now know what you are replacing. It is not a competing software product. It is a social workaround built on personal relationships and informal communication channels.",
+      "prompt": "What does this workaround tell you about the real barriers to adoption — and what should it change about how you pitch to USAID?",
+      "evaluate": [
+        "Do they recognize that the workaround (WhatsApp + notebook + supervisor relationships) worked reasonably well — which explains why the Rewa pilot succeeded but the other district did not (relationship quality varied)?",
+        "Do they see that the pitch must acknowledge the workaround, not pretend it does not exist — USAID program officers will have talked to government users and will know about informal workarounds?",
+        "Do they identify the real adoption risk: district officers who have strong informal networks do not need Drishti; those who lack those networks need it most but may trust it least?",
+        "Do they update the JTBD: the emotional job is not just 'not be caught off guard' — it is 'not be dependent on whether your supervisors happen to respond on Sunday night'?",
+        "Do they flag that USAID will ask: 'What happens in districts where the informal network is strong — will Drishti be adopted?' and start preparing that answer?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "application",
+      "situation": "You now have a clean JTBD:\n\n'When a district program officer is preparing for her weekly state review call, she needs to know how her district performed across programs without depending on whether her supervisors respond on Sunday night, so she can answer questions confidently without saying I'll check and get back to you, and she knows she succeeded when she walks out of the state call without a single open question she could not answer.'\n\nPriya has been quiet. She pulls up the draft pitch deck. The current opening slide reads:\n\n'Drishti is a unified data platform that integrates real-time data from health, education, water, and nutrition programs across district, block, and village levels, enabling program managers at all levels of government to access cross-sectoral insights through a single dashboard.'\n\nAnand says: 'That is accurate.'\n\nShalini says: 'It tells USAID what it is, not why it matters.'\n\nYou have two minutes to rewrite the opening two sentences.",
+      "prompt": "Rewrite the opening two sentences of the USAID pitch using the JTBD you just built.",
+      "evaluate": [
+        "Does the rewrite name the specific trigger situation (preparing for the state review call) rather than a general use case?",
+        "Does the rewrite name the emotional job (not being dependent on her network, not being caught off guard) rather than just the functional output?",
+        "Does the rewrite avoid leading with product features (unified data platform, cross-sectoral insights)?",
+        "Does the rewrite make USAID feel something about Deepa's situation before they understand what Drishti does technically?",
+        "Does the rewrite stay true to the evidence — it does not overclaim by saying Drishti works for all government officials at all levels?",
+        "Strong example: 'Every Monday morning, district program officers across India prepare for a state review call they dread. The call will ask questions their data cannot answer — because the data lives in seven different systems and a dozen WhatsApp groups. Drishti changes one thing: she walks into that call knowing.'",
+        "Weak example: 'Drishti is a data integration platform that helps government officials make data-driven decisions by providing real-time dashboards.'"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here is what happened to teams that pitched without a clear JTBD:\n\nA civic tech team in Kenya pitched a school monitoring platform to DFID with the opening: 'Our platform enables education stakeholders at all levels to access student performance data in real time.' DFID's question after the pitch: 'Who is the primary user?' The team said: 'Teachers, head teachers, district education officers, and the ministry.' DFID passed. Their feedback: 'No clear theory of change — we could not tell who would change their behavior or how.'\n\nA health tech team in Nigeria pitched a community health worker tool to Gates Foundation and led with data integration capabilities. Gates' question: 'What does a health worker do differently on Tuesday because of this product that she did not do on Monday?' The team did not have a specific answer. They did not get the grant.\n\nThe Drishti team that went into USAID with the Deepa JTBD clear was asked: 'What evidence do you have that district officers actually change their behavior?' They said: 'In Rewa, Deepa used Drishti every Monday for six months. Her average state call preparation time dropped from 3.5 hours to 40 minutes. More importantly, she stopped missing questions in state calls — her supervisor told us she went from asking for follow-up time on 4-5 questions per call to zero in month 3.' That specificity won the grant.",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Did you resist the 'all levels' positioning trap or did you try to serve everyone?",
+        "Did you anchor the JTBD to observed behavior (Deepa on Sunday night) or to aspiration (the Secretary we hope will use it)?",
+        "Did you separate functional job from emotional job — or did you treat 'see the data' as the full story?",
+        "Did you name the real competition honestly (WhatsApp + notebook) or default to 'legacy systems'?",
+        "Did your pitch rewrite make USAID feel something before it told them anything?"
+      ]
+    }
+  ],
+  "tags": ["pitch", "jtbd", "positioning", "product", "storytelling", "civic-tech", "fundraising"]
+}

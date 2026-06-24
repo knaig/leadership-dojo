@@ -1,0 +1,115 @@
+{
+  "id": "pitch-data-then-story",
+  "title": "The Impact Funder Meeting",
+  "case_type": "pitch",
+  "country": "Uganda",
+  "context": {
+    "political_landscape": "Uganda's Ministry of Health runs a national community health worker program across 112 districts. CHWs are officially classified as volunteers, though the government has made repeated commitments to formalize payment. Three international donors — USAID, Global Fund, and FCDO — each run parallel payment systems that do not talk to each other. Political will to consolidate exists but has stalled twice in the last four years due to turf issues between departments.",
+    "recent_events": "A Lancet paper published six months ago documented that community health worker retention in Sub-Saharan Africa drops 34% in the 18 months following payment delays of more than 30 days. The paper has been widely shared in development finance circles and is currently cited in three active RFPs. Rockefeller Foundation published a strategy refresh last quarter naming 'last-mile health workforce sustainability' as a priority theme for 2026-2028.",
+    "cultural_factors": "Community health workers in Uganda are predominantly women, often the primary earners in their households. Late payment is not a neutral inconvenience — it cascades into school fees, household food security, and whether family members seek medical care. CHWs have significant community trust and often serve as the first point of contact for maternal health, vaccination, and malaria treatment. Their attrition is a public health problem, not just a workforce management problem.",
+    "your_position": "You lead the Nimbus product team at a digital public goods organization. Nimbus has been running in Kenya, Rwanda, and Tanzania for 18 months — 14,000 CHWs on the platform, government-integrated in all three countries. You are now seeking expansion funding to reach Uganda, Nigeria, Mozambique, Senegal, Ethiopia, and Côte d'Ivoire over 24 months. The Rockefeller PO has read your 2-page executive summary and has 12 minutes of focused time with you before a hard stop."
+  },
+  "stakeholder_map": {
+    "Rockefeller Foundation Program Officer": {
+      "power": "high — holds recommendation authority, committee approval is near-automatic if she is convinced",
+      "stance": "Professionally skeptical. She has seen forty pitches this year that opened with a health worker's story and then abandoned her. She is alert to emotional manipulation and actively tests for it. She is also genuinely motivated by the mission — if the data and the story are both honest, she will advocate hard for this. She will not ask easy questions.",
+      "interests": "Evidence of sustainable systems change, not pilot dependency. Proof that governments co-own the platform, not just adopt it. Clear theory of change from payment reliability to retention to health outcomes. Honest accounting of what has not worked. A grantee she can defend to her investment committee with specifics, not sentiment."
+    },
+    "Ministry of Health Director of Community Health": {
+      "power": "medium — not in the room but referenced throughout",
+      "stance": "Cautiously supportive. Has seen two previous digital health platforms promise integration and deliver a parallel system that his team now has to maintain. Wants Nimbus to work but needs to see it subordinate itself to government infrastructure, not replace it.",
+      "interests": "Reduced administrative burden on his team, political cover from donor fragmentation, ability to report CHW payment compliance to the President's office"
+    },
+    "USAID Health Systems Officer": {
+      "power": "medium — controls one of three payment streams Nimbus must integrate",
+      "stance": "Interested but protective of USAID's existing verification process. Will not agree to full integration without seeing security certification and data governance framework.",
+      "interests": "Accountability to Congress on fund usage, demonstration of USAID technology leadership in the region, not being blamed if the system fails"
+    },
+    "Grace Akello (representative CHW)": {
+      "power": "none — not in the room",
+      "stance": "Has no opinion on the pitch. Wants to be paid on time and to know why she was not paid when she was not.",
+      "interests": "Predictable income, dignity in the workplace relationship with the government that employs her, enough information to plan her household finances"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You are seated across from Dr. Amara Diallo, the Rockefeller PO. Her laptop is open. She has a notepad. She says: 'I read your summary. Let's use this time for you to tell me what the two pages couldn't. You have twelve minutes — I have a committee call at the half hour. Go ahead.'\n\nYou have prepared three possible opening statistics:\n\nOption A: 'Over a billion people worldwide lack access to formal financial services.'\n\nOption B: 'In Uganda, 73 percent of community health workers have never received a single payment on time in their careers. Not because the government lacks the funds — the budgets exist. Because no system in Uganda currently knows when a CHW worked, what she did, or where to send the money.'\n\nOption C: 'Community health worker retention rates in Sub-Saharan Africa drop 34 percent within 18 months of a payment delay exceeding 30 days. That figure is from the Lancet, published in March, and it matches what we have seen in our own data across three countries.'\n\nDr. Diallo has seen all three types of statistics before. She is testing whether you know the difference between establishing scale, revealing mechanism, and earning credibility.",
+      "prompt": "Which statistic do you open with, and why? What do you say after it?",
+      "evaluate": [
+        "Do they choose Option B or C over Option A? Option A is overused, establishes no mechanism, and reveals no specific knowledge. It signals generic pitch mode.",
+        "If they choose Option B: Do they understand that it works because it names the geography, names the mechanism (the system gap), and avoids blaming anyone — making it credible without being inflammatory?",
+        "If they choose Option C: Do they understand that citing the Lancet earns immediate credibility with Dr. Diallo, who has read the paper? Does it signal they are embedded in the evidence base, not just a product team?",
+        "Do they resist the urge to explain Nimbus immediately after the statistic? The statistic is an opening, not a cue to start the product pitch.",
+        "Do they recognize that Dr. Diallo's 'what the two pages couldn't' prompt is an invitation for narrative, not summary? The right response is a human story, not a features list."
+      ]
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You have opened with your statistic and Dr. Diallo has nodded once — not enthusiastically, but she has put down her pen, which is a signal. You have about 90 seconds to introduce the human face before she expects you to get to product and proof.\n\nYou need to introduce Grace Akello — a community health worker in Gulu — and you have one shot to make her real.\n\nYour team has prepared two versions:\n\nVersion A: 'Community health workers like Grace in northern Uganda face daily challenges that include unreliable payments, difficult working conditions, and lack of institutional support, which affects their ability to provide quality care to their communities.'\n\nVersion B: 'Grace Akello has been a community health worker in Gulu for six years. She delivered 23 babies last year. She has never been paid on time in six years — not once. Three months ago, she missed a payment entirely. She found out when she checked her mobile money account on the first of the month. No notification. No explanation. She did not know who to call. She is still doing the job. She does not know why she is still doing the job.'",
+      "prompt": "Which version do you use? What specific detail do you add or remove to make Grace feel real without feeling staged?",
+      "evaluate": [
+        "Do they choose Version B without hesitation? Version A is a category description, not a person — it contains no single verifiable detail and produces no image in the listener's mind.",
+        "Do they recognize the power of the ending line — 'She does not know why she is still doing the job' — as the emotionally honest moment that makes Grace's story credible rather than sentimental?",
+        "Do they resist adding Grace's family situation or other sympathetic details not directly connected to the payment problem? Extra details signal that you are manufacturing sympathy rather than reporting reality.",
+        "Do they notice that Grace's story must END at the problem moment — not at the solution? The solution comes later. If they say 'and then Nimbus helped her,' they have broken the structure.",
+        "Do they make Grace representative rather than extreme? A CHW who quit, lost her home, or suffered a dramatic hardship is emotionally manipulative. Grace's version — still doing the job, confused, quiet — is more devastating and more honest."
+      ]
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "situation": "You have introduced Grace. Dr. Diallo says: 'Thank you. Tell me about Nimbus.' Her tone is neutral. She is not moved and not unmoved. She wants the transition from story to product to feel like logic, not like a sales pivot.\n\nYou have four minutes left for solution, proof, and ask. You need to explain Nimbus in 2-3 sentences, connect it back to Grace's specific problem, and then immediately move into proof — not features.\n\nYour product manager has suggested this explanation for Nimbus:\n\n'Nimbus is an open-source payment verification and disbursement platform that integrates with existing government HRIS and donor payment systems to create a unified, automated payment pipeline for community health workers. It uses mobile-based visit verification, offline-capable data collection, and government-API integrations to ensure that completed work is automatically logged, verified against program targets, and disbursed to the CHW's mobile money account within five business days of the verification window closing. The platform includes a real-time CHW-facing dashboard, supervisor override capabilities, donor reconciliation reporting, and an audit trail for government compliance purposes.'\n\nDr. Diallo will not sit through this. She has read the summary. She already knows what Nimbus does at the feature level.",
+      "prompt": "Rewrite the solution explanation for this moment. Two to three sentences that connect to Grace and lead directly to proof.",
+      "evaluate": [
+        "Do they cut the feature list entirely? Dr. Diallo has read the summary. Feature recitation in a 12-minute meeting signals that the speaker cannot distinguish between documentation and persuasion.",
+        "Does the rewritten explanation connect explicitly to Grace's specific problem — the invisibility of her work to the payment system — rather than describing Nimbus at a system level?",
+        "Do they end their solution explanation with a lead-in to proof rather than a rhetorical pause? The transition should be seamless: 'Nimbus closes this gap by making CHW work visible to the systems that pay for it. Here is what happened when 14,000 CHWs like Grace started using it.'",
+        "Do they retain the word 'open-source' or 'government-integrated' — the two credentials that matter to Dr. Diallo — while cutting everything else?",
+        "Do they resist the urge to explain HOW the platform works technically? The mechanism belongs in due diligence, not in the 12-minute pitch."
+      ]
+    },
+    {
+      "round": 4,
+      "type": "legitimacy_challenge",
+      "situation": "You present your proof. You have three data points from Kenya, Rwanda, and Tanzania:\n\n- 94% of CHWs on the platform received payment within 5 business days across 18 months\n- CHW 12-month retention rate in Nimbus counties: 81%, versus 61% in non-Nimbus counties in the same health districts\n- Government payment processing time reduced from an average of 47 days to 6 days\n\nDr. Diallo writes something on her notepad, then looks up: 'The retention differential is the number I care about most. 81 versus 61 — that is a 20-point gap. But I want to know: is Nimbus causing higher retention, or did you implement Nimbus in the counties where the health system was already stronger? The counties where a program like this would get adopted first are probably the counties where government capacity is higher, which is also where CHW retention would be higher anyway.'\n\nThis is the selection bias question. It is the right question. You did not randomize your rollout.",
+      "prompt": "How do you respond? You cannot claim randomization. What do you say?",
+      "evaluate": [
+        "Do they acknowledge the question directly rather than deflecting? Dr. Diallo has asked the correct methodological challenge. A deflection or pivot destroys credibility with a sophisticated PO.",
+        "Do they have a genuine answer ready? Strong responses include: (1) naming which specific counties and why they were selected (if the selection was documented and the reasons are not correlated with retention), (2) citing any within-county before/after data from the same CHW cohort before and after Nimbus launch, (3) acknowledging the limitation honestly and naming what evidence would resolve it (a randomized rollout, which is what they are asking for expansion funding to do).",
+        "Do they connect the answer back to the ask? If the right answer is 'we cannot prove causation from this data, but the expansion design includes a randomized control comparison in two of the six new countries,' that is both honest and strategic.",
+        "Do they avoid over-qualifying to the point of undermining the proof? Honest acknowledgment of the limitation should be one sentence; the rest should be what you do have and what the expansion will resolve.",
+        "Do they treat this as a signal that Dr. Diallo is engaged, not attacking? A sophisticated PO only asks the hard methodological question when she is seriously considering the grant."
+      ]
+    },
+    {
+      "round": 5,
+      "type": "narrative_moment",
+      "situation": "You have one minute left. You have handled the selection bias question. Dr. Diallo glances at her watch — not dismissively, but as a genuine signal that you need to land the plane.\n\nYou need to do two things in this final minute: make the ask precisely, and return to Grace.\n\nMost pitchers at this point make one of two mistakes:\n\nMistake A: They give the ask and stop, treating the Grace bookend as optional or time-dependent ('I was going to tell you what happened to Grace but we're out of time').\n\nMistake B: They return to Grace in a way that feels staged — a single warm sentence that was clearly scripted before the meeting and has no relationship to what just happened in the room.\n\nThe right approach: The ask and the Grace bookend are not sequential. Grace is the ask. When you say what happened to Grace, you are making the case for why the other 400,000 CHWs in the six expansion countries need this now.",
+      "prompt": "Write the final 60 seconds of the pitch — the ask and the return to Grace. Make them one movement, not two separate beats.",
+      "evaluate": [
+        "Does Grace appear in the final 60 seconds? If she does not, the story structure has collapsed and the pitch ends on data rather than humanity — which is the wrong final note for an impact funder.",
+        "Is Grace's outcome specific? Not 'she is now paid reliably' but 'paid within five days of every home visit for the last eight months. She told us: I used to feel like the government didn't know I existed. Now I know they do.' Exact specificity — including a direct quote if available — is the signal that this is a real person, not a composite.",
+        "Is the ask embedded in the return to Grace rather than stated separately? The strongest version: 'Grace has been paid within five days for the last eight months. 400,000 CHWs in six countries are still waiting for their Grace moment. That is what the $2.2 million does, and that is what we are asking for.'",
+        "Is the ask precise? Amount ($2.2M), timeline (24 months), use (expansion to 6 countries), decision timing implied or stated? Vague asks signal lack of operational readiness.",
+        "Does the return to Grace feel earned rather than scripted? The best test: would it have landed the same way if the meeting had gone differently? If yes, it is genuine. If it sounds identical regardless of how the conversation went, it is a scripted close."
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here is what Dr. Diallo told a colleague after a version of this pitch that went well:\n\n'Most people who pitch me with a health worker story abandon the health worker the moment they get to their product. They use her to open a door and then forget she exists. The Nimbus team brought Grace back at the end — not as a prop but as the actual reason for the ask. That is the only version of this structure that does not feel manipulative to me. And when I asked them the hard question about selection bias, they didn't flinch or pivot. They said: here's what we know, here's what we don't know, and here's how the expansion design resolves it. That told me more about them than any impact metric could.'\n\nHere is what she told a colleague after a version of this pitch that went poorly:\n\n'They opened with a beautiful story about a woman named Esther. I was with them completely. Then they pivoted to product features for six minutes and I lost the thread. By the time they made the ask, Esther had been gone for nine minutes. I kept thinking: did they forget about her? And I realized — yes. They had. The story was a technique, not a belief. I passed.'\n\nThe structural principle: The human story is load-bearing architecture, not decoration. It must appear at the beginning AND the end because the beginning establishes an implicit promise — I am going to tell you something true about a real person — and the end fulfills that promise. Breaking the promise does not just feel bad. It signals that your organization's relationship to the people you serve is also instrumental rather than genuine. Sophisticated impact funders read this correctly.\n\nDr. Diallo's three most likely Q&A questions, and what strong responses sound like:\n\nQ1: 'What happens to Nimbus access if the grant ends and no follow-on funding materializes?' Strong response: Names the government co-payment agreements already in place in Kenya and Rwanda, explains the transition plan built into the expansion design, acknowledges this is the most important sustainability question and gives the specific answer rather than a theory.\n\nQ2: 'Why Rockefeller and not USAID or Gates?' Strong response: Names the specific Rockefeller strategy alignment (last-mile health workforce sustainability, 2026-2028 priority), names why USAID and Gates are not the right fit for this specific expansion phase (USAID procurement cycles too slow for 24-month window; Gates portfolio already has conflicting investments in two of the six target countries), makes Dr. Diallo feel that Rockefeller's involvement is strategically meaningful, not just a funding source.",
+      "prompt": "Coaching based on your responses across this pitch",
+      "coaching_focus": [
+        "Statistic: Did you choose the mechanism-revealing specific statistic, or the overused global average that signals generic pitch mode?",
+        "Human face: Did Grace remain specific, representative, and bounded to the problem — or did she become a composite, an extreme, or a prop that disappeared after round 2?",
+        "Solution brief: Did you cut the feature list and connect directly to Grace's problem and then to proof — or did you recite documentation?",
+        "Hard question: Did you treat the selection bias challenge as an engagement signal and answer it honestly with what you know, what you don't, and what the expansion resolves?",
+        "Bookend: Did Grace appear at the end with a specific outcome and a direct quote, embedded in the ask — or was she absent, or present as a scripted close that felt disconnected from what had just happened in the room?"
+      ]
+    }
+  ],
+  "tags": ["pitch", "impact-funder", "data-then-story", "storytelling", "fundraising", "health", "Uganda", "community-health-workers"]
+}

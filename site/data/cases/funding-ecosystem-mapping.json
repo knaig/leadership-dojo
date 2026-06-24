@@ -1,0 +1,213 @@
+{
+  "id": "funding-ecosystem-mapping",
+  "course": "funding-resource-mobilization",
+  "difficulty": "application",
+  "title": "Following the Money: Understanding the DPI Funding Ecosystem",
+  "country": "Zambia",
+  "caseType": "funding_strategy",
+  "learningObjectives": [
+    "Map the DPI funding ecosystem and understand different player motivations",
+    "Recognize that funding acquisition is relationship-building, not sales",
+    "Learn to match your project to funder priorities and constraints",
+    "Understand donor decision-making processes and timelines",
+    "Practice positioning projects to align with funder incentives",
+    "Navigate the difference between government budget, donor grants, and private philanthropy"
+  ],
+  "context": {
+    "yourRole": "Senior Policy Advisor at Zambia's Smart Zambia Institute. You've been tasked with securing funding for a digital land registry system that would integrate with existing government services.",
+    "situation": "The project has strong government support but no budget allocation. You need external funding. Estimated cost: $8 million over 3 years.",
+    "pressure": "The Permanent Secretary wants a funding strategy within 2 weeks. He's asked: 'Who do we approach? What's their motivation? How do we position this?'",
+    "reality": "You have limited experience with international donors. You know there's money out there but don't understand how the funding ecosystem actually works."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You start by listing potential funders you've heard of:\n\n**Your Initial List:**\n- World Bank\n- Gates Foundation\n- USAID\n- UK FCDO (Foreign, Commonwealth & Development Office)\n- UNDP\n- European Union\n- GovStack\n\nYou schedule calls with colleagues who have donor experience:\n\n**Call 1 - Martha (worked with World Bank):**\n\nMartha: 'World Bank could work, but you need to understand: they do loans, not grants. Zambia would have to borrow the money. Also, they're slow - 12-18 months from concept to approval. And they like big projects, $20M+. Your $8M might be too small unless it's part of larger digital government program.'\n\nYou: 'So we'd have to borrow it? Not free money?'\n\nMartha: 'Exactly. Concessional loan - low interest, long repayment. But still debt. Government needs to want to borrow for this. Does your Permanent Secretary have appetite for that?'\n\n**Call 2 - David (worked with Gates Foundation):**\n\nDavid: 'Gates is interesting. They do grants, not loans. But they're very specific about what they fund. They care about health, agriculture, financial inclusion, water/sanitation - things that directly impact poverty. Digital land registry... how does that connect to their priorities?'\n\nYou: 'Land rights affect agriculture, property ownership enables financial inclusion...'\n\nDavid: 'You'd have to make that case convincingly. Also, Gates doesn't usually fund government IT infrastructure directly. They fund organizations that work WITH governments. Are you proposing Smart Zambia Institute implements this, or government?'\n\nYou: 'I assumed government...'\n\nDavid: 'That might be a problem. Gates typically partners with NGOs, foundations, or quasi-independent institutes - entities with more flexibility than government ministries. Also, they have program officers with specific thematic focus. You'd need to find the right PO whose portfolio includes land/agriculture/financial inclusion AND digital infrastructure. That's not obvious.'\n\n**Call 3 - Joyce (worked with USAID):**\n\nJoyce: 'USAID could potentially fund this, but understand: they're driven by US foreign policy priorities. Right now, Zambia is not a major focus country for them. They're more active in Kenya, Nigeria, Ethiopia. Unless your project connects to something they're already doing in Zambia, it'll be tough. Also, USAID usually works through implementing partners - NGOs, contractors. They rarely give money directly to governments.'\n\nYou: 'So I can't just propose this to USAID?'\n\nJoyce: 'You can, but you'd be responding to their priorities, not them responding to yours. Check their country strategy for Zambia. If digital land registry aligns with their existing programs, there might be an angle. Otherwise, it's an uphill battle.'\n\nAfter these calls, you realize:\n- World Bank = loans, not grants (requires government debt appetite)\n- Gates Foundation = grants, but specific priorities, prefers NGO partners\n- USAID = grants, but driven by US policy priorities, works through implementers\n- Your assumption of 'just asking for money' was naive\n- Each funder has different motivations, constraints, processes",
+      "prompt": "What's your key insight about the funding ecosystem? How should you approach this differently?",
+      "evaluationCriteria": [
+        "**Funder Motivations**: Do they recognize each funder has specific drivers (policy priorities, thematic focus, institutional mandates)?",
+        "**Loans vs Grants**: Do they understand the fundamental difference and implications?",
+        "**Alignment Not Sales**: Do they see this is about matching your project to their existing priorities, not pitching?",
+        "**Intermediaries**: Do they grasp that some funders work through implementing organizations, not directly with governments?",
+        "**Ecosystem Mapping**: Do they recognize the need to systematically map funders by: type, priorities, modalities, timelines?",
+        "**Strategic Positioning**: Do they think about how to position the land registry project differently for different funders?"
+      ],
+      "coachingNotes": "This is the fundamental insight about DPI funding: It's not sales (convince someone to buy your product). It's alignment (find funders whose existing priorities match your project, then position accordingly). World Bank wants macro-level development impact and government capacity building - loan model reflects this. Gates Foundation wants poverty impact through specific sectors - grant model for proven approaches. USAID wants foreign policy outcomes - works through implementers for control. Each has different answer to: Why do they fund things? What's in it for them? What constraints do they operate under? Your job is to map this ecosystem, understand motivations, find best fit, and position your project to align with their incentives."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You create a more sophisticated funder mapping:\n\n**FUNDER ECOSYSTEM MAP:**\n\n**Category 1: Multilateral Development Banks (Loans)**\n- World Bank / IFC / IDA\n- African Development Bank\n- Motivation: Country development, macro impact, building government capacity\n- Modality: Concessional loans (IDA) or market-rate loans (IBRD)\n- Timeline: 12-24 months\n- Decision driver: Economic impact, government commitment, technical soundness\n- Challenge for you: Requires government appetite for debt, long timeline\n\n**Category 2: Philanthropic Foundations (Grants)**\n- Gates Foundation\n- Omidyar Network\n- Ford Foundation\n- Motivation: Specific thematic impact (health, financial inclusion, governance)\n- Modality: Grants to NGOs/institutes, not usually direct to government\n- Timeline: 6-12 months\n- Decision driver: Alignment with program officer priorities, measurable impact, innovation\n- Challenge for you: Need to fit specific thematic box, may need NGO vehicle\n\n**Category 3: Bilateral Development Agencies (Grants/Technical Assistance)**\n- USAID, UK FCDO, GIZ (Germany), AFD (France), SIDA (Sweden)\n- Motivation: Foreign policy, country strategy alignment, visibility\n- Modality: Through implementing partners (contractors, NGOs)\n- Timeline: 6-18 months depending on mechanism\n- Decision driver: Fits country strategy, political relationship, partner capacity\n- Challenge for you: Zambia may not be priority country, need to fit existing programs\n\n**Category 4: UN Agencies (Technical Assistance + Small Grants)**\n- UNDP, ITU, UNCDF\n- Motivation: Country capacity building, technical standards, global agenda (SDGs)\n- Modality: Technical assistance, co-funding, coordination\n- Timeline: 3-6 months for small projects\n- Decision driver: Government request, SDG alignment, regional priorities\n- Challenge for you: Usually smaller scale ($500K-$2M), more coordination than pure funding\n\n**Category 5: Emerging DPI Funders (Grants + Technical Support)**\n- Digital Public Goods Alliance (DPGA)\n- GovStack\n- Co-Develop (Gates/Omidyar collaboration)\n- Motivation: Prove DPI models, create global public goods, South-South learning\n- Modality: Grants + technical assistance, emphasis on open source and reusability\n- Timeline: 6-12 months\n- Decision driver: Innovation, replicability, commitment to open standards\n- Challenge for you: Relatively new, smaller scale, emphasis on open source\n\nYou show this to your colleague David:\n\nDavid: 'This is good. Now you understand the landscape. But here's what you're missing: funding is RELATIONAL, not transactional. You can't just submit a proposal cold. You need relationships with program officers, country directors, sector specialists. They get hundreds of proposals. The ones that get funded usually come from organizations they already know and trust.'\n\nYou: 'So how do I build those relationships if I don't have them yet?'\n\nDavid: 'Few approaches: [1] Attend the conferences and forums where these people gather - think DPI Summit, IGF, AfriGovTech. [2] Get introduced through mutual connections - who do you know who knows them? [3] Start smaller - get on their radar with a small project or technical engagement before asking for $8M. [4] Co-develop the proposal WITH them, not present finished proposal TO them. Most successful funding comes from collaborative design.'\n\nYou: 'Co-develop? So I should approach them before I have a detailed proposal?'\n\nDavid: 'Often, yes. You present the problem (\"Zambia needs digital land registry\"), ask if it aligns with their priorities, invite them to shape the solution. This makes them invested in the outcome. It's not \"please fund my idea\" - it's \"we have this challenge, can we work together to address it?\"'",
+      "prompt": "This insight about relational vs transactional funding changes your approach. What's your new strategy?",
+      "evaluationCriteria": [
+        "**Relational Understanding**: Do they grasp that funding flows through relationships, not just proposals?",
+        "**Co-Development**: Do they see the value of inviting funders to shape solutions vs presenting finished plans?",
+        "**Strategic Sequencing**: Do they think about starting smaller to build trust before big asks?",
+        "**Network Building**: Do they consider how to get introduced vs cold outreach?",
+        "**Long-term Thinking**: Do they recognize this is about building funder relationships over time, not one transaction?",
+        "**Funder Incentives**: Do they think about what's in it for the funder to co-develop with you?"
+      ],
+      "coachingNotes": "This is the critical shift: funding is relationship-based. Program officers at Gates, World Bank, USAID are inundated with proposals. What gets funded? Projects from organizations they know and trust. How do you build that trust? [1] Get on their radar through smaller engagements, [2] Get introduced by mutual connections, [3] Show up where they are (conferences, forums), [4] Invite them to co-develop solutions. The co-development point is key: instead of presenting them a finished $8M proposal, you might say: 'We've identified land registry as critical for financial inclusion. This seems aligned with your financial inclusion portfolio. Would you be interested in exploring this together?' This makes them a partner, not a gatekeeper. They're now invested in making it work."
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "Based on your ecosystem mapping and relationship insights, you develop a **Funding Strategy**:\n\n**OPTION A: World Bank Approach (Loan-based)**\n\n*Positioning:* Digital land registry as part of broader digital government transformation, integrated with national ID, civil registration, tax systems. Package as $25M program, land registry is one component.\n\n*Path:*\n- Engage World Bank country office\n- Position to Ministry of Finance (they handle loans)\n- Align with World Bank's existing Zambia portfolio\n- Timeline: 18-24 months\n\n*Pros:*\n- Large scale, comprehensive approach\n- World Bank brings technical expertise\n- Fits government's digital transformation agenda\n\n*Cons:*\n- Requires government to borrow (adds to debt)\n- Very slow process\n- Heavy compliance and procurement requirements\n- You personally won't control implementation\n\n---\n\n**OPTION B: Gates Foundation Approach (Grant-based, thematic angle)**\n\n*Positioning:* Land registry as enabler for agricultural productivity and financial inclusion. Farmers with secure land titles can access credit, improve productivity, invest in better practices.\n\n*Path:*\n- Research which Gates PO covers agriculture/financial inclusion in Southern Africa\n- Get warm introduction (who do you know who knows them?)\n- Propose co-development: 'We see land rights as barrier to agricultural finance. Interested in exploring together?'\n- Start with $500K pilot, prove model, scale to $8M\n- Smart Zambia Institute as implementing partner, not government directly\n- Timeline: 12-18 months for pilot, then 2-3 years for scale\n\n*Pros:*\n- Grant, not loan\n- Gates brings innovation mindset\n- Flexibility in implementation\n- Proven model could attract additional funders\n\n*Cons:*\n- Must frame as agriculture/financial inclusion, not gov IT\n- Requires NGO/institute vehicle, not direct government implementation\n- Pilot-first approach delays full implementation\n- Gates is selective, no guarantee\n\n---\n\n**OPTION C: UNDP + Blended Approach (Coordination + Multiple Funders)**\n\n*Positioning:* Land registry as SDG enabler (SDG 1 poverty, SDG 2 agriculture, SDG 5 women's property rights, SDG 10 inequality). UNDP convenes, multiple funders contribute.\n\n*Path:*\n- Engage UNDP Zambia to champion this\n- UNDP provides initial technical assistance ($200K)\n- UNDP helps convene donor roundtable\n- Attract co-funding from: FCDO ($2M), UNCDF ($1M), Omidyar ($1.5M), government contribution ($500K), private sector ($300K via land valuation fees)\n- Total: $5.5M (scope reduced from $8M)\n- Timeline: 12-18 months to assemble funding\n\n*Pros:*\n- Diversified funding, less dependence on single donor\n- UNDP convening adds credibility\n- Aligns with SDGs (fashionable framing)\n- Mix of grant + government + revenue\n\n*Cons:*\n- Complex coordination across multiple funders\n- Smaller total budget, reduced scope\n- UNDP bureaucracy can be slow\n- Risk: one funder pulls out, whole thing unravels\n\n---\n\nYou present these three options to your Permanent Secretary:\n\nPS: 'Which do you recommend?'\n\nYou think about:\n- **Government's debt situation**: Already high debt-to-GDP ratio, Ministry of Finance resistant to new loans (challenges Option A)\n- **Timeline pressure**: PS wants progress before next election (18 months away) - favors Options B or C\n- **Implementation control**: Smart Zambia Institute has capacity to implement (favors Option B), government ministry does not\n- **Risk tolerance**: Is it better to pursue one big funder (A or B) or diversify (C)?\n- **Relationship status**: You have existing relationship with UNDP Zambia, none with World Bank or Gates",
+      "prompt": "Which option do you recommend and why? How do you explain the tradeoffs?",
+      "evaluationCriteria": [
+        "**Context-Aware**: Do they weigh government's actual debt situation, not theoretical options?",
+        "**Realistic Timeline**: Do they account for political timeline (18 months to election)?",
+        "**Relationship Reality**: Do they factor in existing relationships vs having to build new ones?",
+        "**Risk Assessment**: Do they think through what could go wrong with each option?",
+        "**Implementation Capacity**: Do they consider who can actually execute?",
+        "**Clear Communication**: Do they articulate tradeoffs in a way the PS can make informed decision?"
+      ],
+      "coachingNotes": "There's no objectively right answer - depends on context. But here's how to think through it: Option A (World Bank) is technically strongest but politically hardest (debt, timeline). Option B (Gates) is attractive but requires repositioning the project and no guarantee of funding. Option C (UNDP blended) is pragmatic but complex. Given: [1] Debt constraints, [2] 18-month political timeline, [3] Existing UNDP relationship, [4] Smart Zambia Institute capacity - Option C might be most realistic. But articulate the tradeoffs: 'Sir, I recommend Option C for these reasons... However, this requires... The risk is... If you prefer speed over diversification, we could pursue Option B as primary and Option C as backup.' Don't just pick one - help the PS understand what he's choosing."
+    },
+    {
+      "round": 4,
+      "type": "response_analysis",
+      "situation": "PS: 'I like the blended approach - less dependence on one donor. But I'm concerned about the reduced budget. Can we still achieve the core objectives with $5.5M instead of $8M?'\n\nYou: 'We'd have to phase it. Year 1: Pilot in 2 provinces ($1.2M). Year 2: Expand to 5 more provinces ($2.2M). Year 3: National rollout + integration with other systems ($2.1M). We'd cut some nice-to-have features but core functionality would be there.'\n\nPS: 'Okay. Start with UNDP. But I want a backup plan if the blended approach doesn't come together. Which single funder would you pursue as Plan B?'\n\nYou think: Gates Foundation fits better than World Bank given debt constraints and timeline. But you have no relationship with Gates.\n\nYou: 'Plan B would be Gates Foundation, but we'd need to reposition the project as agricultural finance enablement, and we'd need an introduction to the right program officer.'\n\nPS: 'Can you get that introduction?'\n\nYou: 'I'll work my network. David knows someone at Omidyar who might know Gates POs. Also, there's an African DPI Summit next month in Kigali - Gates usually sends people. I could attend, make connections.'\n\nPS: 'Good. Do both - pursue UNDP blended approach as primary, build Gates relationship as backup. Keep me posted monthly.'\n\n**Two weeks later:**\n\nYou meet with UNDP Zambia Country Director:\n\nYou: 'We're proposing a digital land registry that would support SDG 1, 2, 5, and 10. We think this could be a multi-donor initiative with UNDP playing convening role. Would UNDP be interested in championing this?'\n\nUNDP Director: 'Potentially. But I need to be honest - we're not a big funder ourselves. We could provide maybe $200K for technical assistance and project design. The real money would have to come from bilateral donors. Who are you thinking?'\n\nYou: 'We thought FCDO, maybe SIDA, UNCDF. Does land registry align with their Zambia portfolios?'\n\nUNDP Director: 'FCDO is focused on health and education in Zambia. Land isn't their priority here, though it is in other countries. SIDA exited Zambia two years ago. UNCDF might work - they do local governance and they've done land work in Uganda. But you're talking maybe $500K-$1M from them, not the $2-3M you'd need.'\n\nYou feel the blended approach is less promising than you hoped. The donors you assumed would be interested aren't active in Zambia, or don't prioritize land.\n\nUNDP Director: 'Let me suggest something. Instead of land registry as standalone project, what if you positioned it as part of a broader local governance and revenue system? Local councils need land data for property tax, urban planning, service delivery. If you frame it as local governance strengthening, you might attract different funders - UNCDF definitely, maybe EU, maybe even regional development banks.'\n\nYou: 'But that's a different project...'\n\nUNDP Director: 'Not really. Same core technology - digital land registry. But positioned for different outcome - local governance capacity instead of agricultural finance. This is what I meant about alignment. You have to find where your project fits THEIR priorities, not convince them to fund YOUR priorities.'",
+      "prompt": "The UNDP Director is telling you to reposition the project. Do you do it? How do you think about this?",
+      "evaluationCriteria": [
+        "**Flexibility vs Mission**: Do they grapple with whether repositioning is pragmatic adaptation or mission drift?",
+        "**Funder Alignment**: Do they recognize the core insight - fit their priorities, don't force yours?",
+        "**Outcome vs Method**: Do they distinguish between the outcome (land registry exists) and the framing (why it matters)?",
+        "**Multiple Framings**: Do they consider having different framings for different funders?",
+        "**Reality Check**: Do they accept that their initial assumptions about donor interest were wrong?",
+        "**Strategic Thinking**: Do they see this as learning about the ecosystem, not failure?"
+      ],
+      "coachingNotes": "This is the real-world challenge of funding: your project may be great, but if it doesn't fit funder priorities, it won't get funded. The UNDP Director is giving you gold: 'Same technology, different framing.' Land registry FOR agricultural finance (Gates framing). Land registry FOR local governance (UNCDF/EU framing). Land registry FOR gender equality (land rights for women - Ford Foundation framing). The core project is the same, but the story changes based on audience. This isn't dishonest - land registry legitimately supports ALL these outcomes. It's strategic positioning. The question: Are you wedded to one framing, or flexible enough to position for different funders? Most successful projects have multiple framings depending on who's in the room."
+    },
+    {
+      "round": 5,
+      "type": "outcome",
+      "situation": "**Six months later:**\n\nYou've pursued a mixed strategy:\n\n**UNDP Route:**\n- UNDP provided $150K for project design and stakeholder consultation\n- This produced detailed technical specs and pilot plan\n- UNDP convened donor roundtable: UNCDF interested ($800K), EU local governance program interested ($1.2M)\n- Total via UNDP route: $2.15M\n\n**Gates Foundation Route:**\n- You attended African DPI Summit, met Gates PO focused on financial inclusion\n- Positioned as: 'Land titles as collateral for agricultural credit'\n- Gates interested in $400K pilot to test model\n- If pilot succeeds, potential for $3M scale-up\n\n**Government Contribution:**\n- Smart Zambia Institute allocated $300K from operational budget\n- Ministry of Lands committed staff time and data\n\n**Unexpected Source:**\n- Omidyar Network, learning about your project through Gates PO, interested in governance/transparency angle\n- Offering $600K for open data platform component\n\n**Total Secured: $3.45M (Year 1)**\n**Potential Total: $7.15M (if Gates scales up after pilot)**\n\nYou brief the PS:\n\nYou: 'We have $3.45M committed for Year 1. Not the full $8M, but enough to start meaningfully. The Gates pilot is key - if that works, we unlock another $3M. We also learned that open data component attracts different funders, so we've built that in.'\n\nPS: 'How did this happen? Six months ago you had nothing.'\n\nYou: 'Few lessons: [1] We stopped thinking about \"our project\" and started thinking about how our project serves different funder priorities. Same land registry, different framings: agricultural finance for Gates, local governance for UNCDF/EU, transparency for Omidyar. [2] We built relationships before asking for money - the Gates connection came from showing up at the Summit, not sending a cold proposal. [3] We started smaller than planned - the UNDP $150K for design work created credibility that unlocked other funding. [4] We learned the ecosystem - understanding who funds what, why, through what modalities. This isn't sales, it's matchmaking.'\n\nPS: 'What would you do differently if you could go back?'\n\nYou reflect:\n\n**What Worked:**\n- Ecosystem mapping - understanding funder motivations, modalities, constraints\n- Multiple framings - same project, different stories for different audiences\n- Relationship building - attending Summit, using warm introductions\n- Starting small - UNDP technical assistance created foundation\n- Blended approach - diversified risk, less dependence on single funder\n\n**What You'd Change:**\n- Should have started ecosystem mapping earlier - wasted time on irrelevant funders\n- Should have attended more conferences in Year 0 - relationship building takes time\n- Should have involved funders in design earlier - co-development creates buy-in\n- Should have been less attached to original $8M vision - flexibility enabled progress\n\n**Key Insights About DPI Funding:**\n\n1. **It's relational, not transactional** - funding flows through relationships built over time\n2. **Alignment, not persuasion** - find funders whose priorities match your project, don't convince them to change priorities\n3. **Multiple framings** - same project can serve agricultural finance AND local governance AND transparency\n4. **Start small, prove, scale** - $400K pilot unlocks $3M scale-up\n5. **Blended is realistic** - most DPI projects combine donor grants + government contribution + eventually revenue\n6. **Co-development** - invite funders to shape solutions, don't present finished plans\n7. **Ecosystem knowledge** - understanding who funds what, why, how is foundational\n8. **Patience** - 6 months from zero to $3.45M is actually fast; some funding takes years",
+      "prompt": "Synthesize your learnings about how funding works in the DPI ecosystem. What would you tell someone starting where you were 6 months ago?",
+      "evaluationCriteria": [
+        "**Ecosystem Understanding**: Do they demonstrate deep understanding of funder landscape?",
+        "**Relational Insight**: Do they emphasize relationship-building over proposal-writing?",
+        "**Strategic Positioning**: Do they explain how to match projects to funder priorities?",
+        "**Realistic Expectations**: Do they set appropriate timeline expectations (months/years, not weeks)?",
+        "**Practical Advice**: Do they offer concrete next steps someone could actually take?",
+        "**Humility**: Do they acknowledge what they didn't know at the start?",
+        "**Transferable Principles**: Do they extract lessons applicable beyond this specific case?"
+      ],
+      "coachingNotes": "This case teaches the full cycle of DPI funding: ecosystem mapping → relationship building → strategic positioning → co-development → blended funding. The key insight: it's NOT sales. Sales assumes you have a product and need to convince buyers. DPI funding is matchmaking - understanding what funders want to achieve, finding where your capabilities align with their goals, co-developing solutions. The Gates Foundation doesn't wake up wanting to fund Zambia's land registry. They wake up wanting to improve agricultural productivity and financial inclusion. Your job: show them land registry is a pathway to THEIR goals. This requires: [1] Deep understanding of funder motivations, [2] Flexibility in framing your work, [3] Relationships that create trust, [4] Patience to build over months/years. The people who succeed in this space are translators - they translate government needs into funder language, and funder priorities into government solutions."
+    }
+  ],
+  "keyTakeaways": [
+    "DPI funding is relational (built on trust over time) not transactional (one-off proposals)",
+    "Each funder type has specific motivations: development banks want macro impact, foundations want thematic outcomes, bilaterals want foreign policy wins",
+    "Successful funding requires aligning your project with funder priorities, not convincing them to fund your priorities",
+    "Same project can be framed differently for different funders (agricultural finance vs local governance vs transparency)",
+    "Co-development (inviting funders to shape solutions) creates buy-in and increases success rates",
+    "Starting small (pilots, technical assistance) builds credibility that unlocks larger funding",
+    "Blended funding (multiple sources) is more realistic and resilient than single large donor",
+    "Relationship building happens at conferences, through introductions, via small collaborations before big asks"
+  ],
+  "frameworks": [
+    {
+      "name": "Funder Ecosystem Map",
+      "description": "Map potential funders by: type (loan/grant), motivation (what they want to achieve), modality (how they work), constraints (what limits them), timeline (how fast they move).",
+      "application": "Before pursuing funding, create comprehensive map of ecosystem. Don't just list names - understand each funder's drivers and constraints."
+    },
+    {
+      "name": "Alignment Matrix",
+      "description": "For each potential funder, assess: Does our project align with their priorities? Do we meet their criteria? Do we have relationships? What's the effort-to-probability ratio?",
+      "application": "Helps prioritize which funders to pursue. High alignment + existing relationship = pursue actively. Low alignment = probably not worth effort."
+    },
+    {
+      "name": "Multiple Framings",
+      "description": "Develop 3-4 different framings of your project that emphasize different outcomes/beneficiaries. Same core project, different stories.",
+      "application": "Land registry can be framed as: agricultural productivity tool, local governance capacity, gender equality (women's land rights), transparency/anti-corruption, financial inclusion. Choose framing based on audience."
+    },
+    {
+      "name": "Relationship Ladder",
+      "description": "Build relationships progressively: [1] Awareness (they know you exist), [2] Familiarity (you've had conversations), [3] Trust (you've collaborated on something small), [4] Partnership (they fund your work). Don't skip steps.",
+      "application": "Don't ask for $5M in first conversation. Build relationship over time through conferences, introductions, small collaborations."
+    },
+    {
+      "name": "Pilot-Prove-Scale",
+      "description": "Start with small pilot to prove model, then use results to unlock larger funding. Funders like reducing risk through phased approach.",
+      "application": "$400K pilot → demonstrate results → unlock $3M scale-up. Much easier than securing $3.4M upfront with no proof."
+    }
+  ],
+  "relatedCases": [
+    "funding-ecosystem-mapping"
+  ],
+  "ecosystemPlayers": {
+    "development_banks": {
+      "players": [
+        "World Bank (IBRD/IDA)",
+        "African Development Bank",
+        "Asian Development Bank",
+        "Inter-American Development Bank"
+      ],
+      "motivation": "Country-level development impact, building government capacity, macro-economic stability, infrastructure development",
+      "modality": "Loans (concessional or market-rate), some grants for technical assistance",
+      "typical_size": "$20M-$500M for major projects, $5M-$20M for smaller initiatives",
+      "timeline": "12-24 months from concept to approval",
+      "decision_drivers": "Economic impact assessment, government commitment and capacity, technical soundness, fiduciary standards"
+    },
+    "philanthropic_foundations": {
+      "players": [
+        "Gates Foundation",
+        "Omidyar Network",
+        "Ford Foundation",
+        "Hewlett Foundation",
+        "MacArthur Foundation"
+      ],
+      "motivation": "Specific thematic impact (health, education, financial inclusion, governance), innovation, creating models that can scale, influencing systems",
+      "modality": "Grants to NGOs/institutes/universities, rarely direct to governments",
+      "typical_size": "$500K-$10M per grant, sometimes larger for flagship initiatives",
+      "timeline": "6-12 months for competitive grants, faster for invited proposals",
+      "decision_drivers": "Alignment with program officer priorities, innovation, measurable impact, organizational capacity, potential for scale/replication"
+    },
+    "bilateral_agencies": {
+      "players": [
+        "USAID (US)",
+        "FCDO (UK)",
+        "GIZ (Germany)",
+        "AFD (France)",
+        "SIDA (Sweden)",
+        "DFAT (Australia)",
+        "JICA (Japan)"
+      ],
+      "motivation": "Foreign policy objectives, country relationship building, visibility for home government, sector priorities defined by home country",
+      "modality": "Grants through implementing partners (NGOs, contractors), technical assistance, co-funding with governments",
+      "typical_size": "$1M-$50M depending on country priority and program",
+      "timeline": "6-18 months depending on mechanism (fast if fits existing program, slow if new)",
+      "decision_drivers": "Alignment with country strategy, political relationship, partner track record, measurable results"
+    },
+    "un_agencies": {
+      "players": [
+        "UNDP",
+        "UNICEF",
+        "ITU",
+        "UNCDF",
+        "UNESCAP",
+        "UNCTAD"
+      ],
+      "motivation": "Country capacity building, SDG achievement, technical standards, global agenda setting, coordination among actors",
+      "modality": "Technical assistance, small-to-medium grants, co-funding, convening",
+      "typical_size": "$100K-$3M typically, sometimes larger for flagship programs",
+      "timeline": "3-6 months for small projects, 6-12 for larger",
+      "decision_drivers": "Government request, SDG alignment, regional/global priorities, agency mandate"
+    },
+    "emerging_dpi_funders": {
+      "players": [
+        "Digital Public Goods Alliance (DPGA)",
+        "GovStack",
+        "Co-Develop",
+        "Digital Impact Alliance (DIAL)"
+      ],
+      "motivation": "Prove DPI models, create global public goods, enable replication, South-South learning, open standards",
+      "modality": "Grants + technical support, emphasis on open source and reusability",
+      "typical_size": "$200K-$2M typically",
+      "timeline": "3-9 months",
+      "decision_drivers": "Innovation, replicability, commitment to open source/standards, potential to create global public good"
+    }
+  }
+}
