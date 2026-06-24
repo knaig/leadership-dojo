@@ -1,0 +1,149 @@
+{
+  "id": "system1-vendor-charm",
+  "course": "system-1-2-thinking",
+  "difficulty": "foundation",
+  "title": "The Charismatic Vendor: When Confidence Beats Competence",
+  "country": "India",
+  "caseType": "procurement_decision",
+  "learningObjectives": [
+    "Recognize cognitive ease from polished presentations",
+    "Identify affect heuristic (liking) influencing judgment",
+    "Practice separating person from proposal evaluation",
+    "Develop techniques to activate System 2 in charming situations"
+  ],
+  "context": {
+    "yourRole": "You're a DPI advisor to a state government procurement committee evaluating digital identity system proposals. Three vendors have submitted bids. Today is the final presentation day before the committee makes its decision.",
+    "politicalLandscape": "State has pressure from Chief Minister to select a vendor by end of month. Central government is watching as this will be a reference implementation for other states.",
+    "committeeComposition": [
+      "IT Department Secretary (chairperson, risk-averse)",
+      "Finance Department rep (budget-focused)",
+      "Technical expert from IIT (quality-focused)",
+      "You (DPI advisor, no voting power)"
+    ],
+    "stakes": "₹15 crore contract, 5-year timeline, affects 70 million citizens"
+  },
+  "stakeholderMap": {
+    "IT Secretary": {
+      "power": "decision-maker",
+      "interests": "Safe choice, avoid blame, meet CM's deadline",
+      "biases": "Prefers established vendors, risk-averse"
+    },
+    "Finance Rep": {
+      "power": "veto on budget",
+      "interests": "Lowest defensible cost, clear deliverables",
+      "biases": "Anchoring on lowest bid"
+    },
+    "IIT Professor": {
+      "power": "technical credibility",
+      "interests": "Technical excellence, open standards",
+      "biases": "May favor academic approach over practical delivery"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "title": "The Presentations",
+      "situation": "All three vendors have presented. Here's what you observed:\n\n**Vendor A (TechCorp India, ₹14.5 cr):**\nSlick presentation, professional team in suits, confident CEO. They showed working demos from 3 other states. Emphasized 'proven track record' and 'zero risk.' Proposal is standard their approach - centralized architecture, proprietary APIs, 18-month timeline. CEO was charismatic, made eye contact with everyone, remembered names. Answered every question confidently and quickly. The IT Secretary was nodding throughout.\n\n**Vendor B (OpenStack Solutions, ₹12 cr):**\nTechnical team in casual clothes, dense slides with architecture diagrams. They presented an innovative federated approach using open-source DPGs from India stack. Strong technical depth but poor presentation skills - lots of jargon, monotone delivery. When asked about timelines, they hedged: 'Depends on state's infrastructure readiness, probably 12-15 months but need to assess.' The IIT professor asked several deep technical questions; they answered well but uncertainly.\n\n**Vendor C (Global Solutions Inc, ₹16 cr):**\nInternational firm, impressive client list (including UK, Singapore), beautiful presentation deck. They emphasized 'world-class standards' and 'enterprise security.' Their approach is Microsoft Azure-based with AI/ML features. Timeline is 24 months. They brought senior leadership from Singapore office. Very polished but when asked technical questions, they said they'd need to 'consult with the delivery team.'\n\nAfter presentations, during break, the IT Secretary says to you: 'I'm leaning toward TechCorp. They really know what they're doing, and the CEO seems very capable. What do you think?'\n\nYou notice:\n- TechCorp's CEO was extremely likable and confident\n- Committee members seem more energized after TechCorp's presentation\n- OpenStack's technical depth was impressive but presentation was painful\n- Global Solutions is the most expensive and vague on execution\n- IT Secretary's comment came very quickly after presentation\n- Nobody has actually reviewed the written proposals in detail yet",
+      "prompt": "What's happening here from a System 1/System 2 perspective? Write your analysis of how the committee is processing these vendors.",
+      "evaluationCriteria": [
+        "**Cognitive Ease Recognition**: Do they identify that TechCorp created ease (confidence, polish, likability) while OpenStack created strain (technical, hedged, jargon)?",
+        "**Affect Heuristic**: Do they see that liking the CEO is influencing judgment of the proposal's quality?",
+        "**Substitution**: Do they recognize the committee is answering 'Who do we like?' instead of 'Who has the best technical approach?'",
+        "**Quick Decision Red Flag**: Do they note that IT Secretary's snap judgment came from System 1, not deliberate analysis?",
+        "**Missing Analysis**: Do they observe that nobody has engaged System 2 to evaluate actual proposals, costs, architectures?"
+      ],
+      "coachingNotes": "This is a textbook case of System 1 being swayed by presentation over substance. TechCorp deliberately created cognitive ease - polished presentation, confident delivery, quick answers. This makes System 1 feel safe. OpenStack created cognitive strain - technical complexity, hedged answers, poor delivery. System 1 interprets strain as risky, even though the technical approach may be superior. The quick consensus around TechCorp is groupthink - System 1 in all committee members aligning on the 'easy' choice. Your role is to slow this down and activate System 2."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "title": "Your Intervention",
+      "situation": "You decide to intervene before the committee rushes to decision. You say:\n\n'Before we proceed, could we spend 30 minutes doing a structured comparison? I've created this matrix comparing the three vendors on key criteria.'\n\nYou pull up a comparison table:\n\n| Criteria | TechCorp | OpenStack | Global Solutions |\n|----------|----------|-----------|------------------|\n| Cost | ₹14.5cr | ₹12cr | ₹16cr |\n| Open Standards | Proprietary | Full DPG | Vendor lock-in |\n| Timeline | 18mo (stated) | 12-15mo (hedged) | 24mo |\n| Reference clients | 3 Indian states | 1 pilot city | International |\n| Technical approach | Centralized | Federated | Cloud-based |\n| Team clarity | CEO-led | Technical leads | Unclear delivery team |\n| Risk mitigation | 'Proven' (claimed) | Innovation risk | Execution distance |\n\nThe IT Secretary looks slightly annoyed: 'This seems like overthinking. TechCorp has done this before. That's what matters.'\n\nThe Finance rep, however, is now interested: 'Wait, OpenStack is ₹2.5 crore cheaper? How did we not focus on that?'\n\nThe IIT Professor says: 'I want to understand OpenStack's federated approach better. It's technically more sophisticated. But can they execute?'\n\nYou realize:\n- Your matrix has activated some System 2 thinking\n- But the IT Secretary is still anchored on TechCorp\n- Finance was anchored on TechCorp's price as 'acceptable' but now sees alternative\n- The core question is execution risk vs technical quality\n- Time is a factor - committee wants to decide today",
+      "prompt": "What do you do next? How do you continue activating System 2 without losing the committee's patience?",
+      "evaluationCriteria": [
+        "**Checklist Approach**: Do they suggest specific questions each vendor must answer (forcing System 2 engagement)?",
+        "**Base Rate Analysis**: Do they propose looking at success rates of similar projects (outside view)?",
+        "**De-biasing Technique**: Do they suggest specific ways to separate 'Do we like them?' from 'Will they deliver?'",
+        "**Stakeholder Management**: Do they navigate the IT Secretary's resistance without direct confrontation?",
+        "**Time Realism**: Do they balance thoroughness with committee's need to decide?"
+      ],
+      "coachingNotes": "You've made progress - the matrix forced System 2 engagement. But you're facing a classic tension: System 2 analysis takes time and energy, while System 1 gave a quick, comfortable answer. The IT Secretary's 'overthinking' comment is System 1 resisting the cognitive strain of proper analysis. You need to acknowledge the time pressure while still creating space for key questions. Don't try to override the committee's preference - instead, structure the decision so System 2 can operate on the key risks."
+    },
+    {
+      "round": 3,
+      "type": "builder_trap",
+      "title": "The Compromise Trap",
+      "situation": "Sensing the committee's impatience, you suggest: 'What if we do a short technical deep-dive with each vendor? Just 2 hours each, focused on specific risk areas?'\n\nThe IT Secretary agrees, but adds: 'Fine, but let's be realistic. TechCorp is the safe choice. They've done this before. OpenStack is too risky - they're a small team, unproven approach. Global Solutions is too expensive and distant. Unless the deep-dive reveals major issues with TechCorp, I think we should go with them.'\n\nThe Finance rep nods: 'We need to move forward. Deep-dive is good but let's not delay beyond next week.'\n\nThe IIT Professor looks frustrated but says nothing.\n\nLater, the IIT Professor approaches you privately:\n\n'I think OpenStack's technical approach is significantly better. Federated architecture, open standards, true interoperability. TechCorp is selling us the same centralized system that causes lock-in problems. But I can't convince the Secretary - he's already decided, and frankly, TechCorp's CEO made a better impression than OpenStack's engineers. This is how we end up with inferior technology - because someone gave a good presentation.\n\nBut I also understand the Secretary's risk concern. OpenStack hasn't done this scale before. If they fail, it's a political disaster. TechCorp has references. Even if it's not the best approach, it's defensible.\n\nWhat do you think we should actually do here?'\n\nYou're now facing:\n- Technical merit (OpenStack) vs Execution safety (TechCorp)\n- An IT Secretary who has already mentally decided (System 1)\n- A Professor who is right about technical quality but may underestimate delivery risk\n- A Finance rep who just wants this resolved\n- The knowledge that the 'safe choice' may lead to vendor lock-in and technical debt\n- Political pressure to decide quickly",
+      "prompt": "How do you think through this situation? What's your actual recommendation?",
+      "evaluationCriteria": [
+        "**Risk Framework**: Do they separate technical risk from political risk from execution risk?",
+        "**Hybrid Solutions**: Do they consider ways to get OpenStack's technical benefits with TechCorp's execution safety (e.g., phased approach, hybrid model)?",
+        "**Bias Acknowledgment**: Do they recognize that 'safe choice' bias might be preventing optimal outcome?",
+        "**Stakeholder Incentives**: Do they understand why IT Secretary's risk aversion makes sense from their career perspective?",
+        "**Long-term Thinking**: Do they weigh short-term delivery safety vs long-term tech debt?",
+        "**Honest Tradeoffs**: Do they avoid false certainty about which vendor is 'right'?"
+      ],
+      "coachingNotes": "This is the hardest part - there's no clearly 'right' answer. System 2 analysis reveals legitimate concerns on both sides. TechCorp IS safer from execution perspective - they have track record. But they'll create vendor lock-in. OpenStack IS better technically - open standards, federated approach. But they haven't done this scale. The question isn't 'Which is objectively best?' but 'Given the stakeholders' different risk tolerances and incentives, what decision process would be legitimate?' The IT Secretary's bias toward TechCorp is partly System 1 (charm, ease) and partly rational risk aversion. Your job isn't to override their judgment but to ensure they're making an informed choice, not just going with who gave the best presentation."
+    },
+    {
+      "round": 4,
+      "type": "decision_point",
+      "title": "The Technical Deep-Dive Results",
+      "situation": "The committee conducts 2-hour technical sessions with each vendor. Here's what emerged:\n\n**TechCorp Deep-Dive:**\n- Their 'working demos' from other states turn out to be pilots, not production systems\n- When asked about API documentation, they say it's 'proprietary but we'll provide interfaces'\n- Timeline of 18 months assumes state infrastructure is 'ready' - but state hasn't completed the prerequisite network upgrade\n- When pressed on costs, they reveal the ₹14.5cr is 'initial deployment' - ongoing licensing is additional ₹2cr/year\n- They couldn't explain their disaster recovery approach in detail\n\n**OpenStack Deep-Dive:**\n- They brought detailed technical architecture that the IIT Professor validated as solid\n- They acknowledge they haven't done full-state scale but have documented scaling plan\n- They propose a phased rollout: start with 2 districts, prove the model, then expand\n- Timeline uncertainty is because they want to assess state's infrastructure first (honest, not evasive)\n- All costs are transparent and included in ₹12cr quote\n- They have engaged India Stack teams for technical support\n\n**Global Solutions Deep-Dive:**\n- Became clear their delivery team would be junior consultants, not the senior leaders who presented\n- 24-month timeline is partly due to their unfamiliarity with Indian regulatory context\n- Expensive but feature-rich - but state doesn't need most features\n\nNow the committee reconvenes. The IIT Professor says: 'The technical deep-dive showed TechCorp's gaps. Their proprietary approach will cost more long-term, and they oversold their track record.'\n\nThe IT Secretary: 'But OpenStack still hasn't proven they can deliver at scale. What if they fail?'\n\nFinance: 'TechCorp's ongoing costs change the equation. OpenStack is significantly cheaper total cost of ownership.'\n\nAll three look at you.\n\nThe IT Secretary adds: 'Look, I want to make the right decision. But I need to defend this to the Chief Minister. If OpenStack fails, I'm responsible. How do I manage that risk?'",
+      "prompt": "How do you help the committee make this decision? What framework or approach do you suggest?",
+      "evaluationCriteria": [
+        "**Pre-Mortem Method**: Do they suggest imagining failure scenarios for each vendor to assess risks?",
+        "**Risk Mitigation Design**: Do they propose structure to reduce OpenStack risk (phased rollout, technical oversight, penalty clauses)?",
+        "**Defensibility Framework**: Do they help IT Secretary understand what makes a decision defensible (not just safe)?",
+        "**Outside View**: Do they bring in reference data on similar technology choices and outcomes?",
+        "**Honest Tradeoffs**: Do they make explicit the different risks being traded (technical debt vs execution risk)?",
+        "**Decision Quality vs Outcome**: Do they help the committee separate 'good decision process' from 'guaranteed good outcome'?"
+      ],
+      "coachingNotes": "The deep-dive has shifted the facts, but the IT Secretary's core concern remains: career risk. He's not wrong to worry - if OpenStack fails, he'll be blamed for choosing the 'risky' vendor. If TechCorp fails, he chose the 'safe, proven' option so blame is shared. This is rational self-interest, not just bias. Your role is to help structure the decision so that choosing based on System 2 analysis (OpenStack's technical merits, cost advantage) is also defensible politically. This might mean: phased rollout to reduce risk, technical oversight committee, clear success metrics, pilot before full commitment. The goal is to make the technically better choice also politically safe."
+    },
+    {
+      "round": 5,
+      "type": "implementation",
+      "title": "Your Recommendation",
+      "situation": "You propose the following:\n\n'I recommend we select OpenStack with a structured risk mitigation approach:\n\n1. **Phased Implementation**: Start with 2 districts (10% of population). Clear success criteria. Only proceed to full rollout if Phase 1 succeeds.\n\n2. **Technical Oversight**: IIT Professor chairs a technical review committee that meets monthly. Independent validation of progress.\n\n3. **Fixed Milestones**: Payment tied to achieving specific milestones. 30% of fees held until full deployment.\n\n4. **Contingency Plan**: If Phase 1 fails to meet criteria after 6 months, we re-bid. Total sunk cost would be ₹2.4cr - much less than committing to wrong vendor for 5 years.\n\n5. **Documentation of Decision**: We document that (a) TechCorp's ongoing costs made them more expensive, (b) Technical analysis showed OpenStack's approach superior, (c) Phased approach manages execution risk. This makes the decision defensible.'\n\nThe IT Secretary thinks for a moment: 'The phased approach is smart. If it fails, we caught it early. If it succeeds, we get better technology and save money. I can defend this.'\n\nThe Finance rep: 'Yes, and the lower cost even with contingency risk is better than TechCorp's total cost.'\n\nThe IIT Professor: 'This gives us a path to better technology without betting everything on unproven execution.'\n\nThe committee votes to proceed with OpenStack under your phased structure.\n\nSix months later, you hear that Phase 1 in the 2 districts is going well. Technical architecture is performing better than TechCorp's systems in neighboring states. The committee is proceeding to full rollout.\n\nThe IT Secretary later tells you: 'I'm glad we didn't just go with my gut reaction to choose TechCorp. That structured comparison and risk mitigation approach made me comfortable challenging my initial preference.'",
+      "prompt": "Reflect: What did you learn about System 1 vs System 2 decision-making from this case?",
+      "evaluationCriteria": [
+        "**Initial Bias Recognition**: Do they identify that System 1 (charm, confidence, cognitive ease) nearly led to suboptimal choice?",
+        "**Intervention Effectiveness**: Do they recognize that structured comparison and risk mitigation activated System 2?",
+        "**Stakeholder Psychology**: Do they understand how addressing career risk was key to overcoming bias?",
+        "**Process vs Outcome**: Do they note that good process (System 2) doesn't guarantee good outcome but improves odds?",
+        "**Practical Techniques**: Do they internalize specific approaches (comparison matrix, phased rollout, documented decision) they could use in their work?"
+      ],
+      "coachingNotes": "This case shows System 2's power and limitations. TechCorp's presentation activated System 1 in everyone - cognitive ease, confidence, likability. The committee was ready to choose them based on 'gut feel.' Your intervention slowed the process, created cognitive strain through structured comparison, and revealed facts that contradicted the System 1 story. But System 2 alone wasn't enough - you also had to address the IT Secretary's career risk concerns (System 1's fear response). The phased approach did both: it was rationally better (System 2) AND made the Secretary feel safer (System 1). Most real decisions require satisfying both systems."
+    }
+  ],
+  "keyTakeaways": [
+    "Cognitive ease (polished presentations, confident delivery) makes System 1 feel safe, but ease doesn't equal quality",
+    "Affect heuristic: Liking someone (vendor CEO) influences judgment of their proposal",
+    "Structured comparisons force System 2 engagement and reveal facts System 1 ignored",
+    "Career risk and political defensibility are real constraints, not just biases",
+    "Risk mitigation strategies (phased rollout) can make technically better choices also politically safe",
+    "Good decision process doesn't guarantee good outcomes, but it improves probabilities"
+  ],
+  "frameworks": [
+    {
+      "name": "Comparison Matrix",
+      "description": "Force System 2 by creating structured evaluation criteria before choosing",
+      "application": "In any procurement or vendor selection, create criteria matrix before presentations"
+    },
+    {
+      "name": "Pre-Mortem",
+      "description": "Imagine each option failing, write the story of what went wrong",
+      "application": "Before committing to a decision, imagine it's failed and work backward"
+    },
+    {
+      "name": "Phased Commitment",
+      "description": "Reduce risk by making partial commitment with clear decision points",
+      "application": "When facing execution risk, propose pilot/phase 1 with go/no-go criteria"
+    }
+  ],
+  "relatedCases": [
+    "system1-urgency-trap"
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "id": "system-1-2-thinking",
+  "slug": "system-1-2-thinking",
+  "courseNumber": 1,
+  "title": "System 1 vs System 2 Thinking",
+  "subtitle": "Understanding Fast and Slow Thought",
+  "tier": 1,
+  "category": "Cognitive Foundations",
+  "duration": "4 hours",
+  "difficulty": "Foundation",
+  "description": "Master the dual-process theory of cognition. Learn when to trust intuition and when to engage analytical thinking.",
+  "learningObjectives": [
+    "Recognize System 1 (fast, intuitive) vs System 2 (slow, analytical) processes in real-time",
+    "Identify situations where each system is appropriate and when it fails",
+    "Develop strategies to activate System 2 when needed"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Understanding the Two Systems",
+      "duration": "30 min",
+      "type": "theory",
+      "content": {
+        "overview": "Your brain operates using two distinct systems: System 1 (fast, intuitive, automatic) and System 2 (slow, deliberate, effortful). Understanding when each system is active helps you make better decisions in government work.",
+        "keyPoints": [
+          {
+            "title": "System 1: Fast Thinking",
+            "characteristics": [
+              "Automatic and unconscious",
+              "Effortless and quick",
+              "Pattern recognition",
+              "Emotional and intuitive",
+              "Always on"
+            ],
+            "examples": [
+              "Recognizing a colleague's mood",
+              "Driving to work on familiar route",
+              "Reading emails quickly",
+              "Sensing political tension in a room"
+            ],
+            "inGovernmentContext": "Most daily government work runs on System 1 - routine approvals, standard responses, familiar processes"
+          },
+          {
+            "title": "System 2: Slow Thinking",
+            "characteristics": [
+              "Controlled and conscious",
+              "Effortful and slow",
+              "Logical reasoning",
+              "Analytical and deliberate",
+              "Requires activation"
+            ],
+            "examples": [
+              "Analyzing complex policy trade-offs",
+              "Reviewing a technical architecture document",
+              "Calculating budget scenarios",
+              "Evaluating vendor proposals"
+            ],
+            "inGovernmentContext": "System 2 is essential for non-routine decisions with significant consequences"
+          }
+        ],
+        "keyInsight": "System 1 runs automatically and constantly, while System 2 requires effort and must be deliberately activated. The challenge in government is knowing when to shift from System 1 to System 2."
+      },
+      "exercises": [
+        {
+          "type": "reflection",
+          "prompt": "Track your last working day: Which decisions were System 1 (automatic)? Which required System 2 (deliberate thought)? What triggers caused you to switch?"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "When System 1 Fails in Government Decisions",
+      "duration": "35 min",
+      "type": "theory",
+      "content": {
+        "overview": "System 1 makes predictable errors, especially consequential in high-stakes government contexts. Recognizing these failure patterns helps you activate System 2 when needed.",
+        "keyPoints": [
+          {
+            "title": "Common System 1 Failures in Government",
+            "patterns": [
+              {
+                "pattern": "Question Substitution",
+                "description": "System 1 substitutes hard question with easier one",
+                "example": "Hard: 'Will this DPI project deliver value?' \u2192 Easy substitution: 'Do I trust the implementing partner?'",
+                "consequence": "Funding decisions based on relationships rather than project merit"
+              },
+              {
+                "pattern": "Availability Bias",
+                "description": "Judging probability by how easily examples come to mind",
+                "example": "One high-profile digital ID fraud makes you overestimate fraud risk while underestimating more common implementation failures",
+                "consequence": "Misallocating resources to dramatic risks while ignoring mundane but more likely problems"
+              },
+              {
+                "pattern": "Anchoring",
+                "description": "First number influences all subsequent estimates",
+                "example": "Vendor proposes $10M budget, you negotiate to $8M feeling good, but market rate was $4M",
+                "consequence": "Overpaying for services because initial anchor was too high"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "System 1 failures aren't bugs - they're features optimized for survival, not for modern institutional decisions. In government, these shortcuts can waste millions."
+      },
+      "exercises": [
+        {
+          "type": "case-analysis",
+          "prompt": "Review a recent quick decision. What System 1 shortcut did you use? If you had engaged System 2, what might you have discovered?"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Activating System 2: When Slow Thinking Matters",
+      "duration": "30 min",
+      "type": "theory",
+      "content": {
+        "overview": "System 2 is effortful and slow - you can't use it for everything. Learn when it's worth the cost and how to activate it deliberately.",
+        "keyPoints": [
+          {
+            "title": "When to Activate System 2",
+            "triggers": [
+              "High stakes: Decision has significant financial, political, or social consequences",
+              "Irreversibility: Hard to undo once decided",
+              "Complexity: Multiple interacting factors",
+              "Unfamiliarity: Outside your expertise or experience",
+              "Disagreement: Smart people disagree on the answer",
+              "Time pressure: Ironically, when you feel rushed is often when you most need to slow down"
+            ],
+            "examples": [
+              {
+                "scenario": "Approving $50M digital identity program",
+                "systemToUse": "System 2",
+                "why": "High stakes, complex, irreversible - worth the effortful analysis"
+              },
+              {
+                "scenario": "Choosing meeting time",
+                "systemToUse": "System 1",
+                "why": "Low stakes, reversible, not worth analytical effort"
+              }
+            ]
+          },
+          {
+            "title": "Techniques to Activate System 2",
+            "techniques": [
+              {
+                "technique": "Slow down deliberately",
+                "how": "Before important decisions, explicitly pause and say 'Let me think about this carefully'"
+              },
+              {
+                "technique": "Ask probing questions",
+                "how": "What am I assuming? What could go wrong? What's the alternative explanation?"
+              },
+              {
+                "technique": "Seek disconfirming evidence",
+                "how": "Don't just look for evidence you're right - actively seek evidence you're wrong"
+              },
+              {
+                "technique": "Consult others",
+                "how": "Get perspectives from people with different views or expertise"
+              },
+              {
+                "technique": "Sleep on it",
+                "how": "For major decisions, give System 2 time to process overnight"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "System 2 is expensive (mental effort) - use it strategically for decisions that matter. Develop triggers that automatically make you shift from System 1 to System 2."
+      },
+      "exercises": [
+        {
+          "type": "practice",
+          "prompt": "Identify 3 recurring decisions in your work. Which should be System 1? Which deserve System 2? Create personal rules for when to activate System 2."
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "System 1 Errors in Meetings and Discussions",
+      "duration": "35 min",
+      "type": "application",
+      "content": {
+        "overview": "Government meetings are ripe for System 1 errors - groupthink, social dynamics, time pressure. Learn to recognize and counter these patterns.",
+        "keyPoints": [
+          {
+            "title": "Meeting-Specific System 1 Failures",
+            "patterns": [
+              {
+                "pattern": "Groupthink",
+                "description": "System 1 craves social harmony, suppresses disagreement",
+                "example": "Everyone in the room nods along with Minister's preferred approach, even though several people privately have doubts",
+                "counter": "Designate a devil's advocate role, explicitly invite dissenting views, anonymous voting before discussion"
+              },
+              {
+                "pattern": "HiPPO (Highest Paid Person's Opinion)",
+                "description": "System 1 defers to authority automatically",
+                "example": "Secretary General expresses view early in meeting, everyone else falls in line regardless of evidence",
+                "counter": "Have junior staff present first, senior leadership speaks last, separate idea generation from evaluation"
+              },
+              {
+                "pattern": "Recency Bias",
+                "description": "System 1 overweights what was said most recently",
+                "example": "Last person to speak before decision disproportionately influences outcome",
+                "counter": "Summarize all perspectives before deciding, use structured decision frameworks, written position papers"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Meetings amplify System 1 errors through social dynamics. Good meeting facilitation is about creating System 2 space in a System 1 environment."
+      },
+      "exercises": [
+        {
+          "type": "observation",
+          "prompt": "In your next important meeting, watch for System 1 patterns: Who speaks first? Who gets deferred to? Who doesn't speak? How is the decision actually made?"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Designing Systems for Better Thinking",
+      "duration": "40 min",
+      "type": "application",
+      "content": {
+        "overview": "You can't rely on individuals to always activate System 2. Instead, design organizational systems and processes that force slower, better thinking where it matters.",
+        "keyPoints": [
+          {
+            "title": "Process Design for System 2",
+            "approaches": [
+              {
+                "approach": "Decision Checkpoints",
+                "description": "Build pauses into processes for high-stakes decisions",
+                "example": "Before approving any project >$5M, mandatory 48-hour review period with written analysis",
+                "benefit": "Forces System 2 activation even when people feel time pressure"
+              },
+              {
+                "approach": "Pre-Mortems",
+                "description": "Before launching initiative, imagine it failed and work backward to causes",
+                "example": "Before rolling out digital service, team brainstorms: 'It's 6 months from now and this failed spectacularly. Why?'",
+                "benefit": "Activates System 2 thinking about risks that System 1 wants to ignore"
+              },
+              {
+                "approach": "Devil's Advocate Protocol",
+                "description": "Formally assign someone to argue against the proposal",
+                "example": "For every major decision, one team member must write a memo arguing why it's a bad idea",
+                "benefit": "Institutionalizes dissent so it's not dependent on individual courage"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Don't rely on willpower to activate System 2 - build it into your processes. Good institutional design compensates for predictable human cognitive limitations."
+      },
+      "exercises": [
+        {
+          "type": "design",
+          "prompt": "Choose one recurring high-stakes decision in your organization. Design a process that would force System 2 thinking. What checkpoints? What questions? What roles?"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "System 1 and Stakeholder Management",
+      "duration": "35 min",
+      "type": "application",
+      "content": {
+        "overview": "Your stakeholders also operate on System 1 most of the time. Understanding their automatic reactions helps you communicate more effectively.",
+        "keyPoints": [
+          {
+            "title": "Working with Others' System 1",
+            "strategies": [
+              {
+                "strategy": "Framing Effects",
+                "principle": "System 1 reacts differently to same information framed differently",
+                "example": "'95% of implementations succeed' vs '5% of implementations fail' - same fact, different System 1 response",
+                "application": "When proposing risky DPI project, frame in terms of opportunity cost of not acting, not just risks of acting"
+              },
+              {
+                "strategy": "Priming",
+                "principle": "Recent experiences influence System 1 responses",
+                "example": "If Ministry just had a security breach, their System 1 will be hypervigilant about any new digital system",
+                "application": "Time your proposals carefully - don't pitch digital identity right after data breach. Or explicitly address the concern upfront."
+              },
+              {
+                "strategy": "Affect Heuristic",
+                "principle": "System 1 judges by emotional reaction, not logical analysis",
+                "example": "People's assessment of nuclear power risk correlates with how they feel about it, not actual statistics",
+                "application": "Don't just present data - tell stories that create positive emotional associations with your proposal"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "You can't force stakeholders into System 2 thinking. Instead, work with their System 1 - frame proposals to trigger helpful automatic responses rather than harmful ones."
+      },
+      "exercises": [
+        {
+          "type": "reframing",
+          "prompt": "Take a proposal you need to make. Write two versions: one that triggers helpful System 1 responses, one that triggers harmful ones. What's different?"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "When to Trust Your Gut (System 1 Expertise)",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "System 1 isn't always wrong - expert intuition is real. Learn when to trust your gut and when to question it.",
+        "keyPoints": [
+          {
+            "title": "Expert Intuition vs Bias",
+            "distinction": {
+              "expertIntuition": {
+                "description": "System 1 pattern recognition built from extensive experience in predictable environments",
+                "examples": [
+                  "Chess grandmaster seeing optimal move instantly",
+                  "Experienced doctor diagnosing from symptoms",
+                  "Veteran procurement officer sensing vendor is unreliable"
+                ],
+                "whenToTrust": "In domains where you have extensive experience, rapid feedback, and stable patterns"
+              },
+              "biasDisguisedAsIntuition": {
+                "description": "System 1 pattern recognition built from limited experience or unpredictable environments",
+                "examples": [
+                  "'I have a good feeling about this vendor' (based on one meeting)",
+                  "'This will definitely work' (in novel situation)",
+                  "'Trust me, I know this stuff' (in rapidly changing field)"
+                ],
+                "whenToQuestion": "In novel situations, when patterns are unreliable, when you lack quick feedback on accuracy"
+              }
+            }
+          },
+          {
+            "title": "Calibrating Your Intuition",
+            "approach": [
+              {
+                "step": "Track your intuitive judgments",
+                "how": "Write down gut reactions before analyzing"
+              },
+              {
+                "step": "Get feedback",
+                "how": "Compare your intuition to actual outcomes"
+              },
+              {
+                "step": "Identify patterns",
+                "how": "Where is your intuition accurate? Where does it fail?"
+              },
+              {
+                "step": "Adjust confidence",
+                "how": "Trust intuition more in domains where it's proven accurate, less where it fails"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Expert intuition is real but domain-specific. Your gut feel about government processes may be excellent, but your gut feel about blockchain technology (if you're new to it) is probably just bias."
+      },
+      "exercises": [
+        {
+          "type": "calibration",
+          "prompt": "List 5 domains where you have deep experience and 5 where you're relative novice. Rate your confidence in intuitive judgments in each. Does this match where you should trust your gut?"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "Personal System 2 Activation Strategy",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "Create your personal system for recognizing when to shift from System 1 to System 2 in your specific role.",
+        "keyPoints": [
+          {
+            "title": "Building Your Activation Protocol",
+            "components": [
+              {
+                "component": "Decision Inventory",
+                "description": "List recurring decisions in your role",
+                "classification": "Mark which are routine (System 1 fine) vs consequential (need System 2)"
+              },
+              {
+                "component": "Personal Triggers",
+                "description": "Identify situations that should automatically activate your System 2",
+                "examples": [
+                  "Any decision involving >$X",
+                  "Anything irreversible",
+                  "When I feel time pressure",
+                  "When everyone agrees too quickly"
+                ]
+              },
+              {
+                "component": "System 2 Tools",
+                "description": "Have ready-to-use tools for analytical thinking",
+                "examples": [
+                  "Decision matrix template",
+                  "List of probing questions",
+                  "Trusted advisors to consult",
+                  "Pre-mortem protocol"
+                ]
+              },
+              {
+                "component": "Environmental Design",
+                "description": "Structure your work environment to support System 2 when needed",
+                "examples": [
+                  "Protected thinking time on calendar",
+                  "Quiet space for analysis",
+                  "Process for deferring decisions when needed"
+                ]
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Effective leaders know when to trust System 1 efficiency and when to engage System 2 rigor. Develop your personal protocol so this becomes automatic - use System 1 to trigger System 2."
+      },
+      "exercises": [
+        {
+          "type": "protocol-design",
+          "prompt": "Draft your personal System 2 activation protocol. What decisions trigger it? What tools will you use? How will you create time/space for System 2 thinking? Share with colleague for feedback."
+        }
+      ]
+    }
+  ],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": "DPI advisors, government IT directors, policy coordinators working on digital transformation"
+}

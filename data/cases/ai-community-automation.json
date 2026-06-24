@@ -1,0 +1,112 @@
+{
+  "id": "ai-community-automation",
+  "course": "ai-powered-community-engagement",
+  "difficulty": "advanced",
+  "title": "The AI Moderation Incident: When Automation Backfires",
+  "country": "India",
+  "caseType": "ai_ethics",
+  "learningObjectives": [
+    "Recognize the risks of over-automating community management",
+    "Design appropriate human-AI collaboration for moderation",
+    "Respond effectively when AI systems cause harm",
+    "Balance efficiency with community trust in AI implementation"
+  ],
+  "context": {
+    "yourRole": "Community Technology Lead for DigiGov India, a 5,000-member community of government technology professionals. You oversee the community platform and have been leading AI implementation.",
+    "situation": "Six months ago, you implemented AI-powered moderation and support systems to help your small team manage the large community. The AI handles 70% of moderation decisions and powers an FAQ chatbot. It's been working well - response times improved dramatically.",
+    "pressure": "The community has become a model for AI-assisted community management. You've presented at conferences, published a case study, and other organizations are copying your approach. There's pressure to expand AI automation further.",
+    "reality": "You've been moving fast and feeling proud of the efficiency gains. But you've received some complaints about 'weird bot responses' and 'unfair moderation' that you've dismissed as edge cases. The AI systems are largely a black box - you don't fully understand how they make decisions."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Monday Morning: The Incident\n\nYou arrive to find your inbox flooded with messages about the weekend. Here's what happened:\n\n**The Trigger:**\nDr. Lakshmi Venkatesh, a respected professor and longtime community member, posted a detailed critique of a government AI policy. Her post used academic language discussing 'algorithmic bias,' 'automated discrimination,' and 'AI harms.' \n\n**The AI Response:**\nThe moderation AI flagged her post as 'potentially harmful content' and automatically removed it with the message: 'This post has been removed for violating community guidelines on harmful content.'\n\nIt then sent her a warning about 'repeated violations' (her previous posts on AI ethics had also been flagged).\n\nWhen Dr. Venkatesh complained in the #general channel, the FAQ bot responded with a generic message: 'If you believe content was removed in error, please file a support ticket. Average response time: 3-5 business days.'\n\n**The Escalation:**\n- Dr. Venkatesh tweeted about the incident, calling out 'the irony of an AI community auto-censoring AI criticism.'\n- The tweet went viral (15,000+ retweets).\n- Multiple news outlets are requesting comment.\n- Other members are sharing similar stories of questionable removals.\n- The community hashtag is trending with mostly negative sentiment.\n- Your most active government contributors are posting: 'If this is how AI moderation works, should we be implementing it in government services?'\n\n**Your Team's Reaction:**\nYour community manager says: 'I've seen complaints about the AI being too aggressive, but I thought they were just edge cases. I should have escalated.'\n\nYour engineering lead says: 'The AI is working as designed. It was trained on toxic content data and learned to flag certain keywords. We can adjust the sensitivity, but that will let through more actual violations.'",
+      "prompt": "What are your immediate priorities? How do you respond in the next 24 hours?",
+      "evaluationCriteria": [
+        "**Crisis Triage**: Do they identify the most urgent actions?",
+        "**Accountability**: Do they take responsibility rather than deflecting?",
+        "**Stakeholder Prioritization**: Do they prioritize Dr. Venkatesh and community over PR?",
+        "**Systemic Recognition**: Do they see this as systemic issue, not just edge case?",
+        "**Communication Strategy**: Do they have a clear approach for public response?"
+      ],
+      "coachingNotes": "This is a crisis caused by automation hubris. The immediate priorities are:\n\n1. **Dr. Venkatesh** (first 2 hours): Personal outreach from you (not the bot, not a junior staff member). Apologize genuinely. Restore her post. Ask what she needs. She's the wronged party and the key to de-escalation.\n\n2. **Stop the bleeding** (first 4 hours): Immediately reduce AI moderation autonomy. Put humans in the loop for all removals until you understand what's happening. Better to have a few violations slip through than more false positives.\n\n3. **Community communication** (first 12 hours): Post transparently in the community. Acknowledge the incident, take responsibility, explain what you're doing. Don't blame the AI - you deployed it.\n\n4. **External communication** (first 24 hours): Prepare a statement for media. Be honest: 'We moved too fast on AI automation without adequate oversight. We're fixing it.'\n\n5. **Investigation** (parallel): Start understanding how the AI makes decisions. What training data? What keywords trigger flags? How many false positives have there been?\n\nCommon mistakes to avoid:\n- Defending the AI system or downplaying the incident\n- Generic PR response that doesn't acknowledge specifics\n- Waiting too long to respond\n- Treating this as a communications problem rather than a systemic one\n- Continuing business as usual while in crisis"
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "Tuesday: The Investigation\n\nYou've taken immediate action:\n- Personally apologized to Dr. Venkatesh (she was gracious but asked for systemic changes)\n- Restored her post with a public apology\n- Put all AI moderation into 'flag only' mode (humans review all flags)\n- Posted a community message acknowledging the failure\n\nThe immediate fire is somewhat contained, but the investigation reveals deeper problems:\n\n**AI System Findings:**\n- The moderation AI was trained on a general toxic content dataset, not community-specific data\n- It learned to flag academic/policy language about 'harm,' 'bias,' 'discrimination' because those words appear in truly harmful content too\n- Over the past 6 months, 340 posts were auto-removed. Review finds 89 (26%) were false positives - legitimate content incorrectly flagged\n- The AI provided no explanation for its decisions, making appeals difficult\n- Your team never conducted a systematic audit of AI decisions\n\n**FAQ Bot Findings:**\n- The chatbot was trained only on common questions, not edge cases or complaints\n- When asked about AI moderation specifically, it gave generic deflecting responses\n- It couldn't detect frustration or escalation needs\n- Members complained about 'talking to a wall' when they had real issues\n\n**Cultural Findings:**\n- Your team celebrated efficiency metrics (response time, volume handled) without tracking accuracy\n- Complaints about AI were treated as 'user education' problems, not system problems\n- No one felt empowered to question the AI implementation that leadership championed\n\nThe engineering lead says: 'We can fix the technical issues - retrain on better data, add explainability, improve escalation. But that's 2-3 months of work. What do we do in the meantime?'\n\nThe community manager says: 'Members are asking if we're going to keep using AI at all. Some are saying all AI should be removed.'",
+      "prompt": "How do you proceed with the AI systems? What's your interim approach and long-term strategy?",
+      "evaluationCriteria": [
+        "**Proportionate Response**: Do they avoid overcorrecting (removing all AI) or undercorrecting (quick fix)?",
+        "**Root Cause Address**: Do they address cultural/process issues, not just technical ones?",
+        "**Transparency**: Do they plan to share findings with community?",
+        "**Interim Solution**: Do they have a workable approach while systems are fixed?",
+        "**Learning Integration**: Do they build safeguards against future similar failures?"
+      ],
+      "coachingNotes": "The investigation reveals this isn't just a technical problem - it's a cultural and process failure. The fixes need to address all three layers:\n\n**Technical fixes:**\n- Retrain moderation AI on community-specific data (not general toxic content)\n- Add explainability - every AI decision needs a human-readable reason\n- Improve chatbot with escalation detection and human handoff\n- Build in confidence thresholds - low-confidence decisions go to humans\n\n**Process fixes:**\n- Regular audits of AI decisions (weekly sample review)\n- Clear escalation paths from AI to human for all systems\n- Appeal process that doesn't feel like talking to a wall\n- Metrics that include accuracy/member satisfaction, not just efficiency\n\n**Cultural fixes:**\n- Create psychological safety to question AI implementations\n- Celebrate catching errors, not just celebrating automation\n- Member feedback as input, not as complaints to manage\n\n**Interim approach:**\nDon't remove AI entirely - that's overcorrection. But do:\n- AI flags, humans decide (for moderation)\n- Chatbot with clear 'talk to human' option always visible\n- Transparent communication about what AI is/isn't doing\n\n**Transparency:**\nConsider publishing the investigation findings (including the 26% false positive rate). Yes, it's embarrassing. But transparency builds trust, and hiding problems makes them worse when discovered.\n\n**The 'remove all AI' voices:**\nAcknowledge their concerns are valid given what happened. Commit to specific safeguards that address their concerns. But don't let one failure mean never using helpful technology - the goal is responsible AI use, not AI avoidance."
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "Week 3: The Governance Question\n\nYou've stabilized the immediate situation. Now you're facing a governance question: How should AI decisions be made in the community going forward?\n\nThree perspectives emerge:\n\n**Perspective A: Community AI Council (Dr. Venkatesh's proposal)**\n'Create a member-elected council that oversees AI use. Major AI decisions require council approval. Regular transparency reports. Members have a voice in how AI affects them.'\n- Pros: Democratic, builds trust, catches blind spots\n- Cons: Slow, might become bureaucratic, members may not have technical expertise\n\n**Perspective B: Technical Governance (Engineering lead's proposal)**\n'Implement industry-standard AI governance: bias testing, impact assessments, audit logs. Professional oversight, not amateur governance. We need experts, not committees.'\n- Pros: Technical rigor, proven approaches, efficient\n- Cons: Excludes member voice, might miss community-specific concerns, can feel opaque\n\n**Perspective C: Minimal AI (Community manager's caution)**\n'Given what happened, maybe we should minimize AI use. Human moderators for content, simple rule-based automation only. We're a community, not a tech company. We don't need cutting-edge AI.'\n- Pros: Lower risk, simpler, more human touch\n- Cons: Doesn't scale, expensive, might miss AI benefits\n\nThe Ministry sponsor weighs in: 'This community was supposed to be a model for responsible government AI. The incident is embarrassing, but how you recover could be more influential than if it never happened. What's your vision for AI governance that others could learn from?'\n\nYou need to propose a governance model for community AI.",
+      "prompt": "What AI governance model would you propose? How would you combine or balance these perspectives?",
+      "evaluationCriteria": [
+        "**Integration**: Do they synthesize multiple perspectives rather than choosing one?",
+        "**Practicality**: Is the proposed model actually implementable?",
+        "**Trust Building**: Does the model rebuild and maintain community trust?",
+        "**Scalability**: Can the model scale as AI use evolves?",
+        "**Learning Orientation**: Does the model enable continuous improvement?"
+      ],
+      "coachingNotes": "The best governance model probably combines elements of all three perspectives:\n\n**A hybrid model might include:**\n\n1. **Community AI Advisory Group** (from Perspective A):\n- Not full governance authority, but meaningful input\n- Reviews AI impact reports quarterly\n- Provides community perspective on proposed AI uses\n- Includes diverse members (not just tech-savvy)\n- Builds legitimacy and early warning\n\n2. **Technical Standards** (from Perspective B):\n- AI impact assessment before deployment\n- Regular bias and accuracy auditing\n- Explainability requirements\n- Clear documentation\n- Professional oversight where needed\n\n3. **Human-AI Principles** (from Perspective C):\n- 'Human in the loop' default for consequential decisions\n- AI assists rather than replaces for member-facing interactions\n- Clear escalation from AI to human\n- Regular evaluation of what should/shouldn't be automated\n\n**Key governance principles:**\n- Transparency: What AI is doing and how it's performing\n- Accountability: Humans responsible for AI outcomes\n- Member voice: Input into how AI affects community\n- Continuous learning: Regular review and adjustment\n\n**The Ministry's framing is right**: This could become a positive example. 'Here's how we failed with AI automation, what we learned, and the governance model we developed' is more valuable than 'here's how we succeeded with AI' because it helps others avoid the same mistakes.\n\nAvoid:\n- Governance theater (elaborate processes that don't actually change anything)\n- Over-promising (you can't guarantee no future AI errors)\n- Under-resourcing (governance needs real investment)"
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "Month 3: Rebuilding Trust\n\nThree months have passed. Here's where you stand:\n\n**AI Systems Status:**\n- Moderation AI retrained on community data; false positive rate down to 5%\n- All moderation flags reviewed by humans before action\n- Chatbot has clear 'talk to human' option; handoff rate is 15% (appropriate escalations)\n- Monthly AI transparency report published to community\n\n**Governance Status:**\n- AI Advisory Group formed (7 members including Dr. Venkatesh)\n- First impact assessment completed for new feature proposal\n- Quarterly community AI survey shows 72% trust AI systems now (was 34% during crisis)\n\n**Cultural Status:**\n- Team has 'AI assumption audit' in weekly meetings\n- Two junior staff members have raised concerns about AI proposals - and were heard\n- Efficiency metrics now balanced with accuracy and satisfaction metrics\n\n**External Status:**\n- Published 'Lessons from AI Moderation Failure' case study\n- Invited to advise two other government communities on AI implementation\n- Dr. Venkatesh co-authored the case study and presents it with you\n\nThe Ministry asks you to present 'Principles for Responsible AI in Communities' at a national conference. You have 20 minutes.\n\nDr. Venkatesh, who will introduce you, asks: 'Looking back, what would you tell yourself 6 months ago? And what do you want other community leaders to take away from our experience?'",
+      "prompt": "What are your key lessons and principles for responsible AI in communities? What would you tell your past self and other community leaders?",
+      "evaluationCriteria": [
+        "**Honest Reflection**: Do they acknowledge their own role in the failure?",
+        "**Transferable Lessons**: Are the principles applicable to others?",
+        "**Balance**: Do they avoid both AI-phobia and AI-hype?",
+        "**Practical Guidance**: Are the principles actionable?",
+        "**Humility**: Do they maintain appropriate humility about AI?"
+      ],
+      "coachingNotes": "This is the synthesis moment. The best answer combines honest reflection with actionable guidance.\n\n**To past self:**\n- 'Slow down. Efficiency gains aren't worth trust erosion.'\n- 'Listen to complaints. Edge cases reveal systemic issues.'\n- 'Understand your AI systems. Black boxes are dangerous.'\n- 'Build governance before you build automation.'\n- 'Celebrate catching errors, not just celebrating automation.'\n\n**Principles for others:**\n\n1. **Human accountability is non-negotiable**: AI assists decisions; humans own outcomes. Never fully automate consequential member-facing decisions.\n\n2. **Explainability is essential**: If the AI can't explain its decision in human-understandable terms, it shouldn't make the decision autonomously.\n\n3. **Train on your context**: Generic AI models don't understand your community. Customize or constrain.\n\n4. **Build escalation, not walls**: Every AI interaction should have a clear path to human help. Members should never feel trapped talking to a bot.\n\n5. **Measure what matters**: Efficiency metrics without accuracy metrics are dangerous. Include false positive rates, member satisfaction, appeal rates.\n\n6. **Governance before automation**: Establish oversight before deploying AI. It's much harder to add governance after deployment.\n\n7. **Transparency builds trust**: Share what AI is doing and how it's performing. Hiding AI use or errors erodes trust faster than admitting them.\n\n8. **Fail small, learn fast**: Test AI with limited scope before broad deployment. Make failures recoverable.\n\n9. **Listen to complaints**: Complaints about AI aren't user education problems. They're system feedback.\n\n10. **Community voice matters**: Members affected by AI should have input into how it's used. This isn't just ethical - it's practical.\n\nThe presentation should acknowledge the failure directly - that's what gives the principles credibility. 'Here's what we learned by getting it wrong' is more persuasive than 'here's what you should do.'"
+    }
+  ],
+  "keyTakeaways": [
+    "Efficiency metrics without accuracy metrics are dangerous - measure false positives, not just speed",
+    "AI systems trained on general data may not understand your specific community context",
+    "Complaints about AI are system feedback, not user education problems",
+    "Black-box AI systems are risky - if you can't explain decisions, you can't fix errors",
+    "Human-in-the-loop is essential for consequential decisions, at least as override capability",
+    "Governance should precede automation, not follow it",
+    "Transparency about AI use and performance builds trust",
+    "Incident response should prioritize affected people over PR",
+    "Cultural factors (celebrating efficiency, dismissing complaints) enabled technical failures",
+    "Recovery from AI failures can become valuable learning for others"
+  ],
+  "frameworks": [
+    {
+      "name": "AI Automation Decision Framework",
+      "description": "For each potential AI automation, assess: (1) Consequences of errors - high/medium/low, (2) Reversibility - can errors be easily fixed, (3) Explainability - can AI explain its reasoning, (4) Human alternative - is human decision practical, (5) Context specificity - does AI understand your context. Only automate when consequences are low OR errors are reversible AND AI is explainable.",
+      "application": "Use before deploying any AI automation to determine appropriate level of human oversight."
+    },
+    {
+      "name": "AI Incident Response Protocol",
+      "description": "When AI causes harm: (1) Stop the bleeding - disable or constrain the AI immediately, (2) Care for affected parties - personal outreach, genuine apology, make whole, (3) Communicate transparently - acknowledge what happened, (4) Investigate root causes - technical, process, and cultural, (5) Fix systemically - address all root cause layers, (6) Share learnings - help others avoid same mistake.",
+      "application": "Follow this sequence when AI systems cause member harm or community damage."
+    },
+    {
+      "name": "Community AI Governance Model",
+      "description": "Three-layer governance: (1) Technical layer - impact assessments, bias audits, explainability requirements, (2) Process layer - human review checkpoints, escalation paths, regular audits, (3) Community layer - advisory input, transparency reports, feedback channels. All three layers needed for responsible AI.",
+      "application": "Design AI governance that addresses technical, operational, and community dimensions."
+    }
+  ],
+  "relatedCases": [
+    "ethics-procurement-pressure",
+    "kenya_data_breach",
+    "technical-literacy-smart-questions"
+  ]
+}

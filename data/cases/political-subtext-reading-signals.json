@@ -1,0 +1,125 @@
+{
+  "id": "political-subtext-reading-signals",
+  "course": "political-subtext-communication",
+  "difficulty": "application",
+  "title": "What They're Not Saying: Reading Political Subtext in Meetings",
+  "country": "Kenya",
+  "caseType": "communication_analysis",
+  "learningObjectives": [
+    "Recognize when explicit message differs from actual meaning",
+    "Read tone, body language, and context clues",
+    "Understand indirect communication in hierarchical cultures",
+    "Identify coded language and euphemisms",
+    "Distinguish between 'yes' (agreement), 'yes' (acknowledgment), and 'yes' (avoidance)",
+    "Develop political listening skills"
+  ],
+  "context": {
+    "yourRole": "Digital Governance Advisor to Kenya's Ministry of Public Service. You're supporting implementation of a government HR management system.",
+    "situation": "You're 4 months into assignment. You've noticed people say things that don't match their actions. You're starting to realize there's a subtext you're missing.",
+    "pressure": "Project is behind schedule. You keep getting 'agreement' in meetings but no follow-through. Something's wrong.",
+    "reality": "What people say in meetings and what they mean are often different. You need to learn to read the subtext."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Weekly project meeting. You're presenting progress update:\n\nYou: 'We need the HR data from counties to populate the system. I sent the request three weeks ago. Counties, can you provide status?'\n\nCounty Rep 1 (Nairobi): 'Yes, we're working on it. Should have it soon.'\n\nCounty Rep 2 (Mombasa): 'We have some challenges with data quality. We're cleaning it. Soon.'\n\nCounty Rep 3 (Kisumu): 'Yes, no problem. We'll send.'\n\nYou: 'Great. So I can expect data by next week?'\n\n[Long pause. People look at each other. No one speaks.]\n\nYour Counterpart (Director Kamau, quietly): 'Let's discuss offline.'\n\nYou (confused): 'But they just said they'll send it...?'\n\nAfter the meeting, Director Kamau pulls you aside:\n\nKamau: 'You need to understand - when they say \"soon,\" that doesn't mean next week. And when there's silence after you ask for commitment, that means no.'\n\nYou: 'But they said yes...'\n\nKamau: 'They said words that sounded like yes. That's different from actual yes. Let me teach you to read the room.'\n\nHe explains:\n- **'Soon' = non-committal timeframe, could be months**\n- **'We're working on it' = we haven't started but don't want to say that directly**\n- **'We have challenges' = we can't do this but won't refuse directly**\n- **Long silence after request for commitment = no one wants to commit**\n- **'Let's discuss offline' = this is politically sensitive, can't be discussed publicly**\n\nYou: 'So they were all saying no, but indirectly?'\n\nKamau: 'Welcome to government communication. Direct refusal is face-losing for them and face-damaging for you. Indirect communication preserves relationships.'\n\nYou: 'But how do I get the data if no one will directly tell me what the problem is?'\n\nKamau: 'That's what \"discuss offline\" means. Go talk to them one-on-one. In private, they'll tell you the real issues. In public meetings, they can't.'",
+      "prompt": "What's the communication pattern here? How should you adjust your approach?",
+      "evaluationCriteria": [
+        "**Direct vs Indirect**: Do they recognize the culture uses indirect communication to avoid confrontation?",
+        "**Coded Language**: Do they identify 'soon,' 'challenges,' 'working on it' as euphemisms?",
+        "**Silence as Signal**: Do they understand that silence/pause is meaningful, not just empty space?",
+        "**Public vs Private**: Do they see that real discussion happens offline, not in public meetings?",
+        "**Face-Saving**: Do they understand the cultural importance of avoiding direct refusal?",
+        "**Adaptation**: Do they recognize they need to change communication style, not just push harder?"
+      ],
+      "coachingNotes": "This is indirect communication culture. Direct refusal is considered rude/aggressive, so people use coded language. 'Soon' = indefinite. 'Challenges' = can't do. 'Working on it' = haven't started. Silence = disagreement. 'Let's discuss offline' = politically sensitive. Public meetings are for formal consensus, not real discussion. Real negotiation happens one-on-one. Western direct communication ('Can you deliver by next week? Yes or no?') comes across as aggressive. You need to: [1] Learn the code, [2] Read tone and body language, [3] Have real discussions offline, [4] Give people face-saving ways to refuse. This isn't dishonesty - it's cultural communication style."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You schedule one-on-one meetings with county reps. Different conversations emerge:\n\n**Nairobi County:**\nYou: 'In the meeting, you mentioned you're working on the data. Can you share what challenges you're facing?'\n\nNairobi Rep (relieved you asked privately): 'Honestly? We don't have capacity. Our HR officer just left. We have one person handling HR for 5,000 staff. There's no way we can compile historical data. I couldn't say that in the public meeting - makes us look incompetent.'\n\nYou: 'What if we sent a consultant to help you compile it? Would that work?'\n\nNairobi Rep: 'That would help, yes.'\n\n**Mombasa County:**\nYou: 'You mentioned data quality challenges. Say more?'\n\nMombasa Rep: 'The data quality issue is real. But the bigger issue is political. Our county governor is fighting with national government over devolution. He's told us not to cooperate with national ministry initiatives until the budget dispute is resolved. I can't say that in a meeting with national ministry officials - it would escalate the political fight.'\n\nYou: 'So this isn't about data - it's about political conflict between county and national government?'\n\nMombasa Rep: 'Correct. If you want our data, the Governor needs assurance this HR system won't be used as tool for national government to interfere with county hiring. Can you guarantee that?'\n\n**Kisumu County:**\nYou: 'You said \"no problem, we'll send.\" But I got the feeling there was a problem.'\n\nKisumu Rep (laughs): 'You're learning. Yes, there's a problem. Our HR records are... incomplete. We have ghost workers on payroll. If we send you real data, it exposes that. If we send fake data, your system will have garbage. Either way, we're in trouble. So I said \"we'll send\" because I needed time to figure out what to do.'\n\nYou realize:\n- **Nairobi**: Capacity issue (real, solvable)\n- **Mombasa**: Political issue (requires different intervention)\n- **Kisumu**: Corruption/embarrassment issue (very sensitive)\n\nNone of this was said in the public meeting. The coded language ('soon,' 'challenges,' 'no problem') was hiding three completely different issues.\n\nYou debrief with Director Kamau:\n\nYou: 'I now understand why they couldn't speak directly in the meeting. Nairobi would look incompetent. Mombasa would escalate political fight. Kisumu would expose corruption.'\n\nKamau: 'Exactly. Public meetings are theater. Real work happens in private conversations where people can speak honestly without political risk.'\n\nYou: 'So how do I use public meetings if that's where nothing real gets discussed?'\n\nKamau: 'Public meetings are for: [1] Formal announcements, [2] Building general consensus on direction, [3] Observing body language and tone to know who to follow up with privately, [4] Giving leadership visibility. Don't try to make decisions or solve problems in public meetings. Use them to identify issues, then solve offline.'",
+      "prompt": "You've learned to read the subtext. How do you adjust your meeting strategy going forward?",
+      "evaluationCriteria": [
+        "**Purpose Redefinition**: Do they understand public meetings serve different purpose than decision-making?",
+        "**Observation Skills**: Do they recognize meetings are for watching signals (tone, silence, glances) to know what to follow up on?",
+        "**Private Discussion Strategy**: Do they develop systematic approach to one-on-one conversations?",
+        "**Cultural Adaptation**: Do they accept this communication style rather than trying to force Western directness?",
+        "**Issue Categorization**: Do they distinguish between capacity issues, political issues, and corruption issues requiring different responses?",
+        "**Relationship Building**: Do they see that private conversations build trust needed for honest discussion?"
+      ],
+      "coachingNotes": "Your meeting strategy should shift: [1] Use public meetings to observe, not decide - watch who speaks, who's silent, what topics create tension, [2] Follow up privately with anyone who seemed hesitant or gave coded responses, [3] Ask open-ended questions that let them explain rather than yes/no questions, [4] Give people face-saving ways to refuse ('What would help you be able to do this?' vs 'Can you do this?'), [5] Build trust through private conversations - that's where real work happens. This isn't inefficiency - it's how decisions get made in hierarchical, relationship-based cultures. Fighting it makes you ineffective. Adapting to it makes you effective."
+    },
+    {
+      "round": 3,
+      "type": "decision_point",
+      "situation": "Two weeks later, you're in a meeting with the Permanent Secretary about a different issue: procuring the HR system vendor.\n\nYou've prepared a procurement approach: competitive tender, technical evaluation, transparent process. You present it.\n\nPS: 'This is very thorough. Good process.'\n\n[But his tone is flat. His body language is closed - arms crossed. He glances at his Chief of Staff.]\n\nChief of Staff: 'Yes, good process. Of course, we should consider local vendors. Capacity building is important.'\n\nDirector Kamau (your counterpart): 'Absolutely. Local vendors should be considered.'\n\nYou: 'The tender will be open to all qualified vendors, local and international.'\n\nPS: 'Of course. As long as the process is fair.'\n\n[Again, flat tone. Another glance between PS and Chief of Staff.]\n\nPS: 'Well. Thank you for the presentation. We'll review and get back to you.'\n\nYou leave confused. You got agreement ('good process,' 'fair'), but something felt wrong.\n\nDirector Kamau pulls you aside:\n\nKamau: 'That didn't go well.'\n\nYou: 'But they agreed with the approach...'\n\nKamau: 'Did you notice the PS's tone? The glances? The \"we'll review and get back to you\"? That was all negative.'\n\nYou: 'What did I miss?'\n\nKamau (sighs): 'There's a vendor. LocalTech. They're... politically connected. I don't know details, but I've heard the name. My guess: someone powerful wants them to win this tender. Your \"transparent competitive process\" is threatening that. The PS can't say \"we want to sole-source to LocalTech\" because that's improper. So he said \"good process\" while his body language said \"this is a problem.\" The \"we'll review and get back\" means they're going to figure out how to handle this.'\n\nYou: 'Are you saying they want me to rig the procurement?'\n\nKamau: 'No one will say that directly. But they might ask you to add evaluation criteria that favor local vendors. Or they might suggest LocalTech as \"technical partner.\" Or they might delay your process while they pursue LocalTech separately. Watch for the signals.'\n\nTwo days later, Chief of Staff calls you:\n\nChief of Staff: 'About the procurement. We've been approached by LocalTech. They have interesting capabilities. Perhaps you should meet with them before finalizing the tender approach. Just to understand the market.'\n\nYou: 'Isn't meeting with one vendor before tender problematic?'\n\nChief of Staff: 'It's market research. Due diligence. Nothing wrong with understanding what's available.'\n\nThe subtext: 'Meet with LocalTech. See if they can meet requirements. If so, structure tender to favor them.'\n\nYou're facing an ethical dilemma disguised as helpful suggestion.",
+      "prompt": "Read the subtext: What's really being asked? How do you respond without being naive or combative?",
+      "evaluationCriteria": [
+        "**Subtext Recognition**: Do they identify that 'market research' suggestion is coded request to favor LocalTech?",
+        "**Pressure Pattern**: Do they recognize escalation from PS's flat response → Chief of Staff's 'suggestion'?",
+        "**Ethical Line**: Do they distinguish between proper market research and improper pre-selection?",
+        "**Response Strategy**: Do they develop approach that doesn't naively comply but doesn't antagonize?",
+        "**Documentation**: Do they think about protecting themselves with documentation?",
+        "**Escalation**: Do they consider when to involve donors or anti-corruption mechanisms?"
+      ],
+      "coachingNotes": "The subtext is clear: someone wants LocalTech to win. The PS's body language signaled 'this is a problem.' The Chief of Staff's 'suggestion' is testing whether you'll play along. If you meet with LocalTech alone, you're compromising procurement integrity. But if you refuse bluntly, you antagonize powerful people. Middle path: 'I'd be happy to meet with LocalTech as part of broader market research. Let me also meet with 3-4 other vendors to understand the full market. Then we can structure tender based on market capabilities.' This signals: [1] You're willing to engage, [2] You won't favor one vendor, [3] You understand proper process. If they push back on meeting multiple vendors, you know this is corrupt pressure. Document everything. Prepare to escalate to donors if needed."
+    },
+    {
+      "round": 4,
+      "type": "outcome",
+      "situation": "You respond to Chief of Staff:\n\nYou: 'Happy to meet with LocalTech as part of market research. I should also meet with other vendors to understand the full market - maybe 4-5 total. That way our tender design is informed by actual market capabilities. Can your office help arrange meetings with other vendors as well?'\n\nChief of Staff (pause): 'Well... LocalTech specifically reached out. I'm not sure about others.'\n\nYou: 'I can reach out to others myself. For proper market research, we should talk to multiple vendors. I'll include LocalTech in that research. Sound good?'\n\nChief of Staff (cooler tone): 'Do what you think is appropriate.'\n\nThat phrase - 'do what you think is appropriate' - in that tone. The subtext: 'You're not playing along. We'll remember this.'\n\nYou meet with 5 vendors including LocalTech. LocalTech's capabilities are mediocre. Two international vendors and one regional vendor have much stronger track records.\n\nYou design tender based on actual requirements. LocalTech could qualify but likely won't win on technical merit.\n\nBefore publishing tender, Director Kamau warns you:\n\nKamau: 'You're about to create political problems. LocalTech has connections. If they don't win, someone will be unhappy. Are you ready for that?'\n\nYou: 'I'm ready to run a clean procurement. If there's pushback, I'll document it and involve the donors. Their funding, their fiduciary standards.'\n\nKamau: 'Okay. I support you. But watch the signals. If pressure escalates, don't try to handle it alone.'\n\nTender is published. Five vendors bid. Technical evaluation:\n\n1. RegionalTech (Uganda): 88/100\n2. GlobalHR (International): 85/100\n3. TechKenya (Local): 78/100\n4. LocalTech: 65/100\n5. SoftSolutions (Local): 62/100\n\nLocalTech is ranked 4th. Not disqualified, but not winning.\n\nThe day after evaluation results are shared internally (not yet public), you're called to a meeting with the PS:\n\nPS: 'I've reviewed the evaluation. I have concerns about RegionalTech. They're based in Uganda. What if there are support issues? What about data sovereignty - our HR data would be managed by foreign company. I think we should reconsider.'\n\nYou notice:\n- He didn't mention that GlobalHR is also foreign (ranked 2nd)\n- He's targeting specifically the #1 ranked vendor\n- 'Data sovereignty' is new concern, wasn't in tender criteria\n- His tone is firm, not collaborative\n\nThe subtext: 'Find a way to disqualify RegionalTech so LocalTech moves up.'\n\nChief of Staff adds: 'Perhaps we should weight local presence more heavily. Re-score with that consideration.'\n\nThe subtext: 'Change the criteria after bids to favor LocalTech.'\n\nDirector Kamau (carefully): 'Data sovereignty is legitimate concern. But it should have been in tender criteria. Changing evaluation criteria after bids are submitted would be... problematic.'\n\nPS (sharp tone): 'Are you saying data sovereignty doesn't matter?'\n\nKamau: 'Not at all. I'm saying if it's critical, we should cancel this tender and re-issue with data sovereignty requirements explicit. That's the proper process.'\n\nPS (pause): 'Cancel the tender? After all this work?'\n\nThis is the moment. The PS is testing whether you'll change criteria post-bid (corrupt) or stick to process (proper but politically costly).",
+      "prompt": "Read the room: What's happening politically? What do you say?",
+      "evaluationCriteria": [
+        "**Pressure Recognition**: Do they see this is direct pressure to manipulate results?",
+        "**Kamau's Support**: Do they recognize Kamau is supporting them by offering face-saving alternative (re-issue tender)?",
+        "**PS's Test**: Do they understand the PS is seeing if they'll cave?",
+        "**Options Analysis**: Do they think through: change criteria (corrupt), cancel tender (costly but proper), push forward (stand firm)?",
+        "**Institutional Support**: Do they prepare to invoke donor standards?",
+        "**Communication Strategy**: Do they respond without accusing but maintaining firmness?"
+      ],
+      "coachingNotes": "You're being directly pressured to manipulate procurement. The PS is using 'data sovereignty' as cover. But Kamau gave you a path: cancel and re-issue is proper (though expensive). Or you can say: 'Data sovereignty is important. RegionalTech has indicated they'd establish local data center. We can make that a contract requirement. Would that address the concern?' This calls the bluff - if PS accepts, great. If he pushes back, you know it's really about LocalTech, not data sovereignty. If pressure continues, you must escalate: 'Sir, the donors have fiduciary standards for procurement. I need to consult with them before changing evaluation criteria post-bid.' Use donor leverage. Document everything. This is where integrity meets career risk. Stand firm, but professionally."
+    }
+  ],
+  "keyTakeaways": [
+    "In indirect communication cultures, what's said often differs from what's meant",
+    "Learn to read tone, body language, pauses, and glances - they convey real message",
+    "Public meetings serve different purpose (visibility, general consensus) than private conversations (real decisions)",
+    "Coded language: 'soon' (indefinite), 'challenges' (can't do), 'we'll review' (probably no)",
+    "Silence and pauses are meaningful - often signal disagreement or discomfort",
+    "Real issues emerge in one-on-one conversations where people can speak without political risk",
+    "When pressure comes, it often arrives as 'helpful suggestions' not direct demands"
+  ],
+  "frameworks": [
+    {
+      "name": "Subtext Decoding",
+      "description": "For any statement, ask: [1] What was literally said? [2] What was the tone/body language? [3] What's the context? [4] What might the real message be?",
+      "application": "'Good process' (words) + flat tone + closed body language + glances = actually means 'this is a problem.'"
+    },
+    {
+      "name": "Public vs Private Communication",
+      "description": "Public meetings: formal, face-saving, coded language. Private conversations: honest, specific, problem-solving. Route real work through private channels.",
+      "application": "Don't expect honest problem discussion in public meetings. Use meetings to observe signals, then follow up privately."
+    },
+    {
+      "name": "Coded Language Dictionary",
+      "description": "Build understanding of common euphemisms in your context: 'Soon' = indefinite. 'Challenges' = can't do. 'We'll review' = probably no. 'Discuss offline' = politically sensitive.",
+      "application": "When you hear coded language, translate to real meaning, then follow up privately to understand actual issue."
+    },
+    {
+      "name": "Pressure Pattern Recognition",
+      "description": "Corrupt pressure often escalates: [1] Indirect suggestion, [2] Helpful advice, [3] Direct request, [4] Veiled threat. Recognize pattern early.",
+      "application": "PS's flat response → Chief of Staff's 'meet LocalTech' → PS's 'data sovereignty concern' = escalating pressure pattern."
+    },
+    {
+      "name": "Face-Saving Response",
+      "description": "When resisting pressure, offer face-saving alternatives: 'We could re-issue tender with new criteria' vs 'No, that's corrupt.' Maintains relationships while holding line.",
+      "application": "Instead of refusing PS directly, Kamau suggested canceling and re-issuing (proper process, gives PS face-saving path)."
+    }
+  ],
+  "relatedCases": [
+    "power-mapping-ministry-dynamics",
+    "ethics-procurement-pressure",
+    "managing-up-difficult-boss"
+  ]
+}

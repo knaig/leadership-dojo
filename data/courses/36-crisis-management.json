@@ -1,0 +1,706 @@
+{
+  "id": "crisis-management",
+  "slug": "crisis-management",
+  "courseNumber": 36,
+  "title": "Crisis Management",
+  "subtitle": "Leading Through Turbulence",
+  "tier": 4,
+  "category": "Advanced Leadership",
+  "duration": "4 hours",
+  "difficulty": "Expert",
+  "description": "Lead effectively through crises and turn challenges into opportunities for DPI advancement.",
+  "learningObjectives": [
+    "Recognize crisis patterns in government and policy implementation",
+    "Lead effective crisis response with stakeholder coordination",
+    "Convert crises into opportunities for DPI advancement and learning"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": [
+    "DPI advisors",
+    "Government IT directors",
+    "Policy coordinators",
+    "Crisis management officers"
+  ],
+  "modules": [
+    {
+      "id": "module-1",
+      "moduleNumber": 1,
+      "title": "Understanding DPI Crises",
+      "duration": 30,
+      "type": "theory",
+      "content": {
+        "overview": "Crisis in DPI contexts emerges from the intersection of policy ambition, implementation complexity, and external pressures. This module establishes foundational understanding of how crises manifest in government technology and policy initiatives, examining the unique characteristics of DPI crises versus commercial crises.",
+        "keyPoints": [
+          {
+            "title": "Defining Crisis in DPI Context",
+            "description": "A DPI crisis occurs when policy implementation faces unexpected threats to its viability, public trust, or strategic objectives. Unlike commercial crises focused on profit impact, DPI crises threaten citizen services, data security, or policy legitimacy.",
+            "examples": [
+              "Major data breach in digital identity system affecting millions of citizens",
+              "Payment system failure disrupting government subsidy distribution",
+              "Security vulnerability in digital governance platform discovered publicly"
+            ]
+          },
+          {
+            "title": "Crisis Typologies in Government",
+            "description": "DPI crises fall into distinct categories: technical (system failures), security (data breaches), political (legitimacy threats), and operational (process failures). Each requires different leadership approaches.",
+            "examples": [
+              "Technical: Aadhaar database downtime affecting welfare distribution",
+              "Security: India Stack credential leakage exposing citizen data",
+              "Political: Implementation corruption discovered in land registry digitization",
+              "Operational: Payment processor integration failure blocking transactions"
+            ]
+          },
+          {
+            "title": "Crisis Signal Recognition",
+            "description": "Early warning indicators include unusual system metrics, stakeholder complaints, media coverage acceleration, and regulatory inquiries. Learning to read these signals separates proactive from reactive leadership.",
+            "examples": [
+              "Spike in citizen support tickets beyond baseline",
+              "Unusual access patterns in audit logs",
+              "Journalist inquiries about specific system components",
+              "Parliamentary questions about implementation delays"
+            ]
+          },
+          {
+            "title": "Systemic Vulnerabilities in DPI",
+            "description": "DPI systems concentrate risk across multiple dimensions: centralized databases create single points of failure, integration across agencies multiplies dependencies, and citizen reliance amplifies impact.",
+            "examples": [
+              "Single sign-on failure cascading across multiple services",
+              "Interagency data sharing enabling exploitation of one compromise",
+              "Mass citizen impact from failures affecting welfare, health, or finance"
+            ]
+          }
+        ],
+        "keyInsight": "DPI crises differ fundamentally from commercial crises because they threaten democratic legitimacy and citizen welfare. Your role shifts from protecting organizational assets to protecting public trust and citizen outcomes. This requires understanding both technical and political dimensions of crisis."
+      },
+      "exercises": [
+        {
+          "id": "exercise-1-1",
+          "title": "Identify Crisis Signals in Your DPI",
+          "description": "Review recent incidents in your DPI implementation. Classify each as technical, security, political, or operational. Which signals did you miss before they escalated?",
+          "type": "reflection"
+        },
+        {
+          "id": "exercise-1-2",
+          "title": "Map System Vulnerabilities",
+          "description": "Diagram your DPI architecture. Identify single points of failure, critical dependencies, and areas with highest citizen impact. What cascading failures could trigger a crisis?",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "moduleNumber": 2,
+      "title": "Crisis Prevention",
+      "duration": 30,
+      "type": "application",
+      "content": {
+        "overview": "Most crises emerge from preventable systemic weaknesses. This module focuses on building organizational resilience through design thinking, redundancy architecture, and early warning systems that reduce both crisis frequency and severity.",
+        "keyPoints": [
+          {
+            "title": "Resilience-First Design",
+            "description": "Build DPI systems assuming failure will occur. Implement redundancy, graceful degradation, and isolation strategies. Design for citizen continuity, not just technical uptime.",
+            "examples": [
+              "Distributed identity verification across multiple providers rather than single database",
+              "Offline-capable service delivery mechanisms for critical functions",
+              "Real-time transaction isolation preventing single bad transaction from compromising database",
+              "Regional data replication with automatic failover"
+            ]
+          },
+          {
+            "title": "Strong Governance Architecture",
+            "description": "Crises often originate from governance gaps: unclear accountability, poor documentation, inconsistent processes, or absent standards. Build governance that clarifies responsibility and enables rapid decision-making.",
+            "examples": [
+              "Clear incident classification criteria enabling automatic escalation",
+              "Documented decision rights matrix specifying who decides what in crisis",
+              "Regular crisis simulations maintaining organizational muscle memory",
+              "Audit trails documenting all significant system changes"
+            ]
+          },
+          {
+            "title": "Threat Modeling and Risk Assessment",
+            "description": "Systematically identify potential crises before they occur. Engage diverse stakeholders to surface threats from different perspectives. Prioritize prevention investments based on likelihood and impact.",
+            "examples": [
+              "Annual threat modeling workshops including technical, policy, security teams",
+              "Citizen impact assessment for each identified threat",
+              "Regulatory impact analysis for security and political vulnerabilities",
+              "Scenario planning for highest-impact, medium-likelihood crises"
+            ]
+          },
+          {
+            "title": "Continuous Monitoring and Testing",
+            "description": "Prevention requires visibility and validation. Implement continuous system monitoring, regular security testing, and synthetic transaction monitoring to surface issues before citizens experience failure.",
+            "examples": [
+              "Real-time dashboards showing system health metrics and anomalies",
+              "Daily synthetic transactions exercising critical citizen journeys",
+              "Weekly penetration testing against known attack vectors",
+              "Monthly chaos engineering exercises introducing controlled failures"
+            ]
+          },
+          {
+            "title": "Stakeholder Trust as Prevention",
+            "description": "Strong relationships with key stakeholders create organizational shock absorbers. Transparent communication and demonstrated competence reduce the political escalation during technical crises.",
+            "examples": [
+              "Quarterly stakeholder briefings on system health and challenges",
+              "Regular dialogue with media, regulators, and citizen groups",
+              "Clear communication of incidents, causes, and preventive measures",
+              "Demonstrated follow-through on prevention commitments"
+            ]
+          }
+        ],
+        "keyInsight": "Prevention is not about eliminating all risk—that's impossible in complex systems. Prevention is about reducing crisis probability by building in redundancy, visibility, and governance that catches problems before they become public failures. The best crisis response is the one you never need."
+      },
+      "exercises": [
+        {
+          "id": "exercise-2-1",
+          "title": "Design Resilience for Critical Functions",
+          "description": "Select your most critical citizen-facing DPI function. Design redundancy and graceful degradation for that function. How would it behave if primary systems failed?",
+          "type": "design"
+        },
+        {
+          "id": "exercise-2-2",
+          "title": "Threat Modeling Workshop",
+          "description": "Conduct a one-hour threat modeling session with your team. Identify 10 potential crises specific to your DPI. Assess likelihood and citizen impact for each.",
+          "type": "facilitation"
+        },
+        {
+          "id": "exercise-2-3",
+          "title": "Build Monitoring Dashboards",
+          "description": "Specify the key metrics you should monitor daily to provide early warning of crisis. Create a dashboard layout showing how you'd visualize these metrics.",
+          "type": "design"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "moduleNumber": 3,
+      "title": "Crisis Detection",
+      "duration": 30,
+      "type": "application",
+      "content": {
+        "overview": "Even with prevention, crises occur. Rapid detection dramatically reduces impact by enabling faster response and more controlled communication. This module covers detection frameworks, escalation protocols, and crisis declaration criteria.",
+        "keyPoints": [
+          {
+            "title": "Automated Detection Systems",
+            "description": "Implement detection systems that escalate issues before human judgment is compromised by stress or politics. Clear thresholds and automated alerting ensure nothing falls through cracks.",
+            "examples": [
+              "Error rate threshold triggering automatic incident classification",
+              "Response time degradation alerting engineering team immediately",
+              "Data anomaly detection flagging unusual access patterns",
+              "Transaction failure spike alerts triggering escalation protocol",
+              "Security signature matches triggering incident commander notification"
+            ]
+          },
+          {
+            "title": "Human Signal Detection",
+            "description": "Automated systems catch technical signals. But human sources catch context and early political/reputational signals: citizen complaints, stakeholder calls, media inquiries, regulatory questions. Create channels that surface these signals rapidly.",
+            "examples": [
+              "Customer support team empowered to escalate unusual complaint patterns",
+              "Media monitoring service flagging coverage that could indicate emerging crisis",
+              "Stakeholder hotline enabling direct communication with incident commander",
+              "Parliamentary/regulatory body tracking early questions about implementation"
+            ]
+          },
+          {
+            "title": "Crisis Declaration Criteria",
+            "description": "Clear criteria prevent both false alarms (crying wolf) and missed escalations (ignoring signals). Define what constitutes a crisis requiring full response protocol activation.",
+            "examples": [
+              "Service unavailability exceeding 30 minutes for any region",
+              "Data integrity issue affecting citizen records",
+              "Security vulnerability allowing unauthorized access to PII",
+              "Media coverage creating public perception of system failure",
+              "Regulatory inquiry requiring formal response within 24 hours",
+              "Cascading failures affecting multiple dependent services"
+            ]
+          },
+          {
+            "title": "Escalation Protocols",
+            "description": "Once detected, crises must escalate through clear channels to decision-makers. Unclear escalation means crises languish at junior staff level where real decisions cannot be made.",
+            "examples": [
+              "Automated page to on-call incident commander upon crisis declaration",
+              "Automatic executive team notification after 15 minutes of unresolved crisis",
+              "Minister/senior official briefing activation for high-impact crises",
+              "Parallel escalation to security, communications, and policy teams"
+            ]
+          },
+          {
+            "title": "Incident Severity Classification",
+            "description": "Not all crises are equal. Severity classification ensures resources match impact and enables communication calibration (internal-only vs. public disclosure required).",
+            "examples": [
+              "P0 (Critical): System-wide outage or major security breach",
+              "P1 (Severe): Regional outage or credential compromise affecting thousands",
+              "P2 (Moderate): Degraded performance or limited credential compromise",
+              "P3 (Minor): Single user impact or security vulnerability with low exploitability"
+            ]
+          }
+        ],
+        "keyInsight": "Detection speed matters exponentially. A crisis detected and responded to within 30 minutes might be contained with technical response only. The same crisis detected after 3 hours requires public communication and damage control. Build detection as a primary defense, not an afterthought."
+      },
+      "exercises": [
+        {
+          "id": "exercise-3-1",
+          "title": "Define Crisis Thresholds",
+          "description": "For three key metrics in your DPI (error rate, latency, failed transactions), define the threshold that should trigger crisis detection. Justify why these thresholds matter.",
+          "type": "analysis"
+        },
+        {
+          "id": "exercise-3-2",
+          "title": "Map Detection Channels",
+          "description": "Document how crises would be detected in your current system. What are the channels (automated monitoring, customer support, media, regulation)? Are there gaps?",
+          "type": "mapping"
+        },
+        {
+          "id": "exercise-3-3",
+          "title": "Test Escalation",
+          "description": "Run a drill where a simulated crisis is detected. Does it escalate to the right decision-maker? How long does escalation take? What would you improve?",
+          "type": "simulation"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "moduleNumber": 4,
+      "title": "Crisis Response",
+      "duration": 45,
+      "type": "application",
+      "content": {
+        "overview": "When a crisis is declared, response speed and coordination determine outcomes. This module covers incident command structures, decision-making protocols, technical response strategies, and the leadership behaviors that enable effective crisis response.",
+        "keyPoints": [
+          {
+            "title": "Incident Command Structure",
+            "description": "Crises are chaotic. Structure channels that chaos into coordinated response. Establish clear roles: incident commander (authority and final decision-maker), technical lead (technical response coordination), communications lead (message coordination), and logistics lead (resource allocation).",
+            "examples": [
+              "Incident commander owns decisions and updates executive sponsors",
+              "Technical lead coordinates root cause analysis and remediation",
+              "Communications lead owns all external messaging (media, public, officials)",
+              "Logistics lead ensures team has resources, breaks, sustained focus"
+            ]
+          },
+          {
+            "title": "Decision-Making Under Uncertainty",
+            "description": "Crisis decisions occur with incomplete information and time pressure. Leaders must decide fast, even knowing future information will prove some decisions suboptimal. Clarity on decision criteria and willingness to course-correct are essential.",
+            "examples": [
+              "Isolating affected system component before full root cause known (prevent spread over complete understanding)",
+              "Communicating publicly about incident before investigation complete (transparency over perfect information)",
+              "Rolling back recent changes despite uncertain causality (risk reversal to prevent further damage)",
+              "Redirecting citizen requests to alternative services before ideal solution available"
+            ]
+          },
+          {
+            "title": "Technical Response Strategies",
+            "description": "Different crises require different technical responses. Common patterns: containment (isolate affected systems), remediation (fix underlying issue), recovery (restore data/functionality), and verification (ensure crisis is truly resolved).",
+            "examples": [
+              "Database corruption: Isolate database, switch to read-only replica, restore from backup, verify data integrity",
+              "Security breach: Isolate compromised systems, revoke compromised credentials, scan for artifacts, patch vulnerability",
+              "System cascading failure: Take down non-essential services to reduce load, restore high-priority services incrementally",
+              "Data inconsistency: Identify inconsistent records, prioritize consistency over completeness, rebuild affected data"
+            ]
+          },
+          {
+            "title": "Parallel Workstreams",
+            "description": "Effective crisis response runs multiple parallel efforts: root cause investigation, temporary fixes, long-term prevention, stakeholder communication, and executive updates. Each requires dedicated attention without blocking the others.",
+            "examples": [
+              "Engineering fixes immediate issue while SRE investigates root cause",
+              "Communications drafts public statements while executive team briefs officials",
+              "Policy team identifies regulatory implications while technical team patches vulnerability",
+              "Operations team implements manual workarounds while engineers work on system restoration"
+            ]
+          },
+          {
+            "title": "Leadership Presence and Clarity",
+            "description": "In crisis, teams look to leadership for reassurance that someone has situational awareness and control. Visible presence, clear communication of understanding (what happened, why, what we're doing), and calm confidence enable team focus.",
+            "examples": [
+              "Incident commander joins response calls with current status understanding, not questions",
+              "Regular (15-minute) all-hands updates maintaining shared understanding",
+              "Clear communication to team: what decisions have been made vs. still pending",
+              "Recognition of team effort and sacrifice during extended response"
+            ]
+          }
+        ],
+        "keyInsight": "Crisis response is not about finding perfect solutions—it's about making good decisions with incomplete information, executing them decisively, and maintaining team coherence under stress. Your job as leader is creating psychological safety for technical teams to operate at their best, making visible decisions that guide resource allocation, and managing uncertainty communication."
+      },
+      "exercises": [
+        {
+          "id": "exercise-4-1",
+          "title": "Crisis Response Playbook",
+          "description": "Create a one-page response playbook for your highest-risk scenario. Define incident command structure, decision criteria, parallel workstreams, and escalation points.",
+          "type": "design"
+        },
+        {
+          "id": "exercise-4-2",
+          "title": "Crisis Simulation",
+          "description": "Run a two-hour simulated crisis with your team. Inject complications and new information as you proceed. Evaluate decision-making speed, coordination, and leadership presence.",
+          "type": "simulation"
+        },
+        {
+          "id": "exercise-4-3",
+          "title": "Analyze Past Crisis Response",
+          "description": "Review a significant incident your organization faced. Map decision points, identify what worked well, and determine what you'd improve in future response.",
+          "type": "retrospective"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "moduleNumber": 5,
+      "title": "Stakeholder Management in Crisis",
+      "duration": 40,
+      "type": "application",
+      "content": {
+        "overview": "Crises do not occur in isolation. Multiple stakeholders have interests, concerns, and influence on crisis outcome: citizens (primary victims), officials (political responsibility), media (narrative control), other agencies (interdependencies), and staff (frontline burden). Managing stakeholder relationships in crisis is as critical as technical response.",
+        "keyPoints": [
+          {
+            "title": "Stakeholder Mapping and Interest Analysis",
+            "description": "Different stakeholders view the same crisis differently based on their position and interests. Early mapping prevents surprises and enables proactive relationship management.",
+            "examples": [
+              "Citizens: Direct service impact, trust in government, eligibility for benefits",
+              "Officials: Public accountability, media narrative, regulatory consequences",
+              "Other Agencies: Service dependencies, shared data security, policy coordination",
+              "Staff: Job security, personal responsibility, workload and stress",
+              "Media: Narrative arc, accountability angle, public interest dimension"
+            ]
+          },
+          {
+            "title": "Transparency and Controlled Communication",
+            "description": "Crises generate information vacuums. Vacuums fill with speculation and rumor. Proactive, honest communication about what you know, what you're uncertain about, and what you're doing fills that vacuum and maintains trust.",
+            "examples": [
+              "First public statement within 2 hours: What happened, customer impact, immediate response",
+              "Hourly updates on resolution progress while investigating root cause",
+              "Honest communication about causality: 'We don't know yet' rather than speculation",
+              "Clear information about what citizens should do during incident",
+              "Post-incident report explaining what happened and prevention measures"
+            ]
+          },
+          {
+            "title": "Executive and Official Stakeholder Briefing",
+            "description": "Officials face political and regulatory consequences. They need different information than citizens: political implications, regulatory consequences, prevention commitments, and timeline for full response.",
+            "examples": [
+              "Briefing format: Situation, Immediate Actions, Stakeholder Impact, Prevention Plan, Timeline",
+              "Regular updates as situation evolves to prevent surprises",
+              "Proactive disclosure of issues before media coverage breaks it",
+              "Engagement with officials on narrative to counter misinformation"
+            ]
+          },
+          {
+            "title": "Citizen Communication and Support",
+            "description": "Citizens are directly affected. Communication must be frequent, clear, honest about impact, and supportive of their concerns. Support mechanisms (customer service surge, financial compensation, service restoration priority) demonstrate care.",
+            "examples": [
+              "Clear explanation of incident impact on individual citizen (not technical jargon)",
+              "Information about when service will be restored with realistic timelines",
+              "Options for citizen action: workarounds, manual processes, service alternatives",
+              "Support mechanisms: expanded call center capacity, compensation for losses, priority recovery"
+            ]
+          },
+          {
+            "title": "Inter-Agency and Partner Coordination",
+            "description": "DPI systems rarely exist in isolation. Crises often affect multiple agencies. Early coordination prevents cascading failures and conflicting communications.",
+            "examples": [
+              "Immediate notification of dependent agencies when your systems fail",
+              "Coordination on alternative service delivery while your systems recover",
+              "Joint communications preventing conflicting public statements",
+              "Coordination on prevention measures affecting shared infrastructure"
+            ]
+          }
+        ],
+        "keyInsight": "In crisis, stakeholder communication is not a secondary concern—it IS the crisis response in public perception. How stakeholders perceive the crisis (competent response, transparency, care for citizens) shapes whether the organization recovers trust quickly or faces prolonged legitimacy damage. Invest in stakeholder relationships before crisis; manage them meticulously during crisis."
+      },
+      "exercises": [
+        {
+          "id": "exercise-5-1",
+          "title": "Stakeholder Analysis",
+          "description": "For your DPI, identify 6-8 key stakeholder groups. For each, define their interests, concerns, and influence. How would each view a major crisis?",
+          "type": "analysis"
+        },
+        {
+          "id": "exercise-5-2",
+          "title": "Communication Template Development",
+          "description": "Develop communication templates for key stakeholders: citizen announcement, official briefing, media statement, staff update. How does message differ by audience?",
+          "type": "design"
+        },
+        {
+          "id": "exercise-5-3",
+          "title": "Simulate Multi-Stakeholder Response",
+          "description": "Run a simulation where you manage citizen, official, media, and staff communication simultaneously. How do you balance transparency, reassurance, and realistic timelines?",
+          "type": "simulation"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "moduleNumber": 6,
+      "title": "Communication During Crisis",
+      "duration": 40,
+      "type": "application",
+      "content": {
+        "overview": "Communication is not an element of crisis response—it IS the crisis response in public perception. What you say, how you say it, when you say it, and who says it shapes whether the organization regains trust or spirals into deeper legitimacy crisis. This module focuses on communication strategy, message discipline, and narrative management.",
+        "keyPoints": [
+          {
+            "title": "Communication Objectives and Narrative",
+            "description": "Clear communication objectives prevent contradictory statements and message drift. Narrative framing shapes public perception: is this a technical glitch or systematic failure? A temporary disruption or ongoing vulnerability? Controlled narrative beats narrative written by critics.",
+            "examples": [
+              "Objective: Demonstrate responsible rapid response (not hide/minimize incident)",
+              "Narrative: 'We discovered issue, immediately isolated systems, initiated recovery'",
+              "Counter-narrative prevention: Proactive disclosure beats news story breaking it",
+              "Tone: Professional competence, care for citizens, commitment to prevention"
+            ]
+          },
+          {
+            "title": "Message Development and Discipline",
+            "description": "In crisis, multiple people communicate to multiple audiences. Without discipline, you get conflicting statements that amplify crisis perception. Central message discipline with audience-specific variants maintains coherence.",
+            "examples": [
+              "Core message: 'System failure at [time], we responded immediately, service restoring'",
+              "Citizen variant: 'Your account is safe, service restoring by [time], here's what to do now'",
+              "Official variant: 'Root cause analysis underway, prevention measures planned, timeline for report'",
+              "Staff variant: 'We handled this well together, here's what we learned, prevention roadmap'"
+            ]
+          },
+          {
+            "title": "Spokesperson and Channel Management",
+            "description": "Who speaks matters. Different spokespersons carry different credibility for different messages. Wrong spokesperson for message creates impression of obfuscation or confusion.",
+            "examples": [
+              "Technical lead speaks to media about technical facts (credible expertise)",
+              "Executive/official speaks to public about accountability and next steps (political legitimacy)",
+              "Customer service lead speaks to citizen concerns (demonstrates care and engagement)",
+              "Chief executive speaks to overall commitment to improvement (organizational legitimacy)"
+            ]
+          },
+          {
+            "title": "Timing and Cadence of Communication",
+            "description": "Initial communication within 2 hours sets tone and prevents speculation. Ongoing updates every 30-60 minutes during active crisis demonstrate control. Post-incident updates after resolution maintain accountability.",
+            "examples": [
+              "First statement (within 1 hour): Acknowledgment, status, customer impact, what we're doing",
+              "Hourly updates (hours 2-6): Progress toward resolution, no timeline guessing",
+              "Transition statement: Root cause identified, recovery timeline, prevention commitment",
+              "Resolution statement: Incident over, temporary measures in place, permanent fix timeline",
+              "Post-incident report (within 1 week): Full timeline, root cause, prevention measures"
+            ]
+          },
+          {
+            "title": "Media Engagement Strategy",
+            "description": "Media shapes public narrative. Engagement strategy prevents media from writing crisis narrative exclusively from critic/opposition perspective. Proactive media engagement provides media facts, context, and human perspective.",
+            "examples": [
+              "Proactive media briefing: 'Here's what happened and our response timeline'",
+              "Access to credible technical expert: Journalists can verify technical facts directly",
+              "Human impact coverage: Stories of staff effort, customer support, responsible decision-making",
+              "Prevention narrative: 'Here's what we're doing to prevent this recurring'"
+            ]
+          }
+        ],
+        "keyInsight": "In crisis, silence amplifies crisis perception exponentially. Every hour of no communication is interpreted as 'they're hiding something' or 'they've lost control.' Continuous, honest communication with clear accountability narrative is your most powerful tool for maintaining stakeholder trust and enabling organizational recovery."
+      },
+      "exercises": [
+        {
+          "id": "exercise-6-1",
+          "title": "Crisis Communication Plan",
+          "description": "Develop a communication plan for a simulated crisis. Define objectives, core narrative, key messages for different audiences, spokesperson assignments, and communication timeline.",
+          "type": "design"
+        },
+        {
+          "id": "exercise-6-2",
+          "title": "Media Simulation",
+          "description": "Run a media scenario where journalists ask hard questions about crisis. Practice providing honest answers that maintain credibility while managing narrative.",
+          "type": "simulation"
+        },
+        {
+          "id": "exercise-6-3",
+          "title": "Analyze Real Crisis Communication",
+          "description": "Study a real government crisis (data breach, system failure, policy setback). Evaluate communication strategy: what worked, what backfired, what was missing?",
+          "type": "analysis"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "moduleNumber": 7,
+      "title": "Recovery and Learning",
+      "duration": 35,
+      "type": "application",
+      "content": {
+        "overview": "Crisis does not end when systems are restored. Recovery includes restoring citizen trust, fixing root causes, implementing prevention, and extracting lessons for organizational learning. This extended recovery phase determines whether crisis becomes a setback or a catalyst for improvement.",
+        "keyPoints": [
+          {
+            "title": "Service Restoration Verification",
+            "description": "Declaring service 'restored' when it isn't is catastrophic for trust. Rigorous verification that services work as expected for all citizens is essential before publicly closing the incident.",
+            "examples": [
+              "Synthetic transaction testing across all geographies and user segments",
+              "Selective citizen testing (volunteer users verify service works for them)",
+              "Backlog processing: transactions failed during outage must complete successfully",
+              "Performance baseline verification: system performing at pre-incident levels",
+              "Security audit: verify incident did not leave security vulnerabilities"
+            ]
+          },
+          {
+            "title": "Root Cause Analysis and Prevention",
+            "description": "Root cause analysis goes beyond 'what failed' to 'why did this not get caught earlier?' Prevention focuses on stopping similar incidents by fixing underlying systemic weaknesses.",
+            "examples": [
+              "Technical root cause: 'Database connection pool exhausted under load'",
+              "System root cause: 'Load testing never simulated peak concurrent load'",
+              "Organizational root cause: 'Monitoring did not alert on connection pool exhaustion'",
+              "Prevention: Increase connection pool, add monitoring, implement load testing in CI/CD"
+            ]
+          },
+          {
+            "title": "Accountability and Transparency Reporting",
+            "description": "Post-incident reports documenting what happened, why, and what's being done create accountability and rebuild trust. Reports should be honest about organizational failures, not defensive.",
+            "examples": [
+              "Public post-incident report (within 1 week of resolution)",
+              "Detailed timeline of incident and response decisions",
+              "Root cause analysis with specific technical and organizational factors",
+              "Accountability: Who could have prevented this? What actions will be taken?",
+              "Prevention roadmap with specific measures, timelines, and ownership"
+            ]
+          },
+          {
+            "title": "Team Debrief and Organizational Learning",
+            "description": "Crises reveal gaps in thinking, processes, and capabilities. Structured team debrief captures lessons and prevents knowledge loss. Lessons become organizational property, not individual memory.",
+            "examples": [
+              "Incident review meeting within 48 hours while memory is fresh",
+              "What went well: Communication, decision-making, team coordination, technical response",
+              "What could improve: Faster detection, clearer escalation, better planning, different technical choices",
+              "Action items: Process changes, training, tooling, capacity investments",
+              "Follow-up: Verify improvements actually implemented, not just planned"
+            ]
+          },
+          {
+            "title": "Citizen Communication and Trust Restoration",
+            "description": "Some citizens were harmed or inconvenienced. Communicating about prevention and demonstrating improved systems helps restore trust gradually. Recognition of impact and commitment to prevent recurrence matter.",
+            "examples": [
+              "Honest acknowledgment of incident impact on citizens",
+              "Explanation of what happened in plain language (not technical jargon)",
+              "Description of prevention measures being implemented",
+              "Invitation for citizen feedback on how DPI could be more reliable",
+              "Compensation or acknowledgment if incidents caused citizen loss"
+            ]
+          }
+        ],
+        "keyInsight": "Recovery is not closing the incident—it's converting crisis into organizational capability and wisdom. The best crises are ones where organizations emerge with better systems, clearer processes, and deeper understanding of their vulnerabilities. Invest in recovery as thoroughly as you did in response, and view prevention work as your most important leadership contribution."
+      },
+      "exercises": [
+        {
+          "id": "exercise-7-1",
+          "title": "Root Cause Analysis Framework",
+          "description": "For a past incident, conduct a full root cause analysis. What was the technical failure? Why wasn't it caught? What organizational factors contributed?",
+          "type": "analysis"
+        },
+        {
+          "id": "exercise-7-2",
+          "title": "Post-Incident Report Template",
+          "description": "Create a post-incident report template that balances transparency, accountability, and forward-looking prevention. What sections are essential? What tone works?",
+          "type": "design"
+        },
+        {
+          "id": "exercise-7-3",
+          "title": "Prevention Implementation",
+          "description": "Identify three high-priority prevention items from a recent incident. Create implementation roadmaps with owners, timelines, and success criteria.",
+          "type": "planning"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "moduleNumber": 8,
+      "title": "Personal Crisis Leadership",
+      "duration": 40,
+      "type": "application",
+      "content": {
+        "overview": "Crises test leadership character and capability like nothing else. How you lead during crisis—your presence, clarity, resilience, and humanity—sets organizational tone and enables team performance. This module focuses on self-leadership during crisis and modeling the behaviors that enable organizational response.",
+        "keyPoints": [
+          {
+            "title": "Self-Awareness Under Stress",
+            "description": "Stress, fear, and urgency distort perception. Leaders must maintain awareness of their emotional state and how it's affecting decision-making. Awareness enables correction.",
+            "examples": [
+              "Recognizing when fear is making you over-cautious in decision-making",
+              "Noticing when urgency is making you skip consultation or process",
+              "Awareness of own fatigue affecting judgment after extended crisis response",
+              "Recognizing impulse to blame or minimize rather than acknowledge and fix",
+              "Noticing communication tone shifting toward blame vs. accountability"
+            ]
+          },
+          {
+            "title": "Psychological Resilience",
+            "description": "Crises are emotionally draining. Leaders must maintain psychological resilience over extended response and recovery periods. Resilience enables sustained focus despite fatigue and uncertainty.",
+            "examples": [
+              "Physical self-care: Sleep, nutrition, exercise despite crisis time pressure",
+              "Emotional support: Trusted advisors, mentors, or coaches during extended crisis",
+              "Meaning-making: Connecting response to larger DPI mission and citizen impact",
+              "Breaks and recovery: Taking time away to maintain perspective and prevent burnout",
+              "Humor and humanity: Maintaining perspective that this is solvable and manageable"
+            ]
+          },
+          {
+            "title": "Visible Presence and Calmness",
+            "description": "In crisis, people look to leadership for cues about whether this is manageable or catastrophic. Visible presence, calm composure, and clear thinking transmit confidence and enable team focus.",
+            "examples": [
+              "Present in response calls and decision points, not delegated entirely",
+              "Speaking clearly and deliberately (not rushed or emotional)",
+              "Asking clarifying questions that demonstrate understanding",
+              "Making visible decisions when decisions are needed",
+              "Acknowledging difficulty while maintaining confidence in solution"
+            ]
+          },
+          {
+            "title": "Clear Decision-Making Communication",
+            "description": "Teams need clarity on what's been decided, what's still open, what's delegated, and what timeline applies. Ambiguous decision communication creates stress and inefficiency.",
+            "examples": [
+              "Stating decisions clearly: 'We're rolling back the last deployment'",
+              "Explaining rationale briefly: 'To isolate the problem quickly'",
+              "Clarifying implications: 'This means customers will see [impact]'",
+              "Assigning ownership: 'Sarah is leading remediation; Tom is leading communication'",
+              "Specifying timeline: 'Check-in in 30 minutes with status update'"
+            ]
+          },
+          {
+            "title": "Team Care and Appreciation",
+            "description": "Crises demand intense effort from teams. Acknowledging that effort, distributing burden fairly, protecting team well-being, and showing appreciation shapes team resilience and loyalty.",
+            "examples": [
+              "Ensuring team gets breaks, food, rest during extended crisis response",
+              "Rotating on-call and critical response roles to prevent burnout",
+              "Publicly acknowledging team effort in all-hands and external communications",
+              "Recognition of specific contributions and problem-solving by individuals",
+              "Post-crisis: Additional time off, bonuses, or career development for extended effort"
+            ]
+          },
+          {
+            "title": "Honest Accountability",
+            "description": "Crises reveal failures: organizational, systemic, and sometimes personal. Leaders who take honest accountability (rather than blame-shifting) preserve credibility and enable learning.",
+            "examples": [
+              "In post-incident review: 'We should have caught this earlier with better monitoring'",
+              "In public communications: 'We take responsibility for this incident and prevention'",
+              "With officials: 'Here's where we fell short and how we're fixing it'",
+              "With team: 'I should have pushed harder on monitoring implementation'",
+              "Following through: Making promised changes, not just acknowledging failures"
+            ]
+          }
+        ],
+        "keyInsight": "Crisis response exposes leadership character completely. You cannot fake calm under pressure, cannot hide fear, cannot pretend to understand when you don't. Your authentic presence—acknowledging difficulty while maintaining confidence, making visible decisions, taking accountability, and demonstrating care for team—enables organizational response far more than your technical knowledge. Invest in developing the emotional and psychological capacity for crisis leadership, not just the technical and strategic skills."
+      },
+      "exercises": [
+        {
+          "id": "exercise-8-1",
+          "title": "Self-Assessment: Crisis Leadership Readiness",
+          "description": "Assess your own readiness for crisis leadership. How would you rate yourself on: psychological resilience, decision clarity, team care, accountability, visible presence? Where are your strongest and weakest areas?",
+          "type": "reflection"
+        },
+        {
+          "id": "exercise-8-2",
+          "title": "Crisis Simulation with Personal Focus",
+          "description": "Run a crisis simulation and focus on your own leadership behaviors: calmness, clarity, decision-making, team communication. Have observers provide feedback on your presence and impact.",
+          "type": "simulation"
+        },
+        {
+          "id": "exercise-8-3",
+          "title": "Build Personal Resilience Plan",
+          "description": "Create a personal plan for maintaining resilience during extended crisis. What practices help you stay grounded? What support systems do you need? How will you sustain yourself during multi-day response?",
+          "type": "planning"
+        },
+        {
+          "id": "exercise-8-4",
+          "title": "Crisis Leadership Debrief",
+          "description": "After your next significant incident, debrief your own leadership. What worked well? What would you do differently? How did your emotional state affect decision-making?",
+          "type": "reflection"
+        }
+      ]
+    }
+  ]
+}

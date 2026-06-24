@@ -1,0 +1,111 @@
+{
+  "id": "community-cold-start",
+  "course": "community-building-fundamentals",
+  "difficulty": "intermediate",
+  "title": "The Cold Start Problem: Launching a DPI Community",
+  "country": "Kenya",
+  "caseType": "community_launch",
+  "learningObjectives": [
+    "Navigate the chicken-and-egg challenge of community building",
+    "Design launch strategies that create early momentum",
+    "Identify and recruit founding members effectively",
+    "Balance exclusivity with growth in early stages"
+  ],
+  "context": {
+    "yourRole": "Community Program Manager for a new DPI knowledge-sharing initiative. You've been hired to build a community of government digital transformation leads across East Africa.",
+    "situation": "The Digital Transformation Office (DTO) has secured funding for a 3-year community initiative. They want to connect government officials working on DPI projects across Kenya, Uganda, Tanzania, Rwanda, and Ethiopia. There's no existing community - you're starting from zero.",
+    "pressure": "Your funders expect 500 active members within 18 months. The DTO Director is enthusiastic but has unrealistic expectations about viral growth. You've been given 6 months to show 'significant traction.'",
+    "reality": "Government officials are busy, skeptical of new initiatives, and have been burned by communities that launched with fanfare then faded. Most prefer informal WhatsApp groups to formal platforms. There's genuine need for peer learning, but no one has successfully created a sustained community in this space."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Week 1: Strategy Meeting\n\nYou're meeting with the DTO Director and Communications Lead to discuss launch strategy.\n\nDTO Director: 'I'm excited about this! I've been talking to donors about our community vision - 500 members sharing knowledge across the region. They love it. We should do a big launch event, get the ministers involved, generate buzz.'\n\nComms Lead: 'I can prepare press releases and social media campaigns. We should target all government digital leads - there must be thousands across the five countries. Mass email to all our contacts?'\n\nDTO Director: 'Exactly. Go big or go home. We need numbers to show funders progress.'\n\nYou review the proposed plan:\n- Launch event with ministerial speeches (2 months to organize)\n- Press release and media coverage\n- Mass email to 3,000+ government contacts\n- Open registration on new community platform\n- Target: 500 registrations in first month\n\nYou also have research from other community launches:\n- GovTech Forum (Nigeria): Launched big, 800 registrations, but only 40 active members after 6 months\n- Digital Leaders Network (Rwanda): Started with 30 invited members, grew to 200 highly engaged members over 18 months\n- AfriDPI Community: Launched with webinar series, good attendance but no ongoing engagement\n\nThe Director is waiting for your input.",
+      "prompt": "What concerns do you have about the proposed launch strategy? What alternative approach would you suggest?",
+      "evaluationCriteria": [
+        "**Cold Start Recognition**: Do they understand why big launches often fail to create engaged communities?",
+        "**Quality vs Quantity**: Do they challenge the focus on registration numbers over engagement?",
+        "**Founding Member Strategy**: Do they propose starting with a smaller group of committed members?",
+        "**Realistic Expectations**: Do they push back on the 500-member timeline while offering achievable alternatives?",
+        "**Evidence-Based**: Do they use the research examples to support their recommendations?"
+      ],
+      "coachingNotes": "This is the classic 'go big or go home' fallacy in community building. The proposed strategy optimizes for vanity metrics (registrations) over actual community health (engagement). Big launches create 'ghost town' communities - lots of accounts, no activity. The research examples prove this: Rwanda's small-start approach built a healthier community than Nigeria's big launch.\n\nThe better approach: Start with 20-30 carefully selected founding members who are already passionate about DPI, have something to contribute, and are connected to others. Build real engagement with this core group, then expand. This feels slower but actually builds faster because you're creating genuine community dynamics, not just a mailing list.\n\nThe diplomatic challenge: How do you redirect the Director's enthusiasm without seeming negative or unambitious? Key tactics: (1) Reframe success metrics - engagement rate matters more than registration count; (2) Position small start as 'exclusive early access' rather than 'slow launch'; (3) Use the research to show precedent; (4) Propose a phased approach that still delivers impressive numbers by the 18-month mark."
+    },
+    {
+      "round": 2,
+      "type": "decision_point",
+      "situation": "Week 3: Identifying Founding Members\n\nThe Director agreed to a phased launch approach: start with a founding group of 30-40 members, then expand. Now you need to identify and recruit these founding members.\n\nYou have several potential sources:\n\n**Option A: Senior Leaders**\nThe Director wants to invite Permanent Secretaries and Department Heads - senior officials who can attract others with their prestige.\n- Pros: High profile, legitimacy, can open doors\n- Cons: Unlikely to actively participate (too busy, delegate to staff), may not engage in peer discussions\n\n**Option B: Active Practitioners**\nMid-level officials who are actually implementing DPI projects day-to-day.\n- Pros: Have real questions and experiences to share, time to participate\n- Cons: Less influential, might not attract senior attention\n\n**Option C: Known Networkers**\nPeople already active in informal WhatsApp groups and regional networks - known for connecting others.\n- Pros: Already community-minded, have networks, proven engagement\n- Cons: Might overlap with existing informal communities\n\n**Option D: High-Potential Juniors**\nYounger officials eager to build their professional networks and learn.\n- Pros: Enthusiastic, time-rich, digitally native\n- Cons: Less experience to share, less influence\n\nThe Director strongly prefers Option A: 'We need senior people to give this credibility. If we start with junior staff, senior people won't join later.'\n\nYou also have intelligence that several senior officials have been invited to many such initiatives and are suffering from 'community fatigue.'",
+      "prompt": "How would you compose your founding member group? What mix would you recommend and how would you justify it to the Director?",
+      "evaluationCriteria": [
+        "**Balanced Approach**: Do they recommend a mix rather than single category?",
+        "**Engagement Prediction**: Do they consider who will actually participate, not just who looks impressive?",
+        "**Community Dynamics**: Do they think about the interactions between different member types?",
+        "**Director Management**: Do they find ways to include senior members while managing expectations?",
+        "**Network Effects**: Do they consider who can attract other valuable members?"
+      ],
+      "coachingNotes": "The Director's instinct (senior people = credibility) isn't wrong, but the implementation is. Communities need engaged members, not prestigious names on a list. Senior officials who don't participate create worse dynamics than not having them at all.\n\nThe ideal founding group is probably:\n- 5-10 senior sponsors who appear occasionally (keynote a session, lend their name)\n- 15-20 active practitioners who will drive daily engagement\n- 5-10 connectors who bridge networks and bring in new members\n\nOption C (networkers) is especially valuable - these are the people who already demonstrate community-building behavior. They'll do a lot of the work for you.\n\nFraming for the Director: 'We'll have senior engagement through a Leadership Council that provides strategic guidance and appears at key moments. The day-to-day community will be driven by the people doing the work - which is actually what our target members want: peer learning with people facing similar challenges, not lectures from executives.'\n\nThe 'community fatigue' insight is gold - use it. Senior officials have seen too many initiatives that demand their time without delivering value. A community where they're asked to contribute occasionally but aren't expected to be daily participants might actually appeal more."
+    },
+    {
+      "round": 3,
+      "type": "response_analysis",
+      "situation": "Week 6: The Founding Member Outreach\n\nYou've identified 45 potential founding members across all categories. Now you need to actually recruit them.\n\nYou start with personal outreach. The first 10 responses:\n\nJohn (Kenya, DPI Lead): 'Sounds interesting. What's the time commitment? I'm in too many WhatsApp groups already.'\n\nMaria (Tanzania, Tech Director): 'I've joined several communities like this. They always start strong then die. What's different about this one?'\n\nPeter (Rwanda, Innovation Lead): 'I'd love to join but my ministry requires approval for any external platforms. Can you send official documentation?'\n\nAisha (Uganda, Digital Services): 'Is this replacing the existing DPI WhatsApp group? I'm confused about how they relate.'\n\nDavid (Kenya, Senior Advisor): 'I'll have my junior staff participate and report back to me.'\n\nSamuel (Ethiopia, IT Director): 'What's the value proposition? Why should I spend time here instead of just reading the World Bank reports?'\n\nGrace (Tanzania, Program Manager): 'I'm interested! When can I start? Happy to help shape the community.'\n\nFatima (Kenya, Policy Lead): 'My organization prohibits staff from participating in external forums without legal review.'\n\nMichael (Rwanda, CIO): No response after two follow-ups.\n\nSarah (Uganda, Deputy Director): 'Count me in. I've been looking for something like this. Can I invite some colleagues?'\n\nYou notice patterns:\n- Skepticism about sustainability\n- Concerns about time commitment\n- Bureaucratic barriers\n- Confusion about positioning\n- Some genuine enthusiasm",
+      "prompt": "How do you interpret these responses? What adjustments would you make to your outreach and onboarding approach?",
+      "evaluationCriteria": [
+        "**Pattern Recognition**: Do they identify the underlying concerns in the responses?",
+        "**Targeted Responses**: Do they propose different approaches for different concerns?",
+        "**Value Proposition Clarity**: Do they recognize the need to better articulate unique value?",
+        "**Barrier Removal**: Do they address bureaucratic barriers proactively?",
+        "**Champion Identification**: Do they recognize Grace and Sarah as potential community champions?"
+      ],
+      "coachingNotes": "These responses are a goldmine of insight if you read them right:\n\n1. **Sustainability skepticism (Maria)**: Previous community failures have created learned helplessness. You need to address this head-on - explain what's different, but more importantly, show it through actions. Early wins matter.\n\n2. **Time commitment concerns (John)**: Members have limited bandwidth. Be explicit about expected time (e.g., '2 hours/month') and make participation flexible.\n\n3. **Bureaucratic barriers (Peter, Fatima)**: These are real and not going away. Prepare official documentation, data privacy assurances, terms of service. Some organizations will still say no.\n\n4. **Positioning confusion (Aisha)**: Clarify the relationship to existing informal networks. Position as 'complement, not replacement' - different purpose, different level of formality.\n\n5. **Delegation (David)**: This is actually fine for senior people. The junior staff might become active members.\n\n6. **Value proposition (Samuel)**: Your value prop isn't clear enough. What can members get here they can't get from reports? Peer conversations, tacit knowledge, connections.\n\n7. **Champions (Grace, Sarah)**: These are your community builders. Recruit them deeply, give them ownership, make them founding leaders.\n\nThe non-response (Michael) is also data - busy senior people need more touchpoints or a different approach.\n\nKey adjustments:\n- Create FAQ addressing common concerns\n- Prepare official documentation package\n- Sharpen value proposition around peer learning\n- Identify and empower enthusiastic members early\n- Set realistic expectations about time commitment"
+    },
+    {
+      "round": 4,
+      "type": "decision_point",
+      "situation": "Week 12: The First 90 Days\n\nYou've successfully recruited 35 founding members. The community has been active for 6 weeks on a Slack workspace. Here's the situation:\n\n**What's Working:**\n- 15 members are actively participating (43% active rate)\n- Grace and Sarah have become unofficial community leaders, starting discussions\n- Two successful 'Office Hours' sessions with high attendance\n- Members are genuinely sharing implementation challenges and solutions\n- The WhatsApp integration is working - quick questions there, deeper discussions in Slack\n\n**What's Concerning:**\n- 20 members haven't posted anything after the first week\n- The Director is getting impatient: 'When do we scale? We're behind on our targets.'\n- A regional donor heard about the community and wants to promote it heavily to meet their own engagement targets\n- Some members are asking 'When will this community do something?' - expecting outputs beyond conversations\n\nThe donor (who contributes 40% of funding) sends this message:\n\n'Excited about the community progress! We'd like to feature it in our annual report and drive significant registrations through our network. We can easily get you to 500 members by Q3. Let's schedule a call to discuss promotion strategy.'\n\nYour Director is excited: 'This solves our growth problem! The donor's network has exactly our target audience.'\n\nYou're worried that rapid scaling will kill the nascent community dynamics you've worked to build.",
+      "prompt": "How do you handle the donor's offer and the pressure to scale? What's your strategy for the next phase?",
+      "evaluationCriteria": [
+        "**Growth Timing**: Do they recognize that premature scaling can kill communities?",
+        "**Stakeholder Management**: Do they find ways to satisfy the donor without compromising community health?",
+        "**Engagement First**: Do they prioritize activating inactive members before adding new ones?",
+        "**Sustainable Metrics**: Do they propose metrics that matter beyond registration numbers?",
+        "**Community Maturity**: Do they assess whether the community is ready for growth?"
+      ],
+      "coachingNotes": "This is the classic scaling trap. The donor and Director want numbers; you need health. Scaling a community before it has strong culture and engaged core members is like adding fuel to a fire that hasn't really caught - you'll smother it.\n\n43% active rate in founding members is actually quite good, but it means you haven't yet figured out how to engage everyone. Adding 450 new members when you can't engage 35 will create a ghost town.\n\nStrategy framework:\n1. **Reframe the metrics conversation**: 'We can get 500 registrations easily, but we're optimizing for something more valuable - active engagement. Our 43% active rate compares to typical community rates of 10-20%. Let's preserve this.'\n\n2. **Offer alternative donor value**: 'Instead of mass promotion, let's co-create high-visibility content - a report on DPI implementation insights that showcases both the community and the donor's investment.'\n\n3. **Propose phased growth**: 'We'll open applications for Cohort 2 (50 members) in Month 4, Cohort 3 (100 members) in Month 7. This maintains quality while building toward the target.'\n\n4. **Re-engage inactive founding members**: Before adding new members, understand why 20 aren't participating. Adjust the experience based on their feedback.\n\n5. **Address the 'do something' request**: Plan concrete outputs - a shared resource library, a peer learning program, working groups on specific challenges. Communities that only talk eventually lose energy.\n\nThe diplomatic challenge is satisfying the donor's need for visibility without accepting mass promotion. The Director needs help seeing that 500 disengaged members is worse than 200 engaged ones for the community's long-term success (and the funder relationship)."
+    }
+  ],
+  "keyTakeaways": [
+    "Big launches often create ghost-town communities - lots of registrations, no engagement",
+    "Start with carefully selected founding members who will actively participate",
+    "Quality of engagement matters more than quantity of members",
+    "Founding member responses reveal critical insights about value proposition and barriers",
+    "Skepticism from potential members is useful data, not just resistance",
+    "Senior sponsors and active participants serve different roles - plan for both",
+    "Premature scaling kills nascent communities - grow only when the core is strong",
+    "Donor and stakeholder pressure for numbers must be redirected toward meaningful metrics",
+    "Communities need both conversation and tangible outputs to maintain energy"
+  ],
+  "frameworks": [
+    {
+      "name": "Minimum Viable Community",
+      "description": "The smallest community that can create value and grow sustainably. Includes: clear purpose, founding members, initial content/activity, engagement mechanism, and value proposition.",
+      "application": "Before scaling, validate that your MVC is working - members are engaging, finding value, and willing to recruit others."
+    },
+    {
+      "name": "Founding Member Selection Matrix",
+      "description": "Evaluate potential founding members on: (1) Passion for topic, (2) Ability to contribute, (3) Network connections, (4) Likelihood to actively participate, (5) Time availability.",
+      "application": "Score each potential founder. Prioritize those with high scores across multiple dimensions rather than high scores on prestige alone."
+    },
+    {
+      "name": "Community Growth Readiness",
+      "description": "Assess whether community is ready to scale: (1) Active engagement rate above 30%, (2) Member-to-member interactions happening, (3) Clear onboarding process, (4) Core culture established, (5) Value proposition proven.",
+      "application": "Only scale when you can answer 'yes' to at least 4 of 5 criteria. Scaling earlier dilutes what you've built."
+    }
+  ],
+  "relatedCases": [
+    "community-platform-migration",
+    "community-engagement-crisis",
+    "stakeholder-onboarding-resistance"
+  ]
+}

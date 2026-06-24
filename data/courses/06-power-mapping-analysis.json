@@ -1,0 +1,1287 @@
+{
+  "id": "power-mapping-analysis",
+  "slug": "power-mapping-analysis",
+  "courseNumber": 6,
+  "title": "Power Mapping and Analysis",
+  "subtitle": "Understanding Influence Networks",
+  "tier": 2,
+  "category": "Stakeholder Dynamics",
+  "duration": "4 hours",
+  "difficulty": "Application",
+  "description": "Map formal and informal power structures. Identify key influencers and decision-makers.",
+  "learningObjectives": [
+    "Map formal and informal power",
+    "Identify key decision-makers",
+    "Understand influence networks"
+  ],
+  "prerequisites": [],
+  "relatedCourses": [],
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Understanding Power in Organizations",
+      "duration": "30 min",
+      "type": "theory",
+      "content": {
+        "overview": "Power in government organizations exists in multiple forms - some visible, some hidden. Understanding the different types of power and how they operate is essential for navigating digital transformation initiatives. This module introduces the fundamental concepts of organizational power that underpin effective stakeholder engagement.",
+        "keyPoints": [
+          {
+            "title": "The Five Types of Organizational Power",
+            "characteristics": [
+              "Legitimate power: Authority derived from formal position",
+              "Reward power: Ability to provide benefits or resources",
+              "Coercive power: Ability to impose negative consequences",
+              "Expert power: Influence based on knowledge or skills",
+              "Referent power: Influence based on respect and admiration"
+            ],
+            "examples": [
+              "Minister has legitimate power over the ministry",
+              "Budget controller has reward power through funding allocation",
+              "Audit department has coercive power through compliance enforcement",
+              "Chief Technology Officer has expert power in technical decisions",
+              "Respected senior advisor has referent power through credibility"
+            ],
+            "inGovernmentContext": "In DPI initiatives, you will encounter all five types. A successful digital transformation champion often needs to build expert and referent power when they lack legitimate, reward, or coercive power."
+          },
+          {
+            "title": "Formal vs Informal Power",
+            "distinction": {
+              "formalPower": {
+                "description": "Power derived from official position, mandate, or organizational structure",
+                "sources": [
+                  "Job title and rank",
+                  "Budget authority",
+                  "Signing authority",
+                  "Reporting relationships",
+                  "Legal mandates"
+                ],
+                "visibility": "Usually visible in org charts, policies, and formal documents"
+              },
+              "informalPower": {
+                "description": "Power derived from relationships, expertise, or personal attributes",
+                "sources": [
+                  "Personal relationships with key figures",
+                  "Technical expertise others depend on",
+                  "Historical knowledge of the organization",
+                  "Access to information networks",
+                  "Social connections outside work"
+                ],
+                "visibility": "Often invisible and must be discovered through observation and inquiry"
+              }
+            },
+            "inGovernmentContext": "The person who can actually get things done in government is often not the person with the highest title. The Minister's executive assistant may have more practical influence than several directors."
+          },
+          {
+            "title": "Power Dynamics in Digital Transformation",
+            "patterns": [
+              {
+                "pattern": "Technology Threatens Existing Power",
+                "description": "Digital systems often redistribute power by changing who controls information",
+                "example": "A new centralized database removes the gatekeeper power of department heads who previously controlled access to their siloed data",
+                "implication": "Expect resistance from those whose power base depends on information asymmetry"
+              },
+              {
+                "pattern": "Technical Expertise Creates New Power Centers",
+                "description": "Those who understand new technology gain influence",
+                "example": "IT staff who understand the new DPI platform become essential to everyone, gaining expert power",
+                "implication": "Identify and cultivate relationships with technical experts early"
+              },
+              {
+                "pattern": "External Pressure Shifts Internal Power",
+                "description": "Donor requirements or political mandates can override internal hierarchies",
+                "example": "A presidential directive on digital ID gives the implementing team authority that bypasses normal ministry channels",
+                "implication": "Understand the external forces that are reshaping internal power dynamics"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "In government digital transformation, formal power determines who can say yes, but informal power often determines what actually happens. You need to map both to succeed."
+      },
+      "exercises": [
+        {
+          "type": "reflection",
+          "prompt": "Think about a recent decision in your organization. Who had the formal authority to decide? Who actually influenced the outcome? What types of power did each person use?"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Formal Power Structures",
+      "duration": "35 min",
+      "type": "theory",
+      "content": {
+        "overview": "Formal power structures are the official framework of authority in an organization. While they don't tell the whole story, understanding them is essential for knowing who has legitimate decision-making authority and what channels you need to work through.",
+        "keyPoints": [
+          {
+            "title": "Reading Organizational Charts",
+            "techniques": [
+              {
+                "technique": "Hierarchy Analysis",
+                "how": "Trace reporting lines from your target decision up to final approval authority",
+                "lookFor": "Number of levels, span of control, matrix relationships",
+                "example": "A DPI project approval may need to go through Department Head → Director General → Permanent Secretary → Minister"
+              },
+              {
+                "technique": "Functional Grouping",
+                "how": "Understand how functions are organized and where boundaries lie",
+                "lookFor": "Silos between technology and policy, between service delivery and administration",
+                "example": "IT often sits under Administration while digital services may sit under Service Delivery - they may not coordinate"
+              },
+              {
+                "technique": "Matrix Structure Recognition",
+                "how": "Identify where people report to multiple authorities",
+                "lookFor": "Dotted-line relationships, project-based reporting, cross-functional teams",
+                "example": "A DPI project manager may report to IT Director functionally but to the Minister's office for the specific initiative"
+              }
+            ],
+            "inGovernmentContext": "Government org charts often hide important structures - inter-ministerial committees, cabinet subcommittees, and coordination bodies that have significant power."
+          },
+          {
+            "title": "Understanding Mandates and Authority",
+            "elements": [
+              {
+                "element": "Legal Mandate",
+                "description": "Authority granted by law or regulation",
+                "examples": [
+                  "Ministry of ICT mandated to develop national IT policy",
+                  "Data Protection Authority has legal power to audit systems",
+                  "Central Bank has exclusive authority over payment systems"
+                ],
+                "importance": "Legal mandates can override hierarchical authority - know who has statutory power"
+              },
+              {
+                "element": "Delegated Authority",
+                "description": "Power delegated from higher authority, often with limits",
+                "examples": [
+                  "Director can approve spending up to $100K, above requires Secretary approval",
+                  "Project manager authorized to sign vendor contracts under $50K",
+                  "Department head can approve IT changes that don't affect other departments"
+                ],
+                "importance": "Know the delegation limits - what can be decided at each level without escalation"
+              },
+              {
+                "element": "Approval Chains",
+                "description": "Sequence of approvals required for different decisions",
+                "examples": [
+                  "New system procurement: Technical review → Procurement → Legal → Finance → Executive",
+                  "Policy change: Department → Inter-ministerial committee → Cabinet",
+                  "Budget reallocation: Department → Planning → Finance → Treasury"
+                ],
+                "importance": "Map the approval chain for your initiative - one missing approval can block everything"
+              }
+            ]
+          },
+          {
+            "title": "Budget Authority and Resource Control",
+            "aspects": [
+              {
+                "aspect": "Budget Allocation Authority",
+                "description": "Who decides how funds are distributed",
+                "key_questions": [
+                  "Who controls the budget for digital initiatives?",
+                  "Is there a separate IT budget or is it distributed across departments?",
+                  "Who can reallocate funds between line items?",
+                  "What approval is needed for new spending categories?"
+                ],
+                "example": "The Ministry of Finance may have final say on any technology spending over $1M, regardless of which ministry is implementing"
+              },
+              {
+                "aspect": "Procurement Authority",
+                "description": "Who can commit the organization to spend",
+                "key_questions": [
+                  "What procurement rules apply to your initiative?",
+                  "Who has signing authority at different spending levels?",
+                  "Are there preferred vendor lists that constrain choices?",
+                  "What role does central procurement play?"
+                ],
+                "example": "A DPI platform vendor selection may require going through Central Procurement Agency regardless of technical department preferences"
+              },
+              {
+                "aspect": "Human Resource Authority",
+                "description": "Who controls staffing and skills allocation",
+                "key_questions": [
+                  "Who decides on hiring for the project?",
+                  "Can staff be reassigned from other duties?",
+                  "What approval is needed for external consultants?",
+                  "Who controls training budgets?"
+                ],
+                "example": "The Civil Service Commission may need to approve any new technical positions, adding months to timeline"
+              }
+            ],
+            "inGovernmentContext": "In government, budget authority is often more powerful than organizational hierarchy. The person who controls the money may not be your boss, but they can determine your project's fate."
+          }
+        ],
+        "keyInsight": "Formal power structures tell you who can officially approve, block, or fund your initiative. Master this map before trying to navigate the informal networks - you need to know which formal hurdles must be cleared."
+      },
+      "exercises": [
+        {
+          "type": "mapping",
+          "prompt": "For a current or planned DPI initiative, map the formal approval chain. Who needs to sign off? What budget authorities are involved? What legal mandates affect the initiative? Create a visual diagram showing the formal power structure."
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Informal Power Networks",
+      "duration": "35 min",
+      "type": "theory",
+      "content": {
+        "overview": "Informal power networks are the hidden wiring of organizations. While org charts show formal structure, real influence flows through relationships, trust, and expertise. Understanding these networks is often the difference between initiatives that succeed and those that stall despite having official approval.",
+        "keyPoints": [
+          {
+            "title": "Types of Informal Power",
+            "categories": [
+              {
+                "type": "Relationship-Based Power",
+                "description": "Influence derived from personal connections and trust",
+                "manifestations": [
+                  "Long-standing friendship with key decision-maker",
+                  "Shared history or common background",
+                  "Family or social connections outside work",
+                  "Mentor-mentee relationships",
+                  "Alumni networks from same university or training program"
+                ],
+                "example": "The Deputy Director who went to university with the Minister has more real influence than his title suggests",
+                "inGovernmentContext": "Government careers are long - relationships built over decades create invisible channels of influence"
+              },
+              {
+                "type": "Expertise-Based Power",
+                "description": "Influence derived from unique knowledge or skills",
+                "manifestations": [
+                  "Only person who understands the legacy system",
+                  "Deep knowledge of regulatory requirements",
+                  "Technical expertise in emerging technologies",
+                  "Understanding of political dynamics",
+                  "Institutional memory of past failures and successes"
+                ],
+                "example": "The mid-level IT manager who maintained the tax system for 15 years knows where all the integration points are - no decision can be made without consulting her",
+                "inGovernmentContext": "In digital transformation, technical experts become powerful because leaders depend on their knowledge to make decisions"
+              },
+              {
+                "type": "Access-Based Power",
+                "description": "Influence derived from proximity to decision-makers",
+                "manifestations": [
+                  "Executive assistant who controls the calendar",
+                  "Driver who has daily private time with the Minister",
+                  "IT support person who has access to everyone's systems",
+                  "Person who prepares briefing documents",
+                  "Note-taker in key meetings"
+                ],
+                "example": "The Minister's personal assistant decides who gets on the calendar - she effectively controls access to the most powerful person in the ministry",
+                "inGovernmentContext": "Never underestimate support staff - they often control access to the people you need to reach"
+              },
+              {
+                "type": "Network-Based Power",
+                "description": "Influence derived from connections across organizational boundaries",
+                "manifestations": [
+                  "Person who knows counterparts in every ministry",
+                  "Someone connected to donor community",
+                  "Individual with civil society relationships",
+                  "Person who bridges technical and political worlds",
+                  "Someone with international connections and exposure"
+                ],
+                "example": "The policy advisor who previously worked at the World Bank knows everyone in the donor community and can facilitate or block international support",
+                "inGovernmentContext": "Cross-boundary connectors are invaluable for DPI initiatives that require coordination across ministries and with external partners"
+              }
+            ]
+          },
+          {
+            "title": "Discovering Informal Networks",
+            "methods": [
+              {
+                "method": "Observation",
+                "description": "Watch who talks to whom, who gets consulted, who people defer to",
+                "indicators": [
+                  "Who do people look at when a decision needs to be made?",
+                  "Who gets pulled into meetings unexpectedly?",
+                  "Whose opinion do people seek before acting?",
+                  "Who can get the Secretary on the phone immediately?",
+                  "Who do people complain to when things go wrong?"
+                ]
+              },
+              {
+                "method": "Inquiry",
+                "description": "Ask questions to understand influence patterns",
+                "questions": [
+                  "If you needed to get this approved quickly, who would you talk to?",
+                  "Who really understands how things work around here?",
+                  "Who should I definitely not surprise with this proposal?",
+                  "Who has the Minister's ear on technology issues?",
+                  "Who would you want on your side if this got controversial?"
+                ]
+              },
+              {
+                "method": "History Analysis",
+                "description": "Study past decisions to understand influence patterns",
+                "questions": [
+                  "How did the last major IT project get approved?",
+                  "Who championed successful initiatives?",
+                  "Who blocked proposals that failed?",
+                  "What alliances formed around previous controversies?",
+                  "Who has survived multiple leadership changes?"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Trust Networks in Government",
+            "insights": [
+              {
+                "insight": "Trust is Earned Slowly",
+                "description": "Government officials are cautious about who they trust",
+                "implication": "Building informal power takes time - quick wins matter less than consistent reliability",
+                "example": "After delivering three projects on time and under budget, you become the person the Secretary calls for honest assessments"
+              },
+              {
+                "insight": "Trust Transfers Through Networks",
+                "description": "An introduction from a trusted person carries weight",
+                "implication": "Find sponsors who can vouch for you to key stakeholders",
+                "example": "The Director trusts the policy advisor, and the policy advisor vouches for you - now the Director gives you the benefit of the doubt"
+              },
+              {
+                "insight": "Trust Can Be Lost Instantly",
+                "description": "One betrayal of confidence can destroy years of relationship building",
+                "implication": "Never share information inappropriately, never surprise someone who trusted you",
+                "example": "Leaking a confidential concern to the press will permanently close doors that took years to open"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Formal authority can command compliance, but informal power generates commitment. The person who can actually mobilize support for your DPI initiative may not be the person with the biggest title."
+      },
+      "exercises": [
+        {
+          "type": "discovery",
+          "prompt": "Identify three people in your organization who have significant informal power without corresponding formal authority. What is the source of their influence? How might you build relationships with them?"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Power Mapping Techniques",
+      "duration": "40 min",
+      "type": "application",
+      "content": {
+        "overview": "Power mapping is the systematic process of identifying, analyzing, and visualizing stakeholders and their influence relationships. This module provides practical tools and frameworks for creating power maps that inform your engagement strategy.",
+        "keyPoints": [
+          {
+            "title": "The Power-Interest Grid",
+            "description": "A 2x2 matrix for categorizing stakeholders by their power level and interest in your initiative",
+            "quadrants": [
+              {
+                "quadrant": "High Power, High Interest",
+                "label": "Key Players",
+                "strategy": "Engage closely and manage carefully",
+                "examples": [
+                  "Minister responsible for digital transformation",
+                  "Permanent Secretary of implementing ministry",
+                  "Director of IT who must deliver the project"
+                ],
+                "tactics": "Regular updates, involvement in key decisions, early warning of issues, address concerns promptly"
+              },
+              {
+                "quadrant": "High Power, Low Interest",
+                "label": "Keep Satisfied",
+                "strategy": "Keep informed but don't overwhelm",
+                "examples": [
+                  "Minister of Finance who controls budget but doesn't focus on technology",
+                  "Cabinet Secretary who approves major decisions but delegates details",
+                  "Attorney General who must sign off on legal aspects"
+                ],
+                "tactics": "Brief, targeted updates on matters requiring their action, no surprises, clear asks when needed"
+              },
+              {
+                "quadrant": "Low Power, High Interest",
+                "label": "Keep Informed",
+                "strategy": "Keep engaged as they can influence others",
+                "examples": [
+                  "Civil society groups interested in digital rights",
+                  "Technical staff who will use the system",
+                  "Junior reformers who champion the initiative"
+                ],
+                "tactics": "Regular communication, seek their input, leverage their enthusiasm to build momentum"
+              },
+              {
+                "quadrant": "Low Power, Low Interest",
+                "label": "Monitor",
+                "strategy": "Minimal effort but watch for changes",
+                "examples": [
+                  "Departments not directly affected",
+                  "Staff in unrelated functions",
+                  "External parties with peripheral interest"
+                ],
+                "tactics": "Basic awareness, monitor for changes in interest or power that would require reclassification"
+              }
+            ],
+            "inGovernmentContext": "In government, power and interest levels can shift rapidly with political changes, scandals, or new priorities. Review and update your grid regularly."
+          },
+          {
+            "title": "Influence Mapping",
+            "description": "Visualizing who influences whom to understand indirect pathways to decision-makers",
+            "steps": [
+              {
+                "step": "Identify the Target Decision",
+                "how": "Be specific about what decision you're trying to influence",
+                "example": "Approval of $5M budget for national digital ID pilot"
+              },
+              {
+                "step": "List Direct Influencers",
+                "how": "Who directly advises or informs the decision-maker?",
+                "example": "Minister's policy advisor, IT Director, Budget Director, external consultants"
+              },
+              {
+                "step": "Map Secondary Influencers",
+                "how": "Who influences the direct influencers?",
+                "example": "Technical staff who brief the IT Director, donor representatives who advise the policy team"
+              },
+              {
+                "step": "Draw Connection Lines",
+                "how": "Show relationships and note their nature (formal reporting, informal trust, etc.)",
+                "example": "Solid line for reporting relationships, dotted for advisory, thick lines for strong trust"
+              },
+              {
+                "step": "Identify Pathways",
+                "how": "Find multiple routes to reach the decision-maker",
+                "example": "Direct: through IT Director. Indirect: through donor partner who has Minister's ear"
+              }
+            ],
+            "visualElements": [
+              "Circle size indicates power level",
+              "Line thickness indicates relationship strength",
+              "Colors indicate support level (green = supporter, red = blocker, yellow = neutral)",
+              "Arrows show direction of influence"
+            ]
+          },
+          {
+            "title": "Relationship Mapping",
+            "description": "Understanding the quality and history of relationships between key players",
+            "dimensions": [
+              {
+                "dimension": "Trust Level",
+                "range": "Deep trust to active distrust",
+                "importance": "High trust relationships are channels for influence, distrust relationships are barriers"
+              },
+              {
+                "dimension": "Communication Frequency",
+                "range": "Daily contact to no communication",
+                "importance": "Frequent communication indicates working relationships that can be leveraged"
+              },
+              {
+                "dimension": "Shared History",
+                "range": "Long positive history to recent conflict",
+                "importance": "Past conflicts may create lasting barriers; shared successes create goodwill"
+              },
+              {
+                "dimension": "Mutual Dependence",
+                "range": "High interdependence to complete independence",
+                "importance": "Dependencies create opportunities for exchange and negotiation"
+              }
+            ],
+            "example": "The IT Director and Budget Director have a tense relationship from a previous failed project. Going through Budget to reach IT will not work - need an alternative pathway.",
+            "inGovernmentContext": "Government relationship maps often reflect decades of history. A conflict from ten years ago may still poison a relationship today."
+          },
+          {
+            "title": "Coalition Mapping",
+            "description": "Identifying existing alliances and potential coalitions",
+            "elements": [
+              {
+                "element": "Existing Coalitions",
+                "description": "Groups that already work together and share interests",
+                "examples": [
+                  "The modernizers: IT Director, young policy advisors, donor partners",
+                  "The traditionalists: senior civil servants, union representatives, risk-averse managers",
+                  "The budget guardians: Finance ministry, audit office, procurement authority"
+                ]
+              },
+              {
+                "element": "Potential Alliances",
+                "description": "Stakeholders who might align if brought together",
+                "examples": [
+                  "Citizens groups and anti-corruption advocates both want transparency",
+                  "Service delivery departments and IT both want efficient systems",
+                  "Finance ministry and reform advocates both want to reduce fraud"
+                ]
+              },
+              {
+                "element": "Fault Lines",
+                "description": "Issues that divide stakeholders",
+                "examples": [
+                  "Centralization vs. local autonomy",
+                  "Speed vs. thoroughness",
+                  "Innovation vs. risk management"
+                ]
+              }
+            ],
+            "inGovernmentContext": "Understanding existing coalitions helps you identify natural allies and avoid stepping into ongoing conflicts you don't understand."
+          }
+        ],
+        "keyInsight": "A power map is not just a diagram - it's a strategic tool. The purpose is not to document relationships but to identify the most effective pathways to achieve your goals."
+      },
+      "exercises": [
+        {
+          "type": "mapping-exercise",
+          "prompt": "Create a power-interest grid for your current DPI initiative. Place at least 10 stakeholders on the grid. For each one, note: their source of power, their primary interest, and your current relationship quality. Then create an influence map showing how these stakeholders connect to each other."
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Identifying Key Decision-Makers",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "Not everyone with a title actually makes decisions. This module focuses on identifying who really decides - distinguishing between nominal decision-makers and actual decision-makers, and understanding the roles of gatekeepers and veto players.",
+        "keyPoints": [
+          {
+            "title": "Nominal vs. Actual Decision-Makers",
+            "distinction": {
+              "nominalDecisionMaker": {
+                "description": "The person who formally approves or signs off",
+                "characteristics": [
+                  "Has the title and formal authority",
+                  "Signs the documents",
+                  "Is publicly accountable for the decision",
+                  "May or may not have deeply analyzed the issue"
+                ],
+                "example": "The Minister signs the contract, but she relies entirely on her advisors' recommendations"
+              },
+              "actualDecisionMaker": {
+                "description": "The person whose judgment determines the outcome",
+                "characteristics": [
+                  "Does the actual analysis or forms the judgment",
+                  "Their recommendation is almost always followed",
+                  "May not have formal authority but has effective authority",
+                  "Often operates behind the scenes"
+                ],
+                "example": "The policy advisor reviews all technology proposals and his recommendation has been followed in every case for the past three years"
+              }
+            },
+            "identificationQuestions": [
+              "Who prepares the brief or recommendation that gets approved?",
+              "When was the last time the nominal decision-maker rejected the recommendation?",
+              "If there's disagreement, whose view prevails?",
+              "Who does the nominal decision-maker consult before deciding?"
+            ],
+            "inGovernmentContext": "In government, the actual decision-maker is often one or two levels below the person who signs. Ministers and senior officials frequently rubber-stamp well-prepared recommendations."
+          },
+          {
+            "title": "Gatekeepers",
+            "description": "People who control access to decision-makers or information flow",
+            "types": [
+              {
+                "type": "Access Gatekeepers",
+                "role": "Control who gets time with the decision-maker",
+                "examples": [
+                  "Executive assistants who manage calendars",
+                  "Chiefs of staff who filter requests",
+                  "Security personnel who control physical access"
+                ],
+                "strategy": "Build positive relationships, respect their role, make their job easier"
+              },
+              {
+                "type": "Information Gatekeepers",
+                "role": "Control what information reaches the decision-maker",
+                "examples": [
+                  "Staff who prepare briefing documents",
+                  "Advisors who summarize technical reports",
+                  "Communications teams who manage messaging"
+                ],
+                "strategy": "Ensure your information is accurate and complete, build trust so your inputs aren't filtered out"
+              },
+              {
+                "type": "Process Gatekeepers",
+                "role": "Control the procedures required for decisions",
+                "examples": [
+                  "Procurement officers who determine bidding requirements",
+                  "Legal counsel who must approve contracts",
+                  "Finance officers who verify budget availability"
+                ],
+                "strategy": "Understand their requirements early, comply fully, build relationships so they prioritize your requests"
+              }
+            ],
+            "inGovernmentContext": "Gatekeepers in government often have more power than their titles suggest. An unfriendly procurement officer can delay your project for months through strict interpretation of rules."
+          },
+          {
+            "title": "Veto Players",
+            "description": "People who can block a decision even if they cannot approve it",
+            "characteristics": [
+              "May not be in the direct approval chain",
+              "Have authority to stop or delay the process",
+              "Often have specific functional concerns",
+              "Their opposition must be addressed or circumvented"
+            ],
+            "commonVetoPlayers": [
+              {
+                "role": "Legal Counsel",
+                "vetoGround": "Legal risk, regulatory compliance, liability",
+                "example": "Attorney General's office refuses to approve digital signature framework citing legal uncertainty"
+              },
+              {
+                "role": "Finance/Treasury",
+                "vetoGround": "Budget availability, fiscal rules, value for money",
+                "example": "Treasury blocks project despite ministry approval because funds aren't in the right budget category"
+              },
+              {
+                "role": "Data Protection Authority",
+                "vetoGround": "Privacy, data security, citizen rights",
+                "example": "Data Commissioner raises concerns about biometric collection that must be resolved before proceeding"
+              },
+              {
+                "role": "Security Agencies",
+                "vetoGround": "National security, critical infrastructure protection",
+                "example": "Intelligence service objects to cloud hosting of citizen data"
+              },
+              {
+                "role": "Union Representatives",
+                "vetoGround": "Worker impact, job security, working conditions",
+                "example": "Civil service union threatens industrial action if automation threatens jobs"
+              }
+            ],
+            "strategy": "Identify veto players early, engage them before they become obstacles, address their concerns proactively, find ways to give them wins within your project."
+          },
+          {
+            "title": "Decision-Making Patterns",
+            "patterns": [
+              {
+                "pattern": "Consensus-Driven",
+                "description": "Decision requires agreement from multiple parties",
+                "indicators": "Extensive consultation, inter-ministerial committees, long timelines",
+                "approach": "Invest in building broad coalition, address all concerns, patient engagement"
+              },
+              {
+                "pattern": "Authority-Driven",
+                "description": "Senior leader makes decisions with minimal consultation",
+                "indicators": "Quick decisions, top-down communication, limited debate",
+                "approach": "Focus on reaching and convincing the key decision-maker directly"
+              },
+              {
+                "pattern": "Process-Driven",
+                "description": "Decision follows established procedures regardless of individuals",
+                "indicators": "Formal committees, standardized criteria, documented procedures",
+                "approach": "Master the process, meet all criteria, navigate procedural requirements"
+              },
+              {
+                "pattern": "Crisis-Driven",
+                "description": "Decisions made rapidly in response to urgent situations",
+                "indicators": "Ad hoc meetings, bypassed procedures, rapid implementation",
+                "approach": "Be ready with solutions when crises create windows of opportunity"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Finding the real decision-maker is detective work. Don't assume the person with the title makes the decision - trace back from past decisions to understand who actually determines outcomes."
+      },
+      "exercises": [
+        {
+          "type": "analysis",
+          "prompt": "For a decision you need, identify: (1) the nominal decision-maker, (2) who you believe is the actual decision-maker and why, (3) all gatekeepers you must navigate, and (4) potential veto players who could block the decision. What is your strategy for each?"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Recognizing Influencers",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "Beyond formal decision-makers lie the influencers - people who shape opinions, provide trusted advice, and can move positions without formal authority. This module focuses on identifying these critical players and understanding how to work with them.",
+        "keyPoints": [
+          {
+            "title": "Types of Influencers",
+            "categories": [
+              {
+                "type": "Trusted Advisors",
+                "description": "People whose judgment is sought and followed by decision-makers",
+                "characteristics": [
+                  "Have the decision-maker's confidence and trust",
+                  "Are consulted before major decisions",
+                  "Their opinion carries significant weight",
+                  "May not have formal role in the decision process"
+                ],
+                "examples": [
+                  "Long-serving civil servant who has seen everything",
+                  "External consultant with strong track record",
+                  "Party ally who provides political counsel",
+                  "Technical expert the Minister relies on"
+                ],
+                "inGovernmentContext": "Ministers often have a small circle of trusted advisors they consult on everything - identifying these people is crucial"
+              },
+              {
+                "type": "Opinion Leaders",
+                "description": "People whose views shape broader organizational opinion",
+                "characteristics": [
+                  "Respected by peers and subordinates",
+                  "Their positions influence others' positions",
+                  "Often vocal in meetings and discussions",
+                  "Seen as thought leaders on certain topics"
+                ],
+                "examples": [
+                  "Senior technical architect whose views on technology are widely respected",
+                  "Department head known for sound judgment",
+                  "Reform champion who inspires others"
+                ],
+                "inGovernmentContext": "If the opinion leader in a department opposes your initiative, you'll face resistance even with top-level approval"
+              },
+              {
+                "type": "Bridge Builders",
+                "description": "People who connect different groups and translate between them",
+                "characteristics": [
+                  "Trusted by multiple groups",
+                  "Can translate technical to policy language and vice versa",
+                  "Move easily between different departments or levels",
+                  "Often facilitate negotiations and compromises"
+                ],
+                "examples": [
+                  "Policy advisor with technical background",
+                  "Former ministry staff now at donor organization",
+                  "Career civil servant known to everyone across government"
+                ],
+                "inGovernmentContext": "DPI initiatives often require coordination across many ministries - bridge builders are invaluable for making these connections"
+              },
+              {
+                "type": "Hidden Power Brokers",
+                "description": "People with significant influence that isn't immediately visible",
+                "characteristics": [
+                  "Operate behind the scenes",
+                  "May have historical or external relationships that create influence",
+                  "Often underestimated based on their formal position",
+                  "Their opposition can quietly kill initiatives"
+                ],
+                "examples": [
+                  "Retired official who still advises current leadership",
+                  "Business leader with political connections",
+                  "Family member of a key decision-maker",
+                  "Party official without government role"
+                ],
+                "inGovernmentContext": "In many governments, political parties, business interests, or family connections create invisible power structures"
+              }
+            ]
+          },
+          {
+            "title": "Identifying Influencers",
+            "methods": [
+              {
+                "method": "Decision Trail Analysis",
+                "description": "Trace back how previous decisions were made",
+                "questions": [
+                  "Who was consulted before the decision?",
+                  "Whose arguments carried the day?",
+                  "Who seemed to know what would happen before it was announced?",
+                  "Who was brought into the room at critical moments?"
+                ]
+              },
+              {
+                "method": "Communication Pattern Analysis",
+                "description": "Observe who communicates with whom and how",
+                "questions": [
+                  "Who does the decision-maker call or meet with regularly?",
+                  "Whose calls are always taken?",
+                  "Who is copied on important emails?",
+                  "Who is in the unofficial chat groups?"
+                ]
+              },
+              {
+                "method": "Network Referral",
+                "description": "Ask trusted contacts about influence patterns",
+                "questions": [
+                  "Who should I really talk to about this?",
+                  "Who does the Minister actually listen to?",
+                  "Who would you want supporting this if it got controversial?",
+                  "Who makes things happen around here?"
+                ]
+              },
+              {
+                "method": "Body Language Observation",
+                "description": "Watch non-verbal cues in meetings",
+                "signals": [
+                  "Who do people look at when a decision is being made?",
+                  "Whose reaction do people watch for?",
+                  "Who can interrupt without consequence?",
+                  "Who speaks and everyone listens?"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Engaging Influencers",
+            "strategies": [
+              {
+                "strategy": "Early Engagement",
+                "description": "Bring influencers in before positions harden",
+                "approach": "Share early thinking, ask for input, make them feel ownership",
+                "example": "Before finalizing the DPI architecture, share draft with the technical opinion leader and genuinely incorporate feedback"
+              },
+              {
+                "strategy": "Relationship Investment",
+                "description": "Build genuine relationships over time",
+                "approach": "Regular informal contact, sharing useful information, being helpful without always asking for something",
+                "example": "Send the trusted advisor interesting articles on digital transformation, have coffee occasionally without asking for anything"
+              },
+              {
+                "strategy": "Influence Through Influencers",
+                "description": "Use one influencer to reach another",
+                "approach": "Identify who influences your target influencer, build relationship there first",
+                "example": "The Minister's trusted advisor respects the University professor - get the professor on board first"
+              },
+              {
+                "strategy": "Convert Skeptics",
+                "description": "Turn skeptical influencers into supporters",
+                "approach": "Address concerns seriously, give them face-saving ways to change position",
+                "example": "The opinion leader was skeptical of digital ID - address his privacy concerns and let him claim credit for improved privacy features"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Influencers are force multipliers. A single supporter with real influence is worth more than many supporters without influence. Invest your relationship-building energy where it will have the most impact."
+      },
+      "exercises": [
+        {
+          "type": "identification",
+          "prompt": "Identify the key influencers for your initiative. For each, categorize their type, assess your current relationship (strong/weak/none), and develop a specific strategy for engagement. Who is the highest-priority influencer you don't yet have a relationship with?"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "Understanding Blockers",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "Every digital transformation initiative faces resistance. Understanding who might block your initiative, why they resist, and how to address their concerns is essential for success. This module examines the anatomy of resistance and strategies for managing blockers.",
+        "keyPoints": [
+          {
+            "title": "Sources of Resistance",
+            "categories": [
+              {
+                "source": "Threatened Interests",
+                "description": "Initiative threatens someone's power, budget, or status",
+                "manifestations": [
+                  "Loss of control over information or resources",
+                  "Reduced budget or staff",
+                  "Diminished importance or influence",
+                  "Obsolescence of current skills or role"
+                ],
+                "examples": [
+                  "Department head who currently controls the data that will be shared",
+                  "IT staff whose manual processes will be automated",
+                  "Vendor whose contract will not be renewed"
+                ],
+                "approach": "Understand what they're losing, find ways to compensate or create new value for them"
+              },
+              {
+                "source": "Legitimate Concerns",
+                "description": "Real problems or risks that haven't been adequately addressed",
+                "manifestations": [
+                  "Privacy and data protection concerns",
+                  "Security vulnerabilities",
+                  "Implementation feasibility doubts",
+                  "Budget or timeline concerns"
+                ],
+                "examples": [
+                  "Data Protection Commissioner worried about biometric collection",
+                  "Finance officer doubting cost estimates",
+                  "Technical expert seeing architectural flaws"
+                ],
+                "approach": "Listen seriously, address concerns genuinely, improve your proposal based on valid criticism"
+              },
+              {
+                "source": "Change Fatigue",
+                "description": "Exhaustion from previous change initiatives",
+                "manifestations": [
+                  "Skepticism based on past failures",
+                  "Reluctance to invest energy in another initiative",
+                  "Protective attitudes about workload",
+                  "Wait and see whether this will last"
+                ],
+                "examples": [
+                  "Staff who saw three previous IT projects fail",
+                  "Manager whose team is already overwhelmed",
+                  "Civil servant who has outlasted many reform initiatives"
+                ],
+                "approach": "Acknowledge past experiences, differentiate your approach, start with small wins to build credibility"
+              },
+              {
+                "source": "Ideological Opposition",
+                "description": "Fundamental disagreement with the direction or approach",
+                "manifestations": [
+                  "Philosophical objections to centralization or digitization",
+                  "Political opposition to the sponsoring government",
+                  "Belief that technology is not the answer",
+                  "Preference for alternative approaches"
+                ],
+                "examples": [
+                  "Privacy advocate who opposes any national ID",
+                  "Civil society group suspicious of government surveillance",
+                  "Opposition politician who will attack any government initiative"
+                ],
+                "approach": "Engage respectfully, find common ground where possible, work around if no accommodation is possible"
+              }
+            ]
+          },
+          {
+            "title": "Types of Blocking Behavior",
+            "behaviors": [
+              {
+                "behavior": "Active Opposition",
+                "description": "Open and visible resistance",
+                "manifestations": [
+                  "Public criticism or statements against the initiative",
+                  "Voting against or withholding approval",
+                  "Organizing opposition coalitions",
+                  "Raising objections in meetings"
+                ],
+                "advantage": "At least it's visible and can be addressed directly",
+                "danger": "Can build momentum and attract other opponents"
+              },
+              {
+                "behavior": "Passive Resistance",
+                "description": "Non-compliance without open opposition",
+                "manifestations": [
+                  "Missing deadlines without explanation",
+                  "Providing incomplete information",
+                  "Failing to attend meetings",
+                  "Agreeing but not following through"
+                ],
+                "advantage": "Less visible, doesn't mobilize others",
+                "danger": "Difficult to address because it's not acknowledged"
+              },
+              {
+                "behavior": "Bureaucratic Obstruction",
+                "description": "Using rules and processes to delay or block",
+                "manifestations": [
+                  "Insisting on strict interpretation of regulations",
+                  "Requiring additional studies or approvals",
+                  "Finding procedural problems",
+                  "Endless revision cycles"
+                ],
+                "advantage": "Plausibly deniable as just doing their job",
+                "danger": "Very effective at killing momentum through delay"
+              },
+              {
+                "behavior": "Sabotage",
+                "description": "Active undermining of the initiative",
+                "manifestations": [
+                  "Spreading negative rumors or misinformation",
+                  "Leaking embarrassing information",
+                  "Withholding critical resources",
+                  "Setting up the initiative to fail"
+                ],
+                "advantage": "Usually comes from desperation",
+                "danger": "Can cause serious damage, hard to trace"
+              }
+            ]
+          },
+          {
+            "title": "Strategies for Managing Blockers",
+            "strategies": [
+              {
+                "strategy": "Engage and Convert",
+                "description": "Turn blockers into supporters through genuine engagement",
+                "when": "When concerns are legitimate and person is open to dialogue",
+                "how": [
+                  "Listen to understand their real concerns",
+                  "Address concerns genuinely in your approach",
+                  "Give them a role that makes them invested",
+                  "Provide face-saving way to change position"
+                ],
+                "example": "The IT Director was blocking because he wasn't consulted - bring him into the design team and incorporate his expertise"
+              },
+              {
+                "strategy": "Isolate",
+                "description": "Reduce the blocker's ability to influence others",
+                "when": "When blocker is unreasonable and cannot be converted",
+                "how": [
+                  "Build relationships around them",
+                  "Demonstrate their concerns are not widely shared",
+                  "Avoid escalating conflict publicly",
+                  "Create alternative channels that bypass them"
+                ],
+                "example": "The budget officer blocks everything - build relationship with Finance Director who can override"
+              },
+              {
+                "strategy": "Override",
+                "description": "Use higher authority to overcome resistance",
+                "when": "When you have clear mandate and blocker lacks authority to stop you",
+                "how": [
+                  "Escalate to decision-maker with authority over blocker",
+                  "Get explicit directive that clarifies authority",
+                  "Document resistance for accountability"
+                ],
+                "example": "Department head refuses to share data - get cabinet directive requiring data sharing"
+              },
+              {
+                "strategy": "Work Around",
+                "description": "Find alternative paths that avoid the blocker",
+                "when": "When direct confrontation is not worth the cost",
+                "how": [
+                  "Identify alternative approvals or resources",
+                  "Restructure scope to avoid their domain",
+                  "Phase implementation to delay confrontation"
+                ],
+                "example": "Start with pilot in supportive ministry rather than fighting resistant ministry for initial implementation"
+              },
+              {
+                "strategy": "Wait Out",
+                "description": "Let time change the situation",
+                "when": "When blocker is temporary or situation will change",
+                "how": [
+                  "Maintain relationships and readiness",
+                  "Watch for changes in leadership or priorities",
+                  "Build support for when opportunity arrives"
+                ],
+                "example": "The resistant Secretary is retiring in six months - build relationships with likely successor"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "Blockers are not just obstacles - they're sources of information about what could go wrong. The concerns that drive resistance often identify real problems that need to be addressed. Even if you disagree with the blocker, understanding their perspective makes your initiative stronger."
+      },
+      "exercises": [
+        {
+          "type": "blocker-analysis",
+          "prompt": "Identify the top three potential blockers for your initiative. For each, analyze: (1) their source of resistance, (2) the type of blocking behavior you expect, (3) your strategy for managing them, and (4) what you would do if that strategy fails. Is there a blocker you might be able to convert into a supporter?"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "Building Your Power Map",
+      "duration": "30 min",
+      "type": "application",
+      "content": {
+        "overview": "This module brings together all the concepts from the course into a practical process for building, using, and maintaining your power map. A good power map is a living strategic tool that guides your stakeholder engagement throughout your initiative.",
+        "keyPoints": [
+          {
+            "title": "Creating Your Initial Power Map",
+            "process": [
+              {
+                "step": "Define the Decision",
+                "description": "Be specific about what decision or outcome you're trying to influence",
+                "questions": [
+                  "What exactly needs to be decided?",
+                  "What is the timeline for this decision?",
+                  "What criteria will be used?",
+                  "What is the formal process?"
+                ],
+                "example": "Cabinet approval of $10M digital identity pilot by end of fiscal year, evaluated on cost, risk, and alignment with government priorities"
+              },
+              {
+                "step": "List All Stakeholders",
+                "description": "Brainstorm everyone who might affect or be affected by the decision",
+                "categories": [
+                  "Formal decision-makers and approvers",
+                  "Gatekeepers and process controllers",
+                  "Potential veto players",
+                  "Influencers and advisors",
+                  "Implementation partners",
+                  "Affected parties",
+                  "External stakeholders"
+                ],
+                "tip": "Cast a wide net initially - you can filter later"
+              },
+              {
+                "step": "Assess Each Stakeholder",
+                "description": "For each stakeholder, assess key dimensions",
+                "dimensions": [
+                  "Power: How much can they affect the outcome?",
+                  "Interest: How much do they care?",
+                  "Position: Are they supporter, neutral, or opposed?",
+                  "Concerns: What are their key concerns?",
+                  "Relationship: What is your current relationship?"
+                ]
+              },
+              {
+                "step": "Map Relationships",
+                "description": "Draw connections between stakeholders",
+                "considerations": [
+                  "Who reports to whom?",
+                  "Who trusts whom?",
+                  "Who influences whom?",
+                  "Where are the conflicts?",
+                  "Where are the alliances?"
+                ]
+              },
+              {
+                "step": "Identify Pathways",
+                "description": "Determine how to reach key decision-makers",
+                "questions": [
+                  "What is the most direct path to the decision-maker?",
+                  "What alternative paths exist?",
+                  "Who can open doors for you?",
+                  "Where are the bottlenecks?"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Using Your Power Map Strategically",
+            "applications": [
+              {
+                "application": "Prioritizing Engagement",
+                "description": "Allocate your time and energy based on the map",
+                "guidance": [
+                  "Focus first on high-power, high-interest stakeholders",
+                  "Don't ignore high-power, low-interest stakeholders - keep them informed",
+                  "Cultivate relationships with key influencers",
+                  "Address blockers based on your management strategy"
+                ]
+              },
+              {
+                "application": "Planning Communication",
+                "description": "Tailor your communication to each stakeholder",
+                "considerations": [
+                  "What messages resonate with each stakeholder?",
+                  "What format does each prefer?",
+                  "What level of detail is appropriate?",
+                  "What concerns should you address proactively?"
+                ]
+              },
+              {
+                "application": "Sequencing Actions",
+                "description": "Determine the order of engagement",
+                "principles": [
+                  "Build momentum with early supporters",
+                  "Engage influencers before decision-makers",
+                  "Address blocker concerns before they escalate",
+                  "Time high-stakes conversations for maximum impact"
+                ]
+              },
+              {
+                "application": "Tracking Progress",
+                "description": "Monitor stakeholder positions and relationship development",
+                "metrics": [
+                  "Movement from opposed to neutral to supportive",
+                  "Relationship strength changes",
+                  "New information about stakeholder concerns",
+                  "Changes in power or influence"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Maintaining Your Power Map",
+            "practices": [
+              {
+                "practice": "Regular Review",
+                "frequency": "Weekly during active engagement, monthly otherwise",
+                "questions": [
+                  "Have any stakeholder positions changed?",
+                  "Have new stakeholders emerged?",
+                  "Have relationships shifted?",
+                  "Are your strategies working?"
+                ]
+              },
+              {
+                "practice": "Update Triggers",
+                "description": "Events that require immediate map revision",
+                "triggers": [
+                  "Leadership changes",
+                  "Organizational restructuring",
+                  "Policy or priority shifts",
+                  "Significant political events",
+                  "Major project developments"
+                ]
+              },
+              {
+                "practice": "Information Gathering",
+                "description": "Continuously improve your understanding",
+                "methods": [
+                  "Regular conversations with key contacts",
+                  "Monitoring official announcements",
+                  "Tracking meeting attendance and participation",
+                  "Observing organizational dynamics"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Power Map Templates",
+            "templates": [
+              {
+                "template": "Stakeholder Register",
+                "fields": [
+                  "Name and title",
+                  "Organization and role",
+                  "Power level (1-5)",
+                  "Interest level (1-5)",
+                  "Current position (supporter/neutral/opposed)",
+                  "Key concerns",
+                  "Engagement strategy",
+                  "Relationship status",
+                  "Last contact date",
+                  "Next action"
+                ]
+              },
+              {
+                "template": "Influence Diagram",
+                "elements": [
+                  "Circle for each stakeholder (size = power)",
+                  "Color coding (green/yellow/red = support level)",
+                  "Lines showing relationships (solid = formal, dotted = informal)",
+                  "Line thickness = relationship strength",
+                  "Arrows showing direction of influence"
+                ]
+              },
+              {
+                "template": "Engagement Plan",
+                "sections": [
+                  "Stakeholder name",
+                  "Engagement objective",
+                  "Key messages",
+                  "Engagement activities",
+                  "Timeline",
+                  "Success indicators",
+                  "Contingency if unsuccessful"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Common Mistakes to Avoid",
+            "mistakes": [
+              {
+                "mistake": "Static Mapping",
+                "description": "Creating the map once and not updating it",
+                "consequence": "Map becomes outdated and misleading",
+                "remedy": "Build regular review into your routine"
+              },
+              {
+                "mistake": "Overreliance on Formal Structure",
+                "description": "Focusing only on org charts and official roles",
+                "consequence": "Missing informal power and influence",
+                "remedy": "Always map both formal and informal power"
+              },
+              {
+                "mistake": "Ignoring Blockers",
+                "description": "Hoping resistance will go away",
+                "consequence": "Blockers become more entrenched and effective",
+                "remedy": "Engage blockers early with clear strategy"
+              },
+              {
+                "mistake": "Underestimating Relationship Building Time",
+                "description": "Expecting quick results from relationship investment",
+                "consequence": "Frustration and abandoning relationship strategy",
+                "remedy": "Start relationship building early, be patient"
+              },
+              {
+                "mistake": "Keeping the Map to Yourself",
+                "description": "Not sharing stakeholder intelligence with your team",
+                "consequence": "Team members make mistakes you could prevent",
+                "remedy": "Share appropriate parts of the map with team members who need it"
+              }
+            ]
+          }
+        ],
+        "keyInsight": "A power map is only valuable if it changes your behavior. The goal is not a pretty diagram - it's a strategic tool that helps you make better decisions about where to invest your relationship-building energy and how to navigate the path to your goals."
+      },
+      "exercises": [
+        {
+          "type": "comprehensive-exercise",
+          "prompt": "Build a complete power map for your current or upcoming DPI initiative. Include: (1) a stakeholder register with at least 15 stakeholders, (2) an influence diagram showing key relationships, (3) a prioritized engagement plan for your top 5 stakeholders, and (4) a strategy for managing your most significant blocker. Schedule a weekly review session in your calendar and identify what triggers should prompt an immediate map update."
+        }
+      ]
+    }
+  ],
+  "assessmentApproach": "Case-based evaluation with coaching feedback",
+  "targetAudience": "DPI advisors, government IT directors, policy coordinators working on digital transformation"
+}

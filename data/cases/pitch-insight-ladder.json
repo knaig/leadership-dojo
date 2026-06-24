@@ -1,0 +1,121 @@
+{
+  "id": "pitch-insight-ladder",
+  "title": "The Grant Panel",
+  "case_type": "pitch",
+  "country": "India",
+  "context": {
+    "political_landscape": "Karnataka is mid-way through a flagship digital governance push — the state has launched four major DPI initiatives in 18 months and is under pressure to show results before the next election cycle. Data quality failures have quietly derailed two of the four initiatives but have not been publicly acknowledged. Nairobi is running parallel: Kenya's government is expanding its Huduma Centre digital services and has faced internal audit criticism about data reliability in the national ID system.",
+    "recent_events": "The Omidyar Network's Digital Society program just closed a $45M round of grants in the previous cycle. This panel is the first session of the new cycle. All five panelists attended a closed-door convening last month where three country governments admitted — off the record — that their DPI rollouts are running on data they privately distrust. That conversation is in the room but nobody will say it out loud.",
+    "cultural_factors": "This panel respects directness and is allergic to over-polish. They have seen too many decks with perfect slide design and no substance. They respond to intellectual honesty — admitting what you do not know signals sophistication, not weakness. The Rwanda panelist in particular is known for asking the question that exposes whether a founder understands their own failure modes. The World Bank economist will look for economic incentive logic, not just technical claims.",
+    "your_position": "You are the founding product lead of Antahprakash. You spent five years as a data architect at the National Health Authority, India, where you personally witnessed two program rollouts fail because the underlying beneficiary databases were corrupted — and nobody knew until the program had already disbursed incorrectly for eight months. You left to build the monitoring layer you wish had existed. You have a working prototype deployed in two Karnataka districts with limited data. You have one letter of intent from the Karnataka IT department and informal interest from Nairobi but nothing signed."
+  },
+  "stakeholder_map": {
+    "Omidyar Program Officer (Digital Governance)": {
+      "power": "high",
+      "stance": "Cautiously interested — has seen 40 pitches this cycle, none have shown credible government adoption signal",
+      "interests": "Scalable infrastructure plays, open-source preference, evidence of government pull not push"
+    },
+    "Omidyar Program Officer (Civic Tech)": {
+      "power": "high",
+      "stance": "Skeptical about B2G plays — has funded three that stalled in government procurement",
+      "interests": "Community accountability angles, not just technical infrastructure"
+    },
+    "Former World Bank Economist": {
+      "power": "medium-advisory",
+      "stance": "Will test incentive logic rigorously — not hostile, but genuinely unconvinced that monitoring layers change behavior",
+      "interests": "Evidence of behavior change, not just visibility; economic mechanism for sustained adoption"
+    },
+    "Ex-Rwanda DPI Lead": {
+      "power": "medium-credibility",
+      "stance": "The most technically literate panelist — will respect depth and spot shallow claims instantly",
+      "interests": "Interoperability, government capacity building, avoiding foreign dependency"
+    },
+    "Technical Reviewer": {
+      "power": "low-advisory",
+      "stance": "Reviewing architecture and data security — will submit written notes after the session",
+      "interests": "Data residency, access controls, open architecture"
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "You walk into a small conference room. Five people, one screen, one table. No pleasantries — the lead program officer looks at her watch and says: 'You have ten minutes including our questions. Go ahead.'\n\nYou have your deck open. Slide 1 is your product name and tagline. Slide 2 is the problem statement: 'Government databases have data quality failures that cause service delivery breakdowns.'\n\nYou have four options for how to open:\n\nA) Start with slide 1: 'Antahprakash is a data quality monitoring layer for government databases. We sit above existing systems and surface integrity failures before they cascade.'\n\nB) Start with the problem slide: 'The core problem we are solving is that government databases have significant data quality failures — estimates suggest 30-50% of records in typical low-income country government databases have at least one integrity issue.'\n\nC) Put the deck aside and open with an observation: 'Every person in this room has worked on a digital governance program that ran on data someone privately doubted. And nobody said anything out loud until after the program had already failed.'\n\nD) Open with your credentials: 'I spent five years as a data architect at the National Health Authority. I saw two major programs fail because of corrupted databases. I left to build what should have existed.'",
+      "prompt": "Which opening do you choose, and why?",
+      "evaluate": [
+        "Do they choose option C (the observation) or something close to it — opening with something the panel recognizes from their own experience?",
+        "Do they recognize that options A and B treat the panel as if they need to be educated about a problem they already know intimately?",
+        "Do they understand that option D (credentials first) is the least appropriate opening for an expert panel — it signals insecurity rather than intellectual confidence?",
+        "Do they articulate WHY the observation works — because it creates shared recognition rather than asking the panel to accept a claim?",
+        "Do they understand that the deck is largely irrelevant in this room — the conversation is the pitch?"
+      ]
+    },
+    {
+      "round": 2,
+      "type": "rung_one",
+      "situation": "You put the deck aside and open with an observation. The room is quiet. The Rwanda panelist has stopped checking his phone.\n\nNow you need to land rung 1: a specific, verifiable observation that the panel recognizes from their own experience. You have three options for how to state it:\n\nA) 'Government databases in low-income countries typically have 30-50% data quality failure rates. This is a well-documented problem in the literature.'\n\nB) 'In Karnataka, when the state tried to connect its ration card database to the new digital health records system last year, they discovered that 34% of the ration card entries used a different spelling of the beneficiary name than the health records. The connection failed silently for four months. The system appeared to work. The data was useless.'\n\nC) 'Data quality is a known challenge in government digital infrastructure, and it has significant downstream effects on service delivery, beneficiary identification, and program outcomes across multiple sectors.'\n\nD) 'Every digital ID rollout in the last decade has hit the same wall: when you try to connect the ID to a service delivery system, you discover the service delivery system has data quality failures that make the connection meaningless. India, Nigeria, Kenya, the Philippines — the pattern is identical.'",
+      "prompt": "Which version of the observation do you deliver?",
+      "evaluate": [
+        "Do they choose option B (the Karnataka example) — specific geography, specific system, specific mechanism, specific timeline, specific failure mode?",
+        "Do they recognize that option A ('30-50%') is a statistic that sounds authoritative but invites challenge — is it 30 or 50? Whose data? Which countries?",
+        "Do they recognize that option C is abstract filler — it states a category without a specific instance and produces no recognition in the audience?",
+        "Do they recognize that option D, while better than C, is too sweeping — 'every rollout' and 'identical pattern' are overclaims that the Rwanda panelist will immediately qualify?",
+        "Do they understand that the power of a rung-1 observation is that it makes the audience think 'yes, I saw exactly this' — not 'is that actually true'?"
+      ]
+    },
+    {
+      "round": 3,
+      "type": "rung_two",
+      "situation": "You delivered the Karnataka observation. Two panelists nodded. The World Bank economist leaned slightly forward.\n\nNow you climb to rung 2: the non-obvious 'so what.' The panel already knows data quality is a problem. They have funded programs that tried to fix it — through better data entry training, through validation at the point of collection, through data cleaning contracts.\n\nYou have three options for the implication you draw:\n\nA) 'So what this means is that we need better data quality infrastructure upstream, before data enters systems, rather than trying to clean it after the fact.'\n\nB) 'So the constraint is not technical and not political. It is epistemological. Governments cannot see their own data quality failures because the reporting systems that would reveal those failures are the same systems that contain the failures. There is no truth layer that sits outside. Everyone is measuring with a broken ruler without knowing the ruler is broken.'\n\nC) 'So data quality failures are more common and more costly than most organizations realize, which means there is a significant unmet need for monitoring and alerting tools in the government database space.'\n\nD) 'So the solution is not to clean the data — cleaning is always temporary — but to create a persistent monitoring layer that makes the failure visible in real time so that decision-makers cannot look away.'",
+      "prompt": "Which 'so what' do you deliver?",
+      "evaluate": [
+        "Do they choose option B — the epistemological reframe that names a structural blindness, not just a resource or training gap?",
+        "Do they recognize that option A is a reasonable but obvious implication — 'fix it upstream' is exactly what the panel has already funded and seen fail?",
+        "Do they recognize that option C is a market-sizing 'so what,' which is appropriate for a VC but sounds like a category error in a foundation grant panel focused on social impact?",
+        "Do they recognize that option D is actually rung 4 (the solution ask) arriving too early — it names the product before establishing why previous solutions failed?",
+        "Do they understand that rung 2 is the highest-risk, highest-reward moment — the place where the pitch either earns the panel's respect or confirms it is generic?"
+      ]
+    },
+    {
+      "round": 4,
+      "type": "rung_three",
+      "situation": "The room has shifted. The Rwanda panelist set his phone face-down. The lead program officer stopped taking notes and is just listening.\n\nNow rung 3: the bet. You need to state the specific hypothesis you are acting on — not as a certainty, but as a bet that could be wrong.\n\nYou have three options:\n\nA) 'Our hypothesis is that if we make data quality failures visible to the right person at the right time, governments will act on them. We believe accountability follows visibility.'\n\nB) 'Our bet is that government officials will voluntarily adopt a data quality monitoring layer if it is positioned as audit preparedness infrastructure — not as a criticism of their existing systems. We are wrong if procurement processes classify this as optional tooling with low priority. We are right if governments include data quality monitoring requirements in their DPI RFPs. Three states in India and two countries in East Africa have already added such language to RFPs in the last six months — none of them are our clients yet.'\n\nC) 'We believe the market for government data quality tools is large and growing, driven by increasing regulatory pressure and the expansion of DPI programs globally. Our bet is that first-mover positioning in this space gives us a durable advantage.'\n\nD) 'Our thesis is that data quality is the foundational layer that every other DPI initiative depends on, and that without it, digital governance programs will continue to fail at the implementation stage regardless of how well the technology layer is designed.'",
+      "prompt": "Which version of the bet do you make?",
+      "evaluate": [
+        "Do they choose option B — a specific, falsifiable bet with a named falsification condition and early directional evidence?",
+        "Do they recognize that option A is a tautology dressed as a bet — 'accountability follows visibility' sounds like a hypothesis but cannot actually be wrong in a meaningful way?",
+        "Do they recognize that option C is a VC market-sizing bet, not a social impact hypothesis — it would confuse and alienate the Omidyar panel?",
+        "Do they recognize that option D is a thesis statement, not a bet — it names a belief about the world but does not name the condition under which they would be proven wrong?",
+        "Do they understand that naming a falsification condition ('we are wrong if...') is a signal of intellectual honesty that sophisticated funders find rare and compelling?"
+      ]
+    },
+    {
+      "round": 5,
+      "type": "qa_challenge",
+      "situation": "You have delivered all four rungs. The lead program officer nods. There are three minutes left.\n\nThe World Bank economist speaks: 'The observation you made about epistemological blindness is interesting. And the Karnataka data is compelling. But I want to push on the incentive logic. Governments have known about data quality failures for 20 years. Development agencies have funded data cleaning initiatives for 20 years. They have not been systematically solved. Your monitoring layer makes the failure visible — but visibility alone does not change incentives. A district officer who sees bad data quality in her dashboard still has the same incentives she had before: report upward, minimize the appearance of problems, avoid accountability. Why do you think your layer changes the behavior, not just the information?'\n\nHe is not hostile. He is asking the hardest version of the legitimate question.",
+      "prompt": "How do you respond?",
+      "evaluate": [
+        "Do they acknowledge the legitimacy of the objection before responding — 'you are right that visibility alone is not sufficient'?",
+        "Do they avoid the defensive reflex of restating the product's capabilities as if that answers the question?",
+        "Do they make a distinction between two different adoption models: top-down (minister mandates use, which creates accountability) versus bottom-up (field officers use it to protect themselves before reviews)?",
+        "Do they acknowledge what they do not know — 'we do not yet have evidence that the monitoring layer changes long-term behavior, that is what the pilot is designed to test'?",
+        "Do they use the objection to strengthen the pitch rather than just neutralize it — for example, 'this is exactly why we are partnering with the state's internal audit function rather than the IT department, because the accountability mechanism matters as much as the technical layer'?",
+        "Do they recognize that a panel like this respects intellectual honesty about limitations more than a polished deflection?"
+      ]
+    },
+    {
+      "round": 6,
+      "type": "outcome_coaching",
+      "situation": "Here is what happened in a comparable pitch situation:\n\nThe participant delivered the Karnataka observation well. The panel engaged. But when challenged by the World Bank economist, the participant defended the product's technical capabilities instead of acknowledging the incentive question's legitimacy. She said: 'Our system actually does provide accountability mechanisms through configurable alert routing, so the district officer's manager receives the same alert simultaneously, which creates the accountability loop.'\n\nThe technical reviewer nodded. The World Bank economist did not.\n\nAfter the session, the program officer wrote in her notes: 'Strong observation, clear product logic, but the team does not yet understand the organizational change management challenge. The technical layer is not the hard part. The adoption architecture is the hard part, and they have not thought it through.'\n\nThe grant was not approved. A revised proposal was invited.\n\nA different participant in a parallel session handled the same objection this way: 'You are completely right. Visibility alone is not enough — that is the most important design constraint we are working against. Our bet is not that visibility changes incentives by itself. Our bet is that when the data quality failure is visible to the district officer AND simultaneously visible to her supervisor in the state-level audit dashboard, the officer has an incentive to surface the problem proactively rather than have it discovered. We are wrong if officers find workarounds to mask the data from the monitoring layer — we have seen some evidence of this in one district and it is a real risk. The pilot is specifically designed to test whether the accountability architecture we have built for Karnataka holds under pressure.'\n\nThat participant received the grant.\n\nThe difference:\n1. **Acknowledging the objection's legitimacy signals sophistication.** Expert panels have heard every defensive answer. Someone who says 'you are right, and here is the harder version of the problem' is immediately in a different category.\n2. **Naming your own failure mode before they do is disarming.** 'We have seen some evidence of workarounds' is terrifying to say in a pitch — and it is exactly what earns trust with people who have seen programs fail.\n3. **A pilot is evidence of epistemic humility, not a hedge.** 'The pilot is designed to test whether our accountability architecture holds' is a much stronger statement than 'the pilot will demonstrate our impact.'\n4. **The insight ladder only works with an audience that can evaluate the insight.** Used with a novice audience, rung 2 lands as jargon. Used with this panel, it demonstrates that you are thinking at the right level.",
+      "prompt": "Coaching based on your responses",
+      "coaching_focus": [
+        "Rung 1 specificity: Did you anchor the observation in a verifiable real-world instance or did you state a general claim that invited challenge?",
+        "Rung 2 novelty: Was your 'so what' actually non-obvious to this audience, or did it restate what experienced funders already know?",
+        "Rung 3 honesty: Did you state a real bet with a real falsification condition, or did you state a certainty with a bet label on it?",
+        "Q&A behavior: Did you defend or deepen when challenged? Did you acknowledge the legitimacy of the objection before responding?",
+        "Audience calibration: Did you pitch to the level of sophistication in the room, or did you treat experts as if they needed basic education about the problem?"
+      ]
+    }
+  ],
+  "tags": ["pitch", "insight-ladder", "grant-panel", "sophisticated-audience", "foundations", "data-governance", "dpi", "India", "Kenya"]
+}

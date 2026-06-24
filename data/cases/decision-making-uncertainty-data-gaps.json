@@ -1,0 +1,111 @@
+{
+  "id": "decision-making-uncertainty-data-gaps",
+  "course": "decision-making-under-uncertainty",
+  "difficulty": "application",
+  "title": "Deciding Without Data: When You Can't Wait for Perfect Information",
+  "country": "Ethiopia",
+  "caseType": "decision_making",
+  "learningObjectives": [
+    "Make decisions with incomplete information",
+    "Distinguish between decisions that can wait for data vs decisions that can't",
+    "Use decision frameworks when data is unavailable",
+    "Practice scenario planning and probabilistic thinking",
+    "Learn to be decisive without being reckless"
+  ],
+  "context": {
+    "yourRole": "Director of Digital Infrastructure at Ethiopia's Ministry of Innovation and Technology. Leading national fiber optic backbone project.",
+    "situation": "Need to decide on network route through contested region. Political tensions, incomplete data, time pressure. Waiting for perfect information means project delays. Deciding now means risk.",
+    "pressure": "Donors expect progress. Cabinet wants results. But wrong route choice could waste millions.",
+    "reality": "Government decisions often happen with 60% of data you'd like. You need to decide anyway."
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "type": "opening",
+      "situation": "Ethiopia's fiber backbone project: Connecting Addis Ababa to regional cities. You're planning the northern route segment.\n\n**The Decision:**\nNorthern fiber must connect Addis → Bahir Dar → Gondar. Two possible routes:\n\n**Route A (Western):**\n- Distance: 750 km\n- Terrain: Mountainous, difficult construction\n- Population served: 4 million people along route\n- Political situation: Passes through contested areas between Amhara and Tigray regions\n- Cost estimate: $85M\n- Risk: Political tensions could disrupt construction\n\n**Route B (Eastern):**  \n- Distance: 820 km (70 km longer)\n- Terrain: Flatter, easier construction\n- Population served: 2.8 million people\n- Political situation: Stable regions\n- Cost estimate: $75M (cheaper despite being longer - easier terrain)\n- Risk: Serves fewer people, longer route\n\nYou need data to decide:\n1. Political stability forecast - how likely is Route A disruption?\n2. Population growth projections - which route has more economic value?\n3. Future connectivity demand - where will Ethiopia need bandwidth?\n4. Construction timeline comparison - how much faster is Route B?\n\nYour team tries to gather data:\n\n**Political Stability:**\nYou consult Ministry of Peace. They say: 'The region is tense. Could be stable, could flare up. We can't predict 2-3 years ahead.'\n\nYou ask: 'What's your estimate - 30% chance of disruption? 70%?'\n\nMinistry of Peace: 'We don't do probability estimates. Too many variables. Just know it's uncertain.'\n\nNo usable data.\n\n**Population & Economic Projections:**\nYou consult Central Statistics Agency. They say: 'Our last census is 5 years old. Population growth estimates have 20-30% error margin. Economic forecasting in current environment - not reliable.'\n\nPartial data at best.\n\n**Construction Timeline:**\nYou ask engineering firm: 'How much faster is Route B construction?'\n\nEngineer: 'Depends on rainy season impact, equipment availability, contractor performance. Could be 3 months faster, could be 12 months faster. We need detailed surveys to be precise.'\n\nYou: 'How long for detailed surveys?'\n\nEngineer: '6 months, $500K.'\n\nYou: 'We don't have 6 months. Donors want decision by next month.'\n\nYour Deputy (Alem):\n\nAlem: 'We're trying to make a $75-85M decision with almost no reliable data. This is uncomfortable.'\n\nYou: 'Welcome to government. We rarely have perfect information. What do we do?'\n\nAlem: 'Wait for better data? Commission the surveys?'\n\nYou: 'Waiting 6 months delays project. Donors get frustrated. Cabinet pressures us. And even after surveys, we won't have political stability predictions. We'll still be deciding under uncertainty.'\n\nAlem: 'So we just guess?'\n\nYou: 'No. We make structured decision with incomplete information. Big difference between guessing and deciding systematically under uncertainty.'",
+      "prompt": "You have incomplete data and time pressure. How do you approach this decision?",
+      "evaluationCriteria": [
+        "**Framework Use**: Do they propose structured decision approach vs just picking intuitively?",
+        "**Uncertainty Acknowledgment**: Do they explicitly acknowledge what's unknown?",
+        "**Scenario Planning**: Do they think through different scenarios (political stable vs unstable)?",
+        "**Reversibility**: Do they consider if decision can be changed later?",
+        "**Value of Information**: Do they assess if waiting for data is worth the delay?",
+        "**Risk Tolerance**: Do they think about acceptable risk levels?"
+      ],
+      "coachingNotes": "This is decision-making under uncertainty - common in government. You want: political stability forecast (unavailable), population data (unreliable), construction timeline (uncertain). Waiting for perfect data delays project 6+ months and still won't give you political forecast. You must decide now with imperfect information. Approach: [1] Use decision framework - explicit criteria, weighted scoring, scenario analysis. [2] Acknowledge uncertainty explicitly - 'We don't know X, Y, Z. Here's our assumption and why.' [3] Consider reversibility - can you switch routes later if situation changes? [4] Assess value of waiting - does 6-month delay for surveys give you decision-relevant information? (Timeline: maybe. Politics: no). [5] Use probabilistic thinking even if informal - 'If tensions flare (30% guess), Route A disrupted. If stable (70% guess), Route A better value.' This is structured decision under uncertainty, not guessing."
+    },
+    {
+      "round": 2,
+      "type": "response_analysis",
+      "situation": "You use structured decision framework:\n\n**DECISION FRAMEWORK:**\n\n**Criteria (weighted):**\n1. Economic value (30%): Population served, long-term connectivity\n2. Construction risk (25%): Terrain, timeline, complexity\n3. Political risk (25%): Disruption probability\n4. Cost (20%): Total investment\n\n**Scenario Analysis:**\n\n**Scenario 1: Political Stability (assume 60% probability)**\nIf northern region remains stable:\n- Route A: Better economic value (4M people), acceptable construction risk, good investment\n- Route B: Lower value (2.8M people), lower construction risk, cheaper\n- Winner: Route A (higher value justifies modestly higher risk)\n\n**Scenario 2: Political Instability (assume 40% probability)**\nIf tensions flare up:\n- Route A: Construction disrupted, potentially wasted investment, major delays\n- Route B: No disruption, project completes on time, lower value but certainty\n- Winner: Route B (avoiding major disruption worth the lower value)\n\n**Expected Value Approach:**\n\nRoute A:\n- Scenario 1 (60%): High value, minimal delay\n- Scenario 2 (40%): Low value, major delay\n- Expected outcome: Medium-high value with significant risk\n\nRoute B:\n- Both scenarios: Medium value, predictable timeline\n- Expected outcome: Medium value with low risk\n\n**Your Preliminary Recommendation: Route B**\n\nReasoning:\n1. Political uncertainty is the dominant risk\n2. Route B delivers certainty - government needs wins, not heroic failures\n3. $10M cost savings (Route B: $75M vs Route A: $85M) can be invested elsewhere\n4. Serves 2.8M people - not as good as 4M, but still significant\n5. Faster, more predictable construction\n\nYou present this to Steering Committee:\n\nMinister: 'But Route A serves 1.2 million MORE people. That's significant. Are we really going to choose the inferior route because we're afraid of political risk?'\n\nWorld Bank rep: 'From financing perspective, we prefer lower-risk routes. But Minister has a point - Route A has better development impact if it succeeds.'\n\nDonor rep (USAID): 'We've financed infrastructure in conflict-affected areas. Sometimes the risk is manageable. Can you mitigate political risk through engagement with regional governments?'\n\nYour technical advisor: 'Route A also has construction risk - mountainous terrain. Even without political issues, it's harder to build. Route B is faster and more certain.'\n\nMinister: 'I don't want us making decisions from fear. If Route A is better developmentally, we should do it unless the risk is prohibitive.'\n\nAlem (whispers to you): 'He's putting thumb on the scale. He wants Route A for political reasons - his home region benefits. But he's framing it as courage vs fear.'\n\nYou realize: This isn't just technical decision. There's political preference for Route A disguised as principled argument about development impact.",
+      "prompt": "Your analysis says Route B (safer), but Minister wants Route A (higher value, higher risk). How do you navigate this?",
+      "evaluationCriteria": [
+        "**Political Reality**: Do they recognize Minister has legitimate authority to choose risk tolerance?",
+        "**Clear Trade-offs**: Do they articulate the choice clearly - higher value vs lower risk?",
+        "**Mitigation**: Do they explore if Route A political risk can be reduced?",
+        "**Documentation**: Do they ensure decision logic is documented?",
+        "**Influence vs Control**: Do they recognize they advise, Minister decides?",
+        "**Fallback Plans**: Do they think about contingency if Route A fails?"
+      ],
+      "coachingNotes": "You did good analysis and recommended Route B (lower risk, lower value). Minister wants Route A (higher value, higher risk). Who's right? There's no objective answer - it's about risk tolerance. Minister has legitimate authority to say 'I accept higher risk for higher value.' Your job: [1] Make trade-offs crystal clear - 'Route A: serves 1.2M more people BUT 40% chance of major disruption. Route B: serves fewer people BUT certain completion.' [2] Explore mitigation - Can you reduce Route A political risk through engagement? [3] Document decision - If Minister chooses Route A despite risks, get it in writing: 'Minister directed Route A understanding political risks outlined in memo dated X.' [4] Prepare contingencies - If Route A disrupted, what's Plan B? [5] Accept your role - You advise, Minister decides. If he accepts risk for development impact, that's his call. But make sure he's making informed decision, not wishful thinking. Ask: 'Sir, if Route A is disrupted, how do we respond? Worth thinking through now.'"
+    },
+    {
+      "round": 3,
+      "type": "outcome",
+      "situation": "You decide to explore mitigation before final recommendation:\n\nYou: 'Minister, I hear your preference for Route A's development impact. Before we finalize, let me explore: Can we mitigate the political risk? If we can reduce risk meaningfully, Route A becomes more attractive.'\n\nMinister: 'Good. Do that.'\n\nYou meet with regional governments along Route A:\n\n**Amhara Regional Government:**\n'We support this fiber project. It brings development to our region. We'll provide security support for construction. The route is in our territory - we can protect it.'\n\n**Tigray Regional Government:**  \n'The route passes near our border. We need assurance this benefits both regions. If this is just Amhara development, we have concerns. But if there's benefit-sharing agreement, we support it.'\n\nYou work out agreement: Fiber will have extension points to serve both regions equitably. Both governments commit to security cooperation.\n\nWith these commitments, political risk feels more manageable - not eliminated, but reduced from 40% to maybe 20%.\n\nYou update your analysis:\n\n**Route A (with mitigation):**\n- Economic value: High (4M people)\n- Political risk: Medium (20% estimated, down from 40%)\n- Construction risk: Medium-high (mountainous)\n- Cost: $85M\n\n**Route B:**  \n- Economic value: Medium (2.8M people)\n- Political risk: Low\n- Construction risk: Low\n- Cost: $75M\n\n**Updated Recommendation:**\n\nYou present to Minister:\n\nYou: 'After engaging regional governments, we've secured commitments that reduce Route A political risk. With mitigation, Route A has acceptable risk for its higher development value. Revised recommendation: Route A, with conditions: [1] Formal agreements with both regional governments (written, binding), [2] Security protocols for construction, [3] Contingency plan if disruption occurs (pause construction, resume when stable), [4] Quarterly review of security situation with option to reassess.'\n\nMinister: 'Good work. Route A with these conditions - approved.'\n\n**18 months later:**\n\nRoute A construction is progressing. Tensions in region have remained stable (your 80% scenario materialized). Construction is slow due to terrain (as predicted), but no political disruptions.\n\nAlem: 'Route A looking like the right call. We're serving 4M people instead of 2.8M. The risk we worried about didn't materialize.'\n\nYou: 'So far. But remember - we decided under uncertainty. We made structured decision with imperfect data, mitigated risks where possible, prepared contingencies. We could have been in the 20% scenario where tensions flared. Fact that it worked out doesn't mean the decision process was flawed if we'd been wrong.'\n\nAlem: 'What do you mean?'\n\nYou: 'Good decisions can have bad outcomes. Bad decisions can have good outcomes. Luck matters. We made structured decision with best information available, mitigated risks, prepared contingencies. That's good decision-making. The fact that the 80% scenario occurred doesn't validate the decision - the PROCESS was sound. If tensions had flared, it wouldn't invalidate the decision either - we acknowledged the risk, prepared for it. Decision quality is about process, not just outcome.'\n\n**LESSONS ON DECISION-MAKING UNDER UNCERTAINTY:**\n\n1. **Perfect information rarely available** - Government decisions typically made with 60-70% of desired data\n2. **Waiting for data has costs** - Delay, opportunity cost, sometimes data won't come\n3. **Use structured frameworks** - Criteria, weights, scenarios better than gut instinct\n4. **Acknowledge uncertainty explicitly** - 'We don't know X. Here's our assumption.'\n5. **Scenario planning** - Think through possible futures (stable vs unstable)\n6. **Probabilistic thinking** - Even informal (60% stable, 40% unstable) beats binary thinking\n7. **Risk mitigation** - Explore if uncertainty can be reduced (regional agreements)\n8. **Reversibility matters** - Can decision be changed if circumstances change?\n9. **Document reasoning** - Protects you if outcome is bad (wasn't reckless, was structured)\n10. **Process vs outcome** - Good decisions can have bad outcomes due to luck; judge decision quality by process",
+      "prompt": "How do you know if a decision made under uncertainty was a good decision vs just got lucky?",
+      "evaluationCriteria": [
+        "**Process vs Outcome**: Do they distinguish between decision quality and outcome?",
+        "**Counterfactual Thinking**: Do they consider what would have happened in other scenarios?",
+        "**Documentation**: Do they value documenting reasoning at time of decision?",
+        "**Learning**: Do they extract lessons from both successes and failures?",
+        "**Humility**: Do they acknowledge role of luck/uncertainty?",
+        "**Improvement**: Do they think about how to improve decision-making process over time?"
+      ],
+      "coachingNotes": "Key insight: Separate decision quality from outcome quality. Route A succeeded (no political disruption). Does that mean it was good decision? Maybe. But if tensions HAD flared (the 20% scenario), that wouldn't mean it was BAD decision - you acknowledged risk, mitigated where possible, prepared contingencies. **Good decision process**: [1] Structured analysis, [2] Explicit uncertainty acknowledgment, [3] Scenario planning, [4] Risk mitigation attempts, [5] Documented reasoning, [6] Contingency planning. **Bad decision process**: [1] Gut instinct without analysis, [2] Ignoring known risks, [3] No consideration of alternatives, [4] No contingencies. You could do bad process and get lucky (tensions don't flare). You could do good process and be unlucky (tensions flare despite mitigation). Judge decisions by: Was the process rigorous given information available? Not: Did outcome match hopes? This protects you from outcome bias - judging past decisions based on how they turned out, not how they were made."
+    }
+  ],
+  "keyTakeaways": [
+    "Government decisions typically made with 60-70% of desired data - perfect information rarely available",
+    "Use structured frameworks (criteria, scenarios, probabilities) when data is incomplete",
+    "Acknowledge uncertainty explicitly - document what's known, unknown, and assumed",
+    "Scenario planning helps think through different futures and prepare for each",
+    "Risk mitigation can reduce uncertainty - don't accept risks as given, explore reduction",
+    "Judge decision quality by process (structured, rigorous), not outcome (which includes luck)",
+    "Waiting for data has costs - sometimes must decide without perfect information",
+    "Document reasoning at time of decision - protects against hindsight bias",
+    "Good decisions can have bad outcomes; bad decisions can have good outcomes due to luck"
+  ],
+  "frameworks": [
+    {
+      "name": "Structured Decision Framework Under Uncertainty",
+      "description": "When data is incomplete: [1] Define explicit criteria with weights, [2] Identify what's known, unknown, assumed, [3] Develop 2-3 scenarios (optimistic, pessimistic, realistic), [4] Assess options in each scenario, [5] Consider if uncertainty can be reduced through mitigation, [6] Document reasoning and assumptions.",
+      "application": "Route A vs B: Defined criteria (economic value, political risk, cost). Scenarios (stable vs unstable). Explored mitigation (regional agreements). Documented assumptions. Structured approach despite incomplete data."
+    },
+    {
+      "name": "Value of Information Analysis",
+      "description": "When considering waiting for more data, ask: [1] What would the data tell us?, [2] How much would it change our decision?, [3] What's the cost of waiting (delay, opportunity cost)?, [4] Is data even obtainable? If cost > benefit, decide now. If benefit > cost, wait.",
+      "application": "Surveys would give construction timeline data (useful) but cost 6 months delay + $500K. Political stability forecast not obtainable even with wait. Value of waiting was low - better to decide now."
+    },
+    {
+      "name": "Scenario Planning",
+      "description": "Develop 2-4 plausible future scenarios. Assess each option in each scenario. Identify: Which option is robust (works well in most scenarios)? Which is fragile (great in one scenario, terrible in others)? Consider risk tolerance.",
+      "application": "Stable scenario: Route A better. Unstable scenario: Route B better. Route B was more robust (medium value in both scenarios). Route A was fragile (high value if stable, disaster if unstable). With mitigation, Route A became more robust."
+    },
+    {
+      "name": "Process vs Outcome Evaluation",
+      "description": "Evaluate past decisions by process quality, not just outcome: [1] Was analysis structured given information available?, [2] Were uncertainties acknowledged?, [3] Were alternatives considered?, [4] Were risks mitigated where possible?, [5] Were contingencies prepared? Good process + bad outcome = unlucky. Bad process + good outcome = lucky.",
+      "application": "Route A succeeded (no disruption). But if it HAD failed, the decision process was still sound - structured analysis, risk mitigation attempted, contingencies prepared. Outcome doesn't determine decision quality retroactively."
+    },
+    {
+      "name": "Risk Mitigation Exploration",
+      "description": "Before accepting risk as given, explore mitigation: [1] Can uncertainty be reduced through engagement, agreements, incremental approach?, [2] What would make risky option safer?, [3] What would it cost to reduce risk?  Don't assume risks are fixed.",
+      "application": "Route A political risk felt prohibitive (40%). Engagement with regional governments secured agreements, reduced risk to 20%. Made Route A acceptable. Always explore mitigation before accepting high risk."
+    }
+  ],
+  "relatedCases": [
+    "system1-urgency-trap",
+    "action-bias-crisis-response",
+    "adaptive-management-pivot"
+  ]
+}
