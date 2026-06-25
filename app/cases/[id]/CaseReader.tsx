@@ -26,18 +26,18 @@ function RoundView({
   return (
     <div className="space-y-6">
       {/* Situation */}
-      <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+      <div className="rounded-xl p-6" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
         <div className="flex items-center gap-2 mb-4">
-          <span className="text-xs font-mono text-neutral-600">Round {round.round}</span>
-          <span className="text-xs text-neutral-700 capitalize">/ {round.type.replace(/_/g, " ")}</span>
+          <span className="text-xs font-mono" style={{ color: "var(--muted-2)" }}>Round {round.round}</span>
+          <span className="text-xs capitalize" style={{ color: "var(--muted-2)" }}>/ {round.type.replace(/_/g, " ")}</span>
         </div>
-        <div className="text-neutral-300 text-sm leading-relaxed whitespace-pre-wrap">
+        <div className="text-sm leading-relaxed whitespace-pre-wrap" style={{ color: "var(--text-2)" }}>
           {round.situation}
         </div>
       </div>
 
       {/* Prompt */}
-      <div className="text-orange-400 font-medium text-base">{round.prompt}</div>
+      <div className="font-medium text-base" style={{ color: "var(--accent)" }}>{round.prompt}</div>
 
       {/* Input */}
       {!submitted && !isCoaching && (
@@ -47,38 +47,47 @@ function RoundView({
             onChange={(e) => setResponse(e.target.value)}
             placeholder="Write your response..."
             rows={5}
-            className="w-full bg-neutral-900 border border-neutral-800 rounded-xl p-4 text-neutral-200 text-sm resize-none focus:outline-none focus:border-neutral-600 placeholder-neutral-700"
+            className="w-full rounded-xl p-4 text-sm resize-none focus:outline-none transition-colors"
+            style={{
+              background: "var(--surface)",
+              border: "1px solid var(--border)",
+              color: "var(--text)",
+              caretColor: "var(--accent)",
+            }}
+            onFocus={(e) => e.target.style.borderColor = "var(--border-strong)"}
+            onBlur={(e) => e.target.style.borderColor = "var(--border)"}
           />
           <button
             onClick={handleSubmit}
             disabled={!response.trim()}
-            className="px-5 py-2.5 bg-orange-500 text-white text-sm font-medium rounded-lg hover:bg-orange-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+            className="px-5 py-2.5 text-sm font-medium rounded-lg transition-opacity text-white disabled:opacity-40 disabled:cursor-not-allowed"
+            style={{ background: "var(--accent)" }}
           >
             Submit response
           </button>
         </div>
       )}
 
-      {/* Reveal */}
+      {/* Reveal after submit */}
       {(submitted || isCoaching) && (
         <div className="space-y-4">
           {response && (
-            <div className="bg-neutral-900/50 border border-neutral-800 rounded-xl p-4">
-              <div className="text-xs text-neutral-600 mb-2">Your response</div>
-              <p className="text-neutral-400 text-sm whitespace-pre-wrap">{response}</p>
+            <div className="rounded-xl p-4" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
+              <div className="text-xs uppercase tracking-widest mb-2" style={{ color: "var(--muted-2)" }}>Your response</div>
+              <p className="text-sm whitespace-pre-wrap" style={{ color: "var(--muted)" }}>{response}</p>
             </div>
           )}
 
-          <div className="border border-neutral-700 rounded-xl p-5 bg-neutral-900/30">
+          <div className="rounded-xl p-5" style={{ background: "var(--surface-2)", border: "1px solid var(--border-strong)" }}>
             {round.evaluate && (
               <div className="mb-4">
-                <div className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-3">
+                <div className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>
                   What to look for
                 </div>
                 <ul className="space-y-2">
                   {round.evaluate.map((e, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
-                      <span className="text-neutral-600 shrink-0 mt-0.5">—</span>
+                    <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "var(--text-2)" }}>
+                      <span className="shrink-0 mt-0.5" style={{ color: "var(--muted-2)" }}>—</span>
                       <span>{e}</span>
                     </li>
                   ))}
@@ -88,13 +97,13 @@ function RoundView({
 
             {round.coaching_focus && (
               <div>
-                <div className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-3">
+                <div className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>
                   Coaching focus
                 </div>
                 <ul className="space-y-2">
                   {round.coaching_focus.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
-                      <span className="text-orange-500 shrink-0 mt-0.5">→</span>
+                    <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "var(--text-2)" }}>
+                      <span className="shrink-0 mt-0.5" style={{ color: "var(--accent)" }}>→</span>
                       <span>{f}</span>
                     </li>
                   ))}
@@ -106,7 +115,8 @@ function RoundView({
           {!isLast && (
             <button
               onClick={() => onSubmit(response)}
-              className="text-sm text-neutral-400 hover:text-white transition-colors"
+              className="text-sm transition-opacity hover:opacity-70"
+              style={{ color: "var(--muted)" }}
             >
               Next round →
             </button>
@@ -114,25 +124,24 @@ function RoundView({
         </div>
       )}
 
+      {/* Coaching round (no input required) */}
       {isCoaching && !submitted && (
-        <div className="space-y-4">
-          <div className="border border-orange-500/20 rounded-xl p-5 bg-orange-500/5">
-            {round.coaching_focus && (
-              <div>
-                <div className="text-xs font-semibold text-orange-400 uppercase tracking-widest mb-3">
-                  Coaching
-                </div>
-                <ul className="space-y-2">
-                  {round.coaching_focus.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-neutral-300">
-                      <span className="text-orange-500 shrink-0 mt-0.5">→</span>
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
+        <div className="rounded-xl p-5" style={{ background: "var(--accent-bg)", border: "1px solid var(--accent-border)" }}>
+          {round.coaching_focus && (
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--accent)" }}>
+                Coaching
               </div>
-            )}
-          </div>
+              <ul className="space-y-2">
+                {round.coaching_focus.map((f, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm" style={{ color: "var(--text-2)" }}>
+                    <span className="shrink-0 mt-0.5" style={{ color: "var(--accent)" }}>→</span>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -148,15 +157,11 @@ export default function CaseReader({ caseStudy }: { caseStudy: CaseStudy }) {
   const isLast = currentRound === caseStudy.rounds.length - 1;
 
   function handleSubmit(response: string) {
-    const newResponses = [...responses, response];
-    setResponses(newResponses);
-
+    setResponses([...responses, response]);
     if (isLast) {
       setCompleted(true);
     } else {
-      setTimeout(() => {
-        setCurrentRound((r) => r + 1);
-      }, 300);
+      setTimeout(() => setCurrentRound((r) => r + 1), 200);
     }
   }
 
@@ -164,16 +169,17 @@ export default function CaseReader({ caseStudy }: { caseStudy: CaseStudy }) {
     return (
       <div className="text-center py-16">
         <div className="text-4xl mb-4">⛩</div>
-        <h2 className="text-xl font-semibold text-white mb-2">Case complete</h2>
-        <p className="text-neutral-500 text-sm mb-8">You worked through all {caseStudy.rounds.length} rounds.</p>
+        <h2 className="text-xl font-semibold mb-2" style={{ color: "var(--text)" }}>Case complete</h2>
+        <p className="text-sm mb-8" style={{ color: "var(--muted)" }}>You worked through all {caseStudy.rounds.length} rounds.</p>
         <div className="flex gap-3 justify-center">
           <button
             onClick={() => { setCurrentRound(0); setResponses([]); setCompleted(false); }}
-            className="px-4 py-2 border border-neutral-700 text-neutral-300 rounded-lg text-sm hover:border-neutral-500 transition-colors"
+            className="px-4 py-2 rounded-lg text-sm transition-opacity hover:opacity-80"
+            style={{ border: "1px solid var(--border-strong)", color: "var(--text-2)" }}
           >
             Restart
           </button>
-          <a href="/cases" className="px-4 py-2 bg-orange-500 text-white rounded-lg text-sm hover:bg-orange-600 transition-colors">
+          <a href="/cases" className="px-4 py-2 rounded-lg text-sm text-white transition-opacity hover:opacity-80" style={{ background: "var(--accent)" }}>
             More cases
           </a>
         </div>
@@ -183,18 +189,19 @@ export default function CaseReader({ caseStudy }: { caseStudy: CaseStudy }) {
 
   return (
     <div>
-      {/* Progress */}
-      <div className="flex items-center gap-2 mb-8">
+      {/* Progress bar */}
+      <div className="flex items-center gap-1.5 mb-8">
         {caseStudy.rounds.map((_, i) => (
           <div
             key={i}
-            className={`h-1 flex-1 rounded-full transition-colors ${
-              i < currentRound
-                ? "bg-orange-500"
+            className="h-1 flex-1 rounded-full transition-all duration-300"
+            style={{
+              background: i < currentRound
+                ? "var(--accent)"
                 : i === currentRound
-                ? "bg-orange-500/50"
-                : "bg-neutral-800"
-            }`}
+                ? "color-mix(in srgb, var(--accent) 40%, transparent)"
+                : "var(--border)",
+            }}
           />
         ))}
       </div>
