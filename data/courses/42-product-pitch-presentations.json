@@ -33,6 +33,57 @@
   ],
   "modules": [
     {
+      "id": "module-0",
+      "title": "Storytelling Before Structure",
+      "duration": "30 min",
+      "type": "theory",
+      "content": {
+        "overview": "Before you choose a pitch framework, understand why any framework works at all. Every structure in this course is a delivery vehicle for the same underlying cargo: a story that creates stakes, names a character, establishes tension, and resolves it with a specific ask. When a pitch fails, it rarely fails because you chose the wrong framework. It fails because the story underneath the framework was absent. The six frameworks are not six different ways to pitch — they are six different entry points into the same human machinery.",
+        "keyPoints": [
+          {
+            "title": "The four ingredients every pitch must contain",
+            "description": "Strip any successful pitch down to its skeleton and you find the same four elements regardless of audience, industry, or time slot.",
+            "characteristics": [
+              "Stakes — why does this matter, and to whom? Without stakes there is no reason to keep listening. Stakes can be human (suffering, opportunity lost), systemic (a gap that compounds), or economic (money leaving the table). The listener must feel the weight before they can evaluate the solution.",
+              "Character — who experiences the stakes? Abstract problems do not move people. A named person in a specific situation does. Character is not demographic data. It is a person the audience can picture doing something specific.",
+              "Tension — what stands between the character and a resolution? Tension is what makes a pitch feel urgent rather than informational. Without tension, you are describing a situation. With tension, you are telling a story.",
+              "Resolution — what changes when your product or idea exists? Resolution is not the product description. It is the transformed state of the character. The product is the mechanism. The resolution is the before-and-after."
+            ]
+          },
+          {
+            "title": "Why logic alone rarely moves people to act",
+            "description": "Executives and funders believe they make rational decisions. They do not. Decisions are made emotionally and then rationalized intellectually — a pattern documented across decades of behavioral research. This is not a flaw to exploit; it is the architecture to work with. Your pitch needs to earn emotional commitment first, then give the listener the intellectual scaffolding to defend that commitment to others. A pitch that is only logical gives the listener nothing to feel. A pitch that is only emotional gives the listener nothing to defend. You need both, in the right order: emotion first, then logic as its justification.",
+            "implications": [
+              "The first 60 seconds of any pitch should create an emotional response — concern, curiosity, or recognition — not deliver background information.",
+              "Data and evidence belong after the emotional stake is established, not before.",
+              "The ask should feel like the obvious next step, not a request. If you have done the first part correctly, the listener wants to help — the ask just names how."
+            ]
+          },
+          {
+            "title": "What your audience is actually doing while you talk",
+            "description": "Your audience is not passively receiving your pitch. They are continuously running two parallel processes: evaluating whether to keep paying attention, and constructing a story of their own about what you are saying. If you do not give them a story structure, they will build one themselves — and it will not be the one you want. The listener's default question is always: 'Why should I care about this?' Every sentence in your pitch should either answer that question or build toward answering it. Sentences that do neither — company history, team backgrounds introduced too early, product feature lists — are not neutral. They are actively eroding the attention you have earned.",
+            "implications": [
+              "Listeners decide whether to keep listening within the first 30-60 seconds. The opening of your pitch is the highest-stakes real estate you have.",
+              "Background information is not neutral. Delivered before stakes are established, it costs attention without earning it.",
+              "The frameworks in this course are designed to keep the listener's question — 'why should I care?' — answered at every stage."
+            ]
+          },
+          {
+            "title": "What all six frameworks in this course share",
+            "description": "Despite their different entry points and structures, every framework in this course delivers the same four ingredients in a sequence that respects how human attention works. The differences between them are about timing, emphasis, and which ingredient leads.",
+            "applications": [
+              "Problem-first leads with Stakes — the problem is the weight that earns attention.",
+              "Hero's journey leads with Character — the person's ordinary world creates identification before stakes are revealed.",
+              "Jobs-to-be-done is a pre-pitch diagnostic: it forces you to name Character and Stakes precisely before you write a single slide.",
+              "Future-back leads with Resolution — it shows the transformed world first, then works backwards to the Tension that prevents it.",
+              "Insight ladder leads with Tension at an intellectual level — a pattern the audience knows but has not fully understood.",
+              "Data-then-story leads with Stakes at scale, then immediately provides Character to make the scale feel real."
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "module-1",
       "title": "The Framework Selection Problem",
       "duration": "45 min",

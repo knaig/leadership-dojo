@@ -1,5 +1,6 @@
 import { getCourse, getAllCourses } from "@/lib/data";
 import { notFound } from "next/navigation";
+import ModuleAccordion from "./ModuleContent";
 
 export async function generateStaticParams() {
   const courses = getAllCourses();
@@ -66,43 +67,7 @@ export default async function CoursePage({ params }: { params: Promise<{ id: str
       {/* Modules */}
       <div className="mb-10">
         <h2 className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: "var(--muted)" }}>Modules</h2>
-        <div className="space-y-3">
-          {course.modules.map((mod, i) => (
-            <div key={mod.id} className="rounded-lg p-4" style={{ border: "1px solid var(--border)", background: "var(--surface)" }}>
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-xs font-mono" style={{ color: "var(--muted-2)" }}>{String(i + 1).padStart(2, "0")}</span>
-                    <span className="text-sm font-medium" style={{ color: "var(--text-2)" }}>{mod.title}</span>
-                  </div>
-                  {mod.type === "case_study" && (
-                    <span className="text-xs px-2 py-0.5 rounded" style={{ color: "var(--accent)", background: "var(--accent-bg)" }}>Practice cases</span>
-                  )}
-                </div>
-                <span className="text-xs shrink-0" style={{ color: "var(--muted-2)" }}>{mod.duration}</span>
-              </div>
-
-              {mod.type === "case_study" && (mod.content as { cases?: { caseId: string; title: string; framework: string; scenario: string }[] }).cases && (
-                <div className="mt-3 space-y-2">
-                  {(mod.content as { cases: { caseId: string; title: string; framework: string; scenario: string }[] }).cases.map((c) => (
-                    <a
-                      key={c.caseId}
-                      href={`/cases/${c.caseId}`}
-                      className="flex items-start justify-between gap-3 rounded-lg px-4 py-3 no-underline group transition-colors"
-                      style={{ background: "var(--surface-2)", border: "1px solid var(--border)" }}
-                    >
-                      <div>
-                        <div className="text-sm font-medium" style={{ color: "var(--text-2)" }}>{c.title}</div>
-                        <div className="text-xs mt-0.5" style={{ color: "var(--muted-2)" }}>{c.scenario}</div>
-                      </div>
-                      <span className="text-xs px-2 py-0.5 rounded shrink-0" style={{ color: "var(--accent)", border: "1px solid var(--accent-border)" }}>{c.framework}</span>
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+        <ModuleAccordion modules={course.modules} />
       </div>
 
       {course.prerequisites.length > 0 && (
